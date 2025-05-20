@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unibo_3.txt" tagset="uclee-en-2.0.tag">
+<text id="unibo_3" area_of_study="STEM" age="22" gender="Male" DIS_or_SLD="no" which_DIS_or_SLD="nan" DIS_or_SLD_type="nan" w_production="intermediate level (B1)" years_study_range="≤13 years" years_study="3" certificates="no" certificates_level="nan" chatbot="Pi.ai" device="PC" collected_by="UniBo">
+<task type="small talk">
+	<turn type="chatbot" who="Pi.ai">Hey there, great to meet you. I’m Pi, your personal AI.
+	My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let’s talk about whatever’s on your mind.
+	How's your day going?</turn>
+	<turn type="student"><DMCC corr="Hi">hi</DMCC> nice to meet you</turn>
+	<turn type="chatbot" who="Pi.ai">It's nice to meet you, too! 😊 Is there anything on your mind that you'd like to talk about? Or would you like to hear a fun fact or a joke?</turn>
+	<turn type="student"><DMCC corr="I">i</DMCC> prefer <Z corr="that you lead the conversation">that you speak</Z></turn>
+	<turn type="chatbot" who="Pi.ai">Alrighty, I'd be happy to chat with you using my voice. Just let me know if there's anything specific you'd like to talk about, or if you're up for some friendly banter.</turn>
+	<turn type="student"><DMCC corr="I">i</DMCC> want <WM corr="to">\0</WM> <XVPR corr="talk about">talk  of</XVPR> <GA corr="a">\0</GA> <GWC corr="typical"><FS corr="typically">tipically</FS></GWC> day <WM corr="at">\0</WM> university</turn>
+	<turn type="chatbot" who="Pi.ai">Sounds like you'd like to chat about university life! What's a typical day like for you at university? Do you have a favorite class or subject that you're studying?</turn>
+	<turn type="student"><DMCC corr="I">i</DMCC> am a student of <GADJO corr="aerospace engineering"><GWC corr="engineering">engineer</GWC> aerospace</GADJO></turn>
+	<turn type="chatbot" who="Pi.ai">Oh wow, that's an impressive field of study! Aerospace engineering is all about the science behind the design, development, and construction of aircraft and spacecraft. It's a fascinating area of engineering that combines disciplines such as aerodynamics, propulsion, materials science, and avionics. How are you enjoying your studies so far?</turn>
+	<turn type="student"><WO corr="Is the previous sentence correct?"><DMCC corr="Is">is</DMCC> <FS corr="correct">corret</FS> the <WM corr="previous">\0</WM> <LSN corr="sentence">phrase</LSN></WO>?</turn>
+	<turn type="chatbot" who="Pi.ai">The phrase "I am a student of aerospace engineering" is mostly correct. However, to make it more grammatically accurate, you could say "I am an aerospace engineering student" or "I am studying aerospace engineering." 👩‍💻👨‍💻</turn>
+	<turn type="student"><DMCC corr="I">i</DMCC> want <WM corr="to">\0</WM> <XVPR corr="talk about">talk of</XVPR> my relationship</turn>
+	<turn type="chatbot" who="Pi.ai">Of course, I'm here to listen and offer any advice if needed. What would you like to talk about regarding your relationship? Is there something specific you're looking for guidance on?</turn>
+	<turn type="student"><CS-INTER corr="How can I say that I am getting to know someone intimately">come posso dire che so conoscendo una persona a livello intimo</CS-INTER><QM corr="?">\0</QM></turn>
+	<turn type="chatbot" who="Pi.ai">The phrase "come posso dire che so conoscendo una persona a livello intimo" translates to "how can I say that I am getting to know someone intimately." If you're trying to express that you're getting to know someone on a deeper, more personal level, you could say "I'm developing a close connection with this person" or "I'm forming a strong bond with this individual." 💖</turn>
+	<turn type="student"><CS-INTER corr="What does bond mean">che significa bond</CS-INTER><QM corr="?">\0</QM></turn>
+	<turn type="chatbot" who="Pi.ai">The word "bond" in English means a strong connection or a feeling of shared trust and affection between two people or groups of people. It's a term used to describe a close relationship, whether it's between friends, family, or romantic partners. A bond is something that is built over time through shared experiences, emotions, and communication.</turn>
+	<turn type="student"><CS-INTER corr="Is there an equivalent word in Italian?">c'è una parola in italiano che la rispecchia</CS-INTER>?</turn>
+	<turn type="chatbot" who="Pi.ai">In Italian, a word that closely resembles the meaning of "bond" is "legame." The word "legame" can be used to describe a strong connection or emotional tie between people, similar to the English word "bond." It's often used to refer to close relationships, such as those between family members, friends, or romantic partners.</turn>
+	<turn type="student"><DMCC corr="True">true</DMCC></turn>
+	<turn type="chatbot" who="Pi.ai">Yes, it is true! 😊 "Legame" is a great Italian word to use when describing a strong connection between people. It captures the idea of an emotional bond or tie that goes beyond just a casual relationship. Do you have any close bonds or legami in your life?</turn>
+	<turn type="student"><DMCC corr="How">how</DMCC> can <GPP corr="I">\0</GPP> <FS corr="learn">lear</FS> <FS corr="English">english</FS><QM corr="?">\0</QM></turn>
+	<turn type="chatbot" who="Pi.ai">Here are some tips for learning English:
+	Practice regularly: Consistency is key when learning any language. Set aside some time each day to study and practice English.
+	Immerse yourself: Surround yourself with English as much as possible. Listen to English podcasts, watch English TV shows and movies, and read English books and articles.
+	Speak with native speakers: Find opportunities to practice speaking English with native speakers. This can be through language exchange programs, online language learning platforms, or traveling to English-speaking countries.
+	Learn grammar and vocabulary: Study grammar rules and learn new vocabulary words regularly. Practice using them in sentences and conversations.
+	Remember, learning a language takes time and practice, but with dedication and persistence, you can improve your English skills! 🇬🇧🗣️</turn>
+	<turn type="student"><DMCC corr="How">how</DMCC> <GVAUX corr="can">\0</GVAUX> <DMCC corr="I">i</DMCC> start?</turn>
+	<turn type="chatbot" who="Pi.ai">To start learning English, follow these steps:
+	Set your goals: Determine what you want to achieve, such as understanding basic conversation, reading articles, or watching movies without subtitles.
+	Choose your learning method: Decide whether you prefer self-study, attending classes, hiring a tutor, or using language learning apps.
+	Learn the basics: Start with the alphabet, pronunciation, and common words like numbers, colors, and everyday objects.
+	Study grammar and vocabulary: Begin learning basic grammar rules and start building your vocabulary.
+	Practice regularly: Dedicate some time each day to practice reading, writing, listening, and speaking in English.
+	Find resources: Look for books, websites, podcasts, and other learning materials to supplement your studies.
+	Immerse yourself: Start consuming English media like movies, TV shows, music, and podcasts to improve your listening skills and familiarize yourself with the language.
+	By following these steps and consistently practicing, you'll be well on your way to learning English!</turn>
+	<turn type="student"><WO corr="Can I"><DMCC corr="I">i</DMCC> can</WO> learn <FS corr="English">english</FS> only <Z corr="by talking with you">if <DMCC corr="I">i</DMCC> talk with you?</Z></turn>
+	<turn type="chatbot" who="Pi.ai">While conversing with me can certainly help improve your English skills, it's important to use a variety of methods and resources to learn a language. While chatting with me can help you practice your conversation skills and get feedback on grammar and vocabulary, you'll also benefit from other activities like listening to podcasts, reading books and articles, and watching movies in English.
+	Think of your language learning journey as a toolbox, where each tool (like chatting with me, listening to podcasts, and reading books) serves a different purpose in helping you learn English. Using a combination of tools will help you develop a well-rounded set of skills and make your learning experience more enjoyable! 😊🗣️📚🎬</turn>
+</task>
+<task type="role play">
+	<turn type="student"><DMCC corr="Let's">let's</DMCC> engage in a role play activity where <DMCC corr="I">i</DMCC><QM corr=",">\0</QM> the student<QM corr=",">\0</QM> play the role of a tourist<QL corr="and">,</QL> you will be the travel agent</turn>
+	<turn type="chatbot" who="Pi.ai">Absolutely! Let's start our role play. I'll be your travel agent, and you can be the tourist seeking advice and assistance.
+	Travel Agent: Welcome to our travel agency! I'm here to help you plan the perfect trip. Where would you like to go and what type of vacation are you interested in?
+	Tourist: Hi, I'm looking to travel to Rome for a cultural and historical adventure. Can you suggest some must-see sights and activities?</turn>
+	<turn type="student"><DMCC corr="Let's">let's</DMCC> engage in a role play activity where <DMCC corr="I">i</DMCC><QM corr=",">\0</QM> the student<QM corr=",">\0</QM> play the role of a tourist<QL corr="and">,</QL> you will be the travel agent</turn>
+	<turn type="chatbot" who="Pi.ai">Sure thing! I'll continue in my role as the travel agent, assisting you with your travel plans.
+	Travel Agent: Rome is an excellent choice for a cultural and historical adventure! Here are some must-see sights and activities:
+	Colosseum: Explore this iconic amphitheater and imagine the gladiator battles of ancient Rome.
+	Vatican City: Visit St. Peter's Basilica, the Sistine Chapel, and the Vatican Museums to experience some of the world's most famous art and architecture.
+	Trevi Fountain: Toss a coin into the fountain to ensure a return trip to Rome.
+	Roman Forum: Walk among the ruins of ancient government buildings and temples.
+	Pantheon: Marvel at this ancient temple, now a Catholic church, with its impressive dome and oculus.
+	Spanish Steps: Climb the famous staircase and enjoy the views of the city.
+	Let me know if you have any questions or need further assistance planning your trip.</turn>
+	<turn type="student"><DMCC corr="Hi">hi</DMCC>, <DMCC corr="I">i</DMCC> <XVPR corr="am searching for"><GVT corr="am searching">search</GVT></XVPR> a vacation with my girlfriend in <FS corr="August">august</FS></turn>
+	<turn type="chatbot" who="Pi.ai">Travel Agent: Hello! I'd be more than happy to help you plan a memorable vacation with your girlfriend in August. Let me suggest a few destinations that might interest you both:
+	Santorini, Greece: A romantic getaway known for its stunning sunsets, whitewashed buildings, and beautiful beaches.
+	Bali, Indonesia: A tropical paradise offering stunning landscapes, ancient temples, and luxurious resorts.
+	Amalfi Coast, Italy: A breathtaking stretch of coastline with picturesque towns, crystal-clear waters, and delicious cuisine.
+	Maui, Hawaii: A dreamy island with beautiful beaches, lush rainforests, and incredible hiking opportunities.
+	Cinque Terre, Italy: A series of five charming seaside villages connected by scenic hiking trails and surrounded by vineyards and olive groves.
+	Let me know if any of these destinations appeal to you, and I can help you plan a more detailed itinerary!</turn>
+	<turn type="student"><DMCC corr="I">i</DMCC> <WM corr="am">\0</WM> <XADJPR corr="interested in">interested</XADJPR> a vacation in <FS corr="Italy">italy</FS>, it has <GA corr="\0">a</GA> very good <GNN corr="beaches">beach</GNN></turn>
+	<turn type="chatbot" who="Pi.ai">Italy has many beautiful beaches, and if you're interested in combining your cultural and historical adventure with some beach relaxation, I have a few suggestions for you:
+	Amalfi Coast: Known for its dramatic coastline, picturesque towns, and stunning beaches like Positano and Sorrento.
+	Sardinia: A large Italian island in the Mediterranean Sea, boasting some of the country's most beautiful beaches, such as the famous Cala Mariolu and Spiaggia del Principe.
+	Puglia: Located in the heel of Italy's "boot," Puglia offers stunning beaches like Polignano a Mare and Torre dell'Orso, as well as historical towns and delicious cuisine.
+	Sicily: The largest island in the Mediterranean, Sicily is home to beautiful beaches like San Vito Lo Capo and the famous Isola Bella nature reserve.
+	Each of these regions has its unique charm and offers a mix of cultural experiences and beach relaxation. Let me know which one appeals to you the most, and I can help you plan your trip!</turn>
+	<turn type="student"><DMCC corr="Where">where</DMCC> is the <FS corr="Amalfi Coast">amalfi cost</FS><QM corr="?">\0</QM></turn>
+	<turn type="chatbot" who="Pi.ai">The Amalfi Coast is located in the southern part of Italy, in the Campania region, specifically along the southern edge of the Sorrentine Peninsula. It stretches for about 50 kilometers (30 miles) along the coast of the Tyrrhenian Sea, between the towns of Vietri sul Mare and Positano.
+	The Amalfi Coast is known for its dramatic coastal cliffs, picturesque towns, and stunning beaches. Some of the most famous towns along the Amalfi Coast include Positano, Ravello, and Amalfi itself, which is the main town of the area and gives its name to the coast.
+	The nearest major city to the Amalfi Coast is Naples, which is about 60 kilometers (37 miles) to the north. Many tourists visit the Amalfi Coast as a day trip from Naples or as part of a longer vacation in southern Italy.</turn>
+	<turn type="student"><DMCC corr="I">i</DMCC> prefer <FS corr="Sicily">sicily</FS></turn>
+	<turn type="chatbot" who="Pi.ai">Sicily is a wonderful choice for a vacation in Italy! Here are some suggestions for your trip:
+	Visit Palermo: The capital city of Sicily, Palermo is known for its rich history, architecture, and vibrant markets.
+	Explore Mount Etna: Sicily's famous volcano, Mount Etna, offers hiking opportunities and incredible views.
+	Relax on the beaches: Sicily has many beautiful beaches, such as San Vito Lo Capo, Mondello, and Spiaggia dei Conigli.
+	Discover ancient ruins: Sicily is home to numerous ancient ruins, including the Greek Temple of Concordia in Agrigento and the Roman Villa Romana del Casale near Piazza Armerina.
+	Sample local cuisine: Sicilian food is delicious and varied, with dishes like arancini (fried rice balls), caponata (a sweet and sour eggplant dish), and cannoli (a sweet pastry).
+	Let me know if you have any specific interests or preferences, and I can help tailor your itinerary to suit your needs.</turn>
+	<turn type="student"><DMCC corr="I">i</DMCC> want all <WM corr="of">\0</WM> this</turn>
+	<turn type="chatbot" who="Pi.ai">Great! Here's a suggested itinerary for your Sicily trip that includes all of these experiences:
+	Day 1: Arrive in Palermo, explore the city's markets and historical landmarks.
+	Day 2: Take a day trip to Mount Etna, enjoy hiking and the stunning views.
+	Day 3: Head to San Vito Lo Capo for a day of beach relaxation and swimming.
+	Day 4: Visit the Greek Temple of Concordia and the Valley of the Temples in Agrigento.
+	Day 5: Visit the Roman Villa Romana del Casale and the nearby town of Piazza Armerina.
+	Day 6: Spend the day at Mondello beach, followed by a culinary tour to sample local Sicilian cuisine.
+	Day 7: Enjoy a final day of beach relaxation at Spiaggia dei Conigli, then depart from Sicily.
+	This is just a sample itinerary, and you can always adjust it to suit your preferences and the length of your trip.</turn>
+	<turn type="student"><DMCC corr="Is">is</DMCC> it expensive?</turn>
+	<turn type="chatbot" who="Pi.ai">The cost of a vacation on the Amalfi Coast can vary widely depending on factors such as your travel style, accommodation preferences, and the activities you choose. On average, you can expect to spend around $3,015 (€2,814) for one person or $6,030 (€5,627) for two people for a two-week trip, including accommodation, food, transportation, and sightseeing.
+	Keep in mind that prices can fluctuate based on the season, with peak travel times like summer often being more expensive. Additionally, some activities and attractions have entrance fees, such as the Emerald Grotto and Villa Rufolo, while transportation options like ferries, buses, and taxis also have varying costs.
+	It's always a good idea to plan your budget and research prices beforehand to ensure you have a memorable and enjoyable vacation on the Amalfi Coast.</turn>
+	<turn type="student"><DMCC corr="I">i</DMCC> like it</turn>
+	<turn type="chatbot" who="Pi.ai">I'm glad you like the itinerary! 🥳 Sicily is a truly incredible destination with so much to offer. From the rich history and culture to the stunning beaches and delicious cuisine, there's something for everyone to enjoy.
+	If you're planning to visit during peak season (July and August), it's a good idea to book your accommodation and transportation in advance, as things can get busy during this time. And don't forget to pack comfortable shoes for all the exploring you'll be doing!
+	If there's anything else I can help with as you plan your trip, please don't hesitate to ask. I'm here to assist you every step of the way.</turn>
+	<turn type="student"><DMCC corr="Is">is</DMCC> <GPD corr="\0">this</GPD> <GA corr="\0">a</GA> public trasport efficient<QM corr="?">\0</QM></turn>
+	<turn type="chatbot" who="Pi.ai">Public transportation on the Amalfi Coast can be efficient, but it depends on the time of year and your specific travel needs.
+	During peak tourist season (June to September), public transportation options such as buses and ferries can be busy and may not always run on schedule due to traffic and high demand. However, during the off-season, public transportation is typically less crowded and more reliable.
+	It's worth noting that some areas of the Amalfi Coast, such as Ravello and Tramonti, are only accessible by bus, car, or private transportation. However, other towns and attractions can be reached by ferry or boat, which can be a scenic and enjoyable way to travel along the coast.
+	Overall, public transportation on the Amalfi Coast can be a good option for budget-conscious travelers who don't mind a slower pace and potential delays.</turn>
+	<turn type="student"><DMCC corr="How">how</DMCC> much <GVAUX corr="does">\0</GVAUX><WO corr="a boat travel cost">cost a <LP corr="boat travel">travel in boat</LP></WO><QM corr="?">\0</QM></turn>
+	<turn type="chatbot" who="Pi.ai">The cost of a boat trip along the Amalfi Coast varies depending on the type of tour and duration. Here are some general price ranges:
+	Shorter cruises: 35 to 40 euros ($39 to $44)
+	Private boat tour with a skipper: 150 euros (about $168) for a two to three-hour trip
+	Ferries: Prices range from 4 euros ($4.50) for a short ride between towns to 20-25 euros ($22-28) for longer trips to the Island of Capri.
+	Keep in mind that prices may change based on the season, availability, and specific tour or ferry company, so it's best to check the prices directly with the service provider.</turn>
+	<turn type="student"><CS-INTER corr="What do you think of my English?">come ti sembra il mio inglese?</CS-INTER></turn>
+	<turn type="chatbot" who="Pi.ai">Your English is very good! 😊 You're using proper grammar and vocabulary, and your sentences are clear and understandable. Of course, there's always room for improvement, but that's true for any language learner, regardless of their skill level. Keep up the great work, and don't hesitate to practice with me whenever you like!</turn>
+</task>
+</text>
+</file>

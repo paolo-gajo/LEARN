@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unimc_46.txt" tagset="uclee-en-2.0.tag">
+<text id="unimc_46" area_of_study="Education sciences" age="24" gender="Male" DIS_or_SLD="yes" which_DIS_or_SLD="SLD" DIS_or_SLD_type="SLD" w_production="beginner level (A1)" years_study_range=">13 years" years_study="15" certificates="no" certificates_level="nan" chatbot="Pi.ai" device="PC" collected_by="UniMc">
+<task type="small talk">
+	<turn type="chatbot" who="Pi.ai">Hey there, great to meet you. I’m Pi, your personal AI.
+	My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let’s talk about whatever’s on your mind.
+	How's your day going?</turn>
+	<turn type="student">User</turn>
+	<turn type="chatbot" who="Pi.ai">Hi User! 👋 Nice to meet you. Is there something specific you'd like to chat about or ask me? Or would you like to just have a friendly conversation?</turn>
+	<turn type="chatbot" who="Pi.ai">Hey there, great to meet you. I’m Pi, your personal AI.
+	My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let’s talk about whatever’s on your mind.
+	How's your day going?
+	Ok User. What did you want to talk about? Ask me for advice, for answers, or let’s talk about whatever’s on your mind.</turn>
+	<turn type="student"><DMCC corr="Hello">hello</DMCC> , my name is User</turn>
+	<turn type="chatbot" who="Pi.ai">Hey User! 👋 Nice to meet you. Is there something specific you'd like to chat about or ask me? Or would you like to just have a friendly conversation?</turn>
+	<turn type="student"><DMCC corr="Yes">yes</DMCC> , there is an <LSN corr="topic"><FS corr="argument">argoument</FS></LSN> that in this period <LP corr="has gained traction"><GVN corr="has">have</GVN> <GVM corr="taken">take</GVM> a lot of <FS corr="resonance">resounance</FS></LP> in the <FS corr="public">pubblic</FS> debate and <GPP corr="it">\0</GPP> is  also connected <FS corr="with">whit</FS> this experiment , and <DMCC corr="I">i</DMCC> want to <LSV corr="ask">put</LSV> you some <LSN corr="questions">answers</LSN> about it</turn>
+	<turn type="chatbot" who="Pi.ai">Alright, User! Sounds like you've got something interesting on your mind. I'm all ears (or should I say, all programming 🤖). What's this argument that's been gaining traction in public debate? I'm curious to hear more about it and your thoughts on it.</turn>
+	<turn type="student"><DMCC corr="The">the</DMCC> <LSN corr="topic"><FS corr="argument">argoument</FS></LSN> is the <GWC corr="development">developing</GWC> of <FS corr="artificial">artifical</FS> intelligence in the last years , and the <LSADJ corr="growing">growly</LSADJ> <WR corr="\0">of</WR> <GDO corr="\0">its</GDO>  <LSN corr="implementation"><FM corr="employment">employmentation</FM></LSN>  in a lot of jobs</turn>
+	<turn type="chatbot" who="Pi.ai">Ah, yes, the rise of AI and its increasing role in the job market is certainly a hot topic these days! It's a complex issue with many factors to consider. Some people are concerned about AI taking over jobs traditionally held by humans, while others see the potential for AI to enhance productivity and create new job opportunities. What are your thoughts on this, User?</turn>
+	<turn type="student"><DMCC corr="My">my</DMCC> thoughts  are <FS corr="strongly">streglty</FS> connected with the  <GA corr="\0">the</GA> many impacts of <GA corr="\0">the</GA> <FS corr="AI">ai</FS> in  <GA corr="\0">the</GA> society</turn>
+	<turn type="chatbot" who="Pi.ai">That's an insightful perspective, User. It's true that the rise of AI has far-reaching implications, not just in the job market but in many aspects of society. From healthcare and transportation to education and entertainment, AI is transforming the way we live and interact with the world around us. Are there any particular areas of society that you're particularly interested in exploring in relation to AI?</turn>
+</task>
+<task type="role play">	
+	<turn type="student"><DMCA corr="Okay">ok</DMCA>, thanks for the information , now <FS corr="let's">lets</FS> <LSV corr="do">take</LSV> a role game !</turn>
+	<turn type="chatbot" who="Pi.ai">Ooh, I love role games! 😎 Let's do it! What kind of characters or scenario did you have in mind, User? I'm ready to step into a role and have some fun with this!</turn>
+	<turn type="student"><DMCC corr="Well">well</DMCC> , <DMCC corr="I">i</DMCC> want to play the role of a client that <GVN corr="wants">want</GVN> to ask some  information about the best places    to discover <LSPR corr="during">for</LSPR> the summer <GNN corr="holidays">holiday</GNN> <QC corr=".">,</QC> <WO corr="Can you">you can</WO> <LP corr="play the role">take the role</LP> of the  <LP corr="travel agency assistant">assistant of the travel agency</LP> giving <WR corr="\0">to</WR> me some <XNUC corr="information">informations</XNUC> ?</turn>
+	<turn type="chatbot" who="Pi.ai">Absolutely! Let's dive into our roles and embark on a vacation planning adventure!
+	(Travel Agent Voice) Welcome to Pi's Travel Agency, User! 🌍 I'm thrilled to help you plan your perfect summer getaway. Can you tell me a little bit about your preferences? Are you looking for a beach destination, a city adventure, or something off the beaten path? 🏖️🏙️🏕️</turn>
+	<turn type="student"><DMCC corr="Hello">hello</DMCC> , <DMCC corr="I">i</DMCC> want to visit a place <GPR corr="\0">that</GPR> <WR corr="\0">is</WR> <GWC corr="near">nearly</GWC> the sea and<QM corr=",">\0</QM> at the same time<QM corr=",">\0</QM> <WR corr="not">isn't</WR> <FS corr="too">to</FS> far <LSPR corr="from">to</LSPR> <GA corr="the">a</GA> city centre</turn>
+	<turn type="chatbot" who="Pi.ai">Great choice, User! There are plenty of beautiful places that fit that description. Let me suggest a few options for you to consider:
+	Barcelona, Spain: With its stunning beaches and vibrant city life, Barcelona offers the perfect mix of sun, sand, and culture.
+	Nice, France: Located on the French Riviera, Nice boasts a picturesque coastline and is just a stone's throw away from the city center, where you can explore charming streets and local markets.
+	Lisbon, Portugal: This coastal city offers beautiful beaches, historic neighborhoods, and a lively city atmosphere.</turn>
+	<turn type="student"><DMCC corr="Yes">yes</DMCC> ,  all of <GPO corr="them">its</GPO>  are very beautiful cities<QM corr=",">\0</QM> but for my <LSN corr="trip">travel</LSN> <DMCC corr="I">i</DMCC> want to travel <LSPR corr="to">in</LSPR> another  continent <QR corr="\0">,</QR>  because <DMCC corr="I">i</DMCC> like to discover new places around the world</turn>
+	<turn type="chatbot" who="Pi.ai">Of course, User! If you're looking for a vacation destination outside of Europe, let me suggest some other fantastic options for you:
+	Rio de Janeiro, Brazil: With its famous beaches like Copacabana and Ipanema, as well as the iconic Christ the Redeemer statue and bustling city life, Rio offers a true South American experience.
+	Cape Town, South Africa: Nestled between the stunning Table Mountain and the Atlantic Ocean, Cape Town boasts beautiful beaches, vibrant culture, and breathtaking natural landscapes.
+	Sydney, Australia: As the largest city in Australia, Sydney has a lot to offer, from its famous Bondi Beach to the iconic Sydney Opera House and Harbour Bridge, as well as a lively urban scene.
+	Each of these destinations provides a unique blend of coastal charm and urban excitement. Let me know if you have a preference or if you'd like more information on any of these cities!</turn>
+	<turn type="student"><FS corr="Rio de Janeiro">rio de janeiro</FS>  will <WR corr="\0">have to</WR> be the perfect place !</turn>
+	<turn type="chatbot" who="Pi.ai">Fantastic choice, User! Rio de Janeiro is an incredible destination that offers a truly unforgettable experience. With its vibrant culture, stunning beaches, and lively city atmosphere, you're in for an incredible vacation. Here are some highlights you might enjoy during your trip:
+	Relaxing on the famous Copacabana or Ipanema beaches, soaking up the sun and enjoying the crystal-clear waters.
+	Exploring the city's rich history by visiting landmarks like the Christ the Redeemer statue, Sugarloaf Mountain, and the colorful Escadaria Selarón steps.
+	Indulging in the local cuisine, which includes delicious dishes like feijoada (a hearty stew), pão de queijo (cheese bread), and refreshing caipirinhas (a cocktail made with cachaça, lime, and sugar).
+	Experiencing the city's vibrant nightlife, with plenty of bars, clubs, and live music venues to choose from.
+	Does that sound like the kind of vacation you're looking for, User?</turn>
+</task>
+</file>
