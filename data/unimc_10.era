@@ -1,126 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<file name="unimc_10.txt" tagset="uclee-en-2.0.tag">
-<text id="unimc_10" area_of_study="Education sciences" age="20" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="nan" DIS_or_SLD_type="nan" w_production="upper intermediate level (B2)" years_study_range=">13 years" years_study="14" certificates="yes" certificates_level="B2" chatbot="ChatGPT" device="PC" collected_by="UniMc"
-<task type="role play">
-	<turn type="student"> Write an email to request a quote from local plumbers for backflow testing. I need it done in the next 2 weeks. Keep it short and casual. </turn>
-	<turn type="chatbot" who="ChatGPT"> Subject: Request for Backflow Testing Quote
-	Hi there,
-	I hope this email finds you well. I'm reaching out because I'm in need of backflow testing for my property within the next two weeks. Could you please provide me with a quote for your services?
-	Looking forward to hearing back from you soon.
-	Thanks,
-	[Your Name] </turn>
-	<turn type="student"> <DMCC corr="Hi">hi</DMCC> there, thank you for asking me, sure <DMCC corr="I">i</DMCC> can <XVPR corr="provide you with">provide you</XVPR> a quote, what do think about 25 dollars? Waiting for your answer, thanks. User<QR corr="\0">.</QR> </turn>
-	<turn type="chatbot" who="ChatGPT"> Subject: Re: Request for Backflow Testing Quote
-	Hi user,
-	Thanks for getting back to me so quickly! That sounds great. Could you confirm if the $25 quote includes all necessary testing and any potential additional charges?
-	Looking forward to your response.
-	Best regards,
-	[Your Name] </turn>
-	<turn type="student"> Hi there, here you are, I can say that the 25$ quote includes all necessary testing, but the potentional additional charges can cost more... Is it <DMCA corr="okay">ok</DMCA> with you? Text me soon, bye, user<QR corr="\0">.</QR> </turn>
-	<turn type="chatbot" who="ChatGPT"> Subject: Re: Re: Request for Backflow Testing Quote
-	Hi user,
-	Thanks for clarifying. I understand there might be potential additional charges beyond the $25 base rate. Could you please provide more information on what those additional charges might entail? Once I have a clearer picture, I can confirm if it works for me.
-	Looking forward to your reply.
-	Best regards,
-	[Your Name] </turn>
-	<turn type="student"> Hey there, so about the potentional additional charges, <DMCC corr="I">i</DMCC> can't tell you exactly how much <WO corr="they can be"><FS corr="can">caan</FS> <GPP corr="they">it</GPP> <LSV corr="be"><GVT corr="become">became</GVT></LSV></WO>, by the way, <DMCC corr="I">i</DMCC> <FS corr="can">cas</FS> assure you that it <FS corr="won't">wont</FS> be more than maybe 25$ <WR corr="\0">plus</WR>. Waiting for your reply, <DMCC corr="I">i</DMCC> understand if it's not <DMCA corr="okay">ok</DMCA> with you, but I hope that I can help you anyway. Thank you, user<QR corr="\0">.</QR> </turn>
-	<turn type="chatbot" who="ChatGPT"> Subject: Re: Re: Re: Request for Backflow Testing Quote
-	Hi user,
-	Thanks for your understanding. I appreciate your honesty regarding the potential additional charges. While I'm hesitant about the uncertainty, I value your assistance and would like to proceed with your services.
-	Could we schedule a time for the backflow testing within the next two weeks?
-	Looking forward to hearing from you.
-	Best regards,
-	[Your Name] </turn>
-	<turn type="student"> Thank you very much for your kindness and for this opportunity, if it's <DMCA corr="okay">ok</DMCA> with you, I think I can even start tomorrow, the work will be <LSV corr="finished">ended</LSV> in 10 days, <FS corr="except">exept</FS> <Z corr="for">there will be</Z> any <GNC corr="problems">problem</GNC>. Thank you and see you tomorrow, I hope. Bye, user </turn>
-	<turn type="chatbot" who="ChatGPT"> Subject: Re: Re: Re: Re: Request for Backflow Testing Quote
-	Hi user,
-	That sounds perfect. Let's plan for tomorrow to get started with the backflow testing. I appreciate your promptness and willingness to accommodate my schedule. Looking forward to seeing you then.
-	Thanks again,
-	[Your Name] </turn>
-	<turn type="student"> Hi, thank you, I will be at yours at 8 tomorrow in the morning, bye, user </turn>
-	<turn type="chatbot" who="ChatGPT"> Subject: Re: Re: Re: Re: Re: Request for Backflow Testing Quote
-	Hi user,
-	Sounds good. See you tomorrow at 8 in the morning.
-	Take care,
-	[Your Name] </turn>
-	<turn type="student"> <DMCC corr="Hi">hi</DMCC>, sorry if <DMCC corr="I">i</DMCC>'m pressing you<QM corr=",">\0</QM> but can we talk about the payment<QC corr="?">,</QC> I wanted to know if <GPP corr="you">\0</GPP> wanted to pay <Z corr="upon completion of my work"><LP corr="right after">soon after</LP> my work is done</Z> or maybe <WR corr="\0">even</WR> later<QC corr=".">,</QC> what do you think? Thanks, user </turn>
-	<turn type="chatbot" who="ChatGPT"> Subject: Re: Re: Re: Re: Re: Re: Request for Backflow Testing Quote
-	Hi user,
-	No problem at all. Let's discuss payment terms. I'm comfortable paying upon completion of the work. Does that work for you?
-	Looking forward to tomorrow.
-	Best regards,
-	[Your Name] </turn>
-	<turn type="student"> Hi, that will be perfect for me, do you prefer paying me on cash or by a credit card? Best regards, user </turn>
-	<turn type="chatbot" who="ChatGPT"> Subject: Re: Re: Re: Re: Re: Re: Re: Request for Backflow Testing Quote
-	Hi user,
-	I prefer paying by credit card. Could you please provide me with the necessary information to process the payment?
-	Thanks,
-	[Your Name] </turn>
-	<turn type="student"> Hi, of <FS corr="course">corse</FS>, after <DMCC corr="I">i</DMCC> <GVT corr="have finished">will have finished</GVT> my work, <DMCC corr="I">i</DMCC> will <GVM corr="come">came</GVM> <LSPR corr="to">at</LSPR> you with a credit <GNN corr="card">cards</GNN> <LWCO corr="payment terminal">poss</LWCO>, so you can pay me <Z corr="?">without coming <LSPR corr="to">at</LSPR> <GPO corr="me">mine</GPO></Z>. See ya, user. </turn>
-	<turn type="chatbot" who="ChatGPT"> Subject: Re: Re: Re: Re: Re: Re: Re: Re: Request for Backflow Testing Quote
-	Hi user,
-	That works for me. Looking forward to seeing you tomorrow.
-	Take care,
-	[Your Name] </turn>
-	<turn type="student"> Hi, take care and <FS corr="remember">remeber</FS> to wake up early tomorrow, <DMCC corr="I">i</DMCC>'ll need your help understanding your needs in the best way possible, either way, you could maybe <GVM corr="explain">explains</GVM> them to me now, if <GPD corr="that">\0</GPD>is <FS corr="comfortable">comfrotable</FS> with you<QC corr=".">,</QC> thank you, user </turn>
-	<turn type="chatbot" who="ChatGPT"> Hi user,
-	Thanks for the reminder. I'll make sure to wake up early. As for my needs, everything related to the backflow testing should be pretty straightforward, but I'll make sure to explain them to you tomorrow when you arrive.
-	See you then,
-	[Your Name] </turn>
-	<turn type="student"> Hi, <DMCC corr="I">i</DMCC> would really appreciate <GPP corr="it">\0</GPP> if you <GVT corr="told">tell</GVT> me now, thank you. User<QR corr="\0">.</QR> </turn>
-	<turn type="chatbot" who="ChatGPT"> Hi user,
-	Certainly, I appreciate your promptness. Essentially, I just need a thorough backflow testing to ensure the plumbing system is functioning correctly and there are no issues with water contamination. If you could inspect all relevant areas and provide a comprehensive assessment, that would be fantastic.
-	Looking forward to your assistance tomorrow.
-	Best regards,
-	[Your Name] </turn>
-	<turn type="student"> Hi, thank you very much<QC corr=".">,</QC> yes<QM corr=",">\0</QM> of course <DMCC corr="I">i</DMCC>'ll inspect any relevant areas and provide a comprehensive <FS corr="assessment">assesment</FS><QC corr=".">,</QC> <DMCC corr="I">i</DMCC> <GVT corr="would">will</GVT> <LSV corr="feel">be</LSV> more <FS corr="secure">sicure</FS> if <DMCC corr="I">i</DMCC> <GVAUX corr="could">can</GVAUX> even control the quality of the water, just in case, to avoid any sanitary problems, what do you think about it? Bye, user<QR corr="\0">.</QR> </turn>
-	<turn type="chatbot" who="ChatGPT"> Hi user,
-	That sounds like a prudent measure. Controlling the quality of the water would certainly add an extra layer of assurance. I appreciate your attention to detail in ensuring everything is in top-notch condition.
-	See you tomorrow,
-	[Your Name] </turn>
-	<turn type="student"> Hi, oh no, there <FS corr="won't">wont</FS> be any <GNN corr="extras">extra</GNN> for controlling the water, it's just a pleasure <DMCC corr="I">i</DMCC> want to do for you<QR corr="\0">,</QR> because, eather way, we're friends, right? </turn>
-	<turn type="chatbot" who="ChatGPT"> Hi user,
-	That's incredibly kind of you. I'm truly grateful for your generosity and friendship. Your dedication to providing exceptional service is truly commendable.
-	Looking forward to seeing you tomorrow, my friend.
-	Take care,
-	[Your Name] </turn>
-	<turn type="student"> <DMCC corr="Hi">hi</DMCC>, you're <FS corr="welcome">welcame</FS><QC corr=".">,</QC> <DMCC corr="I">i</DMCC>'m happy you appreciate my kindness, but <DMCC corr="I">i</DMCC> hope that maybe one day you will <LWCO corr="return the favour">recharge a favore</LWCO> <WR corr="\0">to me</WR>. <DMCC corr="See">see</DMCC> you tomorrow, user. </turn>
-	<turn type="chatbot" who="ChatGPT"> Hi user,
-	Absolutely, I'll definitely keep that in mind. It's always nice to pay kindness forward. Looking forward to our meeting tomorrow.
-	Take care until then,
-	[Your Name] </turn>
-	<turn type="student"> <DMCC corr="I">i</DMCC> will, <FS corr="you">youb</FS> too, my friend. User </turn>
-	<turn type="chatbot" who="ChatGPT"> Thanks, user. Have a great evening. See you tomorrow!
-	Best regards,
-	[Your Name] </turn>
-	<turn type="student"> Hey sorry, I know <DMCC corr="I">i</DMCC> told you that tomorrow <DMCC corr="I">i</DMCC> <GVAUX corr="would">had to</GVAUX> start working for you, but <DMCC corr="I">i</DMCC> completely forgot that <DMCC corr="I">i</DMCC> can't be there until <FS corr="Friday">friday</FS>, is that a big problem for you? User </turn>
-	<turn type="chatbot" who="ChatGPT"> Hi user,
-	No worries at all. Friday works for me. Let's plan to meet then.
-	Thanks for letting me know,
-	[Your Name] </turn>
-	<turn type="student"> <FS corr="Perfect">hperfect</FS> </turn>
-	<turn type="chatbot" who="ChatGPT"> Great! Looking forward to seeing you on Friday. If you need anything else in the meantime, feel free to reach out.
-	Take care,
-	[Your Name] </turn>
-</task>
-<task type="small talk">
-	<turn type="student"> <DMCC corr="Sorry">sorry</DMCC>, can <DMCC corr="I">i</DMCC> ask you a question<QR corr="\0">,</QR> as your friend? </turn>
-	<turn type="chatbot" who="ChatGPT"> Of course, user. Feel free to ask anything. What's on your mind? </turn>
-	<turn type="student"> I was just overthinking about different things and feelings.. <DMCC ="You">you</DMCC> know, <DMCC corr="I">i</DMCC>'ve been with my <FS corr="boyfriend">biyfriend</FS> for a while now, and <DMCC corr="I">i</DMCC>'m sure to be completely in <FS corr="love">lovbe</FS> with him, but <FS corr="sometimes">some time</FS> <DMCC corr="I">i</DMCC> feel like it's not the same anymore, I don't know if you can understand me, but it's a rough feeling<QR corr="\0">.</QR> <DMCC corr="What">what</DMCC> do you think<QM corr="?">\0</QM> </turn>
-	<turn type="chatbot" who="ChatGPT"> I understand, user. Relationships can have their ups and downs, and it's normal to have doubts or moments where things don't feel quite the same. It's important to communicate openly with your partner about how you're feeling. Perhaps you could plan some quality time together to reconnect and discuss any concerns you may have. Remember, it's okay to seek support from trusted friends or even a professional if you feel overwhelmed. Trust your instincts and take the time you need to explore your feelings and what they mean for your relationship. You're not alone in this, and I'm here to support you however I can. </turn>
-	<turn type="student"> Thank you very much, it's just that <GADVO corr="now I don't know">I don't now</GADVO> what to do, <DMCC corr="I">i</DMCC> have this problem at home that often <LWCO corr="forces">obligate</LWCO> me to stay in and take care of my mom (she has cancer). I know it's <GA corr="the">a</GA> right <LSN corr="thing"><FS corr="choice">choise</FS></LSN> to do, but <DMCC corr="I">i</DMCC> feel like <DMCC corr="I">i</DMCC>'m losing <FS corr="my">m,y</FS> time with my boyfriend, my age, my friends, everything. Even if family <GVT corr="comes">came</GVT> first, <DMCC corr="I">i</DMCC>'m really feeling down </turn>
-	<turn type="chatbot" who="ChatGPT"> I'm really sorry to hear about your mom's condition, user. It's completely understandable that you're feeling torn between taking care of her and maintaining your other relationships and personal life. It's essential to remember that it's okay to feel this way and that you're doing an incredible job balancing everything.
-	Taking care of a loved one with cancer can be emotionally and physically exhausting, and it's normal to feel overwhelmed and drained at times. It's crucial to prioritize self-care and find ways to recharge, even if it means asking for help from friends, other family members, or seeking support from community resources.
-	Communication with your boyfriend about your situation and feelings is key. Expressing your concerns and discussing potential solutions together can help strengthen your relationship and alleviate some of the stress you're feeling. Remember, a supportive partner will understand and be there for you during challenging times.
-	Also, don't forget to take some time for yourself whenever possible, even if it's just a short break to do something you enjoy. Your well-being matters too, and it's okay to prioritize yourself sometimes.
-	If you ever need someone to talk to or support, don't hesitate to reach out to friends, family, or even professionals who can provide guidance and assistance. You're not alone in this, and there are people who care about you and want to help.
-	Take care, user. You're doing the best you can, and that's admirable. </turn>
-	<turn type="student"> <FS corr="Nobody">nobady</FS> ever tells me this beatiful words, so thank you <FS corr="ChatGPT">chat gpt</FS><QC corr=".">,</QC> <DMCC corr="I">i</DMCC> know your not real<QM corr=",">\0</QM> but you are so good and <DMCC corr="I">i</DMCC> will take your <XNUC corr="advice"><FS corr="advices">advises</FS></XNUC> as something <DMCC corr="I">i</DMCC> must do<QR corr="\0">,</QR> <Z corr="to protect my brain and heart">to survive with my brain and my heart</Z>. It's just so difficult <QL corr="and">,</QL> scary<QM corr=",">\0</QM> and it even makes me mad. I have to be strong all<QR corr="\0">,</QR> the<QR corr="\0">,</QR> time, and <DMCC corr="I">i</DMCC>'m sick of it. I'm sick of feeling guilty towards my dying mom<QR corr="\0">,</QR> <WR corr="\0">my friends</WR> and my friends. </turn>
-	<turn type="chatbot" who="ChatGPT"> User, it's completely normal to feel overwhelmed, scared, and frustrated with everything you're going through. You're facing incredibly challenging circumstances, and it's okay to acknowledge that it's difficult.
-	Remember, it's essential to allow yourself to feel all the emotions you're experiencing. Bottling them up or pushing them aside won't make them go away. It's okay to feel angry, sad, guilty, or whatever else you may be feeling. You're human, and it's okay to have these emotions.
-	Taking care of yourself emotionally is just as crucial as taking care of your mom and everything else. Please don't hesitate to seek support when you need it, whether it's from friends, family, or professionals. You don't have to go through this alone.
-	And remember, being strong doesn't mean you have to do it all by yourself. It's okay to ask for help and lean on others when you need to. You're doing an incredible job navigating through a challenging situation, and you should be proud of yourself for that.
-	If you ever need someone to talk to or just to listen, I'm here for you, user. You're not alone, and there are people who care about you and want to support you through this difficult time.
-	Take care, and be kind to yourself. You're doing the best you can, and that's enough. </turn>
-</task>
+<file name="unimc_10.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unimc_10" area_of_study="Education sciences" age="20" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="upper intermediate level (B2)" years_study_range=">13 years" years_study="14" certificates="yes" certificates_level="B2" chatbot="ChatGPT" device="PC" collected_by="UniMc">
+	<task type="role play">
+		<turn type="student"> Write an email to request a quote from local plumbers for backflow testing. I need it done in the next 2 weeks. Keep it short and casual. </turn>
+		<turn type="chatbot" who="ChatGPT"> Subject: Request for Backflow Testing Quote
+		Hi there,
+		I hope this email finds you well. I'm reaching out because I'm in need of backflow testing for my property within the next two weeks. Could you please provide me with a quote for your services?
+		Looking forward to hearing back from you soon.
+		Thanks,
+		[Your Name] </turn>
+		<turn type="student"> <DMCC corr="Hi">hi</DMCC> there, thank you for asking me, sure <DMCC corr="I">i</DMCC> can <XVPR corr="provide you with">provide you</XVPR> a quote, what do <GPP corr="you">\0</GPP> think about 25 dollars? Waiting for your answer, thanks. User. </turn>
+		<turn type="chatbot" who="ChatGPT"> Subject: Re: Request for Backflow Testing Quote
+		Hi user,
+		Thanks for getting back to me so quickly! That sounds great. Could you confirm if the $25 quote includes all necessary testing and any potential additional charges?
+		Looking forward to your response.
+		Best regards,
+		[Your Name] </turn>
+		<turn type="student"> Hi there, here you are, I can say that the 25$ quote includes all necessary testing, but <GA corr="\0">the</GA> <FS corr="potential">potentional</FS> additional charges <Z corr="may">can</Z> cost more... Is it <DMCA corr="okay">ok</DMCA> with you? Text me soon, bye, user. </turn>
+		<turn type="chatbot" who="ChatGPT"> Subject: Re: Re: Request for Backflow Testing Quote
+		Hi user,
+		Thanks for clarifying. I understand there might be potential additional charges beyond the $25 base rate. Could you please provide more information on what those additional charges might entail? Once I have a clearer picture, I can confirm if it works for me.
+		Looking forward to your reply.
+		Best regards,
+		[Your Name] </turn>
+		<turn type="student"> Hey there, so about the <FS corr="potential">potentional</FS> additional charges, <DMCC corr="I">i</DMCC> can't tell you exactly how much <WO corr="they can"><FS corr="can">caan</FS> <GPP corr="they">it</GPP></WO> <LSV corr="be"><GVT corr="become">became</GVT></LSV>, by the way, <DMCC corr="I">i</DMCC> <FS corr="can">cas</FS> assure you that it <FS corr="won't">wont</FS> be more than maybe 25$ <WR corr="\0">plus</WR>. Waiting for your reply, <DMCC corr="I">i</DMCC> understand if it's not <DMCA corr="okay">ok</DMCA> with you, but I hope that I can help you anyway. Thank you, user. </turn>
+		<turn type="chatbot" who="ChatGPT"> Subject: Re: Re: Re: Request for Backflow Testing Quote
+		Hi user,
+		Thanks for your understanding. I appreciate your honesty regarding the potential additional charges. While I'm hesitant about the uncertainty, I value your assistance and would like to proceed with your services.
+		Could we schedule a time for the backflow testing within the next two weeks?
+		Looking forward to hearing from you.
+		Best regards,
+		[Your Name] </turn>
+		<turn type="student"> Thank you very much for your kindness and for this opportunity, if it's <DMCA corr="okay">ok</DMCA> with you, I think I can even start tomorrow, the <LSN corr="job">work</LSN> will be <LWCO corr="done">ended</LWCO> in 10 days, <LCS corr="unless"><FS corr="except">exept</FS></LCS> there <GVT corr="are">will be</GVT> any <GNC corr="problems">problem</GNC>. Thank you and see you tomorrow, I hope. Bye, user </turn>
+		<turn type="chatbot" who="ChatGPT"> Subject: Re: Re: Re: Re: Request for Backflow Testing Quote
+		Hi user,
+		That sounds perfect. Let's plan for tomorrow to get started with the backflow testing. I appreciate your promptness and willingness to accommodate my schedule. Looking forward to seeing you then.
+		Thanks again,
+		[Your Name] </turn>
+		<turn type="student"> Hi, thank you, I will be at yours at 8 tomorrow in the morning, bye, user </turn>
+		<turn type="chatbot" who="ChatGPT"> Subject: Re: Re: Re: Re: Re: Request for Backflow Testing Quote
+		Hi user,
+		Sounds good. See you tomorrow at 8 in the morning.
+		Take care,
+		[Your Name] </turn>
+		<turn type="student"> <DMCC corr="Hi">hi</DMCC>, sorry if <DMCC corr="I">i</DMCC>'m pressing you but can we talk about the payment<QC corr="?">,</QC> I wanted to know if <GPP corr="you">\0</GPP> wanted to pay soon after my work is done or maybe <WR corr="\0">even</WR> later<QC corr=".">,</QC> what do you think? Thanks, user </turn>
+		<turn type="chatbot" who="ChatGPT"> Subject: Re: Re: Re: Re: Re: Re: Request for Backflow Testing Quote
+		Hi user,
+		No problem at all. Let's discuss payment terms. I'm comfortable paying upon completion of the work. Does that work for you?
+		Looking forward to tomorrow.
+		Best regards,
+		[Your Name] </turn>
+		<turn type="student"> Hi, that will be perfect for me, do you prefer paying me <LSPR corr="in">on</LSPR> cash or by <GA corr="\0">a</GA> credit card? Best regards, user </turn>
+		<turn type="chatbot" who="ChatGPT"> Subject: Re: Re: Re: Re: Re: Re: Re: Request for Backflow Testing Quote
+		Hi user,
+		I prefer paying by credit card. Could you please provide me with the necessary information to process the payment?
+		Thanks,
+		[Your Name] </turn>
+		<turn type="student"> Hi, of <FS corr="course">corse</FS>, after <DMCC corr="I">i</DMCC> <GVT corr="have finished">will have finished</GVT> my work, <DMCC corr="I">i</DMCC> will <GVT corr="come">came</GVT> <LSPR corr="to">at</LSPR> you with a credit <GNN corr="card">cards</GNN> <LWCO corr="payment terminal">poss</LWCO>, so you can pay me without coming <LSPR corr="to">at</LSPR> <GPO corr="me">mine</GPO>. See <DMCA corr="you">ya</DMCA>, user. </turn>
+		<turn type="chatbot" who="ChatGPT"> Subject: Re: Re: Re: Re: Re: Re: Re: Re: Request for Backflow Testing Quote
+		Hi user,
+		That works for me. Looking forward to seeing you tomorrow.
+		Take care,
+		[Your Name] </turn>
+		<turn type="student"> Hi, take care and <FS corr="remember">remeber</FS> to wake up early tomorrow, <DMCC corr="I">i</DMCC>'ll need your help understanding your needs in the best way possible<QC corr=".">,</QC> either way, you could maybe <GVM corr="explain">explains</GVM> them to me now, if <GPD corr="that">\0</GPD> is <FS corr="comfortable">comfrotable</FS> with you<QC corr=".">,</QC> thank you, user </turn>
+		<turn type="chatbot" who="ChatGPT"> Hi user,
+		Thanks for the reminder. I'll make sure to wake up early. As for my needs, everything related to the backflow testing should be pretty straightforward, but I'll make sure to explain them to you tomorrow when you arrive.
+		See you then,
+		[Your Name] </turn>
+		<turn type="student"> Hi, <DMCC corr="I">i</DMCC> would really appreciate <GPP corr="it">\0</GPP> if you <GVT corr="told">tell</GVT> me now, thank you. User. </turn>
+		<turn type="chatbot" who="ChatGPT"> Hi user,
+		Certainly, I appreciate your promptness. Essentially, I just need a thorough backflow testing to ensure the plumbing system is functioning correctly and there are no issues with water contamination. If you could inspect all relevant areas and provide a comprehensive assessment, that would be fantastic.
+		Looking forward to your assistance tomorrow.
+		Best regards,
+		[Your Name] </turn>
+		<turn type="student"> Hi, thank you very much<QC corr=".">,</QC> yes of course <DMCC corr="I">i</DMCC>'ll inspect any relevant areas and provide a comprehensive <FS corr="assessment">assesment</FS><QC corr=".">,</QC> <DMCC corr="I">i</DMCC> <GVT corr="would">will</GVT> <LSV corr="feel">be</LSV> more <LWCO corr="confident">sicure</LWCO> if <DMCC corr="I">i</DMCC> <GVAUX corr="could">can</GVAUX> even control the quality of the water, just in case, to avoid any sanitary problems<QC corr=".">,</QC> what do you think about it? Bye, user. </turn>
+		<turn type="chatbot" who="ChatGPT"> Hi user,
+		That sounds like a prudent measure. Controlling the quality of the water would certainly add an extra layer of assurance. I appreciate your attention to detail in ensuring everything is in top-notch condition.
+		See you tomorrow,
+		[Your Name] </turn>
+		<turn type="student"> Hi, oh no, there <FS corr="won't">wont</FS> be any <GNN corr="extras">extra</GNN> for controlling the water<QC corr=".">,</QC> it's just a pleasure <DMCC corr="I">i</DMCC> want to do for you, because, <FS corr="either">eather</FS> way, we're friends, right? </turn>
+		<turn type="chatbot" who="ChatGPT"> Hi user,
+		That's incredibly kind of you. I'm truly grateful for your generosity and friendship. Your dedication to providing exceptional service is truly commendable.
+		Looking forward to seeing you tomorrow, my friend.
+		Take care,
+		[Your Name] </turn>
+		<turn type="student"> <DMCC corr="Hi">hi</DMCC>, you're <FS corr="welcome">welcame</FS>, <DMCC corr="I">i</DMCC>'m happy you appreciate my kindness, but <DMCC corr="I">i</DMCC> hope that maybe one day you will <LP corr="return the favour">recharge a favore</LP> <WR corr="\0">to me</WR>. <DMCC corr="See">see</DMCC> you tomorrow, user. </turn>
+		<turn type="chatbot" who="ChatGPT"> Hi user,
+		Absolutely, I'll definitely keep that in mind. It's always nice to pay kindness forward. Looking forward to our meeting tomorrow.
+		Take care until then,
+		[Your Name] </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC> will, <FS corr="you">youb</FS> too, my friend. User </turn>
+		<turn type="chatbot" who="ChatGPT"> Thanks, user. Have a great evening. See you tomorrow!
+		Best regards,
+		[Your Name] </turn>
+		<turn type="student"> Hey sorry, I know <DMCC corr="I">i</DMCC> told you that tomorrow <DMCC corr="I">i</DMCC> <GVAUX corr="would">had to</GVAUX> start working for you, but <DMCC corr="I">i</DMCC> completely forgot that <DMCC corr="I">i</DMCC> can't be there until <DMCC corr="Friday">friday</DMCC>, is that a big problem for you? User </turn>
+		<turn type="chatbot" who="ChatGPT"> Hi user,
+		No worries at all. Friday works for me. Let's plan to meet then.
+		Thanks for letting me know,
+		[Your Name] </turn>
+		<turn type="student"> <DMCC corr="Perfect"><FS corr="perfect">hperfect</FS></DMCC> </turn>
+		<turn type="chatbot" who="ChatGPT"> Great! Looking forward to seeing you on Friday. If you need anything else in the meantime, feel free to reach out.
+		Take care,
+		[Your Name] </turn>
+	</task>
+	<task type="small talk">
+		<turn type="student"> <DMCC corr="Sorry">sorry</DMCC>, can <DMCC corr="I">i</DMCC> ask you a question<QR corr="\0">,</QR> as your friend? </turn>
+		<turn type="chatbot" who="ChatGPT"> Of course, user. Feel free to ask anything. What's on your mind? </turn>
+		<turn type="student"> I was just overthinking about different things and feelings.. <DMCC corr="You">you</DMCC> know, <DMCC corr="I">i</DMCC>'ve been with my <FS corr="boyfriend">biyfriend</FS> for a while now, and <DMCC corr="I">i</DMCC>'m sure to be completely in <FS corr="love">lovbe</FS> with him, but <LSADV corr="sometimes">some time</LSADV> <DMCC corr="I">i</DMCC> feel like it's not the same anymore, I don't know if you can understand me, but it's a rough feeling.. <DMCC corr="What">what</DMCC> do you think<QM corr="?">\0</QM> </turn>
+		<turn type="chatbot" who="ChatGPT"> I understand, user. Relationships can have their ups and downs, and it's normal to have doubts or moments where things don't feel quite the same. It's important to communicate openly with your partner about how you're feeling. Perhaps you could plan some quality time together to reconnect and discuss any concerns you may have. Remember, it's okay to seek support from trusted friends or even a professional if you feel overwhelmed. Trust your instincts and take the time you need to explore your feelings and what they mean for your relationship. You're not alone in this, and I'm here to support you however I can. </turn>
+		<turn type="student"> Thank you very much, it's just that I don't <FS corr="know">now</FS> what to do, <DMCC corr="I">i</DMCC> have this problem at home that often <LWCO corr="obliges"><GVN corr="obligates">obligate</GVN></LWCO> me to stay in and take care of my mom (she has cancer). I know it's <GA corr="the">a</GA> right <FS corr="choice">choise</FS> to <LSV corr="make">do</LSV>, but <DMCC corr="I">i</DMCC> feel like <DMCC corr="I">i</DMCC>'m losing <FS corr="my">m,y</FS> time with my boyfriend, my age, my friends, everything. Even if family <GVT corr="comes">came</GVT> first, <DMCC corr="I">i</DMCC>'m really feeling down </turn>
+		<turn type="chatbot" who="ChatGPT"> I'm really sorry to hear about your mom's condition, user. It's completely understandable that you're feeling torn between taking care of her and maintaining your other relationships and personal life. It's essential to remember that it's okay to feel this way and that you're doing an incredible job balancing everything.
+		Taking care of a loved one with cancer can be emotionally and physically exhausting, and it's normal to feel overwhelmed and drained at times. It's crucial to prioritize self-care and find ways to recharge, even if it means asking for help from friends, other family members, or seeking support from community resources.
+		Communication with your boyfriend about your situation and feelings is key. Expressing your concerns and discussing potential solutions together can help strengthen your relationship and alleviate some of the stress you're feeling. Remember, a supportive partner will understand and be there for you during challenging times.
+		Also, don't forget to take some time for yourself whenever possible, even if it's just a short break to do something you enjoy. Your well-being matters too, and it's okay to prioritize yourself sometimes.
+		If you ever need someone to talk to or support, don't hesitate to reach out to friends, family, or even professionals who can provide guidance and assistance. You're not alone in this, and there are people who care about you and want to help.
+		Take care, user. You're doing the best you can, and that's admirable. </turn>
+		<turn type="student"> <DMCC corr="Nobody"><FS corr="nobody">nobady</FS></DMCC> ever tells me this <FS corr="beautiful">beatiful</FS> words, so thank you <DMCC corr="ChatGPT">chat gpt</DMCC>, <DMCC corr="I">i</DMCC> know <FS corr="you're">your</FS> not real but you are so good and <DMCC corr="I">i</DMCC> will take your <XNUC corr="advice"><FS corr="advices">advises</FS></XNUC> as something <DMCC corr="I">i</DMCC> must do<QR corr="\0">,</QR> to survive with my brain and my heart. It's just so difficult<QL corr="and">,</QL> scary<QM corr=",">\0</QM> and it even makes me mad. I have to be strong all<QR corr="\0">,</QR> the<QR corr="\0">,</QR> time, and <DMCC corr="I">i</DMCC>'m sick of it. I'm sick of feeling guilty towards my dying mom<QR corr="\0">,</QR> <WR corr="\0">my friends</WR> and my friends. </turn>
+		<turn type="chatbot" who="ChatGPT"> User, it's completely normal to feel overwhelmed, scared, and frustrated with everything you're going through. You're facing incredibly challenging circumstances, and it's okay to acknowledge that it's difficult.
+		Remember, it's essential to allow yourself to feel all the emotions you're experiencing. Bottling them up or pushing them aside won't make them go away. It's okay to feel angry, sad, guilty, or whatever else you may be feeling. You're human, and it's okay to have these emotions.
+		Taking care of yourself emotionally is just as crucial as taking care of your mom and everything else. Please don't hesitate to seek support when you need it, whether it's from friends, family, or professionals. You don't have to go through this alone.
+		And remember, being strong doesn't mean you have to do it all by yourself. It's okay to ask for help and lean on others when you need to. You're doing an incredible job navigating through a challenging situation, and you should be proud of yourself for that.
+		If you ever need someone to talk to or just to listen, I'm here for you, user. You're not alone, and there are people who care about you and want to support you through this difficult time.
+		Take care, and be kind to yourself. You're doing the best you can, and that's enough. </turn>
+	</task>
+</text>
 </file>

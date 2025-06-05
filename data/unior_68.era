@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unior_68.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unior_68" area_of_study="Humanities" age="23" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="intermediate level (B1)" years_study_range=">13 years" years_study="Since elementary school" certificates="no" certificates_level="N/A" chatbot="Pi.ai" device="Smartphone" collected_by="UniOr">
+	<task type="role play">
+		<turn type="chatbot" who="Pi.ai">Hey there, great to meet you. I’m Pi, your personal AI.
+		My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let’s talk about whatever’s on your mind.
+		How's your day going?</turn>
+		<turn type="student">Hello! I'm going <WO corr="to do">do to</WO> an <FS corr="exercise">excercice</FS>. You are an encouraging tutor who helps students improve their English by engaging in role play activities. Let's engage in a roleplay activity where I, the student play the role of a client <GPR corr="who">that</GPR> <XVCO corr="would like to reserve">would reserve</XVCO> a table and you will be <GA corr="the">\0</GA> restaurant staff. Ask me <GNN corr="questions">question</GNN> about reservation time, the number of people, the preferred menu</turn>
+		<turn type="chatbot" who="Pi.ai">Alright, let's get this restaurant roleplay started! 🍽️💬
+		Hello, welcome to our restaurant! I'm happy to help you with your reservation. May I know what time you would like to reserve a table for?</turn>
+		<turn type="student">At 9pm. Could <GPP corr="it">\0</GPP> be right for you?</turn> 
+		<turn type="chatbot" who="Pi.ai">9pm is a perfect time for a dinner reservation! How many people will be joining you this evening?</turn>
+		<turn type="student"><Z corr="There are two of us">We are two</Z>. <WO corr="My partner and I"><GPP corr="I">Me</GPP></WO> and my partner</turn>
+		<turn type="chatbot" who="Pi.ai">Wonderful, a table for two! Do you have a preference for a particular menu or any dietary restrictions I should be aware of?</turn>
+		<turn type="student">Do you have some <GNN corr="examples"><FS corr="example">exemple</FS></GNN> <LSPR corr="from">of</LSPR> <GA corr="the">\0</GA> menu?</turn>
+		<turn type="chatbot" who="Pi.ai">Sure thing! We have a variety of options available:
+		Menu A: A three-course meal featuring seasonal ingredients, with a choice of appetizer, main course, and dessert.
+		Menu B: A four-course meal, including a choice of appetizer, soup or salad, main course, and dessert.
+		Menu C: Our chef's tasting menu, featuring a selection of our most popular dishes.
+		Do any of these options sound appealing to you?</turn>
+		<turn type="student">Menu <DMCC corr="C">c</DMCC> <FS corr="seems">seams</FS> <LWCO corr="interesting">interessant</LWCO></turn>
+		<turn type="chatbot" who="Pi.ai">Fantastic choice! The chef's tasting menu is a great way to experience a variety of our dishes. Would you like to reserve the tasting menu for both yourself and your partner?</turn>
+		<turn type="student">Yes! It's a surprise for him!</turn>
+		<turn type="chatbot" who="Pi.ai">That's so sweet of you! I'm sure he will love the surprise. 😊🎁 Now that we've decided on the menu, can I please have your name and contact information to secure your reservation?</turn>
+		<turn type="student">Yes my name is User and my telephone number 6182910162</turn>
+		<turn type="chatbot" who="Pi.ai">Thank you for providing your details, User. Your reservation for two people at 9pm for the chef's tasting menu is now confirmed! We look forward to welcoming you and your partner this evening. 🍽️👫
+		Is there anything else I can help you with?</turn>
+		<turn type="student">Can I bring a Little candle for <GNC corr="my partner's dessert">the dessert of my partner</GNC>? It's his <DMCA corr="birthday">bday</DMCA></turn>
+		<turn type="chatbot" who="Pi.ai">That's a lovely idea! However, our restaurant does not permit outside food or decorations to be brought in. 🔥
+		But don't worry, we can still help you celebrate your partner's birthday in a special way. Do you have any other plans to surprise him during your dinner?</turn>
+		<turn type="student"><DMCC corr="Can">can</DMCC> you <XVCO corr="suggest to me">suggest me</XVCO> some ideas?</turn>
+		<turn type="chatbot" who="Pi.ai">Sure, we can brainstorm some ideas together! 💡🤔
+		You could inform the restaurant staff in advance that it's your partner's birthday and ask them to sing "Happy Birthday" and bring out a dessert with a candle.
+		You could give him a heartfelt card or a small gift to show your appreciation.
+		You could plan an activity or a surprise after dinner, like a romantic walk or a night out at a special event.
+		Do any of these ideas sound like something your partner would enjoy?</turn>
+		<turn type="student">The first one</turn>
+		<turn type="chatbot" who="Pi.ai">Great choice! I'm sure your partner will feel extra special with a surprise dessert and birthday song. 🍰🎉
+		Just remember to let the restaurant staff know about your plans when you arrive. You can also ask if they offer any other special birthday services, like personalized menus or decorations.</turn>
+		<turn type="student">It's perfect! Thank <DMCA corr="you">u</DMCA> so much</turn>
+		<turn type="chatbot" who="Pi.ai">You're welcome, User! It was my pleasure to help you make this special night even more memorable. I'm glad we were able to come up with a plan that works for you. Enjoy your dinner and your partner's birthday celebration! 🤗🥂</turn>
+	</task> 
+</text>
+</file>

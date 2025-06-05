@@ -45,23 +45,19 @@ def get_inner_xml(element):
     out_string = ''.join(out)
     return out_string
 
-def main():
-    pd.set_option('display.max_rows', 100)
-    # pd.set_option('display.max_colwidth', 75)
-    # Parse XML file
-    for root, dirs, files in os.walk('./data'):
+def convert_files(walk_path = './data'):
+    df = pd.DataFrame()
+    for root, dirs, files in os.walk(walk_path):
         for F in files:
             if F.endswith('.era'):
                 filename = os.path.join(root, F)
                 tree = ET.parse(filename)
-                root = tree.getroot()
+                xml_root = tree.getroot()
 
-                # Extract <text> metadata
-                elem = root.find(".//text")
+                elem = xml_root.find(".//text")
                 meta = elem.attrib
                 meta_df = pd.DataFrame([meta])
 
-                # Extract annotated turns
                 turns = []
                 for turn in elem.findall(".//turn"):
                     speaker = turn.attrib.get("who", "student")
@@ -78,13 +74,15 @@ def main():
                         "text_og": text_og,
                         "text_ok": text_ok,
                     })
-                    ...
 
-                # Create conversation DataFrame
                 turns_df = pd.DataFrame(turns)
                 turns_df['text_an'] = turns_df['text_an'].apply(lambda x: x if x else np.nan)
-                # turns_df = turns_df.dropna()
-                print(turns_df)
+                turns_df = turns_df[turns_df['speaker'] == 'student']
+                df = pd.concat([df, turns_df])
+    return df.reset_index()
+
+def main():
+    convert_files()
 
 if __name__ == "__main__":
     main()

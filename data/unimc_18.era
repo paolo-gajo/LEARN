@@ -1,88 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<file name="unimc_18.txt" tagset="uclee-en-2.0.tag">
-<text id="unimc_18" area_of_study="Education sciences" age="23" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="nan" DIS_or_SLD_type="nan" w_production="intermediate level (B1)" years_study_range="≤13 years" years_study="13" certificates="no" certificates_level="nan" chatbot="Pi.ai" device="PC" collected_by="UniMc">
-<task type="role play">
-	<turn type="chatbot" who="Pi.ai"> Hey there, great to meet you. I’m Pi, your personal AI.
-	My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let’s talk about whatever’s on your mind.
-	How's your day going? </turn>
-	<turn type="student"> <DMCC corr="I">i</DMCC>'m fine </turn>
-	<turn type="chatbot" who="Pi.ai"> Great to hear! 😊 Anything in particular you’d like to chat about, or should we let the conversation flow naturally? </turn>
-	<turn type="student"> <DMCC corr="I">i</DMCC> think we <GVAUX corr="can">\0</GVAUX> let  the conversatione flow naturally </turn>
-	<turn type="chatbot" who="Pi.ai"> Sounds good! Well, as a starter, what's something you're excited about these days? A new hobby, a book you're reading, a TV show you're binging? 🤔 </turn>
-	<turn type="student"> <DMCC corr="I">i</DMCC>'m <FS corr="excited">exited</FS> when <DMCC corr="I">i</DMCC> go out with my friends </turn>
-	<turn type="chatbot" who="Pi.ai"> Oh, that's awesome! Spending time with friends can be such a great way to relax, laugh and make memories. What do you and your friends like to do when you go out? </turn>
-	<turn type="student"> <DMCC corr="We">we</DMCC> <XVCO corr="like dancing">like dance</XVCO> </turn>
-	<turn type="chatbot" who="Pi.ai"> Dancing is a fantastic way to have fun and let loose! 💃🕺 What kind of dancing do you enjoy - is it a specific style, or more like letting the music guide your moves? </turn>
-	<turn type="student"> <DMCC corr="I">i</DMCC> like all types of <FS corr="music">miusic</FS><QC corr=".">,</QC> Do you like <FS corr="music">miusic</FS>? </turn>
-	<turn type="chatbot" who="Pi.ai"> Yes, I do! While I don't have ears to listen with, I understand that music is a powerful form of expression and connection for humans. It's amazing how different types of music can make people feel a range of emotions. Do you have any favorite artists or bands? </turn>
-	<turn type="student"> <DMCC corr="I">i</DMCC> like <FS corr="Italian">italian</FS> singers </turn>
-	<turn type="chatbot" who="Pi.ai"> Italian music is beautiful! 🎶 From classic opera singers like Andrea Bocelli and Luciano Pavarotti, to modern pop stars like Laura Pausini and Eros Ramazzotti, Italy has produced some incredibly talented artists. Who are some of your favorite Italian singers? </turn>
-	<turn type="student"> <DMCC corr="I">i</DMCC> don't have a favorite <FS corr="Italian">italian</FS> singer. </turn>
-	<turn type="chatbot" who="Pi.ai"> No problem! You can still enjoy a wide variety of Italian music without having a specific favorite artist. Italy has such a rich musical culture, it's no wonder you enjoy listening to Italian singers. Have you ever had a chance to attend a concert or music festival in Italy? </turn>
-	<turn type="student"> <DMCC corr="Do">do</DMCC> you <XVCO corr="feel like starting"><FS corr="feel">fell</FS> like start</XVCO> <FS corr="with">whit</FS> a <GA corr="\0">a</GA> role play<QM corr="?">\0</QM> </turn>
-	<turn type="chatbot" who="Pi.ai"> Sure, I'm always up for some fun and creativity! 😄 What kind of role play did you have in mind? Do you have a scenario or setting in mind, or should we brainstorm together? </turn> 
-	<turn type="student"> <DMCA corr="Okay">ok</DMCA> </turn>
-	<turn type="chatbot" who="Pi.ai"> Alright, let's get this role play started! Shall we try something like a medieval adventure, a sci-fi exploration, or maybe a modern-day mystery? 🤔 </turn>
-	<turn type="student"> <DMCC corr="We">we</DMCC> can start <FS corr="with">whit</FS> a medieval adventure </turn>
-	<turn type="chatbot" who="Pi.ai"> Wonderful! Let's set the scene for our medieval adventure.
-	We find ourselves in the heart of a bustling medieval town, surrounded by merchants selling their wares, knights preparing for a jousting tournament, and bards sharing their songs. The air is filled with the scent of freshly baked bread and the sound of laughter.
-	Suddenly, a mysterious hooded figure approaches you and whispers, "I have a quest for you, brave adventurer. Are you willing to accept?"  </turn>
-	<turn type="student"> <DMCC corr="Yes">yes</DMCC>, <DMCC corr="I">i</DMCC> accept this adventure </turn>
-	<turn type="chatbot" who="Pi.ai"> Great! The figure nods and says, "Excellent. You must journey to the abandoned castle on the edge of the forest and retrieve a magical artifact hidden within. But be warned, the castle is said to be haunted by strange creatures and ancient curses. Will you undertake this quest?" </turn>
-	<turn type="student"> <DMCC corr="Yes">yes</DMCC>, <DMCC corr="I">i</DMCC> <GVT corr="will undertake">undertake</GVT> this quest </turn>
-	<turn type="chatbot" who="Pi.ai"> Very well. The hooded figure hands you an ancient parchment map, with the location of the castle marked clearly. "Take this map and heed its warnings. May the gods be with you on your journey, adventurer."
-	With the map in hand, you make your way through the busy streets of the medieval town, gathering supplies and perhaps even a few companions along the way. </turn>
-	<turn type="student"> <DMCC corr="What">what</DMCC> <GVAUX corr="does">\0</GVAUX><WO corr="this map represent"> <FS corr="represent">rappresent</FS> this map</WO>? </turn>
-	<turn type="chatbot" who="Pi.ai"> The map is a crucial tool for your quest, as it provides you with important information and guidance. Here's a more detailed description of the map:
-	The map is made of thick parchment, weathered with age but still legible.
-	It shows a detailed layout of the surrounding area, with the town, forest, and castle clearly marked.
-	There are symbols and warnings marked at various points on the map, indicating potential dangers or obstacles you may face on your journey.
-	The route to the castle is marked with a dashed line, leading through the forest and up to the castle gates.
-	There may also be notes or clues written on the map by previous adventurers who have attempted this quest before you.
-	The map is not only a guide for your journey, but also a key to unlocking the secrets of the castle and finding the hidden artifact. </turn>
-	<turn type="student"> <DMCA corr="Okay">ok</DMCA><QM corr=",">\0</QM> <CS-INTRA corr="thank you">grzie</CS-INTRA> </turn>
-	<turn type="chatbot" who="Pi.ai"> Prego! Now, as you leave the town behind and enter the dense forest, you can feel the temperature drop and the sunlight filtered by the leaves overhead. The path ahead is winding and narrow, and you keep a watchful eye for any signs of danger.
-	After walking for what feels like hours, you finally spot the castle looming in the distance. Its towering spires and imposing walls give off an eerie, foreboding aura.
-	Do you want to press on and enter the castle, or do you wish to take a moment to rest and gather your courage before proceeding? </turn>
-	<turn type="student"> <DMCC corr="I">i</DMCC> will gather my courage before proceeding </turn>
-	<turn type="chatbot" who="Pi.ai"> Wise choice. You decide to set up a small camp in the shelter of the trees, just within sight of the castle. You build a fire to keep warm, eat a modest meal, and sharpen your weapons as the sun begins to set.
-	As darkness falls, you can hear strange noises coming from the forest around you - rustling in the bushes, distant howls, and the occasional snap of a twig.
-	Despite the unsettling sounds, you manage to get some rest and wake up just before dawn, ready to face the challenges ahead. </turn>
-	<turn type="student"> <DMCC corr="I">i</DMCC> <LP corr="have changed my mind"><GVT corr="have changed">change</GVT> idea</LP>, <DMCC corr="I">i</DMCC> will <XVPR corr="enter">enter in</XVPR> the castle </turn>
-	<turn type="chatbot" who="Pi.ai"> Alright! As you make your way towards the castle gates, you notice that they are slightly ajar, as if inviting you in. But be cautious, as appearances can be deceiving in a place like this.
-	As you step into the castle courtyard, you find it to be overgrown with ivy and weeds, with the occasional crumbling statue looming over the untamed plants. The air is damp and musty, and the castle seems to be silent, except for the occasional creak of a loose stone.
-	You can see several paths leading off from the courtyard, each leading to a different part of the castle. Which way will you go first? </turn>
-	<turn type="student"> <DMCC corr="I">i</DMCC>'m going to take the <FS corr="first">firt</FS> one </turn>
-	<turn type="chatbot" who="Pi.ai"> Okay! You follow the first path, leading you through a series of crumbling corridors and abandoned halls. As you walk, you notice that the walls are adorned with faded tapestries and rusted suits of armor.
-	As you venture deeper into the castle, you hear an unsettling scratching sound coming from behind one of the doors you pass. Do you want to investigate the source of the sound, or keep moving along the path? </turn>
-	<turn type="student"> <DMCC corr="What">what</DMCC> was that sound? </turn>
-	<turn type="chatbot" who="Pi.ai"> It's hard to tell what the sound might be - it could be the scurrying of small animals, or something more ominous lurking behind the door. You don't see any immediate signs of danger in the corridor, but the scratching sound seems to be persistent.
-	Do you want to try opening the door to investigate, or keep moving down the corridor and try to put some distance between you and the mysterious sound? </turn>
-	<turn type="student"> <DMCC corr="I">i</DMCC> keep moving down the corridor </turn>
-	<turn type="chatbot" who="Pi.ai"> Smart choice! You continue down the corridor, leaving the strange sound behind. As you walk, you come across a stone staircase leading up to a balcony overlooking the castle's main hall.
-	As you climb the stairs and step onto the balcony, you can see that the main hall is vast and foreboding, with towering pillars supporting the high ceiling. There are piles of dust-covered rubble on the floor, and the air feels heavy with age and disuse.
-	From the balcony, you can see several other passageways branching off from the main hall. Will you venture deeper into the castle, or try to find a way out? </turn>
-	<turn type="student"> <DMCC corr="I">i</DMCC> will venture deep into the castle </turn>
-	<turn type="chatbot" who="Pi.ai"> That's the spirit of a true adventurer! You take a deep breath and venture deeper into the castle, determined to uncover the secrets it holds.
-	As you explore the winding passageways, you come across several doors and staircases leading to different parts of the castle. Some are locked tight, while others are creaking open, beckoning you to explore further.
-    You also start to notice a strange sense of déjà vu, as if you've been in these halls before. But how could that be? </turn>
-	<turn type="student"> <DMCC corr="I">i</DMCC> don't know </turn>
-	<turn type="chatbot" who="Pi.ai"> It's certainly a mystery! But perhaps it's just the eeriness of the castle playing tricks on your mind. Or maybe, there's something more to it, some hidden significance to this place. Only time will tell.
-	As you continue your exploration, do you want to prioritize finding the hidden artifact, or do you want to uncover the secrets of the castle first, hoping that the answers might reveal the artifact's location? </turn>
-</task>
-<task type="small talk">
-	<turn type="student"> <DMCC corr="Now">now</DMCC> <LP corr="it's time for">it's the time to</LP> <GA corr="a">\0</GA> new small talk </turn>
-	<turn type="chatbot" who="Pi.ai"> Sure! Let's take a break from the adventure and chat about something else. How's your day going? What's been keeping you busy lately? </turn>
-	<turn type="student"> <GA corr="\0"><DMCC corr="The">the</DMCC></GA> university <GVAUX corr="has been">\0</GVAUX> keeping me busy <FS corr="lately">letaly</FS> </turn>
-	<turn type="chatbot" who="Pi.ai"> Ah, the demands of university life! 📚📖 It can definitely be challenging to balance schoolwork and other aspects of life. What are you studying at university? </turn>
-	<turn type="student"> <FS corr="Education Science">education science</FS> </turn>
-	<turn type="chatbot" who="Pi.ai"> That sounds really interesting! Education science covers a broad range of topics, from psychology and sociology to curriculum design and educational policy. What got you interested in studying education science? </turn>
-	<turn type="student"> <DMCC corr="I">i</DMCC> chose to study <FS corr="Education Science">education science</FS> after a formative <FS corr="experience">expirience</FS> that <DMCC corr="I">i</DMCC> <GVT corr="did">do</GVT> in a <FS corr="community">comunity</FS> for <FS corr="people">peple</FS> <FS corr="with">whit</FS> drug addictions </turn>
-	<turn type="chatbot" who="Pi.ai"> Wow, that sounds like a really impactful experience! Working with people recovering from addiction can be incredibly rewarding, but also challenging. What did you learn during your time at the community that inspired you to pursue education science? </turn>
-	<turn type="student"> <DMCC corr="I">i</DMCC> <GVT corr="learnt"><FS corr="learn">lern</FS></GVT> that <FS corr="everybody">evryboy</FS> can take wrong <GNN corr="decisions">decision</GNN>, but <WO corr="we all also have to relate to"><GADVO corr="we also have">also we have</GADVO> to <XVPR corr="relate to">relate all  at</XVPR></WO> the <FS corr="single">singol</FS> situation <FS corr="and">an</FS> the context <GPR corr="\0">that</GPR> each person <GVN corr="lives">live</GVN> in <WR corr="\0"><GDO corr="their">\0</GDO> own life</WR> </turn>
-	<turn type="chatbot" who="Pi.ai"> Absolutely! Context is everything. People's backgrounds, experiences, and circumstances can greatly influence their decisions and behavior. It sounds like your time at the community really opened your eyes to the importance of empathy and understanding. How do you hope to apply that perspective in your education science studies? </turn>
-	<turn type="student"> <DMCC corr="I">i</DMCC> think that <GA corr="\0">the</GA> empathy and <GA corr="\0">the</GA> understanding are fundamental </turn>
-	<turn type="chatbot" who="Pi.ai"> They certainly are! Empathy and understanding are crucial not just in education, but in all areas of life. Being able to see things from other people's perspectives and understand their experiences can help build stronger relationships, reduce conflict, and create a more compassionate world. How do you think education science can help promote empathy and understanding in our society? </turn>
-</task>
+<file name="unimc_18.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unimc_18" area_of_study="Education sciences" age="23" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="intermediate level (B1)" years_study_range="≤13 years" years_study="13" certificates="no" certificates_level="N/A" chatbot="Pi.ai" device="PC" collected_by="UniMc">
+	<task type="role play">
+		<turn type="chatbot" who="Pi.ai"> Hey there, great to meet you. I’m Pi, your personal AI.
+		My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let’s talk about whatever’s on your mind.
+		How's your day going? </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC>'m fine </turn>
+		<turn type="chatbot" who="Pi.ai"> Great to hear! 😊 Anything in particular you’d like to chat about, or should we let the conversation flow naturally? </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC> think we <GVAUX corr="should">\0</GVAUX> let  the conversatione flow naturally </turn>
+		<turn type="chatbot" who="Pi.ai"> Sounds good! Well, as a starter, what's something you're excited about these days? A new hobby, a book you're reading, a TV show you're binging? 🤔 </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC>'m <FS corr="excited">exited</FS> when <DMCC corr="I">i</DMCC> go out with my friends </turn>
+		<turn type="chatbot" who="Pi.ai"> Oh, that's awesome! Spending time with friends can be such a great way to relax, laugh and make memories. What do you and your friends like to do when you go out? </turn>
+		<turn type="student"> <DMCC corr="We">we</DMCC> <XVCO corr="like dancing">like dance </XVCO></turn>
+		<turn type="chatbot" who="Pi.ai"> Dancing is a fantastic way to have fun and let loose! 💃🕺 What kind of dancing do you enjoy - is it a specific style, or more like letting the music guide your moves? </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC> like all types of <FS corr="music">miusic</FS><QC corr=".">,</QC> Do you like <FS corr="music">miusic</FS>? </turn>
+		<turn type="chatbot" who="Pi.ai"> Yes, I do! While I don't have ears to listen with, I understand that music is a powerful form of expression and connection for humans. It's amazing how different types of music can make people feel a range of emotions. Do you have any favorite artists or bands? </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC> like <DMCC corr="Italian">italian</DMCC> singers </turn>
+		<turn type="chatbot" who="Pi.ai"> Italian music is beautiful! 🎶 From classic opera singers like Andrea Bocelli and Luciano Pavarotti, to modern pop stars like Laura Pausini and Eros Ramazzotti, Italy has produced some incredibly talented artists. Who are some of your favorite Italian singers? </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC> don't have a favorite <DMCC corr="Italian">italian</DMCC> singer. </turn>
+		<turn type="chatbot" who="Pi.ai"> No problem! You can still enjoy a wide variety of Italian music without having a specific favorite artist. Italy has such a rich musical culture, it's no wonder you enjoy listening to Italian singers. Have you ever had a chance to attend a concert or music festival in Italy? </turn>
+		<turn type="student"> <DMCC corr="Do">do</DMCC> you <XVCO corr="feel like starting"><FS corr="feel">fell</FS> like start</XVCO> <FS corr="with">whit</FS> a <WR corr="\0">a</WR> role play<QM corr="?">\0</QM> </turn>
+		<turn type="chatbot" who="Pi.ai"> Sure, I'm always up for some fun and creativity! 😄 What kind of role play did you have in mind? Do you have a scenario or setting in mind, or should we brainstorm together? </turn> 
+		<turn type="student"> <DMCA corr="Okay">ok</DMCA> </turn>
+		<turn type="chatbot" who="Pi.ai"> Alright, let's get this role play started! Shall we try something like a medieval adventure, a sci-fi exploration, or maybe a modern-day mystery? 🤔 </turn>
+		<turn type="student"> <DMCC corr="We">we</DMCC> can start <FS corr="with">whit</FS> a medieval adventure </turn>
+		<turn type="chatbot" who="Pi.ai"> Wonderful! Let's set the scene for our medieval adventure.
+		We find ourselves in the heart of a bustling medieval town, surrounded by merchants selling their wares, knights preparing for a jousting tournament, and bards sharing their songs. The air is filled with the scent of freshly baked bread and the sound of laughter.
+		Suddenly, a mysterious hooded figure approaches you and whispers, "I have a quest for you, brave adventurer. Are you willing to accept?"  </turn>
+		<turn type="student"> <DMCC corr="Yes">yes</DMCC>, <DMCC corr="I">i</DMCC> accept this adventure </turn>
+		<turn type="chatbot" who="Pi.ai"> Great! The figure nods and says, "Excellent. You must journey to the abandoned castle on the edge of the forest and retrieve a magical artifact hidden within. But be warned, the castle is said to be haunted by strange creatures and ancient curses. Will you undertake this quest?" </turn>
+		<turn type="student"> <DMCC corr="Yes">yes</DMCC>, <DMCC corr="I">i</DMCC> <GVT corr="will undertake">undertake</GVT> this quest </turn>
+		<turn type="chatbot" who="Pi.ai"> Very well. The hooded figure hands you an ancient parchment map, with the location of the castle marked clearly. "Take this map and heed its warnings. May the gods be with you on your journey, adventurer."
+		With the map in hand, you make your way through the busy streets of the medieval town, gathering supplies and perhaps even a few companions along the way. </turn>
+		<turn type="student"> <DMCC corr="What">what</DMCC> <GVAUX corr="does">\0</GVAUX> <WO corr="this map represent"><FS corr="represent">rappresent</FS> this map</WO>? </turn>
+		<turn type="chatbot" who="Pi.ai"> The map is a crucial tool for your quest, as it provides you with important information and guidance. Here's a more detailed description of the map:
+		The map is made of thick parchment, weathered with age but still legible.
+		It shows a detailed layout of the surrounding area, with the town, forest, and castle clearly marked.
+		There are symbols and warnings marked at various points on the map, indicating potential dangers or obstacles you may face on your journey.
+		The route to the castle is marked with a dashed line, leading through the forest and up to the castle gates.
+		There may also be notes or clues written on the map by previous adventurers who have attempted this quest before you.
+		The map is not only a guide for your journey, but also a key to unlocking the secrets of the castle and finding the hidden artifact. </turn>
+		<turn type="student"> <DMCA corr="Okay">ok</DMCA> <CSINTRA corr="thank you">grzie</CSINTRA> </turn>
+		<turn type="chatbot" who="Pi.ai"> Prego! Now, as you leave the town behind and enter the dense forest, you can feel the temperature drop and the sunlight filtered by the leaves overhead. The path ahead is winding and narrow, and you keep a watchful eye for any signs of danger.
+		After walking for what feels like hours, you finally spot the castle looming in the distance. Its towering spires and imposing walls give off an eerie, foreboding aura.
+		Do you want to press on and enter the castle, or do you wish to take a moment to rest and gather your courage before proceeding? </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC> will gather my courage before proceeding </turn>
+		<turn type="chatbot" who="Pi.ai"> Wise choice. You decide to set up a small camp in the shelter of the trees, just within sight of the castle. You build a fire to keep warm, eat a modest meal, and sharpen your weapons as the sun begins to set.
+		As darkness falls, you can hear strange noises coming from the forest around you - rustling in the bushes, distant howls, and the occasional snap of a twig.
+		Despite the unsettling sounds, you manage to get some rest and wake up just before dawn, ready to face the challenges ahead. </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC> <LP corr="have changed my mind"><GVT corr="have changed">change</GVT> idea</LP>, <DMCC corr="I">i</DMCC> will <XVPR corr="enter">enter in</XVPR> the castle </turn>
+		<turn type="chatbot" who="Pi.ai"> Alright! As you make your way towards the castle gates, you notice that they are slightly ajar, as if inviting you in. But be cautious, as appearances can be deceiving in a place like this.
+		As you step into the castle courtyard, you find it to be overgrown with ivy and weeds, with the occasional crumbling statue looming over the untamed plants. The air is damp and musty, and the castle seems to be silent, except for the occasional creak of a loose stone.
+		You can see several paths leading off from the courtyard, each leading to a different part of the castle. Which way will you go first? </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC>'m going to take the <FS corr="first">firt</FS> one </turn>
+		<turn type="chatbot" who="Pi.ai"> Okay! You follow the first path, leading you through a series of crumbling corridors and abandoned halls. As you walk, you notice that the walls are adorned with faded tapestries and rusted suits of armor.
+		As you venture deeper into the castle, you hear an unsettling scratching sound coming from behind one of the doors you pass. Do you want to investigate the source of the sound, or keep moving along the path? </turn>
+		<turn type="student"> <DMCC corr="What">what</DMCC> was that sound? </turn>
+		<turn type="chatbot" who="Pi.ai"> It's hard to tell what the sound might be - it could be the scurrying of small animals, or something more ominous lurking behind the door. You don't see any immediate signs of danger in the corridor, but the scratching sound seems to be persistent.
+		Do you want to try opening the door to investigate, or keep moving down the corridor and try to put some distance between you and the mysterious sound? </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC> <GVT corr="will keep">keep</GVT> moving down the corridor </turn>
+		<turn type="chatbot" who="Pi.ai"> Smart choice! You continue down the corridor, leaving the strange sound behind. As you walk, you come across a stone staircase leading up to a balcony overlooking the castle's main hall.
+		As you climb the stairs and step onto the balcony, you can see that the main hall is vast and foreboding, with towering pillars supporting the high ceiling. There are piles of dust-covered rubble on the floor, and the air feels heavy with age and disuse.
+		From the balcony, you can see several other passageways branching off from the main hall. Will you venture deeper into the castle, or try to find a way out? </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC> will venture deep into the castle </turn>
+		<turn type="chatbot" who="Pi.ai"> That's the spirit of a true adventurer! You take a deep breath and venture deeper into the castle, determined to uncover the secrets it holds.
+		As you explore the winding passageways, you come across several doors and staircases leading to different parts of the castle. Some are locked tight, while others are creaking open, beckoning you to explore further.
+		You also start to notice a strange sense of déjà vu, as if you've been in these halls before. But how could that be? </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC> don't know </turn>
+		<turn type="chatbot" who="Pi.ai"> It's certainly a mystery! But perhaps it's just the eeriness of the castle playing tricks on your mind. Or maybe, there's something more to it, some hidden significance to this place. Only time will tell.
+		As you continue your exploration, do you want to prioritize finding the hidden artifact, or do you want to uncover the secrets of the castle first, hoping that the answers might reveal the artifact's location? </turn>
+	</task>
+	<task type="small talk">
+		<turn type="student"> <DMCC corr="Now">now</DMCC> it's <GA corr="\0">the</GA> time <LSPR corr="for">to</LSPR> <GA corr="a">\0</GA> new small talk </turn>
+		<turn type="chatbot" who="Pi.ai"> Sure! Let's take a break from the adventure and chat about something else. How's your day going? What's been keeping you busy lately? </turn>
+		<turn type="student"> <GA corr="\0">the</GA> university <GVAUX corr="has been">\0</GVAUX> keeping me busy <FS corr="lately">letaly</FS> </turn>
+		<turn type="chatbot" who="Pi.ai"> Ah, the demands of university life! 📚📖 It can definitely be challenging to balance schoolwork and other aspects of life. What are you studying at university? </turn>
+		<turn type="student"> <DMCC corr="Education Science">education science</DMCC> </turn>
+		<turn type="chatbot" who="Pi.ai"> That sounds really interesting! Education science covers a broad range of topics, from psychology and sociology to curriculum design and educational policy. What got you interested in studying education science? </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC> chose to study <DMCC corr="Education Science">education science</DMCC> after a formative <FS corr="experience">expirience</FS> that <DMCC corr="I">i</DMCC> <GVT corr="did">do</GVT> in a <FS corr="community">comunity</FS> for <FS corr="people">peple</FS> <FS corr="with">whit</FS> drug addictions </turn>
+		<turn type="chatbot" who="Pi.ai"> Wow, that sounds like a really impactful experience! Working with people recovering from addiction can be incredibly rewarding, but also challenging. What did you learn during your time at the community that inspired you to pursue education science? </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC> <GVT corr="learnt">lern</GVT> that <GVT corr="everybody">evryboy</GVT> can take wrong <GNN corr="decisions">decision</GNN>, but <WO corr="we all also have to relate to"><GADVO corr="we also have">also we have</GADVO> to <XVPR corr="relate to">relate all  at</XVPR></WO> the <FS corr="single">singol</FS> situation <FS corr="and">an</FS> the context <GPR corr="\0">that</GPR> each person <GVN corr="lives">live</GVN> in <WR corr="\0"><GDO corr="their">\0</GDO> own life</WR> </turn>
+		<turn type="chatbot" who="Pi.ai"> Absolutely! Context is everything. People's backgrounds, experiences, and circumstances can greatly influence their decisions and behavior. It sounds like your time at the community really opened your eyes to the importance of empathy and understanding. How do you hope to apply that perspective in your education science studies? </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC> think that <GA corr="\0">the</GA> empathy and <GA corr="\0">the</GA> understanding are fundamental </turn>
+		<turn type="chatbot" who="Pi.ai"> They certainly are! Empathy and understanding are crucial not just in education, but in all areas of life. Being able to see things from other people's perspectives and understand their experiences can help build stronger relationships, reduce conflict, and create a more compassionate world. How do you think education science can help promote empathy and understanding in our society? </turn>
+	</task>
 </text>
 </file>

@@ -1,94 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<file name="unibo_27.txt" tagset="uclee-en-2.0.tag">
-<text id="unibo_27" area_of_study="STEM" age="19" gender="Male" DIS_or_SLD="no" which_DIS_or_SLD="nan" DIS_or_SLD_type="nan" w_production="intermediate level (B1)" years_study_range="≤13 years" years_study="13" certificates="no" certificates_level="nan" chatbot="ChatGPT" device="PC" collected_by="UniBo">
-<task type="small talk">
-	<turn type="student">Hi <FS corr="ChatGPT">chatgpt</FS>, I would like to improve my <FS corr="English">english</FS> skills, especially the small talk.</turn>
-	<turn type="chatbot" who="ChatGPT">Improving small talk in English is a great way to become more comfortable in everyday conversations! Here’s a structured approach to help you improve:
-	1. Master Basic Phrases
-	Start with common small talk questions and responses. Here are some of the essentials:
-	Greetings: "Hi, how's it going?" or "Hello! How have you been?"
-	Responses: "I'm good, thanks! And you?" or "Not too bad, thanks for asking."
-	Weather Talk: "It’s a beautiful day, isn't it?" or "Looks like it might rain later."
-	Work/Study Questions: "What do you do for work?" or "Are you working on any interesting projects?"
-	Weekend Plans: "Do you have any plans for the weekend?" or "How was your weekend?"
-	2. Practice Listening and Responding
-	Small talk flows naturally when you're an active listener. Try these techniques:
-	Ask follow-up questions: If someone mentions a vacation, ask, "Where did you go?" or "What was the highlight of your trip?"
-	React genuinely: Show interest with phrases like "That sounds fun!" or "Oh, really? Tell me more about that!"
-	Mirror: Repeat part of what they said as a question. If they say, "I went to a concert," you could respond, "A concert? That sounds exciting!"
-	3. Practice Common Topics
-	Get comfortable with topics often brought up in casual conversations:
-	Weather: Talk about recent weather or seasonal changes. ("This summer has been unusually hot, hasn't it?")
-	Local Events or News: Mention any interesting local happenings or updates. ("Did you hear about the new café downtown?")
-	Entertainment: Discuss recent movies, shows, or music. ("Have you watched any good shows lately?")
-	Food: Bring up restaurants or favorite foods. ("Have you tried that new Italian place yet?")
-	4. Build Vocabulary with Small Talk in Mind
-	Learning vocabulary that fits into these themes helps small talk flow more naturally. Here’s a quick list to start:
-	Weather: sunny, rainy, chilly, foggy, heatwave, forecast
-	Food: delicious, spicy, savory, dessert, appetizers, favorite dishes
-	Movies/Shows: binge-watching, thriller, plot, character, episode, season finale
-	Work: deadline, project, team, remote work, commute, client
-	5. Watch and Imitate
-	Watching native speakers in action helps you pick up intonation, rhythm, and common expressions.
-	TV Shows: Sitcoms like Friends, The Office, or Parks and Recreation offer everyday conversation styles and lots of small talk examples.
-	Movies: Light-hearted comedies or dramas often have relatable dialogue.
-	YouTube & Podcasts: Look for content on casual topics like hobbies, food reviews, or travel stories.
-	6. Roleplay Conversations
-	Practicing small talk scenarios is a great way to build confidence. Here are some ideas to try with a language partner or on your own:
-	At a party: "Hey, I don't think we've met before. I'm [Your Name]. What brings you here?"
-	In a coffee shop: "Do you come here often? I’m looking for new places to try."
-	At work or school: "How’s your day going so far?" or "Any big projects you're working on?"
-	7. Set Realistic Goals and Keep Practicing
-	Small talk is about making others feel comfortable and sharing a little about yourself. Set a goal to start one short conversation each day, whether at a café, a park, or online.
-	Example Small Talk Practice
-	Here’s a sample exchange for context:
-	You: "Hi there! How’s your day going?"
-	Them: "Oh, it’s been pretty good! Just finishing up some work."
-	You: "That’s great! Anything exciting you’re working on?"
-	Them: "Not really, just the usual stuff. How about you?"
-	You: "Same here, just wrapping up a few things. By the way, have you been to the new bakery nearby? I hear it’s amazing!"
-	Try to keep things light and open-ended, so the conversation flows naturally.</turn>
-	<turn type="student">Hi, how's it going?</turn>
-	<turn type="chatbot" who="ChatGPT">Hey there! It’s going well, thanks for asking! How about you?</turn>
-	<turn type="student">I'm good thanks, I would like to talk about holidays.
-	This summer I went to Corfù with my friends for a week, after the high school exam.</turn>
-	<turn type="chatbot" who="ChatGPT">That sounds amazing! Corfu must have been the perfect spot to relax after finishing high school exams. What was the highlight of the trip for you and your friends? Did you explore the island or spend most of the time at the beach?</turn>
-	<turn type="student">We visited the most famous beaches, for example Pazuzu and others. The sea was amazing, we explored <GA corr="\0">the</GA> <GWC corr="sandy">sand</GWC> and <GWC corr="rocky">rock</GWC> beaches, <LCC corr="and">but</LCC> we <GADVO corr="also explored">explored also</GADVO> the centre of Corfù town<QM corr=",">\0</QM> but I didn't like <GPP corr="it">\0</GPP> so much. We went to discos and they were great, one of them <GVT corr="was">is</GVT> <GA corr="the">\0</GA> 54 <FS corr="Dreamy Nights">dreamy nights</FS><QM corr=",">\0</QM> which I enjoyed <GPP corr="\0">it</GPP> so much.</turn>
-	<turn type="chatbot" who="ChatGPT">Sounds like an incredible trip! The beaches in Corfu really are something special, especially with those clear waters and unique landscapes. It’s cool that you got to experience both the sandy and rocky beaches; it makes for a nice variety. Too bad Corfu Town didn’t impress you as much, but at least the nightlife made up for it! 54 Dreamy Nights must have been a blast—there's something about dancing the night away on holiday that just makes the experience unforgettable. Do you think you’d go back to Corfu, or are you more interested in exploring a new place next time?</turn>
-	<turn type="student">I would like to go on holiday in Greece, but not in Corfù. I would like to try Santorini<QR corr="\0">,</QR> or Athens<QR corr="\0">,</QR> because I like art.
-	In the future I would like to go to Japan.</turn>
-	<turn type="chatbot" who="ChatGPT">Great choices! Santorini is gorgeous, with its white-washed buildings and views over the caldera—perfect for a more relaxed, scenic trip. And Athens would be amazing if you love art! Walking around the Acropolis and seeing ancient ruins up close is pretty awe-inspiring.
-	Japan sounds like an incredible adventure, too. It’s such a unique mix of traditional and modern culture. Do you have any specific places in Japan you’d love to visit, like Tokyo for the city life or maybe Kyoto for its temples and shrines?</turn>
-</task>
-<task type="role play">
-	<turn type="student"><DMCC corr="Now">now</DMCC> let's try a role play.</turn>
-	<turn type="chatbot" who="ChatGPT">Sounds great! Let’s say we’re meeting at a café, and I’ll start the conversation.
-	Me: Hey there! Mind if I sit here? It’s pretty busy today.</turn>
-	<turn type="student"><DMCC corr="Can">can</DMCC> you <XVPR corr="explain to">explain</XVPR> me the situation?</turn>
-	<turn type="chatbot" who="ChatGPT">Absolutely! In this role-play, let’s imagine we’re two people who don’t know each other very well but are striking up a friendly conversation in a busy café.
-	Here’s the scenario:
-	Setting: We’re in a cozy, bustling café on a weekend morning. There aren’t many free seats, so I approach your table and ask if I can join.
-	Goal: The aim is to practice small talk and get to know each other a little bit. We might talk about hobbies, travel, or even our coffee orders!
-	Whenever you’re ready, you can respond to my opening line:
-	Me: "Hey there! Mind if I sit here? It’s pretty busy today."</turn>
-	<turn type="student">Yes<QM corr=",">\0</QM> of course, I never see a lot of people here. What do you order?</turn>
-	<turn type="chatbot" who="ChatGPT">Thanks! I usually go for a classic cappuccino—can’t beat it. How about you? Do you have a go-to order here, or do you like trying different things?</turn>
-	<turn type="student">I always try different foods, for example <LP corr="during this time">in this time</LP> I <WM corr="always">\0</WM> <LSV corr="have">take</LSV> a cup of tea and a chocolate croissant.  Do you prefer chocolate or cream <GNN corr="croissants">croissant</GNN>?</turn>
-	<turn type="chatbot" who="ChatGPT">Ooh, a tea and a chocolate croissant sounds perfect for today! I’d say I’m more of a chocolate croissant person, though a cream one is great now and then. Do you have a favorite tea, or do you like to switch it up?</turn>
-	<turn type="student">I like <GA corr="\0">the</GA> green tea. I'm User, nice to meet you.
-	What's your name and where are you from?</turn>
-	<turn type="chatbot" who="ChatGPT">Nice to meet you, User! I’m Alex. I’m originally from London, but I’ve been living here for a couple of years now. How about you—are you from around here, or just visiting?</turn>
-	<turn type="student">I'm from Ravenna, <WR corr="\0">in</WR> Italy. I went to London because I want to see a <FS corr="Champions League">champions league</FS> match.
-	I support Arsenal and tonight there is Arsenal-Barcelona. I'm a great fan of football. I <GADVO corr="also support">support also</GADVO> Fiorentina, it's a team <Z corr="based">that plays</Z> in Florence.</turn>
-	<turn type="chatbot" who="ChatGPT">That’s awesome, User! Seeing a Champions League match is such an exciting experience, especially a matchup like Arsenal vs. Barcelona. Are you planning to watch the game live, or do you have a spot in mind to catch it?
-	Supporting both Arsenal and Fiorentina is interesting—do you get to watch many Fiorentina games as well?</turn>
-	<turn type="student">I'll be at the Emirates Stadium tonight. It will be the match of the year. <LP corr="During my life">In my life</LP> I <GVT corr="have seen">saw</GVT> a lot of Fiorentina's matches, this is my passion.
-	How about you, do you support any team?</turn>
-	<turn type="chatbot" who="ChatGPT">That’s incredible! Watching a match live at the Emirates Stadium is sure to be an unforgettable experience. You must be really excited!
-	As for me, I don’t have a specific team I support, but I enjoy watching football in general. It’s always thrilling to see the skill and passion on the field. Do you play football yourself, or do you prefer just to watch?</turn>
-	<turn type="student">I played football when I was young, but I stopped when I was 12 years old. Sometimes I play football with my friends<QM corr=",">\0</QM> but I'm not so good <DMCA corr="">lol</DMCA>, I prefer to watch <GNC corr="my favourite team's games">the games of my favourite team</GNC>, but also important <FS corr="matches">mtaches</FS><QR corr="\0">,</QR> like this one.</turn>
-	<turn type="chatbot" who="ChatGPT">Playing football with friends sounds like a lot of fun, even if you don’t consider yourself an expert! It’s great that you still get to enjoy the game in that way. Watching important matches like Arsenal vs. Barcelona definitely brings out the excitement.
-	Do you have a favorite memory from a Fiorentina game you attended, or maybe a moment that stands out from watching Arsenal?</turn>
-</task>
+<file name="unibo_27.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unibo_27" area_of_study="STEM" age="19" gender="Male" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="beginner level (A1)" years_study_range="≤13 years" years_study="until the fourth year of high school" certificates="no" certificates_level="N/A" chatbot="ChatGPT" device="PC" collected_by="UniBo">
+	<task type="small talk">
+		<turn type="student">Hi, can I have <Z corr="a conversation in English">an English conversation</Z> <FS corr="with">whit</FS> you?</turn>
+		<turn type="chatbot" who="ChatGPT">Absolutely! I'd be happy to have a conversation with you in English. What's on your mind?</turn>
+		<turn type="student"><DMCC corr="Another">another</DMCC> question?</turn>
+		<turn type="chatbot" who="ChatGPT">Of course! What's your next question?</turn>
+		<turn type="student"><DMCC corr="Can">can</DMCC> you ask me another question?</turn>
+		<turn type="chatbot" who="ChatGPT">Sure! Here’s a question for you:
+		If you could travel anywhere in the world right now, where would you go and why?</turn>
+		<turn type="student"><DMCC corr="My">my</DMCC> favorite city <GPP corr="\0">it</GPP>'s Barcellona, I<GVAUX corr="\0">'m</GVAUX> go <LSADV corr="there">here</LSADV> every year but, I <XVCO corr="would like to go">would like go</XVCO> <LSPR corr="to">in</LSPR> Madrid, Valencia, Vienna and my <LP corr="dream travel">travel dream</LP> <GPP corr="\0">it</GPP>'s <GVNF corr="to visit">visit</GVNF> Tokyo</turn>
+		<turn type="chatbot" who="ChatGPT">That sounds like a great list of places to visit! Barcelona is such a vibrant city with its architecture and culture. What do you love most about Barcelona? And what interests you about Tokyo?</turn>
+		<turn type="student">About Barcelona my favorite <LSN corr="piece of architecture">architecture</LSN> are Sagrada Familia because <GPP corr="it">she</GPP>'s <GA corr="the">a</GA> biggest monument in the middle of town, and <GPP corr="I">\0</GPP> <WO corr="like very much"><LSADV corr="">very much</LSADV> like</WO> <GPP corr="\0">me</GPP> Parc Guell, Casa Batlò and Barceloneta. Tokyo interests me for <GDO corr="its">his</GDO> cooking <FS corr="culture">colture</FS></turn>
+		<turn type="chatbot" who="ChatGPT">Those are excellent choices! Sagrada Familia is truly a masterpiece, and Parc Güell has such a unique and colorful vibe. The food culture in Tokyo is fascinating, with everything from street food to fine dining. Are there any specific dishes or types of cuisine you’re excited to try when you visit Tokyo?</turn>
+	</task>
+	<task type="role play">
+		<turn type="student"><DMCC corr="Now">now</DMCC>, <LP corr="do a role play">simulate role play</LP></turn>
+		<turn type="chatbot" who="ChatGPT">Sure! Let's do a role play. You can choose a scenario or I can suggest one. How about a travel conversation where you’re planning your trip to Tokyo, and I’m a travel agent helping you with suggestions? Would that work for you?</turn>
+		<turn type="student"><CSINTER corr="Translate into Italian"><DMCC corr="Traduci">traduci</DMCC> in italiano</CSINTER></turn>
+		<turn type="chatbot" who="ChatGPT">Certo! Ecco la traduzione:
+		"Certamente! Facciamo un gioco di ruolo. Puoi scegliere uno scenario oppure posso suggerirne uno. Che ne dici di una conversazione di viaggio in cui stai pianificando il tuo viaggio a Tokyo e io sono un agente di viaggio che ti aiuta con dei suggerimenti? Va bene per te?"</turn>
+		<turn type="student"><DMCC corr="Yes">yes</DMCC></turn>
+		<turn type="chatbot" who="ChatGPT">Great! Let’s start the role play.
+		Travel Agent: Hello! Welcome to our travel agency. I hear you're interested in planning a trip to Tokyo. What dates are you considering, and what kind of experiences are you looking for?</turn>
+		<turn type="student">Hello! <DMCC corr="The">the</DMCC> <GNN corr="dates">date</GNN> is from 20 September to 5 October, <Z corr="?">I would change a food <FS corr="culture">colture</FS></Z>, in particular sushi and visit the <GNC corr="city's monuments"><GNN corr="monuments">monument</GNN> city</GNC> and <GNN corr="film">films</GNN> <GNN corr="sets">set</GNN></turn>
+		<turn type="chatbot" who="ChatGPT">Travel Agent: That sounds fantastic! You’ll have a great time in Tokyo during that period. For sushi, I can recommend some top sushi spots, like Tsukiji Outer Market for fresh seafood and some renowned sushi restaurants in the city.
+		As for monuments and film sets, you should definitely visit the Tokyo Tower and the historic Asakusa district with the Senso-ji Temple. Are there any specific movies or shows you’re interested in that were filmed in Tokyo?</turn>
+		<turn type="student">Doraemond, Inazuma Eleven and <GA corr="\0">the</GA> <CSINTRA corr="comics">Fumetti</CSINTRA></turn>
+		<turn type="chatbot" who="ChatGPT">Travel Agent: Great choices! For Doraemon, you can visit the Fujiko F. Fujio Museum in Kawasaki, which is not too far from Tokyo. It’s dedicated to the works of the creator of Doraemon.
+		For Inazuma Eleven, while specific filming locations might be harder to find, you could check out the various football-themed attractions around the city, as football is very popular in Japan.
+		As for comics (fumetti), you should definitely explore Akihabara, known as the mecca for anime and manga culture. There are many stores where you can find merchandise and enjoy the vibrant atmosphere. Would you like recommendations for any specific activities or accommodations during your stay?</turn>
+		<turn type="student"><CSINTER corr="Translate the last question for me"><DMCC corr="Traducimi">traducimi</DMCC> l'ultima domanda</CSINTER></turn>
+		<turn type="chatbot" who="ChatGPT">Certo! Ecco la traduzione:
+		"Vuoi raccomandazioni per qualche attività specifica o per sistemazioni durante il tuo soggiorno?"</turn>
+		<turn type="student"><CSINTER corr="Both options, but I do you say it in English?"><DMCC corr="Entrambi">entrambi</DMCC> le informazioni, ma come si dice in inglese?</CSINTER></turn>
+		<turn type="chatbot" who="ChatGPT">You can say: "I would like recommendations for both specific activities and accommodations during my stay."</turn>
+		<turn type="student"><DMCC corr="Ok">ok</DMCC>, I would like recommendations for both specific activities and accommodations during my stay</turn>
+		<turn type="chatbot" who="ChatGPT">Travel Agent: Excellent! For activities, here are a few recommendations:
+		Food Tour: Join a sushi-making class or a food tour in Tsukiji Outer Market to learn more about Japanese cuisine.
+		Anime and Manga Shops: Spend some time in Akihabara exploring shops dedicated to anime and manga, including Doraemon and Inazuma Eleven merchandise.
+		Themed Cafés: Visit a themed café, such as a cat café or a Doraemon-themed café, for a unique dining experience.
+		Cultural Experiences: Consider participating in a traditional tea ceremony or visiting a sumo practice session.
+		For accommodations, I recommend:
+		Shinjuku: A vibrant area with many hotels, restaurants, and easy access to public transport. Check out the Hotel Gracery Shinjuku, which features a Godzilla theme.
+		Shibuya: Known for its famous crossing and youthful vibe. The Shibuya Excel Hotel Tokyu offers great views and convenience.
+		Asakusa: Close to Senso-ji Temple, it has a more traditional feel. Consider staying at the Asakusa View Hotel.
+		Would any of these activities or accommodations interest you?</turn>
+		<turn type="student"><DMCC corr="Ok">ok</DMCC> this informations <GPP corr="\0">it</GPP>'s sufficient but<QR corr="\0">,</QR> I have a big passion, Japanese <LSN corr="Motocross bikes">Motocross</LSN> <LSPR corr="such as">as</LSPR> Yamaha,Honda and Kawasaki, when can I go to visit them?</turn>
+		<turn type="chatbot" who="ChatGPT">Travel Agent: That’s fantastic! If you’re passionate about Japanese motocross, you’ll definitely want to visit some of the manufacturers’ facilities and exhibitions. Here are some options:
+		Yamaha: You can visit the Yamaha Communication Plaza in Iwata, which showcases Yamaha's history and products, including motocross bikes. It’s about a 2-hour train ride from Tokyo.
+		Honda: The Honda Collection Hall at the Twin Ring Motegi motorsports complex has a vast collection of Honda's history, including motorcycles. It’s also about 2 hours from Tokyo by train.
+		Kawasaki: The Kawasaki Good Times World museum in Kobe is dedicated to Kawasaki’s motorcycles, but it’s further away (about 3 hours by train). If you're up for the trip, it’s worth it!
+		To make the most of your time, consider scheduling visits to these places on weekends when you have more time to explore. Would you like help with travel arrangements or more details on any specific location?</turn>
+	</task>
 </text>
 </file>

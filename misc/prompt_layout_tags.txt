@@ -1,0 +1,13 @@
+Annotate the target sentence below with the following tags, in XML style. Reproduce the full sentence and annotate each error according to these categories.
+
+{prompt_tags}
+
+Below are reference examples.
+
+{examples}
+
+Use the format ###sentence ==> answer{eos_token}
+
+Target sentence:
+
+###{sentence} ==>

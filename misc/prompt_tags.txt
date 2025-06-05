@@ -1,0 +1,59 @@
+<DMCC>: Capitalization issues.
+<DMCA>: Use of abbreviations in digitally-mediated communication (e.g., OK, lol, etc.).
+<FS>: Spelling errors.
+<FM>: Morphological errors involving derivational affixes.
+<QC>: Confusion of punctuation marks.
+<QL>: Punctuation mark instead of lexical item (or vice versa).
+<QM>: Missing punctuation.
+<QR>: Redundant punctuation.
+<GDD>: Errors with demonstrative determiners (e.g., this, that, etc.).
+<GDO>: Errors with possessive determiners (e.g., my, your, etc.).
+<GDI>: Errors with indefinite determiners (e.g., any, some, etc.).
+<GDT>: Errors with other types of determiners (e.g., relative, interrogative, etc.).
+<GA>: Errors with definite, indefinite, or zero articles.
+<GADJCS>: Errors with comparative or superlative adjectives.
+<GADJN>: Errors with adjective number.
+<GADJO>: Errors with adjective order.
+<GADVO>: Misplaced adverbs.
+<GNC>: Errors with noun case (e.g., Saxon genitive misuse).
+<GNN>: Errors with noun number.
+<GPD>: Errors with demonstrative pronouns (e.g., this, that, etc.).
+<GPP>: Errors with personal pronouns (e.g., you, we, etc.).
+<GPO>: Errors with possessive pronouns (e.g., mine, yours, etc.).
+<GPI>: Errors with indefinite pronouns. (e.g. anyone, nothing, etc.).
+<GPF>: Errors with reflexive or reciprocal pronouns (e.g., myself, each other, etc.).
+<GPR>: Errors with relative or interrogative pronouns (e.g., what, which, etc.).
+<GPU>: Unclear pronominal reference.
+<GVAUX>: Misuse of primary, modal, or semi-auxiliaries (e.g., do, have, etc.).
+<GVM>: Errors with verb morphology.
+<GVN>: Errors with subject-verb agreement.
+<GVNF>: Errors in use of -ing, infinitives, or relative clauses.
+<GVT>: Misuse of tense or aspect.
+<GVV>: Errors with active/passive voice.
+<GWC>: Errors due to confusion between word classes.
+<XADJCO>: Errors with adjective complementation.
+<XNCO>: Errors with noun complementation.
+<XPRCO>: Errors with preposition complementation.
+<XVCO>: Errors with verb complementation.
+<XADJPR>: Errors with adjective dependent prepositions.
+<XADVPR>: Errors with adverb dependent prepositions.
+<XNPR>: Errors involving dependent prepositions for nouns.
+<XVPR>: Errors involving dependent prepositions for verbs.
+<XNUC>: Errors in the use of uncountable/countable nouns.
+<LCC>: Errors in the use of coordinating conjunctions (e.g., and, or, etc.).
+<LCS>: Errors in the use of subordinating conjunctions (e.g., although, because, etc.).
+<LCLS>: Errors in the use of single logical connectors (e.g., nevertheless, etc.).
+<LCLC>: Errors in the use of complex logical connectors (e.g., on the other hand, etc.).
+<LSADJ>: Conceptual or collocational errors involving adjectives.
+<LSADV>: Conceptual or collocational errors involving adverbs.
+<LSN>: Conceptual or collocational errors involving nouns.
+<LSPR>: Conceptual or collocational errors involving prepositions.
+<LSV>: Conceptual or collocational errors involving verbs.
+<LP>: Errors in fixed word combinations, including idioms, compounds, and phrasal verbs.
+<LWCO>: Instances of coined words, calques, or invented proper nouns.
+<WM>: Missing words.
+<WR>: Redundant words.
+<WO>: Errors in word order.
+<Z>: Stylistic problems or unclear sequences requiring reformulation.
+<CSINTRA>: Code-switching within a sentence.
+<CSINTER>: Code-switching between sentences or conversational turns.

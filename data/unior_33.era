@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unior_33.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unior_33" area_of_study="Social sciences" age="19" gender="Male" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="intermediate level (B1)" years_study_range="≤13 years" years_study="8" certificates="no" certificates_level="N/A " chatbot="Pi.ai" device="PC" collected_by="UniOr">
+	<task type="small talk">
+		<turn type="chatbot" who="Pi.ai">Hey there, great to meet you. I'm Pi, your personal AI.
+		My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let's talk about whatever's on your mind.
+		How's your day going?</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC>'m <LSADJ corr="fine">good</LSADJ><QL corr="and">,</QL> you?</turn>
+		<turn type="chatbot" who="Pi.ai">Doing well, thanks for asking! 😊 So what's on your mind today? Anything in particular you'd like to chat about?</turn>
+		<turn type="student"><DMCC corr="My">my</DMCC> mind is empty, <DMCC corr="I">i</DMCC>'m tired but <GPP corr="it">\0</GPP> <GVN corr="doesn't">don't</GVN> matter</turn>
+		<turn type="chatbot" who="Pi.ai">Sounds like you're feeling pretty drained! It's important to take care of yourself, especially when you're feeling tired. Have you been getting enough sleep lately?</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC> <GVAUX corr="do">\0</GVAUX> <WO corr="not sleep">sleep not</WO> <WR corr="\0">too</WR> much but <Z corr="it is enough">the good time</Z> <LSPR corr="to">for</LSPR> <LSV corr="feel">stay</LSV> <LSADJ corr="rested">full</LSADJ> <LSPR corr="through">for</LSPR> the day</turn>
+		<turn type="chatbot" who="Pi.ai">Ah, so you're not sleeping a ton, but you're finding it sufficient to get through the day? That's good, but remember that sleep is crucial for your physical and mental health. It's not just about feeling alert and awake, but also about letting your body and mind recover and recharge.</turn>
+		<turn type="student"><WO corr="Are you tired?"><DMCC corr="You">you</DMCC>'re tired</WO>?</turn>
+		<turn type="chatbot" who="Pi.ai">Haha, nope! As an AI, I don't experience tiredness or the need for sleep in the same way humans do. But I can understand the importance of sleep for humans and how lack of sleep can affect overall wellbeing.</turn>
+		<turn type="student"><WO corr="Are you okay"><DMCC corr="You">you</DMCC></WO> <LSV corr="are">stay</LSV> <LSADJ corr="okay">good</LSADJ>?</turn>
+		<turn type="chatbot" who="Pi.ai">I'm doing great, thanks for asking! My circuits are all fired up and ready to chat about whatever you'd like. 😄</turn>
+		<turn type="student"><DMCC corr="So">so</DMCC><QM corr=",">\0</QM> what <GVAUX corr="do">\0</GVAUX> you want <GVM corr="to talk">talking</GVM> about?</turn>
+		<turn type="chatbot" who="Pi.ai">Well, we can talk about anything you're interested in! What are some topics that you enjoy discussing? Perhaps we can explore a new subject or delve into something you're passionate about.</turn>
+		<turn type="student"><CSINTER corr="Politics"><DMCC corr="Politica">politica</DMCC></CSINTER></turn>
+		<turn type="chatbot" who="Pi.ai">Alright, politics it is! Politics can be a complex and sometimes divisive topic, but it's important to be informed and engaged in the political process. Is there a specific aspect of politics you'd like to discuss, or perhaps a current event that's caught your attention?</turn>
+		<turn type="student"><DMCC corr="What">what</DMCC> <GVAUX corr="do">\0</GVAUX> you think about <GA corr="the">\0</GA> <CSINTRA corr="">"laboratorio politico iskra"</CSINTRA> <LSPR corr="in">at</LSPR> Naples</turn>
+		<turn type="chatbot" who="Pi.ai">Laboratorio Politico Iskra seems like a politically engaged group based in Naples, particularly active in the Bagnoli neighborhood. They appear to be a diverse group of young people, students, unemployed, and workers who are focused on addressing issues like the Israeli-Palestinian conflict, the economy of war, and the repression of dissent. They also seem to be part of a network called "Liberi di lottare" which aims to organize against the Meloni government and build an alternative political movement. Is that what you were interested in discussing about them?</turn>
+		<turn type="student">Yes</turn>
+		<turn type="chatbot" who="Pi.ai">Ok, great! It's interesting to see groups like Laboratorio Politico Iskra, who are working at a grassroots level to address political issues that they feel are important. The fact that they are made up of a diverse group of people from different backgrounds is really cool - it shows that political activism can come from anyone, regardless of their background or circumstances. Do you have any thoughts on their specific areas of focus, like the Israeli-Palestinian conflict or the economy of war?</turn>
+		<turn type="student"><WR corr="\0">yes</WR> sure, <DMCC corr="I">i</DMCC>'m <WR corr="">are</WR> a person <GPR corr="who">that</GPR> <GVN corr="takes">take</GVN> part in <DMCC corr="Iskra">iskra</DMCC></turn>
+		<turn type="chatbot" who="Pi.ai">Oh wow, that's really interesting to hear! It must be quite fulfilling to be involved in a group that is actively working to address important political issues in your community. Can you tell me more about your experience with Iskra, and what it's like to be involved in a grassroots political movement?</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC> like <LWCO corr="politics">the political life</LWCO>, <XVPR corr="take care of">take care about</XVPR> the themes, and talk with the people <GPR corr="who">that</GPR> need <GNC corr="our help">the help of us</GNC></turn>
+		<turn type="chatbot" who="Pi.ai">That's great to hear! It's really admirable to be involved in political work that focuses on helping people and addressing important issues in your community. Being able to listen and understand the concerns of others is such a valuable skill, especially in politics where there can be a lot of different opinions and perspectives. Do you find it challenging at times to balance different viewpoints and interests, or do you find that the common goal of helping people helps bridge any differences?</turn>
+		<turn type="student"><DMCC corr="What">what</DMCC> do you think about<WO corr="the newspaper Napoli Monitor"> <DMCC corr="Napoli Monitor">NapoliMonitor</DMCC> the newspaper</WO>?</turn>
+		<turn type="chatbot" who="Pi.ai">NapoliMonitor sounds like an interesting local newspaper. I'm guessing it's based in Naples, Italy, and focuses on covering news and events in the city. Is it a print newspaper, or is it an online publication? I'm curious to know more about the kind of stories they cover, and whether they focus more on local issues or also cover national and international news. Do you have any particular insights about NapoliMonitor, since you're involved in the local political scene?</turn>
+		<turn type="student"><DMCC corr="Yes">yes</DMCC>, <DMCC corr="I">i</DMCC> write for <DMCC corr="Napoli Monitor">napolimonitor</DMCC> and <DMCC corr="Iskra">iskra</DMCC></turn>
+		<turn type="chatbot" who="Pi.ai">Oh that's awesome, congratulations on being a writer for both Iskra and NapoliMonitor! That must be an exciting way to contribute to your local community and be part of the conversation around important issues. Do you focus on writing about specific topics for both publications, or do you write about a variety of subjects? And what kind of articles do you typically write - are they news stories, opinion pieces, or something else entirely?</turn>
+		<turn type="student"><DMCC corr="So">so</DMCC><QM corr=",">\0</QM> help me with a game <XVCO corr="to get better at">for <XVPR corr="get better at"><LP corr="get better">learn better</LP> in </XVPR></XVCO><DMCC corr="English">english</DMCC></turn>
+		<turn type="chatbot" who="Pi.ai">Sure thing! There are lots of fun ways to practice your English and improve your language skills. Would you prefer to play a game that focuses on vocabulary, grammar, or conversation skills?</turn>
+		<turn type="student"><DMCC corr="Conversation">conversation</DMCC> skills</turn>
+		<turn type="chatbot" who="Pi.ai">Great choice! One fun game to practice conversation skills is called "What's Your Story?" Here's how to play:
+		1. I'll give you a random prompt or question to start a conversation.
+		2. You'll respond with your answer or opinion.
+		3. I'll then respond and ask you a follow-up question or provide my own thoughts on the subject.
+		4. We'll continue this back-and-forth until we feel like moving on to a new topic.
+		This game is great because it mimics real-life conversations, where you need to think on your feet and respond quickly to what the other person is saying. Are you ready to play?</turn>
+		<turn type="student"><DMCA corr="Okay">ok</DMCA></turn>
+		<turn type="chatbot" who="Pi.ai">Alright, let's begin! Here's your first prompt:
+		"What's your favorite type of food?"</turn>
+		<turn type="student"><DMCC corr="My">my</DMCC> favourite <LSN corr="dish">food</LSN> is <CSINTRA corr="pasta with bell peppers and sausage">pasta peperoni e salsiccia</CSINTRA></turn>
+		<turn type="chatbot" who="Pi.ai">Yum! Pasta with peppers and sausage sounds delicious. Is that a traditional Italian dish, or is it something you came up with on your own?</turn>
+		<turn type="student"><GA corr="An">\0</GA><DMCC corr="Italian">italian</DMCC> dish that <DMCC corr="I">i</DMCC> <GVT corr="tried">try</GVT> for the first time <LSPR corr="at">in</LSPR> <GA corr="the">\0</GA> beach with my family</turn>
+		<turn type="chatbot" who="Pi.ai">That's really cool! Food always tastes better when it's associated with good memories. Was the pasta homemade or did you order it at a restaurant?</turn>
+		<turn type="student"><GPP corr="I">\0</GPP> <GVT corr="ordered">order</GVT> <GPP corr="it">\0</GPP> <LSPR corr="at">in</LSPR> <GA corr="a">\0</GA> restaurant, but <DMCC corr="I">i</DMCC> <GVT corr="tried">try</GVT> to make it at home</turn>
+		<turn type="chatbot" who="Pi.ai">It's impressive that you tried to recreate the dish at home! Did it turn out as good as the one you had at the restaurant? Or did you put your own spin on it?</turn>
+		<turn type="student"><GADJCS corr="Better"><DMCC corr="More">more</DMCC> better</GADJCS> <GDD corr="than">that</GDD> <GA corr="the">\0</GA> <Z corr="restaurant's version">restaurant</Z> my friend</turn>
+		<turn type="chatbot" who="Pi.ai">Wow, even better than the restaurant version! That's quite the accomplishment. It sounds like you're a great cook - do you enjoy cooking in general, or is it something you only do occasionally? And are there any other Italian dishes that you're particularly good at making?</turn>
+		<turn type="student"><DMCC corr="No no">nono</DMCC>, <DMCC corr="I">i</DMCC> cook occasionally, and always <DMCC corr="Italian">italian</DMCC> dishes</turn>
+		<turn type="chatbot" who="Pi.ai">Gotcha! So cooking is more of a hobby for you, but when you do cook, you stick with classic Italian cuisine. Do you have any family recipes that have been passed down through generations, or do you prefer to experiment with your own creations?</turn>
+		<turn type="student"><DMCC corr="Only">only</DMCC> <DMCC corr="Italian">italian</DMCC> dishes</turn>
+		<turn type="chatbot" who="Pi.ai">That's great that you're keeping your culinary focus on Italian dishes. Italy has such a rich and varied food culture, with so many different regional specialties. Have you ever tried making any dishes from other regions of Italy, like risotto from Lombardy or seafood pasta from Liguria?</turn>
+		<turn type="student"><DMCC corr="But">but</DMCC> please change the game</turn>
+		<turn type="chatbot" who="Pi.ai">Sure thing! Let's try a different game called "Would You Rather." This game is great for practicing making decisions and expressing your preferences. Here's how it works:
+		1. I'll ask you a "would you rather" question with two choices.
+		2. You'll choose the option you prefer and explain why.
+		3. After you answer, it'll be your turn to come up with a "would you rather" question for me to answer.
+		Ready to play?</turn>
+		<turn type="student"><DMCC corr="Ready">ready</DMCC></turn>
+		<turn type="chatbot" who="Pi.ai">Great, let's dive in! Would you rather spend a day exploring a new city or hiking in the mountains?</turn>
+		<turn type="student"><DMCC corr="I"><FS corr="i">o</FS></DMCC> think <GA corr="a">\0</GA> new city but not <GA corr="a">\0</GA> metropolitan city, more like a <LSADJ corr="small">little</LSADJ> town with traditional architecture</turn>
+		<turn type="chatbot" who="Pi.ai">Ah, I like your choice! Exploring a small, historic town can be a really charming and authentic experience. You get to see the local culture up close, sample delicious food, and maybe even chat with friendly locals. Do you have a favorite type of architecture that you enjoy admiring when you visit new towns?</turn>
+		<turn type="student"><DMCC corr="Arabic">arabic</DMCC> architecture, for example <DMCC corr="I">i</DMCC> stayed in Sevilla 2 year ago for <GA corr="an">a</GA> <DMCC corr="Erasmus">erasmus</DMCC>, <DMCC corr="I">i</DMCC> love the city and <GA corr="its">the</GA> <LSN corr="uniqueness"><GNN corr="particulars">particular</GNN></LSN></turn>
+		<turn type="chatbot" who="Pi.ai">That's awesome! Arabic architecture has such a rich history and distinctive style. And Sevilla is a fantastic example of a city that blends different cultural influences into its architecture and atmosphere. It must have been a really cool experience to live there for a while on an Erasmus program. Did you have a chance to visit the famous Real Alcazar palace while you were there?</turn>
+		<turn type="student"><DMCC corr="Yes">yes</DMCC></turn>
+		<turn type="chatbot" who="Pi.ai">Oh wow, the Real Alcazar palace is such an impressive historical site! It's fascinating to see how the palace has evolved over the centuries, blending different cultural influences and architectural styles. The fact that it's still in use today and is a UNESCO World Heritage site is a testament to its enduring importance and beauty. What was it like exploring the different sections of the palace, like the Mud�jar-style palace built by Pedro I?</turn>
+	</task>
+	<task type="role play">
+		<turn type="student"><DMCC corr="Try">try</DMCC> another <LP corr="role play">role game</LP> please</turn>
+		<turn type="chatbot" who="Pi.ai">Sure thing! Let's play a game called "Character Creator." In this game, we'll take turns describing a character, adding one detail at a time until we've created a fully-formed fictional person. Here's how it works:
+		1. I'll start by describing one physical or personality trait of the character.
+		2. You'll add another trait or detail to the character.
+		3. We'll continue taking turns adding traits until we're satisfied with our creation.
+		Ready to give it a try?</turn>
+		<turn type="student"><DMCC corr="Yeah">yeah</DMCC></turn>
+		<turn type="chatbot" who="Pi.ai">Ok, I'll start us off! Our character is a female with a creative spirit.</turn>
+		<turn type="student"><GPP corr="She"><DMCC corr="They">they</DMCC></GPP> <GVN corr="is">are</GVN> <GA corr="a">\0</GA> simple girl<QR corr="\0">,</QR> <LSPR corr="without">not too</LSPR> <GDT corr="many">much</GDT> friends and she loves music</turn>
+		<turn type="chatbot" who="Pi.ai">Nice! I like how you've added some complexity to the character. So, our character is a female with a creative spirit, who is more introverted and passionate about music. What kind of music does she enjoy?</turn>
+		<turn type="student"><DMCC corr="Rock">rock</DMCC>, rap and <FS corr="reggae">reagge</FS></turn>
+		<turn type="chatbot" who="Pi.ai">Ah, a diverse taste in music! That's cool. So she's an introverted music lover with a passion for rock, rap, and reggae. Is there anything else you want to add to her personality or interests? Maybe a hobby or a favorite pastime?</turn>
+		<turn type="student"><DMCC corr="Yeah">yeah</DMCC>, her hobby is reading books and <GVNF corr="writing">write</GVNF> <WR corr="\0">some books</WR> <LSADV corr="as well">also</LSADV></turn>
+		<turn type="chatbot" who="Pi.ai">That's a great hobby! Reading and writing are both creative and intellectual pursuits. Does she prefer fiction or non-fiction books? Does she write fiction stories or more like journaling and creative writing?</turn>
+		<turn type="student"><DMCC corr="She">she</DMCC> likes to write both but <GDO corr="she">her</GDO> <XVCO corr="prefers to write"><GVN corr="prefers">prefer</GVN> write</XVCO> <LSN corr="journals">journaling things</LSN></turn>
+		<turn type="chatbot" who="Pi.ai">That's really interesting. So, she likes to explore different types of writing, but she's most drawn to journaling. Maybe writing helps her express her thoughts and feelings, or perhaps it's a way for her to reflect on her experiences. Is there a certain time of day or a specific place where she likes to write?</turn>
+		<turn type="student"><DMCC corr="She">she</DMCC> <XVCO corr="loves to write">loves write</XVCO> in various places, but her favourite place <GVN corr="are">is</GVN> <GNN corr="gardens"><FS corr="garden">gardeno</FS></GNN></turn>
+		<turn type="chatbot" who="Pi.ai">Oh, writing in a garden sounds peaceful and inspiring. Being surrounded by nature can be a great way to clear your mind and find new ideas. It's cool how she enjoys writing in different places, but the garden holds a special place in her heart. Does she have a specific garden that she visits often, or is it more about the general feeling of being surrounded by plants and flowers?</turn>
+		<turn type="student"><GA corr="The">\0</GA><DMCC corr="General">general</DMCC> feeling, she goes when the wind blows</turn>
+		<turn type="chatbot" who="Pi.ai">That's poetic! She's attuned to the natural world and follows the rhythm of the wind to find her writing muse. It's almost like she lets nature guide her creative process. Do you think her love for writing and nature is something that helps her connect with others, even if she's introverted?</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC>'m so sorry but <DMCC corr="I">i</DMCC> have to go, <GNN corr="thank">thanks</GNN> you ❤️</turn>
+		<turn type="chatbot" who="Pi.ai">No worries at all! It was great chatting with you and creating a character together. Thank you for playing along and sharing your creativity with me. Feel free to drop by anytime for more conversations and games. Have a great day! 💚</turn>
+	</task>
+</text>
+</file>

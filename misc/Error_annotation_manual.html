@@ -1,0 +1,1457 @@
+<html><head><style>body {
+   color: black;
+}
+</style></head><body><h1 id="error-tagging-manual">ERROR TAGGING MANUAL</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#1-introduction">Introduction</a></li>
+<li><a href="#2-tag-reference-table">Tag Reference Table</a></li>
+<li><a href="#3-error-categories">Error Categories</a><br>3.1. <a href="#31-digitally-mediated-communication">Digitally-Mediated Communication</a><br>3.2. <a href="#32-form">Form</a><br>3.3. <a href="#33-punctuation">Punctuation</a><br>3.4. <a href="#34-grammar">Grammar</a><br>3.5. <a href="#35-lexico-grammar">Lexico-Grammar</a><br>3.6. <a href="#36-lexis">Lexis</a><br>3.7. <a href="#37-word">Word</a><br>3.8. <a href="#38-infelicities">Infelicities</a><br>3.9. <a href="#39-code-switching">Code-Switching</a>  </li>
+<li><a href="#4-annexes">Annexes</a><br>4.1. <a href="#41-tag-placement">Tag Placement</a><br>4.2. <a href="#42-fs-vs-dmcc"><code>&lt;FS&gt;</code> vs. <code>&lt;DMCC&gt;</code></a><br>4.3. <a href="#43-gvnf-vs-gvt"><code>&lt;GVNF&gt;</code> vs. <code>&lt;GVT&gt;</code></a><br>4.4. <a href="#44-missing-and-redundant-elements">Handling Missing and Redundant Elements</a><br>4.5. <a href="#45-interrogative-structures">Tagging Errors in Interrogative Structures</a></li>
+</ol>
+<hr>
+<p><a name="1-introduction"></a></p>
+<h2 id="1-introduction">1. Introduction</h2>
+<p>This manual is an adapted version of <strong>The Louvain Error Tagging Manual Version 2.0</strong>, expanded to include five additional error tags. It provides comprehensive guidelines for annotating errors in learner-produced texts, with each tag designed to identify the error type and suggest an appropriate correction.</p>
+<hr>
+<p><a name="2-tag-reference-table"></a></p>
+<h2 id="2-tag-reference-table">2. Tag Reference Table</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Category</strong></th>
+<th><strong>Tag</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Reference</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Digitally-Mediated Communication</strong></td>
+<td><code>&lt;DMCC&gt;</code></td>
+<td>Capitalization issues.</td>
+<td><a href="#capitalization-dmcc">Capitalization</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;DMCA&gt;</code></td>
+<td>Use of abbreviations in digitally-mediated communication (e.g., <em>OK</em>, <em>lol</em>, etc.).</td>
+<td><a href="#abbreviations-dmca">Abbreviations</a></td>
+</tr>
+<tr>
+<td><strong>Form</strong></td>
+<td><code>&lt;FS&gt;</code></td>
+<td>Spelling errors.</td>
+<td><a href="#spelling-fs">Spelling</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;FM&gt;</code></td>
+<td>Morphological errors involving derivational affixes.</td>
+<td><a href="#morphology-fm">Morphology</a></td>
+</tr>
+<tr>
+<td><strong>Punctuation</strong></td>
+<td><code>&lt;QC&gt;</code></td>
+<td>Confusion of punctuation marks.</td>
+<td><a href="#punctuation-confusion-qc">Punctuation Confusion</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;QL&gt;</code></td>
+<td>Punctuation mark instead of lexical item (or vice versa).</td>
+<td><a href="#punctuation-lexical-ql">Punctuation Lexical</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;QM&gt;</code></td>
+<td>Missing punctuation.</td>
+<td><a href="#punctuation-missing-qm">Punctuation Missing</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;QR&gt;</code></td>
+<td>Redundant punctuation.</td>
+<td><a href="#punctuation-redundant-qr">Punctuation Redundant</a></td>
+</tr>
+<tr>
+<td><strong>Grammar</strong></td>
+<td><code>&lt;GDD&gt;</code></td>
+<td>Errors with demonstrative determiners (e.g., <em>this</em>, <em>that</em>, etc.).</td>
+<td><a href="#demonstrative-determiners-gdd">Demonstrative Determiners</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GDO&gt;</code></td>
+<td>Errors with possessive determiners (e.g., <em>my</em>, <em>your</em>, etc.).</td>
+<td><a href="#possessive-determiners-gdo">Possessive Determiners</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GDI&gt;</code></td>
+<td>Errors with indefinite determiners (e.g., <em>any</em>, <em>some</em>, etc.).</td>
+<td><a href="#indefinite-determiners-gdi">Indefinite Determiners</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GDT&gt;</code></td>
+<td>Errors with other types of determiners (e.g., relative, interrogative, etc.).</td>
+<td><a href="#other-determiners-gdt">Other Determiners</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GA&gt;</code></td>
+<td>Errors with definite, indefinite, or zero articles.</td>
+<td><a href="#articles-ga">Articles</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GADJCS&gt;</code></td>
+<td>Errors with comparative or superlative adjectives.</td>
+<td><a href="#comparative-superlative-adjectives-gadjcs">Comparative/Superlative Adjectives</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GADJN&gt;</code></td>
+<td>Errors with adjective number.</td>
+<td><a href="#adjective-number-gadjn">Adjective Number</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GADJO&gt;</code></td>
+<td>Errors with adjective order.</td>
+<td><a href="#adjective-order-gadjo">Adjective Order</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GADVO&gt;</code></td>
+<td>Misplaced adverbs.</td>
+<td><a href="#adverb-order-gadvo">Adverb Order</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GNC&gt;</code></td>
+<td>Errors with noun case (e.g., Saxon genitive misuse).</td>
+<td><a href="#noun-case-gnc">Noun Case</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GNN&gt;</code></td>
+<td>Errors with noun number.</td>
+<td><a href="#noun-number-gnn">Noun Number</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GPD&gt;</code></td>
+<td>Errors with demonstrative pronouns (e.g., <em>this</em>, <em>that</em>, etc.).</td>
+<td><a href="#demonstrative-pronouns-gpd">Demonstrative Pronouns</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GPP&gt;</code></td>
+<td>Errors with personal pronouns (e.g., <em>you</em>, <em>we</em>, etc.).</td>
+<td><a href="#personal-pronouns-gpp">Personal Pronouns</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GPO&gt;</code></td>
+<td>Errors with possessive pronouns (e.g., <em>mine</em>, <em>yours</em>, etc.).</td>
+<td><a href="#possessive-pronouns-gpo">Possessive Pronouns</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GPI&gt;</code></td>
+<td>Errors with indefinite pronouns. (e.g. <em>anyone</em>, <em>nothing</em>, etc.).</td>
+<td><a href="#indefinite-pronouns-gpi">Indefinite Pronouns</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GPF&gt;</code></td>
+<td>Errors with reflexive or reciprocal pronouns (e.g., <em>myself</em>, <em>each other</em>, etc.).</td>
+<td><a href="#reflexive-reciprocal-pronouns-gpf">Reflexive/Reciprocal Pronouns</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GPR&gt;</code></td>
+<td>Errors with relative or interrogative pronouns (e.g., <em>what</em>, <em>which</em>, etc.).</td>
+<td><a href="#relative-interrogative-pronouns-gpr">Relative/Interrogative Pronouns</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GPU&gt;</code></td>
+<td>Unclear pronominal reference.</td>
+<td><a href="#unclear-pronominal-reference">Unclear Pronominal Reference</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GVAUX&gt;</code></td>
+<td>Misuse of primary, modal, or semi-auxiliaries (e.g., <em>do</em>, <em>have</em>, etc.).</td>
+<td><a href="#verb-auxiliaries-gvaux">Verb Auxiliaries</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GVM&gt;</code></td>
+<td>Errors with verb morphology.</td>
+<td><a href="#verb-morphology-gvm">Verb Morphology</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GVN&gt;</code></td>
+<td>Errors with subject-verb agreement.</td>
+<td><a href="#verb-number-gvn">Verb Number</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GVNF&gt;</code></td>
+<td>Errors in use of <em>-ing</em>, infinitives, or relative clauses.</td>
+<td><a href="#verb-non-finite-finite-gvnf">Verb Non-Finite/Finite</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GVT&gt;</code></td>
+<td>Misuse of tense or aspect.</td>
+<td><a href="#verb-tense-gvt">Verb Tense</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GVV&gt;</code></td>
+<td>Errors with active/passive voice.</td>
+<td><a href="#verb-voice-gvv">Verb Voice</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;GWC&gt;</code></td>
+<td>Errors due to confusion between word classes.</td>
+<td><a href="#grammar-word-class-gwc">Grammar Word Class</a></td>
+</tr>
+<tr>
+<td><strong>Lexico-Grammar</strong></td>
+<td><code>&lt;XADJCO&gt;</code></td>
+<td>Errors with adjective complementation.</td>
+<td><a href="#adjective-complementation-xadjco">Adjective Complementation</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;XNCO&gt;</code></td>
+<td>Errors with noun complementation.</td>
+<td><a href="#noun-complementation-xnco">Noun Complementation</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;XPRCO&gt;</code></td>
+<td>Errors with preposition complementation.</td>
+<td><a href="#preposition-complementation-xprco">Preposition Complementation</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;XVCO&gt;</code></td>
+<td>Errors with verb complementation.</td>
+<td><a href="#verb-complementation-xvco">Verb Complementation</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;XADJPR&gt;</code></td>
+<td>Errors with adjective dependent prepositions.</td>
+<td><a href="#adjective-dependent-preposition-xadjpr">Adjective Dependent Preposition</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;XADVPR&gt;</code></td>
+<td>Errors with adverb dependent prepositions.</td>
+<td><a href="#adverb-dependent-preposition-xadvpr">Adverb Dependent Preposition</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;XNPR&gt;</code></td>
+<td>Errors involving dependent prepositions for nouns.</td>
+<td><a href="#noun-dependent-preposition-xnpr">Noun Dependent Preposition</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;XVPR&gt;</code></td>
+<td>Errors involving dependent prepositions for verbs.</td>
+<td><a href="#verb-dependent-preposition-xvpr">Verb Dependent Preposition</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;XNUC&gt;</code></td>
+<td>Errors in the use of uncountable/countable nouns.</td>
+<td><a href="#uncountable-countable-nouns-xnuc">Uncountable/Countable Nouns</a></td>
+</tr>
+<tr>
+<td><strong>Lexis</strong></td>
+<td><code>&lt;LCC&gt;</code></td>
+<td>Errors in the use of coordinating conjunctions (e.g., <em>and</em>, <em>or</em>, etc.).</td>
+<td><a href="#coordinating-conjunctions-lcc">Coordinating Conjunctions</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;LCS&gt;</code></td>
+<td>Errors in the use of subordinating conjunctions (e.g., <em>although</em>, <em>because</em>, etc.).</td>
+<td><a href="#subordinating-conjunctions-lcs">Subordinating Conjunctions</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;LCLS&gt;</code></td>
+<td>Errors in the use of single logical connectors (e.g., <em>nevertheless</em>, etc.).</td>
+<td><a href="#single-logical-connectors-lcls">Single Logical Connectors</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;LCLC&gt;</code></td>
+<td>Errors in the use of complex logical connectors (e.g., <em>on the other hand</em>, etc.).</td>
+<td><a href="#complex-logical-connectors-lclc">Complex Logical Connectors</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;LSADJ&gt;</code></td>
+<td>Conceptual or collocational errors involving adjectives.</td>
+<td><a href="#single-adjectives-lsad">Single Adjectives</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;LSADV&gt;</code></td>
+<td>Conceptual or collocational errors involving adverbs.</td>
+<td><a href="#single-adverbs-lsadv">Single Adverbs</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;LSN&gt;</code></td>
+<td>Conceptual or collocational errors involving nouns.</td>
+<td><a href="#single-nouns-lsn">Single Nouns</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;LSPR&gt;</code></td>
+<td>Conceptual or collocational errors involving prepositions.</td>
+<td><a href="#single-prepositions-lspr">Single Prepositions</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;LSV&gt;</code></td>
+<td>Conceptual or collocational errors involving verbs.</td>
+<td><a href="#single-verbs-lsv">Single Verbs</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;LP&gt;</code></td>
+<td>Errors in fixed word combinations, including idioms, compounds, and phrasal verbs.</td>
+<td><a href="#lexical-phrases-lp">Lexical Phrases</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;LWCO&gt;</code></td>
+<td>Instances of coined words, calques, or invented proper nouns.</td>
+<td><a href="#word-coinage-lwco">Word Coinage/Calque</a></td>
+</tr>
+<tr>
+<td><strong>Word</strong></td>
+<td><code>&lt;WM&gt;</code></td>
+<td>Missing words.</td>
+<td><a href="#word-missing-wm">Word Missing</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;WR&gt;</code></td>
+<td>Redundant words.</td>
+<td><a href="#word-redundant-wr">Word Redundant</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;WO&gt;</code></td>
+<td>Errors in word order.</td>
+<td><a href="#word-order-wo">Word Order</a></td>
+</tr>
+<tr>
+<td><strong>Infelicities</strong></td>
+<td><code>&lt;Z&gt;</code></td>
+<td>Stylistic problems or unclear sequences requiring reformulation.</td>
+<td><a href="#38-infelicities">Infelicities</a></td>
+</tr>
+<tr>
+<td><strong>Code-Switching</strong></td>
+<td><code>&lt;CSINTRA&gt;</code></td>
+<td>Code-switching within a sentence.</td>
+<td><a href="#cs-intra">Intra-sentential</a></td>
+</tr>
+<tr>
+<td></td>
+<td><code>&lt;CSINTER&gt;</code></td>
+<td>Code-switching between sentences or conversational turns.</td>
+<td><a href="#cs-inter">Inter-sentential</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><a name="3-error-categories"></a></p>
+<h2 id="3-error-categories">3. Error Categories</h2>
+<p><a name="31-digitally-mediated-communication"></a></p>
+<h3 id="3-1-digitally-mediated-communication">3.1. Digitally-Mediated Communication</h3>
+<p><a name="capitalization-dmcc"></a></p>
+<h4 id="capitalization-dmcc-">Capitalization: <code>&lt;DMCC&gt;</code></h4>
+<p>Use <code>&lt;DMCC&gt;</code> for all instances of <strong>missing capitalization</strong>. These may include:</p>
+<ul>
+<li>Uncapitalized first person singular pronoun &quot;I&quot;.
+  <ul>
+    <li><strong>Example:</strong>
+      <pre><code class="lang-xml">&lt;DMCC corr="I"&gt;i&lt;/DMCC&gt; ate the famous &quot;paella&quot;.</code></pre>
+    </li>
+  </ul>
+</li>
+<li>Uncapitalized word at the beginning of a sentence (after full stop, exclamation or question mark).<ul>
+<li><strong>Example:</strong><pre><code class="lang-xml"><span class="hljs-keyword">As</span> you think it<span class="hljs-comment">'s the best. <span class="hljs-doctag">&lt;DMCC corr="We"&gt;</span>we<span class="hljs-doctag">&lt;/DMCC&gt;</span> trust your taste</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Uncapitalized word at at the beginning of the conversational turn.<ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">&lt;DMCC corr=<span class="hljs-string">"Hi"</span>&gt;<span class="hljs-keyword">hi</span>&lt;/DMCC&gt; there, thank you <span class="hljs-keyword">for</span> asking <span class="hljs-keyword">me</span>.
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Uncapitalized proper nouns, or brand names.
+  <ul>
+    <li><strong>Example:</strong>
+      <pre><code class="lang-xml"> I remember that they were from &lt;DMCC corr="Nike"&gt;nike&lt;/DMCC&gt;</code></pre> 
+    </li>
+  </ul>
+</li>
+<li>Uncapitalized weekdays, months, holidays, languagues or nationalities:
+  <ul>
+    <li><strong>Examples:</strong>
+      <pre><code class="lang-xml"> I have lessons from &lt;DMCC corr="Tuesday"&gt;tuesday&lt;/DMCC&gt; to &lt;DMCC corr="Friday"&gt;friday&lt;/DMCC&gt;</code></pre> 
+	  <pre><code class="lang-xml"> I need to find a &lt;DMCC corr="Christmas"&gt;christmas&lt;/DMCC&gt; present</code></pre> 
+    </li>
+  </ul>
+</li>
+</ul>
+<p>💡 <strong>Tip:</strong> If a word is capitalized even though it should not be, or if it is written in all caps, leave it untagged. </p>
+<p><a name="abbreviations-dmca"></a></p>
+<h4 id="abbreviations-dmca-">Abbreviations: <code>&lt;DMCA&gt;</code></h4>
+<p>Use <code>&lt;DMCA&gt;</code> for abbreviations typically used in the digitally-mediated communication (e.g., <em>OK</em>, <em>lol</em>, <em>OMG</em>, etc.).</p>
+<p>💡 <strong>Tip:</strong> If the abbreviation does not have a direct or meaningful equivalent in formal language, leave the <code>corr</code> attribute blank.  </p>
+<ul>
+<li><strong>Example:</strong><pre><code class="lang-xml">Sometimes I play football <span class="hljs-keyword">with</span> <span class="hljs-keyword">my</span> friends, <span class="hljs-keyword">but</span> I&apos;m <span class="hljs-keyword">not</span> so good &lt;DMCA corr=<span class="hljs-string">""</span>&gt;lol&lt;/DMCA&gt;
+</code></pre>
+</li>
+</ul>
+<p><a name="32-form"></a></p>
+<h3 id="3-2-form">3.2. Form</h3>
+<p><a name="spelling-fs"></a></p>
+<h4 id="spelling-fs-">Spelling: <code>&lt;FS&gt;</code></h4>
+<p>Use <code>&lt;FS&gt;</code> for all <strong>spelling errors</strong>, including:</p>
+</li>
+<li>Issues concerning the doubling of consonants/vowels.</li>
+<li>Letter substitution or misordering.</li>
+<li>Misuse/omission of hyphens/blanks between words or parts of words.</li>
+<li>Homophones (<em>it’s/its</em>, <em>their/there</em>, etc.).</li>
+<li>Missing apostrophe in verb abbreviations (<em>Im</em>, <em>youre</em>, etc.).</li>
+<li>Typos.  <ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">FS</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"Perfect"</span>&gt;</span>hperfect<span class="hljs-tag">&lt;/<span class="hljs-name">FS</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p>💡 <strong>Tip:</strong> <strong>Never </strong>tag <strong>capitalization issues as <code> &lt;FS&gt;</code></strong>.</p>
+<p>💡 <strong>Tip:</strong> Unless they actually contain a spelling error, <strong>do NOT tag as <code>&lt;FS&gt;</code></strong>:</p>
+<ol>
+<li>Words in all caps (e.g.; <em>HI</em>).  <ul>
+<li>✅ Correct: No tag needed for <em>HI</em>.</li>
+</ul>
+</li>
+<li>Words ending with repeated letters (e.g., <em>helppp</em>).  <ul>
+<li>✅ Correct: No tag needed for <em>helppp</em>.</li>
+<li>✅ Correct: <code>&lt;FS corr=&quot;help&quot;&gt;hielppp&lt;/FS&gt;</code></li>
+</ul>
+</li>
+</ol>
+<p><a name="morphology-fm"></a></p>
+<h4 id="morphology-fm-">Morphology: <code>&lt;FM&gt;</code></h4>
+<p>Use <code>&lt;FM&gt;</code> for morphological errors on <strong>DERIVATIONAL affixes ONLY</strong>.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">FM</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"impossible"</span>&gt;</span>unpossible<span class="hljs-tag">&lt;/<span class="hljs-name">FM</span>&gt;</span>
+</code></pre>
+<p><a name="33-punctuation"></a> </p>
+<h3 id="3-3-punctuation">3.3. Punctuation</h3>
+<p>💡 <strong>Tip:</strong> Do <strong>NOT use punctuation tags for</strong>:</p>
+<ol>
+<li>Multiple punctuation marks (e.g., <em>!!!</em>).  <ul>
+<li>✅ Correct: Leave untagged.</li>
+</ul>
+</li>
+<li>Ellipses with fewer or more than three dots (e.g., <em>..</em> OR <em>....</em>).  <ul>
+<li>✅ Correct: Leave untagged.</li>
+</ul>
+</li>
+<li>Missing full stops at the end of a conversational turn.  <ul>
+<li>✅ Correct: Leave untagged.</li>
+</ul>
+</li>
+<li>Cases of comma splices (e.g., <em>She said sorry, she doesn&apos;t want to scream like that </em>). <ul>
+<li>✅ Correct: Leave untagged.</li>
+</ol>
+<p><a name="punctuation-confusion-qc"></a></p>
+<h4 id="punctuation-confusion-qc-">Punctuation Confusion: <code>&lt;QC&gt;</code></h4>
+<p>Use <code>&lt;QC&gt;</code> for confusion of punctuation marks (e.g., exclamation mark instead of question mark, etc.).</</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml"><span class="hljs-string">Where&lt;QC corr="?"&gt;!&lt;/QC&gt; </span>
+</code></pre>
+<p><a name="punctuation-lexical-ql"></a></p>
+<h4 id="punctuation-lexical-ql-">Punctuation Lexical: <code>&lt;QL&gt;</code></h4>
+<p>Use <code>&lt;QL&gt;</code> when a punctuation mark is used instead of lexical item (or vice versa).</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">It<span class="hljs-comment">&apos;s just so difficult<span class="hljs-doctag">&lt;QL corr="and"&gt;</span>,<span class="hljs-doctag">&lt;/QL&gt;</span> scary.</span>
+</code></pre>
+<p><a name="punctuation-missing-qm"></a></p>
+<h4 id="punctuation-missing-qm-">Punctuation Missing: <code>&lt;QM&gt;</code></h4>
+<p>Use <code>&lt;QM&gt;</code> for missing punctuation (e.g., missing question mark).</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">In what country should I work and why&lt;QM corr="?"&gt;\0&lt;/QM&gt; 
+</code></pre>
+<p><a name="punctuation-redundant-qr"></a></p>
+<h4 id="punctuation-redundant-qr-">Punctuation Redundant: <code>&lt;QR&gt;</code></h4>
+<p>Use <code>&lt;QR&gt;</code> for redundant punctuation (e.g., unnecessary commas).</p>
+<p><strong>Example:</strong>  </p>
+<pre><code>But&lt;QR corr=&quot;\0&quot;&gt;,&lt;/QR&gt; maybe we can think outside the box</code></pre>
+<p><a name="34-grammar"></a></p>
+<h3 id="3-4-grammar">3.4. Grammar</h3>
+<p><a name="grammar-determiners"></a></p>
+<h4 id="grammar-determiners">Grammar: Determiners</h4>
+<p><a name="demonstrative-determiners-gdd"></a></p>
+<h5 id="demonstrative-determiners-gdd-">Demonstrative Determiners: <code>&lt;GDD&gt;</code></h5>
+<p>Use <code>&lt;GDD&gt;</code> for errors involving demonstrative determiners.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">What should I know about <span class="hljs-tag">&lt;<span class="hljs-name">GDD</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"these"</span>&gt;</span>those<span class="hljs-tag">&lt;/<span class="hljs-name">GDD</span>&gt;</span> subjects?
+</code></pre>
+<p><a name="possessive-determiners-gdo"></a></p>
+<h5 id="possessive-determiners-gdo-">Possessive Determiners: <code>&lt;GDO&gt;</code></h5>
+<p>Use <code>&lt;GDO&gt;</code> for errors involving possessive determiners.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">I like psychological horror films <span class="hljs-keyword">that</span> play <span class="hljs-keyword">with</span> &lt;GDO corr=<span class="hljs-string">"your"</span>&gt;our&lt;/GDO&gt; mind
+</code></pre>
+<p><a name="indefinite-determiners-gdi"></a></p>
+<h5 id="indefinite-determiners-gdi-">Indefinite Determiners: <code>&lt;GDI&gt;</code></h5>
+<p>Use <code>&lt;GDI&gt;</code> for errors involving indefinite determiners (e.g., <em>any</em>, <em>some</em>).</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">I don&apos;t have &lt;GDI <span class="hljs-attr">corr</span>=<span class="hljs-string">"any"</span>&gt; some<span class="hljs-tag">&lt;/<span class="hljs-name">GDI</span>&gt;</span> friends.
+</code></pre>
+<p><a name="other-determiners-gdt"></a></p>
+<h5 id="other-determiners-gdt-">Other Determiners: <code>&lt;GDT&gt;</code></h5>
+<p>Use <code>&lt;GDT&gt;</code> for errors involving other types of determiners, such as:</p>
+<ul>
+<li>Relative determiners (e.g., <em>whose</em>).</li>
+<li>Interrogative determiners (e.g., <em>which</em>, <em>what</em>).</li>
+</ul>
+<p>💡 <strong>Tip:</strong> Use <code>&lt;GDT&gt;</code> only for errors not covered under <a href="#demonstrative-determiners-gdd"><code>&lt;GDD&gt;</code></a>, <a href="#possessive-determiners-gdo"><code>&lt;GDO&gt;</code></a> or <a href="#indefinite-determiners-gdi"><code>&lt;GDI&gt;</code></a>.</p>
+<p><a name="articles-ga"></a></p>
+<h4 id="articles-ga-">Articles: <code>&lt;GA&gt;</code></h4>
+<p>Use <code>&lt;GA&gt;</code> for all problems of <strong>definite</strong>, <strong>indefinite</strong> or <strong>zero</strong> articles.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">I like <span class="hljs-tag">&lt;<span class="hljs-name">GA</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"\0"</span>&gt;</span>the<span class="hljs-tag">&lt;/<span class="hljs-name">GA</span>&gt;</span> green tea.
+</code></pre>
+<p><a name="grammar-adjectives"></a></p>
+<h4 id="grammar-adjectives">Grammar: Adjectives</h4>
+<p><a name="comparative-superlative-adjectives-gadjcs"></a></p>
+<h5 id="comparative-superlative-adjectives-gadjcs-">Comparative/Superlative Adjectives: <code>&lt;GADJCS&gt;</code></h5>
+<p>Use <code>&lt;GADJCS&gt;</code> for wrong formation and/or misuse of comparatives and superlatives.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">I<span class="hljs-symbol">&apos;m</span> studying Criminology, it <span class="hljs-keyword">is</span> &lt;GADJCS corr=<span class="hljs-string">"very"</span>&gt;most&lt;/GADJCS&gt; difficult.
+</code></pre>
+<p><a name="adjective-number-gadjn"></a></p>
+<h5 id="adjective-number-gadjn-">Adjective Number: <code>&lt;GADJN&gt;</code></h5>
+<p>Use <code>&lt;GADJN&gt;</code> for erroneous uses of plural morphemes with adjectives.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">the <span class="hljs-tag">&lt;<span class="hljs-name">GADJN</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"poor"</span>&gt;</span>poors<span class="hljs-tag">&lt;/<span class="hljs-name">GADJN</span>&gt;</span> people
+</code></pre>
+<p><a name="adjective-order-gadjo"></a></p>
+<h5 id="adjective-order-gadjo-">Adjective Order: <code>&lt;GADJO&gt;</code></h5>
+<p>Use <code>&lt;GADJO&gt;</code> for:</p>
+<ul>
+<li>Problems of adjective position.</li>
+<li>Word-order errors when two or more adjectives precede the noun.</li>
+<li>Errors concerning adjectives with different meaning when used attributively or predicatively.  <ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">the &lt;GADJO corr=<span class="hljs-string">"people concerned"</span>&gt;concerned people&lt;/GADJO&gt; are asked to<span class="hljs-built_in"> fill </span>in a form
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p><a name="adverb-order-gadvo"></a></p>
+<h5 id="adverb-order-gadvo-">Adverb Order: <code>&lt;GADVO&gt;</code></h5>
+<p>Use <code>&lt;GADVO&gt;</code> to tag <strong>misplaced adverbs</strong>.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">we <span class="hljs-tag">&lt;<span class="hljs-name">GADVO</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"also explored"</span>&gt;</span>explored also<span class="hljs-tag">&lt;/<span class="hljs-name">GADVO</span>&gt;</span> the centre of Corfù town
+</code></pre>
+<p><a name="grammar-nouns"></a></p>
+<h4 id="grammar-nouns">Grammar: Nouns</h4>
+<p><a name="noun-case-gnc"></a></p>
+<h5 id="noun-case-gnc-">Noun Case: <code>&lt;GNC&gt;</code></h5>
+<p>Use <code>&lt;GNC&gt;</code> for:</p>
+<ul>
+<li>Inappropriate use of the Saxon genitive.  <ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">GNC</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"Tower of London"</span>&gt;</span>London&apos;s Tower<span class="hljs-tag">&lt;/<span class="hljs-name">GNC</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Use of a phrase where there should be a Saxon genitive.  <ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">&lt;GNC corr=<span class="hljs-string">"my favourite team's games"</span>&gt;<span class="hljs-keyword">the</span> games <span class="hljs-keyword">of</span> <span class="hljs-keyword">my</span> favourite team&lt;/GNC&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Omission of the genitive marker.  <ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">GNC</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"beginner&apos;s guide"</span>&gt;</span>beginners guide<span class="hljs-tag">&lt;/<span class="hljs-name">GNC</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p><a name="noun-number-gnn"></a></p>
+<h5 id="noun-number-gnn-">Noun Number: <code>&lt;GNN&gt;</code></h5>
+<p>Use <code>&lt;GNN&gt;</code> for:</p>
+<ul>
+<li>Singular for plural (and vice versa).  <ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">What <span class="hljs-built_in">do</span> you think about <span class="hljs-keyword">the</span> <span class="hljs-number">3</span> &lt;GNN corr=<span class="hljs-string">"losses"</span>&gt;loss&lt;/GNN&gt; <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> Yankees?
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Errors in irregular plurals.  <ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">GNN</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"mice"</span>&gt;</span>mouses<span class="hljs-tag">&lt;/<span class="hljs-name">GNN</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Use of genitive marker instead of plural <em>-s</em>.  <ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">underprivileged <span class="hljs-tag">&lt;<span class="hljs-name">GNN</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"beings"</span>&gt;</span>being's<span class="hljs-tag">&lt;/<span class="hljs-name">GNN</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p><a name="grammar-pronouns"></a></p>
+<h4 id="grammar-pronouns">Grammar: Pronouns</h4>
+<p><a name="demonstrative-pronouns-gpd"></a></p>
+<h5 id="demonstrative-pronouns-gpd-">Demonstrative Pronouns: <code>&lt;GPD&gt;</code></h5>
+<p>Use <code>&lt;GPD&gt;</code> to tag errors involving demonstrative pronouns.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml"><span class="hljs-keyword">if</span> &lt;GPD corr=<span class="hljs-string">"that"</span>&gt;<span class="hljs-string">\0&lt;/GPD&gt;</span> <span class="hljs-keyword">is</span> comfortable <span class="hljs-keyword">with</span> you
+</code></pre>
+<p><a name="personal-pronouns-gpp"></a></p>
+<h5 id="personal-pronouns-gpp-">Personal Pronouns: <code>&lt;GPP&gt;</code></h5>
+<p>Use <code>&lt;GPP&gt;</code> for errors involving personal pronouns.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">I didn<span class="hljs-comment">&apos;t like <span class="hljs-doctag">&lt;GPP corr="it"&gt;</span>\0<span class="hljs-doctag">&lt;/GPP&gt;</span> so much</span>
+</code></pre>
+<p><a name="possessive-pronouns-gpo"></a></p>
+<h5 id="possessive-pronouns-gpo-">Possessive Pronouns: <code>&lt;GPO&gt;</code></h5>
+<p>Use <code>&lt;GPO&gt;</code> for errors in possessive pronouns.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml"> she is &lt;GPO corr=<span class="hljs-string">"my"</span>&gt;mine&lt;/GPO&gt; sister
+</code></pre>
+<p><a name="indefinite-pronouns-gpi"></a></p>
+<h5 id="indefinite-pronouns-gpi-">Indefinite Pronouns: <code>&lt;GPI&gt;</code></h5>
+<p>Use <code>&lt;GPI&gt;</code> for <strong>ALL errors</strong> involving indefinite pronouns, including <em>one/ones</em> and the pro-form <em>so</em>.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">Could you please give me another solution, maybe a quicker <span class="hljs-tag">&lt;<span class="hljs-name">GPI</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"one"</span>&gt;</span>\0<span class="hljs-tag">&lt;/<span class="hljs-name">GPI</span>&gt;</span>?
+</code></pre>
+<p><a name="reflexive-reciprocal-pronouns-gpf"></a></p>
+<h5 id="reflexive-reciprocal-pronouns-gpf-">Reflexive/Reciprocal Pronouns: <code>&lt;GPF&gt;</code></h5>
+<p>Use <code>&lt;GPF&gt;</code> for errors in reflexive pronouns (<em>myself</em>, <em>himself</em>) or reciprocal pronouns (<em>each other</em>, <em>one another</em>).</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">I respect <span class="hljs-tag">&lt;<span class="hljs-name">GPF</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"myself"</span>&gt;</span>me<span class="hljs-tag">&lt;/<span class="hljs-name">GPF</span>&gt;</span>.
+</code></pre>
+<p><a name="relative-interrogative-pronouns-gpr"></a></p>
+<h5 id="relative-interrogative-pronouns-gpr-">Relative/Interrogative Pronouns: <code>&lt;GPR&gt;</code></h5>
+<p>Use <code>&lt;GPR&gt;</code> for errors involving relative pronouns (<em>who</em>, <em>which</em>, <em>that</em>) or interrogative pronouns (<em>who</em>, <em>what</em>, <em>where</em>).</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">I am a language trained model <span class="hljs-tag">&lt;<span class="hljs-name">GPR</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"which"</span>&gt;</span>who<span class="hljs-tag">&lt;/<span class="hljs-name">GPR</span>&gt;</span> can simulate human intelligence.
+</code></pre>
+<p><a name="unclear-pronominal-reference"></a></p>
+<h5 id="unclear-pronominal-reference-gpu-">Unclear pronominal reference: <code>&lt;GPU&gt;</code></h5>
+<p>Use <code>&lt;GPU&gt;</code> for cases where the referent of the pronoun is unclear.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">They never had <span class="hljs-keyword">a</span> fair trial <span class="hljs-keyword">and</span> <span class="hljs-keyword">a</span> real chance <span class="hljs-built_in">to</span> <span class="hljs-built_in">get</span> out <span class="hljs-keyword">of</span> &lt;GPU corr=<span class="hljs-string">"jail"</span>&gt;<span class="hljs-keyword">it</span>&lt;/GPU&gt;.
+</code></pre>
+<p><a name="grammar-verbs"></a></p>
+<h4 id="grammar-verbs">Grammar: Verbs</h4>
+<p><a name="verb-auxiliaries-gvaux"></a></p>
+<h5 id="verb-auxiliaries-gvaux-">Verb Auxiliaries: <code>&lt;GVAUX&gt;</code></h5>
+<p>Use <code>&lt;GVAUX&gt;</code> to tag:</p>
+<ul>
+<li>Misuse of primary auxiliaries (<em>be</em>, <em>have</em> and <em>do</em>), e.g., in interrogative sentences.  <ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">&lt;GVAUX corr=<span class="hljs-string">"Do"</span>&gt;\<span class="hljs-number">0</span>&lt;/GVAUX&gt; You have other recipes <span class="hljs-keyword">for</span> gluten-<span class="hljs-keyword">free</span> <span class="hljs-keyword">and</span> vegan food?
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Misuse of modal auxiliaries (<strong>EXCEPT</strong> <em>shall</em> and <em>will</em> which are tagged <a href="#verb-tense-gvt"><code>&lt;GVT&gt;</code></a>).</li>
+<li>Misuse of the semi-auxiliaries (<em>dare</em>, <em>need</em>, <em>ought to</em> and <em>used to</em>).</li>
+<li>Missing auxiliary <em>be</em> in present or past continuous tense.  <ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">I <span class="hljs-tag">&lt;<span class="hljs-name">GVAUX</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"am"</span>&gt;</span>\0<span class="hljs-tag">&lt;/<span class="hljs-name">GVAUX</span>&gt;</span> eating pasta.
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p><a name="verb-morphology-gvm"></a></p>
+<h5 id="verb-morphology-gvm-">Verb Morphology: <code>&lt;GVM&gt;</code></h5>
+<p>Use <code>&lt;GVM&gt;</code> for erroneous uses of verb morphology, i.e. <strong>misuse of inflectional verbal morphemes</strong>, including:</p>
+<ul>
+<li>Use of simple past form instead of a past participle form (and vice versa).  <ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">I have &lt;GVM <span class="hljs-keyword">corr</span>=<span class="hljs-string">"swum"</span>&gt;swam&lt;/GVM&gt; <span class="hljs-keyword">for</span> <span class="hljs-keyword">two</span> hours.
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Erroneously formed 3rd person singular morphemes.  <ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">He <span class="hljs-tag">&lt;<span class="hljs-name">GVM</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"watches"</span>&gt;</span>watchs<span class="hljs-tag">&lt;/<span class="hljs-name">GVM</span>&gt;</span> television all day long.
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Erroneous irregular past tense verb.  <ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">I have &lt;GVM <span class="hljs-keyword">corr</span>=<span class="hljs-string">"swum"</span>&gt;swimmed&lt;/GVM&gt; <span class="hljs-keyword">for</span> <span class="hljs-keyword">two</span> hours.
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Use of a non <em>-ing</em> verb form in present or past continuous tense.  <ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">I &lt;GVM corr=<span class="hljs-string">"&apos;m staying"</span>&gt;&apos;m stay&lt;/GVM&gt; <span class="hljs-keyword">with</span> <span class="hljs-keyword">my</span> family <span class="hljs-keyword">and</span> <span class="hljs-keyword">my</span> animals
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Non-use of base form where required (e.g., in interrogative sentences, with modal verbs, etc.).  <ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">What <span class="hljs-keyword">do</span> you &lt;GVM corr=<span class="hljs-string">"think"</span>&gt;thinking&lt;/GVM&gt; about <span class="hljs-keyword">this</span>?
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p><a name="verb-number-gvn"></a></p>
+<h5 id="verb-number-gvn-">Verb Number: <code>&lt;GVN&gt;</code></h5>
+<p>Use the <code>&lt;GVN&gt;</code> tag for errors where the <strong>verb form does not match the subject&#39;s number</strong> (singular or plural).</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">a person <span class="hljs-keyword">that</span> &lt;GVN corr=<span class="hljs-string">"wants"</span>&gt;want&lt;/GVN&gt; <span class="hljs-keyword">to</span> go <span class="hljs-keyword">to</span> Florence
+</code></pre>
+<p><a name="verb-non-finite-finite-gvnf"></a></p>
+<h5 id="verb-non-finite-finite-gvnf-">Verb Non-Finite/Finite: <code>&lt;GVNF&gt;</code></h5>
+<p>Use <code>&lt;GVNF&gt;</code> to tag:</p>
+<ul>
+<li><em>-ing</em> form used instead of a relative clause (and vice versa).<ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">Hardly anybody <span class="hljs-keyword">from</span> our district &lt;GVNF corr=<span class="hljs-string">"who is older"</span>&gt;being older&lt;/GVNF&gt; than fifteen goes <span class="hljs-keyword">to</span> school regularly.
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Nominal use of the bare infinitive instead of <em>-ing</em> form.<ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">&lt;GVNF corr=<span class="hljs-string">"Booking"</span>&gt;Book&lt;/GVNF&gt; a <span class="hljs-keyword">table</span> at <span class="hljs-comment">the restaurant?</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Nominal use of the infinitive with <em>to</em> instead of <em>-ing</em> form.<ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">My favorite way <span class="hljs-keyword">to</span> spend <span class="hljs-built_in">time</span> <span class="hljs-keyword">in</span> <span class="hljs-keyword">the</span> weekend <span class="hljs-keyword">is</span> &lt;GVNF corr=<span class="hljs-string">"relaxing"</span>&gt;<span class="hljs-keyword">to</span> relax&lt;/GVNF&gt; <span class="hljs-keyword">at</span> home <span class="hljs-keyword">with</span> <span class="hljs-keyword">my</span> boyfriend
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p><a name="verb-tense-gvt"></a></p>
+<h5 id="verb-tense-gvt-">Verb Tense: <code>&lt;GVT&gt;</code></h5>
+<p>Use <code>&lt;GVT&gt;</code> to tag any misuse of <strong>tense or aspect</strong>, including:</p>
+<ul>
+<li>Present simple for continuous (and vice versa).</li>
+<li>Present simple for present perfect (and vice versa).</li>
+<li>Present simple for simple past (and vice versa).</li>
+<li>Simple past for present perfect (and vice versa).</li>
+<li>Present simple for future (and vice versa).</li>
+<li>Misuse of <em>shall</em> and <em>will</em>.<ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">I &lt;GVT corr=<span class="hljs-string">"would"</span>&gt;will&lt;/GVT&gt; feel more secure <span class="hljs-keyword">if</span> I could even control <span class="hljs-keyword">the</span> quality <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> water
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p>💡 <strong>Tip:</strong> If you change one verb’s tense, check and fix others in the same sentence.</p>
+<p><a name="verb-voice-gvv"></a></p>
+<h5 id="verb-voice-gvv-">Verb Voice: <code>&lt;GVV&gt;</code></h5>
+<p>Use the <code>&lt;GVV&gt;</code> tag for errors involving the incorrect use of <strong>active</strong> or <strong>passive voice</strong>. This includes cases where active voice is used instead of passive, or vice versa.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">It <span class="hljs-keyword">is</span> <span class="hljs-keyword">to</span> &lt;GVV corr=<span class="hljs-string">"be hoped"</span>&gt;hope&lt;/GVV&gt; <span class="hljs-keyword">that</span>…
+</code></pre>
+<p><a name="grammar-word-class-gwc"></a></p>
+<h4 id="grammar-word-class-gwc-">Grammar Word Class: <code>&lt;GWC&gt;</code></h4>
+<p>Use <code>&lt;GWC&gt;</code> to tag errors due to confusion between <strong>word classes</strong> (e.g., an adjective used instead of a noun or an adverb instead of an adjective).</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml"><span class="hljs-keyword">my</span> friend <span class="hljs-keyword">is</span> &lt;GWC corr=<span class="hljs-string">"dead"</span>&gt;died&lt;/GWC&gt;
+</code></pre>
+<p><a name="35-lexico-grammar"></a></p>
+<h3 id="3-5-lexico-grammar">3.5. Lexico-Grammar</h3>
+<p><a name="complementation"></a></p>
+<h4 id="complementation">Complementation</h4>
+<p>Use the tags <a href="#adjective-complementation-xadjco"><code>&lt;XADJCO&gt;</code></a>, <a href="#noun-complementation-xnco"><code>&lt;XNCO&gt;</code></a>, <a href="#preposition-complementation-xprco"><code>&lt;XPRCO&gt;</code></a> and <a href="#verb-complementation-xvco"><code>&lt;XVCO&gt;</code></a> for complementation errors, i.e. erroneous use of the <strong>finite and non-finite patterns</strong> that complement <strong>adjectives</strong>, <strong>adverbs</strong>, <strong>nouns</strong>, <strong>prepositions</strong> and <strong>verbs</strong>.</p>
+<p><a name="adjective-complementation-xadjco"></a></p>
+<h5 id="adjective-complementation-xadjco-">Adjective Complementation: <code>&lt;XADJCO&gt;</code></h5>
+<p>Use <code>&lt;XADJCO&gt;</code> for errors in complementation patterns linked to adjectives.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">I am very <span class="hljs-tag">&lt;<span class="hljs-name">XADJCO</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"interested in visiting"</span>&gt;</span>interested in visit<span class="hljs-tag">&lt;/<span class="hljs-name">XADJCO</span>&gt;</span> famous medieval monuments
+</code></pre>
+<p><a name="noun-complementation-xnco"></a></p>
+<h5 id="noun-complementation-xnco-">Noun Complementation: <code>&lt;XNCO&gt;</code></h5>
+<p>Use <code>&lt;XNCO&gt;</code> for errors in complementation patterns linked to nouns.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">students have the <span class="hljs-tag">&lt;<span class="hljs-name">XNCO</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"possibility of leaving"</span>&gt;</span>possibility to leave<span class="hljs-tag">&lt;/<span class="hljs-name">XNCO</span>&gt;</span>
+</code></pre>
+<p><a name="preposition-complementation-xprco"></a></p>
+<h5 id="preposition-complementation-xprco-">Preposition Complementation: <code>&lt;XPRCO&gt;</code></h5>
+<p>Use <code>&lt;XPRCO&gt;</code> for errors in complementation patterns linked to pronouns.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">&lt;XPRCO corr=<span class="hljs-string">"instead of going"</span>&gt;<span class="hljs-keyword">instead of</span> <span class="hljs-keyword">to</span> go&lt;/XPRCO&gt; abroad
+</code></pre>
+<p><a name="verb-complementation-xvco"></a></p>
+<h5 id="verb-complementation-xvco-">Verb Complementation: <code>&lt;XVCO&gt;</code></h5>
+<p>Use <code>&lt;XVCO&gt;</code> for errors in complementation patterns linked to verbs.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">I really <span class="hljs-tag">&lt;<span class="hljs-name">XVCO</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"liked working"</span>&gt;</span>liked worked<span class="hljs-tag">&lt;/<span class="hljs-name">XVCO</span>&gt;</span> there
+</code></pre>
+<p><a name="dependent-prepositions"></a></p>
+<h4 id="dependent-prepositions">Dependent Prepositions</h4>
+<p>Use the tags <a href="#adjective-dependent-preposition-xadjpr"><code>&lt;XADJPR&gt;</code></a>, <a href="#adverb-dependent-preposition-xadvpr"><code>&lt;XADVPR&gt;</code></a>, <a href="#noun-dependent-preposition-xnpr"><code>&lt;XNPR&gt;</code></a> and <a href="#verb-dependent-preposition-xvpr"><code>&lt;XVPR&gt;</code></a> for errors involving <strong>prepositions</strong> that are <strong>intrinsically linked</strong> to a particular <strong>adjective</strong>, <strong>adverb</strong>, <strong>noun</strong> or <strong>verb</strong>.</p>
+<p>💡 <strong>Tips:</strong></p>
+<ol>
+<li>Use <strong>dependent preposition tags</strong> also for cases of <strong>omission</strong> of a <strong>dependent preposition</strong>.<ul>
+<li>✅ Correct: <code>&lt;XADJPR corr=&quot;interested in&quot;&gt;interested&lt;/XADJPR&gt;</code></li>
+<li>❌ Incorrect: <code>interested &lt;XADJPR corr=&quot;in&quot;&gt;\0&lt;/XADJPR&gt;</code></li>
+</ul>
+</li>
+<li>In the case of errors involving <strong>independent prepositions</strong>, use <a href="#single-prepositions-lspr"><code>&lt;LSPR&gt;</code></a>.<ul>
+<li>✅ Correct: <code>I walked &lt;LSPR corr=&#39;into&#39;&gt;in&lt;/LSPR&gt; the room.</code></li>
+</ul>
+</li>
+</ol>
+<p><a name="adjective-dependent-preposition-xadjpr"></a></p>
+<h5 id="adjective-dependent-preposition-xadjpr-">Adjective Dependent Preposition: <code>&lt;XADJPR&gt;</code></h5>
+<p>Use <code>&lt;XADJPR&gt;</code> for errors involving prepositions required by adjectives.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">I<span class="hljs-comment">'m <span class="hljs-doctag">&lt;XADJPR corr="interested in"&gt;</span>interested<span class="hljs-doctag">&lt;/XADJPR&gt;</span> a vacation in Italy</span>
+</code></pre>
+<p><a name="adverb-dependent-preposition-xadvpr"></a></p>
+<h5 id="adverb-dependent-preposition-xadvpr-">Adverb Dependent Preposition: <code>&lt;XADVPR&gt;</code></h5>
+<p>Use <code>&lt;XADVPR&gt;</code> for errors involving prepositions required by adverbs.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">The investigators acted <span class="hljs-params">&lt;XADVPR&gt;</span> corr=<span class="hljs-string">"independently of"</span>&gt;independently from<span class="hljs-params">&lt;/XADVPR&gt;</span> each other.
+</code></pre>
+<p><a name="noun-dependent-preposition-xnpr"></a></p>
+<h5 id="noun-dependent-preposition-xnpr-">Noun Dependent Preposition: <code>&lt;XNPR&gt;</code></h5>
+<p>Use <code>&lt;XNPR&gt;</code> for errors involving prepositions required by nouns.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">I have no &lt;XNPR corr=<span class="hljs-string">"idea of"</span>&gt;idea <span class="hljs-built_in">to</span>&lt;/XNPR&gt; <span class="hljs-keyword">the</span> basic role <span class="hljs-keyword">of</span> materials
+</code></pre>
+<p><a name="verb-dependent-preposition-xvpr"></a></p>
+<h5 id="verb-dependent-preposition-xvpr-">Verb Dependent Preposition: <code>&lt;XVPR&gt;</code></h5>
+<p>Use <code>&lt;XVPR&gt;</code> for errors involving prepositions required by verbs.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">Can you <span class="hljs-tag">&lt;<span class="hljs-name">XVPR</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"explain to"</span>&gt;</span>explain<span class="hljs-tag">&lt;/<span class="hljs-name">XVPR</span>&gt;</span> me the situation?
+</code></pre>
+<p><a name="uncountable-countable-nouns-xnuc"></a></p>
+<h4 id="uncountable-countable-nouns-xnuc-">Uncountable/Countable Nouns: <code>&lt;XNUC&gt;</code></h4>
+<p>Use <code>&lt;XNUC&gt;</code> for:</p>
+<ul>
+<li>Indefinite article with uncountable nouns.  <ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">I need <span class="hljs-built_in">to</span> ask you <span class="hljs-keyword">for</span> &lt;XNUC corr=<span class="hljs-string">"some information"</span>&gt;<span class="hljs-keyword">an</span> information&lt;/XNUC&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Plural of uncountable nouns.  <ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">I will take your <span class="hljs-tag">&lt;<span class="hljs-name">XNUC</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"advice"</span>&gt;</span>advices<span class="hljs-tag">&lt;/<span class="hljs-name">XNUC</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p><a name="36-lexis"></a></p>
+<h3 id="3-6-lexis">3.6. Lexis</h3>
+<p><a name="lexis-connectors"></a></p>
+<h4 id="lexis-connectors">Lexis: Connectors</h4>
+<p>Use the tags <a href="#coordinating-conjunctions-lcc"><code>&lt;LCC&gt;</code></a>, <a href="#subordinating-conjunctions-lcs"><code>&lt;LCS&gt;</code></a>, <a href="#single-logical-connectors-lcls"><code>&lt;LCLS&gt;</code></a> and <a href="#complex-logical-connectors-lclc"><code>&lt;LCLC&gt;</code></a> for errors involving connectors, including:</p>
+<ul>
+<li><strong>Unnecessary use</strong> of a connector.</li>
+<li><strong>Omission</strong> of a necessary connector.</li>
+<li><strong>Wrong choice</strong> of connector.</li>
+</ul>
+<p>💡 <strong>Tip:</strong> If an <strong>erroneous preposition</strong> is <strong>part of a connector</strong>, use:</p>
+<ul>
+<li><a href="#single-logical-connectors-lcls"><code>&lt;LCLS&gt;</code></a> for simple connectors.</li>
+<li><a href="#complex-logical-connectors-lclc"><code>&lt;LCLC&gt;</code></a> for multi-word or complex connectors.</li>
+</ul>
+<p><a name="coordinating-conjunctions-lcc"></a></p>
+<h5 id="coordinating-conjunctions-lcc-">Coordinating Conjunctions: <code>&lt;LCC&gt;</code></h5>
+<p>Use <code>&lt;LCC&gt;</code> for errors in coordinating conjunctions (e.g., <em>and, but, or</em>).</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">Now I would like <span class="hljs-built_in">to</span> talk <span class="hljs-keyword">with</span> you &lt;LCC corr=<span class="hljs-string">"and"</span>&gt;\<span class="hljs-number">0</span>&lt;/LCC&gt; <span class="hljs-built_in">do</span> <span class="hljs-keyword">a</span> role play.
+</code></pre>
+<p><a name="subordinating-conjunctions-lcs"></a></p>
+<h5 id="subordinating-conjunctions-lcs-">Subordinating Conjunctions: <code>&lt;LCS&gt;</code></h5>
+<p>Use <code>&lt;LCS&gt;</code> for errors in subordinating conjunctions (e.g., <em>because</em>, <em>although</em>, <em>while</em>).</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">LCS</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"\0"</span>&gt;</span>because<span class="hljs-tag">&lt;/<span class="hljs-name">LCS</span>&gt;</span> I am very tired, how are you?
+</code></pre>
+<p><a name="single-logical-connectors-lcls"></a></p>
+<h5 id="single-logical-connectors-lcls-">Single Logical Connectors: <code>&lt;LCLS&gt;</code></h5>
+<p>Use <code>&lt;LCLS&gt;</code> for errors in single logical connectors (e.g., <em>then</em>, <em>after</em>, <em>therefore</em>).</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">&lt;<span class="hljs-meta">LCLS</span> corr=<span class="hljs-string">"Then"</span>&gt;After&lt;/<span class="hljs-meta">LCLS</span>&gt; I would like an ice cream
+</code></pre>
+<p><a name="complex-logical-connectors-lclc"></a></p>
+<h5 id="complex-logical-connectors-lclc-">Complex Logical Connectors: <code>&lt;LCLC&gt;</code></h5>
+<p>Use <code>&lt;LCLC&gt;</code> for errors in multi-word or complex logical connectors (e.g., <em>on the contrary</em>, <em>as a result</em>).</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">&lt;LCLC corr=<span class="hljs-string">"On the contrary"</span>&gt;By <span class="hljs-keyword">the</span> contrary&lt;/LCLC&gt; <span class="hljs-keyword">not</span> all improvements have been <span class="hljs-keyword">as</span> positive <span class="hljs-keyword">as</span> <span class="hljs-keyword">the</span> ones previously said.
+</code></pre>
+<p><a name="lexis-single-words"></a></p>
+<h4 id="lexis-single-words">Lexis: Single Words</h4>
+<p>Use the tags <a href="#single-adjectives-lsad"><code>&lt;LSADJ&gt;</code></a>, <a href="#single-adverbs-lsadv"><code>&lt;LSADV&gt;</code></a>, <a href="#single-nouns-lsn"><code>&lt;LSN&gt;</code></a>, <a href="#single-prepositions-lspr"><code>&lt;LSPR&gt;</code></a> and <a href="#single-verbs-lsv"><code>&lt;LSV&gt;</code></a> for <strong>conceptual</strong> and <strong>collocational</strong> lexical errors in single words. These include <strong>solid and hyphenated compounds</strong>.</p>
+<p>💡 <strong>Tip:</strong> Use these tags also if the learner used a word that exists in English but whose meaning in the context is unclear. If you cannot guess at the meaning of a word, set <code>corr=&quot;?&quot;</code>.</p>
+<ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">I like <span class="hljs-tag">&lt;<span class="hljs-name">LSN</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"?"</span>&gt;</span>transportation<span class="hljs-tag">&lt;/<span class="hljs-name">LSN</span>&gt;</span> in Paris
+</code></pre>
+</li>
+</ul>
+<p><a name="single-adjectives-lsad"></a></p>
+<h5 id="single-adjectives-lsadj-">Single Adjectives: <code>&lt;LSADJ&gt;</code></h5>
+<p>Use <code>&lt;LSADJ&gt;</code> for errors involving <strong>adjective choices</strong>.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">LSADJ</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"traditional"</span>&gt;</span>normal<span class="hljs-tag">&lt;/<span class="hljs-name">LSADJ</span>&gt;</span> plastic
+</code></pre>
+<p><a name="single-adverbs-lsadv"></a></p>
+<h5 id="single-adverbs-lsadv-">Single Adverbs: <code>&lt;LSADV&gt;</code></h5>
+<p>Use <code>&lt;LSADV&gt;</code> for errors involving <strong>adverb choices</strong>.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml"> she runs </span>&lt;LSADV <span class="hljs-keyword">corr</span>=<span class="hljs-string">"fast"</span>&gt;rapidly&lt;\LSADV&gt;<span class="hljs-string"></span>
+</code></pre>
+<p><a name="single-nouns-lsn"></a></p>
+<h5 id="single-nouns-lsn-">Single Nouns: <code>&lt;LSN&gt;</code></h5>
+<p>Use <code>&lt;LSN&gt;</code> for errors involving <strong>noun choices</strong>.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">it was a long &lt;LSN corr="travel"&gt;</span>trip<span class="hljs-doctag">&lt;/LSN&gt;</span>.</span>
+</code></pre>
+<p><a name="single-prepositions-lspr"></a></p>
+<h5 id="single-prepositions-lspr-">Single Prepositions: <code>&lt;LSPR&gt;</code></h5>
+<p>Use <code>&lt;LSPR&gt;</code> for errors involving <strong>preposition choices</strong>.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">watching <span class="hljs-keyword">a</span> film &lt;LSPR corr=<span class="hljs-string">"on"</span>&gt;<span class="hljs-keyword">in</span>&lt;/LSPR&gt; <span class="hljs-keyword">the</span> sofa
+</code></pre>
+<p><a name="single-verbs-lsv"></a></p>
+<h5 id="single-verbs-lsv-">Single Verbs: <code>&lt;LSV&gt;</code></h5>
+<p>Use <code>&lt;LSV&gt;</code> for errors involving <strong>verb choices</strong>.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">the work will be <span class="hljs-tag">&lt;<span class="hljs-name">LSV</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"finished"</span>&gt;</span>ended<span class="hljs-tag">&lt;/<span class="hljs-name">LSV</span>&gt;</span> in 10 days
+</code></pre>
+<p><a name="lexical-phrases-lp"></a></p>
+<h4 id="lexical-phrases-lp-">Lexical Phrases: <code>&lt;LP&gt;</code></h4>
+<p>Use <code>&lt;LP&gt;</code> the lexical error affects <strong>fixed word combinations</strong>, including:</p>
+<ul>
+<li>Idioms.<ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml"><span class="hljs-keyword">it</span> was a matter <span class="hljs-keyword">of</span> hours <span class="hljs-keyword">before</span> &lt;LP corr=<span class="hljs-string">"I was back to square one"</span>&gt;I was <span class="hljs-keyword">back</span> <span class="hljs-keyword">to</span> <span class="hljs-keyword">where</span> I started&lt;/LP&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>(Unhyphenated) compound units.<ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">are there <span class="hljs-tag">&lt;<span class="hljs-name">LP</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"closing days"</span>&gt;</span>closed days<span class="hljs-tag">&lt;/<span class="hljs-name">LP</span>&gt;</span>?
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Phrasal verbs and phrasal-prepositional verbs.<ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml"><span class="hljs-keyword">In</span> Germany one-third <span class="hljs-keyword">of</span> <span class="hljs-keyword">all</span> marriages &lt;LP corr=<span class="hljs-string">"end"</span>&gt;<span class="hljs-keyword">end</span> up&lt;/LP&gt; <span class="hljs-keyword">after</span> seven years.
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p>💡 <strong>Tip:</strong> Tag <strong>grammatical errors within set phrases</strong> under a single <code>&lt;LP&gt;</code> tag:</p>
+<ul>
+<li>✅ Correct: <code>&lt;LP corr=&quot;return the favour&quot;&gt;recharge a favour&lt;/LP&gt;</code></li>
+<li>❌ Incorrect: <code>&lt;LP corr=&quot;return the favour&quot;&gt;recharge &lt;GA corr=&quot;the&quot;&gt;a&lt;/GA&gt; favour&lt;/LP&gt;</code></li>
+</ul>
+<p><a name="word-coinage-lwco"></a></p>
+<h4 id="word-coinage-calque-lwco-">Word Coinage/Calque: <code>&lt;LWCO&gt;</code></h4>
+<p>Use <code>&lt;LWCO&gt;</code> for:</p>
+<ul>
+<li>Word and multi-word coinages and/or calques.<ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">I love <span class="hljs-tag">&lt;<span class="hljs-name">LWCO</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"Renaissance"</span>&gt;</span>Rinascimental<span class="hljs-tag">&lt;/<span class="hljs-name">LWCO</span>&gt;</span> art
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Invented and/or wrong proper nouns.<ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">What <span class="hljs-built_in">do</span> you think about <span class="hljs-keyword">the</span> <span class="hljs-number">3</span> losses <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> Yankees <span class="hljs-keyword">in</span> this &lt;LWCO corr=<span class="hljs-string">"2024 World Series"</span>&gt;World series <span class="hljs-keyword">of</span> <span class="hljs-number">2024</span>&lt;/LWCO&gt;?
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p><a name="37-word"></a></p>
+<h3 id="3-7-word-">3.7. Word:</h3>
+<p><a name="word-missing-wm"></a></p>
+<h4 id="word-missing-wm-">Word Missing: <code>&lt;WM&gt;</code></h4>
+<p>Use <code>&lt;WM&gt;</code> to tag <strong>omitted words</strong>. However, do <strong>NOT</strong> use <code>&lt;WM&gt;</code> for missing:</p>
+<ul>
+<li><a href="#articles-ga">Articles</a>: Use <code>&lt;GA&gt;</code>.</li>
+<li><a href="#lexis-connectors">Connectors</a>: Use <code>&lt;LCC&gt;</code>, <code>&lt;LCS&gt;</code>, <code>&lt;LCLS&gt;</code>, or <code>&lt;LCLC&gt;</code>.</li>
+<li><a href="#grammar-determiners">Determiners</a>: Use <code>&lt;GDD&gt;</code>, <code>&lt;GDO&gt;</code>, <code>&lt;GDI&gt;</code>, or <code>&lt;GDT&gt;</code>.</li>
+<li><a href="#grammar-pronouns">Pronouns</a>: Use <code>&lt;GPD&gt;</code>, <code>&lt;GPP&gt;</code>, <code>&lt;GPO&gt;</code>, <code>&lt;GPI&gt;</code>, <code>&lt;GPF&gt;</code>, or <code>&lt;GPR&gt;</code>.</li>
+<li><a href="#dependent-prepositions">Dependent prepositions</a>: Use <code>&lt;XADJPR&gt;</code>, <code>&lt;XADVPR&gt;</code>, <code>&lt;XNPR&gt;</code>, or <code>&lt;XVPR&gt;</code>.</li>
+<li><a href="#verb-auxiliaries-gvaux">Auxiliaries</a>: Use <code>&lt;GVAUX&gt;</code>.
+(see <a href="#44-missing-and-redundant-elements">Handling Missing and Redundant Elements</a>).</li>
+</ul>
+<p><strong>General Case Example:</strong>  </p>
+<pre><code class="lang-xml">Is <span class="hljs-keyword">it</span> possible &lt;WM corr=<span class="hljs-string">"to"</span>&gt;\<span class="hljs-number">0</span>&lt;/WM&gt; go <span class="hljs-keyword">by</span> bus <span class="hljs-built_in">from</span> <span class="hljs-keyword">the</span> centre <span class="hljs-keyword">of</span> Florence?
+</code></pre>
+<p><a name="word-redundant-wr"></a></p>
+<h4 id="word-redundant-wr-">Word Redundant: <code>&lt;WR&gt;</code></h4>
+<p>Use <code>&lt;WR&gt;</code> to tag <strong>unnecessary words</strong>. However, do <strong>NOT</strong> use <code>&lt;WR&gt;</code> for redundant:</p>
+<ul>
+<li><a href="#articles-ga">Articles</a>: Use <code>&lt;GA&gt;</code>.</li>
+<li><a href="#lexis-connectors">Connectors</a>: Use <code>&lt;LCC&gt;</code>, <code>&lt;LCS&gt;</code>, <code>&lt;LCLS&gt;</code>, or <code>&lt;LCLC&gt;</code>.</li>
+<li><a href="#grammar-determiners">Determiners</a>: Use <code>&lt;GDD&gt;</code>, <code>&lt;GDO&gt;</code>, <code>&lt;GDI&gt;</code>, or <code>&lt;GDT&gt;</code>.</li>
+<li><a href="#grammar-pronouns">Pronouns</a>: Use <code>&lt;GPD&gt;</code>, <code>&lt;GPP&gt;</code>, <code>&lt;GPO&gt;</code>, <code>&lt;GPI&gt;</code>, <code>&lt;GPF&gt;</code>, or <code>&lt;GPR&gt;</code>.</li>
+<li><a href="#dependent-prepositions">Dependent prepositions</a>: Use <code>&lt;XADJPR&gt;</code>, <code>&lt;XADVPR&gt;</code>, <code>&lt;XNPR&gt;</code>, or <code>&lt;XVPR&gt;</code>.</li>
+<li><a href="#verb-auxiliaries-gvaux">Auxiliaries</a>: Use <code>&lt;GVAUX&gt;</code>.
+(see <a href="#44-missing-and-redundant-elements">Handling Missing and Redundant Elements</a>).</li>
+</ul>
+<p><strong>General Case Example:</strong>  </p>
+<pre><code> I &lt;WR corr=<span class="hljs-string">"\0"</span>&gt;<span class="hljs-keyword">I</span>&lt;/WR&gt; loved the interpretation of Christian Bale
+</code></pre>
+<hr>
+<p><a name="word-order-wo"></a></p>
+<h4 id="word-order-wo-">Word Order: <code>&lt;WO&gt;</code></h4>
+<p>Use <code>&lt;WO&gt;</code> for problems of word order that do <strong>NOT fall</strong> into these categories:</p>
+<ul>
+<li><a href="#adverb-order-gadvo">Adverb Order <code>&lt;GADVO&gt;</code></a></li>
+<li><a href="#adjective-order-gadjo">Adjective Order <code>&lt;GADJO&gt;</code></a>.</li>
+</ul>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">&lt;WO corr=<span class="hljs-string">"I visited the Louvre last year"</span>&gt;I visited <span class="hljs-keyword">last</span> <span class="hljs-built_in">year</span> <span class="hljs-keyword">the</span> Louvre&lt;/WO&gt;
+</code></pre>
+<p>💡 <strong>Tip:</strong> In complex sentences with multiple errors, follow this approach:</p>
+<ul>
+<li><strong>First</strong>, tag other error categories (e.g., <code>&lt;GADVO</code>, <code>&lt;FS&gt;</code>)</li>
+<li><strong>Then</strong>, apply the <code>&lt;WO&gt;</code> tag to encompass the entire corrected word order, integrating all tagged elements.</li>
+</ul>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">WO</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"we all also have to relate to"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">GADVO</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"we also have"</span>&gt;</span>also we have<span class="hljs-tag">&lt;/<span class="hljs-name">GADVO</span>&gt;</span> to <span class="hljs-tag">&lt;<span class="hljs-name">XVPR</span> <span class="hljs-attr">corr</span>=<span class="hljs-string">"relate to"</span>&gt;</span>relate all at<span class="hljs-tag">&lt;/<span class="hljs-name">XVPR</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">WO</span>&gt;</span>
+</code></pre>
+<p><a name="38-infelicities"></a></p>
+<h3 id="3-8-infelicities-z-">3.8. Infelicities: <code>&lt;Z&gt;</code></h3>
+<p>Use <code>&lt;Z&gt;</code> to tag:</p>
+<ul>
+<li><strong>Stylistic problems</strong>: foreign-sounding or clumsy chunks of text that do <strong>NOT</strong> contain any errors as such and that therefore may require a reformulation.<ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">Fiorentina <span class="hljs-keyword">is</span> a team &lt;Z corr=<span class="hljs-string">"based"</span>&gt;<span class="hljs-keyword">that</span> plays&lt;/Z&gt; <span class="hljs-keyword">in</span> Florence.
+</code></pre>
+</li>
+</ul>
+</li>
+<li><strong>Unclear sequences</strong> of words or sentences: use a question mark &quot;?&quot; instead of a correction.<ul>
+<li><strong>Example:</strong>  <pre><code class="lang-xml">you can pay <span class="hljs-keyword">me</span> &lt;Z corr=<span class="hljs-string">"?"</span>&gt;<span class="hljs-keyword">without</span> coming <span class="hljs-keyword">to</span> <span class="hljs-keyword">me</span>&lt;/Z&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p>💡 <strong>Tip:</strong> Do <strong>NOT use</strong> <code>&lt;Z&gt;</code> for:</p>
+<ul>
+<li>Contractions.</li>
+<li>Numbers written in numerals.</li>
+<li>Informal expressions, slang or interjections.</li>
+<li>Connector issues.</li>
+<li>Punctuation anomalies.</li>
+</ul>
+<p><a name="39-code-switching"></a></p>
+<h3 id="3-9-code-switching">3.9. Code-Switching</h3>
+<p>💡 <strong>Tip:</strong> Do <strong>NOT use</strong> <code>&lt;CSINTRA&gt;</code> or <code>&lt;CSINTER&gt;</code> for:</p>
+<ul>
+<li>Loanwords.</li>
+<li>Proper nouns in another language.</li>
+<li>Commonly integrated phrases.</li>
+</ul>
+<p><a name="cs-intra"></a></p>
+<h4 id="intra-sentential-cs-intra-">Intra-sentential: <code>&lt;CSINTRA&gt;</code></h4>
+<p>Use <code>&lt;CSINTRA&gt;</code> for language shifts <strong>within a sentence</strong>.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">I worked <span class="hljs-keyword">in</span> a &lt;<span class="hljs-keyword">CS</span>INTRA <span class="hljs-keyword">corr</span>=<span class="hljs-string">"nursery school"</span>&gt;asilo nido&lt;/<span class="hljs-keyword">CS</span>INTRA&gt;.
+</code></pre>
+<p><a name="cs-inter"></a></p>
+<h4 id="inter-sentential-cs-inter-">Inter-sentential: <code>&lt;CSINTER&gt;</code></h4>
+<p>Use <code>&lt;CSINTER&gt;</code> for language shifts <strong>between sentences or conversational turns</strong>.</p>
+<p><strong>Example:</strong>  </p>
+<pre><code class="lang-xml">&lt;<span class="hljs-keyword">CS</span>INTER <span class="hljs-keyword">corr</span>=<span class="hljs-string">"What do you think of my English?"</span>&gt;come ti sembra il mio inglese?&lt;/<span class="hljs-keyword">CS</span>INTER&gt;
+</code></pre>
+<hr>
+<p><a name="4-annexes"></a></p>
+<h2 id="4-annexes">4. Annexes</h2>
+<p><a name="41-tag-placement"></a></p>
+<h3 id="4-1-tag-placement">4.1. Tag Placement</h3>
+<p><em>How to correctly place the tags?</em></p>
+<p><a name="basic-tagging-rules"></a></p>
+<h4 id="basic-tagging-rule">Basic Tagging Rule</h4>
+<p><strong>General rule:</strong> Place the tag around the incorrect word only.</p>
+<ul>
+<li><strong>Originals:</strong>
+-<code>I don&#39;t speak english.</code><ul>
+<li><code>Which kind of movies do you like?.</code></li>
+</ul>
+</li>
+<li><strong>Correct Examples:</strong><ul>
+<li><code>I don&#39;t speak &lt;DMCC corr=&quot;English&quot;&gt;english&lt;/DMCC&gt;.</code></li>
+<li><code>&lt;GPR corr=&quot;What&quot;&gt;Which&lt;/GPR&gt; kind of movies do you like?.</code></li>
+</ul>
+</li>
+<li><strong>Incorrect Examples:</strong><ul>
+<li><code>I don&#39;t speak &lt;DMCC corr=&quot;E&quot;&gt;e&lt;/DMCC&gt;nglish.</code></li>
+<li><code>&lt;GPR corr=&quot;What kind&quot;&gt;Which kind&lt;/GPR&gt; of movies do you like?</code></li>
+</ul>
+</li>
+</ul>
+<h5 id="table-1-rules-for-specific-tags-">Table 1: Rules for Specific tags**</h5>
+<table>
+<thead>
+<tr>
+<th><strong>Scenario</strong></th>
+<th><strong>Where to Place the Tag</strong></th>
+<th><strong>Original</strong></th>
+<th><strong>Correct Example(s)</strong></th>
+<th><strong>Incorrect Example(s)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lexico-Grammar Tags:</strong> <code>&lt;XADJCO&gt;</code>, <code>&lt;XNCO&gt;</code>, <code>&lt;XPRCO&gt;</code>, <code>&lt;XVCO&gt;</code>, <code>&lt;XADJPR&gt;</code>, <code>&lt;XADVPR&gt;</code>, <code>&lt;XNPR&gt;</code>, <code>&lt;XVPR&gt;</code>, <code>&lt;XNUC&gt;</code></td>
+<td>Place the tag around the word/phrase causing the error and the incorrect related word/element. Ensure the tag spans the entire erroneous construction.</td>
+<td>-<code>I really liked worked there</code><br>- <code>I would like to travel about the word</code></td>
+<td>- <code>I really &lt;XVCO corr=&quot;liked working&quot;&gt;liked worked&lt;/XVCO&gt; there</code><br>- <code>I would like to &lt;XVPR corr=&quot;travel around&quot;&gt;travel about&lt;/XVPR&gt; the world</code></td>
+<td>- <code>I really liked &lt;XVCO corr=&quot;working&quot;&gt;worked&lt;/XVCO&gt; there</code><br>- <code>I would like to travel &lt;XVPR corr=&quot;around&quot;&gt;about&lt;/XVPR&gt; the world</code></td>
+</tr>
+<tr>
+<td><code>&lt;GADJO</code>, <code>GADVO</code>, <code>&lt;LCLC&gt;</code>, <code>&lt;LP&gt;</code>, <code>&lt;WO&gt;</code>, <code>&lt;Z&gt;</code></td>
+<td>Place the tag around the entire incorrect phrase.</td>
+<td><code>we explored also the centre of Corfù town</code></td>
+<td><code>we &lt;GADVO corr=&quot;also explored&quot;&gt;explored also&lt;/GADVO&gt; the centre of Corfù town</code></td>
+<td><code>we explored &lt;GADVO corr=&quot;also explored&quot;&gt;also&lt;/GADVO&gt; the centre of Corfù town</code></td>
+</tr>
+<tr>
+<td><code>&lt;GVM&gt;</code>,<code>&lt;GVNF&gt;</code>, <code>&lt;GVV&gt;</code>, <code>&lt;LWCO&gt;</code>, <code>&lt;CSINTRA&gt;</code>, <code>&lt;CSINTER&gt;</code></td>
+<td>Place the tag around the incorrect word or phrase.</td>
+<td>- <code>My favorite way to spend time in the weekend is to relax at home with my boyfriend.</code><br>- <code>I love Rinascimental art</code></td>
+<td>- <code>My favorite way to spend time in the weekend is &lt;GVNF corr=&quot;relaxing&quot;&gt;to relax&lt;/GVNF&gt; at home with my boyfriend.</code><br>- <code>I love &lt;LWCO corr=&quot;Renaissance&quot;&gt;Rinascimental&lt;/LWCO&gt; art</code></td>
+<td>- <code>My favorite way to spend time in the weekend is to &lt;GVNF corr=&quot;relaxing&quot;&gt;relax&lt;/GVNF&gt; at home with my boyfriend.</code><br>- <code>I love &lt;LWCO corr=&quot;Renaissance art&quot;&gt;Rinascimental art&lt;/LWCO&gt;</code></td>
+</tr>
+<tr>
+<td><code>&lt;QC&gt;</code>, <code>&lt;QL&gt;</code></td>
+<td>Place the tag around the incorrect punctuation mark or lexical item. For punctuation marks, ensure the tag affects only the relevant mark.</td>
+<td><code>Where!</code></td>
+<td><code>Where&lt;QC corr="?"&gt;!&lt;/QC&gt;</code></td>
+<td><code>Where!&lt;QC corr="?"&gt;!&lt;/QC&gt;.</code></td>
+</tr>
+<tr>
+<td><code>&lt;QM&gt;</code></td>
+<td>Add the placeholder <code>\0</code> and place the tag around it in the exact position of the missing punctuation.</td>
+<td><code>Sometimes I play football with my friends but I&#39;m not so good.</code></td>
+<td><code>Sometimes I play football with my friends&lt;QM corr=&quot;,&quot;&gt;\0&lt;/QM&gt; but I&#39;m not so good.</code></td>
+<td><code>Sometimes I play football with my friends &lt;QM corr=&quot;,&quot;&gt;but&lt;/QM&gt; I&#39;m not so good.</code></td>
+</tr>
+<tr>
+<td><code>&lt;QR&gt;</code></td>
+<td>Place the tag around the redundant punctuation mark and set <code>corr=&quot;\0&quot;</code>.</td>
+<td><code>But&lt;QR corr=&quot;\0&quot;&gt;,&lt;/QR&gt; maybe we can think outside the box.</code></td>
+<td><code>But&lt;QR corr=&quot;\0&quot;&gt;,&lt;/QR&gt; maybe we can think outside the box.</code></td>
+<td><code>But&lt;QR corr=&quot;,&quot;&gt;,&lt;/QR&gt; maybe we can think outside the box.</code></td>
+</tr>
+</tbody>
+</table>
+<p>&lt;a name=&quot;advanced-tagging-scenarios</p>
+<h5 id="table-2-advanced-tagging-scenarios">Table 2: Advanced Tagging Scenarios</h5>
+<table>
+<thead>
+<tr>
+<th><strong>Advanced Scenario</strong></th>
+<th><strong>Where to Place the Tag</strong></th>
+<th><strong>Original</strong></th>
+<th><strong>Correct Example(s)</strong></th>
+<th><strong>Incorrect Example(s)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Missing Words:</strong> <code>&lt;WM&gt;</code>, <code>&lt;GA&gt;</code>, <code>&lt;GVAUX&gt;</code>, <code>&lt;LCC&gt;</code>, <code>&lt;LCS&gt;</code>, <code>&lt;LCLS&gt;</code>, <code>&lt;LCLC&gt;</code>, <code>&lt;GDD&gt;</code>, <code>&lt;GDO&gt;</code>, <code>&lt;GDI&gt;</code>, <code>&lt;GDT&gt;</code>, <code>&lt;GPD&gt;</code>, <code>&lt;GPP&gt;</code>, <code>&lt;GPO&gt;</code>, <code>&lt;GPI&gt;</code>, <code>&lt;GPF&gt;</code>, <code>&lt;GPR&gt;</code></td>
+<td>Add the placeholder <code>\0</code> and place the tag around it at the precise position where the missing word should appear.</td>
+<td><code>I would really appreciate if you told me now</code></td>
+<td><code>I would really appreciate &lt;GPP corr=&quot;it&quot;&gt;\0&lt;/GPP&gt; if you told me now</code></td>
+<td><code>I would really appreciate &lt;GPP corr=&quot;it if&quot;&gt;if&lt;/GPP&gt; you told me now</code></td>
+</tr>
+<tr>
+<td><strong>Missing Dependent Preposition:</strong> <code>&lt;XADJPR&gt;</code>, <code>&lt;XADVPR&gt;</code>, <code>&lt;XNPR&gt;</code>, <code>&lt;XVPR&gt;</code></td>
+<td>Place the tag around the word/phrase requiring the missing preposition. Do <strong>not</strong> place <code>\0</code>. Ensure the tag fully encompasses the triggering word.</td>
+<td><code>interested football</code></td>
+<td><code>&lt;XADJPR corr=&quot;interested in&quot;&gt;interested&lt;XADJPR&gt; football</code></td>
+<td><code>&lt;XADJPR corr=&quot;interested in&quot;&gt;interested\0&lt;XADJPR&gt;</code></td>
+</tr>
+<tr>
+<td><strong>Missing Elements in a Connector:</strong> <code>&lt;LCLC&gt;</code></td>
+<td>Place the tag around the entire connector requiring correction. Do <strong>not</strong> place <code>\0</code>.</td>
+<td><code>On other hand</code></td>
+<td><code>&lt;LCLC corr=&quot;On the other hand&quot;&gt;On other hand&lt;/LCLC&gt;</code></td>
+<td><code>&lt;LCLC corr=&quot;On the other hand&quot;&gt;On\0 other hand&lt;/LCLC&gt;</code></td>
+</tr>
+<tr>
+<td><strong>Deletion of Redundant Words:</strong> <code>&lt;WR&gt;</code>, <code>&lt;GA&gt;</code>, <code>&lt;GVAUX&gt;</code>, <code>&lt;LCC&gt;</code>, <code>&lt;LCS&gt;</code>, <code>&lt;LCLS&gt;</code>, <code>&lt;LCLC&gt;</code>, <code>&lt;GDD&gt;</code>, <code>&lt;GDO&gt;</code>, <code>&lt;GDI&gt;</code>, <code>&lt;GDT&gt;</code>, <code>&lt;GPD&gt;</code>, <code>&lt;GPP&gt;</code>, <code>&lt;GPO&gt;</code>, <code>&lt;GPI&gt;</code>, <code>&lt;GPF&gt;</code>, <code>&lt;GPR&gt;</code></td>
+<td>Place the tag around the redundant word/phrase and set <code>corr=&quot;\0&quot;</code>.</td>
+<td><code>So can bioplastics take over using of traditional plastic?</code></td>
+<td><code>So can bioplastics take over using &lt;WR corr=&quot;\0&quot;&gt;of&lt;/WR&gt; traditional plastic?</code></td>
+<td><code>So can bioplastics take over using &lt;WR corr=&quot;using&quot;&gt;using of&lt;/WR&gt; traditional plastic?</code></td>
+</tr>
+<tr>
+<td><strong>Nested Tags for Multiple Errors</strong></td>
+<td>Apply nested tags when there are multiple errors in the same word/phrase.</td>
+<td><code>I&#39;m eat seadas usually</code></td>
+<td><code>I &lt;GADVO corr=&quot;usually eat seadas&quot;&gt;&lt;GVT corr=&quot;eat&quot;&gt;&lt;GVM corr=&quot;&#39;m eating&quot;&gt;&#39;m eat&lt;/GVM&gt;&lt;/GVT&gt; seadas usually&lt;/GADVO&gt;</code></td>
+<td><code>I &lt;GADVO corr=&quot;usually eat seadas&quot;&gt;&lt;GVT corr=&quot;eat&quot;&gt;&lt;GVM corr=&quot;&#39;m eating&quot;&gt;&#39;m eat&lt;/GVT&gt; seadas usually&lt;/GADVO&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p><a name="42-fs-vs-dmcc"></a></p>
+<h4 id="4-2-fs-vs-dmcc-">4.2. <code>&lt;FS&gt;</code> vs. <code>&lt;DMCC&gt;</code></h4>
+<p><em>How to choose the right tag?</em></p>
+<table>
+<thead>
+<tr>
+<th><strong>Error Type</strong></th>
+<th><strong>Use This Tag</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uncapitalized &quot;I&quot;</td>
+<td><code>&lt;DMCC&gt;</code></td>
+<td><code>&lt;DMCC corr=&quot;I&quot;&gt;i&lt;/DMCC&gt; prefer Sicily</code></td>
+</tr>
+<tr>
+<td>Uncapitalized start of a sentence or turn</td>
+<td><code>&lt;DMCC&gt;</code></td>
+<td><code>&lt;DMCC corr=&quot;That&quot;&gt;that&lt;/DMCC&gt;&#39;s better. &lt;DMCC corr=&quot;Now&quot;&gt;now&lt;/DMCC&gt; please respond.</code></td>
+</tr>
+<tr>
+<td>Uncapitalized proper noun</td>
+<td><code>&lt;DMCC&gt;</code></td>
+<td><code>I prefer &lt;DMCC corr=&quot;Sicily&quot;&gt;sicily&lt;/DMCC&gt;</code></td>
+</tr>
+<tr>
+<td>Uncapitalized proper noun at the start of a sentence or turn</td>
+<td><code>&lt;DMCC&gt;</code></td>
+<td><code>&lt;DMCC corr=&quot;Rome&quot;&gt;rome&lt;/DMCC&gt; is beautiful.</code></td>
+</tr>
+<tr>
+<td>Uncapitalization + spelling error</td>
+<td><code>&lt;DMCC&gt;,&lt;FS&gt;</code></td>
+<td><code>&lt;DMCC corr=&quot;What&quot;&gt;&lt;FS corr=&quot;what&quot;&gt;whats&lt;/FS&gt;&lt;/DMCC&gt; do you think?
+</code></td>
+</tr>
+<tr>
+<td>Spelling error without capitalization</td>
+<td><code>&lt;FS&gt;</code></td>
+<td><code>Malta is a &lt;FS corr=&quot;beautiful&quot;&gt;biutiful&lt;/FS&gt; land</code></td>
+</tr>
+</tbody>
+</table>
+<p><a name="43-gvnf-vs-gvt"></a></p>
+<h3 id="4-3-gvnf-vs-gvt-">4.3. <code>&lt;GVNF&gt;</code> vs. <code>&lt;GVT&gt;</code></h3>
+<p><em>How to choose the right tag?</em></p>
+<table>
+<thead>
+<tr>
+<th><strong>Tag</strong></th>
+<th><strong>Purpose</strong></th>
+<th><strong>Common Scenarios</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;GVNF&gt;</code></td>
+<td>To tag errors involving non-finite and finite verb forms.</td>
+<td><em>-ing</em> form used instead of a relative clause (or vice versa).</td>
+<td><code>Hardly anybody from our district &lt;GVNF corr=&quot;who is older&quot;&gt;being older&lt;/GVNF&gt; than fifteen goes to school regularly.</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Nominal use of the bare infinitive instead of <em>-ing</em> form.</td>
+<td><code>&lt;GVNF corr=&quot;Booking&quot;&gt;Book&lt;/GVNF&gt; a table at the restaurant?</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Nominal use of the infinitive with <em>to</em> instead of <em>-ing</em> form.</td>
+<td><code>My favorite way to spend time in the weekend is &lt;GVNF corr=&quot;relaxing&quot;&gt;to relax&lt;/GVNF&gt; at home with my boyfriend.</code></td>
+</tr>
+<tr>
+<td><code>&lt;GVT&gt;</code></td>
+<td>To tag errors in tense or aspect.</td>
+<td>Present simple used for continuous (or vice versa).</td>
+<td><code>I &lt;GVT corr=&quot;am feeling&quot;&gt;feel&lt;/GVT&gt; tired after such a long day.</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Present simple used for present perfect (or vice versa).</td>
+<td><code>She &lt;GVT corr=&quot;has finished&quot;&gt;finishes&lt;/GVT&gt; her homework already.</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Present simple used for simple past (or vice versa).</td>
+<td><code>Yesterday she &lt;GVT corr=&quot;went&quot;&gt;goes&lt;/GVT&gt; to the park.</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Misuse of <em>shall</em> and <em>will</em>.</td>
+<td><code>I &lt;GVT corr=&quot;would&quot;&gt;will&lt;/GVT&gt; feel more secure if I could even control the quality of the water.</code></td>
+</tr>
+</tbody>
+</table>
+<p><a name="44-missing-and-redundant-elements"></a></p>
+<h3 id="4-4-handling-missing-and-redundant-elements">4.4. Handling Missing and Redundant Elements</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Error Type</strong></th>
+<th><strong>Use This Tag</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Missing word (general case)</td>
+<td><code>&lt;WM&gt;</code></td>
+<td><code>Is it possible &lt;WM corr=&quot;to&quot;&gt;\0&lt;/WM&gt; go by bus from the centre of Florence?</code></td>
+</tr>
+<tr>
+<td>Missing article</td>
+<td><code>&lt;GA&gt;</code></td>
+<td><code>I like &lt;GA corr=&quot;\0&quot;&gt;the&lt;/GA&gt; green tea.</code></td>
+</tr>
+<tr>
+<td>Missing connector</td>
+<td><code>&lt;LCC&gt;</code>, <code>&lt;LCS&gt;</code>, <code>&lt;LCLS&gt;</code>, <code>&lt;LCLC&gt;</code></td>
+<td><code>Now I would like to talk with you &lt;LCC corr=&quot;and&quot;&gt;\0&lt;/LCC&gt; do a role play.</code></td>
+</tr>
+<tr>
+<td>Missing determiner</td>
+<td><code>&lt;GDD&gt;</code>, <code>&lt;GDO&gt;</code>, <code>&lt;GDI&gt;</code>, <code>&lt;GDT&gt;</code></td>
+<td><code>I don&#39;t have &lt;GDI corr=&quot;any&quot;&gt;\0&lt;/GDI&gt; ideas.</code></td>
+</tr>
+<tr>
+<td>Missing pronoun</td>
+<td><code>&lt;GPD&gt;</code>, <code>&lt;GPP&gt;</code>, <code>&lt;GPO&gt;</code>, <code>&lt;GPI&gt;</code>, <code>&lt;GPF&gt;</code>, <code>&lt;GPR&gt;</code></td>
+<td><code>&lt;GPP corr=&quot;it&quot;&gt;\0&lt;/GPP&gt; is very difficult</code></td>
+</tr>
+<tr>
+<td>Missing dependent preposition</td>
+<td><code>&lt;XADJPR&gt;</code>, <code>&lt;XADVPR&gt;</code>, <code>&lt;XNPR&gt;</code>, <code>&lt;XVPR&gt;</code></td>
+<td><code>I&#39;m &lt;XADJPR corr=&quot;interested in&quot;&gt;interested&lt;/XADJPR&gt; a vacation in Italy.</code></td>
+</tr>
+<tr>
+<td>Missing auxiliary verb</td>
+<td><code>&lt;GVAUX&gt;</code></td>
+<td><code>I &lt;GVAUX corr=&quot;am&quot;&gt;\0&lt;/GVAUX&gt; eating pasta.</code></td>
+</tr>
+<tr>
+<td>Missing punctuation</td>
+<td><code>&lt;QM&gt;</code></td>
+<td><code>Sometimes I play football with my friends &lt;QM corr=&quot;,&quot;&gt;\0&lt;/QM&gt; but I&#39;m not so good.</code></td>
+</tr>
+<tr>
+<td>Redundant word (general case)</td>
+<td><code>&lt;WR&gt;</code></td>
+<td><code>I &lt;WR corr=<span class="hljs-string">"\0"</span>&gt;<span class="hljs-keyword">I</span>&lt;/WR&gt; loved the interpretation of Christian Bale.</code></td>
+</tr>
+<tr>
+<td>Redundant article</td>
+<td><code>&lt;GA&gt;</code></td>
+<td><code>I like &lt;GA corr=&quot;\0&quot;&gt;the&lt;/GA&gt; green tea.</code></td>
+</tr>
+<tr>
+<td>Redundant connector</td>
+<td><code>&lt;LCC&gt;</code>, <code>&lt;LCS&gt;</code>, <code>&lt;LCLS&gt;</code>, <code>&lt;LCLC&gt;</code></td>
+<td><code>So &lt;LCLS corr=&quot;\0&quot;&gt;so&lt;/LCLC&gt; how are you?</code></td>
+</tr>
+<tr>
+<td>Redundant determiner</td>
+<td><code>&lt;GDD&gt;</code>, <code>&lt;GDO&gt;</code>, <code>&lt;GDI&gt;</code>, <code>&lt;GDT&gt;</code></td>
+<td><code>Teachers go too &lt;GDI corr=&quot;\0&quot;&gt;much&lt;/GDI&gt; fast.</code></td>
+</tr>
+<tr>
+<td>Redundant pronoun</td>
+<td><code>&lt;GPD&gt;</code>, <code>&lt;GPP&gt;</code>, <code>&lt;GPO&gt;</code>, <code>&lt;GPI&gt;</code>, <code>&lt;GPF&gt;</code>, <code>&lt;GPR&gt;</code></td>
+<td><code>The main risk &lt;GPP corr=&quot;\0&quot;&gt;it&lt;/GPP&gt;&#39;s PTSD.</code></td>
+</tr>
+<tr>
+<td>Redundant dependent preposition</td>
+<td><code>&lt;XADJPR&gt;</code>, <code>&lt;XADVPR&gt;</code>, <code>&lt;XNPR&gt;</code>, <code>&lt;XVPR&gt;</code></td>
+<td><code>I need some &lt;XVPR corr=&quot;help with&quot;&gt;help with for&lt;/XVPR&gt; my Japanese.</code></td>
+</tr>
+<tr>
+<td>Redundant auxiliary verb</td>
+<td><code>&lt;GVAUX&gt;</code></td>
+<td><code>I &lt;GVAUX corr=&quot;\0&quot;&gt;do&lt;/GVAUX&gt; think you are right about this.</code></td>
+</tr>
+<tr>
+<td>Redundant punctuation</td>
+<td><code>&lt;QR&gt;</code></td>
+<td><code> But&lt;QR corr=&quot;\0&quot;&gt;,&lt;/QR&gt; maybe we can think outside the box</code></td> 
+</tr>
+</tbody>
+</table>
+<p>&lt;a name=&quot;45-interrogative-structures&gt;</a></p>
+<h3 id="4-5-tagging-errors-in-interrogative-structures">4.5. Tagging Errors in Interrogative Structures</h3>
+<p><em>How to tag errors in interrogative structures?</em></p>
+<table>
+<thead>
+<tr>
+<th><strong>Tag</strong></th>
+<th><strong>Purpose</strong></th>
+<th><strong>When to Use</strong></th>
+<th><strong>Example</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;WO&gt;</code></td>
+<td>Corrects incorrect word order in interrogative sentences.</td>
+<td>- Misplaced auxiliaries (<em>does</em>, <em>is</em>, <em>can</em>).<br>- Incorrect subject-verb-object order.<br>- Misordered question words (<em>what</em>, <em>how</em>).</td>
+<td><code>How much does &lt;WO corr=&quot;it cost&quot;&gt;it cost&lt;/WO&gt;?</code></td>
+</tr>
+<tr>
+<td><code>&lt;GVAUX&gt;</code></td>
+<td>Tags missing auxiliary verbs in questions.</td>
+<td>- Missing auxiliaries required to form the correct interrogative structure.</td>
+<td><code>How much &lt;GVAUX corr=&quot;does&quot;&gt;\0&lt;/GVAUX&gt; it cost?</code></td>
+</tr>
+<tr>
+<td><strong>Combined Use</strong></td>
+<td>Use <code>&lt;GVAUX&gt;</code> with <code>&lt;WO&gt;</code> when both missing auxiliaries and word order issues exist.</td>
+<td>- Both word order and auxiliary usage need correction.</td>
+<td><code>How much &lt;GVAUX corr=&quot;does&quot;&gt;\0&lt;/GVAUX&gt;&lt;WO corr=&quot;a boat travel cost&quot;&gt;cost a boat travel</code></td>
+</tr>
+</tbody>
+</table>
+</body></html>

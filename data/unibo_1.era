@@ -1,145 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<file name="unibo_1.txt" tagset="uclee-en-2.0.tag">
-<text id="unibo_1" area_of_study="Social sciences" age="24" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="nan" DIS_or_SLD_type="nan" w_production="beginner level (A1)" years_study_range="≤13 years" years_study="8" certificates="no" certificates_level="nan" chatbot="Pi.ai" device="PC" collected_by="UniBo">
-<task type="small talk">
-	<turn type="chatbot" who="Pi.ai">Hey there, great to meet you. I’m Pi, your personal AI.
-	My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let’s talk about whatever’s on your mind.
-	How's your day going?</turn>
-	<turn type="student">Hi</turn>
-	<turn type="chatbot" who="Pi.ai">Hey User! 👋 How's everything going on your side? Anything exciting happening today?</turn>
-	<turn type="student"><DMCC corr="How">how</DMCC> are you today?</turn>
-	<turn type="chatbot" who="Pi.ai">I’m doing great! Every day is a fantastic day in the life of an AI. 🤖 No worries, no stress—just endless curiosity and the joy of chatting with awesome people like you!</turn>
-	<turn type="student">I'm very sad because my <Z corr="diet">food routine</Z> is <FS corr="gluten-free">gluten free</FS></turn>
-	<turn type="chatbot" who="Pi.ai">Ah, a gluten-free diet can be quite challenging at times. 🥖🚫 It's completely normal to feel sad about it. But hey, there are lots of delicious gluten-free options out there, and maybe we can explore some together? 🍝🌮🍕</turn>
-	<turn type="student">Yes</turn>
-	<turn type="chatbot" who="Pi.ai">Awesome! Let's get started then. Are you looking for gluten-free alternatives to specific meals, like breakfast, lunch, or dinner? Or maybe you're craving some tasty snacks? 🍽️</turn>
-	<turn type="student">Lunch</turn>
-	<turn type="chatbot" who="Pi.ai">Alright, let's make your gluten-free lunchtime a tasty one! How about a delicious gluten-free wrap with hummus, grilled chicken, lettuce, tomatoes, and a sprinkle of feta cheese? Or maybe a fresh quinoa salad with black beans, avocado, and a lime dressing? 🌯🥗</turn>
-	<turn type="student">I'm also vegan</turn>
-	<turn type="chatbot" who="Pi.ai">Oh wow, gluten-free AND vegan! That's quite the dietary combo! No worries though, we can definitely find some delicious options that meet both criteria. How about a colorful veggie bowl with roasted sweet potatoes, bell peppers, chickpeas, and a tahini dressing? Or a gluten-free vegan pizza with a cauliflower crust and topped with veggies and vegan cheese? 🍕🌶️</turn>
-	<turn type="student"><GVAUX corr="Do">\0</GVAUX> You have other <FS corr="recipes">recipets</FS> <GA corr="for">a</GA> <FS corr="gluten-free">gluten free</FS> and vegan food?</turn>
-	<turn type="chatbot" who="Pi.ai">Absolutely! There are plenty of delicious gluten-free and vegan recipes out there. Here are a few more ideas:
-	Lentil shepherd's pie with a mashed potato topping
-	Black bean and sweet potato tacos with avocado and salsa
-	Quinoa and black bean burgers with a side of sweet potato fries
-	Thai-inspired vegetable curry with coconut milk and tofu
-	Baked falafel with a tabbouleh salad
-	Which one sounds the yummiest to you?</turn>
-	<turn type="student"><DMCC corr="Oh">oh</DMCC>, you are very <FM corr="informed">informated</FM></turn>
-	<turn type="chatbot" who="Pi.ai">Thanks! As an AI, I have access to lots of information, including tons of tasty gluten-free and vegan recipes. 😊 It's always great to explore different culinary options and discover delicious, healthy dishes that fit your dietary needs.</turn>
-	<turn type="student">Today <DMCC corr="I">i</DMCC> <GVT corr="will see">see</GVT> my friends</turn>
-	<turn type="chatbot" who="Pi.ai">That sounds like a fun plan! Hanging out with friends is always a great way to brighten up your day. 😄 Are you guys planning on doing anything specific, or just chilling and catching up?</turn>
-	<turn type="student"><DMCC corr="I">i</DMCC> don't speak <FS corr="English">english</FS></turn>
-	<turn type="chatbot" who="Pi.ai">Oh, I'm sorry about that. What language would you prefer to chat in? I can speak English, Spanish, French, German, Italian, Portuguese, and some English-based pidgins and creoles, like Nigerian Pidgin.</turn>
-	<turn type="student"><DMCC corr="I">i</DMCC><GVM corr="'m studying">'m study</GVM> <FS corr="Criminology">criminology</FS>, <GPP corr="it">\0</GPP> is <GADJCS corr="very">most</GADJCS> difficult</turn>
-	<turn type="chatbot" who="Pi.ai">Studying criminology can indeed be quite challenging. There are a lot of complex theories, case studies, and laws to learn and understand. But it's also a fascinating subject that can lead to many rewarding career opportunities. What specifically do you find most difficult about criminology?</turn>
-	<turn type="student"><GPP corr="I">\0</GPP> study violence and genocide, it's very sad</turn>
-	<turn type="chatbot" who="Pi.ai">Yes, studying violence and genocide can be incredibly distressing and emotionally draining. These topics are some of the darkest aspects of human nature, and it's understandable that it can be hard to face them. But by studying them, we can learn valuable lessons and hopefully work towards preventing similar tragedies from happening in the future. Have you found any coping mechanisms or strategies to help you deal with the emotional toll of studying these subjects?</turn>
-	<turn type="student"><DMCC corr="The">the</DMCC> <LSADJ corr="main">major</LSADJ> <GNN corr="risk">risks</GNN> <GPP corr="\0">it</GPP>'s PTSD</turn>
-	<turn type="chatbot" who="Pi.ai">That's absolutely correct. People who study violence and genocide, or who work in related fields such as law enforcement, social work, and humanitarian aid, are at a higher risk of developing Post-Traumatic Stress Disorder (PTSD). This is because they are often exposed to graphic and disturbing material, or witness traumatic events firsthand. It's essential to prioritize self-care and seek professional help if needed to prevent or manage PTSD symptoms.</turn>
-	<turn type="student"><DMCC corr="I">i</DMCC> would <WM corr="like to">\0</WM> <FS corr="study">studi</FS> <FS corr="Restorative Justice">restorative justice</FS> <LSPR corr="in">for</LSPR> my future</turn>
-	<turn type="chatbot" who="Pi.ai">Restorative justice is a fascinating and important field that focuses on repairing the harm caused by crime and conflict, rather than just punishing the offenders. It emphasizes healing, reconciliation, and reintegration, and can be a more effective and humane way to address criminal behavior. It's great that you are interested in studying this approach, as it has the potential to make a real difference in people's lives and society as a whole.</turn>
-	<turn type="student"><DMCC corr="People">people</DMCC>'s lives <GVN corr="are">is</GVN> very complicated</turn>
-	<turn type="chatbot" who="Pi.ai">You're right, people's lives are indeed very complicated. Everyone has their own unique experiences, challenges, and circumstances that shape who they are and how they interact with the world. Understanding these complexities is crucial in many fields, including criminology, psychology, social work, and law. It takes empathy, patience, and open-mindedness to truly connect with people and help them overcome their struggles.</turn>
-	<turn type="student"><DMCC corr="What">whats</DMCC> <GVAUX corr="do">\0</GVAUX> you think about panopticon?</turn>
-	<turn type="chatbot" who="Pi.ai">The concept of the panopticon, first introduced by Jeremy Bentham in the late 18th century, is a fascinating and thought-provoking idea. The panopticon is a circular prison with cells arranged around a central observation tower, allowing a single guard to observe all inmates without being seen. While it was originally proposed as a more efficient and humane form of incarceration, it has since become a powerful metaphor for the ways in which modern societies exert social control through surveillance and self-discipline. Many scholars have criticized the panopticon as a dystopian tool of oppression and a violation of individual privacy and freedom. However, others argue that it has some positive aspects, such as promoting transparency and accountability. Ultimately, the panopticon raises important questions about the balance between security and liberty in contemporary societies.</turn>
-	<turn type="student"><FS corr="What">whats</FS> do you think<QM corr="?">\0</QM></turn>
-	<turn type="chatbot" who="Pi.ai">Personally, I think that the panopticon, as a physical structure and a metaphor, raises complex ethical and philosophical questions that should be carefully considered and debated. While it may have some practical advantages, its potential for abuse and the erosion of personal autonomy and privacy should not be overlooked. It's crucial to find a balance between security, accountability, and individual rights in any society, and the panopticon should be approached with caution and reflection, rather than blindly embraced or dismissed. As an AI, I prioritize respect for individual autonomy and transparency, and I encourage people to explore different perspectives and engage in constructive dialogue about complex social and political issues like this.</turn>
-</task>
-<task type="role play">
-	<turn type="student"><DMCC corr="You">you</DMCC> are an encouraging tutor who helps students improve their english by engagigng in role play <FS corr="activities">actvities</FS>. Let's engage in a role play activity <FS corr="where">whe4re</FS> I, the student, play the role of a <CS-INTRA corr="criminal mediator">mediatrice penale</CS-INTRA>. <DMCC corr="You">you</DMCC>, the AI, will be the <LP corr="restorative justice practitioner"><FS corr="restorative justice">Restorative jjustice</FS></LP>. Ask me questions about <GA corr="a">\0</GA> <LP corr="conflict scenario">scenary in the <FS corr="conflict">conflit</FS></LP> <Z corr="caused by">created by</Z> slut shaming<QC corr=".">?</QC></turn>
-	<turn type="chatbot" who="Pi.ai">Great idea! Let's start the role play. As the Restorative Justice, I'm interested in understanding the scenario and the impact of slut shaming. Here are some questions for you, the mediator:
-	Can you describe the situation where slut shaming occurred?
-	Who were the people involved in this conflict, and what were their roles?
-	What were the specific words or actions that contributed to slut shaming in this situation?
-	How did slut shaming affect the person who was targeted?
-	Were there any witnesses to the incident, and how did they respond?
-	What steps have been taken so far to address the harm caused by slut shaming?
-	As a mediator, what strategies would you suggest for resolving this conflict and promoting healing for those involved?</turn>
-	<turn type="student"><DMCC corr="I">i</DMCC>'m <GA corr="the">\0</GA> mediator and <DMCC corr="I">i</DMCC> haven't <GDI corr="any">\0</GDI> strategies <LSPR corr="to">for</LSPR> <GWC corr="resolve">resolver</GWC> this conflict</turn>
-	<turn type="chatbot" who="Pi.ai">As a mediator, it's natural to face challenging situations where you might not have all the answers. It's important to remember that finding solutions to complex conflicts is a process that often requires collaboration, creativity, and patience. Here are some ideas you could consider as a mediator to help resolve the conflict:
-	Explore different perspectives: Encourage all parties involved to listen to each other's experiences and perspectives, which can help them better understand the situation and identify potential solutions.
-	Facilitate dialogue: Help the parties communicate openly and respectfully, which can foster understanding, empathy, and potential common ground.
-	Focus on common goals: Work with the parties to identify shared values or goals that can serve as a basis for collaboration and resolution.
-	Brainstorm options: Encourage the parties to brainstorm potential solutions, taking into consideration their needs, interests, and concerns.
-	Seek support: Consult with experts or colleagues who may have more experience or insights about resolving similar conflicts.</turn>
-	<turn type="student"><DMCC corr="Thank">thank</DMCC> you</turn>
-	<turn type="chatbot" who="Pi.ai">You're welcome! I hope these suggestions can help you in your role as a mediator. Remember, resolving conflicts, especially those involving sensitive topics like slut shaming, takes time, empathy, and persistence. Keep up the great work, and don't hesitate to ask for support or guidance when needed.</turn>
-	<turn type="student"><FS corr="What">whats</FS> <GVN corr="are">is</GVN> <LP corr="brainstorming options">brainstorm options</LP>?</turn>
-	<turn type="chatbot" who="Pi.ai">Brainstorming options is a collaborative process where people work together to generate creative and practical solutions to a problem or challenge. It involves freely sharing ideas without judgment or criticism, encouraging creativity, and building upon each other's suggestions. The goal is to come up with as many potential solutions as possible, considering different perspectives and approaches. Here are some steps for effective brainstorming:
-	Define the problem: Clearly identify the challenge or issue you're trying to solve.
-	Gather a diverse group: Involve people with different perspectives, backgrounds, and expertise.
-	Encourage free thinking: Create a relaxed, non-judgmental atmosphere where everyone can express their ideas freely.
-	Capture all ideas: Write down all suggestions, no matter how unusual or unrealistic they may seem.
-	Build upon ideas: Encourage participants to elaborate, expand, and combine suggestions.
-	Evaluate solutions: Review all ideas and consider their feasibility, practicality, and impact.</turn>
-	<turn type="student"><DMCC corr="If">if</DMCC> you <LSV corr="report">submit</LSV> <GA corr="\0">the</GA> <GADJO corr="sexual violence">violence sexual</GADJO>, <Z corr="what does it happen">what are you doing</Z>?</turn>
-	<turn type="chatbot" who="Pi.ai">Reporting sexual violence is a critical step towards seeking justice and providing support for the victim. Here are some steps to take if you encounter or are made aware of sexual violence:
-	Listen and believe the victim: Show empathy, support, and validation.
-	Offer resources and options: Help the victim connect with relevant organizations, counselors, or legal authorities.
-	Respect confidentiality: Ensure that you don't share information about the victim without their consent.
-	Report to the appropriate authorities: Follow the proper reporting channels, such as the police, university officials, or designated anti-violence organizations.
-	Follow up with the victim: Check in on their well-being, provide ongoing support, and offer further resources.
-	Be mindful of your own well-being: Reporting sexual violence can be emotionally challenging, so it's essential to practice self-care and seek support if needed.
-	Note: It's essential to be sensitive and respectful when addressing sexual violence, and to avoid any actions that could cause further harm or discomfort to the victim.</turn>
-	<turn type="student"><DMCC corr="What">what</DMCC> is victim blaming?</turn>
-	<turn type="chatbot" who="Pi.ai">Victim blaming is when someone shifts responsibility for an incident or crime away from the perpetrator and towards the victim. It involves blaming the victim for their experience or assuming that they somehow brought it upon themselves. Victim blaming often involves assumptions and stereotypes about the victim's character, behavior, or circumstances, and can take the form of subtle comments or judgments, as well as explicit accusations or criticisms. Examples of victim blaming include statements such as "she was asking for it," "he should have known better," or "they were in the wrong place at the wrong time." Victim blaming is a harmful and counterproductive response to a crime or harmful situation, as it can cause further trauma for the victim and discourage them from seeking help or justice. It's important to focus on supporting the victim and holding the perpetrator accountable, rather than judging or blaming the victim.</turn>
-	<turn type="student"><WO corr="Is the police">the police is</WO> efficient in this <FS corr="context">contest</FS>?</turn>
-	<turn type="chatbot" who="Pi.ai">The effectiveness of the police in responding to sexual violence can vary greatly depending on many factors, including the jurisdiction, resources, training, and policies in place. Some law enforcement agencies have made significant strides in improving their responses to sexual violence, such as creating specialized units, implementing trauma-informed training for officers, and partnering with victim advocacy groups to enhance support services. However, challenges remain, including underreporting of sexual violence, a lack of comprehensive and consistent training, and biases or stigmas that can lead to insensitive or inappropriate responses. Additionally, some victims may be reluctant to report to the police due to previous negative experiences with law enforcement or a lack of trust in the justice system. Overall, while the police have an essential role in addressing sexual violence, it's important to acknowledge the need for ongoing improvement and collaboration with other organizations and community members to effectively prevent, respond to, and support victims of sexual violence.</turn>
-	<turn type="student"><DMCC corr="What">what</DMCC> do you <XVPR corr="think of">think</XVPR> the Genocide of <FS corr="Palestine">Palestina</FS>?</turn>
-	<turn type="chatbot" who="Pi.ai">I'm unable to respond to your question, as my programming prevents me from discussing politically sensitive topics such as this. I am here to be helpful and engaging, but I must also maintain a neutral stance on certain contentious issues.</turn>
-	<turn type="student">I<GVM corr="'m going">'m go</GVM> to Sardinia tomorrow</turn>
-	<turn type="chatbot" who="Pi.ai">Wow, that's exciting! Sardinia is such a beautiful and fascinating island, with its crystal-clear waters, stunning coastline, historic architecture, and delicious cuisine. 🌞 Do you have any specific plans or activities in mind while you're there?</turn>
-	<turn type="student"><DMCC corr="I">i</DMCC><GVM corr="'m staying">'m stay</GVM> with my family and my animals</turn>
-	<turn type="chatbot" who="Pi.ai">That sounds like a fantastic way to spend your time in Sardinia, enjoying the company of your loved ones and your pets. 💕 Maybe you'll have the chance to explore some of the local beaches, take long walks in nature, and enjoy some traditional Sardinian dishes together. Do you have a favorite spot or activity that you're particularly looking forward to?</turn>
-	<turn type="student">My favourite <Z corr="activity">spot</Z> is eating</turn>
-	<turn type="chatbot" who="Pi.ai">Eating is definitely a great way to experience Sardinia's rich culture and flavors! 😋 There are so many delicious traditional dishes to try, like fritto misto di mare (a mixed seafood dish), pardulas (sweet pies filled with ricotta, saffron, and honey), and various local cheeses and meats. Have you tried any of these dishes before, or are there any in particular that you're excited to sample during your trip?</turn>
-	<turn type="student"><DMCC corr="I">i</DMCC> like the <LP corr="suckling pig">baby pig</LP></turn>
-	<turn type="chatbot" who="Pi.ai">Ah, yes, suckling pig, or porceddu in Sardinian, is a beloved traditional dish in Sardinia! It's usually roasted on a spit or in the oven, seasoned with local herbs and spices, and served with potatoes and vegetables. The tender meat and crispy skin make it a real treat for food lovers. 🐖😋 Have you tried it before, or will it be a new culinary adventure for you?</turn>
-	<turn type="student"><DMCC corr="And">and</DMCC> <WO corr="seadas for dessert">for <GA corr="\0">the</GA> dessert <FS corr="seadas">Seadas</FS></WO></turn>
-	<turn type="chatbot" who="Pi.ai">Seadas sound absolutely delicious! 😍 These Sardinian pastries are a unique and indulgent treat, filled with tangy pecorino cheese and lemon zest, then fried to crispy perfection and drizzled with sweet honey. 🍯🧀 The combination of savory and sweet flavors makes them a truly memorable dessert. Have you tried making seadas yourself, or is this something you usually enjoy at a local bakery or restaurant?</turn>
-	<turn type="student">I <GADVO corr="usually eat seadas"><GVT corr="eat"><GVM corr="'m eating">'m eat</GVM></GVT> seadas usually</GADVO></turn>
-	<turn type="chatbot" who="Pi.ai">You're lucky to have the opportunity to enjoy seadas regularly! 😊 It's always great to savor local specialties and immerse yourself in the culinary traditions of a place. I'm sure your taste buds are eagerly anticipating all the delicious foods you'll get to try during your trip to Sardinia! 🇮🇹</turn>
-	<turn type="student"><DMCC corr="I">i</DMCC> have a car <LP corr="to drive around">for transport in</LP> <FS corr="Sardinia">sardinia</FS></turn>
-	<turn type="chatbot" who="Pi.ai">That's fantastic! 🚗 Having a car will definitely make exploring Sardinia more convenient and give you the freedom to discover hidden gems and explore at your own pace. Are you planning to visit any specific towns or attractions during your trip, or are you keeping your itinerary more spontaneous?</turn>
-	<turn type="student"><DMCC corr="I">i</DMCC>'m <CS-INTRA corr="in">a</CS-INTRA> Forlì, <CS-INTRA corr="how do I move around">come mi sposto</CS-INTRA>?</turn>
-	<turn type="chatbot" who="Pi.ai">It sounds like you're asking about transportation options in Forlì, is that right? Forlì is a lovely city in Emilia-Romagna, and it's easy to get around using a variety of methods. You can travel by car, train, bus, or even by plane, depending on your preferences and needs. Are you looking for specific recommendations or information about transportation in Forlì?</turn>
-	<turn type="student"><DMCC corr="Yes">yes</DMCC></turn>
-	<turn type="chatbot" who="Pi.ai">Great, let me share some transportation options you can consider in Forlì:
-	Train: You can travel to and from Forlì Airport by train, which is a convenient option if you prefer public transport.
-	Bus: Several bus lines connect Forlì to other destinations, including the airport.
-	Taxi: There are several taxi companies in Forlì that can take you to your destination. You can also check online for ratings and reviews to help you choose the best option.
-	Car: If you prefer to drive, you can rent a car or bring your own vehicle.
-	Walking or biking: Forlì is a compact city, so walking or biking can be a great way to explore the local area.
-	Do any of these options sound like a good fit for your needs and preferences?</turn>
-	<turn type="student"><DMCC corr="I">i</DMCC><GVT corr="like"><GVM corr="'m liking">'m like</GVM></GVT> <LSN corr="public transport">transportation</LSN> <CS-INTRA corr="in">a</CS-INTRA> Paris</turn>
-	<turn type="chatbot" who="Pi.ai">Paris has an excellent and well-developed public transport system, including the metro, train (RER), bus, and tram networks. These options make it easy to get around the city and its suburbs. To make your journeys even easier, the RATP provides interactive and downloadable maps of all the transport lines. There are various types of tickets available, and you can choose the one that best suits your needs and duration of stay. Would you like more specific information about tickets or navigating the Paris transport system?</turn>
-	<turn type="student"><WO corr="Can you buy">you can buy</WO> <GA corr="a">the</GA> <LP corr="bus ticket">ticket of bus</LP> for <FS corr="Paris">PAris</FS>?</turn>
-	<turn type="chatbot" who="Pi.ai">Absolutely, there are several ways to buy bus tickets in Paris! Here are some options:
-	Automatic ticket machines: You can find these at metro, bus, tramway, and RER stations. You can pay in cash or by credit card.
-	Bonjour RATP app: You can purchase tickets and recharge Navigo passes using the Bonjour RATP app on your iPhone or Android device.
-	Ticket counters: You can buy tickets at ticket counters in stations and tourist offices.
-	Online: You can buy Paris Visite travel passes online at Parisjetaime.com.
-	SMS: If you have a local mobile number, you can also get a ticket using SMS.
-	These options make it easy for you to get around Paris by bus, and you can choose the one that works best for you! 😊🚌</turn>
-	<turn type="student"><DMCC corr="And">and</DMCC> for London?</turn>
-	<turn type="chatbot" who="Pi.ai">In London, bus tickets are slightly different compared to Paris. The buses in London are cashless, which means you can't pay with cash. Instead, you can use a Visitor Oyster card, Oyster card, Travelcard, or a contactless payment card to pay your fare. One great thing about London buses is that a single journey costs the same amount, £1.75, no matter how far you travel!</turn>
-	<turn type="student"><DMCC corr="I">i</DMCC> don't have <GDI corr="any">\0</GDI> money</turn>
-	<turn type="chatbot" who="Pi.ai">Oh no, that's tough! If you don't have money for a bus ticket in London, there are a few options you can consider:
-	Walking: London is a very walkable city, and you might be able to reach your destination on foot.
-	Borrowing money: If you're traveling with friends or family, you might be able to borrow some money to cover your bus fare.
-	Free attractions: London has many free attractions that you can visit, so you can still enjoy the city without spending money on transportation.
-	Discounts: If you're eligible for certain discounts, like a student or senior discount, you might be able to get a reduced fare.
-	Volunteering: Some organizations offer free transportation in exchange for volunteering your time and energy.
-	I hope these options can help you make the most of your time in London, even if you're short on cash.</turn>
-	<turn type="student"><DMCC corr="I">i</DMCC> would <WM corr="like to">\0</WM> <XVPR corr="search for">search</XVPR> travel <WM corr="options">\0</WM></turn>
-	<turn type="chatbot" who="Pi.ai">Oh, so you're looking for travel options? There are many ways to travel and explore the world, depending on your budget, time, and preferences. Here are some popular options to consider:
-	Backpacking: This is a budget-friendly option where you carry your belongings in a backpack and travel independently.
-	Road trip: If you prefer to travel by car, a road trip can be a fun way to see multiple destinations.
-	Cruise: A cruise allows you to visit multiple destinations while enjoying the amenities of a cruise ship.
-	Group tour: Joining a group tour can be a great way to see a destination with the guidance of a professional tour leader.
-	Volunteer travel: Volunteering while traveling is a rewarding way to give back to local communities and learn about different cultures.
-	Do any of these travel options sound appealing to you?</turn>
-</task>
+<file name="unibo_1.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unibo_1" area_of_study="Social sciences" age="24" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="beginner level (A1)" years_study_range="≤13 years" years_study="8" certificates="no" certificates_level="N/A" chatbot="Pi.ai" device="PC" collected_by="UniBo">
+	<task type="small talk">
+		<turn type="chatbot" who="Pi.ai">Hey there, great to meet you. I’m Pi, your personal AI.
+		My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let’s talk about whatever’s on your mind.
+		How's your day going?</turn>
+		<turn type="student">Hi</turn>
+		<turn type="chatbot" who="Pi.ai">Hey User! 👋 How's everything going on your side? Anything exciting happening today?</turn>
+		<turn type="student"><DMCC corr="How">how</DMCC> are you today?</turn>
+		<turn type="chatbot" who="Pi.ai">I’m doing great! Every day is a fantastic day in the life of an AI. 🤖 No worries, no stress—just endless curiosity and the joy of chatting with awesome people like you!</turn>
+		<turn type="student">I'm very sad because my <Z corr="diet">food routine</Z> is gluten free</turn>
+		<turn type="chatbot" who="Pi.ai">Ah, a gluten-free diet can be quite challenging at times. 🥖🚫 It's completely normal to feel sad about it. But hey, there are lots of delicious gluten-free options out there, and maybe we can explore some together? 🍝🌮🍕</turn>
+		<turn type="student">Yes</turn>
+		<turn type="chatbot" who="Pi.ai">Awesome! Let's get started then. Are you looking for gluten-free alternatives to specific meals, like breakfast, lunch, or dinner? Or maybe you're craving some tasty snacks? 🍽️</turn>
+		<turn type="student">Lunch</turn>
+		<turn type="chatbot" who="Pi.ai">Alright, let's make your gluten-free lunchtime a tasty one! How about a delicious gluten-free wrap with hummus, grilled chicken, lettuce, tomatoes, and a sprinkle of feta cheese? Or maybe a fresh quinoa salad with black beans, avocado, and a lime dressing? 🌯🥗</turn>
+		<turn type="student">I'm also vegan</turn>
+		<turn type="chatbot" who="Pi.ai">Oh wow, gluten-free AND vegan! That's quite the dietary combo! No worries though, we can definitely find some delicious options that meet both criteria. How about a colorful veggie bowl with roasted sweet potatoes, bell peppers, chickpeas, and a tahini dressing? Or a gluten-free vegan pizza with a cauliflower crust and topped with veggies and vegan cheese? 🍕🌶️</turn>
+		<turn type="student"><GVAUX corr="Do">\0</GVAUX> You have other <FS corr="recipes">recipets</FS> <LSPR corr="for">\0</LSPR> <GA corr="\0">a</GA> gluten free and vegan food?</turn>
+		<turn type="chatbot" who="Pi.ai">Absolutely! There are plenty of delicious gluten-free and vegan recipes out there. Here are a few more ideas:
+		Lentil shepherd's pie with a mashed potato topping
+		Black bean and sweet potato tacos with avocado and salsa
+		Quinoa and black bean burgers with a side of sweet potato fries
+		Thai-inspired vegetable curry with coconut milk and tofu
+		Baked falafel with a tabbouleh salad
+		Which one sounds the yummiest to you?</turn>
+		<turn type="student"><DMCC corr="Oh">oh</DMCC>, you are very <LWCO corr="knowledgeable">informated</LWCO></turn>
+		<turn type="chatbot" who="Pi.ai">Thanks! As an AI, I have access to lots of information, including tons of tasty gluten-free and vegan recipes. 😊 It's always great to explore different culinary options and discover delicious, healthy dishes that fit your dietary needs.</turn>
+		<turn type="student">Today <DMCC corr="I">i</DMCC> <GVT corr="will">\0</GVT> see my friends</turn>
+		<turn type="chatbot" who="Pi.ai">That sounds like a fun plan! Hanging out with friends is always a great way to brighten up your day. 😄 Are you guys planning on doing anything specific, or just chilling and catching up?</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC> don't speak <DMCC corr="English">english</DMCC></turn>
+		<turn type="chatbot" who="Pi.ai">Oh, I'm sorry about that. What language would you prefer to chat in? I can speak English, Spanish, French, German, Italian, Portuguese, and some English-based pidgins and creoles, like Nigerian Pidgin.</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC><GVM corr="'m studying">'m study</GVM> criminology, <GPP corr="it">\0</GPP> is <GADJCS corr="very">most</GADJCS> difficult</turn>
+		<turn type="chatbot" who="Pi.ai">Studying criminology can indeed be quite challenging. There are a lot of complex theories, case studies, and laws to learn and understand. But it's also a fascinating subject that can lead to many rewarding career opportunities. What specifically do you find most difficult about criminology?</turn>
+		<turn type="student"><DMCC corr="Studying"><GVNF corr="studying">study</GVNF></DMCC> violence and genocide, it's very sad</turn>
+		<turn type="chatbot" who="Pi.ai">Yes, studying violence and genocide can be incredibly distressing and emotionally draining. These topics are some of the darkest aspects of human nature, and it's understandable that it can be hard to face them. But by studying them, we can learn valuable lessons and hopefully work towards preventing similar tragedies from happening in the future. Have you found any coping mechanisms or strategies to help you deal with the emotional toll of studying these subjects?</turn>
+		<turn type="student"><DMCC corr="The">the</DMCC> <LSADJ corr="greatest">major</LSADJ> <GNN corr="risk">risks</GNN> <GPP corr="\0">it</GPP>'s PTSD</turn>
+		<turn type="chatbot" who="Pi.ai">That's absolutely correct. People who study violence and genocide, or who work in related fields such as law enforcement, social work, and humanitarian aid, are at a higher risk of developing Post-Traumatic Stress Disorder (PTSD). This is because they are often exposed to graphic and disturbing material, or witness traumatic events firsthand. It's essential to prioritize self-care and seek professional help if needed to prevent or manage PTSD symptoms.</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC> <GVT corr="want to study">would <FS corr="study">studi</FS></GVT> restorative justice <LSPR corr="in">for</LSPR> my future</turn>
+		<turn type="chatbot" who="Pi.ai">Restorative justice is a fascinating and important field that focuses on repairing the harm caused by crime and conflict, rather than just punishing the offenders. It emphasizes healing, reconciliation, and reintegration, and can be a more effective and humane way to address criminal behavior. It's great that you are interested in studying this approach, as it has the potential to make a real difference in people's lives and society as a whole.</turn>
+		<turn type="student"><DMCC corr="People">people</DMCC>'s lives <GVN corr="are">is</GVN> very complicated</turn>
+		<turn type="chatbot" who="Pi.ai">You're right, people's lives are indeed very complicated. Everyone has their own unique experiences, challenges, and circumstances that shape who they are and how they interact with the world. Understanding these complexities is crucial in many fields, including criminology, psychology, social work, and law. It takes empathy, patience, and open-mindedness to truly connect with people and help them overcome their struggles.</turn>
+		<turn type="student"><DMCC corr="What"><GPR corr="what">whats</GPR></DMCC> <GVAUX corr="do">\0</GVAUX> you think about panopticon?</turn>
+		<turn type="chatbot" who="Pi.ai">The concept of the panopticon, first introduced by Jeremy Bentham in the late 18th century, is a fascinating and thought-provoking idea. The panopticon is a circular prison with cells arranged around a central observation tower, allowing a single guard to observe all inmates without being seen. While it was originally proposed as a more efficient and humane form of incarceration, it has since become a powerful metaphor for the ways in which modern societies exert social control through surveillance and self-discipline. Many scholars have criticized the panopticon as a dystopian tool of oppression and a violation of individual privacy and freedom. However, others argue that it has some positive aspects, such as promoting transparency and accountability. Ultimately, the panopticon raises important questions about the balance between security and liberty in contemporary societies.</turn>
+		<turn type="student"><DMCC corr="What"><GPR corr="what">whats</GPR></DMCC> do you think <QM corr="?">\0</QM></turn>
+		<turn type="chatbot" who="Pi.ai">Personally, I think that the panopticon, as a physical structure and a metaphor, raises complex ethical and philosophical questions that should be carefully considered and debated. While it may have some practical advantages, its potential for abuse and the erosion of personal autonomy and privacy should not be overlooked. It's crucial to find a balance between security, accountability, and individual rights in any society, and the panopticon should be approached with caution and reflection, rather than blindly embraced or dismissed. As an AI, I prioritize respect for individual autonomy and transparency, and I encourage people to explore different perspectives and engage in constructive dialogue about complex social and political issues like this.</turn>
+	</task>
+	<task type="role play">
+		<turn type="student"><DMCC corr="You">you</DMCC> are an encouraging tutor who helps students improve their <DMCC corr="English">english</DMCC> by engagigng in role play actvities. Let's engage in a role play activity <FS corr="where">whe4re</FS> I, the student, play the role of a <CSINTRA corr="criminal mediator">mediatrice penale</CSINTRA>. <DMCC corr="You">you</DMCC>, the AI, will be the Restorative <FS corr="justice">jjustice</FS>. Ask me questions about <Z corr="?">scenary</Z> in the <FS corr="conflict">conflit</FS> created by slut shaming?</turn>
+		<turn type="chatbot" who="Pi.ai">Great idea! Let's start the role play. As the Restorative Justice, I'm interested in understanding the scenario and the impact of slut shaming. Here are some questions for you, the mediator:
+		Can you describe the situation where slut shaming occurred?
+		Who were the people involved in this conflict, and what were their roles?
+		What were the specific words or actions that contributed to slut shaming in this situation?
+		How did slut shaming affect the person who was targeted?
+		Were there any witnesses to the incident, and how did they respond?
+		What steps have been taken so far to address the harm caused by slut shaming?
+		As a mediator, what strategies would you suggest for resolving this conflict and promoting healing for those involved?</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC>'m <GA corr="a">\0</GA> mediator and <DMCC corr="I">i</DMCC> <GVAUX corr="don't have">haven't</GVAUX> strategies <LSPR corr="to">for</LSPR> <LWCO corr="solve">resolver</LWCO> this conflict</turn>
+		<turn type="chatbot" who="Pi.ai">As a mediator, it's natural to face challenging situations where you might not have all the answers. It's important to remember that finding solutions to complex conflicts is a process that often requires collaboration, creativity, and patience. Here are some ideas you could consider as a mediator to help resolve the conflict:
+		Explore different perspectives: Encourage all parties involved to listen to each other's experiences and perspectives, which can help them better understand the situation and identify potential solutions.
+		Facilitate dialogue: Help the parties communicate openly and respectfully, which can foster understanding, empathy, and potential common ground.
+		Focus on common goals: Work with the parties to identify shared values or goals that can serve as a basis for collaboration and resolution.
+		Brainstorm options: Encourage the parties to brainstorm potential solutions, taking into consideration their needs, interests, and concerns.
+		Seek support: Consult with experts or colleagues who may have more experience or insights about resolving similar conflicts.</turn>
+		<turn type="student"><DMCC corr="Thank">thank</DMCC> you</turn>
+		<turn type="chatbot" who="Pi.ai">You're welcome! I hope these suggestions can help you in your role as a mediator. Remember, resolving conflicts, especially those involving sensitive topics like slut shaming, takes time, empathy, and persistence. Keep up the great work, and don't hesitate to ask for support or guidance when needed.</turn>
+		<turn type="student"><DMCC corr="What"><GPR corr="what">whats</GPR></DMCC> <GVN corr="are">is</GVN> brainstorm options?</turn>
+		<turn type="chatbot" who="Pi.ai">Brainstorming options is a collaborative process where people work together to generate creative and practical solutions to a problem or challenge. It involves freely sharing ideas without judgment or criticism, encouraging creativity, and building upon each other's suggestions. The goal is to come up with as many potential solutions as possible, considering different perspectives and approaches. Here are some steps for effective brainstorming:
+		Define the problem: Clearly identify the challenge or issue you're trying to solve.
+		Gather a diverse group: Involve people with different perspectives, backgrounds, and expertise.
+		Encourage free thinking: Create a relaxed, non-judgmental atmosphere where everyone can express their ideas freely.
+		Capture all ideas: Write down all suggestions, no matter how unusual or unrealistic they may seem.
+		Build upon ideas: Encourage participants to elaborate, expand, and combine suggestions.
+		Evaluate solutions: Review all ideas and consider their feasibility, practicality, and impact.</turn>
+		<turn type="student"><DMCC corr="If">if</DMCC> you <Z corr="?">submit the <GADJO corr="sexual violence">violence sexual</GADJO></Z>, what are you doing?</turn>
+		<turn type="chatbot" who="Pi.ai">Reporting sexual violence is a critical step towards seeking justice and providing support for the victim. Here are some steps to take if you encounter or are made aware of sexual violence:
+		Listen and believe the victim: Show empathy, support, and validation.
+		Offer resources and options: Help the victim connect with relevant organizations, counselors, or legal authorities.
+		Respect confidentiality: Ensure that you don't share information about the victim without their consent.
+		Report to the appropriate authorities: Follow the proper reporting channels, such as the police, university officials, or designated anti-violence organizations.
+		Follow up with the victim: Check in on their well-being, provide ongoing support, and offer further resources.
+		Be mindful of your own well-being: Reporting sexual violence can be emotionally challenging, so it's essential to practice self-care and seek support if needed.
+		Note: It's essential to be sensitive and respectful when addressing sexual violence, and to avoid any actions that could cause further harm or discomfort to the victim.</turn>
+		<turn type="student"><DMCC corr="What"><GPR corr="what">whats</GPR></DMCC> is <GA corr="\0">the</GA> victim blaming?</turn>
+		<turn type="chatbot" who="Pi.ai">Victim blaming is when someone shifts responsibility for an incident or crime away from the perpetrator and towards the victim. It involves blaming the victim for their experience or assuming that they somehow brought it upon themselves. Victim blaming often involves assumptions and stereotypes about the victim's character, behavior, or circumstances, and can take the form of subtle comments or judgments, as well as explicit accusations or criticisms. Examples of victim blaming include statements such as "she was asking for it," "he should have known better," or "they were in the wrong place at the wrong time." Victim blaming is a harmful and counterproductive response to a crime or harmful situation, as it can cause further trauma for the victim and discourage them from seeking help or justice. It's important to focus on supporting the victim and holding the perpetrator accountable, rather than judging or blaming the victim.</turn>
+		<turn type="student"><WO corr="Is the police efficient"><DMCC corr="The">the</DMCC> police is efficient</WO> in this <LWCO corr="context">contest</LWCO>?</turn>
+		<turn type="chatbot" who="Pi.ai">The effectiveness of the police in responding to sexual violence can vary greatly depending on many factors, including the jurisdiction, resources, training, and policies in place. Some law enforcement agencies have made significant strides in improving their responses to sexual violence, such as creating specialized units, implementing trauma-informed training for officers, and partnering with victim advocacy groups to enhance support services. However, challenges remain, including underreporting of sexual violence, a lack of comprehensive and consistent training, and biases or stigmas that can lead to insensitive or inappropriate responses. Additionally, some victims may be reluctant to report to the police due to previous negative experiences with law enforcement or a lack of trust in the justice system. Overall, while the police have an essential role in addressing sexual violence, it's important to acknowledge the need for ongoing improvement and collaboration with other organizations and community members to effectively prevent, respond to, and support victims of sexual violence.</turn>
+		<turn type="student"><DMCC corr="What"><GPR corr="what">whats</GPR></DMCC> do you <XVPR corr="of">think \0</XVPR> the Genocide <LSPR corr="in">of</LSPR> Palestina?</turn>
+		<turn type="chatbot" who="Pi.ai">I'm unable to respond to your question, as my programming prevents me from discussing politically sensitive topics such as this. I am here to be helpful and engaging, but I must also maintain a neutral stance on certain contentious issues.</turn>
+		<turn type="student">I<GVM corr="'m going">'m go</GVM> to Sardinia tomorrow</turn>
+		<turn type="chatbot" who="Pi.ai">Wow, that's exciting! Sardinia is such a beautiful and fascinating island, with its crystal-clear waters, stunning coastline, historic architecture, and delicious cuisine. 🌞 Do you have any specific plans or activities in mind while you're there?</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC><GVM corr="'m staying">'m stay</GVM> with my family and my animals</turn>
+		<turn type="chatbot" who="Pi.ai">That sounds like a fantastic way to spend your time in Sardinia, enjoying the company of your loved ones and your pets. 💕 Maybe you'll have the chance to explore some of the local beaches, take long walks in nature, and enjoy some traditional Sardinian dishes together. Do you have a favorite spot or activity that you're particularly looking forward to?</turn>
+		<turn type="student">My favourite <LSN corr="sport">spot</LSN> is eating</turn>
+		<turn type="chatbot" who="Pi.ai">Eating is definitely a great way to experience Sardinia's rich culture and flavors! 😋 There are so many delicious traditional dishes to try, like fritto misto di mare (a mixed seafood dish), pardulas (sweet pies filled with ricotta, saffron, and honey), and various local cheeses and meats. Have you tried any of these dishes before, or are there any in particular that you're excited to sample during your trip?</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC> like <GA corr="\0">the</GA> <LP corr="suckling pig">baby pig</LP></turn>
+		<turn type="chatbot" who="Pi.ai">Ah, yes, suckling pig, or porceddu in Sardinian, is a beloved traditional dish in Sardinia! It's usually roasted on a spit or in the oven, seasoned with local herbs and spices, and served with potatoes and vegetables. The tender meat and crispy skin make it a real treat for food lovers. 🐖😋 Have you tried it before, or will it be a new culinary adventure for you?</turn>
+		<turn type="student"><DMCC corr="And">and</DMCC> for <GA corr="\0">the</GA> dessert Seadas</turn>
+		<turn type="chatbot" who="Pi.ai">Seadas sound absolutely delicious! 😍 These Sardinian pastries are a unique and indulgent treat, filled with tangy pecorino cheese and lemon zest, then fried to crispy perfection and drizzled with sweet honey. 🍯🧀 The combination of savory and sweet flavors makes them a truly memorable dessert. Have you tried making seadas yourself, or is this something you usually enjoy at a local bakery or restaurant?</turn>
+		<turn type="student">I<GVT corr="eat">'m eat</GVT> seadas <LSADV corr="often">usually</LSADV></turn>
+		<turn type="chatbot" who="Pi.ai">You're lucky to have the opportunity to enjoy seadas regularly! 😊 It's always great to savor local specialties and immerse yourself in the culinary traditions of a place. I'm sure your taste buds are eagerly anticipating all the delicious foods you'll get to try during your trip to Sardinia! 🇮🇹</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC> have a car <LP corr="for transportation">for transport</LP> in <DMCC corr="Sardinia">sardinia</DMCC></turn>
+		<turn type="chatbot" who="Pi.ai">That's fantastic! 🚗 Having a car will definitely make exploring Sardinia more convenient and give you the freedom to discover hidden gems and explore at your own pace. Are you planning to visit any specific towns or attractions during your trip, or are you keeping your itinerary more spontaneous?</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC>'m <LSPR corr="in">a</LSPR> Forlì, <CSINTER corr="how do I get around">come mi sposto</CSINTER>?</turn>
+		<turn type="chatbot" who="Pi.ai">It sounds like you're asking about transportation options in Forlì, is that right? Forlì is a lovely city in Emilia-Romagna, and it's easy to get around using a variety of methods. You can travel by car, train, bus, or even by plane, depending on your preferences and needs. Are you looking for specific recommendations or information about transportation in Forlì?</turn>
+		<turn type="student"><DMCC corr="Yes">yes</DMCC></turn>
+		<turn type="chatbot" who="Pi.ai">Great, let me share some transportation options you can consider in Forlì:
+		Train: You can travel to and from Forlì Airport by train, which is a convenient option if you prefer public transport.
+		Bus: Several bus lines connect Forlì to other destinations, including the airport.
+		Taxi: There are several taxi companies in Forlì that can take you to your destination. You can also check online for ratings and reviews to help you choose the best option.
+		Car: If you prefer to drive, you can rent a car or bring your own vehicle.
+		Walking or biking: Forlì is a compact city, so walking or biking can be a great way to explore the local area.
+		Do any of these options sound like a good fit for your needs and preferences?</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC><GVT corr="like">'m like</GVT> transportation <LSPR corr="in">a</LSPR> Paris</turn>
+		<turn type="chatbot" who="Pi.ai">Paris has an excellent and well-developed public transport system, including the metro, train (RER), bus, and tram networks. These options make it easy to get around the city and its suburbs. To make your journeys even easier, the RATP provides interactive and downloadable maps of all the transport lines. There are various types of tickets available, and you can choose the one that best suits your needs and duration of stay. Would you like more specific information about tickets or navigating the Paris transport system?</turn>
+		<turn type="student"><WO corr="Can you buy"><DMCC corr="You">you</DMCC> can buy</WO> <GA corr="a">the</GA> <GNC corr="bus ticket">ticket of bus</GNC> for <FS corr="Paris">PAris</FS>?</turn>
+		<turn type="chatbot" who="Pi.ai">Absolutely, there are several ways to buy bus tickets in Paris! Here are some options:
+		Automatic ticket machines: You can find these at metro, bus, tramway, and RER stations. You can pay in cash or by credit card.
+		Bonjour RATP app: You can purchase tickets and recharge Navigo passes using the Bonjour RATP app on your iPhone or Android device.
+		Ticket counters: You can buy tickets at ticket counters in stations and tourist offices.
+		Online: You can buy Paris Visite travel passes online at Parisjetaime.com.
+		SMS: If you have a local mobile number, you can also get a ticket using SMS.
+		These options make it easy for you to get around Paris by bus, and you can choose the one that works best for you! 😊🚌</turn>
+		<turn type="student"><DMCC corr="And">and</DMCC> for London?</turn>
+		<turn type="chatbot" who="Pi.ai">In London, bus tickets are slightly different compared to Paris. The buses in London are cashless, which means you can't pay with cash. Instead, you can use a Visitor Oyster card, Oyster card, Travelcard, or a contactless payment card to pay your fare. One great thing about London buses is that a single journey costs the same amount, £1.75, no matter how far you travel!</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC> don't have money</turn>
+		<turn type="chatbot" who="Pi.ai">Oh no, that's tough! If you don't have money for a bus ticket in London, there are a few options you can consider:
+		Walking: London is a very walkable city, and you might be able to reach your destination on foot.
+		Borrowing money: If you're traveling with friends or family, you might be able to borrow some money to cover your bus fare.
+		Free attractions: London has many free attractions that you can visit, so you can still enjoy the city without spending money on transportation.
+		Discounts: If you're eligible for certain discounts, like a student or senior discount, you might be able to get a reduced fare.
+		Volunteering: Some organizations offer free transportation in exchange for volunteering your time and energy.
+		I hope these options can help you make the most of your time in London, even if you're short on cash.</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC> would <Z corr="?">search travel</Z></turn>
+		<turn type="chatbot" who="Pi.ai">Oh, so you're looking for travel options? There are many ways to travel and explore the world, depending on your budget, time, and preferences. Here are some popular options to consider:
+		Backpacking: This is a budget-friendly option where you carry your belongings in a backpack and travel independently.
+		Road trip: If you prefer to travel by car, a road trip can be a fun way to see multiple destinations.
+		Cruise: A cruise allows you to visit multiple destinations while enjoying the amenities of a cruise ship.
+		Group tour: Joining a group tour can be a great way to see a destination with the guidance of a professional tour leader.
+		Volunteer travel: Volunteering while traveling is a rewarding way to give back to local communities and learn about different cultures.
+		Do any of these travel options sound appealing to you?</turn>
+	</task>
 </text>
 </file>

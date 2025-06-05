@@ -1,0 +1,60 @@
+Category	Tag	Description	Reference
+Digitally-Mediated Communication	<DMCC>	Capitalization issues.	Capitalization
+Digitally-Mediated Communication	<DMCA>	Use of abbreviations in digitally-mediated communication (e.g., OK, lol, etc.).	Abbreviations
+Form	<FS>	Spelling errors.	Spelling
+Form	<FM>	Morphological errors involving derivational affixes.	Morphology
+Punctuation	<QC>	Confusion of punctuation marks.	Punctuation Confusion
+Punctuation	<QL>	Punctuation mark instead of lexical item (or vice versa).	Punctuation Lexical
+Punctuation	<QM>	Missing punctuation.	Punctuation Missing
+Punctuation	<QR>	Redundant punctuation.	Punctuation Redundant
+Grammar	<GDD>	Errors with demonstrative determiners (e.g., this, that, etc.).	Demonstrative Determiners
+Grammar	<GDO>	Errors with possessive determiners (e.g., my, your, etc.).	Possessive Determiners
+Grammar	<GDI>	Errors with indefinite determiners (e.g., any, some, etc.).	Indefinite Determiners
+Grammar	<GDT>	Errors with other types of determiners (e.g., relative, interrogative, etc.).	Other Determiners
+Grammar	<GA>	Errors with definite, indefinite, or zero articles.	Articles
+Grammar	<GADJCS>	Errors with comparative or superlative adjectives.	Comparative/Superlative Adjectives
+Grammar	<GADJN>	Errors with adjective number.	Adjective Number
+Grammar	<GADJO>	Errors with adjective order.	Adjective Order
+Grammar	<GADVO>	Misplaced adverbs.	Adverb Order
+Grammar	<GNC>	Errors with noun case (e.g., Saxon genitive misuse).	Noun Case
+Grammar	<GNN>	Errors with noun number.	Noun Number
+Grammar	<GPD>	Errors with demonstrative pronouns (e.g., this, that, etc.).	Demonstrative Pronouns
+Grammar	<GPP>	Errors with personal pronouns (e.g., you, we, etc.).	Personal Pronouns
+Grammar	<GPO>	Errors with possessive pronouns (e.g., mine, yours, etc.).	Possessive Pronouns
+Grammar	<GPI>	Errors with indefinite pronouns. (e.g. anyone, nothing, etc.).	Indefinite Pronouns
+Grammar	<GPF>	Errors with reflexive or reciprocal pronouns (e.g., myself, each other, etc.).	Reflexive/Reciprocal Pronouns
+Grammar	<GPR>	Errors with relative or interrogative pronouns (e.g., what, which, etc.).	Relative/Interrogative Pronouns
+Grammar	<GPU>	Unclear pronominal reference.	Unclear Pronominal Reference
+Grammar	<GVAUX>	Misuse of primary, modal, or semi-auxiliaries (e.g., do, have, etc.).	Verb Auxiliaries
+Grammar	<GVM>	Errors with verb morphology.	Verb Morphology
+Grammar	<GVN>	Errors with subject-verb agreement.	Verb Number
+Grammar	<GVNF>	Errors in use of -ing, infinitives, or relative clauses.	Verb Non-Finite/Finite
+Grammar	<GVT>	Misuse of tense or aspect.	Verb Tense
+Grammar	<GVV>	Errors with active/passive voice.	Verb Voice
+Grammar	<GWC>	Errors due to confusion between word classes.	Grammar Word Class
+Lexico-Grammar	<XADJCO>	Errors with adjective complementation.	Adjective Complementation
+Lexico-Grammar	<XNCO>	Errors with noun complementation.	Noun Complementation
+Lexico-Grammar	<XPRCO>	Errors with preposition complementation.	Preposition Complementation
+Lexico-Grammar	<XVCO>	Errors with verb complementation.	Verb Complementation
+Lexico-Grammar	<XADJPR>	Errors with adjective dependent prepositions.	Adjective Dependent Preposition
+Lexico-Grammar	<XADVPR>	Errors with adverb dependent prepositions.	Adverb Dependent Preposition
+Lexico-Grammar	<XNPR>	Errors involving dependent prepositions for nouns.	Noun Dependent Preposition
+Lexico-Grammar	<XVPR>	Errors involving dependent prepositions for verbs.	Verb Dependent Preposition
+Lexico-Grammar	<XNUC>	Errors in the use of uncountable/countable nouns.	Uncountable/Countable Nouns
+Lexis	<LCC>	Errors in the use of coordinating conjunctions (e.g., and, or, etc.).	Coordinating Conjunctions
+Lexis	<LCS>	Errors in the use of subordinating conjunctions (e.g., although, because, etc.).	Subordinating Conjunctions
+Lexis	<LCLS>	Errors in the use of single logical connectors (e.g., nevertheless, etc.).	Single Logical Connectors
+Lexis	<LCLC>	Errors in the use of complex logical connectors (e.g., on the other hand, etc.).	Complex Logical Connectors
+Lexis	<LSADJ>	Conceptual or collocational errors involving adjectives.	Single Adjectives
+Lexis	<LSADV>	Conceptual or collocational errors involving adverbs.	Single Adverbs
+Lexis	<LSN>	Conceptual or collocational errors involving nouns.	Single Nouns
+Lexis	<LSPR>	Conceptual or collocational errors involving prepositions.	Single Prepositions
+Lexis	<LSV>	Conceptual or collocational errors involving verbs.	Single Verbs
+Lexis	<LP>	Errors in fixed word combinations, including idioms, compounds, and phrasal verbs.	Lexical Phrases
+Lexis	<LWCO>	Instances of coined words, calques, or invented proper nouns.	Word Coinage/Calque
+Word	<WM>	Missing words.	Word Missing
+Word	<WR>	Redundant words.	Word Redundant
+Word	<WO>	Errors in word order.	Word Order
+Infelicities	<Z>	Stylistic problems or unclear sequences requiring reformulation.	Infelicities
+Code-Switching	<CSINTRA>	Code-switching within a sentence.	Intra-sentential
+Code-Switching	<CSINTER>	Code-switching between sentences or conversational turns.	Inter-sentential

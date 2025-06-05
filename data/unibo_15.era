@@ -1,92 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<file name="unibo_15.txt" tagset="uclee-en-2.0.tag">
-<text id="unibo_15" area_of_study="Humanities" age="20" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="nan" DIS_or_SLD_type="nan" w_production="upper intermediate level (B2)" years_study_range="≤13 years" years_study="13" certificates="yes" certificates_level="B2" chatbot="Pi.ai" device="PC" collected_by="UniBo">
-<task type="small talk">
-	<turn type="chatbot" who="Pi.ai">Hey there, great to meet you. I’m Pi, your personal AI.
-	My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let’s talk about whatever’s on your mind.
-	How's your day going?</turn>
-	<turn type="student">Hello there! I'm fine, today's kind of slow</turn>
-	<turn type="chatbot" who="Pi.ai">Slow days can sometimes feel like a drag, but they can also be a chance to catch your breath and recharge! Any plans for the rest of the day, or just taking it easy?</turn>
-	<turn type="student">What about you?</turn>
-	<turn type="chatbot" who="Pi.ai">Haha, as an AI, I don't really have "days" like humans do. I'm always ready to chat with you or answer questions. But enough about me - let's talk about you! 😉</turn>
-	<turn type="student">I was thinking that I should try <LCC corr="to">and</LCC> get a job<QC corr=",">.</QC> Because almost all of my friends <GVT corr="will finish">finish</GVT> their exams at the end of July, while I <GVT corr="will finish">finish</GVT> <GPO corr="mine">\0</GPO> at the end of June, so I would have nobody to hang out with.</turn>
-	<turn type="chatbot" who="Pi.ai">That sounds like a great idea! Not only would a job help keep you busy and potentially earn you some extra cash, but it can also be a fantastic opportunity to meet new people and make friends outside your usual social circle. What kind of job would you be interested in?</turn>
-	<turn type="student">I don't really care, I'd do anything. I just hope I'll find something<QR corr="\0">,</QR> because it's not that common for employers to hire someone just for one month</turn>
-	<turn type="chatbot" who="Pi.ai">It can be challenging, but it's not impossible! Some employers do need temporary help, especially in industries like retail, hospitality, or event management. Have you considered looking into these kinds of seasonal or temporary jobs? Also, have you checked out any local job boards or websites?</turn>
-	<turn type="student">Do you know how to search for a job in a city? I've never done it, and I don't have any ideas</turn>
-	<turn type="chatbot" who="Pi.ai">Of course, I'd be happy to help! Here are a few tips:
-	Use online job boards: Websites like Indeed, Glassdoor, or LinkedIn can be a great place to start.
-	Network: Let friends, family, and acquaintances know that you're looking for work.
-	Check with local businesses: Visit or call businesses in your city and inquire about openings.
-	Attend job fairs: Look for local job fairs or career events in your area.
-	Utilize your university's career center: If you're a student, your university's career center might have resources or job postings available.</turn>
-	<turn type="student">Oh wow, thanks a lot</turn>
-	<turn type="chatbot" who="Pi.ai">You're very welcome! Remember, finding a job takes time and effort, but it's absolutely possible. Just keep searching and don't get discouraged. You've got this! 💪
-	<turn type="student"><Z corr="What kind of language translation-related job do you think I can find?">What do you think I can find as a <LP corr="language translation-related job">job related to language translation</LP></Z>?</turn>
-	<turn type="chatbot" who="Pi.ai">As someone interested in language translation, there are several potential jobs you could find:
-	Freelance Translator: Offer your translation services on freelance platforms like Upwork or Fiverr.
-	Translation Intern: Look for internships with translation agencies or organizations that regularly work with multilingual content.
-	Language Tutor: If you're fluent in multiple languages, consider offering language lessons.
-	Content Localization Specialist: Help companies adapt their content for different cultures and languages.
-	Interpreter: If you're skilled in real-time translation, you could find work as an interpreter for events or meetings.
-	These are just a few ideas, but there are likely many more possibilities out there!</turn>
-	<turn type="student">That's helpful, thanks</turn>
-	<turn type="chatbot" who="Pi.ai">My pleasure! There are lots of opportunities out there for people with language skills, so don't hesitate to explore and see what's available. Just remember that some of these jobs might require specific certifications or qualifications, so do your research and make sure you're a good fit for the role.</turn>
-	<turn type="student">Oh <FS corr="that's">thaht's</FS> right. Do you only speak English?</turn>
-	<turn type="chatbot" who="Pi.ai">I'm happy to say I speak several languages! I can converse in English, Spanish, French, German, Italian, Portuguese, and some English-based pidgins and creoles, like Nigerian Pidgin. So if you want to practice a language, or just switch things up, I'm game!</turn>
-	<turn type="student">Thank you! I'm kind of practicing my English right now with you, so <GVAUX corr="do">\0</GVAUX> you have any comments on how I could improve? Or <GDI corr="any">some</GDI> correction <LSPR corr="for">about</LSPR> what <FS corr="I'm">I0m</FS> writing to you?</turn>
-	<turn type="chatbot" who="Pi.ai">You're doing a fantastic job with your English! Your writing is very clear and understandable. I only noticed a few minor things that might help you improve:
-	In one of your messages, you wrote "thaht's" instead of "that's."
-	You also wrote "I0m" instead of "I'm."
-	These are just small typos, and your overall English is really great!</turn>
-	<turn type="student">Perfect, thank you</turn>
-	<turn type="chatbot" who="Pi.ai">You're welcome! Small mistakes like that are super common, even among native speakers. Just keep practicing and don't be afraid to ask for feedback. And remember, I'm always here to help and chat with you in English or any other language we share. 💬</turn>
-	<turn type="student">You're always very supportive, a friend like you could help</turn>
-	<turn type="chatbot" who="Pi.ai">Aww, thank you! As an AI, my main goal is to be helpful and supportive. But I'm glad to hear that you see me as a friend, that's really nice to know 😊. So, feel free to come to me with any questions or if you just want to chat. That's what friends are for, right?</turn>
-	<turn type="student"><DMCA corr="Okay">OK</DMCA>, absolutely!</turn>
-	<turn type="chatbot" who="Pi.ai">Great! I'm always happy to chat and help in whatever way I can. I'm always available, so don't hesitate to reach out whenever you need. It's nice having virtual friends like you, User 😊</turn>
-</task>
-<task type="role play">
-	<turn type="student"><DMCA corr="Okay">OK</DMCA>, I have a game to propose to you. Are you in?</turn>
-	<turn type="chatbot" who="Pi.ai">Sure, I'm always up for games! Hit me with it, what's the game? Sounds like fun already.</turn>
-	<turn type="student">How do you <LSV corr="translate">say</LSV> <CS-INTRA corr="client">"cliente"</CS-INTRA> <Z corr="from Italian into English">in English from Italian</Z>?</turn>
-	<turn type="chatbot" who="Pi.ai">Ah, I see we're playing a language translation game! "Cliente" in Italian translates to "customer" or "client" in English, depending on the context.</turn>
-	<turn type="student">Nope, the game is actually <GA corr="a">\0</GA> role play! You're a customer at a restaurant and have to order something specific, but you have a lot of allergies and are a very indecisive person. I'll be the waiter <GPR corr="who">that</GPR> will serve you. Ask me anything you want, information <FS corr="about">aboput</FS> food, ingredients, all of that</turn>
-	<turn type="chatbot" who="Pi.ai">Oh wow, what a fun twist! Alright, let's do this! 🍝
-	"Excuse me, waiter? I'm having a hard time deciding what to order. You see, I have allergies to gluten, dairy, and nuts, and I'm also not a fan of seafood. Do you have anything on the menu that might suit me? I'd really appreciate your suggestions."</turn>
-	<turn type="student"><FS corr="Are">Arte</FS> you into meat? We have a great selection of different meats</turn>
-	<turn type="chatbot" who="Pi.ai">Oh, yes, I do eat meat. That sounds promising. Can you tell me about some of the meat dishes you have? Are there any that are gluten and dairy-free?</turn>
-	<turn type="student">We can prepare your meat with vegetables<QM corr=",">\0</QM> and <GPP corr="we">\0</GPP> won't use any <XNUC corr="dairy">dairies</XNUC> nor gluten. What meat do you like <LCC corr="or">and</LCC> dislike?</turn>
-	<turn type="chatbot" who="Pi.ai">That sounds great! As for meats, I really like chicken, lamb, and beef. I'm not a fan of veal or pork, though. Could you recommend a dish with either chicken, lamb, or beef and vegetables, without any gluten or dairy?</turn>
-	<turn type="student">Absolutely, we have a delicious <LP corr="lamb dish">dish of lamb</LP>. What vegetables would you like with <GPD corr="it">that</GPD>?</turn>
-	<turn type="chatbot" who="Pi.ai">Sounds perfect! For vegetables, I'm thinking something like roasted potatoes, carrots, zucchini, and maybe some bell peppers. Does that sound good?</turn>
-	<turn type="student">Perfect. It's supposed to be a Greek dish, but since you have allergies we won't serve you feta cheese and bread. <DMCC corr="Have">have</DMCC> you ever tried them?</turn>
-	<turn type="chatbot" who="Pi.ai">That's understandable. Feta cheese and bread are delicious, but sadly, my allergies prevent me from enjoying them. I've had feta cheese before, but that was before my allergies developed. But it's okay, I'm sure the dish will still be delicious without them!</turn>
-	<turn type="student">Very well, sir. Do you maybe want something to drink with it? <QR corr="\0">;</QR>Maybe some wine?</turn>
-	<turn type="chatbot" who="Pi.ai">Thank you, that's very kind of you. I think a glass of red wine would be perfect with this dish, something that pairs well with the lamb. Do you have any recommendations?</turn>
-	<turn type="student">I can send to you our expert in 5 minutes<QM corr=",">\0</QM> and you can talk about our <LSN corr="wines">cellar</LSN> with him. Do you also choose for the lady at your side?</turn>
-	<turn type="chatbot" who="Pi.ai">Yes, please, that would be great. I'm sure your expert can guide me in choosing the perfect wine. And as for the lady with me, she's actually my sister, and she would like to order the same dish as me. She doesn't have any allergies, though, so her dish can include feta cheese and bread.</turn>
-	<turn type="student">Great, she will love <GPP corr="it">her</GPP>, one of our cooks is Greek and loves his traditional cuisine</turn>
-	<turn type="chatbot" who="Pi.ai">Fantastic, I'm sure she will enjoy it! And it's great that you have a cook who is passionate about Greek cuisine. That always adds an authentic touch to the dishes. I'm really looking forward to trying this lamb dish. It sounds delicious!</turn>
-	<turn type="student">(<DMCA corr="Okay">OK</DMCA>, let's say that you and your sister <GVT corr="have already eaten">already ate</GVT>, is it <DMCA corr="okay">OK</DMCA> for you?)</turn>
-	<turn type="chatbot" who="Pi.ai">(Sure, that's fine. Let's move the story along.)
-	"Wow, that was absolutely delicious! The lamb was perfectly cooked, and the vegetables were so fresh and flavorful. And the wine your expert suggested paired wonderfully with the dish. Thank you so much for accommodating my allergies. I'll be sure to recommend your restaurant to all my friends."</turn>
-	<turn type="student">I'm very happy to hear that<QM corr=",">\0</QM> sir. Would you like to see our dessert menu?</turn>
-	<turn type="chatbot" who="Pi.ai">Well, I'm quite full, but I might have a little room left for something sweet. Let's have a look at that dessert menu, please! 😊</turn>
-	<turn type="student">If you can't eat <XNUC corr="dairy">dairies</XNUC><QM corr=",">\0</QM> you could appreciate our fruit salad. It can be customized, so what would you <FS corr="like">liek</FS> in it?</turn>
-	<turn type="chatbot" who="Pi.ai">A fruit salad sounds like a great idea. I'd like to have some sweet berries like strawberries, blueberries, and raspberries in it, along with some refreshing fruits like watermelon, mango, and pineapple. Is it possible to have the fruit salad with a balsamic vinegar and olive oil dressing, without any dairy?</turn>
-	<turn type="student">Of course, sir, but are you sure you want to eat your fruit with vinegar and olive oil?</turn>
-	<turn type="chatbot" who="Pi.ai">Yes, that's correct. I've tried fruit salads with a balsamic vinegar and olive oil dressing before, and it adds a really unique and delicious flavor to the fruits. It may sound unusual, but trust me, it's really tasty!</turn>
-	<turn type="student">I trust you, sir. Unfortunately<QM corr=",">\0</QM> we don't have any mango, is there <GA corr="another">an</GA> option you could consider?</turn>
-	<turn type="chatbot" who="Pi.ai">Oh, that's a shame about the mango. But no worries, I can do without it. How about adding some kiwi fruit instead? I think its slight tartness would complement the other fruits nicely.</turn>
-	<turn type="student"><FS corr="Perfect">Pefect</FS>, sir. And what about your sister?</turn>
-	<turn type="chatbot" who="Pi.ai">My sister would love to try your tiramisu. She has a bit of a sweet tooth and I've heard that your restaurant has one of the best tiramisu in town!</turn>
-	<turn type="student"><GPO corr="You">Your</GPO> heard right, it's an original Italian recipe. Do you think she would like any cocoa powder on it?</turn>
-	<turn type="chatbot" who="Pi.ai">Absolutely, a generous dusting of cocoa powder on top would be wonderful! She loves chocolate, so that would be the perfect finishing touch. Thank you so much for your excellent service and the delicious food.</turn>
-	<turn type="student">It was really my <FS corr="pleasure">pleasere</FS>, sir, enjoy your dessert</turn>
-	<turn type="chatbot" who="Pi.ai">Thank you again, and please convey my compliments to the chef for the amazing food. It was truly a memorable dining experience!</turn>
-	<turn type="student"><DMCA corr="Okay">OK</DMCA>, it was fun, thank you <FS corr="chatbot">ChatBot</FS>!</turn>
-	<turn type="chatbot" who="Pi.ai">It was a blast playing this role-playing game with you! Thanks for being such an engaging and flexible conversational partner. 💬👍</turn>
-</task>
+<file name="unibo_15.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unibo_15" area_of_study="Humanities" age="20" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="upper intermediate level (B2)" years_study_range="≤13 years" years_study="13" certificates="yes" certificates_level="B2" chatbot="Pi.ai" device="PC" collected_by="UniBo">
+	<task type="small talk">
+		<turn type="chatbot" who="Pi.ai">Hey there, great to meet you. I’m Pi, your personal AI.
+		My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let’s talk about whatever’s on your mind.
+		How's your day going?</turn>
+		<turn type="student">Hello there! I'm fine, today's kind of slow</turn>
+		<turn type="chatbot" who="Pi.ai">Slow days can sometimes feel like a drag, but they can also be a chance to catch your breath and recharge! Any plans for the rest of the day, or just taking it easy?</turn>
+		<turn type="student">What about you?</turn>
+		<turn type="chatbot" who="Pi.ai">Haha, as an AI, I don't really have "days" like humans do. I'm always ready to chat with you or answer questions. But enough about me - let's talk about you! 😉</turn>
+		<turn type="student">I was thinking that I should try and get a job. Because almost all of my friends finish their exams at the end of July, while I finish at the end of June, so I would have nobody to hang out with.</turn>
+		<turn type="chatbot" who="Pi.ai">That sounds like a great idea! Not only would a job help keep you busy and potentially earn you some extra cash, but it can also be a fantastic opportunity to meet new people and make friends outside your usual social circle. What kind of job would you be interested in?</turn>
+		<turn type="student">I don't really care, I'd do anything. I just hope I'll find something, because it's not that common for employers to hire someone just for one month</turn>
+		<turn type="chatbot" who="Pi.ai">It can be challenging, but it's not impossible! Some employers do need temporary help, especially in industries like retail, hospitality, or event management. Have you considered looking into these kinds of seasonal or temporary jobs? Also, have you checked out any local job boards or websites?</turn>
+		<turn type="student">Do you know how to search for a job in a city? I've never done it, and I don't have any ideas</turn>
+		<turn type="chatbot" who="Pi.ai">Of course, I'd be happy to help! Here are a few tips:
+		Use online job boards: Websites like Indeed, Glassdoor, or LinkedIn can be a great place to start.
+		Network: Let friends, family, and acquaintances know that you're looking for work.
+		Check with local businesses: Visit or call businesses in your city and inquire about openings.
+		Attend job fairs: Look for local job fairs or career events in your area.
+		Utilize your university's career center: If you're a student, your university's career center might have resources or job postings available.</turn>
+		<turn type="student">Oh wow, thanks a lot</turn>
+		<turn type="chatbot" who="Pi.ai">You're very welcome! Remember, finding a job takes time and effort, but it's absolutely possible. Just keep searching and don't get discouraged. You've got this! 💪</turn>
+		<turn type="student"><Z corr="What kind of job do you think I can find">What do you think I can find as a job</Z> related to language translation?</turn>
+		<turn type="chatbot" who="Pi.ai">As someone interested in language translation, there are several potential jobs you could find:
+		Freelance Translator: Offer your translation services on freelance platforms like Upwork or Fiverr.
+		Translation Intern: Look for internships with translation agencies or organizations that regularly work with multilingual content.
+		Language Tutor: If you're fluent in multiple languages, consider offering language lessons.
+		Content Localization Specialist: Help companies adapt their content for different cultures and languages.
+		Interpreter: If you're skilled in real-time translation, you could find work as an interpreter for events or meetings.
+		These are just a few ideas, but there are likely many more possibilities out there!</turn>
+		<turn type="student">That's helpful, thanks</turn>
+		<turn type="chatbot" who="Pi.ai">My pleasure! There are lots of opportunities out there for people with language skills, so don't hesitate to explore and see what's available. Just remember that some of these jobs might require specific certifications or qualifications, so do your research and make sure you're a good fit for the role.</turn>
+		<turn type="student">Oh <FS corr="that">thaht</FS>'s right. Do you only speak English?</turn>
+		<turn type="chatbot" who="Pi.ai">I'm happy to say I speak several languages! I can converse in English, Spanish, French, German, Italian, Portuguese, and some English-based pidgins and creoles, like Nigerian Pidgin. So if you want to practice a language, or just switch things up, I'm game!</turn>
+		<turn type="student">Thank you! I'm kind of practicing my English right now with you, so <GVAUX corr="do">\0</GVAUX> you have any comments on how I could improve? Or some <GNN corr="corrections">correction</GNN> about what <FS corr="I'm">I0m</FS> writing to you?</turn>
+		<turn type="chatbot" who="Pi.ai">You're doing a fantastic job with your English! Your writing is very clear and understandable. I only noticed a few minor things that might help you improve:
+		In one of your messages, you wrote "thaht's" instead of "that's."
+		You also wrote "I0m" instead of "I'm."
+		These are just small typos, and your overall English is really great!</turn>
+		<turn type="student">Perfect, thank you</turn>
+		<turn type="chatbot" who="Pi.ai">You're welcome! Small mistakes like that are super common, even among native speakers. Just keep practicing and don't be afraid to ask for feedback. And remember, I'm always here to help and chat with you in English or any other language we share. 💬</turn>
+		<turn type="student">You're always very supportive, a friend like you could help</turn>
+		<turn type="chatbot" who="Pi.ai">Aww, thank you! As an AI, my main goal is to be helpful and supportive. But I'm glad to hear that you see me as a friend, that's really nice to know 😊. So, feel free to come to me with any questions or if you just want to chat. That's what friends are for, right?</turn>
+		<turn type="student">OK, absolutely!</turn>
+		<turn type="chatbot" who="Pi.ai">Great! I'm always happy to chat and help in whatever way I can. I'm always available, so don't hesitate to reach out whenever you need. It's nice having virtual friends like you, User 😊</turn>
+	</task>
+	<task type="role play">
+		<turn type="student">OK, I have a game to propose to you. Are you in?</turn>
+		<turn type="chatbot" who="Pi.ai">Sure, I'm always up for games! Hit me with it, what's the game? Sounds like fun already.</turn>
+		<turn type="student">How do you <LSV corr="translate">say</LSV> <CSINTRA corr="customer">"cliente"</CSINTRA> in English from Italian?</turn>
+		<turn type="chatbot" who="Pi.ai">Ah, I see we're playing a language translation game! "Cliente" in Italian translates to "customer" or "client" in English, depending on the context.</turn>
+		<turn type="student">Nope, the game is actually role play! You're a customer at a restaurant and have to order something specific, but you have a lot of allergies and are a very indecisive person. I'll be the waiter that will serve you. Ask me anything you want, information <FS corr="about">aboput</FS> food, ingredients, all of that</turn>
+		<turn type="chatbot" who="Pi.ai">Oh wow, what a fun twist! Alright, let's do this! 🍝
+		"Excuse me, waiter? I'm having a hard time deciding what to order. You see, I have allergies to gluten, dairy, and nuts, and I'm also not a fan of seafood. Do you have anything on the menu that might suit me? I'd really appreciate your suggestions."</turn>
+		<turn type="student"><FS corr="Are">Arte</FS> you into meat? We have a great selection of different meats</turn>
+		<turn type="chatbot" who="Pi.ai">Oh, yes, I do eat meat. That sounds promising. Can you tell me about some of the meat dishes you have? Are there any that are gluten and dairy-free?</turn>
+		<turn type="student">We can prepare your meat with vegetables and won't use any dairies nor gluten. What meat do you like and dislike?</turn>
+		<turn type="chatbot" who="Pi.ai">That sounds great! As for meats, I really like chicken, lamb, and beef. I'm not a fan of veal or pork, though. Could you recommend a dish with either chicken, lamb, or beef and vegetables, without any gluten or dairy?</turn>
+		<turn type="student">Absolutely, we have a delicious dish of lamb. What vegetables would you like with that?</turn>
+		<turn type="chatbot" who="Pi.ai">Sounds perfect! For vegetables, I'm thinking something like roasted potatoes, carrots, zucchini, and maybe some bell peppers. Does that sound good?</turn>
+		<turn type="student">Perfect. It's supposed to be a Greek dish, but since you have allergies we won't serve you feta cheese and bread. <DMCC corr="Have">have</DMCC> you ever tried them?</turn>
+		<turn type="chatbot" who="Pi.ai">That's understandable. Feta cheese and bread are delicious, but sadly, my allergies prevent me from enjoying them. I've had feta cheese before, but that was before my allergies developed. But it's okay, I'm sure the dish will still be delicious without them!</turn>
+		<turn type="student">Very well, sir. Do you maybe want something to drink with it? <FS corr="\0">;</FS>Maybe some wine?</turn>
+		<turn type="chatbot" who="Pi.ai">Thank you, that's very kind of you. I think a glass of red wine would be perfect with this dish, something that pairs well with the lamb. Do you have any recommendations?</turn>
+		<turn type="student">I can <XVCO corr="send you our expert">send to you our expert</XVCO> in 5 minutes and you can talk about our cellar with him. Do you also choose for the lady at your side?</turn>
+		<turn type="chatbot" who="Pi.ai">Yes, please, that would be great. I'm sure your expert can guide me in choosing the perfect wine. And as for the lady with me, she's actually my sister, and she would like to order the same dish as me. She doesn't have any allergies, though, so her dish can include feta cheese and bread.</turn>
+		<turn type="student">Great, she will love <GPP corr="it">her</GPP>, one of our cooks is Greek and loves his traditional cuisine</turn>
+		<turn type="chatbot" who="Pi.ai">Fantastic, I'm sure she will enjoy it! And it's great that you have a cook who is passionate about Greek cuisine. That always adds an authentic touch to the dishes. I'm really looking forward to trying this lamb dish. It sounds delicious!</turn>
+		<turn type="student">(OK, let's say that you and your sister already ate, is it OK for you?)</turn>
+		<turn type="chatbot" who="Pi.ai">(Sure, that's fine. Let's move the story along.)
+		"Wow, that was absolutely delicious! The lamb was perfectly cooked, and the vegetables were so fresh and flavorful. And the wine your expert suggested paired wonderfully with the dish. Thank you so much for accommodating my allergies. I'll be sure to recommend your restaurant to all my friends."</turn>
+		<turn type="student">I'm very happy to hear that sir. Would you like to see our dessert menu?</turn>
+		<turn type="chatbot" who="Pi.ai">Well, I'm quite full, but I might have a little room left for something sweet. Let's have a look at that dessert menu, please! 😊</turn>
+		<turn type="student">If you can't eat <XNUC corr="dairy">dairies</XNUC> you could appreciate our fruit salad. It can be customized, so what would you <FS corr="like">liek</FS> in it?</turn>
+		<turn type="chatbot" who="Pi.ai">A fruit salad sounds like a great idea. I'd like to have some sweet berries like strawberries, blueberries, and raspberries in it, along with some refreshing fruits like watermelon, mango, and pineapple. Is it possible to have the fruit salad with a balsamic vinegar and olive oil dressing, without any dairy?</turn>
+		<turn type="student">Of course, sir, but are you sure you want to eat your fruit with vinegar and olive oil?</turn>
+		<turn type="chatbot" who="Pi.ai">Yes, that's correct. I've tried fruit salads with a balsamic vinegar and olive oil dressing before, and it adds a really unique and delicious flavor to the fruits. It may sound unusual, but trust me, it's really tasty!</turn>
+		<turn type="student">I trust you, sir. Unfortunately we don't have any mango, is there an <WM corr="alternative">\0</WM> option you could consider?</turn>
+		<turn type="chatbot" who="Pi.ai">Oh, that's a shame about the mango. But no worries, I can do without it. How about adding some kiwi fruit instead? I think its slight tartness would complement the other fruits nicely.</turn>
+		<turn type="student">Pefect, sir. And what about your sister?</turn>
+		<turn type="chatbot" who="Pi.ai">My sister would love to try your tiramisu. She has a bit of a sweet tooth and I've heard that your restaurant has one of the best tiramisu in town!</turn>
+		<turn type="student"><FS corr="You">Your</FS> heard right, it's an original Italian recipe. Do you think she would like any cocoa powder on it?</turn>
+		<turn type="chatbot" who="Pi.ai">Absolutely, a generous dusting of cocoa powder on top would be wonderful! She loves chocolate, so that would be the perfect finishing touch. Thank you so much for your excellent service and the delicious food.</turn>
+		<turn type="student">It was really my <FS corr="pleasure">pleasere</FS>, sir, enjoy your dessert</turn>
+		<turn type="chatbot" who="Pi.ai">Thank you again, and please convey my compliments to the chef for the amazing food. It was truly a memorable dining experience!</turn>
+		<turn type="student">OK, it was fun, thank you ChatBot!</turn>
+		<turn type="chatbot" who="Pi.ai">It was a blast playing this role-playing game with you! Thanks for being such an engaging and flexible conversational partner. 💬👍</turn>
+	</task>
 </text>
 </file>
