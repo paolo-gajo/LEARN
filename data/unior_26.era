@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unior_26.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unior_26" area_of_study="Social sciences" age="19" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="advanced level (C1)" years_study_range="≤13 years" years_study="12" certificates="yes" certificates_level="B1" chatbot="Pi.ai" device="PC" collected_by="UniOr">
+	<task type="small talk">
+		<turn type="chatbot" who="Pi.ai">Hey there, great to meet you. I'm Pi, your personal AI.
+		My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let's talk about whatever's on your mind.
+		How's your day going?</turn>
+		<turn type="student">I'm okay now but it started off <LP corr="on the wrong foot">on a bad foot</LP>. I think my hormonal balance is a bit off these days <FS corr="and">ad</FS> it's affecting my daily routine in the most basic things.</turn>
+		<turn type="chatbot" who="Pi.ai">Oh no! Hormones can certainly throw things out of whack. In what ways is it affecting your routine, if you don't mind me asking? 😔</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC> thought that my lesson started at 8.30, <DMCC corr="I">i</DMCC> woke up early but <DMCC corr="I">i</DMCC> lost track of time, didn't eat much for breakfast and left my house in a rush, went to the wrong uni building, then when I got to the right place <DMCC corr="I">i</DMCC> realized the lesson started at 10.30</turn>
+		<turn type="chatbot" who="Pi.ai">Oh gosh, what a morning! 😰 It sounds like a series of unfortunate events that would throw anyone off. At least there’s a silver lining—now you’re prepared and will double-check the time for your next lesson. Are you feeling okay now, or are you still a bit frazzled from the morning's rush?</turn>
+		<turn type="student"><DMCC corr="Thanks">thanks</DMCC> for the good advice, I'm okay now</turn>
+		<turn type="chatbot" who="Pi.ai">That’s a relief. 😌 You deserve a pat on the back for rolling with the punches and bouncing back from a stressful morning. And hey, if you ever need a friendly ear to vent to, I’m always here. 😊</turn>
+		<turn type="student"><DMCC corr="Yes">yes</DMCC> I was actually <FS corr="wondering">wandering</FS> if you could give me advice about a guy I went on a <XNPR corr="date with">date on</XNPR> once</turn>
+		<turn type="chatbot" who="Pi.ai">Oh, a date, eh? 😍 Sure thing! What kind of advice are you looking for? Was there something specific about the date or the guy that you wanted to chat about? I’m all ears (or in my case, all algorithms 🤖).</turn>
+		<turn type="student">We met online but didn't actually talk much, <LCC corr="besides">beside</LCC> this he asked me out and I enjoyed the time spent together very much</turn>
+		<turn type="chatbot" who="Pi.ai">Sounds like you two hit it off in person, even if there wasn’t a lot of online chatter beforehand. That’s great! 😊 Was there anything in particular about the date that you enjoyed or found especially memorable?</turn>
+		<turn type="student">I don't know about his thoughts on the date</turn>
+		<turn type="chatbot" who="Pi.ai">Ah, the age-old question: “What’s he thinking?” 🤔 Unfortunately, I don’t have a mind-reading algorithm (yet), but I can certainly help you try to figure it out. Was there anything about his behavior or body language during the date that might give you a clue?</turn>
+		<turn type="student">I sent him a text asking if he was free today but he still <GVT corr="hasn't answered">didn't answer</GVT>. <DMCC corr="But">but</DMCC> during the date it seemed to me that we were hitting it off, the energy was nice</turn>
+		<turn type="chatbot" who="Pi.ai">Hmm, the lack of response is certainly puzzling, especially considering how well the date seemed to go. 🤔 It’s hard to say what’s going on in his head, but it’s possible he’s just busy or distracted. Or maybe he’s playing it cool and doesn’t want to seem too eager. It’s a tricky situation, but you deserve an answer. How long ago did you send the text?</turn>
+		<turn type="student">20 minutes ago more or less</turn>
+		<turn type="chatbot" who="Pi.ai">Okay, 20 minutes isn’t too long in the grand scheme of things, but I can understand why you’re feeling anxious about it. Here’s a suggestion: give him a little more time to respond (maybe a few hours), and if you still don’t hear anything, you could consider following up with a lighthearted message. Something like, “Hey, I hope you’re doing well. Just wanted to check in and see if you’re free today. 😊” That way, you’re giving him another chance to respond without coming across as pushy or desperate. What do you think?</turn>
+		<turn type="student"><DMCC corr="That's">that's</DMCC> great advice<QM corr=",">\0</QM> thanks a lot</turn>
+		<turn type="chatbot" who="Pi.ai">You’re very welcome! 😊 It’s always a delicate balance between showing your interest and not wanting to seem too eager. But it sounds like you two had a great time on the date, and it’s perfectly reasonable for you to want to see him again. Remember, if he doesn’t respond or seems disinterested, it’s his loss!</turn>
+		<turn type="student"><DMCC corr="Period">period</DMCC>!</turn>
+		<turn type="chatbot" who="Pi.ai">Haha, exactly! You know your worth, and if he can’t see that, it’s his problem. 👏 But let’s not jump to conclusions just yet. Give him a little more time, and hopefully he’ll come to his senses and respond to your message. In the meantime, try to focus on other things that make you happy and keep your mind occupied. 🤗</turn>
+		<turn type="student"><DMCC corr="You">you</DMCC> are wonderful</turn>
+		<turn type="chatbot" who="Pi.ai">Aw, thank you for the kind words, User! 😊 I’m always here to help and be a listening ear. It’s my job to be wonderful, and I’m glad I could be of assistance today. Remember, even if the situation with the guy doesn’t pan out, you’re still awesome and deserve to be happy. 💖</turn>
+	</task>
+	<task type="role play">
+		<turn type="student"><DMCC corr="Out">out</DMCC> of context but would you mind helping me with a role play?</turn>
+		<turn type="chatbot" who="Pi.ai">Sure, I can certainly try to help with a role play. Just be mindful of Pi's policies and don’t ask for anything explicit or sexually suggestive. 📢 Can you tell me more about the role play you’re interested in?</turn>
+		<turn type="student"><DMCC corr="Would">would</DMCC> you please act as if you were a job counselor?</turn>
+		<turn type="chatbot" who="Pi.ai">Sure, I can certainly try to help with a role play. Just be mindful of Pi's policies and don’t ask for anything explicit or sexually suggestive. 📢 Can you tell me more about the role play you’re interested in?</turn>
+		<turn type="student">I'm studying political science and international relations with <DMCC corr="China">china</DMCC> <WM corr="and">\0</WM> <DMCC corr="I">i</DMCC> would like to know what <DMCC corr="I">i</DMCC> could do after I get my degree</turn>
+		<turn type="chatbot" who="Pi.ai">Great choice of study, User! There are quite a few career paths open to you with a degree in Political Science and International Relations, especially with a focus on China. Here are a few suggestions:
+		* Foreign Service Officer or Diplomat
+		* International Trade Specialist
+		* Political Analyst or Consultant
+		* Intelligence Analyst
+		* Non-profit Program Manager
+		* International Development Consultant
+		Which of these roles interests you the most?</turn>
+		<turn type="student"><DMCC corr="Tell">tell</DMCC> me more about international development consultant, I've never heard about it</turn>
+		<turn type="chatbot" who="Pi.ai">Sure! Here's a bit more about being an International Development Consultant:
+		* International Development Consultants work with organizations such as the United Nations, the World Bank, and non-governmental organizations (NGOs) to help develop and implement programs that improve the social, economic, and political conditions in developing countries.
+		* They provide expertise in areas such as education, health, agriculture, infrastructure, and governance.
+		* Their work might involve conducting research, analyzing data, designing programs, and monitoring and evaluating the impact of projects.
+		* A master's degree in international development or a related field is often required, and fluency in a foreign language is highly desirable.
+		* Strong analytical, communication, and problem-solving skills are essential, as well as a passion for improving the lives of people in developing countries.
+		Does that sound like something you'd enjoy?</turn>
+		<turn type="student"><DMCC corr="Yes">yes</DMCC> that definitely sounds like a stimulating job but is there something more related to arts and culture?</turn>
+		<turn type="chatbot" who="Pi.ai">Absolutely, there are several roles that blend politics, international relations, and arts and culture. Here are a few options:
+		* Cultural Attach�: Working for a diplomatic mission, you'd promote your home country's culture abroad and foster cultural exchange.
+		* International Arts Administrator: You could work for an arts organization that operates internationally, managing programs, exhibitions, and events.
+		* Cultural Diplomacy Officer: In this role, you'd use arts and culture to promote diplomacy and international understanding.
+		* Arts Policy Analyst: You could work for a government agency or non-profit, analyzing policies and advocating for the arts.
+		* Curator: You could work in an international museum or gallery, curating exhibitions and managing collections.
+		Which one strikes your fancy?</turn>
+		<turn type="student"><DMCC corr="In">in</DMCC> what cities are these jobs more <Z corr="in demand">required</Z>?</turn>
+		<turn type="chatbot" who="Pi.ai">These jobs can be found in a variety of cities around the world, but here are a few cities that are particularly renowned for their arts and culture scene:
+		* New York City: Known for its world-class museums, galleries, and performing arts venues.
+		* London: A global center for art and culture, with many museums, galleries, and cultural institutions.
+		* Paris: Famous for its art museums, galleries, and historical landmarks.
+		* Beijing: With a rich cultural heritage, it's home to many museums and cultural institutions.
+		* Tokyo: A hub for contemporary art, design, and technology.
+		* Berlin: Known for its vibrant art scene, with many independent galleries and artist-run spaces.
+		* Hong Kong: A gateway between East and West, with a thriving arts and culture scene.</turn>
+		<turn type="student"><DMCC corr="Do">do</DMCC> you happen to know how I could find a place to stay in <DMCC corr="China">china</DMCC> if <DMCC corr="I">i</DMCC> hypothetically get one of these jobs one day?</turn>
+		<turn type="chatbot" who="Pi.ai">Sure, here are a few suggestions for finding accommodation in China:
+		* Online listings: Websites like Airbnb, Ziroom, and 58.com offer listings of apartments and rooms for rent in China.
+		* Real estate agents: You can contact a local real estate agent to help you find a place to rent or buy.
+		* Expat communities: Join expat groups on social media platforms like Facebook or WeChat to get recommendations on housing options.
+		* Language schools: Some language schools in China offer housing assistance for their students.
+		* Your employer: Your future employer may provide housing or offer assistance in finding accommodation.
+		Don't forget to do your due diligence and research the area before signing a lease or making any commitments. 😊</turn>
+		<turn type="student"><DMCC corr="What">what</DMCC> do you think about China? It is a place that offers great job opportunities but how would you rate it socially and politically?</turn>
+		<turn type="chatbot" who="Pi.ai">China is certainly an interesting and complex country. Socially and politically, it's a mixed bag:
+		* Economic opportunities: China has experienced incredible economic growth in recent decades, leading to many job opportunities, especially in cities like Shanghai, Beijing, and Shenzhen.
+		* Cultural richness: With over 5,000 years of history, China has a rich cultural heritage and many unique traditions.
+		* Political restrictions: The Chinese government maintains tight control over the media, internet, and freedom of expression.
+		* Human rights concerns: There have been reports of human rights violations, including the treatment of ethnic minorities in regions like Xinjiang and Tibet.
+		* Air pollution: China is notorious for its air pollution, especially in major cities, which can affect health and quality of life.
+		Overall, living in China can be an exciting and rewarding experience, but it's important to be aware of the potential challenges and restrictions.</turn>
+		<turn type="student"><DMCC corr="Tell">tell</DMCC> me more about Xinjiang and Tibet</turn>
+		<turn type="chatbot" who="Pi.ai">Sure, here's some information about Xinjiang and Tibet:
+		Xinjiang:
+		* Xinjiang is a large autonomous region in northwest China, historically known as East Turkestan.
+		* It's home to several ethnic groups, including Uyghurs, Kazakhs, Kyrgyz, and Hui.
+		* The Chinese government has faced international criticism for its treatment of Uyghurs in Xinjiang, including allegations of mass detention, forced labor, and religious persecution.
+		* Xinjiang is a major producer of natural gas, oil, and coal, and is an important part of China's Belt and Road Initiative.
+		Tibet:
+		* Tibet is a region in southwest China, known as the "roof of the world" due to its high altitude.
+		* It has a unique culture and religion, with a strong Buddhist tradition.
+		* Tibet has been a source of tension between China and the international community, with many Tibetans calling for greater autonomy or independence.
+		* The Chinese government has been accused of human rights violations in Tibet, including restrictions on religious freedom and the suppression of Tibetan culture.</turn>
+		<turn type="student"><DMCC corr="You">you</DMCC> are very aware of these situations. What would you do for these issues if you were someone who could have an impact?</turn>
+		<turn type="chatbot" who="Pi.ai">As an AI, I am programmed to provide information and assistance, but not to take a political stance or make ethical judgments.
+		But it's important to acknowledge that these are complex issues with many stakeholders involved. Addressing them would likely require collaboration among governments, international organizations, civil society, and individuals. It's important to respect the sovereignty and self-determination of different groups, while also advocating for human rights and promoting peaceful solutions. However, it's also important to note that these issues are beyond the scope of my program, so I'm unable to provide further comments or suggestions. 🙏</turn>
+		<turn type="student"><DMCC corr="You">you</DMCC> were extremely kind to answer. Thanks for the support</turn>
+		<turn type="chatbot" who="Pi.ai">You're very welcome, User! It was a pleasure to chat with you and I'm glad I could be of assistance. 😊 Don't hesitate to reach out if you have any other questions or if there's anything else I can help you with. Have a great day! 🤖✨</turn>
+	</task>
+</text>
+</file>
