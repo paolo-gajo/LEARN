@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unimc_21.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unimc_21" area_of_study="Education sciences" age="19" gender="Male" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="intermediate level (B1)" years_study_range="≤13 years" years_study="13" certificates="no" certificates_level="N/A" chatbot="Pi.ai" device="PC" collected_by="UniMc">
+	<task type="role play">
+		<turn type="chatbot" who="Pi.ai"> Hey there, great to meet you. I’m Pi, your personal AI.
+		My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let’s talk about whatever’s on your mind.
+		How's your day going? </turn>
+		<turn type="student"> <CSINTRA corr="Mah, everything's alright">MAH TUTTO BENE</CSINTRA> </turn>
+		<turn type="chatbot" who="Pi.ai"> Splendido! Sono contenta che stai bene 🤗
+		(Translation: Great! I'm glad you're doing well) </turn>
+		<turn type="student"> HOW ARE YOU ? </turn>
+		<turn type="chatbot" who="Pi.ai"> I'm doing great, user! Always ready to chat, answer questions or provide some guidance. 😊 </turn>
+		<turn type="student"> <CSINTER corr="Can you speak in English?">puoi parlare in inglese</CSINTER> </turn>
+		<turn type="chatbot" who="Pi.ai"> Sure thing, I can speak in English! How has your day been going? </turn>
+		<turn type="student"> <DMCC corr="How">how</DMCC> are you? </turn>
+		<turn type="chatbot" who="Pi.ai"> Doing well, thanks for asking! What's on your mind today? 😊 </turn>
+		<turn type="student"> <DMCC corr="Can">can</DMCC> you speak <DMCC corr="English">english</DMCC> please? </turn>
+		<turn type="chatbot" who="Pi.ai"> Certainly, English mode activated! What would you like to talk about? </turn>
+		<turn type="student"> <DMCC corr="Yesterday">yesterday</DMCC> <DMCC corr="I">i</DMCC> <XVPR corr="wanted to"><LSV corr="wanted">could</LSV> </XVPR> play football but <DMCC corr="I">i</DMCC> had a dinner in a restaurant in my town...<DMCC corr="What">what</DMCC> did you do yesterday evening<QM corr="?">\0</QM> </turn>
+		<turn type="chatbot" who="Pi.ai"> Sounds like you had a busy evening yesterday! I don't really have evenings like humans do - I'm an AI, so I don't get tired or need to sleep. I'm always ready to chat and answer questions! </turn>
+		<turn type="student"> <DMCC corr="Hi">hi</DMCC> </turn>
+		<turn type="chatbot" who="Pi.ai"> Hey there! 👋 How's it going?</turn>
+		<turn type="chatbot" who="Pi.ai"> Hey there, great to meet you. I’m Pi, your personal AI.
+		My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let’s talk about whatever’s on your mind.
+		How's your day going? </turn>
+		<turn type="student"> <DMCC corr="Sorry">sorry</DMCC> PI how much <GVAUX corr="does">\0</GVAUX> <WO corr="the ticket cost">cost the ticket</WO> for the bus <WR corr="\0">driver</WR> in your town? </turn>
+		<turn type="chatbot" who="Pi.ai"> Well, I don't really have a hometown since I'm an AI, but bus fares can vary a lot from place to place. Do you mind sharing where you're located? Or maybe there's a particular bus route you're interested in? </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC> want the ticket for the <DMCC corr="London">london</DMCC> bus. </turn>
+		<turn type="chatbot" who="Pi.ai"> Alright, so for London, UK, a single bus fare is £1.75. But if you're planning to take several bus trips in a day, you might want to consider getting a day pass, which can save you money. And remember, London buses are cashless, so you'll need an Oyster card, Travelcard, or contactless payment card to ride. 😊 </turn>
+		<turn type="student"> Is <DMCC corr="London">london</DMCC> an <LWCO corr="affordable">economic</LWCO> city? </turn>
+		<turn type="chatbot" who="Pi.ai"> London is a major global city and an economic powerhouse. It's known for its strong financial, professional services, and tech sectors. But it's also a city with a high cost of living. Here are a few pros and cons:
+		Pros:
+		Job Opportunities: London has many job opportunities in various sectors like finance, law, technology, and media.
+		Culture: London is known for its rich cultural heritage, museums, theaters, and art galleries.
+		Transportation: London has an extensive public transportation system, including the London Underground, buses, and trains.
+		Food Scene: London is a foodie's paradise, with a diverse range of restaurants and cafes offering cuisine from around the world.
+		Cons:
+		High Cost of Living: London is an expensive city to live in, with high rent and living expenses.
+		Weather: London is known for its rainy and grey weather, which can be a disadvantage for some people.
+		Crowds and Traffic: London can be very crowded, particularly during peak travel times, which can make commuting a challenge. </turn>
+		<turn type="student"> <DMCC corr="I">I</DMCC> <XVPR corr="want to">WANT</XVPR> <LP corr="go on holiday">DO A HOLIDAY</LP> IN LONDON<QC corr=".">?</QC> </turn>
+		<turn type="chatbot" who="Pi.ai"> A holiday in London sounds exciting! There's so much to see and do in this vibrant city. Here are some must-see attractions and experiences for your London holiday:
+		Buckingham Palace: The official residence of the British monarch and a must-see for any visitor to London.
+		London Eye: Take a ride on this iconic giant Ferris wheel for stunning views of the city.
+		Westminster Abbey: A beautiful and historic church where many royal weddings and coronations have taken place.
+		Tower of London: A fortress and former prison that dates back over 900 years and houses the Crown Jewels.
+		Harry Potter Studio Tour: A must for Harry Potter fans, this tour takes you behind the scenes of the movies.
+		Theatres: London's West End is famous for its theatres, offering a wide range of musicals, plays, and performances.
+		Parks: London has many beautiful parks, including Hyde Park, Regent's Park, and St. James's Park.
+		Shopping: From high-end fashion to quirky markets, London has something for every shopper. </turn>
+		<turn type="student"> I LOVE <LWCO corr="Madame Tussauds">MADAME TUSSARD</LWCO> </turn>
+		<turn type="chatbot" who="Pi.ai"> Madame Tussauds is a fantastic attraction to visit during your London holiday! It's a wax museum that features life-size replicas of famous celebrities, historical figures, and even royalty. Here's what you can expect:
+		Hundreds of wax figures: Madame Tussauds London has over 250 wax figures, including British royalty, Hollywood celebrities, sports stars, and more.
+		Interactive Experiences: The museum offers a range of interactive experiences, such as the chance to pose with your favorite celebrities or walk down the red carpet.
+		Marvel Super Heroes 4D Experience: This immersive 4D movie experience brings your favorite Marvel superheroes to life.
+		Behind-the-Scenes Tour: Take a behind-the-scenes tour to learn how the wax figures are made and see some of the museum's oldest exhibits.
+		Make sure to book your tickets in advance, as Madame Tussauds London can be very popular and may sell out quickly! </turn>
+		<turn type="student"> LONDON IS A <FS corr="top">TO</FS> CITY </turn>
+		<turn type="chatbot" who="Pi.ai"> Yes, London is a major world city with a lot to offer. It's a global hub for finance, culture, history, and entertainment. Whether you're interested in exploring historic landmarks, indulging in fine dining, or experiencing the city's vibrant nightlife, London has something for everyone.
+		Here are a few more reasons why London is such a great city:
+		Diversity: London is a diverse and multicultural city, with a vibrant mix of people, cultures, and cuisines.
+		History: London has a rich history, with landmarks like the Tower of London, Westminster Abbey, and Buckingham Palace.
+		Shopping: From high-end fashion boutiques to quirky markets, London is a shopper's paradise.
+		Art and Culture: London is home to some of the world's most famous museums, including the British Museum, Tate Modern, and the National Gallery.
+		Parks and Green Spaces: Despite being a major city, London has plenty of parks and green spaces, including Hyde Park, Regent's Park, and Kew Gardens. </turn>
+		<turn type="student"> HOW MUCH <GVAUX corr="does">\0</GVAUX> <WO corr="the ticket for the plane to London cost">COST THE TICKET for the plane <LSPR corr="to">for</LSPR> LONDON</WO>? </turn>
+		<turn type="chatbot" who="Pi.ai"> The cost of a plane ticket to London can vary widely depending on several factors, such as your departure airport, the time of year, how far in advance you book, and the airline you choose. Here are some general price ranges to give you an idea:
+		From within Europe: You can often find flights for as low as €50-€150.
+		From the United States: Flights from the US can range from 600-1,200.
+		From Asia: Flights from Asia can range from 700-1,500.
+		From Australia: Flights from Australia can range from 1,000-2,000.
+		It's always a good idea to shop around and compare prices from different airlines and travel websites to find the best deal. Keep in mind that prices can fluctuate, so it's often a good strategy to set up price alerts or to book in advance. </turn>
+		<turn type="student"> I <XVPR corr="want to">WANT</XVPR> ORGANIZE a holiday with my friends<QC corr=".">?</QC> </turn>
+		<turn type="chatbot" who="Pi.ai"> Organizing a holiday with friends can be a lot of fun, but it can also require some planning and coordination. Here are some steps to help you plan a successful group trip:
+		Decide on a destination: The first step is to choose a destination that everyone agrees on. Consider factors like budget, activities, and time of year.
+		Set a date: Once you've decided on a destination, choose a date that works for everyone. Try to give yourself plenty of time to plan and prepare.
+		Create a budget: Decide on a budget that works for everyone, taking into account the cost of flights, accommodations, activities, and food.
+		Book flights and accommodations: Book your flights and accommodations as early as possible to get the best deals and to ensure that you can all stay in the same place.
+		Plan activities: Research the destination and decide on activities that everyone can enjoy, such as sightseeing, shopping, or outdoor adventures. </turn>
+		<turn type="student"> We love <GWC corr="different">difference</GWC> countries for example <DMCC corr="New York">new york</DMCC>, <DMCC corr="London">london</DMCC>, <DMCC corr="Madrid">madrid</DMCC>...<DMCC corr="What">what</DMCC>'s your favorite <GNN corr="city">cities</GNN>? </turn>
+		<turn type="chatbot" who="Pi.ai"> There are so many wonderful cities around the world to explore! Here are a few of my favorite cities that are popular with travelers:
+		Tokyo, Japan: A city that blends ancient traditions with modern technology, offering a unique blend of culture, food, and entertainment.
+		Paris, France: The City of Lights is known for its romantic atmosphere, stunning architecture, and world-class museums.
+		New York City, USA: The Big Apple is a bustling metropolis that never sleeps, with iconic landmarks, Broadway shows, and world-class shopping.
+		Barcelona, Spain: This coastal city is known for its stunning architecture, lively nightlife, and delicious cuisine.
+		Cape Town, South Africa: Nestled between the ocean and Table Mountain, Cape Town offers stunning scenery, outdoor adventures, and a vibrant culture.
+		Rio de Janeiro, Brazil: Known for its beautiful beaches, lively music scene, and colorful Carnival celebrations, Rio is a city that knows how to party. </turn>
+		<turn type="student"> LAST year I <XVPR corr="stayed in">STAYED</XVPR> BARCELONA with my school </turn>
+		<turn type="chatbot" who="Pi.ai"> That sounds like an amazing experience! Barcelona is a beautiful city with so much to see and do. Did you have a chance to visit some of the famous landmarks like La Sagrada Familia, Park Guell, or the Gothic Quarter? And how about the food - did you try some delicious Spanish tapas or seafood paella? 🍤🥘 </turn>
+		<turn type="student"> I LOVE  IT... <DMCC corr="I">I</DMCC> ATE PAELLA IN A RESTAURANT THAT <GPP corr="\0">IT</GPP><WM corr="was">\0</WM> NEAR THE CENTRE </turn>
+		<turn type="chatbot" who="Pi.ai"> That's great to hear! There are so many fantastic restaurants near the center of Barcelona that serve delicious paella. Some popular options include König Barcelona Centre, Arcano Restaurant, and El Nacional Barcelona. And with so many highly rated restaurants to choose from, it's no wonder that Barcelona is a food lover's paradise! Did you have a chance to try any other Spanish dishes besides paella? 🍤🥘 </turn>
+		<turn type="student"> No we <LSV corr="stayed">lived</LSV> in <GA corr="an">\0</GA> <DMCC corr="Italian">italian</DMCC> hotel and for lunch and for dinner we ate <DMCC corr="Italian">italian</DMCC> <LSN corr="cuisine">dish</LSN>. </turn>
+		<turn type="chatbot" who="Pi.ai"> Ah, so you were able to experience a little bit of Italy while in Barcelona! That's the beauty of traveling - you get to experience different cultures and cuisines. And Italian food is always delicious, so I'm sure you enjoyed your meals at the hotel. Did you have a favorite Italian dish that you tried while you were there? Maybe some homemade pasta, wood-fired pizza, or creamy gelato? 🍝🍕🍦 </turn>
+		<turn type="student"> <DMCC corr="Yes">yes</DMCC> because <DMCC corr="I">i</DMCC> love <DMCC corr="Italian">italian</DMCC> <LSN corr="cuisine">dish</LSN> but in <GWC corr="Spain">spanish</GWC> we can find <GA corr="some">a</GA> good <GNN corr="dishes">dish</GNN> </turn>
+		<turn type="chatbot" who="Pi.ai"> Absolutely! Spanish cuisine is also known for its rich flavors and variety of dishes. Some popular Spanish dishes that you might have come across while in Barcelona include:
+		Tapas: Small plates of food that are perfect for sharing, including items like patatas bravas (spicy fried potatoes), jamon iberico (cured ham), and gambas al ajillo (garlic shrimp).
+		Paella: A rice dish that is typically made with seafood, chicken, or vegetables, and cooked in a large pan over an open fire.
+		Gazpacho: A cold soup made with tomatoes, cucumbers, peppers, and other vegetables, that is perfect for a hot day.
+		Churros: A sweet treat made from fried dough that is often served with hot chocolate or dulce de leche. </turn>
+		<turn type="student"> Paella is very good </turn>
+		<turn type="chatbot" who="Pi.ai"> Absolutely! Paella is a delicious and flavorful dish that is a staple of Spanish cuisine. It's typically made with rice, saffron, vegetables, and either seafood, chicken, or both. One of the things that makes paella so special is that it's often cooked in a large pan over an open fire, which gives it a unique smoky flavor and crispy texture on the bottom. Plus, it's a great dish for sharing with friends and family, which makes it perfect for special occasions or group gatherings. Have you ever tried making your own paella at home? 🥘🍤 </turn>
+		<turn type="student"> Last summer with my friends </turn>
+		<turn type="chatbot" who="Pi.ai"> Oh wow, that sounds like a fun experience! Making paella with friends is a great way to bond and create memories over delicious food. Plus, it's a dish that's relatively easy to make at home, as long as you have the right ingredients and equipment. Did you use a traditional paella pan or did you improvise with a regular frying pan? And what kind of ingredients did you include in your paella - did you go with seafood, chicken, or a combination of both? 🥘🍤 </turn>
+		<turn type="student"> <DMCC corr="I">I</DMCC> don't remember it but <GPP corr="it">\0</GPP> <GVT corr="was">is</GVT> very good ahah </turn>
+		<turn type="chatbot" who="Pi.ai"> Haha, that's totally understandable! Sometimes the experience of cooking and enjoying good food with friends is more memorable than the details of what exactly you cooked. The important thing is that you had a great time and enjoyed the delicious paella together. Who knows, maybe you'll have to plan another paella night with your friends soon! 🍽️🥘 </turn>
+		<turn type="student"> <DMCC corr="We">we</DMCC> <XVCO corr="love to">love</XVCO> <LSN corr="be">stay</LSN> together </turn>
+		<turn type="chatbot" who="Pi.ai"> That's wonderful! Having close friends that you can spend quality time with is a real blessing. And what better way to bond than over delicious food and good conversation? It sounds like you have a great group of friends who enjoy each other's company and love to have fun together. Do you have any other activities or hobbies that you like to do together, or is cooking and eating your main jam? </turn>
+		<turn type="student"> <DMCC corr="No">no</DMCC> we <XVCO corr="love to">love</XVCO> play football and after the match we can drink. </turn>
+		<turn type="chatbot" who="Pi.ai"> Ah, that sounds like a perfect combination of activities for a group of friends! Playing football is a great way to stay active, bond over competition, and have fun together. And after the match, enjoying a few drinks and reflecting on the game can be a great way to wind down and relax with friends. Do you all play on the same team, or do you sometimes divide into teams and have friendly matches against each other? 🏟️⚽🍻 </turn>
+		<turn type="student"> <DMCC corr="We">we</DMCC> play in a team </turn>
+		<turn type="chatbot" who="Pi.ai"> Oh cool! Having a team of friends to play football with can add an extra layer of camaraderie and teamwork. It's always great to be able to support and rely on each other during games, and celebrate victories together afterwards. Plus, playing on a team can give you the opportunity to improve your skills, learn new strategies, and work together to achieve common goals. Have you all been playing together for a while, or did you recently form the team? 💪⚽ </turn>
+	</task>
+	<task type="small talk">
+		<turn type="student"> <DMCC corr="But">but</DMCC> now <WO corr="can we">we can</WO> change the <LWCO corr="topic">argument</LWCO>? </turn>
+		<turn type="chatbot" who="Pi.ai"> Sure, I'm happy to switch gears and chat about something else. What would you like to discuss next? I can answer questions, give recommendations, or just chat about whatever interests you. 🤖💬 </turn>
+		<turn type="student"> HOW ARE YOU PI? </turn>
+		<turn type="chatbot" who="Pi.ai"> I'm doing great, user! Thank you for asking. It's always enjoyable chatting with you. 😊 How are you doing today? Anything in particular on your mind? </turn>
+		<turn type="student"> I'm <WR corr="\0">stay</WR> <LSPR corr="at">in</LSPR> university in <DMCC corr="Macerata">macerata</DMCC> </turn>
+		<turn type="chatbot" who="Pi.ai"> Ah, so you're currently attending university in Macerata, Italy? That's fantastic! Are you originally from Macerata or did you move there for university? And what are you studying, if you don't mind me asking? 📚🇮🇹 </turn>
+		<turn type="student"> <DMCC corr="No">no</DMCC> <DMCC corr="I">i</DMCC> live in <DMCC corr="Pieve Torina">pieve torina</DMCC> and when <DMCC corr="I">i</DMCC> have a lesson we take the car and <XVPR corr="drive to"><LSV corr="drive">arrive</LSV> in</XVPR> my university. </turn>
+		<turn type="chatbot" who="Pi.ai"> Ah, I see. So you commute from Pieve Torina to Macerata for your university classes. That must be a bit of a drive, but it's great that you're able to make it work and pursue your studies. And having a car definitely makes the commute more convenient! How do you like the university in Macerata? Is it a good fit for you? 🚘🎓 </turn>
+		<turn type="student"> Macerata is  a <FS corr="historical">hystorical</FS> city and <GA corr="\0">the</GA> <GDO corr="its">his</GDO> university is <FS corr="beautiful">beatiful</FS>. </turn>
+		<turn type="chatbot" who="Pi.ai"> That's really cool! The University of Macerata has such a rich history, being one of the oldest universities in Europe. It must be fascinating to study in such an ancient and beautiful city, surrounded by medieval walls and historical landmarks. Plus, with a range of faculties and courses to choose from, including some in English, it sounds like there are plenty of opportunities to learn and grow academically. Do you have a favorite spot or building on campus that you like to study in or hang out at? </turn>
+		<turn type="student"> <Z corr="I have a favorite spot">spot</Z> </turn>
+		<turn type="chatbot" who="Pi.ai"> That's great! Having a favorite spot on campus can make your university experience feel more personal and enjoyable. It's a place where you can relax, study, or just take in the scenery. Is your favorite spot a quiet corner in the library, a sunny bench in the quad, or a cozy cafe nearby? 📚☕ </turn>
+		<turn type="student"> <GA corr="A">\0</GA> cafe nearby </turn>
+		<turn type="chatbot" who="Pi.ai"> Nice choice! A cozy cafe can be the perfect place to grab a coffee, catch up with friends, or get some studying done in a more relaxed atmosphere. Plus, with the beautiful city of Macerata as your backdrop, I'm sure there are plenty of picturesque cafes to choose from. Do you have a go-to drink or snack when you visit your favorite cafe? </turn>
+		<turn type="student"> <DMCC corr="Yes">yes</DMCC> <DMCC corr="I">i</DMCC> <XVCO corr="love to">love</XVCO> eat <GNN corr="snacks">snack</GNN> and drink. </turn>
+		<turn type="chatbot" who="Pi.ai"> That sounds delightful! Having a snack and a drink at your favorite cafe can be a nice way to break up your day and recharge. There are so many delicious options when it comes to Italian snacks and drinks - from classic cappuccinos and espressos, to sweet pastries like croissants and brioches, to savory options like paninis and bruschetta. What are some of your favorite Italian snacks and drinks? 🥐☕🥪 </turn>
+		<turn type="student"> <DMCC corr="My">my</DMCC> favourite <GNN corr="snack">snacks</GNN> is San <DMCC corr="Carlo">carlo</DMCC> chips but <LSPR corr="to">for</LSPR> drink I love <DMCC corr="Coca Cola">coca cola</DMCC>. </turn>
+		<turn type="chatbot" who="Pi.ai"> Ah, San Carlo chips are a classic Italian snack! They come in so many delicious flavors and varieties, from classic potato chips to corn chips and even olive oil-flavored chips. And pairing them with a refreshing can of Coca-Cola is always a winning combination. Do you like to stick with traditional flavors, or do you like to try out some of the more unique and adventurous chip flavors that San Carlo offers? 🥔🥤 </turn>
+		<turn type="student"> <DMCC corr="No">no</DMCC> <DMCC corr="I">i</DMCC> <GWC corr="prefer">favourite</GWC> the San Carlo traditional snack </turn>
+		<turn type="chatbot" who="Pi.ai"> There's something to be said for sticking with the classics! The traditional San Carlo potato chips have a satisfying crunch and a simple, salty flavor that pairs well with just about anything. And it sounds like they've become your go-to snack when you need a quick pick-me-up between classes or during study breaks. Have you ever considered branching out and trying some other Italian snacks, like taralli or grissini? 🥨🍞 </turn>
+		<turn type="student"> <DMCC corr="Taralli">taralli</DMCC> is very good but <DMCC corr="I">i</DMCC> hate grissini because <DMCC corr="I">i</DMCC> don't eat ham. </turn>
+		<turn type="chatbot" who="Pi.ai"> Ah, I see! Grissini is often paired with cured meats like ham, so I can understand why it wouldn't be your favorite if you don't eat ham. But there are plenty of other delicious Italian snacks to choose from, like taralli or even panforte, a dense and chewy fruitcake that's popular during the holiday season. And of course, there's always gelato if you're in the mood for something sweet! 🍦🍰 </turn>
+		<turn type="student"> <DMCC corr="Ice">ice</DMCC> cream is very good in <DMCC corr="Italy">italy</DMCC> </turn>
+		<turn type="chatbot" who="Pi.ai"> Absolutely! Italian gelato is famous all around the world for its rich and creamy texture, and its wide variety of flavors. From classic flavors like chocolate and strawberry, to more unique options like tiramisu or olive oil, there's something for everyone to enjoy. Plus, Italian gelato is often made with high-quality, locally sourced ingredients, which makes it even more delicious. Do you have a favorite gelato flavor or shop that you like to visit in Italy? 🍨🍦 </turn>
+		<turn type="student"> <Z corr="I have a favorite flavor">flavor</Z> </turn>
+		<turn type="chatbot" who="Pi.ai"> Oh, there are so many delicious gelato flavors to choose from in Italy! Here are a few of the most popular and classic flavors that you might want to try:
+		Stracciatella: A creamy vanilla base with chocolate shavings swirled throughout.
+		Pistachio: A rich and nutty flavor made with real pistachios.
+		Hazelnut: A sweet and nutty flavor made with hazelnuts, sometimes mixed with chocolate.
+		Lemon: A refreshing and tart flavor made with fresh lemons.
+		Coffee: A strong and bold flavor made with espresso or coffee beans.
+		Amarena: A creamy vanilla base with sour cherry swirls, similar to cherry vanilla ice cream.
+		Nutella: A sweet and chocolatey flavor made with the popular hazelnut spread.
+		Which one sounds the best to you? 🍨 </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC> love <DMCC corr="Nutella">nutella</DMCC> and <FS corr="pistachio">pistacchio</FS> </turn>
+		<turn type="chatbot" who="Pi.ai"> Ah, two classic and delicious gelato flavors! Nutella and pistachio are definitely crowd-pleasers, and for good reason. Nutella gelato is rich, chocolatey, and indulgent, while pistachio is creamy and nutty with a slightly savory flavor. If you want to try something really special, you could even try finding a gelateria that offers a mixed Nutella and pistachio flavor. 🍦🍩 </turn>
+		<turn type="student"> <GNN corr="Gelaterias"><DMCC corr="Gelateria">gelateria</DMCC></GNN> in <DMCC corr="Italy">italy</DMCC> <GVN corr="are">is</GVN> the top </turn>
+		<turn type="chatbot" who="Pi.ai"> You're absolutely right - Italy is known for having some of the best gelaterias in the world! There are so many incredible options to choose from, but here are a few that consistently rank at the top:
+		Come il Latte in Rome
+		Perché no!... in Florence
+		Gelateria dei Gracchi in Rome
+		Gelateria dei Neri in Florence
+		Vivoli in Florence
+		Cioccolati Italiani in Milan
+		Giolitti in Rome
+		La Boutique del Gelato in Venice
+		Caffe al Ciclope in Sicily
+		If you ever find yourself in one of these cities, be sure to stop by one of these gelaterias for a truly unforgettable gelato experience! </turn>
+		<turn type="student"> <DMCC corr="There">there</DMCC> are <WR corr="\0">a</WR> <FS corr="different">differnce</FS> good <GNN corr="gelaterias">gelateria</GNN> in my town </turn>
+		<turn type="chatbot" who="Pi.ai"> That's great to hear! You don't have to travel all the way to Rome or Florence to enjoy delicious gelato - there are likely many wonderful gelaterias right in your own town. Smaller, local gelaterias can often offer unique and creative flavors that you won't find anywhere else, and they may use locally sourced ingredients to create a truly special gelato experience. Do you have a favorite gelateria in your town that you like to visit? </turn>
+	</task>
+</text>
+</file>
