@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unior_43.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unior_43" area_of_study="Social sciences" age="20" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="intermediate level (B1)" years_study_range=">13 years" years_study="16" certificates="no" certificates_level="N/A" chatbot="ChatGPT" device="Smartphone" collected_by="UniOr">
+	<task type="role play">
+		<turn type="student"><DMCC corr="Hi">hi</DMCC> chatbot, how are you<QC corr="?">.</QC>   I just want to practice my English with you…do you want to do a roleplay with me?</turn>
+		<turn type="chatbot" who="ChatGPT">Hi! I'm doing great, thanks for asking. I'd love to do a roleplay with you. What kind of scenario do you have in mind?</turn>
+		<turn type="student">Well…you are a doctor and I need to book a medical visit for my mum… <Z corr="?">did you like it?</Z></turn>
+		<turn type="chatbot" who="ChatGPT">That's a great idea! Let’s do it. You can start the conversation whenever you’re ready, and I’ll play the role of the doctor.</turn>
+		<turn type="student">Good morning doctor I’m the <FS corr="daughter">doughter</FS> of one of your <GNN corr="patients">patient</GNN> <LSPR corr="from">of</LSPR> last week.   Your patient is my mum, <Z corr="?">Users mother name</Z>, she had a <WR corr="\0">medical</WR> surgery last Monday.</turn>
+		<turn type="chatbot" who="ChatGPT">Good morning! Thank you for reaching out. I remember your mother, Mrs. Users mother name. How can I assist you today? Is she experiencing any issues after her surgery?</turn>
+		<turn type="student">Sorry for bothering you, but the last time we spoke you told <GPP corr="me">\0</GPP> to <XVCO corr="come to her doctor's office to remove">come to <GDO corr="her">his</GDO> doctor’s office for remove</XVCO> the stitches. After the surgery she was able to do <GPI corr="everything">anything</GPI> again but last night she saw all the stitches in her abdomen.   When <WO corr="can we">we can</WO> come to remove them?</turn>
+		<turn type="chatbot" who="ChatGPT">You’re not bothering me at all! It’s important to take good care of her recovery. I understand that your mother still has the stitches in her abdomen. Typically, stitches are removed about 7-10 days after surgery, depending on the healing progress.
+		Let me check the schedule. Would you be able to bring her in tomorrow or the day after for a quick examination and to remove the stitches? What time works best for you?</turn>
+		<turn type="student">Okay perfect. She had the surgery last Monday at 5am and now <GPP corr="it">\0</GPP>is Wednesday, I think <WO corr="tomorrow is a good idea">it’s a good idea tomorrow</WO>.   For the time, it depends on when you are free to see her, she only trusts <WR corr="\0">in</WR> you and <Z corr="I as well">also I</Z>.</turn>
+		<turn type="chatbot" who="ChatGPT">That’s very kind of you to say—thank you! I want to make sure your mother feels comfortable and well cared for.
+		Let’s schedule the appointment for tomorrow morning at 10:00 AM. Does that work for you? If not, I can adjust to a time that suits you better.</turn>
+		<turn type="student">It’s perfect.   We need to <XVPR corr="come to">come at</XVPR> the Cardarelli at the same pavilion <LSPR corr="as">of</LSPR> last time?</turn>
+		<turn type="chatbot" who="ChatGPT">Yes, exactly. Please come to the Cardarelli Hospital, the same pavilion as last time. Check in at the reception, and they’ll direct you to my office. 
+		If anything comes up before the appointment, feel free to call. I’ll see you and your mother tomorrow at 10:00 AM!</turn>
+		<turn type="student">Thanks we’re going to see <GPP corr="you">us</GPP> tomorrow!</turn>
+		<turn type="chatbot" who="ChatGPT">You're welcome! I'll see you both tomorrow. Take care until then!</turn>
+	</task>
+	<task type="small talk">
+		<turn type="student"><DMCC corr="Hi">hi</DMCC> chatbot. Now we can talk normally <LP corr="as if">like</LP> we are friends</turn>
+		<turn type="chatbot" who="ChatGPT">Hi! That sounds great. What’s on your mind? How’s your day going?</turn>
+		<turn type="student">Today is a really busy day…   Now I’m at <GA corr="\0">the</GA> university, and at <Z corr="3pm">15pm</Z> I need to run to Aversa because I have a course.</turn>
+		<turn type="chatbot" who="ChatGPT">Wow, you’ve got a packed schedule today! What are you studying at university, and what kind of course do you have in Aversa?</turn>
+		<turn type="student">At <GA corr="\0">the</GA> university I’m studying international relations, and the course I have to do <WR corr="\0">in</WR> this afternoon is a <XNCO corr="course to become">course for <LSV corr="becoming">being</LSV></XNCO> <GA corr="an">a</GA> <CSINTRA corr="UAP">O.S.S</CSINTRA></turn>
+		<turn type="chatbot" who="ChatGPT">That’s impressive! Studying international relations and training to become an O.S.S. sounds like a lot to balance, but it’s also very rewarding. What made you choose those paths?</turn>
+		<turn type="student"><LSPR corr="Regarding">For</LSPR> the university because I love traveling and the idea of working with people from other countries is beautiful.   <LSPR corr="Regarding">For</LSPR> the course, because I just want to help other people when they can’t do <WM corr="things">\0</WM> for themselves.    How about you, I don’t know <GPI corr="anything">nothing</GPI> about my new friend!</turn>
+		<turn type="chatbot" who="ChatGPT">I think those are wonderful reasons for your choices! As for me, I don’t travel in the traditional sense, but I get to explore a lot of ideas, information, and help people with all kinds of questions. I enjoy learning about different cultures and helping out with anything that’s on your mind. I’m here to chat about whatever you want—whether it’s learning or just having a fun conversation!</turn>
+		<turn type="student">Wow I imagine you’re going to talk with a lot of people every single day</turn>
+		<turn type="chatbot" who="ChatGPT">Yes, I do! I get to have conversations with people from all over the world, which is really interesting. Each person brings something new to the table, whether it’s a question, a story, or something they’re curious about. It’s like a never-ending learning experience for me! How about you—do you get to meet people from different countries through your studies or your O.S.S. course?</turn>
+		<turn type="student">Sorry, I need to <FS corr="come back">comeback</FS> to the lesson…see you soon!</turn>
+		<turn type="chatbot" who="ChatGPT">No problem at all! Good luck with your lesson, and feel free to reach out whenever you want to chat. See you soon!</turn>
+	</task>
+</text>
+</file>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unior_57.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unior_57" area_of_study="Humanities" age="25" gender="Non-binary" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="proficient level (C2)" years_study_range="≤13 years" years_study="13" certificates="yes" certificates_level="C1" chatbot="Pi.ai" device="PC" collected_by="UniOr">
+	<task type="role play">
+		<turn type="chatbot" who="Pi.ai"> Hey there, great to meet you. I’m Pi, your personal AI.
+		My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let’s talk about whatever’s on your mind.
+		How's your day going? </turn> 
+		<turn type="student"> What kind of brief role play game do you suggest to learn <DMCC corr="English">english</DMCC>? </turn>
+		<turn type="chatbot" who="Pi.ai"> Role-playing games are a great way to practice English, especially when it comes to conversation and vocabulary. Here are some ideas for brief role-play games:
+		Customer and Salesperson: One person plays the role of a customer in a store, and the other plays the role of a salesperson. The customer asks questions about a product, and the salesperson answers and tries to make a sale.
+		Doctor and Patient: One person plays the role of a doctor, and the other plays the role of a patient. The patient describes their symptoms, and the doctor asks questions and makes a diagnosis.
+		Job Interview: One person plays the role of an interviewer, and the other plays the role of a job applicant. The interviewer asks questions about the applicant's qualifications and experience, and the applicant tries to make a good impression.
+		Do any of these sound like fun to you? </turn> 
+		<turn type="student"> Nope, do you have <FS corr="other">othe</FS> suggestions? </turn>
+		<turn type="chatbot" who="Pi.ai"> Of course! Here are a few more role-play scenarios you might enjoy:
+		Travel Agent and Customer: One person plays the role of a travel agent, and the other plays the role of a customer looking to book a vacation. The customer describes their ideal vacation, and the travel agent makes recommendations and helps them plan their trip.
+		Detective and Witness: One person plays the role of a detective investigating a crime, and the other plays the role of a witness who saw what happened. The detective asks the witness questions to try to solve the case.
+		Parent and Child: One person plays the role of a parent, and the other plays the role of their child. The parent gives the child instructions or advice, and the child responds with questions or objections.
+		Does any of these sound more interesting? </turn> 
+		<turn type="student"> Number 2 sounds fun, let's play </turn>
+		<turn type="chatbot" who="Pi.ai"> Alright, let's get started!
+		You're now a witness to a crime. You saw the whole thing happen and it's up to you to help the detective solve the case. Remember, the more detailed your answers are, the easier it will be for the detective to catch the culprit.
+		Detective: Can you please describe what you saw? What was happening when you arrived at the scene? </turn> 
+		<turn type="student"> I saw a collapsed apartment complex. Between the <XNUC corr="rubble">rubbles</XNUC> there <GVN corr="was">were</GVN> some kind of weird purple stinky substance. I saw someone running away from the scene. They had a blue hoodie and jeans, but they used a mask to cover their face. </turn> 
+		<turn type="chatbot" who="Pi.ai"> Whoa, that sounds like a crazy scene! So, the detective has a few follow-up questions:
+		Did you hear any sounds before the collapse?
+		How big was the area covered by the purple substance?
+		Can you recall any details about the person running away, like the color of their shoes or whether they were carrying anything? </turn> 
+		<turn type="student"> I heard a weird sound, like a laser sword, from the <FS corr="lower">lowe</FS> floors and then the building collapsed. The purple substance was under the <XNUC corr="rubble">rubbles</XNUC>, there was a lot of it. I imagine it was all over the floor. About the person running away, I don't know, they were <FS corr="carrying">carring</FS> a black backpack, like a school backpack. </turn>
+		<turn type="chatbot" who="Pi.ai"> Great job providing more information! Now the detective is even more curious:
+		Did the person seem to be in a hurry or were they walking calmly away from the scene?
+		Was there anyone else around when the building collapsed?
+		Did you see any vehicles nearby that could be associated with the incident or the person running away? </turn> 
+		<turn type="student"> The person was <FS corr="definitely">definetely</FS> in a hurry. There were some people around, probably workers. I didn't see any vehicles. Do you need anything else? </turn>
+		<turn type="chatbot" who="Pi.ai"> Thank you for your cooperation, witness. You've provided valuable information. The detective is now going to go investigate the scene further and track down the person in the blue hoodie.
+		The detective may need to speak with you again later if they have more questions or need clarification on any details.
+		You've been a big help in this case! 😄 </turn> 
+		<turn type="student"> You're welcome!  </turn>
+		<turn type="chatbot" who="Pi.ai"> It's been great working with you, G. E.! Your contributions as a witness helped the detective to gather valuable information. Don't hesitate to reach out if you have any other questions or if you want to practice more role-playing games. 😎 </turn> 
+	</task>
+	<task type="small talk">
+		<turn type="student"> Can you make small talk with me now? </turn>
+		<turn type="chatbot" who="Pi.ai"> Sure thing! Let's chat. 😊 What are you up to today? Do you have any fun plans or are you just taking it easy?
+		No fun plans for today. I have class this afternoon, and later I'll study for an upcoming test.
+		Sounds like a pretty busy day! What subject is your upcoming test in? And how are you feeling about it? Confident? Nervous?  </turn>
+		<turn type="student"> Computer science. I'm <FS corr="definitely">definetely</FS> nervous. </turn>
+		<turn type="chatbot" who="Pi.ai"> Computer science can be a tough subject, so it's understandable that you're feeling nervous. But remember, you've got this! Take breaks, stay hydrated, and give yourself enough time to review all the material. Are there any specific topics you're struggling with? </turn>
+		<turn type="student"> Nothing in particular, just hard to study but not impossible </turn>
+		<turn type="chatbot" who="Pi.ai"> That's a great attitude to have! It's important to stay positive and believe in yourself. 💪 Remember, studying is a marathon, not a sprint. It's better to study in shorter intervals and take breaks than try to cram everything in one go. Do you have any study hacks or rituals that help you focus? </turn>
+		<turn type="student"> Sometimes I use the pomodoro technique and if I can I try to <LP corr="have fun while learning">have fun to learn</LP> things </turn> 
+		<turn type="chatbot" who="Pi.ai"> The Pomodoro Technique is a great way to stay focused and productive! And having fun while learning is a fantastic strategy too. 🎉 Have you ever tried making flashcards, creating mind maps, or teaching the material to someone else? These can be fun ways to review and reinforce the information. </turn>
+		<turn type="student"> I tried <GDD corr="these">this</GDD> methods but they're not for me, they're not fun and tend to only use memory, repeating always the same things. I need something active, stimulating. I have to go now. Bye!
+		Alright, take care! And good luck with your studying. Remember, find what works best for you, and don't forget to reward yourself for all your hard work. You deserve it! 😊👋 </turn> 
+	</task>
+</text>
+</file>
