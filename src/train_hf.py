@@ -18,13 +18,13 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained(model_name, padding_side = 'left')
     tokenizer.pad_token = tokenizer.eos_token
     # device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    model = AutoModelForCausalLM.from_pretrained(model_name)
     prompt_layout = open('./misc/prompt_layout_no_tags.txt', 'r').read()
     prompt_tags = open('./misc/prompt_tags.txt', 'r').read()
     dataset = CompletionDataset(df, prompt_layout, prompt_tags, tokenizer)
     dataset_train = Dataset.from_list(dataset.train)
     dataset_dev = Dataset.from_list(dataset.dev)
 
+    model = AutoModelForCausalLM.from_pretrained(model_name)
     def compute_metrics(sample):
         return ...
 

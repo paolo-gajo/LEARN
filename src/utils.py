@@ -22,7 +22,6 @@ class CompletionDataset:
             self.clean()
         self.train, self.dev = train_test_split(self.data, test_size=0.2)
         self.train = self.train.reset_index()
-        self.dev = self.dev.reset_index()
         self.dev, self.test = train_test_split(self.dev, test_size=0.5)
         self.dev = self.dev.reset_index()
         self.test = self.test.reset_index()
