@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unibo_25.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unibo_25" area_of_study="STEM" age="19" gender="Male" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="beginner level (A1)" years_study_range="≤13 years" years_study="until the end of high school" certificates="no" certificates_level="N/A" chatbot="ChatGPT" device="Tablet" collected_by="UniBo">
+	<task type="small talk">
+		<turn type="student">Hi, can I have a <FS corr="conversation">coversation</FS> in <DMCC corr="English">english</DMCC> with you?</turn>
+		<turn type="chatbot" who="ChatGPT">Hi! Yes, we can absolutely have a conversation in English. How can I help you today?</turn>
+		<turn type="student">I don’t <FS corr="speak">speck</FS> <DMCC corr="English">english</DMCC>, so Start with <GA corr="a">\0</GA> normal conversation</turn>
+		<turn type="chatbot" who="ChatGPT">Of course! No problem. Let’s start with something simple.
+		How are you today?</turn>
+		<turn type="student">I’m fine <FS corr="thank">tank</FS> you, and you?</turn>
+		<turn type="chatbot" who="ChatGPT">I’m glad to hear that! I’m doing well, thank you for asking.
+		What would you like to talk about?</turn>
+		<turn type="student">University life?</turn>
+		<turn type="chatbot" who="ChatGPT">Great topic! University life can be exciting and challenging at the same time.
+		Are you currently in university, or are you planning to go?</turn>
+		<turn type="student">I’m currently in university, I’m <FS corr="studying">studing</FS> <FS corr="mechanical">meccanical</FS> <FS corr="engineering">egnegneering</FS></turn>
+		<turn type="chatbot" who="ChatGPT">That’s awesome! Mechanical engineering is a challenging and rewarding field. How are you finding it so far? Do you enjoy the projects and subjects you’re working on?</turn>
+		<turn type="student">I don’t understand</turn>
+		<turn type="chatbot" who="ChatGPT">No problem! Let me make it simpler.
+		Do you like studying mechanical engineering?</turn>
+		<turn type="student">Yes I like studying <FS corr="mechanical">meccanical</FS> <FS corr="engineering">egnireeng</FS>, <LCLS corr="but">also</LCLS> it’s so difficult</turn>
+		<turn type="chatbot" who="ChatGPT">I understand! Mechanical engineering is interesting, but it can be very difficult.
+		What is the hardest part for you?</turn>
+		<turn type="student">The <GNN corr="lessons">lesson</GNN>, <GNN corr="teachers">teacher</GNN> are so <LSADV corr="fast">speedy</LSADV> and <FS corr="sometimes">some time</FS> <DMCC corr="I">i</DMCC> don’t <FS corr="understand">ipunderstend</FS> <GPI corr="anything"><FS corr="nothing">nothink</FS></GPI></turn>
+		<turn type="chatbot" who="ChatGPT">I get it—that can be really tough. Sometimes teachers go too fast, and it’s hard to keep up.
+		Do you take notes, or maybe record the lessons to review later?</turn>
+		<turn type="student">No <DMCC corr="I">i</DMCC> take <GNN corr="notes">note</GNN> on <GPP corr="my">\0</GPP> iPad but <GPP corr="it">I</GPP> <GVAUX corr="is">\0</GVAUX> so hard for this reason</turn>
+		<turn type="chatbot" who="ChatGPT">Taking notes on an iPad can be helpful, but it’s also challenging, especially if the teacher moves quickly.
+		Have you tried using any apps to organize your notes? Some apps let you record the lecture while you write, so you can go back and listen to parts you missed.</turn>
+		<turn type="student">I <XVCO corr="use “Appunti +” to">use “<DMCC corr="Appunti">appunti</DMCC> +” for</XVCO> take notes, if <GNN corr="teachers">teacher</GNN> <FS corr="go">ho</FS> too <GDI corr="\0">much</GDI> fast <DMCC corr="I">i</DMCC> use the <GNN corr="slides">slide</GNN></turn>
+		<turn type="chatbot" who="ChatGPT">That sounds like a good strategy! Using slides can help you follow along better when the teacher is fast.
+		Do you find it helpful to study with classmates? Sometimes working together can make understanding easier.</turn>
+	</task>
+	<task type="role play">
+		<turn type="student">Now simulate a role play</turn>
+		<turn type="chatbot" who="ChatGPT">Sure! Let’s do a role play.
+		Scenario: You are a student asking me, your friend, for help with your mechanical engineering homework.
+		You: Hey! I’m having trouble with my homework. Can you help me?
+		Me: Of course! What topic are you struggling with?</turn>
+		<turn type="student">I have <FS corr="no">not</FS> idea <LSPR corr="about">to</LSPR> <GA corr="the">\0</GA> <FS corr="basic">basical</FS> role of <FS corr="materials">mats</FS></turn>
+		<turn type="chatbot" who="ChatGPT">Me: No problem! The basic role of materials in mechanical engineering is really important. Materials determine how a structure will behave under different conditions.
+		Do you want to know about specific types of materials, like metals or plastics, or how they are used in engineering?</turn>
+		<turn type="student">Yes</turn>
+		<turn type="chatbot" who="ChatGPT">Me: Great! Let's start with metals. Metals are strong and can withstand heavy loads. They’re often used in construction and machinery.
+		For example, steel is commonly used for buildings because it’s very strong and durable.
+		Do you want to learn about plastics next?</turn>
+		<turn type="student">No what <GVN corr="are">is</GVN> <GA corr="\0">a</GA> <GNN corr="bioplastics">bioplastic</GNN></turn>
+		<turn type="chatbot" who="ChatGPT">Me: Bioplastics are a type of plastic made from natural materials, like plants, instead of traditional petroleum-based plastics.
+		They are often more environmentally friendly because they can be biodegradable, meaning they can break down naturally over time.
+		Do you think bioplastics are a good alternative to regular plastics?</turn>
+		<turn type="student">If bioplastics <GVN corr="aren’t">isn’t</GVN> so difficult to create yes</turn>
+		<turn type="chatbot" who="ChatGPT">Me: That’s a good point! If bioplastics are easier to produce and can help reduce waste, they could be a great option.
+		Many companies are researching ways to make bioplastics more affordable and easier to manufacture.
+		Are you interested in how bioplastics are made?</turn>
+		<turn type="student">Yes, <WO corr="is it">it’s</WO> more <FS corr="expensive">expesive</FS>?</turn>
+		<turn type="chatbot" who="ChatGPT">Me: Yes, currently, bioplastics can be more expensive to produce than traditional plastics. This is often due to the cost of raw materials and the production processes involved.
+		However, as technology improves and more companies invest in bioplastic production, prices may go down over time.
+		Do you think using bioplastics is worth the higher cost for the environment?</turn>
+		<turn type="student"><GNN corr="bioplastics"><FS corr="bioplastic">biopastic</FS></GNN> can <LSV corr="be">take</LSV> <GVM corr="used">using</GVM> <WM corr="instead">\0</WM> of <FS corr="normal">normale</FS> plastic?</turn>
+		<turn type="chatbot" who="ChatGPT">Me: Yes, bioplastics can potentially replace traditional plastics in many applications. They can be used for packaging, containers, and even some automotive parts.
+		However, it depends on the specific use and whether bioplastics can meet the necessary performance standards.
+		What do you think about using bioplastics in everyday products?</turn>
+		<turn type="student">Yes</turn>
+		<turn type="chatbot" who="ChatGPT">Me: That's great! Using bioplastics in everyday products could help reduce plastic waste and its impact on the environment.
+		Do you have any specific products in mind that you think could benefit from using bioplastics?</turn>
+		<turn type="student">It ‘s <XVCO corr="possible to use"><FS corr="possible">possibile</FS> use</XVCO> <GNN corr="bioplastics">bioplastic</GNN> in cross <GNN corr="motorcycles"><FS corr="motorcycle">motorcicle</FS></GNN></turn>
+		<turn type="chatbot" who="ChatGPT">Me: Yes, it is possible to use bioplastics in cross motorcycles! Bioplastics can be used for parts like body panels, seats, and even some components of the engine.
+		Using bioplastics could make the motorcycles lighter and more environmentally friendly. However, it’s important that these materials are strong enough to withstand the stresses of riding.
+		Do you think it would be a good idea to promote more bioplastics in vehicles like motorcycles?</turn>
+		<turn type="student">Yes</turn>
+		<turn type="chatbot" who="ChatGPT">Me: I agree! Promoting bioplastics in vehicles like motorcycles could make a big difference for the environment.
+		As more manufacturers explore this option, we might see more sustainable products on the market.
+		Are you interested in any specific motorcycle brands that are focusing on using sustainable materials?</turn>
+		<turn type="student"><WO corr="Are bioplastics"><GNN corr="Bioplastics">Bioplastic</GNN> are</WO> <GADJCS corr="stronger">strong</GADJCS> than <GA corr="\0">a</GA> normal plastic?</turn>
+		<turn type="chatbot" who="ChatGPT">Me: Bioplastics can be strong, but it really depends on the type of bioplastic and its formulation. Some bioplastics are designed to be as strong as, or even stronger than, traditional plastics, while others might not have the same strength or durability.
+		For example, certain bioplastics made from corn starch or sugarcane can be quite strong and suitable for many applications. However, in high-stress environments, traditional plastics may still be preferred.
+		Do you think the strength of bioplastics will improve with more research and development?</turn>
+		<turn type="student">I don’t understand</turn>
+		<turn type="chatbot" who="ChatGPT">Me: No problem! Let me explain it more simply.
+		Bioplastics can be strong, but it depends on what they are made from. Some bioplastics can be just as strong as regular plastics, while others might be weaker.
+		Do you think scientists will make bioplastics stronger in the future?</turn>
+	</task>
+</text>
+</file>

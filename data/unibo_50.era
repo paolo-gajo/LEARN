@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unibo_50.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unibo_50" area_of_study="Social sciences" age="19" gender="Male" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="intermediate level (B1)" years_study_range="≤13 years" years_study="13" certificates="yes" certificates_level="B2" chatbot="ChatGPT" device="PC" collected_by="UniBo">
+	<task type="role play">
+		<turn type="student">I'd like to start a role play activity with <FS corr="you">uìyou</FS> to improve my <DMCC corr="English">english</DMCC></turn>
+		<turn type="chatbot" who="ChatGPT">I'd be happy to help you with a role-play activity! What kind of scenario would you like to practice? Here are a few examples to get you started:
+		Job Interview - Practicing interview questions and answers.
+		Shopping - Buying something in a store and asking questions about products.
+		Travel - Checking in at a hotel or asking for directions in a new city.
+		Restaurant - Ordering food, making reservations, or dealing with a problem at a restaurant.
+		Social Conversation - Small talk at a party or getting to know someone new.
+		Feel free to choose one of these or suggest another scenario you're interested in!</turn>
+		<turn type="student"><FS corr="Let's try">Let'try</FS> to simulate a small talk at a party</turn>
+		<turn type="chatbot" who="ChatGPT">Great choice! Let’s imagine we're at a casual party. I'll start the conversation, and you can jump in whenever you’re ready.
+		Me: Hey there! I don't think we've met before. I'm User. How's it going?
+		Your turn!</turn>
+		<turn type="student">Hi mate! Nice to meet you! My name is User and I'm Name's boyfriend</turn>
+		<turn type="chatbot" who="ChatGPT">Me: Nice to meet you, User! Oh, you're Name's boyfriend—I've heard a lot about you. She always talks about how much you both love hiking. Have you been on any cool hikes recently?
+		Your move!</turn>
+		<turn type="student">No and it absolutely bothers me!</turn>
+		<turn type="chatbot" who="ChatGPT">Me: Oh no, really? Why’s that? Busy schedule, or is it something else getting in the way?
+		Go ahead!</turn>
+		<turn type="student">Well, my university course keeps me busy and also I have volleyball practice every evening</turn>
+		<turn type="chatbot" who="ChatGPT">Me: Wow, that sounds intense! Balancing a university course and daily volleyball practice must be challenging. What are you studying, if you don't mind me asking?
+		Your turn!</turn>
+		<turn type="student">I'm attending the <LWCO corr="International relations and diplomatic affairs">INternational and Diplomatic Science</LWCO> Course at the <FS corr="University">Univeristy</FS> of Bologna but here <LSPR corr="on">in</LSPR> the campus of Forlì</turn>
+		<turn type="chatbot" who="ChatGPT">Me: That sounds fascinating! International and Diplomatic Science must be a really interesting field to study. And Bologna is such a great university—I've heard a lot of good things about it. Do you have a specific area of diplomacy or international relations that you're most passionate about?
+		Your move!</turn>
+		<turn type="student">No, I'm quite interested in many of the <LWCO corr="topics">arguments</LWCO> that we're studying now but I do not have <GDI corr="a">any</GDI> favorite one</turn>
+		<turn type="chatbot" who="ChatGPT">Me: That makes sense, it's good to keep your options open! It's a broad field with so many interesting areas to explore. How about volleyball—have you been playing for a long time, or is it something you picked up recently?
+		Your turn!</turn>
+		<turn type="student">Just recently... I've played basketball for many years before</turn>
+		<turn type="chatbot" who="ChatGPT">Me: Ah, a switch from basketball to volleyball—that’s a cool change! Do you find volleyball very different from basketball, or are there some skills that carry over between the two sports?
+		Your move!</turn>
+		<turn type="student">Well they're obviously different, but some particular physical skills, like <GVNF corr="jumping">jump</GVNF> or similar, are really relevant for both</turn>
+		<turn type="chatbot" who="ChatGPT">Me: That's a great point! I guess the jumping ability really helps in both sports, especially for blocking and spiking in volleyball. Do you find it hard to adjust to the different rules and strategies, or are you picking it up quickly?
+		Your turn!</turn>
+		<turn type="student">Quickly, I'<GVAUX corr="m">\0</GVAUX> a champion!</turn>
+		<turn type="chatbot" who="ChatGPT">Me: Haha, I love the confidence! A champion already, that’s awesome! Do you have any big matches coming up?
+		Your move!</turn>
+		<turn type="student">Yes on the 25th of <DMCC corr="December">december</DMCC> we're facing our <GNN corr="city rivals"><FS corr="city rival">city-rival</FS></GNN></turn>
+		<turn type="chatbot" who="ChatGPT">Me: Whoa, a Christmas Day rivalry match! That’s intense! I bet the atmosphere will be crazy. Are you feeling the pressure, or are you just excited for the challenge?
+		Your turn!</turn>
+		<turn type="student">Now I'd like to talk with you about holidays</turn>
+		<turn type="chatbot" who="ChatGPT">Me: Sure, holidays are always fun to talk about! Do you have any special plans for this upcoming holiday season, aside from the volleyball match on Christmas?
+		Your turn!</turn>
+		<turn type="student"><DMCC corr="The">the</DMCC> role play activity <GVT corr="has ended">it's end</GVT></turn>
+		<turn type="chatbot" who="ChatGPT">No problem! I hope the role play was helpful for your English practice. If you ever want to do another one or work on something else, just let me know! Have a great day!</turn>
+	</task>
+	<task type="small talk">
+		<turn type="student">Now I'd like to talk with you about holidays</turn>
+		<turn type="chatbot" who="ChatGPT">Of course! Holidays are always a great topic. What kind of holidays are you thinking about? Are you excited for the upcoming ones, or do you have a favorite holiday tradition you'd like to share?</turn>
+		<turn type="student">Well, in my opinion, when we talk <LSPR corr="about">of</LSPR> holidays, I think mainly about the ones during the summer. In the last <GDT corr="few">\0</GDT> years I was not particularly excited about the upcoming <GPI corr="ones">\0</GPI> but lately, I'm becoming more and more interested in planning new <WM corr="holidays">\0</WM> for me and my friends and family.</turn>
+		<turn type="chatbot" who="ChatGPT">That sounds like a wonderful shift in perspective! It's great that you're becoming more excited about planning holidays again. Summer holidays do have a special vibe, especially when you can relax and enjoy time with friends and family. What kind of holiday plans are you thinking about? Do you have any destinations or activities in mind that you're especially excited about?</turn>
+		<turn type="student">With my father we're <FS corr="planning">plannign</FS> many trips in Eastern Europe. <Z corr="There">Here</Z>, the nature is <FS corr="great">greta</FS>, the history is so fascinating and many of the attractions are cheap! So the program that we're thinking about <GVN corr="is">are</GVN> very busy and full of activities: I do not know why people often avoid <GVNF corr="visiting">to visit</GVNF> these countries. They're awesome!</turn>
+		<turn type="chatbot" who="ChatGPT">That sounds like an amazing adventure! Eastern Europe is truly an underrated gem. The mix of rich history, beautiful landscapes, and affordable prices makes it such a great option for travelers. Do you have specific countries in mind that you're planning to visit, or are you still figuring out the details? Some places, like Prague, Budapest, or Kraków, offer a blend of history, culture, and natural beauty. What kinds of activities are you looking forward to the most—hiking, historical tours, or maybe something else?</turn>
+		<turn type="student">The first place that comes to my mind that I absolutely want to visit is Romania <FS corr="which">whic</FS> is so underrated.</turn>
+		<turn type="chatbot" who="ChatGPT">Romania is an excellent choice! It's definitely an underrated destination, but it has so much to offer. From the stunning landscapes of the Carpathian Mountains to the rich cultural heritage, there's plenty to explore. Are you drawn to Romania's natural beauty, or is its history and folklore, like the legend of Dracula, more of an interest for you? Some highlights that many travelers love include:
+		Transylvania for its medieval castles (like Bran Castle, often associated with Dracula), fortified churches, and picturesque villages.
+		The Carpathian Mountains for hiking, wildlife, and stunning views.
+		Bucharest, the capital, which has a mix of historical landmarks and modern attractions.
+		Mărginimea Sibiului, a rural region known for its traditional villages and peaceful atmosphere.
+		It sounds like you’ll have a jam-packed schedule! What are you most excited to see or do in Romania?</turn>
+	</task>
+</text>
+</file>

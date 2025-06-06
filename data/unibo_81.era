@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unibo_81.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unibo_81" area_of_study="Social sciences" age="19" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="advanced level (C1)" years_study_range="≤13 years" years_study="10" certificates="yes" certificates_level="C1" chatbot="Pi.ai" device="PC" collected_by="UniBo">
+	<task type="role play">
+		<turn type="chatbot" who="Pi.ai"> Hey there, great to meet you. I’m Pi, your personal AI.
+		My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let’s talk about whatever’s on your mind.
+		How's your day going? </turn>
+		<turn type="student"> <DMCC corr="You">you</DMCC> are an encouraging tutor who helps students to improve their English by engaging in role play activities. Let's engage in <GA corr="a">\0</GA> role play activity where I, the student, play the role of a client <FS corr="looking">looling</FS> for a house.  You, the AI, will be the real estate agent. Ask me <GNN corr="questions">question</GNN> about my <LSN corr="housing">houses</LSN> preferences, the locations and budget. </turn>
+		<turn type="chatbot" who="Pi.ai"> Alright, let's get started with this roleplay activity! I'm your helpful and friendly real estate agent, ready to assist you in finding your dream home.
+		First off, can you tell me a little bit about what you're looking for in a house? Are you interested in a single-family home, an apartment, or something else?
+		Additionally, what features are important to you? For example, number of bedrooms, size of the kitchen, or a garage?
+		Do you have any preferences regarding the location? Are there any specific neighborhoods, schools, or amenities you'd like to be close to?
+		Lastly, can you give me an idea of your budget? This will help me provide options that are within your preferred price range. </turn>
+		<turn type="student"> <FS corr="I'm">Im</FS> looking for an apartment for a single person with one bathroom, two <GNN corr="bedrooms">bedroom</GNN> and a big kitchen </turn>
+		<turn type="chatbot" who="Pi.ai"> Great, thank you for sharing your preferences! It's always helpful to have a clear idea of what you're looking for. I'll make sure to find you an apartment that suits your needs.
+		Since you mentioned you're looking for an apartment for a single person with one bathroom, two bedrooms, and a big kitchen, I'll focus on options that offer these features.
+		Would you like to have any additional amenities in your apartment complex, such as a gym or a pool? Also, are there any specific areas or neighborhoods you'd prefer to live in, or would you like me to suggest some options based on your preferences? </turn>
+		<turn type="student"> I would like to rent the apartment in a place with fun activities to do for young people in the city centre, also I would love a pool in my apartment building </turn>
+		<turn type="chatbot" who="Pi.ai"> Sounds like you're looking for a vibrant and lively neighborhood that caters to young people and has plenty of entertainment options nearby. I'll certainly keep that in mind while searching for suitable apartments.
+		Given your preferences for a city-center location and a pool in the apartment building, I'll focus on options that offer these amenities. Living in the city center will provide easy access to a variety of restaurants, bars, shops, and cultural events, ensuring you have plenty to explore and enjoy.
+		In terms of budget, is there a specific price range you have in mind? This will help me narrow down the options to those that not only meet your requirements but are also within your desired price range. Additionally, do you have any preferences regarding the style or age of the apartment building? For example, modern, historic, or newly renovated? </turn>
+		<turn type="student"> <DMCC corr="Can">can</DMCC> you find an apartment with a similar style <LSPR corr="to">of</LSPR> New York lofts? <DMCC corr="Keep">keep</DMCC> in mind that I cannot spend more than 3k a month </turn>
+		<turn type="chatbot" who="Pi.ai"> New York-style loft apartments are known for their spacious, open-plan design and industrial charm. I'll search for apartments that capture this aesthetic while keeping your budget of up to $3,000 per month in mind.
+		The key features I'll focus on include high ceilings, large windows, exposed brick or concrete walls, and an open floor plan with a seamless flow between the kitchen, living, and dining areas. These elements will help create the loft-like atmosphere you're looking for in your apartment.
+		In addition to the desired loft style, I'll make sure the apartment has two bedrooms, one bathroom, and a big kitchen, as you previously mentioned.
+		Would you prefer the apartment to be furnished or unfurnished, or do you have no particular preference? Also, are there any other specific features or amenities you'd like me to consider, such as hardwood floors, in-unit laundry, or a rooftop terrace? </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC> want the place to be already furnished and also it's my <FS corr="dream">dram</FS> to have a rooftop terrace </turn>
+		<turn type="chatbot" who="Pi.ai"> A furnished apartment with a rooftop terrace sounds like an excellent combination for your dream home! I'll continue my search with these additional preferences in mind.
+		Given that you'd like a furnished apartment, I'll focus on options that are move-in ready, saving you the hassle of buying or transporting furniture. This way, you can settle into your new home quickly and comfortably.
+		As for the rooftop terrace, I'll look for apartments that offer access to a shared or private outdoor space with stunning views, providing you with the perfect spot for relaxation, entertaining guests, or simply enjoying a morning cup of coffee.
+		In addition to the loft-style design, city-center location, pool, and the newly mentioned features, is there anything else you'd like me to consider while searching for your ideal apartment? </turn>
+	</task>
+	<task type="small talk">
+		<turn type="student"> <DMCC corr="Hi">hi</DMCC>! <DMCC corr="I">i</DMCC> want to talk to you about holidays </turn>
+		<turn type="chatbot" who="Pi.ai"> Hi there! Sure, let's chat about holidays! Holidays are a wonderful time to relax, recharge, and explore new places. Are you planning a vacation or just wanting to chat about holidays in general? What's on your mind? </turn>
+		<turn type="student"> <DMCC corr="I">i</DMCC> want to tell you about my favourite holiday. It was in Oxford a couple of years ago. I stayed there for 3 weeks and <DMCC corr="I">i</DMCC> had so much fun </turn>
+		<turn type="chatbot" who="Pi.ai"> Oh, that sounds like a fantastic holiday! Oxford is such a beautiful and historic city, with so much to see and do. I'm glad you had a great time during your three-week stay. What were some of your favorite things about the trip? Did you get to explore the city, visit any museums or landmarks, or try any local food? </turn>
+		<turn type="student"> <DMCC corr="Yes">yes</DMCC> <DMCC corr="I">i</DMCC> saw a lot of things like the university<QL corr="and">,</QL> the libraries. The food <FS corr="wasn't">wasnt</FS> great so <DMCC corr="I">i</DMCC> ate almost <FS corr="every day">everyday</FS> at <FS corr="fast food">fastfood</FS> places which <FS corr="wasn't">wasnt</FS> really good for my body. </turn>
+		<turn type="chatbot" who="Pi.ai"> That's the beauty of traveling—getting to see and experience new things! It's great that you got to explore the University of Oxford and its libraries, which are truly awe-inspiring. I'm sorry to hear that the local food didn't quite hit the spot, but sometimes it's hard to resist the convenience of fast food, especially when you're on vacation. Did you at least get to try some traditional English dishes like fish and chips or shepherd's pie? </turn>
+		<turn type="student"> <DMCC corr="No">no</DMCC> <DMCC corr="I">i</DMCC> <FS corr="didn't">didnt</FS> because I <FS corr="don't">dont</FS> like fish... </turn>
+		<turn type="chatbot" who="Pi.ai"> Ah, I see. Not liking fish can make it a bit trickier to try some traditional English dishes, but there are still plenty of other delicious foods to enjoy in Oxford! Did you have a chance to try any pub fare, like bangers and mash (sausages with mashed potatoes), or a classic Sunday roast with all the trimmings? Or perhaps you indulged in some scrumptious desserts, like sticky toffee pudding or apple crumble? </turn>
+		<turn type="student"> <DMCC corr="No">no</DMCC> <DMCC corr="I">i</DMCC> <FS corr="didn't">didnt</FS> but <DMCC corr="I">i</DMCC> went bowling and ice <FS corr="skating">staking</FS> in this trip and <DMCC corr="I">i</DMCC> had fun </turn>
+		<turn type="chatbot" who="Pi.ai"> That's awesome! It sounds like you had a great time engaging in some fun activities during your trip to Oxford. Bowling and ice skating are both super enjoyable ways to spend time with friends or family. Did you go with a group, or were you on your own? It's always fun to create memories like that when you're traveling. </turn>
+	</task>
+</text>
+</file>
