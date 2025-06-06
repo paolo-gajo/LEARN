@@ -1,9 +1,9 @@
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from convert import convert_files
 from utils import CompletionDataset
 from datasets import Dataset
-
+from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 from trl import SFTConfig, SFTTrainer
 import argparse
 
@@ -24,7 +24,53 @@ def main():
     dataset_train = Dataset.from_list(dataset.train)
     dataset_dev = Dataset.from_list(dataset.dev)
 
-    model = AutoModelForCausalLM.from_pretrained(model_name)
+    # Configure quantization if needed
+    if args.load_in_4bit:
+        quantization_config = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_compute_dtype=torch.float16,
+            bnb_4bit_use_double_quant=True,
+            bnb_4bit_quant_type="nf4"
+        )
+    elif args.load_in_8bit:
+        quantization_config = BitsAndBytesConfig(
+            load_in_8bit=True,
+        )
+    else:
+        quantization_config = None
+
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        quantization_config=quantization_config,
+        torch_dtype=torch.bfloat16,
+        device_map='auto',
+        trust_remote_code=True,
+    )
+    model.gradient_checkpointing_enable()
+
+    if args.target_modules != 'full_ft':
+        target_modules = [el+'_proj' for el in args.target_modules.split('-')]
+        
+        # Prepare the model for training, particularly important for quantized models
+        if args.load_in_4bit:
+            model = prepare_model_for_kbit_training(model)
+        
+        # Configure LoRA
+        lora_config = LoraConfig(
+            r=16,
+            lora_alpha=16,
+            target_modules=target_modules,
+            lora_dropout=0,
+            bias="none",
+            task_type="CAUSAL_LM",
+            use_rslora=False,
+        )
+        
+        model = get_peft_model(model, lora_config)
+    else:
+        target_modules = args.target_modules
+        lora_config = None
+
     def compute_metrics(sample):
         return ...
 
@@ -73,9 +119,13 @@ if __name__ == "__main__":
     parser.add_argument("--data_path", help="Directory path containing input files", default='./data/')
     parser.add_argument("--lr", type=float, help="Learning rate", default=2e-4)
     parser.add_argument("--train_steps", type=int, help="Number of training steps", default=200)
-    parser.add_argument("--batch_size_train", type=int, help="Batch size for training", default=1)
-    parser.add_argument("--batch_size_eval", type=int, help="Batch size for evaluation", default=1)
+    parser.add_argument("--batch_size_train", type=int, help="Batch size for training", default=4)
+    parser.add_argument("--batch_size_eval", type=int, help="Batch size for evaluation", default=4)
     parser.add_argument("--grad_acc_steps", type=int, help="Gradient accumulation steps", default=1)
-    parser.add_argument("--max_seq_length", type=int, default=4096, help="Maximum sequence length")
+    parser.add_argument("--max_seq_length", type=int, default=2048, help="Maximum sequence length")
+    parser.add_argument("--target_modules", type=str, help="List of LoRA modules to use (as dash-separated string).", default='q-k-v')
+    parser.add_argument("--load_in_4bit", action="store_true", help="Use 4-bit quantization")
+    parser.add_argument("--load_in_8bit", action="store_true", help="Use 8-bit quantization")
+
     args = parser.parse_args()
     main()
