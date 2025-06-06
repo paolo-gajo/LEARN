@@ -4,7 +4,7 @@ Below are reference examples.
 
 {examples}
 
-Use the format ###sentence ==> answer{eos_token}
+Use the format ###sentence ==> answer
 
 Target sentence:
 

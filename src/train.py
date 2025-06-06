@@ -1,27 +1,29 @@
 import torch
 from transformers import LlamaForCausalLM, AutoTokenizer
 from convert import convert_files
-from utils import Seq2SeqDataset, Collator
+from utils import CausalLMDataset, Collator
 from torch.utils.data import DataLoader
 
 df = convert_files('./data')
 print(df)
 
-# model_name = "meta-llama/Llama-3.2-1B-Instruct"
-model_name = "meta-llama/Llama-3.3-70B-Instruct"
+model_name = "meta-llama/Llama-3.2-1B-Instruct"
+# model_name = "meta-llama/Llama-3.1-8B-Instruct"
+# model_name = "meta-llama/Llama-3.3-70B-Instruct"
+
 tokenizer = AutoTokenizer.from_pretrained(model_name, padding_side = 'left')
 tokenizer.pad_token = tokenizer.eos_token
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 model = LlamaForCausalLM.from_pretrained(model_name).to(device)
-prompt_layout = open('./misc/prompt_layout_tags.txt', 'r').read()
+prompt_layout = open('./misc/prompt_layout_no_tags.txt', 'r').read()
 prompt_tags = open('./misc/prompt_tags.txt', 'r').read()
-dataset = Seq2SeqDataset(df, prompt_layout, prompt_tags, tokenizer)
+dataset = CausalLMDataset(df, prompt_layout, prompt_tags, tokenizer)
 collator = Collator(tokenizer)
 loader = DataLoader(dataset, batch_size=1, collate_fn=collator.collate)
 
 for batch in loader:
     batch = {k: v.to(model.device) for k, v in batch.items()}
-    out = model.generate(**batch, max_new_tokens = 100, pad_token_id = tokenizer.eos_token_id)
+    out = model(**batch)
     for i in range(out.shape[0]):
         input_ids_sample = batch['input_ids'][i]
         labels_sample = batch['labels'][i]
