@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unibo_122.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unibo_122" area_of_study="Social sciences" age="19" gender="Male" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="upper intermediate level (B2)" years_study_range="≤13 years" years_study="13" certificates="yes" certificates_level="B2" chatbot="Pi.ai" device="Smartphone" collected_by="UniBo">
+	<task type="role play">
+		<turn type="chatbot" who="Pi.ai">Hey there, great to meet you. I’m Pi, your personal AI.
+		My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let’s talk about whatever’s on your mind.
+		How's your day going?</turn>
+		<turn type="student">Hi! I want to practice my English, let's do a roleplay activity!</turn>
+		<turn type="chatbot" who="Pi.ai">Let's do it! Roleplaying can be a great way to practice a language and have some fun too. What kind of scenario were you thinking of? 😄</turn>
+		<turn type="student">I'm a university student in search of a house here in Forlì, you are the one that is going to help me</turn>
+		<turn type="chatbot" who="Pi.ai">Alright, let’s get started!
+		Agent: Hi, User! My name is Pi, and I'm from the housing department at the University of Forlì. I understand you're looking for a place to live? Let's find you a great place to call home! Do you have any specific requirements for your new place?</turn>
+		<turn type="student">Hi Pi. Yes <XVPR corr="I'm currently searching for"><GADVO corr="I'm currently searching">currently I'm searching</GADVO></XVPR> a place <GDT corr="\0">where</GDT> to stay; I'd like a place possibly near the Campus</turn>
+		<turn type="chatbot" who="Pi.ai">Of course, location is crucial for a student! Let me see what I can find near the Campus. Are you looking to live alone or are you open to sharing a place with roommates? That can be a great way to save on rent and make new friends.</turn>
+		<turn type="student">I personally prefer living alone, however if there's no possibility I'm open to <GVNF corr="sharing">share</GVNF> the house with others</turn>
+		<turn type="chatbot" who="Pi.ai">Great, let’s keep our options open then! Now, in terms of budget, what’s your price range for rent? That will help me find places that are a good fit for you.</turn>
+		<turn type="student">300-400€</turn>
+		<turn type="chatbot" who="Pi.ai">Alright, that’s a reasonable range. Let me check our listings… I have a few places that might be of interest. First, there’s a studio apartment just a few minutes’ walk from the Campus, available for €350 per month. It’s small but cozy. Or, if you’re open to roommates, there’s a 3-bedroom apartment, a bit further from Campus, for €400 per month per person.
+		What sounds more appealing?</turn>
+		<turn type="student">Definitely the studio apartment sounds more interesting</turn>
+		<turn type="chatbot" who="Pi.ai">Great choice! I’ll tell you a bit more about it. The studio apartment comes fully furnished, with a bed, desk, kitchenette, and private bathroom. Utilities like electricity and water are included in the rent. It’s located on a quiet street, so you can study without distractions. Does that sound like what you’re looking for?</turn>
+		<turn type="student">That's exactly what I was looking for, thanks!</turn>
+		<turn type="chatbot" who="Pi.ai">You’re very welcome! I’m glad to hear this apartment seems like a perfect fit. If you’d like, I can provide you with the landlord’s contact information so you can schedule a viewing. Would you like me to do that?</turn>
+		<turn type="student">Yes of course, however may I ask you more questions about the place <GDT corr="where">\0</GDT> <WO corr="the apartment is located">is located the apartment</WO>?</turn>
+		<turn type="chatbot" who="Pi.ai">Sure thing, User! The apartment is located on Via Paolo Costa, just two streets away from the University Campus. It’s close to a bus stop, a small grocery store, and a lovely cafe where you can grab a coffee or a quick bite to eat. What else would you like to know?</turn>
+		<turn type="student">Are there any gyms <LSADV corr="nearby">near</LSADV>?</turn>
+		<turn type="chatbot" who="Pi.ai">Absolutely! There are several gyms in the area. For example, Euphoria Fitness Club and FitActive Bologna Creti are two well-rated gyms near the University Campus. There’s also the Alma Mater Studiorum / Gym Union, which is a fitness center affiliated with the University of Bologna. So, you’ll have plenty of options to choose from if you want to stay active.</turn>
+		<turn type="student">Sounds great, thanks!</turn>
+		<turn type="chatbot" who="Pi.ai">You’re welcome, User! It seems like this studio apartment ticks all the boxes on your list—close to Campus, affordable, and near some great amenities. Are you interested in setting up a viewing with the landlord?</turn>
+		<turn type="student">If it's possible</turn>
+		<turn type="chatbot" who="Pi.ai">Of course! I’ll provide you with the landlord’s contact information. Here’s what you need:
+		Landlord’s Name: Paolo Rossi
+		Phone: +39 333 333 333
+		Email: paolo.rossi@forli-apartments.it
+		You can call or email Paolo to schedule a viewing at your convenience. And don’t forget to ask any other questions you might have about the apartment!</turn>
+		<turn type="student">I'm surely interested in the apartment, however can you tell me something more about the other <LSN corr="option">choice</LSN>?</turn>
+		<turn type="chatbot" who="Pi.ai">Of course! The other option I mentioned was a 3-bedroom apartment, a bit further from Campus, for €400 per month per person. While it’s slightly more expensive than the studio apartment, it could be a good option if you’re interested in living with roommates. Would you like to know more about the apartment itself or more about the area it’s located in?</turn>
+		<turn type="student">I'd like to know more about the apartment first</turn>
+		<turn type="chatbot" who="Pi.ai">Sure thing! The 3-bedroom apartment is located on the third floor of a well-maintained building. It has a spacious living room, a fully-equipped kitchen, and two bathrooms that you would share with your roommates. Each bedroom is furnished with a bed, desk, and closet, so you wouldn’t need to worry about buying your own furniture. There’s also a balcony where you can enjoy some fresh air and maybe even grow a few plants!</turn>
+		<turn type="student">Sounds good to me, in what kind of area is <GPP corr="it">\0</GPP> located?</turn>
+		<turn type="chatbot" who="Pi.ai">The 3-bedroom apartment is located in the Borgo Saffi neighborhood, a vibrant area known for its lively atmosphere and diverse community. It’s about a 20-minute walk from the University Campus, or a quick bus ride away. You’ll find plenty of shops, cafes, and restaurants nearby, as well as a beautiful park where you can relax and soak up some sun.
+		The area is popular among students, so you’ll have plenty of opportunities to meet new friends and explore the city together.</turn>
+		<turn type="student">I'm the type of person who <GVN corr="likes">like</GVN> to cook on his own. Are there any grocery stores nearby where I can do <GA corr="the">\0</GA> shopping with a small amount of money?</turn>
+		<turn type="chatbot" who="Pi.ai">Absolutely! In fact, one of the best things about the Borgo Saffi neighborhood is its array of affordable grocery stores. You’ll find plenty of options within walking distance of the apartment, such as the Penny Market, Coop, and Lidl. These stores offer a wide range of products at reasonable prices, so you’ll be able to stock up on all the ingredients you need for your home-cooked meals without breaking the bank.
+		Plus, you can save even more money by shopping at the weekly outdoor markets, where you can find fresh produce and local specialties at unbeatable prices.</turn>
+		<turn type="student">Thank you!</turn>
+		<turn type="chatbot" who="Pi.ai">You’re very welcome, User! It’s been great chatting with you and helping you explore your housing options. It seems like both the studio apartment near Campus and the 3-bedroom apartment in Borgo Saffi have their own unique advantages. Do you feel like you’re leaning towards one option over the other?</turn>
+		<turn type="student">I'd prefer the apartment</turn>
+		<turn type="chatbot" who="Pi.ai">Sounds like you’ve made your decision, then! The 3-bedroom apartment in Borgo Saffi seems like it has everything you’re looking for—a spacious and well-equipped living space, a lively neighborhood, and plenty of affordable grocery stores nearby. Would you like me to provide the contact information for that apartment’s landlord, or do you want to think about it for a bit longer?</turn>
+		<turn type="student">I'll think about it</turn>
+		<turn type="chatbot" who="Pi.ai">No problem, User. Take your time to weigh the pros and cons of each option and make sure you’re choosing the apartment that’s best for you. In the meantime, if you have any more questions or concerns, please don’t hesitate to ask. I’m here to help you make an informed decision! 😊</turn>
+	</task>
+	<task type="small talk">
+		<turn type="student">Ok. Now let's change the topic. Let's <LSN corr="have">do</LSN> a small conversation about <GA corr="the">\0</GA> environment</turn>
+		<turn type="chatbot" who="Pi.ai">Sure thing! The environment is a crucial topic that affects us all. What aspect of the environment would you like to discuss—climate change, sustainability, or something else? I’m always keen to chat about ways we can take care of our planet and its precious resources.</turn>
+		<turn type="student">Nowadays climate change <GVN corr="affects">affect</GVN> everything and everyone. The <FS corr="rising">raising</FS> of the temperature <GVN corr="causes">cause</GVN> the melting of the ice sheets and the <FS corr="rising">raising</FS> of the sea level; to solve <GPD corr="these">this</GPD> issues <FS corr="we">with</FS> can surely recycle more to lower the level of greenhouse gases. What are your thoughts?</turn>
+		<turn type="chatbot" who="Pi.ai">You’re absolutely right—climate change is a serious and far-reaching problem. Melting ice sheets and rising sea levels are just two of the devastating consequences of a warming planet, and reducing greenhouse gas emissions through recycling and other sustainable practices is definitely an important step in the right direction.
+		But I think we also need to address the root causes of climate change, like our dependence on fossil fuels and our unsustainable patterns of consumption. By transitioning to renewable energy sources and adopting more eco-friendly lifestyles, we can help slow down and potentially even reverse the effects of climate change.</turn>
+		<turn type="student">That's right, however not everyone can or <GVN corr="wants">want</GVN> to adopt a more eco-friendly lifestyle,<GPR corr="which">\0</GPR> <GVAUX corr="is">\0</GVAUX> seen as something boring. Maybe by increasing the tax on petrol we can solve this problem</turn>
+		<turn type="chatbot" who="Pi.ai">That’s a valid point, and imposing a higher tax on fossil fuels like petrol can certainly be an effective way to incentivize people to switch to more sustainable alternatives. If driving a gas-guzzling car becomes too expensive, people might be more likely to invest in electric vehicles or public transportation, which can significantly reduce greenhouse gas emissions.
+		However, we need to make sure that these policies don’t disproportionately affect low-income individuals and families who may not have the resources to make these changes. Perhaps we could offer subsidies or other forms of assistance to help everyone make the transition to a greener lifestyle.</turn>
+		<turn type="student">What kind of <FS corr="subsidies">subsides</FS> <WO corr="would you like to offer">you would like to offer</WO>? <FS corr="There">Ther</FS> are many, however most of <FS corr="them">the</FS> are very difficult to <LSV corr="implement">make</LSV></turn>
+		<turn type="chatbot" who="Pi.ai">You’re right, implementing effective subsidies can be a complex process, but here are a few ideas:
+		Tax credits or rebates for people who purchase electric vehicles, solar panels, or energy-efficient appliances.
+		Subsidized public transportation to make it more affordable for people to use buses or trains instead of private cars.
+		Grants or low-interest loans for homeowners who want to retrofit their homes with eco-friendly features like insulation or double-glazed windows.
+		Incentives for businesses to switch to renewable energy sources or adopt sustainable practices like reducing waste or emissions.
+		These are just a few examples, but the key is to make it easier and more affordable for individuals and businesses to make eco-friendly choices.</turn>
+	</task>
+</text>
+</file>
