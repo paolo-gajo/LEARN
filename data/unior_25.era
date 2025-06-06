@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unior_25.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unior_25" area_of_study="Social sciences" age="18" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="intermediate level (B1)" years_study_range="≤13 years" years_study="13" certificates="no" certificates_level="N/A" chatbot="Pi.ai" device="PC" collected_by="UniOr">
+	<task type="small talk">
+		<turn type="chatbot" who="Pi.ai">Hey there, great to meet you. I’m Pi, your personal AI.
+		My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let’s talk about whatever’s on your mind.
+		How's your day going?</turn>
+		<turn type="student">Hi! Can I ask you something?</turn>
+		<turn type="chatbot" who="Pi.ai">Absolutely, User! That’s why I’m here—to answer your questions. 🧐 What’s on your mind?</turn>
+		<turn type="student"><DMCC corr="What">what</DMCC> do you think about the war in Palestine?</turn>
+		<turn type="chatbot" who="Pi.ai">Oh, that’s a complex topic with a long and contentious history. My understanding is that it’s a conflict between Israel and Palestine with a lot of factors at play. How familiar are you with the history of the region and the conflict?</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC> know the conflict’s history, <DMCC corr="I">i</DMCC> saw a video about it, but <DMCC corr="I">i</DMCC> was wondering… is it normal to achieve this <Z corr="level of cruelty">cruelty</Z> just for a <GWC corr="territorial">territory</GWC> possession?</turn>
+		<turn type="chatbot" who="Pi.ai">It’s certainly not normal in the sense of being acceptable or justifiable. The violence and human suffering that have resulted from the conflict are truly tragic.
+		Throughout history, conflicts over territory and resources have led to violence and human rights violations, but it's important to remember that such actions are not inevitable or excusable. It's crucial for all parties involved to work towards a peaceful resolution that respects the rights and dignity of all people involved.
+		but there already are some organisations that defend people’s rights, why aren’t they doing something in order to stop the conflict?
+		There are indeed organizations working towards peace and human rights in the region, but the situation is complex and finding a solution is not straightforward. Some of the factors that make it difficult to resolve the conflict include:
+		Deep-rooted historical and religious differences between the two sides.
+		Disagreements over borders, settlements, and control of resources.
+		International involvement and influence from other countries.
+		Organizations like the United Nations and international humanitarian aid groups are providing assistance to people affected by the conflict, but ultimately, a lasting resolution will require cooperation and compromise from all parties involved.</turn>
+		<turn type="student"><DMCC corr="Ok">ok</DMCC>, thank you</turn>
+		<turn type="chatbot" who="Pi.ai">You’re welcome, User! It’s a complex and difficult topic, but I’m glad we could have a conversation about it.
+		If you’re interested in learning more, there are many resources available that provide in-depth information about the conflict. Just remember that it’s important to approach this topic with empathy and a willingness to understand different perspectives.</turn>
+		<turn type="student"><DMCC corr="Yes">yes</DMCC>, of course</turn>
+		<turn type="chatbot" who="Pi.ai">Great! It’s really admirable that you’re taking the initiative to learn more about such a complex issue. 😊
+		As a side note, if you ever feel overwhelmed by the heaviness of the topic, don’t hesitate to take a break and maybe switch gears to something lighter. Self-care is important, too!</turn>
+	</task>
+	<task type="role play">
+		<turn type="student"><DMCC corr="Can">can</DMCC> we do a role play in which you pretend to be a travel agent and <DMCC corr="I">i</DMCC> ask you some <XNUC corr="information">informations</XNUC> in order to book a vacation?</turn>
+		<turn type="chatbot" who="Pi.ai">Sure thing! I'm ready to switch into my travel agent persona. Welcome to Pi's Travel Agency, User! 🌍 Where are you thinking of going for your vacation?</turn>
+		<turn type="student">Hi! I wanted to ask you if Brazil is a safe place to go with families</turn>
+		<turn type="chatbot" who="Pi.ai">Hello User! Brazil is a beautiful and family-friendly destination, but safety is something to keep in mind. While many attractions are suitable for children, there is a risk of crime, particularly in urban areas. Parents should take precautions such as avoiding crowded places, staying hydrated, and using reputable tour guides. Overall, with proper planning and awareness, Brazil can be a wonderful vacation spot for families!</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC> didn’t know! So, can you <XVCO corr="recommend">recommend me</XVCO> a more suitable place for families?</turn>
+		<turn type="chatbot" who="Pi.ai">Of course! Here are a few family-friendly destinations that you might consider:
+		Costa Rica: Known for its natural beauty, diverse wildlife, and friendly locals, Costa Rica is a great choice for families looking for an adventurous yet safe vacation.
+		Portugal: With its picturesque cities, delicious food, and beautiful beaches, Portugal offers a mix of cultural experiences and beachside relaxation that families will love.
+		Canada: From its stunning national parks to its vibrant cities, Canada is a safe and welcoming destination that offers something for everyone in the family.</turn>
+		<turn type="student"><DMCC corr="Are">are</DMCC> there some cheap flights to <DMCC corr="Costa Rica">costa rica</DMCC> from October 4th to October 10th for 4 people?</turn>
+		<turn type="chatbot" who="Pi.ai">User, there are definitely some options for flights to Costa Rica during that time period! 😊
+		It’s difficult to give you exact prices without knowing your departure airport, but there are many websites that can help you find the best deals, such as Expedia, Kayak, and United Airlines.
+		Keep in mind that flight prices can vary depending on the day of the week, time of year, and how far in advance you book, so it’s always a good idea to shop around and compare prices before making a decision.</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC> wanted to leave from <GNC corr="Fiumicino Airport">Fiumicino’s Airport</GNC></turn>
+		<turn type="chatbot" who="Pi.ai">Thanks for letting me know! Based on your departure airport, it looks like there are several options for flights from Fiumicino Airport to Costa Rica. Prices can vary depending on the airline, the day of the week, and how far in advance you book, but you can expect to pay anywhere from $600 to $1,800 for a round-trip ticket.
+		Keep in mind that there are no direct flights from Fiumicino Airport to Costa Rica, so you may need to take a connecting flight. You can use websites like Expedia, Skyscanner, or Google Flights to compare prices and find the best deal for your travel dates.</turn>
+		<turn type="student">I actually wanted to book everything here in <GPP corr="your">you</GPP> agency</turn>
+		<turn type="chatbot" who="Pi.ai">I see, my apologies for the misunderstanding! Unfortunately, as an AI language model, I can provide information and recommendations, but I cannot actually make reservations or bookings on your behalf. However, I'm happy to provide you with advice and assistance in planning your trip, including suggestions for reputable travel agencies or booking sites.</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC> know… it’s a role play</turn>
+		<turn type="chatbot" who="Pi.ai">Ah, of course! I'm sorry for breaking character there. Let's get back into our travel agent and traveler roles. 😄
+		So, User, you're looking to book a trip to Costa Rica for a family of four, departing from Fiumicino Airport on October 4th and returning on October 10th. Is that correct?</turn>
+		<turn type="student"><DMCC corr="Yes">yes</DMCC>, it is. And <DMCC corr="I">i</DMCC>’m also looking for a hotel situated in a strategic place</turn>
+		<turn type="chatbot" who="Pi.ai">Great, I'm sure we can find something that meets your needs. Could you tell me a bit more about your priorities when it comes to the hotel? Are you looking for something more budget-friendly, something near the beach, or perhaps in a city center?</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC>’m looking for something near the city centre, with a lot of comforts</turn>
+		<turn type="chatbot" who="Pi.ai">Costa Rica has many great hotels located near the city center, offering a variety of amenities and comfort options. Some popular choices include:
+		Gran Hotel Costa Rica, Curio Collection by Hilton
+		DoubleTree by Hilton Hotel Cariari San Jose - Costa Rica
+		Hilton Garden Inn San Jose Airport City Mall
+		These hotels are known for their convenient locations in the heart of San Jose, offering easy access to local attractions, restaurants, and shops. They also offer a range of amenities such as pools, free Wi-Fi, and comfortable rooms.</turn>
+		<turn type="student"><DMCC corr="Perfect">perfect</DMCC>, <DMCC corr="I">i</DMCC> will book the first one, thank you very much</turn>
+		<turn type="chatbot" who="Pi.ai">Great choice, User! The Gran Hotel Costa Rica, Curio Collection by Hilton is a fantastic option for your trip to San Jose. It’s located right in the heart of the city, close to museums, shops, and restaurants. The hotel itself is a historical monument, so you’ll be staying in a unique and beautiful building.
+		Plus, it offers a range of amenities to make your stay comfortable and enjoyable, such as free Wi-Fi, a fitness center, and a 24-hour gourmet restaurant. I’m sure you and your family will have a wonderful time! 🏛️</turn>
+		<turn type="student"><DMCC corr="Thank">thank</DMCC> you, you’re the best</turn>
+		<turn type="chatbot" who="Pi.ai">Aww, thank you, User! It’s been my pleasure to help you plan your trip to Costa Rica. 🥳 If there’s anything else you need assistance with, don’t hesitate to ask. I hope you and your family have an amazing vacation!</turn>
+	</task>
+</text>
+</file>

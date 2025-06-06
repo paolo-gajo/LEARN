@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unimc_75.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unimc_75" area_of_study="Humanities" age="25" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="intermediate level (B1)" years_study_range="≤13 years" years_study="since middle school" certificates="no" certificates_level="N/A" chatbot="ChatGPT" device="PC" collected_by="UniMc">
+	<task type="role play">
+		<turn type="student"><CSINTER corr="Let's do a role play activity in English so I can practice my English?">Facciamo un role play in inglese per esercitare il mio inglese?</CSINTER></turn>
+		<turn type="chatbot" who="ChatGPT">Certo! Che tipo di role play ti piacerebbe fare? Possiamo simulare una conversazione legata al tuo lavoro (ad esempio con i genitori di un bambino o una riunione con un insegnante), oppure possiamo fare una situazione quotidiana, come andare al ristorante o chiedere indicazioni. Dimmi tu!</turn>
+		<turn type="student"><DMCC corr="We">we</DMCC> will organize a summer trip for 2 <GNN corr="people">person</GNN>. I'm the client</turn>
+		<turn type="chatbot" who="ChatGPT">Great! I'll be the travel agent helping you plan your summer trip. Let's start:
+		Travel Agent:
+		Good morning! Welcome to Dream Travels. How can I assist you today?
+		Your turn! 😊</turn>
+		<turn type="student">Good morning!   I will go to <GA corr="\0">the</GA> America <GA corr="\0">the</GA> next summer with my boyfriend. We would <XVCO corr="like to visit">like visit</XVCO> <GA corr="\0">the</GA> California during <DMCC corr="August">august</DMCC></turn>
+		<turn type="chatbot" who="ChatGPT">Travel Agent:
+		That sounds wonderful! California is a fantastic destination, especially in August. There’s so much to see and do! Are you looking for a mix of city experiences, nature, and beaches, or do you have specific activities in mind?</turn>
+		<turn type="student"><CSINTER corr="Correct my English if necessary">correggi il mio inglese se necessario</CSINTER></turn>
+		<turn type="chatbot" who="ChatGPT">Certamente! Ecco una versione corretta della tua frase:
+		"Good morning! I’m going to America next summer with my boyfriend. We’d like to visit California in August."
+		Proseguiamo! 😊</turn>
+		<turn type="student"><DMCC corr="Yes">yes</DMCC></turn>
+		<turn type="chatbot" who="ChatGPT">Travel Agent:
+		Great! California has some amazing highlights. You could explore cities like Los Angeles and San Francisco, visit national parks like Yosemite, or relax on the beaches of San Diego. How long do you plan to stay, and do you have a budget in mind?
+		Your turn!</turn>
+		<turn type="student">We'd like <GVNF corr="to visit">visit</GVNF> National parks, because we like <GA corr="\0">the</GA> nature. However we'd <XVCO corr="like to visit">like visit</XVCO> <GNN corr="big cities">the big city</GNN> too.   I don't know how many days <GVAUX corr="are">\0</GVAUX> needed for this. We have <Z corr="a budget of 2500€">a 2500€ for the budget</Z></turn>
+		<turn type="chatbot" who="ChatGPT">Here's your corrected sentence:
+		"We'd like to visit national parks because we love nature. However, we'd also like to visit the big cities. I’m not sure how many days we’ll need for this. We have a budget of €2500."
+		Travel Agent:
+		That sounds like a great plan! A mix of nature and city life will give you the best of both worlds. For a 10-14 day trip, visiting both the national parks and cities is doable with your budget, but we will need to prioritize and plan carefully. Would you prefer to rent a car and drive between places, or are you thinking about using public transportation?</turn>
+		<turn type="student"><DMCC corr="We">we</DMCC> <GVAUX corr="would">\0</GVAUX> prefer to rent a car for this trip</turn>
+		<turn type="chatbot" who="ChatGPT">Here's your corrected sentence:
+		"We prefer to rent a car for this trip."
+		Travel Agent:
+		Perfect choice! Renting a car will give you flexibility to explore at your own pace. For a trip combining national parks and cities, I’d recommend flying into San Francisco or Los Angeles, then driving to the national parks, such as Yosemite and Sequoia, before returning to the city for some urban exploration. Does that sound good to you?</turn>
+		<turn type="student"><DMCC corr="Can">can</DMCC> you repeat please?</turn>
+		<turn type="chatbot" who="ChatGPT">Of course! Here's what I said:
+		Travel Agent:
+		Perfect choice! Renting a car will give you flexibility to explore at your own pace. For a trip combining national parks and cities, I’d recommend flying into San Francisco or Los Angeles, then driving to the national parks, such as Yosemite and Sequoia, before returning to the city for some urban exploration. Does that sound good to you?
+		Let me know if you'd like me to explain or modify anything!</turn>
+		<turn type="student">Oh yes!   Is it <XADJCO corr="possible to visit"><FS corr="possible">possibile</FS> visit</XADJCO> the <DMCC corr="Death Valley">death valley</DMCC>?</turn>
+		<turn type="chatbot" who="ChatGPT">Here's your corrected sentence:
+		"Oh yes! Is it possible to visit Death Valley?"
+		Travel Agent:
+		Yes, absolutely! Death Valley is a unique and beautiful place to visit. It's located a bit further from the other parks, but if you're up for the drive, it’s definitely worth it, especially in the summer when the desert landscapes are breathtaking. Just keep in mind that it can get extremely hot in August, so make sure to prepare for the heat and stay hydrated. Would you like to include Death Valley in your itinerary?</turn>
+	</task>
+	<task type="small talk">
+		<turn type="student">Okay, <CSINTER corr="let's change game. Let's do a small talk activity in which we talk about what we do in life and how we feel">cambiamo gioco.   Facciamo una small talk in cui parliamo di cosa facciamo nella vita e come ci sentiamo</CSINTER></turn>
+		<turn type="chatbot" who="ChatGPT">Certo, facciamo una small talk! Comincio io:
+		Me:
+		Hi! How are you today? What do you do for a living?
+		Your turn! 😊</turn>
+		<turn type="student">Today I'm very tired!
+		Every day I plan to do a thousand things, but by the end of the day, I end up doing only half of them</turn>
+		<turn type="chatbot" who="ChatGPT">Here's your corrected sentence:
+		"Today I'm very tired! Every day I plan to do a thousand things, but by the end of the day, I end up doing only half of them."
+		Me:
+		I totally understand! It can be so hard to get everything done, especially when there’s so much on your plate. What do you do for work, if you don't mind me asking?</turn>
+		<turn type="student">I'm working in a school, but I'm a student. For this reason my head is full </turn>
+		<turn type="chatbot" who="ChatGPT">Here's your corrected sentence:
+		"I’m working in a school, but I’m also a student. That’s why my head is full."
+		Me:
+		That sounds like a lot to juggle! Balancing work and studying can be really challenging. What are you studying?</turn>
+		<turn type="student">I'm <FS corr="studying">studing</FS> in Macerata University, the name of <GA corr="the">\0</GA> course is <CSINTRA corr="Primary Teacher Education">"scienze della formazione primaria"</CSINTRA>.   What do you do in life?</turn>
+		<turn type="chatbot" who="ChatGPT">Here's your corrected sentence:
+		"I’m studying at Macerata University, and the name of the course is 'Scienze della formazione primaria.'"
+		Me:
+		That sounds like a fascinating course! I imagine it’s very rewarding to work with children and help them learn. As for me, I work as a language model, helping people with information, language learning, and more. It’s a bit different from your job, but it’s always interesting! How are you finding your course so far?</turn>
+		<turn type="student">I'm almost done, but I still have the last exams to take</turn>
+		<turn type="chatbot" who="ChatGPT">Here's your corrected sentence:
+		"I’m almost done, but I still have the last exams to take."
+		Me:
+		That's exciting! You're so close to finishing. I can imagine the exams might feel a bit stressful, but you're almost there. Do you have a favorite subject or something you're looking forward to most after finishing your exams?</turn>
+	</task>
+</text>
+</file>

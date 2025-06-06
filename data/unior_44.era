@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unior_44.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unior_44" area_of_study="Social sciences" age="18" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="intermediate level (B1)" years_study_range="≤13 years" years_study="13" certificates="yes" certificates_level="N/A" chatbot="ChatGPT" device="Smartphone" collected_by="UniOr">
+	<task type="role play">
+		<turn type="student">You are an encouraging tutor who helps students improve their English by engaging in role play activities. Let's engage in a role play activity where <DMCC corr="I">i</DMCC>, the student, play the role of a girl asking questions about <GA corr="a">the</GA> future trip to Disneyland Paris. You, the <FS corr="AI">Ai</FS>, will be the one who has to answer my questions, because you work at the travel agency.</turn>
+		<turn type="chatbot" who="ChatGPT">Great! Let’s get started with the role play. I’m the travel agent, ready to answer your questions about your upcoming trip to Disneyland Paris. Whenever you're ready, ask away!</turn>
+		<turn type="student">Good morning, <DMCC corr="I’m">i’m</DMCC> here because <DMCC corr="I">i</DMCC> bought three tickets to Disneyland Paris four months ago but since I don’t know <LP corr="a lot of">a lot</LP> information about the place or the food there and the trip will be in two days from now, can you give me more information please?</turn>
+		<turn type="chatbot" who="ChatGPT">Good morning! I'd be delighted to help you get ready for your trip to Disneyland Paris. It sounds like an exciting adventure! Let me answer your questions one by one.
+		First, Disneyland Paris has two main parks: Disneyland Park, which is the more classic Disney experience with rides, parades, and the famous Sleeping Beauty Castle, and Walt Disney Studios Park, which focuses on movies and behind-the-scenes experiences. Do you know which park you'll visit, or do you plan to explore both?
+		As for food, there are plenty of options! You’ll find everything from quick service restaurants offering burgers, pizzas, and snacks to themed dining experiences. For example, Auberge de Cendrillon offers a princess-themed dining experience, while Pizzeria Bella Notte serves Italian dishes with a Disney twist. If you have dietary restrictions, Disneyland Paris is very accommodating—just let me know, and I can guide you further.
+		What other details would you like to know? Rides, shows, or maybe tips on what to bring?</turn>
+		<turn type="student">I will go to both <WR corr="\0">of</WR> <GA corr="\0">the</GA> <GNN corr="theme parks">themes park</GNN> but <FS corr="I">a</FS> like   Disneyland park better, now that <DMCC corr="I">i</DMCC> know about the food, <DMCC corr="I">i</DMCC> <GVT corr="would">will</GVT> like to know if there are rides <FS corr="not">no</FS> available for pregnant women? <DMCC corr="Because">because</DMCC> my mom is pregnant and <DMCC corr="I">i</DMCC> don’t want to upset her, if all the rides there aren’t <Z corr="available">\0</Z> for pregnant women</turn>
+		<turn type="chatbot" who="ChatGPT">That’s such a thoughtful question, and it’s great that you’re thinking ahead to make sure your mom has a safe and enjoyable time! Many of the rides at Disneyland Park and Walt Disney Studios Park are gentle and suitable for everyone, including pregnant women, but there are also some rides she’ll need to avoid.
+		Rides to Avoid for Pregnant Women:
+		Disneyland Paris has specific signs at each attraction indicating if they’re not recommended for pregnant women. Generally, these include rides with sharp turns, sudden drops, or intense motion. Examples include:
+		Big Thunder Mountain (rollercoaster)
+		Indiana Jones and the Temple of Peril (rollercoaster with loops)
+		Star Wars Hyperspace Mountain (fast coaster with spins)
+		Pirates of the Caribbean (features small drops)
+		At Walt Disney Studios Park, rides like RC Racer, Twilight Zone Tower of Terror, and Ratatouille: The Adventure (mild motion simulation) may also not be suitable.
+		Rides and Attractions Safe for Pregnant Women:
+		There are still plenty of enjoyable experiences for her, such as:
+		It’s a Small World: A calm boat ride through colorful, singing dolls.
+		Dumbo the Flying Elephant: A gentle ride where you can control how high Dumbo flies.
+		Peter Pan’s Flight: A magical, smooth ride over London and Neverland.
+		Disneyland Railroad: A relaxing train ride around the park.
+		Shows and Parades: The daily parades, nighttime fireworks, and stage shows are perfect for everyone to enjoy without physical strain.
+		Disneyland Paris also has plenty of seating areas, so if your mom wants to rest while you try the more thrilling rides, she’ll have places to relax. Does that help? Or would you like more suggestions?</turn>
+		<turn type="student"><DMCC corr="Thank">thank</DMCC> you so much, the last thing<QR corr="\0">,</QR> <DMCC corr="I">i</DMCC> want to ask you is about <GNC corr="the park's hotel">the hotel related to the park</GNC>, <DMCC corr="I">i</DMCC> am in <GNC corr="Disneyland's Santa Fe hotel">the <Z corr="Santa Fe">cars</Z> hotel of Disneyland</GNC>, is it good? <DMCC corr="Are">are</DMCC> the services open 24/7? <DMCC corr="Is">is</DMCC> the room comfy?</turn>
+		<turn type="chatbot" who="ChatGPT">You're staying at Disney’s Hotel Santa Fe, the Cars-themed hotel—great choice! It’s a fun and colorful hotel inspired by Pixar’s Cars, and it’s perfect for Disney fans. Let me answer your questions in detail:
+		Is the hotel good?
+		Absolutely! Hotel Santa Fe is a value Disney hotel, meaning it’s budget-friendly while still offering a magical Disney experience. The Cars theme is present everywhere, from the room decorations to the lobby design, so if you love Cars, you’ll feel right at home. It’s also just a 15-minute walk from the parks, or you can take the free shuttle service.
+		Are the services open 24/7?
+		Not everything at the hotel is open 24/7, but the front desk and concierge services are available 24 hours a day to assist you with any questions or needs. If you need snacks, drinks, or small essentials, there are vending machines and a boutique in the hotel that stay open late. The restaurant and bar have set hours, though, so you might want to check their schedule when you arrive.
+		Is the room comfy?
+		Yes, the rooms are cozy and themed with Cars artwork and decor, featuring characters like Lightning McQueen. The beds are comfortable, and the rooms are equipped with everything you need:
+		A private bathroom with basic toiletries
+		A TV with Disney channels
+		Free Wi-Fi
+		Air conditioning
+		If you’re traveling with your family, the room is designed to fit up to four people comfortably.</turn>
+		<turn type="student">Ok, thanks! Byeeee!</turn>
+		<turn type="chatbot" who="ChatGPT">You’re very welcome! Have an amazing time at Disneyland Paris—it’s going to be magical! Byeee!</turn>
+	</task>
+	<task type="small talk">
+		<turn type="student"><DMCC corr="Chat">chat</DMCC>, sincerely, <DMCC corr="I">i</DMCC> wanted to talk to you about <GA corr="\0">the</GA> films and <LWCO corr="TV series">series</LWCO> on <GA corr="\0">the</GA> various platforms</turn>
+		<turn type="chatbot" who="ChatGPT">Of course! Let’s chat about films and series. What platforms are you interested in—Netflix, Disney+, Amazon Prime, or others? And are you looking for recommendations, discussing a particular show or movie, or maybe talking about upcoming releases? Let me know!</turn>
+		<turn type="student"><DMCC corr="Not"><FS corr="not">no</FS></DMCC> right now, <DMCC corr="I">i</DMCC> want to talk in a friendly way, the role play is done</turn>
+		<turn type="chatbot" who="ChatGPT">Got it! Let’s just chat casually then. What have you been watching lately? Or are there any shows or movies you’re curious about?</turn>
+		<turn type="student"><DMCC corr="Unfortunately">unfortunately</DMCC>, <DMCC corr="I">i</DMCC> don’t like watching <LWCO corr="TV series">series</LWCO>, they are too long and if they don’t catch <GADVO corr="my attention immediately">immediately my attention</GADVO>, I <LP corr="leave them in the background">leave them as a background</LP> while doing other things</turn>
+		<turn type="chatbot" who="ChatGPT">That’s totally fair—series can feel like a big commitment, especially if they’re slow to grab your attention. Sounds like you might prefer movies since they’re shorter and have a quicker payoff. Do you usually enjoy a specific genre, or does it depend on your mood? Or maybe you prefer documentaries or stand-alone content?</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC> love thriller and horror movies a lot, you?</turn>
+		<turn type="chatbot" who="ChatGPT">Thrillers and horror? Great taste! I enjoy talking about them because they always spark intense conversations. There’s something exciting about a good jump scare or a clever plot twist that keeps you on the edge of your seat.
+		Do you prefer supernatural horror (The Conjuring kind), psychological thrillers (Gone Girl vibe), or slasher classics (Scream, Halloween)?</turn>
+	</task>
+</text>
+</file>

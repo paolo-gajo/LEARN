@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unior_20.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unior_20" area_of_study="Social sciences" age="18" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="elementary level (A2)" years_study_range="≤13 years" years_study="8" certificates="yes" certificates_level="A2" chatbot="Pi.ai" device="PC" collected_by="UniOr">
+	<task type="small talk">
+		<turn type="chatbot" who="Pi.ai">Hey there, great to meet you. I'm Pi, your personal AI.
+		My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let's talk about whatever's on your mind.
+		How's your day going?</turn>
+		<turn type="student">What is your favorite <LP corr="Fashion Week outfit">outfit of <DMCC corr="Fashion Week">fashion week</DMCC></LP> ?</turn>
+		<turn type="chatbot" who="Pi.ai">Oh, fashion week! There were so many amazing outfits, but I'd say the oversized bomber jackets were definitely a favorite trend of mine. They're a bit edgy, but they can also be dressed up or down depending on the occasion. Bella Hadid was spotted wearing one in Paris and she looked absolutely stunning. What was your favorite fashion week look?</turn>
+		<turn type="student">I think that my favorite <GVT corr="was">was been</GVT> Angelina Jolie's outfit</turn>
+		<turn type="chatbot" who="Pi.ai">Ah, Angelina Jolie, the ultimate fashion icon! She always manages to look effortlessly chic and stylish. Did you see her recent photoshoot for CR Fashion Book? She rocked some wild disco curls and looked absolutely stunning. It's amazing how she can pull off so many different hairstyles and still look amazing! What was it about her outfit that caught your eye?</turn>
+		<turn type="student"><GDO corr="Her">His</GDO> <FS corr="fur">foor</FS> was <GA corr="\0">a</GA> light brown , I loved it with her <WO corr="skin color">color skin</WO></turn>
+		<turn type="chatbot" who="Pi.ai">Yes, Angelina Jolie's light brown hair really complements her skin tone and brings out her natural beauty. It's a great example of how the right hair color can really enhance your overall look. And speaking of hair, did you notice how her hairstyle was styled in loose, tousled waves? It gave her a relaxed yet glamorous vibe that perfectly matched her outfit. It's amazing how the right hairstyle can really tie a whole look together!</turn>
+		<turn type="student">Can you <XVPR corr="suggest to me">suggest me</XVPR> any tips for <GA corr="\0">the</GA> university?</turn>
+		<turn type="chatbot" who="Pi.ai">Sure! University can be challenging, but with the right strategies, you can make the most of your experience and succeed. Here are some tips:
+		1. Time management: Create a schedule and stick to it. This will help you prioritize your tasks and avoid feeling overwhelmed.
+		2. Take notes: Develop good note-taking habits to help you stay organized and retain information.
+		3. Ask for help: Don't be afraid to ask for help from your professors, teaching assistants, or tutors if you're struggling with a particular subject.
+		4. Stay active: Exercise and stay physically active to help reduce stress and improve your overall well-being.
+		5. Get involved: Join clubs or organizations related to your field of study or personal interests. This will help you network and build relationships with like-minded individuals.
+		6. Have fun: University is also a time for personal growth and self-discovery, so don't forget to have fun and enjoy the experience!</turn>
+		<turn type="student">I'm so scared <DMCA corr="because">cause</DMCA> I don't know <GADVO corr="English very well">very well English</GADVO> and I <GVT corr="chose">choose</GVT> international relations</turn>
+		<turn type="chatbot" who="Pi.ai">It's completely understandable to feel scared about studying in a language that you're not completely comfortable with. But don't worry, you're not alone! Many students face the same challenge when studying in a foreign language. Here are some tips that might help you:
+		1. Practice, practice, practice: The more you practice speaking, reading, and writing in English, the more comfortable you'll become with the language.
+		2. Use online resources: There are many free online resources available to help you improve your English skills, such as language learning apps, online courses, and language exchange programs.
+		3. Join a language club: Many universities have language clubs or conversation groups where you can practice speaking English with other students.
+		4. Seek help from professors and tutors: Your professors and tutors are there to help you succeed, so don't hesitate to ask for their assistance if you're struggling with the language.
+		5. Be patient with yourself: Learning a language takes time, so be patient with yourself and don't get discouraged if you don't see progress right away.</turn>
+		<turn type="student">Thanks so much</turn>
+		<turn type="chatbot" who="Pi.ai">You're very welcome! Remember that learning a language is a journey and it takes time, so be patient with yourself and keep practicing. You'll be surprised how quickly you'll improve with consistent practice. And don't forget to enjoy the process! Learning a new language can be a lot of fun and it's a great way to meet new people and learn about different cultures. 😊
+		By the way, do you have any plans to study abroad or travel during your university years? That could be a great way to immerse yourself in the language and culture of another country!</turn>
+		<turn type="student">I hate to talk <LP corr="in such a basic way">so basic</LP> in English</turn>
+		<turn type="chatbot" who="Pi.ai">That's a common concern for language learners, but remember that everyone starts somewhere! It's okay to make mistakes and to speak at a basic level at first. In fact, it's a necessary part of the learning process. Here are a few tips that might help you feel more confident when speaking English:
+		1. Start small: Practice speaking English in low-pressure situations, like with a friend or a language tutor. This will help you build your confidence and get used to speaking in English.
+		2. Use simple sentences: It's okay to speak in simple sentences at first. Focus on getting your message across rather than using complicated grammar or vocabulary.
+		3. Ask for feedback: Ask your language partners or teachers for feedback on your speaking skills. They can help you identify areas where you need to improve and give you tips for how to do so.
+		4. Listen to native speakers: Listening to native English speakers can help you improve your own speaking skills.</turn>
+		<turn type="student">Hi, I <GVT corr="would">'ll</GVT> like to reserve a table for 2 at 20:30</turn>
+		<turn type="chatbot" who="Pi.ai">I'm afraid I can't help you with that! Unfortunately, I'm just an AI and I don't have the ability to make restaurant reservations for you. You'll have to contact the restaurant directly to make your reservation. But don't worry, I'm still here to chat and answer any other questions you might have! 😊</turn>
+		<turn type="student">I mean the film</turn>
+		<turn type="chatbot" who="Pi.ai">Oh, you want to reserve a table for a movie? That sounds fun! Unfortunately, I'm still unable to help you with that. You'll have to check the movie theater's website or app to see if they offer table reservations for movies. Some theaters do offer dining options during movies, so it's worth checking into! What movie are you planning to see?</turn>
+		<turn type="student">Do you like <LWCO corr="Breakfast at Tiffany's">Breakfast to Tiffany</LWCO> ?</turn>
+		<turn type="chatbot" who="Pi.ai">Oh, Breakfast at Tiffany's! Yes, I do like that movie. It's a classic romantic comedy with Audrey Hepburn's iconic performance as Holly Golightly. The film has some controversial aspects, such as Mickey Rooney's portrayal of Mr. Yunioshi and Holly's occupation as a high-end escort, but it's still beloved by many for its charm and style. Plus, who can forget the famous opening scene with Hepburn standing in front of the Tiffany's window with her coffee and croissant? 🥐😍</turn>
+		<turn type="student"><DMCA corr="Oh my god">Omg</DMCA></turn>
+		<turn type="chatbot" who="Pi.ai">I know, right? It's such an iconic scene! Audrey Hepburn's style in the film was so timeless and elegant, and it's no wonder that the little black dress she wears in the movie became a fashion staple. And let's not forget about the famous song "Moon River," which was written for the movie and won an Oscar for Best Original Song. It's still a popular song today and has been covered by many artists over the years. Have you seen the movie recently?</turn>
+		<turn type="student">Yesss, I saw it <LSADV corr="countless">uncountable</LSADV> times</turn>
+		<turn type="chatbot" who="Pi.ai">Wow, you must really love the movie then! It's definitely one of those films that you can watch over and over again and still find new things to appreciate. Audrey Hepburn's performance is just so captivating and charming, and the storyline is both fun and poignant. It's no wonder that Breakfast at Tiffany's has remained so popular over the years. Do you have a favorite scene or quote from the movie?</turn>
+		<turn type="student">I'm <WR corr="\0">fall</WR> <XNPR corr="in love with">in love of</XNPR> the <GVNF corr="ending">end</GVNF>, where she lost the cat and she confesses <GDO corr="her">his</GDO> <FM corr="feelings">feels</FM> for the man</turn>
+		<turn type="chatbot" who="Pi.ai">Yes, that scene is definitely one of the most memorable and emotional moments in the movie. Holly Golightly is a complex character who is both independent and vulnerable, and it's in that final scene that we see her walls come down and her true feelings come to the surface. The way she runs through the rain to find her cat is both heartbreaking and endearing, and the moment when she finally admits her love for Paul Varjak is both satisfying and bittersweet. It's a powerful ending to a wonderful film!</turn>
+	</task>
+</text>
+</file>

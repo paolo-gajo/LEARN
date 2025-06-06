@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unior_35.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unior_35" area_of_study="Social sciences" age="19" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="intermediate level (B1)" years_study_range=">13 years" years_study="14" certificates="no" certificates_level="N/A" chatbot="ChatGPT" device="PC" collected_by="UniOr">
+	<task type="small talk">
+		<turn type="student">Hi, what's your favorite pet?</turn>
+		<turn type="chatbot" who="ChatGPT">I don't have personal preferences, but many people love dogs for their loyalty and companionship, while others prefer cats for their independence and personality. What kind of pets do you like?</turn>
+		<turn type="student">I love animals and I have a pet, its name is Milo</turn>
+		<turn type="chatbot" who="ChatGPT">That's wonderful! Milo sounds like a great companion. What kind of animal is Milo, and what do you enjoy most about spending time with your pet?</turn>
+		<turn type="student">We play together and go out for walks</turn>
+		<turn type="chatbot" who="ChatGPT">It sounds like you and Milo have a lot of fun together! Going for walks and playing must be a great way to bond. What kinds of games do you enjoy playing with Milo?</turn>
+		<turn type="student">Outside we run and play with other dogs</turn>
+		<turn type="chatbot" who="ChatGPT">That sounds like so much fun! It must be great for both you and Milo to get out, run around, and play with other dogs. Does Milo have any favorite dog friends or games he enjoys the most when you're outside?</turn>
+	</task>
+	<task type="role play">
+		<turn type="student">Can we do <GA corr="a">\0</GA> role play? I have to practice with my <DMCC corr="English">english</DMCC></turn>
+		<turn type="chatbot" who="ChatGPT">Of course! I'd be happy to help you practice English through role play. What kind of scenario would you like to practice? It could be a job interview, ordering food at a restaurant, a casual conversation, or something else. Let me know!</turn>
+		<turn type="student">I want to <XNPR corr="travel to">travel in</XNPR> <DMCC corr="Korea">korea</DMCC> and you Will help me to find a <LSN corr="flight">fly</LSN> and hotel there</turn>
+		<turn type="chatbot" who="ChatGPT">Great choice! Let's start by role-playing your travel planning to Korea. I’ll act as a travel agent, and you’ll be the traveler. Ready? 
+		Travel Agent (me):
+		Hello! Welcome to our travel agency. I hear you're interested in traveling to Korea. Could you tell me your preferred departure city, travel dates, and any specific city you'd like to visit in Korea?
+		You can respond as the traveler, and we'll continue from there! </turn>
+		<turn type="student">Yes sure. I want to visit <CSINTRA corr="Seoul">Seul</CSINTRA><QM corr=",">\0</QM> the most important city, and I want to go there in May because it's my birthday</turn>
+		<turn type="chatbot" who="ChatGPT">Travel Agent (me):
+		That sounds wonderful! Seoul is an exciting city to visit, and May is a perfect time with beautiful spring weather. Happy early birthday, by the way!
+		Could you tell me your departure city, and how long you’d like to stay in Seoul? Also, do you have a preferred budget for the flight and hotel, or any specific preferences for your accommodation? </turn>
+		<turn type="student">I want to stay in Seoul for a week and my departure city is Naples because it's <GADJCS corr="easier">more easy</GADJCS> for me</turn>
+		<turn type="chatbot" who="ChatGPT">Travel Agent (me):
+		Great! So, you'll be flying from Naples to Seoul for a one-week stay in May. Let’s look for some flights and hotels that match your preferences.
+		For the flights, do you have any preferences for airlines or if you’d like a direct flight or are you okay with layovers?
+		As for the hotel, are you looking for something luxurious, mid-range, or budget-friendly? Do you prefer being in a particular area of Seoul, like near tourist attractions, or more in a quieter neighborhood? </turn>
+		<turn type="student">I don't have any preferences for <FS corr="airlines">airlaines</FS>, but <DMCC corr="I">i</DMCC> would like a direct <LSN corr="flight">fly</LSN>. For the hotel <FS corr="mid-range">mind-range</FS> is ok, <DMCC corr="I">i</DMCC> don't want to spend so much Money only for the hotel</turn>
+		<turn type="chatbot" who="ChatGPT">Travel Agent (me):
+		Got it! I’ll search for direct flights from Naples to Seoul for a week in May, and I’ll also find some mid-range hotels in good locations.
+		Let’s assume you’re traveling from May 1st to May 8th. Here’s what I’ve found:
+		Flights
+		Direct Flight Options:
+		Airline A: Departing from Naples on May 1st at 10:00 AM, arriving in Seoul at 7:00 AM (next day). Round trip price: $800.
+		Airline B: Departing from Naples on May 1st at 12:00 PM, arriving in Seoul at 9:00 AM (next day). Round trip price: $850.
+		Hotels
+		Mid-Range Hotel A:
+		Location: Myeongdong (great for shopping and food)
+		Price: $100 per night
+		Amenities: Free Wi-Fi, breakfast included, fitness center.
+		Mid-Range Hotel B:
+		Location: Gangnam (known for its nightlife and restaurants)
+		Price: $110 per night
+		Amenities: Free Wi-Fi, restaurant, and a rooftop terrace.
+		Mid-Range Hotel C:
+		Location: Insadong (close to cultural sites)
+		Price: $95 per night
+		Amenities: Free Wi-Fi, traditional Korean breakfast, garden.
+		Summary
+		Flights: Starting from $800 round trip.
+		Hotels: Average of $100 per night.
+		What do you think? Would you like to proceed with one of these options, or do you have any changes or preferences?</turn>
+		<turn type="student">I would like <DMCC corr="Airline">airline</DMCC> A and mid-range <DMCC corr="Hotel C">hotel c</DMCC>, <DMCC corr="I">i</DMCC> love that It has <GA corr="a">\0</GA> garden</turn>
+		<turn type="chatbot" who="ChatGPT">Travel Agent (me):
+		Excellent choices! You’ve selected Airline A for your flight and Mid-Range Hotel C with the lovely garden in Insadong. Here’s a summary of your trip:
+		Itinerary
+		Flight Details:
+		Airline: Airline A
+		Departure: Naples on May 1st at 10:00 AM
+		Arrival: Seoul on May 2nd at 7:00 AM
+		Return: May 8th (exact return details can be confirmed later)
+		Round Trip Price: $800
+		Hotel Details:
+		Name: Mid-Range Hotel C
+		Location: Insadong
+		Price: $95 per night
+		Total for 7 nights: $665
+		Amenities: Free Wi-Fi, traditional Korean breakfast, and garden access.
+		Total Cost
+		Flight: $800
+		Hotel: $665
+		Grand Total: $1,465
+		Would you like to proceed with booking this itinerary, or do you need any additional information, such as things to do in Seoul or travel tips?</turn>
+	</task>
+</text>
+</file>
