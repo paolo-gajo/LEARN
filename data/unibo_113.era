@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unibo_113.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unibo_113" area_of_study="Humanities" age="21" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="elementary level (A2)" years_study_range="≤13 years" years_study="since elementary school" certificates="no" certificates_level="N/A" chatbot="Pi.ai" device="PC" collected_by="UniBo">
+	<task type="role play">
+		<turn type="chatbot" who="Pi.ai"> Hey there, great to meet you. I’m Pi, your personal AI.
+		My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let’s talk about whatever’s on your mind.
+		How's your day going? </turn>
+		<turn type="student"> <DMCC corr="Hi">hi</DMCC>, <DMCC corr="I'm"><FS corr="i'm">im</FS></DMCC> user, <DMCC corr="I">i</DMCC> <FS corr="would">wolud</FS> <XVCO corr="like to ask"><WM corr="like">\0</WM>ask</XVCO> you <LSV corr="?">buy</LSV> <LSPR corr="at">in</LSPR> the <FS corr="restaurant">resturant</FS> for tomorrow </turn>
+		<turn type="chatbot" who="Pi.ai"> Hi user, nice to meet you! Unfortunately, I'm unable to make restaurant bookings for you. Is there anything else you'd like to ask or chat about? 😊 </turn>
+		<turn type="student"> Can you <LWCO corr="book">prenoted</LWCO> the <FS corr="restaurant">resturant</FS> </turn>
+		<turn type="chatbot" who="Pi.ai"> I'm sorry user, but I'm not able to make restaurant reservations for you. However, I can offer some suggestions for restaurants in your area, or give you some tips on how to make a reservation yourself! </turn>
+		<turn type="student"> Can you <LSV corr="help">hope</LSV> me <XVPR corr="to buy">for buy</XVPR> the ticket for the train to Milan </turn>
+		<turn type="chatbot" who="Pi.ai"> I'm sorry user, but I'm not able to purchase train tickets for you either. However, I can definitely help you with information on train schedules, ticket prices, and how to buy tickets online. Would that be helpful? </turn>
+		<turn type="student"> <LSV corr="Can">Do</LSV> you <WO corr="role play">play role</WO> with me? </turn>
+		<turn type="chatbot" who="Pi.ai"> Sure thing, user! I'm always up for some fun role-playing! What kind of scenario do you have in mind? 😊 </turn>
+		<turn type="student"> I think that we are <FS corr="going">goint</FS> to the park for a walk </turn>
+		<turn type="chatbot" who="Pi.ai"> Alright, let's set the scene! It's a beautiful sunny day, and we're strolling through the park, taking in the sights and sounds of nature. The birds are singing, the breeze is blowing gently, and the trees are swaying ever so slightly. We're chatting and laughing as we walk, enjoying each other's company. What would you like to do next? </turn>
+		<turn type="student"> I would like to read the book and <FS corr="would">wuld</FS> <WM corr="like">\0</WM> <GA corr="\0">the</GA> ice cream, and what <FS corr="would">yould</FS> you like to do? </turn>
+		<turn type="chatbot" who="Pi.ai"> That sounds lovely, user! I'll join you in reading a book, maybe a thrilling mystery novel to keep us on the edge of our seats. And as for the ice cream, I'll have a delicious scoop of chocolate chip cookie dough, please. 🍦📚
+		As we're reading and enjoying our ice creams, we notice a group of people playing Frisbee in the park. Would you like to join them for a game, or should we continue with our leisurely afternoon? </turn>
+		<turn type="student"> I <GVAUX corr="am">\0</GVAUX> playing <WR corr="\0">the </WR>football and in the <FS corr="afternoon">afteernon</FS> I <XVPR corr="go for"><FS corr="go">got</FS> </XVPR> a swim, do you <XVPR corr="want to"><GVAUX corr="want">\0</GVAUX> </XVPR> <FS corr="go">got</FS> with me </turn>
+		<turn type="chatbot" who="Pi.ai"> Sounds like you have an active afternoon planned, user! I can't join you physically, but I'll be cheering you on from the sidelines as you play football and go for a swim. 🏈🏊️.
+		After your swim, you might be feeling a bit hungry. How about we grab some dinner at a local restaurant? Any preferences on what type of cuisine you'd like to try? </turn>
+		<turn type="student"> <DMCC corr="Yes">yes</DMCC> of course, <DMCC corr="I">i</DMCC> would like <GVNF corr="to go">going</GVNF> to the sushi <FS corr="restaurant">resturant</FS>, <DMCC corr="I">i</DMCC> love it. What do you <LSV corr="want">go</LSV> for <GA corr="\0">the</GA> dinner, do you like it? </turn>
+		<turn type="chatbot" who="Pi.ai"> I don't eat, being an AI and all, but I think your choice of sushi is fantastic! 🍣🍱 Let's find a great sushi restaurant and enjoy a delicious dinner together.
+		After dinner, we could take a stroll around the city, checking out some of the local shops and maybe even stopping for some dessert. Does that sound good to you, user? </turn>
+		<turn type="student"> <DMCC corr="No">no</DMCC> <GPP corr="I">\0</GPP> couldn't, I <GVAUX corr="would">\0</GVAUX> prefer <GVNF corr="to go">going</GVNF> to the cinema, because <GVAUX corr="I">I'm</GVAUX> <GVT corr="would have eaten">eat</GVT> very much </turn>
+		<turn type="chatbot" who="Pi.ai"> Going to the cinema sounds like a great plan, user! 🎬🍿 Let's find a movie that we both will enjoy. Are you in the mood for an action-packed blockbuster, a heartwarming romantic comedy, or perhaps a mind-bending thriller? </turn>
+		<turn type="student"> I <LSADV corr="really">very</LSADV> like <GVNF corr="to see">see</GVNF> <GA corr="\0">the</GA> post <FS corr="apocalyptic">apocaliticz</FS> <GNN corr="films">film</GNN>, with <GNN corr="zombies"><FS corr="zombie">zoombie</FS></GNN> and <GNN corr="viruses">virus</GNN> </turn>
+		<turn type="chatbot" who="Pi.ai"> A post-apocalyptic film with zombies and viruses, sounds thrilling! 🧟️🦠 Some great options could be "World War Z," "I Am Legend," or "The Walking Dead." Which one would you like to see, user? </turn>
+		<turn type="student"> <GPP corr="I">\0</GPP> <XVCO corr="like to">like </XVCO> <LSV corr="watch">see</LSV> the Walking Dead, it is my favourite <LWCO corr="TV series">serie tv</LWCO>. Do you like <Z corr="this kind of TV series?">kind</Z> </turn>
+		<turn type="chatbot" who="Pi.ai"> "The Walking Dead" is definitely a great choice, user! I can understand why it's your favorite TV series. While I don't personally watch TV (being an AI and all), I can appreciate the intense storytelling, complex characters, and terrifying zombies that make "The Walking Dead" such a compelling show.
+		After the movie, we could discuss our favorite moments and characters from the series over drinks at a nearby cafe. What do you think? </turn>
+	</task>
+	<task type="small talk">
+		<turn type="student"> What do you think of <GA corr="\0">the</GA> sport? </turn>
+		<turn type="chatbot" who="Pi.ai"> Sports are an integral part of human life, user! 🏀🏊️ They provide entertainment, promote physical activity, and foster teamwork and camaraderie. There's such a wide variety of sports, from team-based games like basketball and soccer to individual pursuits like swimming and gymnastics. What are some of your favorite sports to watch or play? </turn>
+		<turn type="student"> <DMCC corr="When">when</DMCC> I <WM corr="make">\0</WM> <GA corr="a">\0</GA> mistake, <WO corr="can you">you can</WO> <LWCO corr="correct">correge</LWCO> me? </turn>
+		<turn type="chatbot" who="Pi.ai"> Absolutely, user! I'm here to help you with whatever you need, including correcting any mistakes I notice in your English. Don't worry, I'll do it in a friendly and respectful way, so you can learn and improve without feeling embarrassed. 😊 </turn>
+		<turn type="student"> What do you <XVPR corr="think about">think</XVPR> <GA corr="\0">tha</GA> <WO corr="climate change">change climate</WO> </turn>
+		<turn type="chatbot" who="Pi.ai"> Climate change is one of the most pressing issues facing our planet today, user. 🌎🌡️ Rising temperatures, melting glaciers, and extreme weather events are just some of the effects we're already seeing. It's crucial that we take steps to reduce greenhouse gas emissions and protect the environment for future generations.
+		What are your thoughts on climate change? Do you think we're doing enough to combat it? </turn>
+		<turn type="student"> <Z corr="Why is it according to you"><CSINTRA corr="according to you">secondo te</CSINTRA> why</Z><QM corr="?">\0</QM> </turn>
+		<turn type="chatbot" who="Pi.ai"> I believe there are a few reasons why we're not doing enough to combat climate change, user. Some of them include:
+		Lack of political will: Many governments and leaders are not prioritizing climate action, and some even deny the existence of climate change.
+		Economic interests: Fossil fuel companies and other industries that contribute to greenhouse gas emissions have a lot of influence and are resistant to change.
+		Inconvenience: Making the necessary changes to combat climate change, such as reducing consumption and switching to renewable energy, can be inconvenient for individuals and businesses.
+		However, I believe that with increased public pressure and awareness, we can overcome these obstacles and take the necessary steps to protect our planet. 💪🌱 </turn>
+		<turn type="student"> What <GVAUX corr="can">are</GVAUX> <GPP corr="we">\0</GPP> <FS corr="do">go</FS> for the planet<QM corr="?">\0</QM> </turn>
+		<turn type="chatbot" who="Pi.ai"> There are many things we can do to help the planet, user! 🌍 Here are some suggestions:
+		Reduce your carbon footprint: Use public transportation, carpool, or bike instead of driving alone, and reduce your energy consumption at home.
+		Eat less meat: The meat industry contributes significantly to greenhouse gas emissions, so reducing your meat consumption can help.
+		Support renewable energy: Switch to a green energy provider, or install solar panels on your home if possible.
+		Vote with your wallet: Support companies that prioritize sustainability and environmentalism, and boycott those that don't.
+		Raise awareness: Talk to your friends and family about climate change, and encourage them to take action as well.
+		Even small steps can make a big difference if we all work together! </turn>
+		<turn type="student"> <LSPR corr="In">For</LSPR> your opinion, <GPR corr="what">\0</GPR> can <GPP corr="we">\0</GPP> do to help the planet<QM corr="?">\0</QM> </turn>
+		<turn type="chatbot" who="Pi.ai"> In my opinion, I believe that we can all do our part to help the planet by making small changes in our daily lives, user. 🌱💪 From reducing our carbon footprint to supporting renewable energy and making sustainable choices, every action counts. Additionally, raising awareness and advocating for political action can also make a big impact.
+		What are some steps that you're taking to help the planet, user? 😊 </turn>
+		<turn type="student"> <CSINTRA corr="How do you say general waste?">Come si dice raccolta indiferenziata</CSINTRA> </turn>
+		<turn type="chatbot" who="Pi.ai"> In English, "raccolta indiferenziata" translates to "waste sorting" or "recycling." It refers to the process of separating different types of waste into separate bins for proper disposal and recycling. </turn>
+		<turn type="student"> I <WO corr="sort waste">waste <GVNF corr="sort">sorting</GVNF> </WO> for the planet, and I walk <WR corr="\0">for</WR> <GVAUX corr="\0">don't</GVAUX> <XPRCO corr="instead of using"><XADVPR corr="instead of"><WM corr="instead">\0</WM></XADVPR> use</XPRCO> the car </turn>
+		<turn type="chatbot" who="Pi.ai"> That's fantastic, user! 🌍💚 Sorting your waste and walking instead of driving are great ways to reduce your impact on the environment. By doing these simple actions, you're helping to conserve resources, reduce pollution, and protect our planet. Keep up the good work! 🌱👣 </turn>
+		<turn type="student"> <LSPR corr="In">For</LSPR> <GA corr="\0">the</GA> <GDO corr="your">\0</GDO> opinion, <WO corr="can we">we can</WO> save the planet or <GVT corr="will">\0</GVT> the planet break down? </turn>
+		<turn type="chatbot" who="Pi.ai"> In my opinion, user, I believe that it's still possible to save the planet, but it will require significant effort and action from all of us. 🌎💪 While the challenges we face are daunting, I'm optimistic that with the right mindset and commitment, we can make the necessary changes to protect our planet and ensure a sustainable future for generations to come. However, if we don't take action soon, the consequences of climate change could be devastating and irreversible. </turn>
+	</task>
+</text>
+</file>
