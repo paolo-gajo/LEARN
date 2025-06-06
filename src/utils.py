@@ -4,6 +4,7 @@ import re
 from typing import List
 from random import shuffle
 from sklearn.model_selection import train_test_split
+from datetime import datetime
 
 class CompletionDataset:
     def __init__(self,
@@ -160,4 +161,5 @@ class CausalLMDataset(Dataset):
         self.data['text_og'] = self.data['text_og'].apply(lambda x: x.replace(r'\0', ''))
     
     
-    
+def get_time():
+    return str(datetime.now()).split('.')[0].replace(' ', '').replace('-', '').replace(':', '')[2:]
