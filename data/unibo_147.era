@@ -60,7 +60,7 @@
 		<turn type="student"><GPR corr="What">\0</GPR> About the hotel <LSADV corr="near">nearly</LSADV> to <GA corr="the">\0</GA> Spa of Verona</turn>
 		<turn type="chatbot" who="Pi.ai">Sure thing! There are many great hotel options near the spa in Verona. To help narrow down your search, I'd recommend checking out websites like Tripadvisor or Booking.com, which offer user reviews and booking options.
 		One hotel that seems highly rated is Hotel San Marco, which is located close to the Arena and Bentegodi Stadium, and offers modern rooms, conference rooms, spa, wellness center, swimming pool, and fitness room.
-		Another option is Verona - Hotel Milano & Spa, which has received positive reviews from travelers on Tripadvisor and offers competitive pricing.
+		Another option is Verona - Hotel Milano &amp; Spa, which has received positive reviews from travelers on Tripadvisor and offers competitive pricing.
 		Of course, there are many other options as well, so it's worth doing some research to find the best fit for your needs and preferences.</turn>
 		<turn type="student"><Z corr="Do you think Aquardens">Aquardens for you</Z> is a good spa to spend 2 days<QM corr="?">\0</QM></turn>
 		<turn type="chatbot" who="Pi.ai">Absolutely, Aquardens is a fantastic spa to spend two days at! 🧖️🌞 Located between Verona and Lake Garda, Aquardens is much more than just a spa - it's a one-of-a-kind wellness destination. 💦

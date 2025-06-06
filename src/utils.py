@@ -20,9 +20,15 @@ class CompletionDataset:
         self.n_icl_samples = n_icl_samples
         if clean:
             self.clean()
-        self.samples = self.make_samples()
-        self.train, self.dev = train_test_split(self.samples, test_size=0.2)
+        self.train, self.dev = train_test_split(self.data, test_size=0.2)
+        self.train = self.train.reset_index()
+        self.dev = self.dev.reset_index()
         self.dev, self.test = train_test_split(self.dev, test_size=0.5)
+        self.dev = self.dev.reset_index()
+        self.test = self.test.reset_index()
+        self.train = self.make_samples('train')
+        self.dev = self.make_samples('dev')
+        self.test = self.make_samples('test')
 
     def __getitem__(self, index):
         return self.data[index]
@@ -30,9 +36,10 @@ class CompletionDataset:
     def __len__(self):
         return len(self.data)
 
-    def make_samples(self):
-        text_og_list = self.data['text_og']
-        text_an_list = self.data['text_an']
+    def make_samples(self, split = 'train'):
+        split_data = getattr(self, split)
+        text_og_list = split_data['text_og']
+        text_an_list = split_data['text_an']
         sample_list = []
         for i in range(len(text_og_list)):
             sentence = text_og_list.iloc[i]

@@ -27,19 +27,19 @@
 		Would you like me to put together a flexible itinerary for your four days with options for each day? </turn>
 		<turn type="student"> <DMCC corr="Yes">yes</DMCC> I would like <GPP corr="you">\0</GPP> <XVCO corr="to">\0</XVCO><QC corr=",">.</QC> but please <XNPR corr="pay attention to">pay attention on</XNPR> the price and also recommend <GPP corr="\0">me</GPP> some <WO corr="vintage markets you know where I can find some unique pieces">vintage <GNN corr="markets">market</GNN> where I can find some unique pieces you know</WO>. </turn>
 		<turn type="chatbot" who="ChatGPT">	Here's a budget-friendly 4-day itinerary for you, with a mix of iconic sights, vintage markets, and affordable places to eat:
-		Day 1: Explore Camden Town & Surroundings
+		Day 1: Explore Camden Town &amp; Surroundings
 		Morning: Start with breakfast at The Coffee Works Project in Camden for a cozy vibe and great coffee (affordable). Then, explore Camden Market, known for its eclectic mix of fashion, art, and food. There are great vintage stalls here, like Vintage Basement and The Camden Lock Market, which offer unique clothing and accessories.
 		Afternoon: Walk around Regent's Canal or head to Primrose Hill for a panoramic view of London. It's free and not far from Camden.
 		Dinner: Try Dishoom in Camden for affordable Indian food with a great atmosphere (it can get busy, so try to book ahead if possible).
-		Day 2: Central London - Soho, Covent Garden, & Vintage Finds
+		Day 2: Central London - Soho, Covent Garden, &amp; Vintage Finds
 		Morning: Breakfast at Flat Iron in Soho (they have great, affordable options). Afterward, stroll through Carnaby Street for trendy shops and unique finds. Explore the vintage shops around Berwick Street Market and Old Street, where you can find second-hand clothes and unique pieces at The Vintage Showroom or Beyond Retro.
 		Afternoon: Head to Covent Garden to see street performers and shop at the Apple Market (especially for vintage and handmade items).
 		Dinner: Enjoy pizza at Homeslice in Covent Garden, known for big, delicious slices at a reasonable price.
-		Day 3: South Bank, Borough Market & Vintage Shopping
+		Day 3: South Bank, Borough Market &amp; Vintage Shopping
 		Morning: Breakfast at The Breakfast Club in London Bridge (affordable, with options like pancakes and eggs). Then, take a walk along the South Bank, where you’ll pass by landmarks like the London Eye and Shakespeare's Globe. There are also some quirky, affordable shops around Southbank Centre Market.
 		Afternoon: Walk to Borough Market for lunch — this is one of London's best food markets, offering a variety of cheap and delicious meals (from street food to sandwiches). Afterwards, explore Vintage London in Bermondsey for some unique finds.
 		Dinner: Have a hearty meal at Padella, an affordable Italian restaurant near Borough Market (they have great pasta).
-		Day 4: Museums, Vintage Shops, & Hidden Gems
+		Day 4: Museums, Vintage Shops, &amp; Hidden Gems
 		Morning: Visit the British Museum (free entry) or Tate Modern for some culture. You can wander through both without spending anything.
 		Afternoon: Head to Notting Hill and visit Portobello Road Market. It's a famous vintage market, where you can find antiques, unique clothes, and quirky items. There are also great food stalls if you're feeling peckish.
 		Dinner: End the day with a budget-friendly meal at Honest Burgers in Notting Hill. It's a chain known for good, affordable burgers.
