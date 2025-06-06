@@ -62,7 +62,7 @@ def main():
             save_steps=args.train_steps,
             metric_for_best_model="f1",
             load_best_model_at_end=True,
-            # use_liger_kernel=True,
+            use_liger_kernel=True,
         ),
     )
     

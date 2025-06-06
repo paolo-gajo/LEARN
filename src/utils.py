@@ -11,8 +11,8 @@ class CompletionDataset:
                 prompt_layout: str,
                 prompt_tags: str,
                 tokenizer,
-                n_icl_samples: int =  3, 
-                clean: bool = True):
+                n_icl_samples: int=3, 
+                clean: bool=True):
         self.data = data
         self.prompt_layout = prompt_layout
         self.prompt_tags = prompt_tags
@@ -20,9 +20,9 @@ class CompletionDataset:
         self.n_icl_samples = n_icl_samples
         if clean:
             self.clean()
-        self.train, self.dev = train_test_split(self.data, test_size=0.2)
+        self.train, self.dev = train_test_split(self.data, test_size=0.2, random_state=42)
         self.train = self.train.reset_index()
-        self.dev, self.test = train_test_split(self.dev, test_size=0.5)
+        self.dev, self.test = train_test_split(self.dev, test_size=0.5, random_state=42)
         self.dev = self.dev.reset_index()
         self.test = self.test.reset_index()
         self.train = self.make_samples('train')
