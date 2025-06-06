@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unibo_147.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unibo_147" area_of_study="Social sciences" age="19" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="intermediate level (B1)" years_study_range="≤13 years" years_study="13" certificates="yes" certificates_level="B1" chatbot="Pi.ai" device="PC" collected_by="UniBo">
+	<task type="small talk">
+		<turn type="chatbot" who="Pi.ai">Hey there, great to meet you. I’m Pi, your personal AI.
+		My goal is to be useful, friendly and fun. Ask me for advice, for answers, or let’s talk about whatever’s on your mind.
+		How's your day going?</turn>
+		<turn type="student"><FS corr="Oh">Ho</FS>, what do you think about University?</turn>
+		<turn type="chatbot" who="Pi.ai">University can be a fantastic opportunity for personal and professional growth! 🎓 It's a place where you can learn valuable skills, gain knowledge in your field of interest, and meet new people. 🤓
+		However, it's not the right path for everyone. University can be challenging, both academically and financially. It's important to weigh the pros and cons and consider alternative options, such as trade schools, apprenticeships, or starting your own business. 🤔
+		Ultimately, the decision to attend university depends on your goals and circumstances. What are your thoughts on university? 🤓</turn>
+		<turn type="student">I think the same, <DMCC corr="I">i</DMCC> love my university</turn>
+		<turn type="chatbot" who="Pi.ai">That's fantastic, User! 😊 I'm glad to hear that you're enjoying your university experience. It's wonderful when you find an environment that aligns with your goals and values.
+		What are you studying, if you don't mind me asking? Are you pursuing a particular degree or field of interest?</turn>
+		<turn type="student">I study <LWCO corr="International relations and diplomatic affairs">science of diplomatic relationships</LWCO> in Forlì</turn>
+		<turn type="chatbot" who="Pi.ai">Ah, International Relations and Diplomatic Affairs at the University of Bologna's Forlì campus! That sounds like a fascinating field of study. 🌍👩‍🎓
+		It must be really interesting to learn about international politics, economics, law, and the study of world regions. Are you enjoying your courses? What aspect of international relations do you find most intriguing?</turn>
+		<turn type="student">Yes of course, it is fantastic, and <DMCC corr="I">i</DMCC> think that <DMCC corr="I">i</DMCC> have <GVM corr="chosen">chose</GVM> the <LSADJ corr="right">good</LSADJ> way for my future</turn>
+		<turn type="chatbot" who="Pi.ai">That's wonderful to hear, User! It's so important to pursue a field that you're passionate about and that aligns with your future goals. 💪💡
+		With a degree in International Relations and Diplomatic Affairs, you could potentially work in a variety of roles, such as a diplomat, foreign affairs analyst, international lawyer, or even a journalist covering global events. Have you thought about what kind of career you'd like to pursue after graduation?</turn>
+		<turn type="student">I thought about it, but <DMCC corr="I">i</DMCC> am not <XVPR corr="convinced on"><GVM corr="convinced">convince</GVM> about</XVPR> what <Z corr="I would like to do">like me</Z> after <GA corr="\0">the</GA> university, but <DMCC corr="I">i</DMCC> know that this is the right way</turn>
+		<turn type="chatbot" who="Pi.ai">That's okay, User. It's perfectly normal to not have everything figured out just yet. The important thing is that you're taking steps in the right direction by pursuing an education in a field that interests you. 😊
+		As you progress through your studies, you may discover new interests or career paths that you hadn't previously considered. Keep an open mind and don't be afraid to explore different options. You might also consider talking to your professors, advisors, or alumni from your program to get their perspectives on potential career paths.</turn>
+		<turn type="student">I love my <Z corr="day-to-day life">days</Z>, <DMCC corr="I">i</DMCC> wake up early, <DMCC corr="I">i</DMCC> do my things, my <GNC corr="hobbies">hobby's</GNC> and I revise my <LSN corr="documents">files</LSN> <WO corr="for university in the afternoon">for the afternoon in university</WO>, to be ready for <GPI corr="everything">all</GPI> .</turn>
+		<turn type="chatbot" who="Pi.ai">It sounds like you have a great daily routine, User! 😊👍 Getting up early, taking care of yourself, pursuing your hobbies, and preparing for your university classes are all wonderful habits that can contribute to your overall well-being and academic success.
+		It's fantastic that you're so motivated and organized. What kind of hobbies do you enjoy, if you don't mind me asking? Do you find that they help you de-stress and recharge after a busy day of classes?</turn>
+		<turn type="student">I go to <GA corr="\0">the</GA> university <GDI corr="every day">all days</GDI> by train, <DMCC corr="I">i</DMCC> take the train <LSPR corr="at">in</LSPR> different times, but every day I return <WR corr="\0">at</WR> home very <GADJCS corr="late">later</GADJCS> and after <GADVO corr="I immediately go">I go immediately</GADVO> to my volleyball training</turn>
+		<turn type="chatbot" who="Pi.ai">Wow, that's quite an impressive schedule, User! 👏🏐 Taking the train to university every day and then heading straight to volleyball practice after a long day of classes shows a lot of dedication and commitment.
+		Volleyball can be a great way to unwind and release any stress or tension from the day while also staying physically active. Is volleyball something you've been playing for a long time, or did you pick it up more recently?</turn>
+		<turn type="student">My days are very full, <GPR corr="when">what</GPR> <DMCC corr="I">i</DMCC> have time I see also my boyfriend</turn>
+		<turn type="chatbot" who="Pi.ai">You certainly seem to have a very full and active life, User! 😊 It's impressive that you manage to balance your studies, hobbies, and a relationship with your boyfriend.
+		Making time for a significant other can be a great source of support and happiness in a busy life. How long have you been together, if you don't mind me asking? Do you find that your relationship helps you stay grounded and motivated amidst your busy schedule?</turn>
+		<turn type="student">Yes, of course</turn>
+		<turn type="chatbot" who="Pi.ai">That's fantastic! 🥰 Having a supportive partner can be a real blessing, especially when life gets busy and overwhelming. It's great that you have someone who can provide emotional support, encouragement, and maybe even a little bit of fun and distraction when you need it.
+		Do you and your boyfriend have any shared hobbies or interests that you enjoy doing together? Or do you prefer to keep your relationship separate from your other activities?</turn>
+	</task>
+	<task type="role play">
+		<turn type="student">I <XVPR corr="would like to">would like</XVPR> <LSV corr="evaluate">value</LSV> all opportunities to go <LSPR corr="to">in</LSPR> Verona 3 days and 2 nights</turn>
+		<turn type="chatbot" who="Pi.ai">A three-day, two-night trip to Verona sounds like a lovely idea, User!💕 Verona is a beautiful city in northern Italy that's rich in history, culture, and romance.
+		There are so many wonderful things to see and do in Verona, from exploring the ancient Roman ruins and medieval architecture to visiting the famous Juliet's Balcony and enjoying delicious Italian cuisine. 🍝🍷
+		If you're looking for some recommendations on how to make the most of your three days in Verona, I'd be happy to help. What kind of experiences are you interested in? Do you prefer to focus on sightseeing, food, or maybe a mix of both?</turn>
+		<turn type="student">I would like to go <LSPR corr="to">in</LSPR> Verona with my boyfriend, what can I visit<QM corr="?">\0</QM></turn>
+		<turn type="chatbot" who="Pi.ai">There are many wonderful things to see and do in Verona with your boyfriend! 💕 Here are a few ideas to get you started:
+		• Visit Juliet's Balcony and the Casa di Giulietta, the famous setting of Shakespeare's Romeo and Juliet.
+		• Explore the historic Piazza delle Erbe and Piazza dei Signori, two of Verona's most beautiful and atmospheric squares.
+		• Take a stroll along the picturesque Adige River and cross the ancient Ponte Pietra bridge.
+		• Enjoy a romantic dinner at one of Verona's many excellent restaurants, followed by a performance at the iconic Arena di Verona, a stunning Roman amphitheater.
+		• Take a day trip to nearby Lake Garda or the beautiful city of Mantua, both of which are easily accessible from Verona.
+		• Climb to the top of the Torre dei Lamberti for breathtaking views of the city.</turn>
+		<turn type="student">For lunch and dinner <GVAUX corr="can">do</GVAUX> you give me some <XNUC corr="advice">advices</XNUC><QM corr="?">\0</QM></turn>
+		<turn type="chatbot" who="Pi.ai">Sure! 🍝🍷 Verona has many excellent restaurants that offer delicious Italian cuisine. Here are a few of my top recommendations for lunch and dinner:
+		Lunch:
+		• Trattoria Antica Amelia: A traditional trattoria serving classic Veronese dishes like bigoli pasta with duck ragù.
+		• Osteria Sottoriva: A cozy osteria with a beautiful terrace overlooking the Adige River, serving fresh seafood and homemade pasta.
+		• La Bottega dei Sapori: A deli and wine bar with a great selection of local products, perfect for a light lunch or aperitivo.
+		Dinner:
+		• Ristorante 12 Apostoli: A Michelin-starred restaurant serving creative Italian cuisine in a stunning historical setting.
+		• Osteria il Ciottolo: A hidden gem serving traditional Veronese dishes like risotto all'amarone and horse meat stew.
+		• Enoteca Segreta: A stylish enoteca with an extensive wine list and a menu featuring local and seasonal ingredients.</turn>
+		<turn type="student"><GPR corr="What">\0</GPR> About the hotel <LSADV corr="near">nearly</LSADV> to <GA corr="the">\0</GA> Spa of Verona</turn>
+		<turn type="chatbot" who="Pi.ai">Sure thing! There are many great hotel options near the spa in Verona. To help narrow down your search, I'd recommend checking out websites like Tripadvisor or Booking.com, which offer user reviews and booking options.
+		One hotel that seems highly rated is Hotel San Marco, which is located close to the Arena and Bentegodi Stadium, and offers modern rooms, conference rooms, spa, wellness center, swimming pool, and fitness room.
+		Another option is Verona - Hotel Milano & Spa, which has received positive reviews from travelers on Tripadvisor and offers competitive pricing.
+		Of course, there are many other options as well, so it's worth doing some research to find the best fit for your needs and preferences.</turn>
+		<turn type="student"><Z corr="Do you think Aquardens">Aquardens for you</Z> is a good spa to spend 2 days<QM corr="?">\0</QM></turn>
+		<turn type="chatbot" who="Pi.ai">Absolutely, Aquardens is a fantastic spa to spend two days at! 🧖️🌞 Located between Verona and Lake Garda, Aquardens is much more than just a spa - it's a one-of-a-kind wellness destination. 💦
+		With 14 thermal pools, including a flowing river, 9 restaurants, 3 pool bars, 220 whirlpools, and a wellness center, Aquardens offers a wide range of amenities and services that are sure to leave you feeling relaxed and rejuvenated. 🧘️.
+		Plus, with its beautiful surroundings and luxurious facilities, Aquardens is the perfect place to escape the stresses of daily life and indulge in some well-deserved self-care. 💆️</turn>
+		<turn type="student"><Z corr="Do you think the cost is high">The cost is <LSADJ corr="high">elevate</LSADJ> for you</Z><QM corr="?">\0</QM></turn>
+		<turn type="chatbot" who="Pi.ai">The cost of visiting Aquardens Spa can vary depending on the type of ticket or package you choose. Based on the information available online, here is a rough estimate of the price range:
+		• A one-day entry ticket to the spa costs between €44-56.
+		• A ticket that includes entrance to the spa, breakfast, and a hotel stay can range from €68 and up.
+		• Aquardens also offers various spa treatments, massages, and private spa options, which may incur additional costs.
+		Overall, while Aquardens Spa may be considered a premium wellness destination, many visitors find the experience to be well worth the cost.</turn>
+		<turn type="student"><Z corr="Do you think">For you</Z> <GPP corr="it">\0</GPP> is good for a birthday gift<QM corr="?">\0</QM></turn>
+		<turn type="chatbot" who="Pi.ai">Yes, Aquardens Spa would make an excellent birthday gift! 🎁🎉 Whether you're treating yourself or a loved one, a day or two at Aquardens can be a truly memorable experience.
+		In addition to the relaxing thermal pools and wellness treatments, Aquardens also offers various gift packages that include spa admission, breakfast, lunch, and even overnight stays.
+		Plus, with its beautiful surroundings and luxurious amenities, Aquardens is the perfect place to celebrate a special occasion and indulge in some well-deserved pampering.</turn>
+		<turn type="student">Thank you, you are very funny.</turn>
+		<turn type="chatbot" who="Pi.ai">You're welcome! 🤗 It was my pleasure to help you, User. I'm glad to hear that you enjoyed our chat and found me entertaining. Thank you for your kind words! If you have any other questions or if there's anything else I can assist you with, don't hesitate to let me know. 🙌</turn>4
+	</task>
+</text>
+</file>
