@@ -50,10 +50,10 @@ class CompletionDataset:
             examples_an_neg = examples_an[mask_neg].sample(n=self.n_icl_samples)
             examples_og_pos = text_og_list[examples_an_pos.index]
             examples_og_neg = text_og_list[examples_an_neg.index]
-            examples_pos = [f'###{og} ==> {an}' for og, an in zip(examples_an_pos, examples_og_pos)]
-            examples_neg = [f'###{og} ==> {an}' for og, an in zip(examples_an_neg, examples_og_neg)]
-            # examples_pos = [f'###{og} ==> {self.tokenizer.bos_token}{an}{self.tokenizer.eos_token}' for og, an in zip(examples_an_pos, examples_og_pos)]
-            # examples_neg = [f'###{og} ==> {self.tokenizer.bos_token}{an}{self.tokenizer.eos_token}' for og, an in zip(examples_an_neg, examples_og_neg)]
+            examples_pos = [f'###{og}###{an}' for og, an in zip(examples_og_pos, examples_an_pos)]
+            examples_neg = [f'###{og}###{an}' for og, an in zip(examples_og_neg, examples_an_neg)]
+            # examples_pos = [f'- {og}: {self.tokenizer.bos_token}{an}{self.tokenizer.eos_token}' for og, an in zip(examples_an_pos, examples_og_pos)]
+            # examples_neg = [f'- {og}: {self.tokenizer.bos_token}{an}{self.tokenizer.eos_token}' for og, an in zip(examples_an_neg, examples_og_neg)]
             examples = examples_pos + examples_neg
             shuffle(examples)
             examples = '\n'.join(examples)
@@ -141,8 +141,8 @@ class CausalLMDataset(Dataset):
             examples_an_neg = examples_an[mask_neg].sample(n=self.n_icl_samples)
             examples_og_pos = text_og_list[examples_an_pos.index]
             examples_og_neg = text_og_list[examples_an_neg.index]
-            examples_pos = [f'###{og} ==> {self.tokenizer.bos_token}{an}{self.tokenizer.eos_token}' for og, an in zip(examples_an_pos, examples_og_pos)]
-            examples_neg = [f'###{og} ==> {self.tokenizer.bos_token}{an}{self.tokenizer.eos_token}' for og, an in zip(examples_an_neg, examples_og_neg)]
+            examples_pos = [f'- {og}: {self.tokenizer.bos_token}{an}{self.tokenizer.eos_token}' for og, an in zip(examples_an_pos, examples_og_pos)]
+            examples_neg = [f'- {og}: {self.tokenizer.bos_token}{an}{self.tokenizer.eos_token}' for og, an in zip(examples_an_neg, examples_og_neg)]
             examples = examples_pos + examples_neg
             shuffle(examples)
             examples = '\n'.join(examples)

@@ -4,8 +4,8 @@ Below are reference examples.
 
 {examples}
 
-Use the format ###sentence ==> answer
+Use the format "###sentence###answer".
 
 Target sentence:
 
-###{sentence} ==>
+###{sentence}###

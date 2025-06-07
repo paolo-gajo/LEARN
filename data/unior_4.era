@@ -88,7 +88,7 @@
 		Food and Cooking: Recipes, favorite dishes, or cooking tips.
 		Current Events: Discussing recent news or global issues.
 		Let me know what you’re in the mood to chat about!</turn>
-		<turn type="student">GA corr="\0">The</GA> <DMCC corr="Climate">climate</DMCC> change and <GDO corr="its">his</GDO> impact on our environment.</turn>
+		<turn type="student"><GA corr="\0">The</GA> <DMCC corr="Climate">climate</DMCC> change and <GDO corr="its">his</GDO> impact on our environment.</turn>
 		<turn type="chatbot" who="ChatGPT">Climate change is one of the most pressing issues of our time, impacting the environment in numerous ways. Here’s an overview of how climate change affects our environment:
 		1. Rising Temperatures
 		Global Warming: Average global temperatures are increasing due to the accumulation of greenhouse gases like carbon dioxide and methane in the atmosphere. This leads to more frequent and intense heatwaves.
@@ -175,7 +175,7 @@
 		4. Create Cinematic Content
 		Use creative editing techniques, music, and effects to enhance your videos and captivate your audience. Experiment with different filming angles, slow-motion shots, and time-lapse sequences to add visual interest.
 		5. Engage with Your Audience
-		Encourage interaction and engagement by asking questions, hosting Q&A sessions, and responding to comments and messages from your followers. Build a sense of community by sharing personal stories and experiences.
+		Encourage interaction and engagement by asking questions, hosting Q&amp;A sessions, and responding to comments and messages from your followers. Build a sense of community by sharing personal stories and experiences.
 		6. Collaborate with Other Creators
 		Partner with fellow content creators, influencers, or local businesses in Bora Bora to collaborate on videos and cross-promote each other's content. Collaborations can help you reach a wider audience and create unique content together.
 		7. Use Trending Challenges and Hashtags
