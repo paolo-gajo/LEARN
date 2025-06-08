@@ -10,6 +10,7 @@ import argparse
 torch.set_printoptions(linewidth=10000, threshold=10000)
 
 def main(args):
+    print(args)
     df = convert_files(args.data_path)
     print(df)
 
@@ -17,11 +18,15 @@ def main(args):
     
     tokenizer = AutoTokenizer.from_pretrained(model_name, padding_side='left')
     tokenizer.pad_token = tokenizer.eos_token
-    device = 'cuda' if torch.cuda.is_available() else 'cpu'
     
     prompt_layout = open('./misc/prompt_layout_tags.txt', 'r').read()
     prompt_tags = open('./misc/prompt_tags.txt', 'r').read()
-    dataset = CausalLMDataset(df, prompt_layout, prompt_tags, tokenizer)
+    dataset = CausalLMDataset(df,
+                                prompt_layout,
+                                prompt_tags,
+                                tokenizer,
+                                n_icl_samples=10,
+                                )
     
     # Create datasets
     dataset_train = Dataset.from_pandas(dataset.train_samples)
@@ -48,7 +53,7 @@ def main(args):
         quantization_config=quantization_config,
         torch_dtype=torch.bfloat16,
         trust_remote_code=True,
-    ).to(device)
+    )
     model.gradient_checkpointing_enable()
 
     if args.target_modules != 'full_ft':
@@ -111,18 +116,20 @@ def main(args):
     for epoch in range(args.epochs):
         model.train()
         trainer.train()
-        results_dev = evaluator.evaluate(dataset.dev_samples[:5],
+        results_dev = evaluator.evaluate(dataset.dev_samples,
+                                     epoch,
                                      args.batch_size_eval,
                                      verbose = True,
                                      split='dev',
                                      )
-        print('results_dev', results_dev)
-    results_test = evaluator.evaluate(dataset.test_samples[:5],
+        print(f'dev results @ {epoch + 1} epochs', results_dev)
+    results_test = evaluator.evaluate(dataset.test_samples,
+                                     epoch,
                                      args.batch_size_eval,
                                      verbose = True,
                                      split='test',
                                      )
-    print('results_test', results_test)
+    print(f'test results @ {epoch + 1} epochs', results_test)
 
     save_dir = f"./models/{model_name.split('/')[-1]}_{get_time()}"
     model.save_pretrained(save_dir)
@@ -133,7 +140,7 @@ if __name__ == "__main__":
     parser.add_argument("--data_path", help="Directory path containing input files", default='./data/')
     parser.add_argument("--lr", type=float, help="Learning rate", default=2e-4)
     parser.add_argument("--steps", type=int, help="Number of training steps", default=0)
-    parser.add_argument("--epochs", type=int, help="Number of training epochs", default=1)
+    parser.add_argument("--epochs", type=int, help="Number of training epochs", default=10)
     parser.add_argument("--batch_size_train", type=int, help="Batch size for training", default=4)
     parser.add_argument("--batch_size_eval", type=int, help="Batch size for evaluation", default=4)
     parser.add_argument("--grad_acc_steps", type=int, help="Gradient accumulation steps", default=1)

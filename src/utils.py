@@ -124,9 +124,10 @@ class Evaluator:
 
     def evaluate(self,
                  df,
+                 epoch,
                  batch_size=1,
                  verbose=False,
-                 split='dev'
+                 split='dev',
                  ):
         """
         Evaluate the model on the test set using a configurable `batch_size`.
@@ -197,7 +198,7 @@ class Evaluator:
         # If verbose output path is specified, save the accumulated logs
         if verbose:
             verbose_output = verbose_output.lstrip()
-            save_path = os.path.join(self.verbose_output_path, f'results_{split}.log')
+            save_path = os.path.join(self.verbose_output_path, f'results_{split}_{epoch + 1}.log')
             with open(save_path, 'w', encoding='utf8') as f:
                 f.write(verbose_output)
         # all_pred_rel_types = set([p[1] for p_list in preds for p in p_list])
@@ -251,10 +252,7 @@ class Evaluator:
 
     @staticmethod
     def extract_tags(response: str) -> List[List[str]]:
-        pattern_open = r'<(\w+).*>'
-        pattern_close = r'</(\w+).*>'
-        matches_open = re.findall(pattern_open, response)
-        return list(matches_open)
+        return list(re.findall(r'<([A-Z]+).*>', response))
 
 def calculate_metrics(sample_trues, sample_preds):
     """

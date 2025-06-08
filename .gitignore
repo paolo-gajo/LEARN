@@ -3,4 +3,6 @@ __pycache__
 unsloth_compiled_cache
 eval_outputs
 outputs
+trainer_output
 models
+.slurm
