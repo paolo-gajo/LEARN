@@ -1,3 +1,6 @@
 .env*
 __pycache__
 unsloth_compiled_cache
+eval_outputs
+outputs
+models
