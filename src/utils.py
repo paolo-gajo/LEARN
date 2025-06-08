@@ -1,7 +1,7 @@
 from datasets import Dataset
 import pandas as pd
 import re
-from typing import List
+from typing import List, Tuple
 from random import shuffle
 from datetime import datetime
 import torch
@@ -256,5 +256,7 @@ class Evaluator:
         return decoded[0] if len(decoded) == 1 else decoded
 
     @staticmethod
-    def extract_tags(input: str) -> List[List[str]]:
-        return re.findall(r'<(\w+)[^>]*>(.*?)</\1>', input)
+    def extract_tags(input: str) -> List[Tuple[str, str, int]]:
+        """Extract tags with position counter to handle duplicates"""
+        matches = re.findall(r'<(\w+)[^>]*>(.*?)</\1>', input)
+        return [(tag, content, i) for i, (tag, content) in enumerate(matches)]

@@ -2,35 +2,32 @@ from collections import defaultdict
 
 def calculate_metrics(sample_trues, sample_preds):
     """
-    Calculate metrics where:
-    - Exact match requires both tag and source text to match
-    - Final metrics are aggregated by tag type only
+    Calculate metrics using content-based matching, ignoring positions.
+    Position is only used to prevent set() from removing duplicates.
     """
-    if len(sample_trues) != len(sample_preds):
-        raise ValueError("Length of true_tags and pred_tags must match")
-    
-    # Initialize counters by tag type
     dict_tp = defaultdict(int)
     dict_fp = defaultdict(int)
     dict_fn = defaultdict(int)
     
-    # Count TP, FP, FN
     for true_tags, pred_tags in zip(sample_trues, sample_preds):
-        # Pad shorter list with ('O', '') tuples
-        max_len = max(len(true_tags), len(pred_tags))
-        true_tags_padded = true_tags + [('O', '')] * (max_len - len(true_tags))
-        pred_tags_padded = pred_tags + [('O', '')] * (max_len - len(pred_tags))
+        # Convert to (tag, content) pairs, ignoring position for comparison
+        true_pairs = set((tag, content) for tag, content, pos in true_tags)
+        pred_pairs = set((tag, content) for tag, content, pos in pred_tags)
         
-        for true_tuple, pred_tuple in zip(true_tags_padded, pred_tags_padded):
-            true_tag = true_tuple[0] if isinstance(true_tuple, tuple) else true_tuple
-            pred_tag = pred_tuple[0] if isinstance(pred_tuple, tuple) else pred_tuple
-            
-            # Exact match: both tag and source must match
-            if true_tuple == pred_tuple:
-                dict_tp[true_tag] += 1  # Count TP for the tag type
-            else:
-                dict_fp[pred_tag] += 1  # Count FP for predicted tag type
-                dict_fn[true_tag] += 1  # Count FN for true tag type
+        # True Positives
+        tp_pairs = true_pairs & pred_pairs
+        for tag_name, content in tp_pairs:
+            dict_tp[tag_name] += 1
+        
+        # False Positives
+        fp_pairs = pred_pairs - true_pairs
+        for tag_name, content in fp_pairs:
+            dict_fp[tag_name] += 1
+        
+        # False Negatives
+        fn_pairs = true_pairs - pred_pairs
+        for tag_name, content in fn_pairs:
+            dict_fn[tag_name] += 1
     
     # Calculate micro-averaged metrics
     total_tp = sum(dict_tp.values())
@@ -42,13 +39,13 @@ def calculate_metrics(sample_trues, sample_preds):
     micro_f1 = (2 * micro_precision * micro_recall / (micro_precision + micro_recall)
                 if micro_precision + micro_recall > 0 else 0)
     
-    # Calculate macro-averaged metrics
+    # Calculate macro-averaged metrics  
     all_tags = set()
     for true_tags, pred_tags in zip(sample_trues, sample_preds):
-        for true_tuple in true_tags:
-            all_tags.add(true_tuple[0] if isinstance(true_tuple, tuple) else true_tuple)
-        for pred_tuple in pred_tags:
-            all_tags.add(pred_tuple[0] if isinstance(pred_tuple, tuple) else pred_tuple)
+        for tag, content, pos in true_tags:
+            all_tags.add(tag)
+        for tag, content, pos in pred_tags:
+            all_tags.add(tag)
     
     precisions, recalls, f1s = [], [], []
     for tag in all_tags:
@@ -73,8 +70,8 @@ def calculate_metrics(sample_trues, sample_preds):
     }
 
 if __name__ == "__main__":
-    gold = [('WO', 'do to'), ('FS', 'excercice'), ('GPR', 'that'), ('XVCO', 'would reserve'), ('GA', '\\0'), ('GNN', 'question')]
-    pred = [('GVAUX', 'do'), ('WO', 'to do'), ('FS', 'excercice'), ('GADJO', 'encouraging'), ('GPP', 'tutor'), ('GVT', 'helps')]
+    gold = [('WO', 'do to', 0), ('FS', 'excercice', 1), ('GPR', 'that', 2), ('XVCO', 'would reserve', 3), ('GA', '\\0', 4), ('GNN', 'question', 5)]
+    pred = [('GVAUX', 'do', 0), ('WO', 'to do', 1), ('FS', 'excercice', 2), ('GADJO', 'encouraging', 3), ('GPP', 'tutor', 4), ('GVT', 'helps', 5)]
 
     metrics = calculate_metrics([gold], [pred])
     print(metrics)
