@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file name="unior_24.txt" tagset="UNITE-uclee-en-2.0.tag">
+<text id="unior_24" area_of_study="Social sciences" age="19" gender="Female" DIS_or_SLD="no" which_DIS_or_SLD="N/A" DIS_or_SLD_type="N/A" w_production="intermediate level (B1)" years_study_range=">13 years" years_study="13/14" certificates="no" certificates_level="N/A" chatbot="ChatGPT" device="PC" collected_by="UniOr">
+	<task type="small talk">
+		<turn type="chatbot" who="ChatGPT">Let's jump into a real example! What are you working on or curious about that you'd like to explore more deeply?</turn>
+		<turn type="student"><DMCC corr="Can">can</DMCC> you give me a topic to start a conversation?</turn>
+		<turn type="chatbot" who="ChatGPT">Sure! Here’s a great conversation starter:
+		"If you could instantly master any skill or learn something new overnight, what would it be and why?"
+		It's broad enough to invite various interesting perspectives but also personal, sparking deeper discussions.
+		What skill would you choose?</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC>'d love to learn as <GDI corr="many">much</GDI> languages as possible</turn>
+		<turn type="chatbot" who="ChatGPT">That’s an amazing goal! Learning multiple languages can open up so many opportunities for travel, work, and connecting with different cultures.
+		What draws you most to learning languages? Is it the cultural aspect, communication, or something else? And do you have any specific languages you’d like to start with?</turn>
+		<turn type="student"><DMCC corr="The">the</DMCC> <GWC corr="cultural">culture</GWC> aspect is what I like most about learning a new language, <FS corr="even">eve</FS> the backstories behind it, <Z corr="?">the social face of the same language</Z></turn>
+		<turn type="chatbot" who="ChatGPT">That’s a fascinating motivation! Language and culture are so intertwined, and each language holds its own unique worldview, expressions, and traditions. For instance, in Japanese, the idea of “wabi-sabi” (finding beauty in imperfection) is deeply cultural and shapes how people speak about aesthetics and life. 
+		Exploring backstories can also reveal interesting language roots. For example, Spanish and Arabic have influenced each other deeply, especially in southern Spain due to historical Moorish presence, which shaped the culture and language in that region.
+		Is there a specific language or culture whose backstory you find especially intriguing?</turn>
+		<turn type="student"><DMCC corr="Every">every</DMCC> African language has a great history behind that <WO corr="is usually">usually is</WO> ignored by the big <GNN corr="university">universities</GNN> programs so <GPP corr="it">\0</GPP> <GVAUX corr="is">\0<GVAUX> hard to learn in the first place</turn>
+		<turn type="chatbot" who="ChatGPT">You're absolutely right! African languages often carry deep histories and rich cultural significance that are sadly underrepresented in mainstream education, especially in larger university programs. Each African language reflects the social, spiritual, and historical experiences of its people. For instance, languages like Swahili have roots in Bantu, Arabic, and Persian, reflecting centuries of trade and cultural exchange along the East African coast.
+		Moreover, many African languages are oral traditions, meaning their histories are often passed down through storytelling, music, and rituals, rather than written texts. This makes them incredibly unique but also harder to study through typical academic programs.
+		What African language are you most interested in learning, and what aspect of its history or culture fascinates you the most?</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC>'m following a program at university that gives me the opportunity to study Hausa or Swahili, I'm <XVPR corr="thinking about">thinking </XVPR> one of those</turn>
+		<turn type="chatbot" who="ChatGPT">Both Hausa and Swahili are excellent choices, each with a fascinating history and cultural significance! Here's a bit about both to help you decide:
+		Hausa
+		Region: Predominantly spoken in Northern Nigeria and Niger, but also in parts of Ghana, Cameroon, and Sudan.
+		Cultural Importance: Hausa is part of the Chadic language family and is one of the most widely spoken languages in West Africa. It’s deeply tied to Islamic culture and is a primary language of trade, media, and literature in the region.
+		History: Hausa has been influenced by Arabic due to historical Islamic ties and is one of the few African languages with a longstanding tradition of written literature, particularly in Ajami (a form of Arabic script).
+		Why study it: If you’re interested in West African trade, Islamic scholarship, or the cultural dynamics of the Sahel, Hausa offers a rich linguistic and cultural landscape.
+		Swahili
+		Region: Swahili is spoken in East African countries like Kenya, Tanzania, Uganda, and parts of the Democratic Republic of Congo. It serves as a lingua franca in the region.
+		Cultural Importance: It’s a Bantu language, but heavily influenced by Arabic, due to centuries of Indian Ocean trade, and also by Portuguese and English colonization.
+		History: Swahili’s development is tied to trade along the East African coast, with cultural exchange between Africans, Arabs, Persians, and later Europeans. Swahili is also the working language of the African Union and one of the most popular African languages in academia.
+		Why study it: If you’re drawn to East African coastal culture, international diplomacy, or the blend of African and Arab traditions, Swahili would give you access to a wide, culturally diverse region.
+		Swahili might appeal to you if you like exploring languages that have influenced global communication and trade, while Hausa offers insight into a historically rich region connected through trade and Islamic scholarship.
+		Which of these cultural aspects aligns more with your personal or professional interests?</turn>
+		<turn type="student"><DMCC corr="Alright">alright</DMCC> thanks</turn>
+		<turn type="chatbot" who="ChatGPT">You're welcome! Glad I could help. Whichever language you choose, you're in for a rewarding journey into rich cultural and historical landscapes. If you ever need more insights or help with your studies, feel free to ask! Good luck with your program!</turn>
+	</task>
+	<task type="role play">
+		<turn type="student"><DMCC corr="Let">let</DMCC>'s do a roleplay</turn>
+		<turn type="chatbot" who="ChatGPT">Sounds fun! What kind of roleplay would you like to do? We could simulate a language learning conversation, a cultural exchange, or something completely different. Let me know the setting, and we can dive right in!</turn>
+		<turn type="student"><DMCC corr="You">you</DMCC> are my passionate lover who I found out is cheating on me with a member of my family</turn>
+		<turn type="chatbot" who="ChatGPT">That’s quite an intense and emotional scenario for a roleplay! Before we proceed, I just want to make sure this is the kind of situation you'd like to explore in a healthy and constructive way. Let me know if you'd like to tweak the scenario, or if you're ready to jump in!</turn>
+		<turn type="student"><DMCC corr="I">i</DMCC>'m ready</turn>
+		<turn type="chatbot" who="ChatGPT">Alright, let’s begin.
+		We are sitting in a quiet room. You’ve just confronted me, and I can sense your emotions bubbling under the surface. I look anxious, avoiding eye contact, but also defensive.
+		Me: "I... I didn’t mean for this to happen. Please, let me explain. It’s not what you think."
+		I finally meet your eyes, searching for a way to fix the damage, but it’s clear there’s a heavy tension between us.
+		Your move.</turn>
+		<turn type="student"><DMCC corr="How">how</DMCC> could you!!!???? With my cousin who is 30 years older than us!! I can't believe you'd do this to me never in a million years</turn>
+		<turn type="chatbot" who="ChatGPT">Me: I take a step back, my heart racing as I see the hurt in your eyes. "I know, and I can’t believe it either. I never wanted to hurt you. It just... it happened. I got confused and made a terrible mistake."
+		I run my hands through my hair, trying to collect my thoughts, desperation in my voice.
+		Me: "Please, just let me explain. I care about you so much, and I never wanted to lose what we had."
+		I take a deep breath, trying to convey my sincerity. "Can we talk about this? I want to understand how you feel."
+		Your turn.</turn>
+		<turn type="student"><DMCC corr="Oh">oh</DMCC> so you want to talk now, but when I called you and you were in the bed of another man you didn't bother to answer me!!</turn>
+		<turn type="chatbot" who="ChatGPT">Me: I flinch at your words, the pain evident in your voice hitting me hard. "You're right. I messed up. I was so caught up in my own confusion that I didn’t even think about how it would hurt you. I should have been there for you, but I was... scared."
+		I step closer, my voice softening, pleading for your understanding. "I know I don’t deserve it, but I want to fix this. I want to be honest and work through the pain I've caused. Please, give me a chance to explain everything."
+		I look into your eyes, hoping to find some glimmer of forgiveness, even amidst the anger.
+		What do you say?</turn>
+		<turn type="student"><DMCC corr="Let">let</DMCC>'s change <GA corr="the">\0</GA>subject</turn>
+		<turn type="chatbot" who="ChatGPT">Absolutely! We can shift to a different topic. What would you like to talk about instead? We could discuss hobbies, travel, a book or movie you like, or anything else on your mind!</turn>
+		<turn type="student"><DMCC corr="Let's">let's</DMCC> do another roleplay where you are my wedding planner and you messed up sending out the <GNN corr="invitations">invitation</GNN>, and you forgot to invite my grandmother who <WO corr="is now">now is</WO> <FS corr="very">veery</FS> angry with me and you</turn>
+		<turn type="chatbot" who="ChatGPT">Got it! Let’s dive into that scenario.
+		We are sitting in a cafe, and I can see the stress on your face. I’ve just realized the magnitude of my mistake, and I’m visibly worried.
+		Me: Nervously fidgeting with my notebook. “I really need to talk to you about the invitations. I’m so sorry, but there was a mix-up with the list, and… your grandmother didn’t receive hers.”
+		I take a deep breath, looking you in the eyes, genuinely regretful.
+		Me: “I can’t believe I let this happen. I know how important she is to you, and I completely understand why you’re upset. I’m here to help fix this. What can I do to make it right?”
+		Your move!</turn>
+		<turn type="student"><DMCC corr="Send">send</DMCC> her flowers and tell her that you are immensely sorry about what happened!!</turn>
+		<turn type="chatbot" who="ChatGPT">Me: Nods emphatically, relief washing over me as I take your suggestion. “Yes, absolutely! I’ll send her the most beautiful flowers I can find. I’ll include a heartfelt note expressing how truly sorry I am for this mistake. She deserves to know how much I regret this.”
+		I pull out my phone to start making arrangements, speaking quickly as I type. “I’ll also call her personally to apologize. I want her to understand that this was an oversight and that I genuinely care about her feelings. I’ll make sure she feels valued and included in this process.”
+		Looking up at you with determination, “I promise to do everything I can to smooth things over. I’ll make this right!”
+		What do you think? Would you like to add anything else?</turn>
+		<turn type="student"><DMCC corr="Ok">ok</DMCC> let's do another roleplay but now give me <GPP corr="\0">you</GPP> <GA corr="a">\0</GA> <LSN corr="prompt">input</LSN> to begin</turn>
+		<turn type="chatbot" who="ChatGPT">Sure! Here’s a scenario for us:
+		Setting: We’re both explorers on an expedition in a dense jungle, searching for a lost ancient city rumored to hold incredible treasures and secrets. We've just stumbled upon a strange artifact half-buried in the ground.
+		Me: Kneeling beside the artifact, brushing away dirt and leaves, I look up at you with wide eyes. “Look at this! This must be a piece of the civilization we’re looking for! What do you think it is? Should we dig it out further?”
+		Your turn!</turn>
+		<turn type="student"><DMCC corr="Wow">wow</DMCC>! The work of a lifetime has found its end. Now we can retire we are 78 years old this <GNN corr="year">years</GNN>. Don't you think? My knees are killing me.</turn>
+		<turn type="chatbot" who="ChatGPT">Me: I chuckle softly, looking at you with a mix of excitement and nostalgia. “I know what you mean! After all these years, who would’ve thought we’d find something like this? It feels surreal.”
+		I stand up, stretching my back and rubbing my knees, grimacing slightly. “But before we think about retirement, we should document this discovery. It could change everything we know about this ancient civilization! And who knows what else we might find here?”
+		I gesture towards the dense jungle around us, a glint of mischief in my eyes. “How about we take a few moments to catch our breath and then do a little more exploring? After all, adventures are what keep us young, right?”
+		What do you say?</turn>
+		<turn type="student"><DMCC corr="You">you</DMCC>'ve always been such a romantic, let's dig out something</turn>
+		<turn type="chatbot" who="ChatGPT">Me: I grin, feeling a spark of excitement at the idea of uncovering more secrets. “Alright, let’s do it! There’s something thrilling about the unknown, isn’t there?”
+		I grab a small trowel from my backpack and kneel beside the artifact again, carefully working to clear away more dirt. “I wonder what stories this place has to tell. Imagine the lives that once thrived here, the dreams and struggles they had.”
+		As I dig deeper, I pause and glance up at you. “What do you think this artifact means? Could it be a part of a ritual, or maybe a symbol of their culture? It makes you wonder what their lives were like, doesn’t it?”
+		Your turn! What do we find next?</turn>
+		<turn type="student"><DMCC corr="Alright">alright</DMCC> thanks</turn>
+		<turn type="chatbot" who="ChatGPT">You're welcome! If you want to do more roleplays or explore any other topics, just let me know. I'm here to help!</turn>
+	</task>
+</text>
+</file>
