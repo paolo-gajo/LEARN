@@ -6,6 +6,6 @@ Below are reference examples.
 
 {examples}
 
-Target sentence:
+Annotate the following target sentence, without providing any explanation:
 
 {sentence}###

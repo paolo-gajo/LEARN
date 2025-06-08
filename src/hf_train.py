@@ -139,7 +139,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Causal language modeling trainer")
     parser.add_argument("--data_path", help="Directory path containing input files", default='./data/')
     parser.add_argument("--lr", type=float, help="Learning rate", default=2e-4)
-    parser.add_argument("--steps", type=int, help="Number of training steps", default=0)
+    parser.add_argument("--steps", type=int, help="Number of training steps", default=10)
     parser.add_argument("--epochs", type=int, help="Number of training epochs", default=10)
     parser.add_argument("--batch_size_train", type=int, help="Batch size for training", default=4)
     parser.add_argument("--batch_size_eval", type=int, help="Batch size for evaluation", default=4)

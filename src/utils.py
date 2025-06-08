@@ -166,6 +166,8 @@ class Evaluator:
             for text, completion, output in zip(batch_texts, batch_completions, outputs):
                 true_list = self.extract_tags(completion)
                 pred_list = self.extract_tags(output)
+                print('completion', completion, '-->', true_list)
+                print('output', output, '-->', pred_list)
                 trues.append(true_list)
                 preds.append(pred_list)
 
@@ -180,7 +182,7 @@ class Evaluator:
                 if verbose:
                     metrics_sample = calculate_metrics([true_list], [pred_list])
                     metrics_current = calculate_metrics(trues, preds)
-                    pbar.set_description(f"F1: {round(metrics_current['macro_f1'], 2)}")
+                    pbar.set_description(f"Last F1: {round(metrics_sample['macro_f1'], 2)}\nOverall F1: {round(metrics_current['macro_f1'], 2)}")
 
                     output_texts = (
                         '\n' + f'text: {text}' +
@@ -237,13 +239,16 @@ class Evaluator:
             )
 
         # Decode each output
-        input_lengths = (tokenized["input_ids"].ne(self.tokenizer.pad_token_id).sum(dim=1))
         decoded = []
+        input_lengths = [len(seq) for seq in tokenized["input_ids"]]
+
+        # Then slice correctly:
         for i, seq in enumerate(outputs):
-            # Slice out prompt tokens, then decode generation
-            in_len = input_lengths[i]
+            if isinstance(input_lengths, list):
+                in_len = input_lengths[i]
+            else:
+                in_len = input_lengths
             gen_tokens = seq[in_len:]
-            # print(gen_tokens)
             decoded_text = self.tokenizer.decode(gen_tokens, skip_special_tokens=True)
             decoded.append(decoded_text)
 
@@ -251,42 +256,42 @@ class Evaluator:
         return decoded[0] if len(decoded) == 1 else decoded
 
     @staticmethod
-    def extract_tags(response: str) -> List[List[str]]:
-        return list(re.findall(r'<([A-Z]+).*>', response))
+    def extract_tags(input: str) -> List[List[str]]:
+        return re.findall(r'<(\w+)[^>]*>(.*?)</\1>', input)
 
 def calculate_metrics(sample_trues, sample_preds):
     """
-    Calculate micro and macro precision, recall, F1 for a list of true and predicted tags.
-    
-    Args:
-        true_tags: List of true tags (e.g., ["A", "A", "B", "C", "A"])
-        pred_tags: List of predicted tags (e.g., ["A", "B", "B", "B", "A"])
-    
-    Returns:
-        dict: Micro and macro precision, recall, F1 scores
+    Calculate metrics where:
+    - Exact match requires both tag and source text to match
+    - Final metrics are aggregated by tag type only
     """
-    
-
     if len(sample_trues) != len(sample_preds):
         raise ValueError("Length of true_tags and pred_tags must match")
     
-    # Initialize counters
-    dict_tp = defaultdict(int)  # True Positives per tag
-    dict_fp = defaultdict(int)  # False Positives per tag
-    dict_fn = defaultdict(int)  # False Negatives per tag
+    # Initialize counters by tag type
+    dict_tp = defaultdict(int)
+    dict_fp = defaultdict(int)
+    dict_fn = defaultdict(int)
     
     # Count TP, FP, FN
     for true_tags, pred_tags in zip(sample_trues, sample_preds):
-        true_tags = true_tags + ['O'] * max(0, (len(pred_tags) - len(true_tags)))
-        pred_tags = pred_tags + ['O'] * max(0, (len(true_tags) - len(pred_tags)))
-        for true_tag, pred_tag in zip(true_tags, pred_tags):
-            if true_tag == pred_tag:
-                dict_tp[true_tag] += 1
+        # Pad shorter list with ('O', '') tuples
+        max_len = max(len(true_tags), len(pred_tags))
+        true_tags_padded = true_tags + [('O', '')] * (max_len - len(true_tags))
+        pred_tags_padded = pred_tags + [('O', '')] * (max_len - len(pred_tags))
+        
+        for true_tuple, pred_tuple in zip(true_tags_padded, pred_tags_padded):
+            true_tag = true_tuple[0] if isinstance(true_tuple, tuple) else true_tuple
+            pred_tag = pred_tuple[0] if isinstance(pred_tuple, tuple) else pred_tuple
+            
+            # Exact match: both tag and source must match
+            if true_tuple == pred_tuple:
+                dict_tp[true_tag] += 1  # Count TP for the tag type
             else:
-                dict_fp[pred_tag] += 1
-                dict_fn[true_tag] += 1
+                dict_fp[pred_tag] += 1  # Count FP for predicted tag type
+                dict_fn[true_tag] += 1  # Count FN for true tag type
     
-    # Micro-averaged metrics
+    # Calculate micro-averaged metrics
     total_tp = sum(dict_tp.values())
     total_fp = sum(dict_fp.values())
     total_fn = sum(dict_fn.values())
@@ -296,15 +301,19 @@ def calculate_metrics(sample_trues, sample_preds):
     micro_f1 = (2 * micro_precision * micro_recall / (micro_precision + micro_recall)
                 if micro_precision + micro_recall > 0 else 0)
     
-    # Macro-averaged metrics
-    precisions, recalls, f1s = [], [], []
-    all_tags = set(true_tags) | set(pred_tags)  # All unique tags
+    # Calculate macro-averaged metrics
+    all_tags = set()
+    for true_tags, pred_tags in zip(sample_trues, sample_preds):
+        for true_tuple in true_tags:
+            all_tags.add(true_tuple[0] if isinstance(true_tuple, tuple) else true_tuple)
+        for pred_tuple in pred_tags:
+            all_tags.add(pred_tuple[0] if isinstance(pred_tuple, tuple) else pred_tuple)
     
+    precisions, recalls, f1s = [], [], []
     for tag in all_tags:
         precision = dict_tp[tag] / (dict_tp[tag] + dict_fp[tag]) if dict_tp[tag] + dict_fp[tag] > 0 else 0
         recall = dict_tp[tag] / (dict_tp[tag] + dict_fn[tag]) if dict_tp[tag] + dict_fn[tag] > 0 else 0
-        f1 = (2 * precision * recall / (precision + recall)
-              if precision + recall > 0 else 0)
+        f1 = (2 * precision * recall / (precision + recall) if precision + recall > 0 else 0)
         precisions.append(precision)
         recalls.append(recall)
         f1s.append(f1)
