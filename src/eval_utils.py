@@ -38,10 +38,6 @@ class Evaluator:
         prompt_list = df['prompt'].to_list()
         comp_list = df['completion'].to_list()
 
-        # # Get all possible tag clases to calculate per-relation metrics
-        all_true_tag_classes = set([el[1] for t_list in comp_list for el in t_list])
-        tag_cls_pairs = {k: {'trues': [], 'preds': []} for k in all_true_tag_classes}
-
         # Progress bar over sub-batches, rather than item by item
         pbar = tqdm(range(0, len(df), batch_size), desc=f'Model: {self.model_name}')
         self.t_counter = 0  # initialize model timeout counter
@@ -64,16 +60,16 @@ class Evaluator:
             for text, completion, output in zip(batch_texts, batch_completions, outputs):
                 true_list = self.extract_tags(completion)
                 pred_list = self.extract_tags(output)
-                print('completion', completion, '-->', true_list)
-                print('output', output, '-->', pred_list)
                 trues.append(true_list)
                 preds.append(pred_list)
 
                 # Optionally display partial F1 and log verbose output
                 if verbose:
+                    print('completion', completion, '-->', true_list)
+                    print('output', output, '-->', pred_list)
                     metrics_sample = self.calculate_metrics([true_list], [pred_list])
                     metrics_current = self.calculate_metrics(trues, preds)
-                    pbar.set_description(f"Overall/Last F1: ({round(metrics_sample['macro_f1'], 2)}, {round(metrics_current['macro_f1'], 2)})")
+                    pbar.set_description(f"Overall/Last F1: ({round(metrics_current['macro_f1'], 2)}, {round(metrics_sample['macro_f1'], 2)})")
 
                     output_texts = (
                         '\n' + f'text: {text}' +

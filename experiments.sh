@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH -J gnn
+#SBATCH -J clic-it
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --gres=gpu:1
-#SBATCH --time=06:00:00
+#SBATCH --time=01:00:00
 #SBATCH --output=./.slurm/%A/%a_output.log
 #SBATCH --error=./.slurm/%A/%a_error.log
 #SBATCH --mem=64g
@@ -36,64 +36,16 @@ cartesian_product() {
 }
 declare -a seed=(
     0
-    # 1
-    # 2
-    # 3
-    # 4
-)
-# Define parameter arrays
-declare -a use_gnn_steps_opts=(0)
-declare -a rnn_layers_opts=(
-    0
-    # 1
-    # 2
-    # 3
-    )
-declare -a gnn_layers_opts=(
-    0
     1
     2
     3
-    )
-declare -a parser_type_opts=(
-    gat
-    # simple
-    )
-declare -a top_k_opts=(
-    1
-    # 2
-    # 3
     4
-    )
-declare -a arc_norm_opts=(
-    # 0
-    1
-    )
-declare -a gnn_dropout_opts=(
-    0
-    # 0.3
-    )
-declare -a gnn_activation_opts=(tanh)
-declare -a dataset_name_opts=(
-#   "ade"
-#   "conll04"
-#   "scierc"
-  "erfgc"
-#   "scidtb"
-#   "ud202xpos"
-  )
+)
+
 # Generate all combinations
 array_names=(
             seed
-            use_gnn_steps_opts
-            gnn_layers_opts
-            parser_type_opts
-            top_k_opts
-            arc_norm_opts
-            gnn_dropout_opts
-            gnn_activation_opts
-            dataset_name_opts
-            rnn_layers_opts
+
             )
 combinations=$(cartesian_product array_names)
 
