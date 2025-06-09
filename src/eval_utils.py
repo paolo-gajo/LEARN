@@ -2,32 +2,39 @@ from collections import defaultdict
 
 def calculate_metrics(sample_trues, sample_preds):
     """
-    Calculate metrics using content-based matching, ignoring positions.
-    Position is only used to prevent set() from removing duplicates.
+    Calculate metrics preserving duplicate (tag, content) pairs.
+    Metrics are calculated per tag type, but duplicate spans are preserved.
     """
+    from collections import Counter, defaultdict
+    
     dict_tp = defaultdict(int)
     dict_fp = defaultdict(int)
     dict_fn = defaultdict(int)
     
     for true_tags, pred_tags in zip(sample_trues, sample_preds):
-        # Convert to (tag, content) pairs, ignoring position for comparison
-        true_pairs = set((tag, content) for tag, content, pos in true_tags)
-        pred_pairs = set((tag, content) for tag, content, pos in pred_tags)
+        # Count occurrences of each (tag, content) pair
+        true_counts = Counter(true_tags)
+        pred_counts = Counter(pred_tags)
         
-        # True Positives
-        tp_pairs = true_pairs & pred_pairs
-        for tag_name, content in tp_pairs:
-            dict_tp[tag_name] += 1
+        # Get all unique (tag, content) combinations from both true and pred
+        all_pairs = set(true_tags) | set(pred_tags)
         
-        # False Positives
-        fp_pairs = pred_pairs - true_pairs
-        for tag_name, content in fp_pairs:
-            dict_fp[tag_name] += 1
-        
-        # False Negatives
-        fn_pairs = true_pairs - pred_pairs
-        for tag_name, content in fn_pairs:
-            dict_fn[tag_name] += 1
+        for tag_content_pair in all_pairs:
+            tag_name = tag_content_pair[0]
+            true_count = true_counts[tag_content_pair]
+            pred_count = pred_counts[tag_content_pair]
+            
+            # True Positives: minimum of true and predicted counts
+            tp = min(true_count, pred_count)
+            dict_tp[tag_name] += tp
+            
+            # False Positives: predicted more than true
+            fp = max(0, pred_count - true_count)
+            dict_fp[tag_name] += fp
+            
+            # False Negatives: true more than predicted  
+            fn = max(0, true_count - pred_count)
+            dict_fn[tag_name] += fn
     
     # Calculate micro-averaged metrics
     total_tp = sum(dict_tp.values())
@@ -42,9 +49,9 @@ def calculate_metrics(sample_trues, sample_preds):
     # Calculate macro-averaged metrics  
     all_tags = set()
     for true_tags, pred_tags in zip(sample_trues, sample_preds):
-        for tag, content, pos in true_tags:
+        for tag, content in true_tags:
             all_tags.add(tag)
-        for tag, content, pos in pred_tags:
+        for tag, content in pred_tags:
             all_tags.add(tag)
     
     precisions, recalls, f1s = [], [], []
@@ -70,8 +77,14 @@ def calculate_metrics(sample_trues, sample_preds):
     }
 
 if __name__ == "__main__":
-    gold = [('WO', 'do to', 0), ('FS', 'excercice', 1), ('GPR', 'that', 2), ('XVCO', 'would reserve', 3), ('GA', '\\0', 4), ('GNN', 'question', 5)]
-    pred = [('GVAUX', 'do', 0), ('WO', 'to do', 1), ('FS', 'excercice', 2), ('GADJO', 'encouraging', 3), ('GPP', 'tutor', 4), ('GVT', 'helps', 5)]
-
-    metrics = calculate_metrics([gold], [pred])
-    print(metrics)
+    gold = [
+        # [('WO', 'do to', 0), ('FS', 'excercice', 1), ('GPR', 'that', 2), ('XVCO', 'would reserve', 3), ('GA', '\\0', 4), ('GNN', 'question', 5)],
+        [('WO', 'do to', 0), ('FS', 'excercice', 1), ('GPR', 'that', 2), ('XVCO', 'would reserve', 3), ('GA', '\\0', 4), ('GNN', 'question', 5)],
+        ]
+    pred = [
+        # [('GVAUX', 'do', 0), ('WO', 'to do', 1), ('FS', 'excercice', 2), ('GADJO', 'encouraging', 3), ('GPP', 'tutor', 4), ('GVT', 'helps', 5)],
+        [('DMCC', 'Hello!', 0), ('GVM', 'do', 1), ('DMCC', 'to', 2), ('FS', 'excercice', 3)],
+        ]
+    for g, p in zip(gold, pred):
+        metrics = calculate_metrics([g], [p])
+        print(metrics)

@@ -10,6 +10,7 @@ import numpy as np
 from tqdm.auto import tqdm
 import os
 from eval_utils import calculate_metrics
+from collections import defaultdict
 
 class CausalLMDataset:
     def __init__(self,
@@ -256,7 +257,20 @@ class Evaluator:
         return decoded[0] if len(decoded) == 1 else decoded
 
     @staticmethod
-    def extract_tags(input: str) -> List[Tuple[str, str, int]]:
-        """Extract tags with position counter to handle duplicates"""
-        matches = re.findall(r'<(\w+)[^>]*>(.*?)</\1>', input)
-        return [(tag, content, i) for i, (tag, content) in enumerate(matches)]
+    def extract_tags(input: str) -> List[List[str]]:
+        """
+        Extract tags with 'corr' attribute.
+        Returns list of tuples: (tag, content)
+        """
+        # Primary pattern: corr with double quotes (with proper closing tag)
+        pattern1 = r'<([A-Z]+[A-Z0-9]*)\s+[^>]*corr="[^"]*"[^>]*>(.*?)</\1>'
+        matches1 = re.findall(pattern1, input)
+        
+        # Secondary pattern: corr with single quotes (with proper closing tag)  
+        pattern2 = r"<([A-Z]+[A-Z0-9]*)\s+[^>]*corr='[^']*'[^>]*>(.*?)</\1>"
+        matches2 = re.findall(pattern2, input)
+        
+        # Combine all matches (preserving duplicates)
+        all_matches = matches1 + matches2
+        
+        return [(tag, content.strip()) for tag, content in all_matches]
