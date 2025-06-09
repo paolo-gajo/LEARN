@@ -1,4 +1,4 @@
-from collections import Counter, defaultdict
+from collections import Counter, defaultdict, OrderedDict
 import re
 import os
 from os_utils import get_time
@@ -220,7 +220,7 @@ class Evaluator:
             tag_dict[tag]['precision'] = precision
             tag_dict[tag]['recall'] = recall
             tag_dict[tag]['f1'] = f1
-        
+        tag_dict = OrderedDict(sorted(tag_dict.items(), key=lambda x: x[1]['f1'], reverse=True))
         macro_precision = sum(precisions) / len(precisions) if precisions else 0
         macro_recall = sum(recalls) / len(recalls) if recalls else 0
         macro_f1 = sum(f1s) / len(f1s) if f1s else 0
