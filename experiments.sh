@@ -41,11 +41,22 @@ declare -a seed=(
     3
     4
 )
-
+declare -a use_prompt_tags=(
+    0
+    1
+)
+declare -a n_icl_samples=(
+    0
+    5
+    10
+    15
+    20
+)
 # Generate all combinations
 array_names=(
             seed
-
+            use_prompt_tags
+            n_icl_samples
             )
 combinations=$(cartesian_product array_names)
 
@@ -69,26 +80,10 @@ while IFS= read -r combo; do
     
     cmd="python ./src/train.py
                 --opts
-                --results_suffix ${SLURM_ARRAY_JOB_ID}/${SLURM_ARRAY_TASK_ID}
                 --seed ${params[0]}
-                --use_gnn_steps ${params[1]}
-                --gnn_layers ${params[2]}
-                --parser_type ${params[3]}
-                --top_k ${params[4]}
-                --arc_norm ${params[5]}
-                --gnn_dropout ${params[6]}
-                --gnn_activation ${params[7]}
-                --dataset ${params[8]}
-                --parser_rnn_layers ${params[9]}
-                --training_steps $training_steps 
-                --eval_steps $eval_steps
-                --use_tagger_rnn 0
-                --use_parser_rnn 0
-                --parser_rnn_hidden_size 400
+                --use_prompt_tags ${params[1]}
+                --n_icl_samples ${params[2]}
                 "
-    if [ "${params[1]}" -gt 0 ] && [ "${parser_type}" == 'simple' ]; then
-        continue
-    fi
     commands+=("$cmd")
 done <<< "$combinations"
 

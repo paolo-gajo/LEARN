@@ -166,7 +166,7 @@ if __name__ == "__main__":
     parser.add_argument("--eval_steps", type=int, help="Number of training steps", default=0)
     parser.add_argument("--epochs", type=int, help="Number of training epochs", default=3)
     parser.add_argument("--n_icl_samples", type=int, help="Number of training epochs", default=10)
-    parser.add_argument("--use_prompt_tags", action="store_true", help="Whether to include tags in the prompt")
+    parser.add_argument("--use_prompt_tags", type=int, help="Whether to include tags in the prompt (0 or 1 as int acting as bool)", default=1)
     parser.add_argument("--batch_size_train", type=int, help="Batch size for training", default=4)
     parser.add_argument("--batch_size_eval", type=int, help="Batch size for evaluation", default=4)
     parser.add_argument("--grad_acc_steps", type=int, help="Gradient accumulation steps", default=1)

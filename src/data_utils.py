@@ -3,7 +3,6 @@ from random import shuffle
 from sklearn.model_selection import train_test_split
 import argparse
 import xml.etree.ElementTree as ET
-from xml.etree.ElementTree import tostring, tostringlist
 import numpy as np
 import os
 
@@ -14,7 +13,7 @@ class CausalLMDataset:
                 prompt_tags: str,
                 tokenizer,
                 n_icl_samples: int=3, 
-                use_prompt_tags: str=True,
+                use_prompt_tags: int=1,
                 clean: bool=True,
                 seed: int=42
                 ):
@@ -68,16 +67,17 @@ class CausalLMDataset:
             shuffle(examples)
             examples = '\n'.join(examples)
             if examples:
-                examples = f'{self.examples_preamble}\n\n{examples}\n'
+                examples = f'\n{self.examples_preamble}\n\n{examples}\n'
             if self.use_prompt_tags:
-                tags_prompt = f'{self.prompt_tags_preamble}\n\n{self.prompt_tags}\n'
+                tags_prompt = f'\n{self.prompt_tags_preamble}\n\n{self.prompt_tags}'
             else:
                 tags_prompt = ''
             prompt = self.prompt_layout.format(tags_prompt=tags_prompt,
                                                examples_prompt=examples,
                                                sentence=sentence,
                                                eos_token=self.tokenizer.eos_token)
-            
+            with open('./misc/last_prompt.txt', 'w') as f: f.write(prompt)
+            breakpoint()
             # Create the prompt part (same for train and eval)
             chat_prompt = [
                 {"role": "system", "content": self.sys_prompt},
