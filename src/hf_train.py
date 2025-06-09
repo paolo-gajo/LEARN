@@ -15,7 +15,8 @@ import json
 
 def main(args):
     set_seeds(args.seed)
-    print(args)
+    args_dict = vars(args)
+    print(args_dict)
     df = convert_files(args.data_path)
     print(df)
 
@@ -153,6 +154,10 @@ def main(args):
     json_path_test = os.path.join(results_dir, 'results_test.json')
     with open(json_path_test, 'w', encoding='utf8') as f:
         json.dump(results_test, f, ensure_ascii = False, indent = 4)
+    
+    json_path_args_dict = os.path.join(results_dir, 'args.json')
+    with open(json_path_args_dict, 'w', encoding='utf8') as f:
+        json.dump(args_dict, f, ensure_ascii = False, indent = 4)
 
     model_dir = f"./models/{model_name.split('/')[-1]}_{get_time()}"
     best_model.save_pretrained(model_dir)
