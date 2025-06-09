@@ -4,7 +4,7 @@ import os
 from os_utils import get_time
 from tqdm.auto import tqdm
 import torch
-from typing import List, Tuple
+from typing import List
 
 class Evaluator:
     def __init__(self,
@@ -38,9 +38,9 @@ class Evaluator:
         prompt_list = df['prompt'].to_list()
         comp_list = df['completion'].to_list()
 
-        # # Gather all possible relation types for eventual per-relation metrics
-        # all_true_rel_types = set([el[1] for t_list in comp_list for el in t_list])
-        # rel_type_preds_trues = {k: {'trues': [], 'preds': []} for k in all_true_rel_types}
+        # # Get all possible tag clases to calculate per-relation metrics
+        all_true_tag_classes = set([el[1] for t_list in comp_list for el in t_list])
+        tag_cls_pairs = {k: {'trues': [], 'preds': []} for k in all_true_tag_classes}
 
         # Progress bar over sub-batches, rather than item by item
         pbar = tqdm(range(0, len(df), batch_size), desc=f'Model: {self.model_name}')
@@ -69,18 +69,11 @@ class Evaluator:
                 trues.append(true_list)
                 preds.append(pred_list)
 
-                # # Collect per-relation predictions + gold
-                # for rel_type in all_true_rel_types:
-                #     trues_type = [t for t in true_list if t[1] == rel_type]
-                #     preds_type = [p for p in pred_list if p[1] == rel_type]
-                #     rel_type_preds_trues[rel_type]['trues'].append(trues_type)
-                #     rel_type_preds_trues[rel_type]['preds'].append(preds_type)
-
                 # Optionally display partial F1 and log verbose output
                 if verbose:
                     metrics_sample = self.calculate_metrics([true_list], [pred_list])
                     metrics_current = self.calculate_metrics(trues, preds)
-                    pbar.set_description(f"Last/Overall F1: ({round(metrics_sample['macro_f1'], 2)}, {round(metrics_current['macro_f1'], 2)})")
+                    pbar.set_description(f"Overall/Last F1: ({round(metrics_sample['macro_f1'], 2)}, {round(metrics_current['macro_f1'], 2)})")
 
                     output_texts = (
                         '\n' + f'text: {text}' +
@@ -102,18 +95,6 @@ class Evaluator:
             save_path = os.path.join(self.verbose_output_path, f'results_{split}_{epoch + 1}.log')
             with open(save_path, 'w', encoding='utf8') as f:
                 f.write(verbose_output)
-        # all_pred_rel_types = set([p[1] for p_list in preds for p in p_list])
-        # print(f'All types of predicted relations: {all_pred_rel_types}')
-        # Final strict micro-averaged metrics
-
-        # # Per-relation metrics
-        # rel_type_metrics = {k: {} for k in all_true_rel_types}
-        # for rel_type, pr_dict in rel_type_preds_trues.items():
-        #     p_rel, r_rel, f1_rel = self.calculate_metrics(pr_dict['trues'], pr_dict['preds'])
-        #     rel_type_metrics[rel_type]['precision'] = p_rel
-        #     rel_type_metrics[rel_type]['recall']    = r_rel
-        #     rel_type_metrics[rel_type]['f1']        = f1_rel
-
         return self.calculate_metrics(trues, preds)
 
     def run_model(self, texts):
@@ -228,6 +209,7 @@ class Evaluator:
                 all_tags.add(tag)
         
         precisions, recalls, f1s = [], [], []
+        tag_dict = defaultdict(dict)
         for tag in all_tags:
             precision = dict_tp[tag] / (dict_tp[tag] + dict_fp[tag]) if dict_tp[tag] + dict_fp[tag] > 0 else 0
             recall = dict_tp[tag] / (dict_tp[tag] + dict_fn[tag]) if dict_tp[tag] + dict_fn[tag] > 0 else 0
@@ -235,6 +217,9 @@ class Evaluator:
             precisions.append(precision)
             recalls.append(recall)
             f1s.append(f1)
+            tag_dict[tag]['precision'] = precision
+            tag_dict[tag]['recall'] = recall
+            tag_dict[tag]['f1'] = f1
         
         macro_precision = sum(precisions) / len(precisions) if precisions else 0
         macro_recall = sum(recalls) / len(recalls) if recalls else 0
@@ -246,7 +231,8 @@ class Evaluator:
             "micro_f1": micro_f1,
             "macro_precision": macro_precision,
             "macro_recall": macro_recall,
-            "macro_f1": macro_f1
+            "macro_f1": macro_f1,
+            "per_tag_metrics": tag_dict,
         }
 
 if __name__ == "__main__":
