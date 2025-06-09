@@ -1,7 +1,9 @@
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from convert import convert_files
-from utils import CausalLMDataset, get_time, Evaluator
+from data_utils import CausalLMDataset
+from eval_utils import Evaluator
+from os_utils import get_time
 from datasets import Dataset
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 from trl import SFTConfig, SFTTrainer

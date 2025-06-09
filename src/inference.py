@@ -1,7 +1,7 @@
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from convert import convert_files
-from utils import CompletionDataset
+from data_utils import CompletionDataset
 from datasets import Dataset
 
 from trl import SFTConfig, SFTTrainer

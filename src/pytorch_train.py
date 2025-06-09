@@ -1,7 +1,7 @@
 import torch
 from transformers import LlamaForCausalLM, AutoTokenizer
 from convert import convert_files
-from utils import CausalLMDataset, Collator
+from data_utils import CausalLMDataset, Collator
 from torch.utils.data import DataLoader
 
 df = convert_files('./data')
