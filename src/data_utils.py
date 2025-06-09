@@ -6,6 +6,8 @@ import xml.etree.ElementTree as ET
 import numpy as np
 import os
 
+debug_mode = 1
+
 class CausalLMDataset:
     def __init__(self,
                 data: pd.DataFrame,
@@ -76,8 +78,8 @@ class CausalLMDataset:
                                                examples_prompt=examples,
                                                sentence=sentence,
                                                eos_token=self.tokenizer.eos_token)
-            with open('./misc/last_prompt.txt', 'w') as f: f.write(prompt)
-            breakpoint()
+            if debug_mode and i==0:
+                with open(f'./misc/prompt_sample_{split}.txt', 'w') as f: f.write(prompt)
             # Create the prompt part (same for train and eval)
             chat_prompt = [
                 {"role": "system", "content": self.sys_prompt},

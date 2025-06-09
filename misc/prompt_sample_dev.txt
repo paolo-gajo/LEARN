@@ -64,13 +64,27 @@ The following are the tags you should use for annotation:
 
 Below are reference examples:
 
-Do you have sweet potatoes? They're my favourite side. Also what's the best salsa for them?###Do you have sweet potatoes? They're my favourite side. Also what's the best salsa for them?
-I want to stay in Seoul for a week and my departure city is Naples because it's more easy for me###I want to stay in Seoul for a week and my departure city is Naples because it's <GADJCS corr="easier">more easy</GADJCS> for me
-educator###<DMCC corr="Educator">educator</DMCC>
-Fantastic, what about the perfect period of the year to go there?###Fantastic, what about the perfect period of the year to go there?
-i woud speak with you about my university's life.###<DMCC corr="I">i</DMCC> <XVCO corr="would like to speak">None</XVCO> with you about my <DMCC corr="would">woud</DMCC> speak <GNC corr="university life">university's life</GNC>.
-Do you think Barcelona is safe for women? I am gonna travel with my best friend and she's worried about pickpockets.###Do you think Barcelona is safe for women? I am gonna travel with my best friend and she's worried about pickpockets.
+that's better. now please respond. I am curious in hearing what syphons in your head###<DMCC corr="That">that</DMCC>'s better. <DMCC corr="Now">now</DMCC> please respond. I am <XADJCO corr="curious to hear">curious in hearing</XADJCO> what <FS corr="siphons">syphons</FS> in your head
+White thank you###White thank you
+Ok, thanks! Byeeee!###Ok, thanks! Byeeee!
+*Thinking about my hamburger"###*Thinking about my hamburger"
+Sure, thank you so much!###Sure, thank you so much!
+Iìll gladly take the offer###<FS corr="I'll">Iìll</FS> gladly take the offer
+Now I'd like to talk with you about holidays###Now I'd like to talk with you about holidays
+now is the moment for small talk###<DMCC corr="Now">now</DMCC> is the <LSN corr="time">moment</LSN> for small talk
+We'll think about it later, thank you###We'll think about it later, thank you
+i'd prefer to walk there if you could explain me the way###<DMCC corr="I">i</DMCC>'d prefer to walk there if you could <XVCO corr="explain to me">explain me</XVCO> the way
+yeah###<DMCC corr="Yeah">yeah</DMCC>
+hi###<DMCC corr="Hi">hi</DMCC>
+Lunch###Lunch
+can you explore more on examples of your biases?###<DMCC corr="Can">can</DMCC> you <LSV corr="expand">explore</LSV> more on examples of your biases?
+Nothing in particular, just hard to study but not impossible###Nothing in particular, just hard to study but not impossible
+I want to roleplay to better my English. Could we make up a scenario where I'm a patient talking to a doctor about an illness?###I want to roleplay to <LSV corr="improve">better</LSV> my English. Could we make up a scenario where I'm a patient talking to a doctor about an illness?
+Wow I imagine you’re going to talk with a lot of people every single day###Wow I imagine you’re going to talk with a lot of people every single day
+Going back to the role play, do you find it difficult to?###Going back to the role play, <Z corr="?">do you find it difficult to</Z>?
+hi chatbot. Now we can talk normally like we are friends###<DMCC corr="Hi">hi</DMCC> chatbot. Now we can talk normally <LP corr="as if">like</LP> we are friends
+Yes! It's a surprise for him!###Yes! It's a surprise for him!
 
 Annotate the following target sentence, without providing any explanation:
 
-HI###
+the major risks it's PTSD###

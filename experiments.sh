@@ -2,7 +2,7 @@
 #SBATCH -J clic-it
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:h100:1
 #SBATCH --time=01:00:00
 #SBATCH --output=./.slurm/%A/%a_output.log
 #SBATCH --error=./.slurm/%A/%a_error.log
@@ -36,21 +36,21 @@ cartesian_product() {
 }
 declare -a seed=(
     0
-    1
-    2
-    3
-    4
+    # 1
+    # 2
+    # 3
+    # 4
 )
 declare -a use_prompt_tags=(
     0
     1
 )
 declare -a n_icl_samples=(
-    0
-    5
+    # 0
+    # 5
     10
-    15
-    20
+    # 15
+    # 20
 )
 # Generate all combinations
 array_names=(
@@ -68,18 +68,12 @@ combinations=$(cartesian_product array_names)
     done
 } > "${slurm_dir}/hyperparameters.txt"
 
-# Training parameters
-training_steps=10000
-eval_steps=500
-results_suffix=gat
-
 # Convert combinations to commands
 declare -a commands=()
 while IFS= read -r combo; do
     IFS=',' read -ra params <<< "$combo"
     
-    cmd="python ./src/train.py
-                --opts
+    cmd="python ./src/hf_train.py
                 --seed ${params[0]}
                 --use_prompt_tags ${params[1]}
                 --n_icl_samples ${params[2]}

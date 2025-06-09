@@ -1,0 +1,90 @@
+Annotate the target sentence below with the following tags, in XML style. Reproduce the full sentence and annotate each error.
+
+The following are the tags you should use for annotation:
+
+<DMCC>: Capitalization issues.
+<DMCA>: Use of abbreviations in digitally-mediated communication (e.g., OK, lol, etc.).
+<FS>: Spelling errors.
+<FM>: Morphological errors involving derivational affixes.
+<QC>: Confusion of punctuation marks.
+<QL>: Punctuation mark instead of lexical item (or vice versa).
+<QM>: Missing punctuation.
+<QR>: Redundant punctuation.
+<GDD>: Errors with demonstrative determiners (e.g., this, that, etc.).
+<GDO>: Errors with possessive determiners (e.g., my, your, etc.).
+<GDI>: Errors with indefinite determiners (e.g., any, some, etc.).
+<GDT>: Errors with other types of determiners (e.g., relative, interrogative, etc.).
+<GA>: Errors with definite, indefinite, or zero articles.
+<GADJCS>: Errors with comparative or superlative adjectives.
+<GADJN>: Errors with adjective number.
+<GADJO>: Errors with adjective order.
+<GADVO>: Misplaced adverbs.
+<GNC>: Errors with noun case (e.g., Saxon genitive misuse).
+<GNN>: Errors with noun number.
+<GPD>: Errors with demonstrative pronouns (e.g., this, that, etc.).
+<GPP>: Errors with personal pronouns (e.g., you, we, etc.).
+<GPO>: Errors with possessive pronouns (e.g., mine, yours, etc.).
+<GPI>: Errors with indefinite pronouns. (e.g. anyone, nothing, etc.).
+<GPF>: Errors with reflexive or reciprocal pronouns (e.g., myself, each other, etc.).
+<GPR>: Errors with relative or interrogative pronouns (e.g., what, which, etc.).
+<GPU>: Unclear pronominal reference.
+<GVAUX>: Misuse of primary, modal, or semi-auxiliaries (e.g., do, have, etc.).
+<GVM>: Errors with verb morphology.
+<GVN>: Errors with subject-verb agreement.
+<GVNF>: Errors in use of -ing, infinitives, or relative clauses.
+<GVT>: Misuse of tense or aspect.
+<GVV>: Errors with active/passive voice.
+<GWC>: Errors due to confusion between word classes.
+<XADJCO>: Errors with adjective complementation.
+<XNCO>: Errors with noun complementation.
+<XPRCO>: Errors with preposition complementation.
+<XVCO>: Errors with verb complementation.
+<XADJPR>: Errors with adjective dependent prepositions.
+<XADVPR>: Errors with adverb dependent prepositions.
+<XNPR>: Errors involving dependent prepositions for nouns.
+<XVPR>: Errors involving dependent prepositions for verbs.
+<XNUC>: Errors in the use of uncountable/countable nouns.
+<LCC>: Errors in the use of coordinating conjunctions (e.g., and, or, etc.).
+<LCS>: Errors in the use of subordinating conjunctions (e.g., although, because, etc.).
+<LCLS>: Errors in the use of single logical connectors (e.g., nevertheless, etc.).
+<LCLC>: Errors in the use of complex logical connectors (e.g., on the other hand, etc.).
+<LSADJ>: Conceptual or collocational errors involving adjectives.
+<LSADV>: Conceptual or collocational errors involving adverbs.
+<LSN>: Conceptual or collocational errors involving nouns.
+<LSPR>: Conceptual or collocational errors involving prepositions.
+<LSV>: Conceptual or collocational errors involving verbs.
+<LP>: Errors in fixed word combinations, including idioms, compounds, and phrasal verbs.
+<LWCO>: Instances of coined words, calques, or invented proper nouns.
+<WM>: Missing words.
+<WR>: Redundant words.
+<WO>: Errors in word order.
+<Z>: Stylistic problems or unclear sequences requiring reformulation.
+<CSINTRA>: Code-switching within a sentence.
+<CSINTER>: Code-switching between sentences or conversational turns.
+
+Below are reference examples:
+
+Hi chat gpt let's talk about something###Hi <DMCC corr="ChatGPT">chat gpt</DMCC> <QM corr=",">\0</QM> let's talk about something
+I mean the film###I mean the film
+Yes of course, however may I ask you more questions about the place  is located the apartment?###Yes of course, however may I ask you more questions about the place <GDT corr="where">\0</GDT> <WO corr="the apartment is located">is located the apartment</WO>?
+"oh i needed any help finding the manga"###" <DMCC corr="Oh">oh</DMCC> <DMCC corr="I">i</DMCC> needed <GDI corr="\0">any</GDI> <XVCO corr="help to find">help finding</XVCO> the manga"
+yes I was actually wandering if you could give me advice about a guy I went on a date on once###<DMCC corr="Yes">yes</DMCC> I was actually <FS corr="wondering">wandering</FS> if you could give me advice about a guy I went on a <XNPR corr="date with">date on</XNPR> once
+Write an email to request a quote from local plumbers for backflow testing. I need it done in the next 2 weeks. Keep it short and casual.###Write an email to request a quote from local plumbers for backflow testing. I need it done in the next 2 weeks. Keep it short and casual.
+Hi, how's it going?###Hi, how's it going?
+i change idea, i will enter in the castle###<DMCC corr="I">i</DMCC> <LP corr="have changed my mind">None</LP>, <GVT corr="have changed">change</GVT> idea <DMCC corr="I">i</DMCC> will <XVPR corr="enter">enter in</XVPR> the castle
+20 minutes ago more or less###20 minutes ago more or less
+Which clothes should I wear to avoid drawing attention?###Which clothes should I wear to avoid drawing attention?
+you can buy the ticket of bus for PAris?###<WO corr="Can you buy">None</WO> <DMCC corr="You">you</DMCC> can buy <GA corr="a">the</GA> <GNC corr="bus ticket">ticket of bus</GNC> for <FS corr="Paris">PAris</FS>?
+How was my English?###How was my English?
+About Barcelona my favorite architecture are Sagrada Familia because she's a biggest monument in the middle of town, and  very much like me Parc Guell, Casa Batlò and Barceloneta. Tokyo interests me for his cooking colture###About Barcelona my favorite <LSN corr="piece of architecture">architecture</LSN> are Sagrada Familia because <GPP corr="it">she</GPP>'s <GA corr="the">a</GA> biggest monument in the middle of town, and <GPP corr="I">\0</GPP> <WO corr="like very much">None</WO> <LSADV corr="">very much</LSADV> like <GPP corr="\0">me</GPP> Parc Guell, Casa Batlò and Barceloneta. Tokyo interests me for <GDO corr="its">his</GDO> cooking <FS corr="culture">colture</FS>
+I think that my favorite was been Angelina Jolie's outfit###I think that my favorite <GVT corr="was">was been</GVT> Angelina Jolie's outfit
+We'll think about it later, thank you###We'll think about it later, thank you
+Thanks a lot, now would you like to talk about something else?###Thanks a lot, now would you like to talk about something else?
+thank you so much, the last thing, i want to ask you is about the hotel related to the park, i am in the cars hotel of Disneyland, is it good? are the services open 24/7? is the room comfy?###<DMCC corr="Thank">thank</DMCC> you so much, the last thing <QR corr="\0">,</QR> <DMCC corr="I">i</DMCC> want to ask you is about <GNC corr="the park's hotel">the hotel related to the park</GNC>, <DMCC corr="I">i</DMCC> am in <GNC corr="Disneyland's Santa Fe hotel">the </GNC>, is it good? <Z corr="Santa Fe">cars</Z> hotel of Disneyland <DMCC corr="Are">are</DMCC> the services open 24/7? <DMCC corr="Is">is</DMCC> the room comfy?
+Thank you!###Thank you!
+i am a traveler###<DMCC corr="I">i</DMCC> am a traveler
+What do you think about what's going on in America with Puff Daddy?###What do you think about what's going on in America with Puff Daddy?
+
+Annotate the following target sentence, without providing any explanation:
+
+Hi! Can I ask you something?###

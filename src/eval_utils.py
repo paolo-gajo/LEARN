@@ -91,7 +91,9 @@ class Evaluator:
             save_path = os.path.join(self.verbose_output_path, f'results_{split}_{epoch + 1}.log')
             with open(save_path, 'w', encoding='utf8') as f:
                 f.write(verbose_output)
-        return self.calculate_metrics(trues, preds)
+        out_dict = self.calculate_metrics(trues, preds)
+        out_dict['epoch'] = epoch
+        return out_dict
 
     def run_model(self, texts):
         if isinstance(texts, str):

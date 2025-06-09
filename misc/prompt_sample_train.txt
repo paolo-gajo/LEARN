@@ -1,0 +1,91 @@
+Annotate the target sentence below with the following tags, in XML style. Reproduce the full sentence and annotate each error.
+
+The following are the tags you should use for annotation:
+
+<DMCC>: Capitalization issues.
+<DMCA>: Use of abbreviations in digitally-mediated communication (e.g., OK, lol, etc.).
+<FS>: Spelling errors.
+<FM>: Morphological errors involving derivational affixes.
+<QC>: Confusion of punctuation marks.
+<QL>: Punctuation mark instead of lexical item (or vice versa).
+<QM>: Missing punctuation.
+<QR>: Redundant punctuation.
+<GDD>: Errors with demonstrative determiners (e.g., this, that, etc.).
+<GDO>: Errors with possessive determiners (e.g., my, your, etc.).
+<GDI>: Errors with indefinite determiners (e.g., any, some, etc.).
+<GDT>: Errors with other types of determiners (e.g., relative, interrogative, etc.).
+<GA>: Errors with definite, indefinite, or zero articles.
+<GADJCS>: Errors with comparative or superlative adjectives.
+<GADJN>: Errors with adjective number.
+<GADJO>: Errors with adjective order.
+<GADVO>: Misplaced adverbs.
+<GNC>: Errors with noun case (e.g., Saxon genitive misuse).
+<GNN>: Errors with noun number.
+<GPD>: Errors with demonstrative pronouns (e.g., this, that, etc.).
+<GPP>: Errors with personal pronouns (e.g., you, we, etc.).
+<GPO>: Errors with possessive pronouns (e.g., mine, yours, etc.).
+<GPI>: Errors with indefinite pronouns. (e.g. anyone, nothing, etc.).
+<GPF>: Errors with reflexive or reciprocal pronouns (e.g., myself, each other, etc.).
+<GPR>: Errors with relative or interrogative pronouns (e.g., what, which, etc.).
+<GPU>: Unclear pronominal reference.
+<GVAUX>: Misuse of primary, modal, or semi-auxiliaries (e.g., do, have, etc.).
+<GVM>: Errors with verb morphology.
+<GVN>: Errors with subject-verb agreement.
+<GVNF>: Errors in use of -ing, infinitives, or relative clauses.
+<GVT>: Misuse of tense or aspect.
+<GVV>: Errors with active/passive voice.
+<GWC>: Errors due to confusion between word classes.
+<XADJCO>: Errors with adjective complementation.
+<XNCO>: Errors with noun complementation.
+<XPRCO>: Errors with preposition complementation.
+<XVCO>: Errors with verb complementation.
+<XADJPR>: Errors with adjective dependent prepositions.
+<XADVPR>: Errors with adverb dependent prepositions.
+<XNPR>: Errors involving dependent prepositions for nouns.
+<XVPR>: Errors involving dependent prepositions for verbs.
+<XNUC>: Errors in the use of uncountable/countable nouns.
+<LCC>: Errors in the use of coordinating conjunctions (e.g., and, or, etc.).
+<LCS>: Errors in the use of subordinating conjunctions (e.g., although, because, etc.).
+<LCLS>: Errors in the use of single logical connectors (e.g., nevertheless, etc.).
+<LCLC>: Errors in the use of complex logical connectors (e.g., on the other hand, etc.).
+<LSADJ>: Conceptual or collocational errors involving adjectives.
+<LSADV>: Conceptual or collocational errors involving adverbs.
+<LSN>: Conceptual or collocational errors involving nouns.
+<LSPR>: Conceptual or collocational errors involving prepositions.
+<LSV>: Conceptual or collocational errors involving verbs.
+<LP>: Errors in fixed word combinations, including idioms, compounds, and phrasal verbs.
+<LWCO>: Instances of coined words, calques, or invented proper nouns.
+<WM>: Missing words.
+<WR>: Redundant words.
+<WO>: Errors in word order.
+<Z>: Stylistic problems or unclear sequences requiring reformulation.
+<CSINTRA>: Code-switching within a sentence.
+<CSINTER>: Code-switching between sentences or conversational turns.
+
+Below are reference examples:
+
+I understand, thanks. Just another thing, concerning my mental health this time.###I understand, thanks. Just another thing, concerning my mental health this time.
+Oh so you made a mistake, I thought you knew everything###Oh so you made a mistake, I thought you knew everything
+I don’t understand###I don’t understand
+Outside we run and play with other dogs###Outside we run and play with other dogs
+They sound amazing. Let us think for a bit of time and we'll call you when we'll be ready###They sound amazing. Let us think for a bit of time and we'll call you when <GVT corr="we're">we'll be</GVT> ready
+I am ready###I am ready
+Yes , I do . I love music,  and I play many instruments . I think music , especially creating music , not listening to it , really gives musicians a new "key" to open the doors of  knowledge , because music composition has strict rules that can be altered , resulting (depending on the musician's creativity) , in a new form of art , but also in a new form of ear torture . However , it's easy to say that every music genius uses "errors" to create beauty###Yes , I do . I love music,  and I play many instruments . I think music , especially creating music , not listening to it , really gives musicians a new "key" to open the doors of  knowledge , because music composition has strict rules that can be altered , resulting (depending on the musician's creativity) , in a new form of art , but also in a new form of ear torture . However , it's easy to say that every music genius uses "errors" to create beauty
+on the rocks please###<DMCC corr="On">on</DMCC> the rocks please
+Yess i have read ALL attack on titan###Yess <DMCC corr="I">i</DMCC> have read <LSPR corr="all of">None</LSPR> <DMCC corr="all">ALL</DMCC> <DMCC corr="Attack On Titan">attack on titan </DMCC>
+and what do you do if the online payament is broken.###<DMCC corr="And">and</DMCC> what do you do if the online <FS corr="payment">payament</FS> is <LSV corr="not working">broken</LSV>.
+I don't remember it but  is very good ahah###<DMCC corr="I">I</DMCC> don't remember it but <GPP corr="it">\0</GPP> <GVT corr="was">is</GVT> very good ahah
+do you fell like start whit a a role play###<DMCC corr="Do">do</DMCC> you <XVCO corr="feel like starting">None</XVCO> <FS corr="feel">fell</FS> like start <FS corr="with">whit</FS> a <WR corr="\0">a</WR> role play <QM corr="?">\0</QM>
+i think we  let  the conversatione flow naturally###<DMCC corr="I">i</DMCC> think we <GVAUX corr="should">\0</GVAUX> let  the conversatione flow naturally
+If it's possible###If it's possible
+I hate to talk so basic in English###I hate to talk <LP corr="in such a basic way">so basic</LP> in English
+Thanks a lot, now would you like to talk about something else?###Thanks a lot, now would you like to talk about something else?
+arabic architecture, for example i stayed in Sevilla 2 year ago for a erasmus, i love the city and the particular###<DMCC corr="Arabic">arabic</DMCC> architecture, for example <DMCC corr="I">i</DMCC> stayed in Sevilla 2 year ago for <GA corr="an">a</GA> <DMCC corr="Erasmus">erasmus</DMCC>, <DMCC corr="I">i</DMCC> love the city and <GA corr="its">the</GA> <LSN corr="uniqueness">None</LSN> <GNN corr="particulars">particular</GNN>
+Can I bring a Little candle for the dessert of my partner? It's his bday###Can I bring a Little candle for <GNC corr="my partner's dessert">the dessert of my partner</GNC>? It's his <DMCA corr="birthday">bday</DMCA>
+Yes###Yes
+I like the sound of that! Give me a glass of your best whiskey!###I like the sound of that! Give me a glass of your best whiskey!
+
+Annotate the following target sentence, without providing any explanation:
+
+I would like to go on holiday in Greece, but not in Corfù. I would like to try Santorini, or Athens, because I like art.
+		In the future I would like to go to Japan.###
