@@ -27,7 +27,7 @@ def main(args):
                                 prompt_layout,
                                 prompt_tags,
                                 tokenizer,
-                                n_icl_samples=10,
+                                n_icl_samples=args.n_icl_samples,
                                 )
     
     # Create datasets
@@ -143,6 +143,7 @@ if __name__ == "__main__":
     parser.add_argument("--lr", type=float, help="Learning rate", default=2e-4)
     parser.add_argument("--steps", type=int, help="Number of training steps", default=0)
     parser.add_argument("--epochs", type=int, help="Number of training epochs", default=10)
+    parser.add_argument("--n_icl_samples", type=int, help="Number of training epochs", default=10)
     parser.add_argument("--batch_size_train", type=int, help="Batch size for training", default=4)
     parser.add_argument("--batch_size_eval", type=int, help="Batch size for evaluation", default=4)
     parser.add_argument("--grad_acc_steps", type=int, help="Gradient accumulation steps", default=1)
