@@ -1,11 +1,10 @@
-from collections import defaultdict
+from collections import Counter, defaultdict
 
 def calculate_metrics(sample_trues, sample_preds):
     """
     Calculate metrics preserving duplicate (tag, content) pairs.
     Metrics are calculated per tag type, but duplicate spans are preserved.
     """
-    from collections import Counter, defaultdict
     
     dict_tp = defaultdict(int)
     dict_fp = defaultdict(int)
@@ -13,27 +12,27 @@ def calculate_metrics(sample_trues, sample_preds):
     
     for true_tags, pred_tags in zip(sample_trues, sample_preds):
         # Count occurrences of each (tag, content) pair
-        true_counts = Counter(true_tags)
-        pred_counts = Counter(pred_tags)
+        counts_true = Counter(true_tags)
+        counts_pred = Counter(pred_tags)
         
         # Get all unique (tag, content) combinations from both true and pred
         all_pairs = set(true_tags) | set(pred_tags)
         
         for tag_content_pair in all_pairs:
             tag_name = tag_content_pair[0]
-            true_count = true_counts[tag_content_pair]
-            pred_count = pred_counts[tag_content_pair]
+            count_true = counts_true[tag_content_pair]
+            count_pred = counts_pred[tag_content_pair]
             
             # True Positives: minimum of true and predicted counts
-            tp = min(true_count, pred_count)
+            tp = min(count_true, count_pred)
             dict_tp[tag_name] += tp
             
             # False Positives: predicted more than true
-            fp = max(0, pred_count - true_count)
+            fp = max(0, count_pred - count_true)
             dict_fp[tag_name] += fp
             
             # False Negatives: true more than predicted  
-            fn = max(0, true_count - pred_count)
+            fn = max(0, count_true - count_pred)
             dict_fn[tag_name] += fn
     
     # Calculate micro-averaged metrics
@@ -78,12 +77,12 @@ def calculate_metrics(sample_trues, sample_preds):
 
 if __name__ == "__main__":
     gold = [
-        # [('WO', 'do to', 0), ('FS', 'excercice', 1), ('GPR', 'that', 2), ('XVCO', 'would reserve', 3), ('GA', '\\0', 4), ('GNN', 'question', 5)],
-        [('WO', 'do to', 0), ('FS', 'excercice', 1), ('GPR', 'that', 2), ('XVCO', 'would reserve', 3), ('GA', '\\0', 4), ('GNN', 'question', 5)],
+        # [('WO', 'do to'), ('FS', 'excercice'), ('GPR', 'that'), ('XVCO', 'would reserve'), ('GA', '\\0'), ('GNN', 'question')],
+        [('WO', 'do to'), ('FS', 'excercice'), ('GPR', 'that'), ('XVCO', 'would reserve'), ('GA', '\\0'), ('GNN', 'question')],
         ]
     pred = [
-        # [('GVAUX', 'do', 0), ('WO', 'to do', 1), ('FS', 'excercice', 2), ('GADJO', 'encouraging', 3), ('GPP', 'tutor', 4), ('GVT', 'helps', 5)],
-        [('DMCC', 'Hello!', 0), ('GVM', 'do', 1), ('DMCC', 'to', 2), ('FS', 'excercice', 3)],
+        # [('GVAUX', 'do'), ('WO', 'to do'), ('FS', 'excercice'), ('GADJO', 'encouraging'), ('GPP', 'tutor'), ('GVT', 'helps')],
+        [('DMCC', 'Hello!'), ('GVM', 'do'), ('DMCC', 'to'), ('FS', 'excercice')],
         ]
     for g, p in zip(gold, pred):
         metrics = calculate_metrics([g], [p])
