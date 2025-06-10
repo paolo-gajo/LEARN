@@ -64,48 +64,27 @@ The following are the tags you should use for annotation:
 
 Below are reference examples:
 
-They sound amazing. Let us think for a bit of time and we'll call you when we'll be ready###They sound amazing. Let us think for a bit of time and we'll call you when <GVT corr="we're">we'll be</GVT> ready
-I am ready###I am ready
-Im looking for an apartment for a single person with one bathroom, two bedroom and a big kitchen###<FS corr="I'm">Im</FS> looking for an apartment for a single person with one bathroom, two <GNN corr="bedrooms">bedroom</GNN> and a big kitchen
-Yes , I do . I love music,  and I play many instruments . I think music , especially creating music , not listening to it , really gives musicians a new "key" to open the doors of  knowledge , because music composition has strict rules that can be altered , resulting (depending on the musician's creativity) , in a new form of art , but also in a new form of ear torture . However , it's easy to say that every music genius uses "errors" to create beauty###Yes , I do . I love music,  and I play many instruments . I think music , especially creating music , not listening to it , really gives musicians a new "key" to open the doors of  knowledge , because music composition has strict rules that can be altered , resulting (depending on the musician's creativity) , in a new form of art , but also in a new form of ear torture . However , it's easy to say that every music genius uses "errors" to create beauty
-If it's possible###If it's possible
-we love stay together###<DMCC corr="We">we</DMCC> <XVCO corr="love to">love</XVCO> <LSN corr="be">stay</LSN> together
-User###User
-I'm a university student in search of a house here in Forlì, you are the one that is going to help me###I'm a university student in search of a house here in Forlì, you are the one that is going to help me
-Can I bring a Little candle for the dessert of my partner? It's his bday###Can I bring a Little candle for <GNC corr="my partner's dessert">the dessert of my partner</GNC>? It's his <DMCA corr="birthday">bday</DMCA>
-I understand, thanks. Just another thing, concerning my mental health this time.###I understand, thanks. Just another thing, concerning my mental health this time.
-do you fell like start whit a a role play###<DMCC corr="Do">do</DMCC> you <XVCO corr="feel like starting">None</XVCO> <FS corr="feel">fell</FS> like start <FS corr="with">whit</FS> a <WR corr="\0">a</WR> role play <QM corr="?">\0</QM>
-I don't remember it but  is very good ahah###<DMCC corr="I">I</DMCC> don't remember it but <GPP corr="it">\0</GPP> <GVT corr="was">is</GVT> very good ahah
-Hi, i would really appreciate  if you tell me now, thank you. User.###Hi, <DMCC corr="I">i</DMCC> would really appreciate <GPP corr="it">\0</GPP> if you <GVT corr="told">tell</GVT> me now, thank you. User.
-i change idea, i will enter in the castle###<DMCC corr="I">i</DMCC> <LP corr="have changed my mind">None</LP>, <GVT corr="have changed">change</GVT> idea <DMCC corr="I">i</DMCC> will <XVPR corr="enter">enter in</XVPR> the castle
-I was just overthinking about different things and feelings.. you know, i've been with my biyfriend for a while now, and i'm sure to be completely in lovbe with him, but some time i feel like it's not the same anymore, I don't know if you can understand me, but it's a rough feeling.. what do you think###I was just overthinking about different things and feelings.. <DMCC corr="You">you</DMCC> know, <DMCC corr="I">i</DMCC>'ve been with my <FS corr="boyfriend">biyfriend</FS> for a while now, and <DMCC corr="I">i</DMCC>'m sure to be completely in <FS corr="love">lovbe</FS> with him, but <LSADV corr="sometimes">some time</LSADV> <DMCC corr="I">i</DMCC> feel like it's not the same anymore, I don't know if you can understand me, but it's a rough feeling.. <DMCC corr="What">what</DMCC> do you think <QM corr="?">\0</QM>
-That's true. What about volleyball? Who do you think has the best team in the world?###That's true. What about volleyball? Who do you think has the best team in the world?
-I like the sound of that! Give me a glass of your best whiskey!###I like the sound of that! Give me a glass of your best whiskey!
-How was my English?###How was my English?
-Yes###Yes
-i want to make a role play with you, let's make like  I'm a person that likes very much movies, tv series and all the cinematographic stuff and you are my friend and you also like this type of things but you have a more critic mind. so i will be making you questions and give  opinion and we will have a conversation###<DMCC corr="I">i</DMCC> want to <LSV corr="do">make</LSV> a role play with you, let's <LP corr="pretend">make like</LP> <GDD corr="that">\0</GDD> I'm a person that <WO corr="likes movies, tv series and all the cinematographic stuff very much">likes very much movies, tv series and all the cinematographic stuff</WO> and you are my friend and you also like this type of things but you have a more <GWC corr="critical">critic</GWC> mind. <DMCC corr="So">so</DMCC> <DMCC corr="I">i</DMCC> will be <LSV corr="asking">making</LSV> you questions and <GVNF corr="giving">give</GVNF> <GA corr="an">\0</GA> opinion and we will have a conversation
-arabic architecture, for example i stayed in Sevilla 2 year ago for a erasmus, i love the city and the particular###<DMCC corr="Arabic">arabic</DMCC> architecture, for example <DMCC corr="I">i</DMCC> stayed in Sevilla 2 year ago for <GA corr="an">a</GA> <DMCC corr="Erasmus">erasmus</DMCC>, <DMCC corr="I">i</DMCC> love the city and <GA corr="its">the</GA> <LSN corr="uniqueness">None</LSN> <GNN corr="particulars">particular</GNN>
-Hello, Doctor. I've been having really bad back pain lately, and nothing I do makes it better.###Hello, Doctor. I've been having really bad back pain lately, and nothing I do makes it better.
-Yess i have read ALL attack on titan###Yess <DMCC corr="I">i</DMCC> have read <LSPR corr="all of">None</LSPR> <DMCC corr="all">ALL</DMCC> <DMCC corr="Attack On Titan">attack on titan </DMCC>
-What's a "cozy booth" in Italian?###What's a "cozy booth" in Italian?
-and what do you do if the online payament is broken.###<DMCC corr="And">and</DMCC> what do you do if the online <FS corr="payment">payament</FS> is <LSV corr="not working">broken</LSV>.
-i think we  let  the conversatione flow naturally###<DMCC corr="I">i</DMCC> think we <GVAUX corr="should">\0</GVAUX> let  the conversatione flow naturally
-Can you make small talk with me now?###Can you make small talk with me now?
-I hate to talk so basic in English###I hate to talk <LP corr="in such a basic way">so basic</LP> in English
-Oh so you made a mistake, I thought you knew everything###Oh so you made a mistake, I thought you knew everything
-people's lives is very complicated###<DMCC corr="People">people</DMCC>'s lives <GVN corr="are">is</GVN> very complicated
-i have recently watched past lives###<DMCC corr="I">i</DMCC> have recently watched <DMCC corr="Past">past</DMCC> lives
-I guess you can be funny if you want to###I guess you can be funny if you want to
-thank you###<DMCC corr="Thank">thank</DMCC> you
-Thanks a lot, now would you like to talk about something else?###Thanks a lot, now would you like to talk about something else?
-Hi###Hi
-We'll think about it later, thank you###We'll think about it later, thank you
-Hmm... Interesting. I wanna make many videos for my Instagram and my TikTok pages because I wanna be a content creator in a future. Can you give  some tips about my inspiration?###Hmm... Interesting. I wanna make many videos for my Instagram and my TikTok pages because I wanna be a content creator in <GA corr="the">a</GA> future. Can you give <GPP corr="me">\0</GPP> some tips about my <LSN corr="aspiration">inspiration</LSN>?
-on the rocks please###<DMCC corr="On">on</DMCC> the rocks please
-I don’t understand###I don’t understand
-Outside we run and play with other dogs###Outside we run and play with other dogs
+I hope so. Do you think there is some fashion critic whose review of the event I should read?###I hope so. Do you think there is some fashion critic whose review of the event I should read?
+LEVI ACKERMANN!!!! i love that mann....  is very skilled and beautiful OMG!!!###LEVI ACKERMANN!!!! <DMCC corr="I">i</DMCC> love that mann.... <GPP corr="He">\0</GPP> is very skilled and beautiful <DMCA corr="">OMG</DMCA>!!!
+Write shorter sentences###Write shorter sentences
+Thank you so much. But I also have to say that I received a lot of mocking because of this passion of mine###Thank you so much. But I also have to say that I <LP corr="have been mocked a lot">None</LP> because of this passion of mine <GVT corr="have received">received</GVT> a lot of mocking
+well i really enjoyed dune recently, it really was a great experience at the theater###<DMCC corr="Well">well</DMCC> <DMCC corr="I">i</DMCC> <GVT corr="have really enjoyed">really enjoyed</GVT> <DMCC corr="Dune">dune</DMCC> recently, it really was a great experience at the theater
+Write an email to request a quote from local plumbers for backflow testing. I need it done in the next 2 weeks. Keep it short and casual.###Write an email to request a quote from local plumbers for backflow testing. I need it done in the next 2 weeks. Keep it short and casual.
+It's mostly sharp, as if something was constantly poking me whenever I'm sitting. Sometimes, it even goes up to my neck.###It's mostly sharp, as if something was constantly poking me whenever I'm sitting. Sometimes, it even goes up to my neck.
+I love it. I have my freedom and my independence, which is great, but I'm also never completely alone, as I live with four flatmates in a rather big house.###I love it. I have my freedom and my independence, which is great, but I'm also never completely alone, as I live with four flatmates in a rather big house.
+perfect,and what do you suggest me?###<DMCC corr="Perfect">perfect</DMCC>,and what do you <XNCO corr="suggest to me">suggest me</XNCO>?
+Do you think Barcelona is safe for women? I am gonna travel with my best friend and she's worried about pickpockets.###Do you think Barcelona is safe for women? I am gonna travel with my best friend and she's worried about pickpockets.
+Everything is going fine. How are you?###Everything is going fine. How are you?
+Do you have sweet potatoes? They're my favourite side. Also what's the best salsa for them?###Do you have sweet potatoes? They're my favourite side. Also what's the best salsa for them?
+I want to stay in Seoul for a week and my departure city is Naples because it's more easy for me###I want to stay in Seoul for a week and my departure city is Naples because it's <GADJCS corr="easier">more easy</GADJCS> for me
+Fantastic, what about the perfect period of the year to go there?###Fantastic, what about the perfect period of the year to go there?
+educator###<DMCC corr="Educator">educator</DMCC>
+Paella is very good###Paella is very good
+Thanks. is it possible  go with bus from  centre of Florence?###Thanks. <DMCC corr="Is">is</DMCC> it possible <WM corr="to">\0</WM> go <LSPR corr="by">with</LSPR> bus from <GA corr="the">\0</GA> centre of Florence?
+i didn’t know! So, can you recommend me a more suitable place for families?###<DMCC corr="I">i</DMCC> didn’t know! So, can you <XVCO corr="recommend">recommend me</XVCO> a more suitable place for families?
+i woud speak with you about my university's life.###<DMCC corr="I">i</DMCC> <XVCO corr="would like to speak">None</XVCO> with you about my <DMCC corr="would">woud</DMCC> speak <GNC corr="university life">university's life</GNC>.
+i’m looking for something near the city centre, with a lot of comforts###<DMCC corr="I">i</DMCC>’m looking for something near the city centre, with a lot of comforts
 
 Annotate the following target sentence, without providing any explanation:
 
-I would like to go on holiday in Greece, but not in Corfù. I would like to try Santorini, or Athens, because I like art.
-		In the future I would like to go to Japan.###
+HI###

@@ -2,7 +2,8 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from data_utils import convert_files, CausalLMDataset
 from eval_utils import Evaluator
-from os_utils import get_time
+from os_utils import get_time, setup_config
+from proj_cfg import default_cfg
 from train_utils import set_seeds
 from datasets import Dataset
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
@@ -14,54 +15,53 @@ import os
 import json
 
 def main(args):
-    set_seeds(args.seed)
-    args_dict = vars(args)
-    print(args_dict)
-    df = convert_files(args.data_path)
+    config = setup_config(args, default_cfg)
+    print(config)
+
+    set_seeds(config['seed'])
+    df = convert_files(config['data_path'])
     print(df)
 
-    model_name = "meta-llama/Llama-3.1-8B-Instruct"
-    
-    tokenizer = AutoTokenizer.from_pretrained(model_name, padding_side='left')
+    tokenizer = AutoTokenizer.from_pretrained(config['model_name'], padding_side='left')
     tokenizer.pad_token = tokenizer.eos_token
     
-    prompt_layout = open('./misc/prompt_layout.txt', 'r').read()
-    prompt_tags = open('./misc/prompt_tags.txt', 'r').read()
+    prompt_layout = open(config['prompt_layout_path'], 'r').read()
+    prompt_tags = open(config['prompt_tags_path'], 'r').read()
     dataset = CausalLMDataset(df,
                             prompt_layout,
                             prompt_tags,
                             tokenizer,
-                            n_icl_samples=args.n_icl_samples,
-                            use_prompt_tags=args.use_prompt_tags,
-                            seed=args.seed,
+                            n_icl_samples=config['n_icl_samples'],
+                            use_prompt_tags=config['use_prompt_tags'],
+                            seed=config['seed'],
                             )
     dataset_train = Dataset.from_pandas(dataset.train_samples)
 
-    if args.load_in_4bit:
+    if config['load_in_4bit']:
         quantization_config = BitsAndBytesConfig(
             load_in_4bit=True,
             bnb_4bit_compute_dtype=torch.float16,
             bnb_4bit_use_double_quant=True,
             bnb_4bit_quant_type="nf4"
         )
-    elif args.load_in_8bit:
+    elif config['load_in_8bit']:
         quantization_config = BitsAndBytesConfig(
             load_in_8bit=True,
         )
     else:
         quantization_config = None
-
+    
     model = AutoModelForCausalLM.from_pretrained(
-        model_name,
+        config['model_name'],
         quantization_config=quantization_config,
         torch_dtype=torch.bfloat16,
         trust_remote_code=True,
     )
     model.gradient_checkpointing_enable()
 
-    if args.target_modules != 'full_ft':
-        target_modules = [el+'_proj' for el in args.target_modules.split('-')]
-        if args.load_in_4bit:
+    if config['target_modules'] != 'full_ft':
+        target_modules = [el+'_proj' for el in config['target_modules'].split('-')]
+        if config['load_in_4bit']:
             model = prepare_model_for_kbit_training(model)
         lora_config = LoraConfig(
             r=16,
@@ -74,14 +74,14 @@ def main(args):
         )
         model = get_peft_model(model, lora_config)
     else:
-        target_modules = args.target_modules
+        target_modules = config['target_modules']
         lora_config = None
     
     # Create custom evaluator that has access to the expected outputs
-    evaluator_dev = Evaluator(tokenizer, model)
+    evaluator_dev = Evaluator(tokenizer, model, config)
 
-    if not args.train_steps:
-        args.train_steps = len(dataset.train_samples) // int(args.batch_size_train)
+    if not config['train_steps']:
+        config['train_steps'] = len(dataset.train_samples) // int(config['batch_size_train'])
 
     trainer = SFTTrainer(
         model=model,
@@ -93,15 +93,15 @@ def main(args):
         args=SFTConfig(
             dataset_num_proc=1,
             packing=False,
-            per_device_train_batch_size=args.batch_size_train,
-            per_device_eval_batch_size=args.batch_size_eval,
+            per_device_train_batch_size=config['batch_size_train'],
+            per_device_eval_batch_size=config['batch_size_eval'],
             # eval_accumulation_steps=1,
             warmup_steps=5,
-            max_steps=args.train_steps,
+            max_steps=config['train_steps'],
             # num_train_epochs=1,
-            learning_rate=args.lr,
-            fp16=False,
-            bf16=True,
+            learning_rate=config['lr'],
+            fp16=not torch.cuda.is_bf16_supported(),
+            bf16=torch.cuda.is_bf16_supported(),
             optim="adamw_8bit",
             weight_decay=0.01,
             lr_scheduler_type="linear", 
@@ -109,27 +109,27 @@ def main(args):
             # output_dir="outputs",
             report_to="none",
             eval_strategy='no',
-            # eval_steps=args.train_steps,
-            # save_steps=args.train_steps,
+            # eval_steps=config['train_steps'],
+            # save_steps=config['train_steps'],
             metric_for_best_model="f1",
             # load_best_model_at_end=True,
             label_names=["labels"],
         ),
     )
     t0 = get_time()
-    results_dir = os.path.join("./results", f"{model_name.split('/')[-1]}", t0)
+    results_dir = os.path.join("./results", f"{config['model_name'].split('/')[-1]}", t0)
     os.makedirs(results_dir, exist_ok=True)
     max_val = -np.inf
     results_dev_list = []
-    if args.eval_steps:
-        dataset.dev_samples = dataset.dev_samples[:args.eval_steps]
-    for epoch in range(args.epochs):
+    if config['eval_steps']:
+        dataset.dev_samples = dataset.dev_samples[:config['eval_steps']]
+    for epoch in range(config['epochs']):
         model.train()
         trainer.train()
         results_dev = evaluator_dev.evaluate(dataset.dev_samples,
                                      epoch,
-                                     args.batch_size_eval,
-                                     verbose = args.verbose_eval,
+                                     config['batch_size_eval'],
+                                     verbose = config['verbose_eval'],
                                      split='dev',
                                      )
         print(f'dev @ {epoch + 1} epochs:', results_dev)
@@ -141,13 +141,13 @@ def main(args):
         if results_dev['micro_f1'] > max_val:
             max_val = results_dev['micro_f1']
             best_model = copy.deepcopy(model)
-    if args.eval_steps:
-        dataset.test_samples = dataset.test_samples[:args.eval_steps]
-    evaluator_test = Evaluator(tokenizer, best_model)
+    if config['eval_steps']:
+        dataset.test_samples = dataset.test_samples[:config['eval_steps']]
+    evaluator_test = Evaluator(tokenizer, best_model, config)
     results_test = evaluator_test.evaluate(dataset.test_samples,
                                      epoch,
-                                     args.batch_size_eval,
-                                     verbose = args.verbose_eval,
+                                     config['batch_size_eval'],
+                                     verbose = config['verbose_eval'],
                                      split='test',
                                      )
     print(f'test @ {epoch + 1} epochs:', results_test)
@@ -156,11 +156,11 @@ def main(args):
     with open(json_path_test, 'w', encoding='utf8') as f:
         json.dump(results_test, f, ensure_ascii = False, indent = 4)
     
-    json_path_args_dict = os.path.join(results_dir, 'args.json')
-    with open(json_path_args_dict, 'w', encoding='utf8') as f:
-        json.dump(args_dict, f, ensure_ascii = False, indent = 4)
+    config_path = os.path.join(results_dir, 'config.json')
+    with open(config_path, 'w', encoding='utf8') as f:
+        json.dump(config, f, ensure_ascii = False, indent = 4)
 
-    model_dir = os.path.join("./models/", model_name.split('/')[-1], t0)
+    model_dir = os.path.join("./models/", config['model_name'].split('/')[-1], t0)
     best_model.save_pretrained(model_dir)
     tokenizer.save_pretrained(model_dir)
 

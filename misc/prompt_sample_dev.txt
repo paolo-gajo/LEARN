@@ -64,47 +64,27 @@ The following are the tags you should use for annotation:
 
 Below are reference examples:
 
-now is the moment for small talk###<DMCC corr="Now">now</DMCC> is the <LSN corr="time">moment</LSN> for small talk
-Sense8 was pretty good.###Sense8 was pretty good.
-The person was definetely in a hurry. There were some people around, probably workers. I didn't see any vehicles. Do you need anything else?###The person was <FS corr="definitely">definetely</FS> in a hurry. There were some people around, probably workers. I didn't see any vehicles. Do you need anything else?
-Yes###Yes
-so why did you abstain from taking about EU regulations in the field of AI. To me, it doesn't seem like  violation of the aforementioned rules. What's your take?###<DMCC corr="So">so</DMCC> why did you abstain from <FS corr="talking">taking</FS> about EU regulations in the field of AI <QC corr="?">.</QC> To me, it doesn't seem like <GA corr="a">\0</GA> violation of the aforementioned rules. What's your take?
-if we don't fall aspleep yes###<DMCC corr="If">if</DMCC> we don't fall <FS corr="asleep">aspleep</FS> <QM corr=",">\0</QM> yes
-can you explore more on examples of your biases?###<DMCC corr="Can">can</DMCC> you <LSV corr="expand">explore</LSV> more on examples of your biases?
-White thank you###White thank you
-Paella is very good###Paella is very good
-Ok, thanks! Byeeee!###Ok, thanks! Byeeee!
-Going back to the role play, do you find it difficult to?###Going back to the role play, <Z corr="?">do you find it difficult to</Z>?
-hi chatbot. Now we can talk normally like we are friends###<DMCC corr="Hi">hi</DMCC> chatbot. Now we can talk normally <LP corr="as if">like</LP> we are friends
-hahahhah yess, such amaizing that this phrse is so iconic###<DMCC corr="Hahahhah">hahahhah</DMCC> yess, <GDT corr="so">such</GDT> <FS corr="amazing">amaizing</FS> that this <LWCO corr="sentence">None</LWCO> is so iconic <FS corr="phrase">phrse</FS>
-Lunch###Lunch
-Wow I imagine you’re going to talk with a lot of people every single day###Wow I imagine you’re going to talk with a lot of people every single day
-What   suggest me for pass my exams in the best way?###What <GVAUX corr="do">\0</GVAUX> <GPP corr="you">\0</GPP> <XVCO corr="suggest to me">suggest me</XVCO> <XVCO corr="to pass">for pass</XVCO> my exams in the best way?
-I think we can do iit explanations of the topic for experts but also with  illustrations for the smaller###I think we can <LSV corr="give">do</LSV> <GPU corr="?">None</GPU> <FS corr="it">iit</FS> <XNPR corr="explanations on the topic">explanations of the topic</XNPR> for experts <LCLC corr="as well as">but also</LCLC> <WR corr="\0">with</WR>  illustrations for the <LSADJ corr="younger">smaller</LSADJ>
-I'd like to visit all of them!###I'd like to visit all of them!
-Yes please, I would like a bottle of water and a glass of wine###Yes please, I would like a bottle of water and a glass of wine
+I don't know about his thoughts on the date###I don't know about his thoughts on the date
+Hi, what's your favorite pet?###Hi, what's your favorite pet?
+Thank you! I'm kind of practicing my English right now with you, so  you have any comments on how I could improve? Or some correction about what I0m writing to you?###Thank you! I'm kind of practicing my English right now with you, so <GVAUX corr="do">\0</GVAUX> you have any comments on how I could improve? Or some <GNN corr="corrections">correction</GNN> about what <FS corr="I'm">I0m</FS> writing to you?
+I don't really know, I think I'm kind of a picky eater when it comes to what I like. Still, if I find myself in a foreign country, I'm open to possibilities.###I don't really know, I think I'm kind of a picky eater when it comes to what I like. Still, if I find myself in a foreign country, I'm open to possibilities.
+Hey sorry, I know i told you that tomorrow i had to start working for you, but i completely forgot that i can't be there until friday, is that a big problem for you? User###Hey sorry, I know <DMCC corr="I">i</DMCC> told you that tomorrow <DMCC corr="I">i</DMCC> <GVAUX corr="would">had to</GVAUX> start working for you, but <DMCC corr="I">i</DMCC> completely forgot that <DMCC corr="I">i</DMCC> can't be there until <DMCC corr="Friday">friday</DMCC>, is that a big problem for you? User
+i like to practice###<DMCC corr="I">i</DMCC> like to practice
+i have a car for transport in sardinia###<DMCC corr="I">i</DMCC> have a car <LP corr="for transportation">for transport</LP> in <DMCC corr="Sardinia">sardinia</DMCC>
+also, the atelier must have worked so many hours to finish the dress###<DMCC corr="Also">also</DMCC>, the atelier must have worked so many hours to finish the dress
 Do you think Barcelona is safe for women? I am gonna travel with my best friend and she's worried about pickpockets.###Do you think Barcelona is safe for women? I am gonna travel with my best friend and she's worried about pickpockets.
-*Thinking about my hamburger"###*Thinking about my hamburger"
-Yes! It's a surprise for him!###Yes! It's a surprise for him!
-I want to roleplay to better my English. Could we make up a scenario where I'm a patient talking to a doctor about an illness?###I want to roleplay to <LSV corr="improve">better</LSV> my English. Could we make up a scenario where I'm a patient talking to a doctor about an illness?
-Hi ChatGPT, let's talk about something###Hi ChatGPT, let's talk about something
-Nothing in particular, just hard to study but not impossible###Nothing in particular, just hard to study but not impossible
-hi###<DMCC corr="Hi">hi</DMCC>
-lately i love relax###<DMCC corr="Lately">lately</DMCC> <DMCC corr="I">i</DMCC> <XVCO corr="have loved relaxing">None</XVCO> <GVT corr="have loved">love</GVT> relax
-Sure, thank you so much!###Sure, thank you so much!
-Hi, take care and remeber to wake up early tomorrow, i'll need your help understanding your needs in the best way possible, either way, you could maybe explains them to me now, if  is comfrotable with you, thank you, user###Hi, take care and <FS corr="remember">remeber</FS> to wake up early tomorrow, <DMCC corr="I">i</DMCC>'ll need your help understanding your needs in the best way possible <QC corr=".">,</QC> either way, you could maybe <GVM corr="explain">explains</GVM> them to me now, if <GPD corr="that">\0</GPD> is <FS corr="comfortable">comfrotable</FS> with you <QC corr=".">,</QC> thank you, user
-Now I'd like to talk with you about holidays###Now I'd like to talk with you about holidays
-that's better. now please respond. I am curious in hearing what syphons in your head###<DMCC corr="That">that</DMCC>'s better. <DMCC corr="Now">now</DMCC> please respond. I am <XADJCO corr="curious to hear">curious in hearing</XADJCO> what <FS corr="siphons">syphons</FS> in your head
-Thanks a lot, now would you like to talk about something else?###Thanks a lot, now would you like to talk about something else?
-yeah###<DMCC corr="Yeah">yeah</DMCC>
-Iìll gladly take the offer###<FS corr="I'll">Iìll</FS> gladly take the offer
-Who do you think is the strongest Italian volleyball player?###Who do you think is the strongest Italian volleyball player?
-Good morning!   I will go to the America the next summer with my boyfriend. We would like visit the California during august###Good morning!   I will go to <GA corr="\0">the</GA> America <GA corr="\0">the</GA> next summer with my boyfriend. We would <XVCO corr="like to visit">like visit</XVCO> <GA corr="\0">the</GA> California during <DMCC corr="August">august</DMCC>
-how are you?###<DMCC corr="How">how</DMCC> are you?
-We'll think about it later, thank you###We'll think about it later, thank you
-i'd prefer to walk there if you could explain me the way###<DMCC corr="I">i</DMCC>'d prefer to walk there if you could <XVCO corr="explain to me">explain me</XVCO> the way
-Now simulate a role play###Now simulate a role play
+Write an email to request a quote from local plumbers for backflow testing. I need it done in the next 2 weeks. Keep it short and casual.###Write an email to request a quote from local plumbers for backflow testing. I need it done in the next 2 weeks. Keep it short and casual.
+what do you think about China? It is a place that offers great job opportunities but how would you rate it socially and politically?###<DMCC corr="What">what</DMCC> do you think about China? It is a place that offers great job opportunities but how would you rate it socially and politically?
+i'm going to take the firt one###<DMCC corr="I">i</DMCC>'m going to take the <FS corr="first">firt</FS> one
+Absolutely, we have a delicious dish of lamb. What vegetables would you like with that?###Absolutely, we have a delicious dish of lamb. What vegetables would you like with that?
+You're so great! Thank you for everything!ù###You're so great! Thank you for everything! <FS corr="\0">ù</FS>
+20 minutes ago more or less###20 minutes ago more or less
+Returning to Seoul, which is the cheapest period to go there?###Returning to Seoul, which is the cheapest period to go there?
+Sometimes I use the pomodoro technique and if I can I try to have fun to learn things###Sometimes I use the pomodoro technique and if I can I try to <LP corr="have fun while learning">have fun to learn</LP> things
+And what do you think about the line up of Ferrari of the next year?###And what do you think about <GA corr="\0">the</GA> <WO corr="next year's Ferrari line-up"> </WO>? <FS corr="line-up">line up</FS> of <GNC corr="next year's Ferrari">Ferrari of the next year</GNC>
+That's helpful, thanks###That's helpful, thanks
+White thank you###White thank you
 
 Annotate the following target sentence, without providing any explanation:
 
-the major risks it's PTSD###
+I'm studing in Macerata University, the name of  course is "scienze della formazione primaria".   What do you do in life?###

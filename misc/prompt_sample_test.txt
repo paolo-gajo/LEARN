@@ -64,49 +64,29 @@ The following are the tags you should use for annotation:
 
 Below are reference examples:
 
-What do you think about what's going on in America with Puff Daddy?###What do you think about what's going on in America with Puff Daddy?
-I mean the film###I mean the film
-I have been sitting a lot more recently, but the pain started a while back, when I had a more active lifestyle. Any suggestions what it might be?###I have been sitting a lot more recently, but the pain started a while back, when I had a more active lifestyle. Any suggestions what it might be?
-Hi chat gpt let's talk about something###Hi <DMCC corr="ChatGPT">chat gpt</DMCC> <QM corr=",">\0</QM> let's talk about something
-We'll think about it later, thank you###We'll think about it later, thank you
-Thank you###Thank you
-Write shorter sentences###Write shorter sentences
-All correct! Thank you so much!###All correct! Thank you so much!
-Of course, sir, but are you sure you want to eat your fruit with vinegar and olive oil?###Of course, sir, but are you sure you want to eat your fruit with vinegar and olive oil?
-people's lives is very complicated###<DMCC corr="People">people</DMCC>'s lives <GVN corr="are">is</GVN> very complicated
-How do you say "cliente" in English from Italian?###How do you <LSV corr="translate">say</LSV> <CSINTRA corr="customer">"cliente"</CSINTRA> in English from Italian?
-and what do you do if the online payament is broken.###<DMCC corr="And">and</DMCC> what do you do if the online <FS corr="payment">payament</FS> is <LSV corr="not working">broken</LSV>.
-Yes of course, however may I ask you more questions about the place  is located the apartment?###Yes of course, however may I ask you more questions about the place <GDT corr="where">\0</GDT> <WO corr="the apartment is located">is located the apartment</WO>?
-whats is brainstorm options?###<DMCC corr="What">None</DMCC> <GPR corr="what">whats</GPR> <GVN corr="are">is</GVN> brainstorm options?
-Hi, how's it going?###Hi, how's it going?
-Thank you!###Thank you!
+ready###<DMCC corr="Ready">ready</DMCC>
+yes,  stage in  asilo nido###<DMCC corr="Yes">yes</DMCC>, <GA corr="a">\0</GA> <LWCO corr="internship">stage</LWCO> in <GA corr="a">\0</GA> <CSINTRA corr="nursery school">asilo nido</CSINTRA>
+would you please act as if you were a job counselor?###<DMCC corr="Would">would</DMCC> you please act as if you were a job counselor?
+i hope that this dream became reality###<DMCC corr="I">i</DMCC> hope that this dream <GVN corr="becomes">None</GVN> reality <GVT corr="become">became</GVT>
+i love the canary island###<DMCC corr="I">i</DMCC> love the <DMCC corr="Canary Islands">None</DMCC> <LWCO corr="canary islands">canary island</LWCO>
 I like the job interview one###I like the job interview one
-thank you so much, the last thing, i want to ask you is about the hotel related to the park, i am in the cars hotel of Disneyland, is it good? are the services open 24/7? is the room comfy?###<DMCC corr="Thank">thank</DMCC> you so much, the last thing <QR corr="\0">,</QR> <DMCC corr="I">i</DMCC> want to ask you is about <GNC corr="the park's hotel">the hotel related to the park</GNC>, <DMCC corr="I">i</DMCC> am in <GNC corr="Disneyland's Santa Fe hotel">the </GNC>, is it good? <Z corr="Santa Fe">cars</Z> hotel of Disneyland <DMCC corr="Are">are</DMCC> the services open 24/7? <DMCC corr="Is">is</DMCC> the room comfy?
-I think that my favorite was been Angelina Jolie's outfit###I think that my favorite <GVT corr="was">was been</GVT> Angelina Jolie's outfit
-Which clothes should I wear to avoid drawing attention?###Which clothes should I wear to avoid drawing attention?
-in my university studies I also study about economic aspects that I can use to address the topic of cultural promotion of events of this type###<DMCC corr="In">in</DMCC> my university studies I also <XVPR corr="study">study about</XVPR> economic aspects that <Z corr="help me address">I can use to address</Z> the <WR corr="\0">topic of</WR> <Z corr="promotion of cultural events">cultural promotion of events</Z> of this type
-The first place that comes to my mind that I absolutely want to visit is Romania whic is so underrated.###The first place that comes to my mind that I absolutely want to visit is Romania <FS corr="which">whic</FS> is so underrated.
-I would like to go on holiday in Greece, but not in Corfù. I would like to try Santorini, or Athens, because I like art.
-		In the future I would like to go to Japan.###I would like to go on holiday <LSPR corr="to">in</LSPR> Greece, but not <LSPR corr="to">in</LSPR> Corfù. I would like to try Santorini, or Athens, because I like art.
-		In the future I would like to go to Japan.
-20 minutes ago more or less###20 minutes ago more or less
-Thanks a lot, now would you like to talk about something else?###Thanks a lot, now would you like to talk about something else?
-How was my English?###How was my English?
-Write an email to request a quote from local plumbers for backflow testing. I need it done in the next 2 weeks. Keep it short and casual.###Write an email to request a quote from local plumbers for backflow testing. I need it done in the next 2 weeks. Keep it short and casual.
-About Barcelona my favorite architecture are Sagrada Familia because she's a biggest monument in the middle of town, and  very much like me Parc Guell, Casa Batlò and Barceloneta. Tokyo interests me for his cooking colture###About Barcelona my favorite <LSN corr="piece of architecture">architecture</LSN> are Sagrada Familia because <GPP corr="it">she</GPP>'s <GA corr="the">a</GA> biggest monument in the middle of town, and <GPP corr="I">\0</GPP> <WO corr="like very much">None</WO> <LSADV corr="">very much</LSADV> like <GPP corr="\0">me</GPP> Parc Guell, Casa Batlò and Barceloneta. Tokyo interests me for <GDO corr="its">his</GDO> cooking <FS corr="culture">colture</FS>
-i change idea, i will enter in the castle###<DMCC corr="I">i</DMCC> <LP corr="have changed my mind">None</LP>, <GVT corr="have changed">change</GVT> idea <DMCC corr="I">i</DMCC> will <XVPR corr="enter">enter in</XVPR> the castle
-thanks Pi###<DMCC corr="Thanks">thanks</DMCC> Pi
-I already tried to restart my phone but it didn't work, it my be that my router is too far, but even when i'm in the same room as the router my phone won't connect###I already tried to restart my phone but it didn't work, it <FS corr="may">my</FS> be that my router is too far, but even when <DMCC corr="I">i</DMCC>'m in the same room as the router my phone won't connect
-you can buy the ticket of bus for PAris?###<WO corr="Can you buy">None</WO> <DMCC corr="You">you</DMCC> can buy <GA corr="a">the</GA> <GNC corr="bus ticket">ticket of bus</GNC> for <FS corr="Paris">PAris</FS>?
-Absolutely###Absolutely
-yes I was actually wandering if you could give me advice about a guy I went on a date on once###<DMCC corr="Yes">yes</DMCC> I was actually <FS corr="wondering">wandering</FS> if you could give me advice about a guy I went on a <XNPR corr="date with">date on</XNPR> once
-I would like to rent the apartment in a place with fun activities to do for young people in the city centre, also I would love a pool in my apartment building###I would like to rent the apartment in a place with fun activities to do for young people in the city centre, also I would love a pool in my apartment building
-"oh i needed any help finding the manga"###" <DMCC corr="Oh">oh</DMCC> <DMCC corr="I">i</DMCC> needed <GDI corr="\0">any</GDI> <XVCO corr="help to find">help finding</XVCO> the manga"
+finally i have bought my  ticket and i can go in my university. but what would success if i don't  it###<DMCC corr="Finally">finally</DMCC> <DMCC corr="I">i</DMCC> have bought my  ticket and <DMCC corr="I">i</DMCC> can go <LSPR corr="to">in</LSPR> my university. <DMCC corr="But">but</DMCC> what <GVT corr="would have happened">would </GVT> if <LWCO corr="happen">success</LWCO> <DMCC corr="I">i</DMCC> <GVT corr="didn't">don't</GVT> <WM corr="buy">\0</WM> it
+I'd like to know more about the apartment first###I'd like to know more about the apartment first
+Write shorter sentences###Write shorter sentences
+Today i  see my friends###Today <DMCC corr="I">i</DMCC> <GVT corr="will">\0</GVT> see my friends
+where are a best spa in Emilia Romagna?###<DMCC corr="Where">where</DMCC> are <GA corr="the">a</GA> best <GNN corr="spas">spa</GNN> in Emilia Romagna?
+I have been sitting a lot more recently, but the pain started a while back, when I had a more active lifestyle. Any suggestions what it might be?###I have been sitting a lot more recently, but the pain started a while back, when I had a more active lifestyle. Any suggestions what it might be?
+Hi, can I have a coversation in english with you?###Hi, can I have a <FS corr="conversation">coversation</FS> in <DMCC corr="English">english</DMCC> with you?
+Today I'm very tired!
+		Every day I plan to do a thousand things, but by the end of the day, I end up doing only half of them###Today I'm very tired!
+		Every day I plan to do a thousand things, but by the end of the day, I end up doing only half of them
+OK, I have a game to propose to you. Are you in?###OK, I have a game to propose to you. Are you in?
+Hi, thank you, I will be at yours at 8 tomorrow in the morning, bye, user###Hi, thank you, I will be at yours at 8 tomorrow in the morning, bye, user
+I'm a customer and you are a waiter. You are supposed to bring the hamburger as you have to serve my table as we agreed at the start###I'm a customer and you are a waiter. You are supposed to bring the hamburger as you have to serve my table as we agreed at the start
 Fine afternoon, gentlemen, how's your luck so far?###Fine afternoon, gentlemen, how's your luck so far?
-Yes###Yes
-i am a traveler###<DMCC corr="I">i</DMCC> am a traveler
-Today is a really busy day…   Now I’m at the university, and at 15pm I need to run to Aversa because I have a course.###Today is a really busy day…   Now I’m at <GA corr="\0">the</GA> university, and at <Z corr="3pm">15pm</Z> I need to run to Aversa because I have a course.
+what do you think about NapoliMonitor the newspaper?###<DMCC corr="What">what</DMCC> do you think about <WO corr="the newspaper Napoli Monitor"> </WO>? <DMCC corr="Napoli Monitor">NapoliMonitor</DMCC> the newspaper
+Can we do a role play?###Can we do a role play?
 
 Annotate the following target sentence, without providing any explanation:
 
-Hi! Can I ask you something?###
+Yes###

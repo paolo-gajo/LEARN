@@ -10,14 +10,14 @@ class Evaluator:
     def __init__(self,
                  tokenizer = None,
                  model = None,
-                 verbose_output_path='./eval_outputs',
+                 config: dict = None,
                  ):
         self.tokenizer = tokenizer
         self.model = model
+        self.config = config
         if self.model is not None:
-            self.model_name = self.model.base_model.model.config.name_or_path.replace('/', '-')
-            self.verbose_output_path = os.path.join(verbose_output_path,
-                                                    self.model_name,
+            self.verbose_output_path = os.path.join(config['verbose_output_path'],
+                                                    config['model_name'].replace('/', '-'),
                                                     get_time(),)
 
     def evaluate(self,
@@ -39,7 +39,7 @@ class Evaluator:
         comp_list = df['completion'].to_list()
 
         # Progress bar over sub-batches, rather than item by item
-        pbar = tqdm(range(0, len(df), batch_size), desc=f'Model: {self.model_name}')
+        pbar = tqdm(range(0, len(df), batch_size), desc=f"Model: {self.config['model_name']}")
         self.t_counter = 0  # initialize model timeout counter
 
         verbose_output = ''
