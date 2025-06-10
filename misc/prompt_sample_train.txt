@@ -64,26 +64,46 @@ The following are the tags you should use for annotation:
 
 Below are reference examples:
 
-I understand, thanks. Just another thing, concerning my mental health this time.###I understand, thanks. Just another thing, concerning my mental health this time.
-Oh so you made a mistake, I thought you knew everything###Oh so you made a mistake, I thought you knew everything
-I don’t understand###I don’t understand
-Outside we run and play with other dogs###Outside we run and play with other dogs
 They sound amazing. Let us think for a bit of time and we'll call you when we'll be ready###They sound amazing. Let us think for a bit of time and we'll call you when <GVT corr="we're">we'll be</GVT> ready
 I am ready###I am ready
+Im looking for an apartment for a single person with one bathroom, two bedroom and a big kitchen###<FS corr="I'm">Im</FS> looking for an apartment for a single person with one bathroom, two <GNN corr="bedrooms">bedroom</GNN> and a big kitchen
 Yes , I do . I love music,  and I play many instruments . I think music , especially creating music , not listening to it , really gives musicians a new "key" to open the doors of  knowledge , because music composition has strict rules that can be altered , resulting (depending on the musician's creativity) , in a new form of art , but also in a new form of ear torture . However , it's easy to say that every music genius uses "errors" to create beauty###Yes , I do . I love music,  and I play many instruments . I think music , especially creating music , not listening to it , really gives musicians a new "key" to open the doors of  knowledge , because music composition has strict rules that can be altered , resulting (depending on the musician's creativity) , in a new form of art , but also in a new form of ear torture . However , it's easy to say that every music genius uses "errors" to create beauty
-on the rocks please###<DMCC corr="On">on</DMCC> the rocks please
-Yess i have read ALL attack on titan###Yess <DMCC corr="I">i</DMCC> have read <LSPR corr="all of">None</LSPR> <DMCC corr="all">ALL</DMCC> <DMCC corr="Attack On Titan">attack on titan </DMCC>
-and what do you do if the online payament is broken.###<DMCC corr="And">and</DMCC> what do you do if the online <FS corr="payment">payament</FS> is <LSV corr="not working">broken</LSV>.
-I don't remember it but  is very good ahah###<DMCC corr="I">I</DMCC> don't remember it but <GPP corr="it">\0</GPP> <GVT corr="was">is</GVT> very good ahah
-do you fell like start whit a a role play###<DMCC corr="Do">do</DMCC> you <XVCO corr="feel like starting">None</XVCO> <FS corr="feel">fell</FS> like start <FS corr="with">whit</FS> a <WR corr="\0">a</WR> role play <QM corr="?">\0</QM>
-i think we  let  the conversatione flow naturally###<DMCC corr="I">i</DMCC> think we <GVAUX corr="should">\0</GVAUX> let  the conversatione flow naturally
 If it's possible###If it's possible
-I hate to talk so basic in English###I hate to talk <LP corr="in such a basic way">so basic</LP> in English
-Thanks a lot, now would you like to talk about something else?###Thanks a lot, now would you like to talk about something else?
-arabic architecture, for example i stayed in Sevilla 2 year ago for a erasmus, i love the city and the particular###<DMCC corr="Arabic">arabic</DMCC> architecture, for example <DMCC corr="I">i</DMCC> stayed in Sevilla 2 year ago for <GA corr="an">a</GA> <DMCC corr="Erasmus">erasmus</DMCC>, <DMCC corr="I">i</DMCC> love the city and <GA corr="its">the</GA> <LSN corr="uniqueness">None</LSN> <GNN corr="particulars">particular</GNN>
+we love stay together###<DMCC corr="We">we</DMCC> <XVCO corr="love to">love</XVCO> <LSN corr="be">stay</LSN> together
+User###User
+I'm a university student in search of a house here in Forlì, you are the one that is going to help me###I'm a university student in search of a house here in Forlì, you are the one that is going to help me
 Can I bring a Little candle for the dessert of my partner? It's his bday###Can I bring a Little candle for <GNC corr="my partner's dessert">the dessert of my partner</GNC>? It's his <DMCA corr="birthday">bday</DMCA>
-Yes###Yes
+I understand, thanks. Just another thing, concerning my mental health this time.###I understand, thanks. Just another thing, concerning my mental health this time.
+do you fell like start whit a a role play###<DMCC corr="Do">do</DMCC> you <XVCO corr="feel like starting">None</XVCO> <FS corr="feel">fell</FS> like start <FS corr="with">whit</FS> a <WR corr="\0">a</WR> role play <QM corr="?">\0</QM>
+I don't remember it but  is very good ahah###<DMCC corr="I">I</DMCC> don't remember it but <GPP corr="it">\0</GPP> <GVT corr="was">is</GVT> very good ahah
+Hi, i would really appreciate  if you tell me now, thank you. User.###Hi, <DMCC corr="I">i</DMCC> would really appreciate <GPP corr="it">\0</GPP> if you <GVT corr="told">tell</GVT> me now, thank you. User.
+i change idea, i will enter in the castle###<DMCC corr="I">i</DMCC> <LP corr="have changed my mind">None</LP>, <GVT corr="have changed">change</GVT> idea <DMCC corr="I">i</DMCC> will <XVPR corr="enter">enter in</XVPR> the castle
+I was just overthinking about different things and feelings.. you know, i've been with my biyfriend for a while now, and i'm sure to be completely in lovbe with him, but some time i feel like it's not the same anymore, I don't know if you can understand me, but it's a rough feeling.. what do you think###I was just overthinking about different things and feelings.. <DMCC corr="You">you</DMCC> know, <DMCC corr="I">i</DMCC>'ve been with my <FS corr="boyfriend">biyfriend</FS> for a while now, and <DMCC corr="I">i</DMCC>'m sure to be completely in <FS corr="love">lovbe</FS> with him, but <LSADV corr="sometimes">some time</LSADV> <DMCC corr="I">i</DMCC> feel like it's not the same anymore, I don't know if you can understand me, but it's a rough feeling.. <DMCC corr="What">what</DMCC> do you think <QM corr="?">\0</QM>
+That's true. What about volleyball? Who do you think has the best team in the world?###That's true. What about volleyball? Who do you think has the best team in the world?
 I like the sound of that! Give me a glass of your best whiskey!###I like the sound of that! Give me a glass of your best whiskey!
+How was my English?###How was my English?
+Yes###Yes
+i want to make a role play with you, let's make like  I'm a person that likes very much movies, tv series and all the cinematographic stuff and you are my friend and you also like this type of things but you have a more critic mind. so i will be making you questions and give  opinion and we will have a conversation###<DMCC corr="I">i</DMCC> want to <LSV corr="do">make</LSV> a role play with you, let's <LP corr="pretend">make like</LP> <GDD corr="that">\0</GDD> I'm a person that <WO corr="likes movies, tv series and all the cinematographic stuff very much">likes very much movies, tv series and all the cinematographic stuff</WO> and you are my friend and you also like this type of things but you have a more <GWC corr="critical">critic</GWC> mind. <DMCC corr="So">so</DMCC> <DMCC corr="I">i</DMCC> will be <LSV corr="asking">making</LSV> you questions and <GVNF corr="giving">give</GVNF> <GA corr="an">\0</GA> opinion and we will have a conversation
+arabic architecture, for example i stayed in Sevilla 2 year ago for a erasmus, i love the city and the particular###<DMCC corr="Arabic">arabic</DMCC> architecture, for example <DMCC corr="I">i</DMCC> stayed in Sevilla 2 year ago for <GA corr="an">a</GA> <DMCC corr="Erasmus">erasmus</DMCC>, <DMCC corr="I">i</DMCC> love the city and <GA corr="its">the</GA> <LSN corr="uniqueness">None</LSN> <GNN corr="particulars">particular</GNN>
+Hello, Doctor. I've been having really bad back pain lately, and nothing I do makes it better.###Hello, Doctor. I've been having really bad back pain lately, and nothing I do makes it better.
+Yess i have read ALL attack on titan###Yess <DMCC corr="I">i</DMCC> have read <LSPR corr="all of">None</LSPR> <DMCC corr="all">ALL</DMCC> <DMCC corr="Attack On Titan">attack on titan </DMCC>
+What's a "cozy booth" in Italian?###What's a "cozy booth" in Italian?
+and what do you do if the online payament is broken.###<DMCC corr="And">and</DMCC> what do you do if the online <FS corr="payment">payament</FS> is <LSV corr="not working">broken</LSV>.
+i think we  let  the conversatione flow naturally###<DMCC corr="I">i</DMCC> think we <GVAUX corr="should">\0</GVAUX> let  the conversatione flow naturally
+Can you make small talk with me now?###Can you make small talk with me now?
+I hate to talk so basic in English###I hate to talk <LP corr="in such a basic way">so basic</LP> in English
+Oh so you made a mistake, I thought you knew everything###Oh so you made a mistake, I thought you knew everything
+people's lives is very complicated###<DMCC corr="People">people</DMCC>'s lives <GVN corr="are">is</GVN> very complicated
+i have recently watched past lives###<DMCC corr="I">i</DMCC> have recently watched <DMCC corr="Past">past</DMCC> lives
+I guess you can be funny if you want to###I guess you can be funny if you want to
+thank you###<DMCC corr="Thank">thank</DMCC> you
+Thanks a lot, now would you like to talk about something else?###Thanks a lot, now would you like to talk about something else?
+Hi###Hi
+We'll think about it later, thank you###We'll think about it later, thank you
+Hmm... Interesting. I wanna make many videos for my Instagram and my TikTok pages because I wanna be a content creator in a future. Can you give  some tips about my inspiration?###Hmm... Interesting. I wanna make many videos for my Instagram and my TikTok pages because I wanna be a content creator in <GA corr="the">a</GA> future. Can you give <GPP corr="me">\0</GPP> some tips about my <LSN corr="aspiration">inspiration</LSN>?
+on the rocks please###<DMCC corr="On">on</DMCC> the rocks please
+I don’t understand###I don’t understand
+Outside we run and play with other dogs###Outside we run and play with other dogs
 
 Annotate the following target sentence, without providing any explanation:
 

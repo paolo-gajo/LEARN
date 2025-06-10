@@ -116,7 +116,8 @@ def main(args):
             label_names=["labels"],
         ),
     )
-    results_dir = os.path.join("./results", f"{model_name.split('/')[-1]}_{get_time()}")
+    t0 = get_time()
+    results_dir = os.path.join("./results", f"{model_name.split('/')[-1]}", t0)
     os.makedirs(results_dir, exist_ok=True)
     max_val = -np.inf
     results_dev_list = []
@@ -159,7 +160,7 @@ def main(args):
     with open(json_path_args_dict, 'w', encoding='utf8') as f:
         json.dump(args_dict, f, ensure_ascii = False, indent = 4)
 
-    model_dir = f"./models/{model_name.split('/')[-1]}_{get_time()}"
+    model_dir = os.path.join("./models/", model_name.split('/')[-1], t0)
     best_model.save_pretrained(model_dir)
     tokenizer.save_pretrained(model_dir)
 

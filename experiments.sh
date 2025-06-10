@@ -46,11 +46,11 @@ declare -a use_prompt_tags=(
     1
 )
 declare -a n_icl_samples=(
-    # 0
-    # 5
+    0
+    5
     10
-    # 15
-    # 20
+    15
+    20
 )
 # Generate all combinations
 array_names=(
@@ -60,13 +60,6 @@ array_names=(
             )
 combinations=$(cartesian_product array_names)
 
-{
-    for array_name in "${array_names[@]}"; do
-        # Access array by name using indirect expansion
-        values="${array_name}[@]"
-        echo "$array_name: ${!values}"
-    done
-} > "${slurm_dir}/hyperparameters.txt"
 
 # Convert combinations to commands
 declare -a commands=()
@@ -87,6 +80,13 @@ if [ -n "$SLURM_ARRAY_TASK_ID" ]; then
     command_to_run="${commands[$SLURM_ARRAY_TASK_ID]}"
     echo "$command_to_run"
     $command_to_run
+    {
+        for array_name in "${array_names[@]}"; do
+            # Access array by name using indirect expansion
+            values="${array_name}[@]"
+            echo "$array_name: ${!values}"
+        done
+    } > "${slurm_dir}/hyperparameters.txt"
 else
     echo "This script should be run as a SLURM array job."
     echo "Use: sbatch --array=0-$((total_combinations-1)) $0"
