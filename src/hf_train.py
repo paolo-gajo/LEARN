@@ -121,6 +121,7 @@ def main(args):
     )
     
     max_val = -np.inf
+    best_epoch = 0
     results_dev_list = []
     if config['eval_steps']:
         dataset.dev_samples = dataset.dev_samples[:config['eval_steps']]
@@ -142,11 +143,12 @@ def main(args):
         if results_dev['micro_f1'] > max_val:
             max_val = results_dev['micro_f1']
             best_model = copy.deepcopy(model)
+            best_epoch = epoch
     if config['eval_steps']:
         dataset.test_samples = dataset.test_samples[:config['eval_steps']]
     evaluator_test = Evaluator(tokenizer, best_model, config)
     results_test = evaluator_test.evaluate(dataset.test_samples,
-                                     epoch,
+                                     best_epoch,
                                      config['batch_size_eval'],
                                      verbose = config['verbose_eval'],
                                      split='test',

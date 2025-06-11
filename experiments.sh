@@ -52,11 +52,17 @@ declare -a n_icl_samples=(
     15
     20
 )
+declare -a model_name=(
+    # meta-llama/Llama-3.1-8B-Instruct
+    meta-llama/Llama-3.3-70B-Instruct
+    # mistralai/Ministral-8B-Instruct-2410
+)
 # Generate all combinations
 array_names=(
             seed
             use_prompt_tags
             n_icl_samples
+            model_name
             )
 combinations=$(cartesian_product array_names)
 
@@ -70,6 +76,7 @@ while IFS= read -r combo; do
                 --seed ${params[0]}
                 --use_prompt_tags ${params[1]}
                 --n_icl_samples ${params[2]}
+                --model_name ${params[3]}
                 --suffix ${SLURM_ARRAY_JOB_ID}/${SLURM_ARRAY_TASK_ID}
                 "
     commands+=("$cmd")
