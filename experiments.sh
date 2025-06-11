@@ -36,10 +36,10 @@ cartesian_product() {
 }
 declare -a seed=(
     0
-    # 1
-    # 2
-    # 3
-    # 4
+    1
+    2
+    3
+    4
 )
 declare -a use_prompt_tags=(
     0
@@ -70,6 +70,7 @@ while IFS= read -r combo; do
                 --seed ${params[0]}
                 --use_prompt_tags ${params[1]}
                 --n_icl_samples ${params[2]}
+                --suffix ${SLURM_ARRAY_JOB_ID}/${SLURM_ARRAY_TASK_ID}
                 "
     commands+=("$cmd")
 done <<< "$combinations"

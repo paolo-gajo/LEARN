@@ -64,27 +64,49 @@ The following are the tags you should use for annotation:
 
 Below are reference examples:
 
-I don't know about his thoughts on the date###I don't know about his thoughts on the date
-Hi, what's your favorite pet?###Hi, what's your favorite pet?
-Thank you! I'm kind of practicing my English right now with you, so  you have any comments on how I could improve? Or some correction about what I0m writing to you?###Thank you! I'm kind of practicing my English right now with you, so <GVAUX corr="do">\0</GVAUX> you have any comments on how I could improve? Or some <GNN corr="corrections">correction</GNN> about what <FS corr="I'm">I0m</FS> writing to you?
-I don't really know, I think I'm kind of a picky eater when it comes to what I like. Still, if I find myself in a foreign country, I'm open to possibilities.###I don't really know, I think I'm kind of a picky eater when it comes to what I like. Still, if I find myself in a foreign country, I'm open to possibilities.
-Hey sorry, I know i told you that tomorrow i had to start working for you, but i completely forgot that i can't be there until friday, is that a big problem for you? User###Hey sorry, I know <DMCC corr="I">i</DMCC> told you that tomorrow <DMCC corr="I">i</DMCC> <GVAUX corr="would">had to</GVAUX> start working for you, but <DMCC corr="I">i</DMCC> completely forgot that <DMCC corr="I">i</DMCC> can't be there until <DMCC corr="Friday">friday</DMCC>, is that a big problem for you? User
-i like to practice###<DMCC corr="I">i</DMCC> like to practice
-i have a car for transport in sardinia###<DMCC corr="I">i</DMCC> have a car <LP corr="for transportation">for transport</LP> in <DMCC corr="Sardinia">sardinia</DMCC>
-also, the atelier must have worked so many hours to finish the dress###<DMCC corr="Also">also</DMCC>, the atelier must have worked so many hours to finish the dress
-Do you think Barcelona is safe for women? I am gonna travel with my best friend and she's worried about pickpockets.###Do you think Barcelona is safe for women? I am gonna travel with my best friend and she's worried about pickpockets.
-Write an email to request a quote from local plumbers for backflow testing. I need it done in the next 2 weeks. Keep it short and casual.###Write an email to request a quote from local plumbers for backflow testing. I need it done in the next 2 weeks. Keep it short and casual.
-what do you think about China? It is a place that offers great job opportunities but how would you rate it socially and politically?###<DMCC corr="What">what</DMCC> do you think about China? It is a place that offers great job opportunities but how would you rate it socially and politically?
-i'm going to take the firt one###<DMCC corr="I">i</DMCC>'m going to take the <FS corr="first">firt</FS> one
-Absolutely, we have a delicious dish of lamb. What vegetables would you like with that?###Absolutely, we have a delicious dish of lamb. What vegetables would you like with that?
-You're so great! Thank you for everything!ù###You're so great! Thank you for everything! <FS corr="\0">ù</FS>
+ok. I think painful its not the right word to describe how I feel when I think about my future. I just feel that I'm not making the right think, that the life I'm building right now is  the life that I want###<DMCC corr="Ok">ok</DMCC>. I think painful <FS corr="is">its</FS> not the right word to describe how I feel when I think about my future. I just feel that I'm not making the right <FS corr="thing">think</FS>, that the life I'm building right now is <Z corr="not">\0</Z> the life that I want
+not really, what is your proposal ###<DMCC corr="Not">not</DMCC> really, what is your proposal <QM corr="?">\0</QM>
+Sure! With strawberry compote###Sure! With strawberry compote
+Hi, can I have an English conversation whit you?###Hi, can I have <Z corr="a conversation in English">an English conversation</Z> <FS corr="with">whit</FS> you?
+yeah I think its a good idea. I was looking for a cheap stay but at the same time I  prefer to find something in the center of london so i can go everywhere easily###<DMCC corr="Yeah">yeah</DMCC> I think <FS corr="it's">its</FS> a good idea. I was looking for a cheap stay but at the same time I <GVAUX corr="would">\0</GVAUX> prefer to find something in the center of <DMCC corr="London">london</DMCC> so <DMCC corr="I">i</DMCC> can go everywhere easily
+ If i want a exhaust ?###<GPR corr="What">\0</GPR> If <DMCC corr="I">i</DMCC> want <GA corr="an">a</GA> <LWCO corr="used">exhaust</LWCO> <GPI corr="one">\0</GPI>?
+I'll think about it###I'll think about it
+For you  is good for a birthday gift###<Z corr="Do you think">For you</Z> <GPP corr="it">\0</GPP> is good for a birthday gift <QM corr="?">\0</QM>
+Nowadays, I would have to say my phone. Not because I'm always using it, but rather because we use it for literally everything now.###Nowadays, I would have to say my phone. Not because I'm always using it, but rather because we use it for literally everything now.
+Fine afternoon, gentlemen, how's your luck so far?###Fine afternoon, gentlemen, how's your luck so far?
+Number 2 sounds fun, let's play###Number 2 sounds fun, let's play
+i also  want  visit many cathedral in France and in all Europe###<DMCC corr="I">i</DMCC> also  want <WM corr="to">\0</WM> visit many <GNN corr="cathedrals">cathedral</GNN> in France and <WR corr="\0">in</WR> <LSPR corr="all over">all</LSPR> Europe
 20 minutes ago more or less###20 minutes ago more or less
-Returning to Seoul, which is the cheapest period to go there?###Returning to Seoul, which is the cheapest period to go there?
-Sometimes I use the pomodoro technique and if I can I try to have fun to learn things###Sometimes I use the pomodoro technique and if I can I try to <LP corr="have fun while learning">have fun to learn</LP> things
-And what do you think about the line up of Ferrari of the next year?###And what do you think about <GA corr="\0">the</GA> <WO corr="next year's Ferrari line-up"> </WO>? <FS corr="line-up">line up</FS> of <GNC corr="next year's Ferrari">Ferrari of the next year</GNC>
-That's helpful, thanks###That's helpful, thanks
-White thank you###White thank you
+Sense8 was pretty good.###Sense8 was pretty good.
+I will go to both of the themes park but a like   Disneyland park better, now that i know about the food, i will like to know if there are rides no available for pregnant women? because my mom is pregnant and i don’t want to upset her, if all the rides there aren’t  for pregnant women###I will go to both <WR corr="\0">of</WR> <GA corr="\0">the</GA> <GNN corr="theme parks">themes park</GNN> but <FS corr="I">a</FS> like   Disneyland park better, now that <DMCC corr="I">i</DMCC> know about the food, <DMCC corr="I">i</DMCC> <GVT corr="would">will</GVT> like to know if there are rides <FS corr="not">no</FS> available for pregnant women? <DMCC corr="Because">because</DMCC> my mom is pregnant and <DMCC corr="I">i</DMCC> don’t want to upset her, if all the rides there aren’t <Z corr="available">\0</Z> for pregnant women
+Thanks so much###Thanks so much
+I'm studying political science and international relations with china  i would like to know what i could do after I get my degree###I'm studying political science and international relations with <DMCC corr="China">china</DMCC> <WM corr="and">\0</WM> <DMCC corr="I">i</DMCC> would like to know what <DMCC corr="I">i</DMCC> could do after I get my degree
+Well, my university course keeps me busy and also I have volleyball practice every evening###Well, my university course keeps me busy and also I have volleyball practice every evening
+i want to tell you about my favourite holiday. It was in Oxford a couple of years ago. I stayed there for 3 weeks and i had so much fun###<DMCC corr="I">i</DMCC> want to tell you about my favourite holiday. It was in Oxford a couple of years ago. I stayed there for 3 weeks and <DMCC corr="I">i</DMCC> had so much fun
+I actually don’t like those movies###I actually don’t like those movies
+Hi ChatGPT, let's talk about something###Hi ChatGPT, let's talk about something
+lately i love relax###<DMCC corr="Lately">lately</DMCC> <DMCC corr="I">i</DMCC> <XVCO corr="have loved relaxing">None</XVCO> <GVT corr="have loved">love</GVT> relax
+nono, as a language model Beppe I am unable to speak Italian. Let us get back to the point###<DMCC corr="No no">None</DMCC>, as a language model Beppe I am unable to speak Italian. Let us get back to the point <FS corr="no no">nono</FS>
+Six years ago, I broke my left elbow falling, and it was fine up until two months ago. Now, whenever it's raining, my left arm hurts a little. It's nothing too serious, but should I get it checked?###Six years ago, I broke my left elbow falling, and it was fine up until two months ago. Now, whenever it's raining, my left arm hurts a little. It's nothing too serious, but should I get it checked?
+Write shorter sentences###Write shorter sentences
+OK, I have a game to propose to you. Are you in?###OK, I have a game to propose to you. Are you in?
+I would like to go on holiday in Greece, but not in Corfù. I would like to try Santorini, or Athens, because I like art.
+		In the future I would like to go to Japan.###I would like to go on holiday <LSPR corr="to">in</LSPR> Greece, but not <LSPR corr="to">in</LSPR> Corfù. I would like to try Santorini, or Athens, because I like art.
+		In the future I would like to go to Japan.
+I believe that creating new jobs is good, but only as long as the "old" jobs are still available for people. Think about voice actors now, their voices are being sampled and replaced with an AI, which costs much less money and takes much less time.###I believe that creating new jobs is good, but only as long as the "old" jobs are still available for people. Think about voice actors now, their voices are being sampled and replaced with an AI, which costs much less money and takes much less time.
+cash###<DMCC corr="Cash">cash</DMCC>
+Thank you my good fellow, you've been of much help. I'll go say hi to this Wild Bill Willoughby guy.###Thank you my good fellow, you've been of much help. I'll go say hi to this Wild Bill Willoughby guy.
+yes,  stage in  asilo nido###<DMCC corr="Yes">yes</DMCC>, <GA corr="a">\0</GA> <LWCO corr="internship">stage</LWCO> in <GA corr="a">\0</GA> <CSINTRA corr="nursery school">asilo nido</CSINTRA>
+University life?###University life?
+very well, then i would like to buy two tickets from Bologna to Budapest, can you help me?###<DMCC corr="Very">very</DMCC> well, then <DMCC corr="I">i</DMCC> would like to buy two tickets from Bologna to Budapest, can you help me?
+Thanks a lot, now would you like to talk about something else?###Thanks a lot, now would you like to talk about something else?
+I'm very happy to hear that sir. Would you like to see our dessert menu?###I'm very happy to hear that sir. Would you like to see our dessert menu?
+you are very aware of these situations. What would you do for these issues if you were someone who could have an impact?###<DMCC corr="You">you</DMCC> are very aware of these situations. What would you do for these issues if you were someone who could have an impact?
+yes, i accept this adventure###<DMCC corr="Yes">yes</DMCC>, <DMCC corr="I">i</DMCC> accept this adventure
+Yes of course, however may I ask you more questions about the place  is located the apartment?###Yes of course, however may I ask you more questions about the place <GDT corr="where">\0</GDT> <WO corr="the apartment is located">is located the apartment</WO>?
+Hi, i wanted to talk with you about the risks that come with technology nowadays. For example, i think that we are being a little bit controlled by website trackers and by social media algorithms. What do you think?###Hi, <DMCC corr="I">i</DMCC> wanted to talk with you about the risks that come with technology nowadays. For example, <DMCC corr="I">i</DMCC> think that we are being a little bit controlled by website trackers and <WR corr="\0">by</WR> social media algorithms. What do you think?
+That's true. What about volleyball? Who do you think has the best team in the world?###That's true. What about volleyball? Who do you think has the best team in the world?
 
 Annotate the following target sentence, without providing any explanation:
 
-I'm studing in Macerata University, the name of  course is "scienze della formazione primaria".   What do you do in life?###
+No, because I don't know him very well and I am shy###

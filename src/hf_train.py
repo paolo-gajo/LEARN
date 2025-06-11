@@ -17,6 +17,9 @@ import json
 def main(args):
     config = setup_config(args, default_cfg)
     print(config)
+    results_dir = os.path.join("./results", f"{config['model_name'].split('/')[-1]}", config['suffix'])
+    print(f'Will save results to: {results_dir}')
+    os.makedirs(results_dir, exist_ok=True)
 
     set_seeds(config['seed'])
     df = convert_files(config['data_path'])
@@ -116,9 +119,7 @@ def main(args):
             label_names=["labels"],
         ),
     )
-    t0 = get_time()
-    results_dir = os.path.join("./results", f"{config['model_name'].split('/')[-1]}", t0)
-    os.makedirs(results_dir, exist_ok=True)
+    
     max_val = -np.inf
     results_dev_list = []
     if config['eval_steps']:
@@ -160,13 +161,13 @@ def main(args):
     with open(config_path, 'w', encoding='utf8') as f:
         json.dump(config, f, ensure_ascii = False, indent = 4)
 
-    model_dir = os.path.join("./models/", config['model_name'].split('/')[-1], t0)
+    model_dir = os.path.join("./models/", config['model_name'].split('/')[-1], config['suffix'])
     best_model.save_pretrained(model_dir)
     tokenizer.save_pretrained(model_dir)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Causal language modeling trainer")
-    parser.add_argument("--data_path", help="Directory path containing input files", default='./data/')
+    parser.add_argument("--data_path", type=str, help="Directory path containing input files", default='./data/')
     parser.add_argument("--lr", type=float, help="Learning rate", default=2e-4)
     parser.add_argument("--train_steps", type=int, help="Number of training steps", default=0)
     parser.add_argument("--eval_steps", type=int, help="Number of training steps", default=0)
@@ -178,11 +179,12 @@ if __name__ == "__main__":
     parser.add_argument("--grad_acc_steps", type=int, help="Gradient accumulation steps", default=1)
     parser.add_argument("--max_seq_length", type=int, default=2048, help="Maximum sequence length")
     parser.add_argument("--target_modules", type=str, help="List of LoRA modules to use (as dash-separated string).", default='q-k-v')
-    parser.add_argument("--load_in_4bit", action="store_true", help="Use 4-bit quantization")
-    parser.add_argument("--load_in_8bit", action="store_true", help="Use 8-bit quantization")
-    parser.add_argument("--verbose_eval", action="store_true", help="Enable verbose evaluation output")
-    parser.add_argument("--layout_path", help="Path of the layout text file", default='./misc/prompt_layout_tags.txt')
-    parser.add_argument("--tags_path", help="Path of the tags text file", default='./misc/prompt_tags.txt')
+    parser.add_argument("--load_in_4bit", type=int, help="Use 4-bit quantization", default=0)
+    parser.add_argument("--load_in_8bit", type=int, help="Use 8-bit quantization", default=0)
+    parser.add_argument("--verbose_eval", type=int, help="Enable verbose evaluation output", default=0)
+    parser.add_argument("--layout_path", type=str, help="Path of the layout text file", default='./misc/prompt_layout_tags.txt')
+    parser.add_argument("--tags_path", type=str, help="Path of the tags text file", default='./misc/prompt_tags.txt')
     parser.add_argument("--seed", type=int, help="Gradient accumulation steps", default=42)
+    parser.add_argument("--suffix", type=str, help="Path of the tags text file", default='')
     args = parser.parse_args()
     main(args)
