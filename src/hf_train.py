@@ -1,21 +1,19 @@
 import torch
+import argparse
+import numpy as np
+import os
+import json
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from data_utils import convert_files, CausalLMDataset
 from eval_utils import Evaluator
-from os_utils import get_time, setup_config
-from proj_cfg import default_cfg
+from os_utils import setup_config
 from train_utils import set_seeds
 from datasets import Dataset
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 from trl import SFTConfig, SFTTrainer
-import argparse
-import numpy as np
-import copy
-import os
-import json
 
 def main(args):
-    config = setup_config(args, default_cfg)
+    config = setup_config(args, json.load(open('./misc/default_cfg.json', 'r')))
     print(config)
     results_dir = os.path.join("./results", f"{config['model_name'].split('/')[-1]}", config['suffix'])
     print(f'Will save results to: {results_dir}')
@@ -37,6 +35,8 @@ def main(args):
                             n_icl_samples=config['n_icl_samples'],
                             use_prompt_tags=config['use_prompt_tags'],
                             seed=config['seed'],
+                            train_steps=config['train_steps'],
+                            eval_steps=config['eval_steps']
                             )
     dataset_train = Dataset.from_pandas(dataset.train_samples)
 
@@ -58,13 +58,14 @@ def main(args):
         config['model_name'],
         quantization_config=quantization_config,
         torch_dtype=torch.bfloat16,
+        device_map='auto',
         trust_remote_code=True,
     )
     model.gradient_checkpointing_enable()
 
-    if config['target_modules'] != 'full_ft':
+    if args.do_train and config['target_modules'] != 'full_ft':
         target_modules = [el+'_proj' for el in config['target_modules'].split('-')]
-        if config['load_in_4bit']:
+        if config['load_in_4bit'] or config['load_in_8bit']:
             model = prepare_model_for_kbit_training(model)
         lora_config = LoraConfig(
             r=16,
@@ -76,84 +77,99 @@ def main(args):
             use_rslora=False,
         )
         model = get_peft_model(model, lora_config)
-    else:
-        target_modules = config['target_modules']
-        lora_config = None
+        trainer = SFTTrainer(
+            model=model,
+            processing_class=tokenizer,
+            train_dataset=dataset_train,
+            # eval_dataset=dataset_dev,
+            # compute_metrics=evaluator.compute_metrics,
+            peft_config=lora_config,
+            args=SFTConfig(
+                dataset_num_proc=1,
+                packing=False,
+                per_device_train_batch_size=config['batch_size_train'],
+                per_device_eval_batch_size=config['batch_size_eval'],
+                # eval_accumulation_steps=1,
+                gradient_checkpointing=True,
+                gradient_checkpointing_kwargs = {"use_reentrant": False},
+                warmup_steps=5,
+                max_steps=config['train_steps'],
+                # num_train_epochs=1,
+                learning_rate=config['lr'],
+                fp16=not torch.cuda.is_bf16_supported(),
+                bf16=torch.cuda.is_bf16_supported(),
+                optim="adamw_8bit",
+                weight_decay=0.01,
+                lr_scheduler_type="linear", 
+                seed=config['seed'],
+                # output_dir="outputs",
+                report_to="none",
+                eval_strategy='no',
+                # eval_steps=config['eval_steps'],
+                # save_steps=config['train_steps'] // 5,
+                metric_for_best_model="f1",
+                # load_best_model_at_end=True,
+                label_names=["labels"],
+            ),
+        )
     
     # Create custom evaluator that has access to the expected outputs
     evaluator_dev = Evaluator(tokenizer, model, config)
 
     if not config['train_steps']:
         config['train_steps'] = len(dataset.train_samples) // int(config['batch_size_train'])
-
-    trainer = SFTTrainer(
-        model=model,
-        processing_class=tokenizer,
-        train_dataset=dataset_train,
-        # eval_dataset=dataset_dev,
-        # compute_metrics=evaluator.compute_metrics,
-        peft_config=lora_config,
-        args=SFTConfig(
-            dataset_num_proc=1,
-            packing=False,
-            per_device_train_batch_size=config['batch_size_train'],
-            per_device_eval_batch_size=config['batch_size_eval'],
-            # eval_accumulation_steps=1,
-            warmup_steps=5,
-            max_steps=config['train_steps'],
-            # num_train_epochs=1,
-            learning_rate=config['lr'],
-            fp16=not torch.cuda.is_bf16_supported(),
-            bf16=torch.cuda.is_bf16_supported(),
-            optim="adamw_8bit",
-            weight_decay=0.01,
-            lr_scheduler_type="linear", 
-            seed=42,
-            # output_dir="outputs",
-            report_to="none",
-            eval_strategy='no',
-            # eval_steps=config['train_steps'],
-            # save_steps=config['train_steps'],
-            metric_for_best_model="f1",
-            # load_best_model_at_end=True,
-            label_names=["labels"],
-        ),
-    )
     
     max_val = -np.inf
     best_epoch = 0
     results_dev_list = []
-    if config['eval_steps']:
-        dataset.dev_samples = dataset.dev_samples[:config['eval_steps']]
-    for epoch in range(config['epochs']):
-        model.train()
-        trainer.train()
-        results_dev = evaluator_dev.evaluate(dataset.dev_samples,
-                                     epoch,
-                                     config['batch_size_eval'],
-                                     verbose = config['verbose_eval'],
-                                     split='dev',
-                                     )
-        print(f'dev @ {epoch + 1} epochs:', results_dev)
-        results_dev_list.append(results_dev)
-        json_path_dev = os.path.join(results_dir, 'results_dev.json')
+    
+    if args.do_train:
+        model_dir = os.path.join("./models/", config['model_name'].split('/')[-1], config['suffix'])
+        print(f'Training, will save models to: {model_dir}')
+        print('VRAM usage:',torch.cuda.memory_allocated())
+        for epoch in range(config['epochs']):
+            model.train()
+            trainer.train()
+            results_dev = evaluator_dev.evaluate(dataset.dev_samples,
+                                        epoch,
+                                        config['batch_size_eval'],
+                                        verbose = config['verbose_eval'],
+                                        split='dev',
+                                        )
+            print(f'dev @ {epoch + 1} epochs:', results_dev)
+            results_dev_list.append(results_dev)
+            json_path_dev = os.path.join(results_dir, 'results_dev.json')
+            
+            with open(json_path_dev, 'w', encoding='utf8') as f:
+                json.dump(results_dev_list, f, ensure_ascii = False, indent = 4)
+            if results_dev['micro_f1'] > max_val:
+                max_val = results_dev['micro_f1']
+                model.save_pretrained(model_dir, save_adapter=True, save_config=True)
+                print(f"Best model updated with micro F1 = {results_dev['micro_f1']}")
+                print(f"Best model saved to: {model_dir}")
+                tokenizer.save_pretrained(model_dir)
+                best_epoch = epoch
         
-        with open(json_path_dev, 'w', encoding='utf8') as f:
-            json.dump(results_dev_list, f, ensure_ascii = False, indent = 4)
-        if results_dev['micro_f1'] > max_val:
-            max_val = results_dev['micro_f1']
-            best_model = copy.deepcopy(model)
-            best_epoch = epoch
-    if config['eval_steps']:
-        dataset.test_samples = dataset.test_samples[:config['eval_steps']]
-    evaluator_test = Evaluator(tokenizer, best_model, config)
-    results_test = evaluator_test.evaluate(dataset.test_samples,
+        print('VRAM usage:',torch.cuda.memory_allocated())
+        print('Model deleted, test time...')
+        model.to('cpu')
+        del model
+        torch.cuda.empty_cache()
+        print('VRAM usage:',torch.cuda.memory_allocated())
+        model = AutoModelForCausalLM.from_pretrained(model_dir,
+                                                        quantization_config=quantization_config,
+                                                        torch_dtype=torch.bfloat16,
+                                                        device_map='auto',
+                                                        trust_remote_code=True)
+
+        evaluator_test = Evaluator(tokenizer, model, config)
+        results_test = evaluator_test.evaluate(dataset.test_samples,
                                      best_epoch,
                                      config['batch_size_eval'],
                                      verbose = config['verbose_eval'],
                                      split='test',
                                      )
-    print(f'test @ {epoch + 1} epochs:', results_test)
+    print(f'test @ {best_epoch + 1} epochs:', results_test)
 
     json_path_test = os.path.join(results_dir, 'results_test.json')
     with open(json_path_test, 'w', encoding='utf8') as f:
@@ -163,19 +179,17 @@ def main(args):
     with open(config_path, 'w', encoding='utf8') as f:
         json.dump(config, f, ensure_ascii = False, indent = 4)
 
-    model_dir = os.path.join("./models/", config['model_name'].split('/')[-1], config['suffix'])
-    best_model.save_pretrained(model_dir)
-    tokenizer.save_pretrained(model_dir)
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Causal language modeling trainer")
     parser.add_argument("--data_path", type=str, help="Directory path containing input files", default='./data/')
+    parser.add_argument("--model_name", type=str, help="HF name or local model path", default='meta-llama/Llama-3.1-8B-Instruct')
     parser.add_argument("--lr", type=float, help="Learning rate", default=2e-4)
     parser.add_argument("--train_steps", type=int, help="Number of training steps", default=0)
     parser.add_argument("--eval_steps", type=int, help="Number of training steps", default=0)
     parser.add_argument("--epochs", type=int, help="Number of training epochs", default=3)
     parser.add_argument("--n_icl_samples", type=int, help="Number of training epochs", default=10)
     parser.add_argument("--use_prompt_tags", type=int, help="Whether to include tags in the prompt (0 or 1 as int acting as bool)", default=1)
+    parser.add_argument("--do_train", type=int, help="Whether to train the model", default=1)
     parser.add_argument("--batch_size_train", type=int, help="Batch size for training", default=4)
     parser.add_argument("--batch_size_eval", type=int, help="Batch size for evaluation", default=4)
     parser.add_argument("--grad_acc_steps", type=int, help="Gradient accumulation steps", default=1)

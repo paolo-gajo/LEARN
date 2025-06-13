@@ -17,7 +17,9 @@ class CausalLMDataset:
                 n_icl_samples: int=3, 
                 use_prompt_tags: int=1,
                 clean: bool=True,
-                seed: int=42
+                seed: int=42,
+                train_steps: int=0,
+                eval_steps: int=0,
                 ):
         self.data = data
         self.prompt_layout = prompt_layout
@@ -38,6 +40,11 @@ class CausalLMDataset:
         self.train_samples = self.make_samples('train')
         self.dev_samples = self.make_samples('dev')
         self.test_samples = self.make_samples('test')
+        if train_steps:
+            self.train_samples = self.train_samples[:train_steps]
+        if eval_steps:
+            self.dev_samples = self.dev_samples[:eval_steps]
+            self.test_samples = self.test_samples[:eval_steps]
 
     def clean(self):
         self.data['text_og'] = self.data['text_og'].apply(lambda x: x.replace(r'\0', ''))

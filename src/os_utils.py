@@ -9,4 +9,6 @@ def setup_config(namespace: argparse.Namespace, default_cfg: dict):
     config = default_cfg
     for k, v in args.items():
         config[k] = v
+    if not config['suffix']:
+        config['suffix'] = get_time()
     return config
