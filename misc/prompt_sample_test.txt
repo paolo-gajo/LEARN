@@ -2,17 +2,17 @@ Annotate the target sentence below with the following tags, in XML style. Reprod
 
 Below are reference examples:
 
-Thank you###Thank you
-Hi, that will be perfect for me, do you prefer paying me on cash or by a credit card? Best regards, user###Hi, that will be perfect for me, do you prefer paying me <LSPR corr="in">on</LSPR> cash or by <GA corr="\0">a</GA> credit card? Best regards, user
-oh no, sorry###<DMCC corr="Oh">oh</DMCC> no, sorry
-can you ask me another question?###<DMCC corr="Can">can</DMCC> you ask me another question?
-i wanted to leave from Fiumicino’s Airport###<DMCC corr="I">i</DMCC> wanted to leave from <GNC corr="Fiumicino Airport">Fiumicino’s Airport</GNC>
-OK, I have a game to propose to you. Are you in?###OK, I have a game to propose to you. Are you in?
-nono, as a language model Beppe I am unable to speak Italian. Let us get back to the point###<DMCC corr="No no">None</DMCC>, as a language model Beppe I am unable to speak Italian. Let us get back to the point <FS corr="no no">nono</FS>
-What's a "cozy booth" in Italian?###What's a "cozy booth" in Italian?
-Write shorter sentences###Write shorter sentences
-Nothing in particular, just hard to study but not impossible###Nothing in particular, just hard to study but not impossible
+Ni hao then ahaha. By the way learning both at the same time is not that difficult. Some "caratteri" (how tdo you say that in English?) are the same so you have less stuff to study. Sometimes only pronunciation changes, so it's not rare to switch languages without even noticing###Ni hao then ahaha. By the way learning both at the same time is not that difficult. Some <CSINTRA corr="characters">"caratteri"</CSINTRA> (how <FS corr="do">tdo</FS> you say that in English?) are the same so you have less stuff to study. Sometimes only pronunciation changes, so it's not rare to switch languages without even noticing
+Let's play with a role play activity, shall we?###Let's <LP corr="do a role play activity">play with a role play activity</LP>, shall we?
+what do you think about NapoliMonitor the newspaper?###<DMCC corr="What">what</DMCC> do you think about <WO corr="the newspaper Napoli Monitor"> </WO>? <DMCC corr="Napoli Monitor">NapoliMonitor</DMCC> the newspaper
+Do you think Barcelona is safe for women? I am gonna travel with my best friend and she's worried about pickpockets.###Do you think Barcelona is safe for women? I am gonna travel with my best friend and she's worried about pickpockets.
+oh so you want to talk now, but when I called you and you were in the bed of another man you didn't bother to answer me!!###<DMCC corr="Oh">oh</DMCC> so you want to talk now, but when I called you and you were in the bed of another man you didn't bother to answer me!!
+I like it medium rare, and with mashed potatoes please###I like it medium rare, and with mashed potatoes please
+Can you make small talk with me now?###Can you make small talk with me now?
+I'm so scared cause I don't know very well English and I choose international relations###I'm so scared <DMCA corr="because">cause</DMCA> I don't know <GADVO corr="English very well">very well English</GADVO> and I <GVT corr="chose">choose</GVT> international relations
+I guess you can be funny if you want to###I guess you can be funny if you want to
+University life?###University life?
 
 Annotate the following target sentence, without providing any explanation:
 
-I hope so. Do you think there is some fashion critic whose review of the event I should read?###
+In which year should I travel to see the Sagrada Familia finished?###

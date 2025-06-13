@@ -2,17 +2,17 @@ Annotate the target sentence below with the following tags, in XML style. Reprod
 
 Below are reference examples:
 
-Hi what do you think about music? How  music makes you feel?###Hi <QM corr=",">\0</QM> what do you think about music? How <GVAUX corr="does">\0</GVAUX> music makes you feel?
-I love animals and I have a pet, its name is Milo###I love animals and I have a pet, its name is Milo
-can you suggest me some ideas?###<DMCC corr="Can">can</DMCC> you <XVCO corr="suggest to me">suggest me</XVCO> some ideas?
-the major risks it's PTSD###<DMCC corr="The">the</DMCC> <LSADJ corr="greatest">major</LSADJ> <GNN corr="risk">risks</GNN> <GPP corr="\0">it</GPP>'s PTSD
-HOW ARE YOU PI?###HOW ARE YOU PI?
-OK, I have a game to propose to you. Are you in?###OK, I have a game to propose to you. Are you in?
-Lately I’ve been studying so much  I don’t t even have time to breath###Lately I’ve been studying so much <LCS corr="that">\0</LCS> I <GVT corr="haven't even had">don’t </GVT> time to <FS corr="\0">t</FS> even have <GWC corr="breathe">breath</GWC>
-that one was mind blowing really###<DMCC corr="That">that</DMCC> one was <FS corr="mind-blowing">mind blowing</FS> really
-We'll think about it later, thank you###We'll think about it later, thank you
-An Asian city would be better because I'm very interested in some of the Asian cultures, like Korean or Japanese###An Asian city would be better because I'm very interested in some of the Asian cultures, like Korean or Japanese
+i would  talk about my future project###<DMCC corr="I">i</DMCC> would <WM corr="like to">\0</WM> talk about my future project
+The climate change and his impact on our environment.###<GA corr="\0">The</GA> <DMCC corr="Climate">climate</DMCC> change and <GDO corr="its">his</GDO> impact on our environment.
+I like the job interview one###I like the job interview one
+i am dining alone tonight###<DMCC corr="I">i</DMCC> am dining alone tonight
+I mean the film###I mean the film
+Very well, sir. Do you maybe want something to drink with it? ;Maybe some wine?###Very well, sir. Do you maybe want something to drink with it? <FS corr="\0">;</FS>Maybe some wine?
+I'd like to talk about something you like###I'd like to talk about something you like
+Let me think about the main dish###Let me think about the main dish
+Thanks a lot, now would you like to talk about something else?###Thanks a lot, now would you like to talk about something else?
+sooooo i think that this new tecnohlogy can be so "banale" and can limitate the imagination and ai think that the CGI is seems to be more "fake"###<DMCC corr="Sooooo">sooooo</DMCC> <DMCC corr="I">i</DMCC> think that this new <FS corr="technology">tecnohlogy</FS> can be so <CSINTRA corr="banal">"banale"</CSINTRA> and can <LWCO corr="limit">limitate</LWCO> the imagination and <FS corr="I">ai</FS> think that the CGI <GVAUX corr="\0">is</GVAUX> seems to be more "fake"
 
 Annotate the following target sentence, without providing any explanation:
 
-Hi, I would like to talk with you about the 2024 met gala###
+Obviously, do you know something about formula one's drivers###

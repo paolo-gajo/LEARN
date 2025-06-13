@@ -2,17 +2,17 @@ Annotate the target sentence below with the following tags, in XML style. Reprod
 
 Below are reference examples:
 
-Yes , I do . I love music,  and I play many instruments . I think music , especially creating music , not listening to it , really gives musicians a new "key" to open the doors of  knowledge , because music composition has strict rules that can be altered , resulting (depending on the musician's creativity) , in a new form of art , but also in a new form of ear torture . However , it's easy to say that every music genius uses "errors" to create beauty###Yes , I do . I love music,  and I play many instruments . I think music , especially creating music , not listening to it , really gives musicians a new "key" to open the doors of  knowledge , because music composition has strict rules that can be altered , resulting (depending on the musician's creativity) , in a new form of art , but also in a new form of ear torture . However , it's easy to say that every music genius uses "errors" to create beauty
-We'd like to have an intimate table, possibly near the window###We'd like to have an intimate table, possibly near the window
- like  see the Walking Dead, it is my favourite serie tv. Do you like kind###<GPP corr="I">\0</GPP> <XVCO corr="like to">like </XVCO> <LSV corr="watch">see</LSV> the Walking Dead, it is my favourite <LWCO corr="TV series">serie tv</LWCO>. Do you like <Z corr="this kind of TV series?">kind</Z>
-Come si dice raccolta indiferenziata###<CSINTRA corr="How do you say general waste?">Come si dice raccolta indiferenziata</CSINTRA>
-I used to apply heated pads where the pain was worse, and it did feel better for as long as I kept the pad on. If I took it off, it was a matter of hours before I was back to where I started.###I used to apply heated pads where the pain was worse, and it did feel better for as long as I kept the pad on. If I took it off, it was a matter of hours before I was back to where I started.
-No I haven't tried that yet i'm gonna try and let you if It did work or not, can you wait a few minutes?###No I haven't tried that yet i'm gonna try and let you if It did work or not, can you wait a few minutes?
-Well I was thinking of rewatching for the 100th time fast & furious###Well <QM corr=",">\0</QM> I was thinking of rewatching <WO corr="Fast & Furious for the 100th time">for the 100th time </WO> <DMCC corr="Fast & Furious">fast & furious</DMCC>
-I'm a customer and you are a waiter. You are supposed to bring the hamburger as you have to serve my table as we agreed at the start###I'm a customer and you are a waiter. You are supposed to bring the hamburger as you have to serve my table as we agreed at the start
-do you feel like role play?###<DMCC corr="Do">do</DMCC> you <XVCO corr="feel like role playing">feel like role play</XVCO>?
-We'd like visit National parks, because we like the nature. However we'd like visit the big city too.   I don't know how many days  needed for this. We have a 2500€ for the budget###We'd like <GVNF corr="to visit">visit</GVNF> National parks, because we like <GA corr="\0">the</GA> nature. However we'd <XVCO corr="like to visit">like visit</XVCO> <GNN corr="big cities">the big city</GNN> too.   I don't know how many days <GVAUX corr="are">\0</GVAUX> needed for this. We have <Z corr="a budget of 2500€">a 2500€ for the budget</Z>
+OK IT is a beatiful place to visit###<DMCA corr="Okay">OK</DMCA> <DMCC corr="it">IT</DMCC> is a <FS corr="beautiful">beatiful</FS> place to visit
+Nothing in particular, just hard to study but not impossible###Nothing in particular, just hard to study but not impossible
+Pefect, sir. And what about your sister?###Pefect, sir. And what about your sister?
+i don't have anything specific in mind, i'm looking for a fantasy novel or something like that###<DMCC corr="I">i</DMCC> don't have anything specific in mind, <DMCC corr="I">i</DMCC>'m looking for a fantasy novel or something like that
+That's not very funny, you know? Try something else###That's not very funny, you know? Try something else
+education science###<DMCC corr="Education Science">education science</DMCC>
+Now simulate a role play###Now simulate a role play
+I already tried to restart my phone but it didn't work, it my be that my router is too far, but even when i'm in the same room as the router my phone won't connect###I already tried to restart my phone but it didn't work, it <FS corr="may">my</FS> be that my router is too far, but even when <DMCC corr="I">i</DMCC>'m in the same room as the router my phone won't connect
+Last summer with my friends###Last summer with my friends
+can you explain me the situation?###<DMCC corr="Can">can</DMCC> you <XVCO corr="explain to me">explain me</XVCO> the situation?
 
 Annotate the following target sentence, without providing any explanation:
 
-i'm study criminology,  is most difficult###
+Quickly, I' a champion!###
