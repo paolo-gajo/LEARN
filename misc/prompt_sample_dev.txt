@@ -64,6 +64,7 @@ The following are the tags you should use for annotation:
 
 Below are reference examples:
 
+<<<<<<< HEAD
 I don't know about his thoughts on the date###I don't know about his thoughts on the date
 Hi, what's your favorite pet?###Hi, what's your favorite pet?
 Thank you! I'm kind of practicing my English right now with you, so  you have any comments on how I could improve? Or some correction about what I0m writing to you?###Thank you! I'm kind of practicing my English right now with you, so <GVAUX corr="do">\0</GVAUX> you have any comments on how I could improve? Or some <GNN corr="corrections">correction</GNN> about what <FS corr="I'm">I0m</FS> writing to you?
@@ -88,3 +89,19 @@ White thank you###White thank you
 Annotate the following target sentence, without providing any explanation:
 
 I'm studing in Macerata University, the name of  course is "scienze della formazione primaria".   What do you do in life?###
+=======
+i would  talk about my future project###<DMCC corr="I">i</DMCC> would <WM corr="like to">\0</WM> talk about my future project
+The climate change and his impact on our environment.###<GA corr="\0">The</GA> <DMCC corr="Climate">climate</DMCC> change and <GDO corr="its">his</GDO> impact on our environment.
+I like the job interview one###I like the job interview one
+i am dining alone tonight###<DMCC corr="I">i</DMCC> am dining alone tonight
+I mean the film###I mean the film
+Very well, sir. Do you maybe want something to drink with it? ;Maybe some wine?###Very well, sir. Do you maybe want something to drink with it? <FS corr="\0">;</FS>Maybe some wine?
+I'd like to talk about something you like###I'd like to talk about something you like
+Let me think about the main dish###Let me think about the main dish
+Thanks a lot, now would you like to talk about something else?###Thanks a lot, now would you like to talk about something else?
+sooooo i think that this new tecnohlogy can be so "banale" and can limitate the imagination and ai think that the CGI is seems to be more "fake"###<DMCC corr="Sooooo">sooooo</DMCC> <DMCC corr="I">i</DMCC> think that this new <FS corr="technology">tecnohlogy</FS> can be so <CSINTRA corr="banal">"banale"</CSINTRA> and can <LWCO corr="limit">limitate</LWCO> the imagination and <FS corr="I">ai</FS> think that the CGI <GVAUX corr="\0">is</GVAUX> seems to be more "fake"
+
+Annotate the following target sentence, without providing any explanation:
+
+Obviously, do you know something about formula one's drivers###
+>>>>>>> refs/remotes/origin/master

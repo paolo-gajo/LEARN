@@ -113,7 +113,7 @@ class Evaluator:
                 num_return_sequences=1,
                 eos_token_id=self.tokenizer.eos_token_id,
                 pad_token_id=self.tokenizer.eos_token_id,
-                max_new_tokens=1000
+                max_new_tokens=100
             )
 
         # Decode each output

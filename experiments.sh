@@ -62,7 +62,7 @@ declare -a model_name=(
     # mistralai/Ministral-8B-Instruct-2410
 )
 declare -a coarse=(
-    0
+    0   
     # 1
 )
 # Generate all combinations

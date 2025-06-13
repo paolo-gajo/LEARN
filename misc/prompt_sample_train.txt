@@ -64,6 +64,7 @@ The following are the tags you should use for annotation:
 
 Below are reference examples:
 
+<<<<<<< HEAD
 I hope so. Do you think there is some fashion critic whose review of the event I should read?###I hope so. Do you think there is some fashion critic whose review of the event I should read?
 LEVI ACKERMANN!!!! i love that mann....  is very skilled and beautiful OMG!!!###LEVI ACKERMANN!!!! <DMCC corr="I">i</DMCC> love that mann.... <GPP corr="He">\0</GPP> is very skilled and beautiful <DMCA corr="">OMG</DMCA>!!!
 Write shorter sentences###Write shorter sentences
@@ -88,3 +89,19 @@ i’m looking for something near the city centre, with a lot of comforts###<DMCC
 Annotate the following target sentence, without providing any explanation:
 
 HI###
+=======
+OK IT is a beatiful place to visit###<DMCA corr="Okay">OK</DMCA> <DMCC corr="it">IT</DMCC> is a <FS corr="beautiful">beatiful</FS> place to visit
+Nothing in particular, just hard to study but not impossible###Nothing in particular, just hard to study but not impossible
+Pefect, sir. And what about your sister?###Pefect, sir. And what about your sister?
+i don't have anything specific in mind, i'm looking for a fantasy novel or something like that###<DMCC corr="I">i</DMCC> don't have anything specific in mind, <DMCC corr="I">i</DMCC>'m looking for a fantasy novel or something like that
+That's not very funny, you know? Try something else###That's not very funny, you know? Try something else
+education science###<DMCC corr="Education Science">education science</DMCC>
+Now simulate a role play###Now simulate a role play
+I already tried to restart my phone but it didn't work, it my be that my router is too far, but even when i'm in the same room as the router my phone won't connect###I already tried to restart my phone but it didn't work, it <FS corr="may">my</FS> be that my router is too far, but even when <DMCC corr="I">i</DMCC>'m in the same room as the router my phone won't connect
+Last summer with my friends###Last summer with my friends
+can you explain me the situation?###<DMCC corr="Can">can</DMCC> you <XVCO corr="explain to me">explain me</XVCO> the situation?
+
+Annotate the following target sentence, without providing any explanation:
+
+Quickly, I' a champion!###
+>>>>>>> refs/remotes/origin/master

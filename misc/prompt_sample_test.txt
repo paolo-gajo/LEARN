@@ -64,6 +64,7 @@ The following are the tags you should use for annotation:
 
 Below are reference examples:
 
+<<<<<<< HEAD
 ready###<DMCC corr="Ready">ready</DMCC>
 yes,  stage in  asilo nido###<DMCC corr="Yes">yes</DMCC>, <GA corr="a">\0</GA> <LWCO corr="internship">stage</LWCO> in <GA corr="a">\0</GA> <CSINTRA corr="nursery school">asilo nido</CSINTRA>
 would you please act as if you were a job counselor?###<DMCC corr="Would">would</DMCC> you please act as if you were a job counselor?
@@ -90,3 +91,19 @@ Can we do a role play?###Can we do a role play?
 Annotate the following target sentence, without providing any explanation:
 
 Yes###
+=======
+Ni hao then ahaha. By the way learning both at the same time is not that difficult. Some "caratteri" (how tdo you say that in English?) are the same so you have less stuff to study. Sometimes only pronunciation changes, so it's not rare to switch languages without even noticing###Ni hao then ahaha. By the way learning both at the same time is not that difficult. Some <CSINTRA corr="characters">"caratteri"</CSINTRA> (how <FS corr="do">tdo</FS> you say that in English?) are the same so you have less stuff to study. Sometimes only pronunciation changes, so it's not rare to switch languages without even noticing
+Let's play with a role play activity, shall we?###Let's <LP corr="do a role play activity">play with a role play activity</LP>, shall we?
+what do you think about NapoliMonitor the newspaper?###<DMCC corr="What">what</DMCC> do you think about <WO corr="the newspaper Napoli Monitor"> </WO>? <DMCC corr="Napoli Monitor">NapoliMonitor</DMCC> the newspaper
+Do you think Barcelona is safe for women? I am gonna travel with my best friend and she's worried about pickpockets.###Do you think Barcelona is safe for women? I am gonna travel with my best friend and she's worried about pickpockets.
+oh so you want to talk now, but when I called you and you were in the bed of another man you didn't bother to answer me!!###<DMCC corr="Oh">oh</DMCC> so you want to talk now, but when I called you and you were in the bed of another man you didn't bother to answer me!!
+I like it medium rare, and with mashed potatoes please###I like it medium rare, and with mashed potatoes please
+Can you make small talk with me now?###Can you make small talk with me now?
+I'm so scared cause I don't know very well English and I choose international relations###I'm so scared <DMCA corr="because">cause</DMCA> I don't know <GADVO corr="English very well">very well English</GADVO> and I <GVT corr="chose">choose</GVT> international relations
+I guess you can be funny if you want to###I guess you can be funny if you want to
+University life?###University life?
+
+Annotate the following target sentence, without providing any explanation:
+
+In which year should I travel to see the Sagrada Familia finished?###
+>>>>>>> refs/remotes/origin/master
