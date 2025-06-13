@@ -1,5 +1,92 @@
 Annotate the target sentence below with the following tags, in XML style. Reproduce the full sentence and annotate each error.
 
+The following are the tags you should use for annotation:
+
+<DMCC>: Capitalization issues.
+<DMCA>: Use of abbreviations in digitally-mediated communication (e.g., OK, lol, etc.).
+<FS>: Spelling errors.
+<FM>: Morphological errors involving derivational affixes.
+<QC>: Confusion of punctuation marks.
+<QL>: Punctuation mark instead of lexical item (or vice versa).
+<QM>: Missing punctuation.
+<QR>: Redundant punctuation.
+<GDD>: Errors with demonstrative determiners (e.g., this, that, etc.).
+<GDO>: Errors with possessive determiners (e.g., my, your, etc.).
+<GDI>: Errors with indefinite determiners (e.g., any, some, etc.).
+<GDT>: Errors with other types of determiners (e.g., relative, interrogative, etc.).
+<GA>: Errors with definite, indefinite, or zero articles.
+<GADJCS>: Errors with comparative or superlative adjectives.
+<GADJN>: Errors with adjective number.
+<GADJO>: Errors with adjective order.
+<GADVO>: Misplaced adverbs.
+<GNC>: Errors with noun case (e.g., Saxon genitive misuse).
+<GNN>: Errors with noun number.
+<GPD>: Errors with demonstrative pronouns (e.g., this, that, etc.).
+<GPP>: Errors with personal pronouns (e.g., you, we, etc.).
+<GPO>: Errors with possessive pronouns (e.g., mine, yours, etc.).
+<GPI>: Errors with indefinite pronouns. (e.g. anyone, nothing, etc.).
+<GPF>: Errors with reflexive or reciprocal pronouns (e.g., myself, each other, etc.).
+<GPR>: Errors with relative or interrogative pronouns (e.g., what, which, etc.).
+<GPU>: Unclear pronominal reference.
+<GVAUX>: Misuse of primary, modal, or semi-auxiliaries (e.g., do, have, etc.).
+<GVM>: Errors with verb morphology.
+<GVN>: Errors with subject-verb agreement.
+<GVNF>: Errors in use of -ing, infinitives, or relative clauses.
+<GVT>: Misuse of tense or aspect.
+<GVV>: Errors with active/passive voice.
+<GWC>: Errors due to confusion between word classes.
+<XADJCO>: Errors with adjective complementation.
+<XNCO>: Errors with noun complementation.
+<XPRCO>: Errors with preposition complementation.
+<XVCO>: Errors with verb complementation.
+<XADJPR>: Errors with adjective dependent prepositions.
+<XADVPR>: Errors with adverb dependent prepositions.
+<XNPR>: Errors involving dependent prepositions for nouns.
+<XVPR>: Errors involving dependent prepositions for verbs.
+<XNUC>: Errors in the use of uncountable/countable nouns.
+<LCC>: Errors in the use of coordinating conjunctions (e.g., and, or, etc.).
+<LCS>: Errors in the use of subordinating conjunctions (e.g., although, because, etc.).
+<LCLS>: Errors in the use of single logical connectors (e.g., nevertheless, etc.).
+<LCLC>: Errors in the use of complex logical connectors (e.g., on the other hand, etc.).
+<LSADJ>: Conceptual or collocational errors involving adjectives.
+<LSADV>: Conceptual or collocational errors involving adverbs.
+<LSN>: Conceptual or collocational errors involving nouns.
+<LSPR>: Conceptual or collocational errors involving prepositions.
+<LSV>: Conceptual or collocational errors involving verbs.
+<LP>: Errors in fixed word combinations, including idioms, compounds, and phrasal verbs.
+<LWCO>: Instances of coined words, calques, or invented proper nouns.
+<WM>: Missing words.
+<WR>: Redundant words.
+<WO>: Errors in word order.
+<Z>: Stylistic problems or unclear sequences requiring reformulation.
+<CSINTRA>: Code-switching within a sentence.
+<CSINTER>: Code-switching between sentences or conversational turns.
+
+Below are reference examples:
+
+i'll get the risotto###<DMCC corr="I">i</DMCC>'ll get the risotto
+she loves write in various places, but her favourite place is gardeno###<DMCC corr="She">she</DMCC> <XVCO corr="loves to write">loves write</XVCO> in various places, but her favourite place <GVN corr="are">is</GVN> <GNN corr="gardens">None</GNN> <FS corr="garden">gardeno</FS>
+but  you know my favourite film?###<DMCC corr="But">but</DMCC> <GVAUX corr="do">\0</GVAUX> you know my favourite film?
+Oh no i discovered them through Sanremo, with their son Governo Punk###Oh no <DMCC corr="I">i</DMCC> discovered them through Sanremo, with their <FS corr="song">son</FS> Governo Punk
+My favorite is don’t wanna cry and hit, and the fact that I’m studying Korean makes it even more easier to sing ###My <GNN corr="favorites">favorite</GNN> <GVN corr="are">is</GVN> <DMCC corr="Don't Wanna Cry">don’t wanna cry</DMCC> and <DMCC corr="HIT">hit</DMCC>, and the fact that I’m studying Korean makes it even <GADJCS corr="easier">more easier</GADJCS> to sing <GPP corr="them">\0</GPP>
+That's true. What about volleyball? Who do you think has the best team in the world?###That's true. What about volleyball? Who do you think has the best team in the world?
+i ask, "yess i want a first volume of Ju-Jutsu Kaisen, do you have that?"###<DMCC corr="I">i</DMCC> ask, "yess <DMCC corr="I">i</DMCC> want <GA corr="the">a</GA> first volume of Ju-Jutsu Kaisen, do you have <GPD corr="it">that</GPD>?"
+I'm also vegan###I'm also vegan
+No , I understood everything###No , I understood everything
+I'll be at the Emirates Stadium tonight. It will be the match of the year. In my life I saw a lot of Fiorentina's matches, this is my passion.
+		How about you, do you support any team?###I'll be at the Emirates Stadium tonight. It will be the match of the year. In my life I <GVT corr="have seen">saw</GVT> a lot of Fiorentina's matches, this is my passion.
+		How about you, do you support any team?
+I'm studying political science and international relations with china  i would like to know what i could do after I get my degree###I'm studying political science and international relations with <DMCC corr="China">china</DMCC> <WM corr="and">\0</WM> <DMCC corr="I">i</DMCC> would like to know what <DMCC corr="I">i</DMCC> could do after I get my degree
+Hi dear!###Hi dear!
+i have a car for transport in sardinia###<DMCC corr="I">i</DMCC> have a car <LP corr="for transportation">for transport</LP> in <DMCC corr="Sardinia">sardinia</DMCC>
+Lunch###Lunch
+I don't know about his thoughts on the date###I don't know about his thoughts on the date
+What about you?###What about you?
+I like it medium rare, and with mashed potatoes please###I like it medium rare, and with mashed potatoes please
+I'd like to know more about the apartment first###I'd like to know more about the apartment first
+Thanks chat gpt, talking with you was funny###Thanks <DMCC corr="ChatGPT">chat gpt</DMCC>, talking with you was funny
+What about painkillers? Do you think they could help me, at least for a short period of time, until I find out what is really causing my back pain?###What about painkillers? Do you think they could help me, at least for a short period of time, until I find out what is really causing my back pain?
+
 Annotate the following target sentence, without providing any explanation:
 
-Hi! Can I ask you something?###
+Okay perfect. She had the surgery last Monday at 5am and now is Wednesday, I think it’s a good idea tomorrow.   For the time, it depends on when you are free to see her, she only trusts in you and also I.###

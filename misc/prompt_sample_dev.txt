@@ -1,5 +1,90 @@
 Annotate the target sentence below with the following tags, in XML style. Reproduce the full sentence and annotate each error.
 
+The following are the tags you should use for annotation:
+
+<DMCC>: Capitalization issues.
+<DMCA>: Use of abbreviations in digitally-mediated communication (e.g., OK, lol, etc.).
+<FS>: Spelling errors.
+<FM>: Morphological errors involving derivational affixes.
+<QC>: Confusion of punctuation marks.
+<QL>: Punctuation mark instead of lexical item (or vice versa).
+<QM>: Missing punctuation.
+<QR>: Redundant punctuation.
+<GDD>: Errors with demonstrative determiners (e.g., this, that, etc.).
+<GDO>: Errors with possessive determiners (e.g., my, your, etc.).
+<GDI>: Errors with indefinite determiners (e.g., any, some, etc.).
+<GDT>: Errors with other types of determiners (e.g., relative, interrogative, etc.).
+<GA>: Errors with definite, indefinite, or zero articles.
+<GADJCS>: Errors with comparative or superlative adjectives.
+<GADJN>: Errors with adjective number.
+<GADJO>: Errors with adjective order.
+<GADVO>: Misplaced adverbs.
+<GNC>: Errors with noun case (e.g., Saxon genitive misuse).
+<GNN>: Errors with noun number.
+<GPD>: Errors with demonstrative pronouns (e.g., this, that, etc.).
+<GPP>: Errors with personal pronouns (e.g., you, we, etc.).
+<GPO>: Errors with possessive pronouns (e.g., mine, yours, etc.).
+<GPI>: Errors with indefinite pronouns. (e.g. anyone, nothing, etc.).
+<GPF>: Errors with reflexive or reciprocal pronouns (e.g., myself, each other, etc.).
+<GPR>: Errors with relative or interrogative pronouns (e.g., what, which, etc.).
+<GPU>: Unclear pronominal reference.
+<GVAUX>: Misuse of primary, modal, or semi-auxiliaries (e.g., do, have, etc.).
+<GVM>: Errors with verb morphology.
+<GVN>: Errors with subject-verb agreement.
+<GVNF>: Errors in use of -ing, infinitives, or relative clauses.
+<GVT>: Misuse of tense or aspect.
+<GVV>: Errors with active/passive voice.
+<GWC>: Errors due to confusion between word classes.
+<XADJCO>: Errors with adjective complementation.
+<XNCO>: Errors with noun complementation.
+<XPRCO>: Errors with preposition complementation.
+<XVCO>: Errors with verb complementation.
+<XADJPR>: Errors with adjective dependent prepositions.
+<XADVPR>: Errors with adverb dependent prepositions.
+<XNPR>: Errors involving dependent prepositions for nouns.
+<XVPR>: Errors involving dependent prepositions for verbs.
+<XNUC>: Errors in the use of uncountable/countable nouns.
+<LCC>: Errors in the use of coordinating conjunctions (e.g., and, or, etc.).
+<LCS>: Errors in the use of subordinating conjunctions (e.g., although, because, etc.).
+<LCLS>: Errors in the use of single logical connectors (e.g., nevertheless, etc.).
+<LCLC>: Errors in the use of complex logical connectors (e.g., on the other hand, etc.).
+<LSADJ>: Conceptual or collocational errors involving adjectives.
+<LSADV>: Conceptual or collocational errors involving adverbs.
+<LSN>: Conceptual or collocational errors involving nouns.
+<LSPR>: Conceptual or collocational errors involving prepositions.
+<LSV>: Conceptual or collocational errors involving verbs.
+<LP>: Errors in fixed word combinations, including idioms, compounds, and phrasal verbs.
+<LWCO>: Instances of coined words, calques, or invented proper nouns.
+<WM>: Missing words.
+<WR>: Redundant words.
+<WO>: Errors in word order.
+<Z>: Stylistic problems or unclear sequences requiring reformulation.
+<CSINTRA>: Code-switching within a sentence.
+<CSINTER>: Code-switching between sentences or conversational turns.
+
+Below are reference examples:
+
+OK, I have a game to propose to you. Are you in?###OK, I have a game to propose to you. Are you in?
+I hope so. Do you think there is some fashion critic whose review of the event I should read?###I hope so. Do you think there is some fashion critic whose review of the event I should read?
+i have recently watched past lives###<DMCC corr="I">i</DMCC> have recently watched <DMCC corr="Past">past</DMCC> lives
+That's exactly what I was looking for, thanks!###That's exactly what I was looking for, thanks!
+Hi, can I have an English conversation whit you?###Hi, can I have <Z corr="a conversation in English">an English conversation</Z> <FS corr="with">whit</FS> you?
+I heard a weird sound, like a laser sword, from the lowe floors and then the building collapsed. The purple substance was under the rubbles, there was a lot of it. I imagine it was all over the floor. About the person running away, I don't know, they were carring a black backpack, like a school backpack.###I heard a weird sound, like a laser sword, from the <FS corr="lower">lowe</FS> floors and then the building collapsed. The purple substance was under the <XNUC corr="rubble">rubbles</XNUC>, there was a lot of it. I imagine it was all over the floor. About the person running away, I don't know, they were <FS corr="carrying">carring</FS> a black backpack, like a school backpack.
+i like  go to the gym, what do you think about that?###<DMCC corr="I">i</DMCC> like <WM corr="to">\0</WM> go to the gym, what do you think about that?
+i'm going to take the firt one###<DMCC corr="I">i</DMCC>'m going to take the <FS corr="first">firt</FS> one
+I'm almost done, but I still have the last exams to take###I'm almost done, but I still have the last exams to take
+300-400€###300-400€
+i go  the cinema, read books, i do all sorts of activities that require my complete attention###<DMCC corr="I">i</DMCC> go <LSPR corr="to">\0</LSPR> the cinema, read books, <DMCC corr="I">i</DMCC> do all sorts of activities that require my complete attention
+i only watched the first season, i didn't like it that much###<DMCC corr="I">i</DMCC> <GVT corr="have only watched">only watched</GVT> the first season, <DMCC corr="I">i</DMCC> didn't like it that much
+Write shorter sentences###Write shorter sentences
+Hi, oh no, there wont be any extra for controlling the water, it's just a pleasure i want to do for you, because, eather way, we're friends, right?###Hi, oh no, there <FS corr="won't">wont</FS> be any <GNN corr="extras">extra</GNN> for controlling the water <QC corr=".">,</QC> it's just a pleasure <DMCC corr="I">i</DMCC> want to do for you, because, <FS corr="either">eather</FS> way, we're friends, right?
+Last summer with my friends###Last summer with my friends
+I love animals and I have a pet, its name is Milo###I love animals and I have a pet, its name is Milo
+Yeah I will try to do that. Last thing what do you think about k dramas###Yeah <QM corr=",">\0</QM> I will try to do that. Last thing <QM corr=":">\0</QM> what do you think about <DMCC corr="K-dramas">None</DMCC> <FS corr="k-dramas">k dramas</FS>
+Do you have some exemple of  menu?###Do you have some <GNN corr="examples">None</GNN> <FS corr="example">exemple</FS> <LSPR corr="from">of</LSPR> <GA corr="the">\0</GA> menu?
+How was my English?###How was my English?
+Number 2 sounds fun, let's play###Number 2 sounds fun, let's play
+
 Annotate the following target sentence, without providing any explanation:
 
-the major risks it's PTSD###
+Hello! I'm going do to an excercice. You are an encouraging tutor who helps students improve their English by engaging in role play activities. Let's engage in a roleplay activity where I, the student play the role of a client that would reserve a table and you will be  restaurant staff. Ask me question about reservation time, the number of people, the preferred menu###

@@ -87,8 +87,6 @@ class CausalLMDataset:
             examples = examples_pos + examples_neg
             shuffle(examples)
             examples = '\n'.join(examples)
-            if 'None' in examples:
-                ...
             if examples:
                 examples = f'\n{self.examples_preamble}\n\n{examples}\n'
             if self.use_prompt_tags:
@@ -266,7 +264,7 @@ def extract_tags(input_str: str) -> List[Tuple[str, str]]:
     """
     # wrap in a single root so we can parse fragments
     wrapper = f"<root>{input_str}</root>"
-    soup = BeautifulSoup(wrapper, "xml")
+    soup = BeautifulSoup(wrapper, "lxml-xml")
 
     results = []
     # find every tag that has a 'corr' attribute

@@ -1,6 +1,90 @@
 Annotate the target sentence below with the following tags, in XML style. Reproduce the full sentence and annotate each error.
 
+The following are the tags you should use for annotation:
+
+<DMCC>: Capitalization issues.
+<DMCA>: Use of abbreviations in digitally-mediated communication (e.g., OK, lol, etc.).
+<FS>: Spelling errors.
+<FM>: Morphological errors involving derivational affixes.
+<QC>: Confusion of punctuation marks.
+<QL>: Punctuation mark instead of lexical item (or vice versa).
+<QM>: Missing punctuation.
+<QR>: Redundant punctuation.
+<GDD>: Errors with demonstrative determiners (e.g., this, that, etc.).
+<GDO>: Errors with possessive determiners (e.g., my, your, etc.).
+<GDI>: Errors with indefinite determiners (e.g., any, some, etc.).
+<GDT>: Errors with other types of determiners (e.g., relative, interrogative, etc.).
+<GA>: Errors with definite, indefinite, or zero articles.
+<GADJCS>: Errors with comparative or superlative adjectives.
+<GADJN>: Errors with adjective number.
+<GADJO>: Errors with adjective order.
+<GADVO>: Misplaced adverbs.
+<GNC>: Errors with noun case (e.g., Saxon genitive misuse).
+<GNN>: Errors with noun number.
+<GPD>: Errors with demonstrative pronouns (e.g., this, that, etc.).
+<GPP>: Errors with personal pronouns (e.g., you, we, etc.).
+<GPO>: Errors with possessive pronouns (e.g., mine, yours, etc.).
+<GPI>: Errors with indefinite pronouns. (e.g. anyone, nothing, etc.).
+<GPF>: Errors with reflexive or reciprocal pronouns (e.g., myself, each other, etc.).
+<GPR>: Errors with relative or interrogative pronouns (e.g., what, which, etc.).
+<GPU>: Unclear pronominal reference.
+<GVAUX>: Misuse of primary, modal, or semi-auxiliaries (e.g., do, have, etc.).
+<GVM>: Errors with verb morphology.
+<GVN>: Errors with subject-verb agreement.
+<GVNF>: Errors in use of -ing, infinitives, or relative clauses.
+<GVT>: Misuse of tense or aspect.
+<GVV>: Errors with active/passive voice.
+<GWC>: Errors due to confusion between word classes.
+<XADJCO>: Errors with adjective complementation.
+<XNCO>: Errors with noun complementation.
+<XPRCO>: Errors with preposition complementation.
+<XVCO>: Errors with verb complementation.
+<XADJPR>: Errors with adjective dependent prepositions.
+<XADVPR>: Errors with adverb dependent prepositions.
+<XNPR>: Errors involving dependent prepositions for nouns.
+<XVPR>: Errors involving dependent prepositions for verbs.
+<XNUC>: Errors in the use of uncountable/countable nouns.
+<LCC>: Errors in the use of coordinating conjunctions (e.g., and, or, etc.).
+<LCS>: Errors in the use of subordinating conjunctions (e.g., although, because, etc.).
+<LCLS>: Errors in the use of single logical connectors (e.g., nevertheless, etc.).
+<LCLC>: Errors in the use of complex logical connectors (e.g., on the other hand, etc.).
+<LSADJ>: Conceptual or collocational errors involving adjectives.
+<LSADV>: Conceptual or collocational errors involving adverbs.
+<LSN>: Conceptual or collocational errors involving nouns.
+<LSPR>: Conceptual or collocational errors involving prepositions.
+<LSV>: Conceptual or collocational errors involving verbs.
+<LP>: Errors in fixed word combinations, including idioms, compounds, and phrasal verbs.
+<LWCO>: Instances of coined words, calques, or invented proper nouns.
+<WM>: Missing words.
+<WR>: Redundant words.
+<WO>: Errors in word order.
+<Z>: Stylistic problems or unclear sequences requiring reformulation.
+<CSINTRA>: Code-switching within a sentence.
+<CSINTER>: Code-switching between sentences or conversational turns.
+
+Below are reference examples:
+
+Yeah, of course. See you soon, my trip is coming!###Yeah, of course. See you soon, my trip is coming!
+but now we can change the argument?###<DMCC corr="But">but</DMCC> now <WO corr="can we">we can</WO> change the <LWCO corr="topic">argument</LWCO>?
+I hope so. Do you think there is some fashion critic whose review of the event I should read?###I hope so. Do you think there is some fashion critic whose review of the event I should read?
+i'll get the risotto###<DMCC corr="I">i</DMCC>'ll get the risotto
+my favorite way for spend time in a week is to relax at home with my boyfriend###<DMCC corr="My">my</DMCC> favorite way <LSPR corr="to">for</LSPR> spend time <LSPR corr="during">in</LSPR> <GA corr="the">a</GA> week is <GVNF corr="relaxing">to relax</GVNF> at home with my boyfriend
+The first one###The first one
+University life?###University life?
+A bunch of rascals hiding up the hills you say? Well that sure sounds interesting! Is there a bounty on their heads by any chance?###A bunch of rascals hiding up the hills you say? Well that sure sounds interesting! Is there a bounty on their heads by any chance?
+Iìll gladly take the offer###<FS corr="I'll">Iìll</FS> gladly take the offer
+Yes! It's a surprise for him!###Yes! It's a surprise for him!
+Absolutely###Absolutely
+Lunch###Lunch
+Is  possible  eat tiplcal food?###Is <GPP corr="it">\0</GPP> possible <WM corr="to">\0</WM> eat <FS corr="typical">tiplcal</FS> food?
+i want a villa like proximity beach and proximity school. what offers relator.com?###i want a villa like proximity beach and proximity school. what offers relator.com?
+I think justice has to be done. He did a lot of horrible things and a lot of people accused him for the things he did throughout the years. What do you think about what he did to her girlfriend? He punched her in front of the cameras. That's not good.###I think justice has to be done. He did a lot of horrible things and a lot of people <XVPR corr="accused him of">accused him for</XVPR> the things he did throughout the years. What do you think about what he did to <GDO corr="his">her</GDO> girlfriend? He punched her in front of the cameras. That's not good.
+I'd like to talk about something you like###I'd like to talk about something you like
+i keep moving down the corridor###<DMCC corr="I">i</DMCC> <GVT corr="will keep">keep</GVT> moving down the corridor
+What do you think of the sport?###What do you think of <GA corr="\0">the</GA> sport?
+i change idea, i will enter in the castle###<DMCC corr="I">i</DMCC> <LP corr="have changed my mind">None</LP>, <GVT corr="have changed">change</GVT> idea <DMCC corr="I">i</DMCC> will <XVPR corr="enter">enter in</XVPR> the castle
+plasmon###<DMCC corr="Plasmon">plasmon</DMCC>
+
 Annotate the following target sentence, without providing any explanation:
 
-I would like to go on holiday in Greece, but not in Corfù. I would like to try Santorini, or Athens, because I like art.
-		In the future I would like to go to Japan.###
+period!###
