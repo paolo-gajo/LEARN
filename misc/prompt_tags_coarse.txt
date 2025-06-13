@@ -1,9 +1,9 @@
-Code-Switching: 
-Digitally-Mediated Communication: 
-Form: 
-Grammar: 
-Infelicities: 
-Lexico-Grammar: 
-Lexis: 
-Punctuation: 
-Word: 
+Code-Switching: use of L1 (native language)
+Digitally-Mediated Communication: features of instant messaging, e.g abbreviations or missing capitalization
+Form: errors in spelling or formation in derivational affixes
+Grammar: violations of standard grammar rules that affect syntactic structure
+Infelicities: stylistic concerns (strictly errors)
+Lexico-Grammar: words used in a grammatically incorrect way due to their combinatorial syntactic constraints
+Lexis: vocabulary choices that do not match the intended meaning or context
+Punctuation: incorrect, missing, or excessive use of marks like commas, periods, or colons
+Word: omission of necessary words, addition of superfluous words, placement of words in an unnatural or incorrect order

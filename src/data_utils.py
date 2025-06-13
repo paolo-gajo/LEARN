@@ -14,23 +14,21 @@ debug_mode = 1
 class CausalLMDataset:
     def __init__(self,
                 data: pd.DataFrame,
-                prompt_layout: str,
-                prompt_tags: str,
                 tokenizer,
                 config: dict,
                 clean: bool=True,
                 ):
         self.data = data
-        self.prompt_layout = prompt_layout
         self.tokenizer = tokenizer
-        self.prompt_tags = prompt_tags
-        self.sys_prompt = 'You are an AI specialized in the task of annotating grammatical errors.'
-        self.prompt_tags_preamble = 'The following are the tags you should use for annotation:'
-        self.examples_preamble = 'Below are reference examples:'
+        self.prompt_layout = config['prompt_layout']
+        self.prompt_tags = config['prompt_tags']
         self.use_prompt_tags = config['use_prompt_tags']
         self.n_icl_samples = config['n_icl_samples']
         self.tag_dict = config['tag_dict']
         self.coarse = config['coarse']
+        self.sys_prompt = 'You are an AI specialized in the task of annotating grammatical errors.'
+        self.prompt_tags_preamble = 'The following are the tags you should use for annotation:'
+        self.examples_preamble = 'Below are reference examples:'
         if clean:
             self.clean()
         df_train, df_dev = train_test_split(self.data, test_size=0.2, random_state=config['seed'])

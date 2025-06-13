@@ -27,11 +27,8 @@ def main(args):
                                               padding_side='left')
     tokenizer.pad_token = tokenizer.eos_token
     
-    prompt_layout = open(config['prompt_layout_path'], 'r').read()
-    prompt_tags = open(config['prompt_tags_path'], 'r').read()
+
     dataset = CausalLMDataset(df,
-                            prompt_layout,
-                            prompt_tags,
                             tokenizer,
                             config,
                             )
@@ -61,6 +58,8 @@ def main(args):
     model.gradient_checkpointing_enable()
 
     if args.do_train and config['target_modules'] != 'full_ft':
+        if not config['train_steps']:
+            config['train_steps'] = len(dataset.train_samples) // int(config['batch_size_train'])
         target_modules = [el+'_proj' for el in config['target_modules'].split('-')]
         if config['load_in_4bit'] or config['load_in_8bit']:
             model = prepare_model_for_kbit_training(model)
@@ -74,6 +73,7 @@ def main(args):
             use_rslora=False,
         )
         model = get_peft_model(model, lora_config)
+        print('Applied LoRA!')
         trainer = SFTTrainer(
             model=model,
             processing_class=tokenizer,
@@ -113,8 +113,6 @@ def main(args):
     # Create custom evaluator that has access to the expected outputs
     evaluator_dev = Evaluator(tokenizer, model, config)
 
-    if not config['train_steps']:
-        config['train_steps'] = len(dataset.train_samples) // int(config['batch_size_train'])
     
     max_val = -np.inf
     best_epoch = 0
@@ -195,12 +193,11 @@ if __name__ == "__main__":
     parser.add_argument("--load_in_4bit", type=int, help="Use 4-bit quantization", default=0)
     parser.add_argument("--load_in_8bit", type=int, help="Use 8-bit quantization", default=0)
     parser.add_argument("--verbose_eval", type=int, help="Enable verbose evaluation output", default=0)
-    parser.add_argument("--layout_path", type=str, help="Path of the layout text file", default='./misc/prompt_layout_tags.txt')
-    parser.add_argument("--tags_path", type=str, help="Path of the tags text file", default='./misc/prompt_tags.txt')
+    parser.add_argument("--prompt_layout_path", type=str, help="Path of the layout text file", default='./misc/prompt_layout.txt')
     parser.add_argument("--config_path", type=str, help="Path of the config file", default='./misc/default_cfg.json')
     parser.add_argument("--tag_dict_path", type=str, help="Path of the coarse tag dictionary", default='./misc/coarse_tags.json')
     parser.add_argument("--coarse", type=int, help="Whether to use coarse tags", default=0)
-    parser.add_argument("--seed", type=int, help="Gradient accumulation steps", default=42)
+    parser.add_argument("--seed", type=int, help="Seed used for the experiments", default=42)
     parser.add_argument("--suffix", type=str, help="Path of the tags text file", default='')
     
     args = parser.parse_args()

@@ -2,17 +2,17 @@ Annotate the target sentence below with the following tags, in XML style. Reprod
 
 Below are reference examples:
 
-Hi, can I have an English conversation whit you?###Hi, can I have <Z corr="a conversation in English">an English conversation</Z> <FS corr="with">whit</FS> you?
- If i want a exhaust ?###<GPR corr="What">\0</GPR> If <DMCC corr="I">i</DMCC> want <GA corr="an">a</GA> <LWCO corr="used">exhaust</LWCO> <GPI corr="one">\0</GPI>?
-Yes of course, however may I ask you more questions about the place  is located the apartment?###Yes of course, however may I ask you more questions about the place <GDT corr="where">\0</GDT> <WO corr="the apartment is located">is located the apartment</WO>?
-Thank you my good fellow, you've been of much help. I'll go say hi to this Wild Bill Willoughby guy.###Thank you my good fellow, you've been of much help. I'll go say hi to this Wild Bill Willoughby guy.
-Sense8 was pretty good.###Sense8 was pretty good.
-Thanks so much###Thanks so much
+Hi what do you think about music? How  music makes you feel?###Hi <QM corr=",">\0</QM> what do you think about music? How <GVAUX corr="does">\0</GVAUX> music makes you feel?
+I love animals and I have a pet, its name is Milo###I love animals and I have a pet, its name is Milo
+can you suggest me some ideas?###<DMCC corr="Can">can</DMCC> you <XVCO corr="suggest to me">suggest me</XVCO> some ideas?
+the major risks it's PTSD###<DMCC corr="The">the</DMCC> <LSADJ corr="greatest">major</LSADJ> <GNN corr="risk">risks</GNN> <GPP corr="\0">it</GPP>'s PTSD
+HOW ARE YOU PI?###HOW ARE YOU PI?
 OK, I have a game to propose to you. Are you in?###OK, I have a game to propose to you. Are you in?
-Hi, i wanted to talk with you about the risks that come with technology nowadays. For example, i think that we are being a little bit controlled by website trackers and by social media algorithms. What do you think?###Hi, <DMCC corr="I">i</DMCC> wanted to talk with you about the risks that come with technology nowadays. For example, <DMCC corr="I">i</DMCC> think that we are being a little bit controlled by website trackers and <WR corr="\0">by</WR> social media algorithms. What do you think?
-yeah I think its a good idea. I was looking for a cheap stay but at the same time I  prefer to find something in the center of london so i can go everywhere easily###<DMCC corr="Yeah">yeah</DMCC> I think <FS corr="it's">its</FS> a good idea. I was looking for a cheap stay but at the same time I <GVAUX corr="would">\0</GVAUX> prefer to find something in the center of <DMCC corr="London">london</DMCC> so <DMCC corr="I">i</DMCC> can go everywhere easily
-Sure! With strawberry compote###Sure! With strawberry compote
+Lately I’ve been studying so much  I don’t t even have time to breath###Lately I’ve been studying so much <LCS corr="that">\0</LCS> I <GVT corr="haven't even had">don’t </GVT> time to <FS corr="\0">t</FS> even have <GWC corr="breathe">breath</GWC>
+that one was mind blowing really###<DMCC corr="That">that</DMCC> one was <FS corr="mind-blowing">mind blowing</FS> really
+We'll think about it later, thank you###We'll think about it later, thank you
+An Asian city would be better because I'm very interested in some of the Asian cultures, like Korean or Japanese###An Asian city would be better because I'm very interested in some of the Asian cultures, like Korean or Japanese
 
 Annotate the following target sentence, without providing any explanation:
 
-No, because I don't know him very well and I am shy###
+Hi, I would like to talk with you about the 2024 met gala###

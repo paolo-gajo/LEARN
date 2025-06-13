@@ -2,17 +2,17 @@ Annotate the target sentence below with the following tags, in XML style. Reprod
 
 Below are reference examples:
 
-I like volleyball and formula one###I like volleyball and <DMCC corr="Formula One">formula one</DMCC>
-His foor was a light brown , I loved it with her color skin###<GDO corr="Her">His</GDO> <FS corr="fur">foor</FS> was <GA corr="\0">a</GA> light brown , I loved it with her <WO corr="skin color">color skin</WO>
-i don't have anything specific in mind, i'm looking for a fantasy novel or something like that###<DMCC corr="I">i</DMCC> don't have anything specific in mind, <DMCC corr="I">i</DMCC>'m looking for a fantasy novel or something like that
-You sure got that right, a man's make his own luck. Are you the fellow they call Wild Bill?###You sure got that right, a <GNC corr="man">man's</GNC> <GVN corr="makes">make</GVN> his own luck. Are you the fellow they call Wild Bill?
-but please change the game###<DMCC corr="But">but</DMCC> please change the game
-Now I'd like to talk with you about holidays###Now I'd like to talk with you about holidays
-Probably chatting with my friends, especially since I moved away for university. Still, I believe technology is kinda ruining it for us.###Probably chatting with my friends, especially since I moved away for university. Still, I believe technology is kinda ruining it for us.
-Ok that was a bit funny###Ok that was a bit funny
-I'm a customer and you are a waiter. You are supposed to bring the hamburger as you have to serve my table as we agreed at the start###I'm a customer and you are a waiter. You are supposed to bring the hamburger as you have to serve my table as we agreed at the start
-Do you think he's gonna pay for what he did?###Do you think he's gonna pay for what he did?
+Thank you###Thank you
+Hi, that will be perfect for me, do you prefer paying me on cash or by a credit card? Best regards, user###Hi, that will be perfect for me, do you prefer paying me <LSPR corr="in">on</LSPR> cash or by <GA corr="\0">a</GA> credit card? Best regards, user
+oh no, sorry###<DMCC corr="Oh">oh</DMCC> no, sorry
+can you ask me another question?###<DMCC corr="Can">can</DMCC> you ask me another question?
+i wanted to leave from Fiumicino’s Airport###<DMCC corr="I">i</DMCC> wanted to leave from <GNC corr="Fiumicino Airport">Fiumicino’s Airport</GNC>
+OK, I have a game to propose to you. Are you in?###OK, I have a game to propose to you. Are you in?
+nono, as a language model Beppe I am unable to speak Italian. Let us get back to the point###<DMCC corr="No no">None</DMCC>, as a language model Beppe I am unable to speak Italian. Let us get back to the point <FS corr="no no">nono</FS>
+What's a "cozy booth" in Italian?###What's a "cozy booth" in Italian?
+Write shorter sentences###Write shorter sentences
+Nothing in particular, just hard to study but not impossible###Nothing in particular, just hard to study but not impossible
 
 Annotate the following target sentence, without providing any explanation:
 
-HOW ARE YOU PI?###
+I hope so. Do you think there is some fashion critic whose review of the event I should read?###

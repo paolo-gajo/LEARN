@@ -2,17 +2,17 @@ Annotate the target sentence below with the following tags, in XML style. Reprod
 
 Below are reference examples:
 
-Yes! It's a surprise for him!###Yes! It's a surprise for him!
-Lately I’ve been studying so much  I don’t t even have time to breath###Lately I’ve been studying so much <LCS corr="that">\0</LCS> I <GVT corr="haven't even had">don’t </GVT> time to <FS corr="\0">t</FS> even have <GWC corr="breathe">breath</GWC>
-I would like a margherita pizza and for my husband a pepperoni pizza, then also some appetisers and two zero coke###I would like a <DMCC corr="Margherita">margherita</DMCC> pizza and for my husband a <DMCC corr="Pepperoni">pepperoni</DMCC> pizza, then also some <FS corr="appetizers">appetisers</FS> and two <LP corr="Coke Zero">zero coke</LP>
-Can we do a role play?###Can we do a role play?
-I am ready###I am ready
-I understand. Would it be possible for me to take them, even if I'm already taking pills for a thyroid problem?###I understand. Would it be possible for me to take them, even if I'm already taking pills for a thyroid problem?
-Well, my university course keeps me busy and also I have volleyball practice every evening###Well, my university course keeps me busy and also I have volleyball practice every evening
-I always do them, but it still does nothing. I used to play volleyball until a year ago, do you think this might be what caused it?###I always do them, but <GPP corr="they">it</GPP> still does nothing. I used to play volleyball until a year ago, do you think this might be what caused it?
-and the fact that it was so delicate is not a coincidence, this year's theme was costume preservation###<DMCC corr="And">and</DMCC> the fact that it was so delicate is not a coincidence, this year's theme was costume preservation
-The food is not very good in spain and but the atmophere Is fantastic###The food is not very good in <DMCC corr="Spain">spain</DMCC> <LCC corr="\0">and</LCC> but the <FS corr="athmophere">atmophere</FS> <DMCC corr="is">Is</DMCC> fantastic
+Yes , I do . I love music,  and I play many instruments . I think music , especially creating music , not listening to it , really gives musicians a new "key" to open the doors of  knowledge , because music composition has strict rules that can be altered , resulting (depending on the musician's creativity) , in a new form of art , but also in a new form of ear torture . However , it's easy to say that every music genius uses "errors" to create beauty###Yes , I do . I love music,  and I play many instruments . I think music , especially creating music , not listening to it , really gives musicians a new "key" to open the doors of  knowledge , because music composition has strict rules that can be altered , resulting (depending on the musician's creativity) , in a new form of art , but also in a new form of ear torture . However , it's easy to say that every music genius uses "errors" to create beauty
+We'd like to have an intimate table, possibly near the window###We'd like to have an intimate table, possibly near the window
+ like  see the Walking Dead, it is my favourite serie tv. Do you like kind###<GPP corr="I">\0</GPP> <XVCO corr="like to">like </XVCO> <LSV corr="watch">see</LSV> the Walking Dead, it is my favourite <LWCO corr="TV series">serie tv</LWCO>. Do you like <Z corr="this kind of TV series?">kind</Z>
+Come si dice raccolta indiferenziata###<CSINTRA corr="How do you say general waste?">Come si dice raccolta indiferenziata</CSINTRA>
+I used to apply heated pads where the pain was worse, and it did feel better for as long as I kept the pad on. If I took it off, it was a matter of hours before I was back to where I started.###I used to apply heated pads where the pain was worse, and it did feel better for as long as I kept the pad on. If I took it off, it was a matter of hours before I was back to where I started.
+No I haven't tried that yet i'm gonna try and let you if It did work or not, can you wait a few minutes?###No I haven't tried that yet i'm gonna try and let you if It did work or not, can you wait a few minutes?
+Well I was thinking of rewatching for the 100th time fast & furious###Well <QM corr=",">\0</QM> I was thinking of rewatching <WO corr="Fast & Furious for the 100th time">for the 100th time </WO> <DMCC corr="Fast & Furious">fast & furious</DMCC>
+I'm a customer and you are a waiter. You are supposed to bring the hamburger as you have to serve my table as we agreed at the start###I'm a customer and you are a waiter. You are supposed to bring the hamburger as you have to serve my table as we agreed at the start
+do you feel like role play?###<DMCC corr="Do">do</DMCC> you <XVCO corr="feel like role playing">feel like role play</XVCO>?
+We'd like visit National parks, because we like the nature. However we'd like visit the big city too.   I don't know how many days  needed for this. We have a 2500€ for the budget###We'd like <GVNF corr="to visit">visit</GVNF> National parks, because we like <GA corr="\0">the</GA> nature. However we'd <XVCO corr="like to visit">like visit</XVCO> <GNN corr="big cities">the big city</GNN> too.   I don't know how many days <GVAUX corr="are">\0</GVAUX> needed for this. We have <Z corr="a budget of 2500€">a 2500€ for the budget</Z>
 
 Annotate the following target sentence, without providing any explanation:
 
-Yes please, I would like a bottle of water and a glass of wine###
+i'm study criminology,  is most difficult###

@@ -13,4 +13,7 @@ def setup_config(namespace: argparse.Namespace, default_cfg: dict):
     if not config['suffix']:
         config['suffix'] = get_time()
     config['tag_dict'] = json.load(open(config['tag_dict_path'], 'r'))
+    tags_path = './misc/prompt_tags_coarse.txt' if config['coarse'] else './misc/prompt_tags_fine.txt'
+    config['prompt_tags'] = open(tags_path, 'r').read()
+    config['prompt_layout'] = open(config['prompt_layout_path'], 'r').read()
     return config
