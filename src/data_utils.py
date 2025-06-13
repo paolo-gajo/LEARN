@@ -1,10 +1,13 @@
-import pandas as pd
-from random import shuffle
-from sklearn.model_selection import train_test_split
 import argparse
 import xml.etree.ElementTree as ET
 import numpy as np
 import os
+import json
+import re
+import pandas as pd
+from random import shuffle
+from sklearn.model_selection import train_test_split
+from typing import List
 
 debug_mode = 1
 
@@ -14,32 +17,36 @@ class CausalLMDataset:
                 prompt_layout: str,
                 prompt_tags: str,
                 tokenizer,
-                n_icl_samples: int=3, 
-                use_prompt_tags: int=1,
+                config: dict,
                 clean: bool=True,
-                seed: int=42,
-                train_steps: int=0,
-                eval_steps: int=0,
                 ):
         self.data = data
         self.prompt_layout = prompt_layout
+        self.tokenizer = tokenizer
+        self.prompt_tags = prompt_tags
         self.sys_prompt = 'You are an AI specialized in the task of annotating grammatical errors.'
         self.prompt_tags_preamble = 'The following are the tags you should use for annotation:'
         self.examples_preamble = 'Below are reference examples:'
-        self.use_prompt_tags = use_prompt_tags
-        self.prompt_tags = prompt_tags
-        self.tokenizer = tokenizer
-        self.n_icl_samples = n_icl_samples
+        self.use_prompt_tags = config['use_prompt_tags']
+        self.n_icl_samples = config['n_icl_samples']
+        self.tag_dict = config['tag_dict']
+        self.coarse = config['coarse']
         if clean:
             self.clean()
-        df_train, df_dev = train_test_split(self.data, test_size=0.2, random_state=seed)
+        df_train, df_dev = train_test_split(self.data, test_size=0.2, random_state=config['seed'])
         self.train = df_train.reset_index(drop=True)
-        df_dev, df_test = train_test_split(df_dev, test_size=0.5, random_state=seed)
+        df_dev, df_test = train_test_split(df_dev, test_size=0.5, random_state=config['seed'])
         self.dev = df_dev.reset_index(drop=True)
         self.test = df_test.reset_index(drop=True)
+        if self.coarse:
+            self.train['text_an'] = self.train['text_an'].apply(lambda x: self.coarsen_tags(x))
+            self.dev['text_an'] = self.dev['text_an'].apply(lambda x: self.coarsen_tags(x))
+            self.test['text_an'] = self.test['text_an'].apply(lambda x: self.coarsen_tags(x))
         self.train_samples = self.make_samples('train')
         self.dev_samples = self.make_samples('dev')
         self.test_samples = self.make_samples('test')
+        train_steps = config['train_steps']
+        eval_steps = config['eval_steps']
         if train_steps:
             self.train_samples = self.train_samples[:train_steps]
         if eval_steps:
@@ -48,7 +55,13 @@ class CausalLMDataset:
 
     def clean(self):
         self.data['text_og'] = self.data['text_og'].apply(lambda x: x.replace(r'\0', ''))
-    
+
+    def coarsen_tags(self, input: str):
+        tags = set([el[0] for el in extract_tags(input)])
+        for tag in tags:
+            input = input.replace(tag, self.tag_dict[tag])
+        return input
+
     def make_samples(self, split):
         split_data = getattr(self, split)
         text_og_list = split_data['text_og']
@@ -85,7 +98,7 @@ class CausalLMDataset:
                                                examples_prompt=examples,
                                                sentence=sentence,
                                                eos_token=self.tokenizer.eos_token)
-            if debug_mode and i==0:
+            if i==0:
                 with open(f'./misc/prompt_sample_{split}.txt', 'w') as f: f.write(prompt)
             # Create the prompt part (same for train and eval)
             chat_prompt = [
@@ -208,6 +221,60 @@ def make_dataset(data_path: str, layout_path: str, tags_path: str, tokenizer_nam
                                 n_icl_samples=n_icl_samples,
                                 )
     return dataset
+
+def collect_results(dir_path: str):
+    df_list = []
+    for root, dirs, files in os.walk(dir_path):
+        if 'config.json' in files:
+            # print(files)
+            config = json.load(open(os.path.join(root, 'config.json')))
+            try:
+                results_dev = json.load(open(os.path.join(root, 'results_dev.json')))
+                best_epoch_dev = results_dev[np.argmax([el['micro_f1'] for el in results_dev])]['epoch']
+                micro_f1_dev = results_dev[best_epoch_dev]['micro_f1']
+                fine_tuned = 1
+            except:
+                best_epoch_dev = 0
+                micro_f1_dev = 0
+                fine_tuned = 0
+            results_test = json.load(open(os.path.join(root, 'results_test.json')))
+            model_name = config['model_name'].split('/')[-1]
+            entry = {
+                'model_name': model_name,
+                'seed': config['seed'],
+                'tags': 'y' if config['use_prompt_tags'] else 'n',
+                'n_icl': config['n_icl_samples'],
+                'epoch': best_epoch_dev,
+                'ft': fine_tuned,
+                'micro_f1_dev': micro_f1_dev,
+                'micro_f1': results_test['micro_f1'],
+                'micro_p': results_test['micro_precision'],
+                'micro_r': results_test['micro_recall'],
+            }
+            metric_dict = {k: v['f1'] for k, v in results_test['per_tag_metrics'].items()}
+            entry.update(metric_dict)
+            # print(entry)
+            df_list.append(entry)
+    df = pd.DataFrame(df_list)
+    return df
+
+def extract_tags(input: str) -> List[List[str]]:
+    """
+    Extract tags with 'corr' attribute.
+    Returns list of tuples: (tag, content)
+    """
+    # Primary pattern: corr with double quotes (with proper closing tag)
+    pattern1 = r'<([A-Z]+[A-Z0-9]*)\s+[^>]*corr="[^"]*"[^>]*>(.*?)</\1>'
+    matches1 = re.findall(pattern1, input)
+    
+    # Secondary pattern: corr with single quotes (with proper closing tag)  
+    pattern2 = r"<([A-Z]+[A-Z0-9]*)\s+[^>]*corr='[^']*'[^>]*>(.*?)</\1>"
+    matches2 = re.findall(pattern2, input)
+    
+    # Combine all matches (preserving duplicates)
+    all_matches = matches1 + matches2
+    
+    return [(tag, content.strip()) for tag, content in all_matches]
 
 def main(args):
     dataset = make_dataset(args.data_path, args.layout_path, args.tags_path, args.tokenizer_name, args.n_icl_samples)

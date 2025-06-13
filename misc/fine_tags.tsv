@@ -1,6 +1,6 @@
 Category	Tag	Description	Reference
-Digitally-Mediated Communication	<DMCC>	Capitalization issues.	Capitalization
-Digitally-Mediated Communication	<DMCA>	Use of abbreviations in digitally-mediated communication (e.g., OK, lol, etc.).	Abbreviations
+Digitally_Mediated_Communication	<DMCC>	Capitalization issues.	Capitalization
+Digitally_Mediated_Communication	<DMCA>	Use of abbreviations in digitally-mediated communication (e.g., OK, lol, etc.).	Abbreviations
 Form	<FS>	Spelling errors.	Spelling
 Form	<FM>	Morphological errors involving derivational affixes.	Morphology
 Punctuation	<QC>	Confusion of punctuation marks.	Punctuation Confusion
@@ -32,15 +32,15 @@ Grammar	<GVNF>	Errors in use of -ing, infinitives, or relative clauses.	Verb Non
 Grammar	<GVT>	Misuse of tense or aspect.	Verb Tense
 Grammar	<GVV>	Errors with active/passive voice.	Verb Voice
 Grammar	<GWC>	Errors due to confusion between word classes.	Grammar Word Class
-Lexico-Grammar	<XADJCO>	Errors with adjective complementation.	Adjective Complementation
-Lexico-Grammar	<XNCO>	Errors with noun complementation.	Noun Complementation
-Lexico-Grammar	<XPRCO>	Errors with preposition complementation.	Preposition Complementation
-Lexico-Grammar	<XVCO>	Errors with verb complementation.	Verb Complementation
-Lexico-Grammar	<XADJPR>	Errors with adjective dependent prepositions.	Adjective Dependent Preposition
-Lexico-Grammar	<XADVPR>	Errors with adverb dependent prepositions.	Adverb Dependent Preposition
-Lexico-Grammar	<XNPR>	Errors involving dependent prepositions for nouns.	Noun Dependent Preposition
-Lexico-Grammar	<XVPR>	Errors involving dependent prepositions for verbs.	Verb Dependent Preposition
-Lexico-Grammar	<XNUC>	Errors in the use of uncountable/countable nouns.	Uncountable/Countable Nouns
+Lexico_Grammar	<XADJCO>	Errors with adjective complementation.	Adjective Complementation
+Lexico_Grammar	<XNCO>	Errors with noun complementation.	Noun Complementation
+Lexico_Grammar	<XPRCO>	Errors with preposition complementation.	Preposition Complementation
+Lexico_Grammar	<XVCO>	Errors with verb complementation.	Verb Complementation
+Lexico_Grammar	<XADJPR>	Errors with adjective dependent prepositions.	Adjective Dependent Preposition
+Lexico_Grammar	<XADVPR>	Errors with adverb dependent prepositions.	Adverb Dependent Preposition
+Lexico_Grammar	<XNPR>	Errors involving dependent prepositions for nouns.	Noun Dependent Preposition
+Lexico_Grammar	<XVPR>	Errors involving dependent prepositions for verbs.	Verb Dependent Preposition
+Lexico_Grammar	<XNUC>	Errors in the use of uncountable/countable nouns.	Uncountable/Countable Nouns
 Lexis	<LCC>	Errors in the use of coordinating conjunctions (e.g., and, or, etc.).	Coordinating Conjunctions
 Lexis	<LCS>	Errors in the use of subordinating conjunctions (e.g., although, because, etc.).	Subordinating Conjunctions
 Lexis	<LCLS>	Errors in the use of single logical connectors (e.g., nevertheless, etc.).	Single Logical Connectors
@@ -56,5 +56,5 @@ Word	<WM>	Missing words.	Word Missing
 Word	<WR>	Redundant words.	Word Redundant
 Word	<WO>	Errors in word order.	Word Order
 Infelicities	<Z>	Stylistic problems or unclear sequences requiring reformulation.	Infelicities
-Code-Switching	<CSINTRA>	Code-switching within a sentence.	Intra-sentential
-Code-Switching	<CSINTER>	Code-switching between sentences or conversational turns.	Inter-sentential
+Code_Switching	<CSINTRA>	Code-switching within a sentence.	Intra-sentential
+Code_Switching	<CSINTER>	Code-switching between sentences or conversational turns.	Inter-sentential

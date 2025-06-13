@@ -2,7 +2,7 @@
 #SBATCH -J clic-it
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
-#SBATCH --gres=gpu:h100:1
+#SBATCH --gres=gpu:l40:1
 #SBATCH --time=12:00:00
 #SBATCH --output=./.slurm/%A/%a_output.log
 #SBATCH --error=./.slurm/%A/%a_error.log
@@ -42,7 +42,7 @@ declare -a seed=(
     4
 )
 declare -a do_train=(
-    0
+    # 0
     1
 )
 declare -a use_prompt_tags=(
@@ -57,9 +57,13 @@ declare -a n_icl_samples=(
     # 20
 )
 declare -a model_name=(
-    # meta-llama/Llama-3.1-8B-Instruct
-    meta-llama/Llama-3.3-70B-Instruct
+    meta-llama/Llama-3.1-8B-Instruct
+    # meta-llama/Llama-3.3-70B-Instruct
     # mistralai/Ministral-8B-Instruct-2410
+)
+declare -a coarse=(
+    # 0
+    1
 )
 # Generate all combinations
 array_names=(
@@ -68,6 +72,7 @@ array_names=(
             n_icl_samples
             model_name
             do_train
+            coarse
             )
 combinations=$(cartesian_product array_names)
 
@@ -90,6 +95,7 @@ while IFS= read -r combo; do
                 --n_icl_samples ${params[2]}
                 --model_name ${params[3]}
                 --do_train ${params[4]}
+                --coarse ${params[5]}
                 --suffix ${SLURM_ARRAY_JOB_ID}/${SLURM_ARRAY_TASK_ID}
                 --load_in_4bit $load_in_4bit
                 --batch_size_train $batch_size_train
@@ -98,6 +104,10 @@ while IFS= read -r combo; do
                 "
     commands+=("$cmd")
 done <<< "$combinations"
+
+# for comb in ${combinations[@]}; do
+#  echo $comb
+# done
 
 total_combinations=${#commands[@]}
 

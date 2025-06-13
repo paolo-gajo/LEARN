@@ -13,7 +13,7 @@ from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 from trl import SFTConfig, SFTTrainer
 
 def main(args):
-    config = setup_config(args, json.load(open('./misc/default_cfg.json', 'r')))
+    config = setup_config(args, json.load(open(args.config_path, 'r')))
     print(config)
     results_dir = os.path.join("./results", f"{config['model_name'].split('/')[-1]}", config['suffix'])
     print(f'Will save results to: {results_dir}')
@@ -23,7 +23,8 @@ def main(args):
     df = convert_files(config['data_path'])
     print(df)
 
-    tokenizer = AutoTokenizer.from_pretrained(config['model_name'], padding_side='left')
+    tokenizer = AutoTokenizer.from_pretrained(config['model_name'],
+                                              padding_side='left')
     tokenizer.pad_token = tokenizer.eos_token
     
     prompt_layout = open(config['prompt_layout_path'], 'r').read()
@@ -32,11 +33,7 @@ def main(args):
                             prompt_layout,
                             prompt_tags,
                             tokenizer,
-                            n_icl_samples=config['n_icl_samples'],
-                            use_prompt_tags=config['use_prompt_tags'],
-                            seed=config['seed'],
-                            train_steps=config['train_steps'],
-                            eval_steps=config['eval_steps']
+                            config,
                             )
     dataset_train = Dataset.from_pandas(dataset.train_samples)
 
@@ -200,7 +197,11 @@ if __name__ == "__main__":
     parser.add_argument("--verbose_eval", type=int, help="Enable verbose evaluation output", default=0)
     parser.add_argument("--layout_path", type=str, help="Path of the layout text file", default='./misc/prompt_layout_tags.txt')
     parser.add_argument("--tags_path", type=str, help="Path of the tags text file", default='./misc/prompt_tags.txt')
+    parser.add_argument("--config_path", type=str, help="Path of the config file", default='./misc/default_cfg.json')
+    parser.add_argument("--tag_dict_path", type=str, help="Path of the coarse tag dictionary", default='./misc/coarse_tags.json')
+    parser.add_argument("--coarse", type=int, help="Whether to use coarse tags", default=0)
     parser.add_argument("--seed", type=int, help="Gradient accumulation steps", default=42)
     parser.add_argument("--suffix", type=str, help="Path of the tags text file", default='')
+    
     args = parser.parse_args()
     main(args)

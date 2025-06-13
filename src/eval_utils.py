@@ -1,10 +1,10 @@
 from collections import Counter, defaultdict, OrderedDict
-import re
 import os
 from os_utils import get_time
 from tqdm.auto import tqdm
 import torch
 from typing import List
+from data_utils import extract_tags
 
 class Evaluator:
     def __init__(self,
@@ -58,8 +58,8 @@ class Evaluator:
 
             # Now iterate over each sample in the batch
             for text, completion, output in zip(batch_texts, batch_completions, outputs):
-                true_list = self.extract_tags(completion)
-                pred_list = self.extract_tags(output)
+                true_list = extract_tags(completion)
+                pred_list = extract_tags(output)
                 trues.append(true_list)
                 preds.append(pred_list)
 
@@ -113,7 +113,7 @@ class Evaluator:
                 num_return_sequences=1,
                 eos_token_id=self.tokenizer.eos_token_id,
                 pad_token_id=self.tokenizer.eos_token_id,
-                max_new_tokens=100
+                max_new_tokens=1000
             )
 
         # Decode each output
@@ -132,25 +132,6 @@ class Evaluator:
 
         # If single text was provided, return just the string; else return a list
         return decoded[0] if len(decoded) == 1 else decoded
-
-    @staticmethod
-    def extract_tags(input: str) -> List[List[str]]:
-        """
-        Extract tags with 'corr' attribute.
-        Returns list of tuples: (tag, content)
-        """
-        # Primary pattern: corr with double quotes (with proper closing tag)
-        pattern1 = r'<([A-Z]+[A-Z0-9]*)\s+[^>]*corr="[^"]*"[^>]*>(.*?)</\1>'
-        matches1 = re.findall(pattern1, input)
-        
-        # Secondary pattern: corr with single quotes (with proper closing tag)  
-        pattern2 = r"<([A-Z]+[A-Z0-9]*)\s+[^>]*corr='[^']*'[^>]*>(.*?)</\1>"
-        matches2 = re.findall(pattern2, input)
-        
-        # Combine all matches (preserving duplicates)
-        all_matches = matches1 + matches2
-        
-        return [(tag, content.strip()) for tag, content in all_matches]
 
     @staticmethod
     def calculate_metrics(sample_trues, sample_preds):
