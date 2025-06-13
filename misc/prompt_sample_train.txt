@@ -1,109 +1,17 @@
 Annotate the target sentence below with the following tags, in XML style. Reproduce the full sentence and annotate each error.
 
-The following are the tags you should use for annotation:
-
-<DMCC>: Capitalization issues.
-<DMCA>: Use of abbreviations in digitally-mediated communication (e.g., OK, lol, etc.).
-<FS>: Spelling errors.
-<FM>: Morphological errors involving derivational affixes.
-<QC>: Confusion of punctuation marks.
-<QL>: Punctuation mark instead of lexical item (or vice versa).
-<QM>: Missing punctuation.
-<QR>: Redundant punctuation.
-<GDD>: Errors with demonstrative determiners (e.g., this, that, etc.).
-<GDO>: Errors with possessive determiners (e.g., my, your, etc.).
-<GDI>: Errors with indefinite determiners (e.g., any, some, etc.).
-<GDT>: Errors with other types of determiners (e.g., relative, interrogative, etc.).
-<GA>: Errors with definite, indefinite, or zero articles.
-<GADJCS>: Errors with comparative or superlative adjectives.
-<GADJN>: Errors with adjective number.
-<GADJO>: Errors with adjective order.
-<GADVO>: Misplaced adverbs.
-<GNC>: Errors with noun case (e.g., Saxon genitive misuse).
-<GNN>: Errors with noun number.
-<GPD>: Errors with demonstrative pronouns (e.g., this, that, etc.).
-<GPP>: Errors with personal pronouns (e.g., you, we, etc.).
-<GPO>: Errors with possessive pronouns (e.g., mine, yours, etc.).
-<GPI>: Errors with indefinite pronouns. (e.g. anyone, nothing, etc.).
-<GPF>: Errors with reflexive or reciprocal pronouns (e.g., myself, each other, etc.).
-<GPR>: Errors with relative or interrogative pronouns (e.g., what, which, etc.).
-<GPU>: Unclear pronominal reference.
-<GVAUX>: Misuse of primary, modal, or semi-auxiliaries (e.g., do, have, etc.).
-<GVM>: Errors with verb morphology.
-<GVN>: Errors with subject-verb agreement.
-<GVNF>: Errors in use of -ing, infinitives, or relative clauses.
-<GVT>: Misuse of tense or aspect.
-<GVV>: Errors with active/passive voice.
-<GWC>: Errors due to confusion between word classes.
-<XADJCO>: Errors with adjective complementation.
-<XNCO>: Errors with noun complementation.
-<XPRCO>: Errors with preposition complementation.
-<XVCO>: Errors with verb complementation.
-<XADJPR>: Errors with adjective dependent prepositions.
-<XADVPR>: Errors with adverb dependent prepositions.
-<XNPR>: Errors involving dependent prepositions for nouns.
-<XVPR>: Errors involving dependent prepositions for verbs.
-<XNUC>: Errors in the use of uncountable/countable nouns.
-<LCC>: Errors in the use of coordinating conjunctions (e.g., and, or, etc.).
-<LCS>: Errors in the use of subordinating conjunctions (e.g., although, because, etc.).
-<LCLS>: Errors in the use of single logical connectors (e.g., nevertheless, etc.).
-<LCLC>: Errors in the use of complex logical connectors (e.g., on the other hand, etc.).
-<LSADJ>: Conceptual or collocational errors involving adjectives.
-<LSADV>: Conceptual or collocational errors involving adverbs.
-<LSN>: Conceptual or collocational errors involving nouns.
-<LSPR>: Conceptual or collocational errors involving prepositions.
-<LSV>: Conceptual or collocational errors involving verbs.
-<LP>: Errors in fixed word combinations, including idioms, compounds, and phrasal verbs.
-<LWCO>: Instances of coined words, calques, or invented proper nouns.
-<WM>: Missing words.
-<WR>: Redundant words.
-<WO>: Errors in word order.
-<Z>: Stylistic problems or unclear sequences requiring reformulation.
-<CSINTRA>: Code-switching within a sentence.
-<CSINTER>: Code-switching between sentences or conversational turns.
-
 Below are reference examples:
 
-Paella is very good###Paella is very good
-Everything is going fine. How are you?###Everything is going fine. How are you?
-I'm very happy to hear that sir. Would you like to see our dessert menu?###I'm very happy to hear that sir. Would you like to see our dessert menu?
-We'd like to have an intimate table, possibly near the window###We'd like to have an intimate table, possibly near the window
 Yes! It's a surprise for him!###Yes! It's a surprise for him!
-Perfect, thank you###Perfect, thank you
-Can we do a role play?###Can we do a role play?
-Hi, thank you for yor help. My dream comes true with this trip!###Hi, thank you for <FS corr="your">yor</FS> help. My dream comes true with this trip!
 Lately I’ve been studying so much  I don’t t even have time to breath###Lately I’ve been studying so much <LCS corr="that">\0</LCS> I <GVT corr="haven't even had">don’t </GVT> time to <FS corr="\0">t</FS> even have <GWC corr="breathe">breath</GWC>
-Perfect. It's supposed to be a Greek dish, but since you have allergies we won't serve you feta cheese and bread. have you ever tried them?###Perfect. It's supposed to be a Greek dish, but since you have allergies we won't serve you feta cheese and bread. <DMCC corr="Have">have</DMCC> you ever tried them?
-I am ready###I am ready
-HOW ARE YOU ?###HOW ARE YOU ?
-He also was accused of abusing children. That's really bad.###He also was accused of abusing children. That's really bad.
-i like the baby pig###<DMCC corr="I">i</DMCC> like <GA corr="\0">the</GA> <LP corr="suckling pig">baby pig</LP>
-i have recently watched past lives###<DMCC corr="I">i</DMCC> have recently watched <DMCC corr="Past">past</DMCC> lives
 I would like a margherita pizza and for my husband a pepperoni pizza, then also some appetisers and two zero coke###I would like a <DMCC corr="Margherita">margherita</DMCC> pizza and for my husband a <DMCC corr="Pepperoni">pepperoni</DMCC> pizza, then also some <FS corr="appetizers">appetisers</FS> and two <LP corr="Coke Zero">zero coke</LP>
-Yes, it does. If I run for too long, my back starts aching like you wouldn't believe.###Yes, it does. If I run for too long, my back starts aching like you wouldn't believe.
-Well, my university course keeps me busy and also I have volleyball practice every evening###Well, my university course keeps me busy and also I have volleyball practice every evening
-The food is not very good in spain and but the atmophere Is fantastic###The food is not very good in <DMCC corr="Spain">spain</DMCC> <LCC corr="\0">and</LCC> but the <FS corr="athmophere">atmophere</FS> <DMCC corr="is">Is</DMCC> fantastic
-Yes , I do . I love music,  and I play many instruments . I think music , especially creating music , not listening to it , really gives musicians a new "key" to open the doors of  knowledge , because music composition has strict rules that can be altered , resulting (depending on the musician's creativity) , in a new form of art , but also in a new form of ear torture . However , it's easy to say that every music genius uses "errors" to create beauty###Yes , I do . I love music,  and I play many instruments . I think music , especially creating music , not listening to it , really gives musicians a new "key" to open the doors of  knowledge , because music composition has strict rules that can be altered , resulting (depending on the musician's creativity) , in a new form of art , but also in a new form of ear torture . However , it's easy to say that every music genius uses "errors" to create beauty
-we can start whit a medieval adventure###<DMCC corr="We">we</DMCC> can start <FS corr="with">whit</FS> a medieval adventure
-my mind is empty, i'm tired but  don't matter###<DMCC corr="My">my</DMCC> mind is empty, <DMCC corr="I">i</DMCC>'m tired but <GPP corr="it">\0</GPP> <GVN corr="doesn't">don't</GVN> matter
-Thank you, you are very funny.###Thank you, you are very funny.
-I have not idea to  basical role of mats###I have <FS corr="no">not</FS> idea <LSPR corr="about">to</LSPR> <GA corr="the">\0</GA> <FS corr="basic">basical</FS> role of <FS corr="materials">mats</FS>
-I'm very sad because my food routine is gluten free###I'm very sad because my <Z corr="diet">food routine</Z> is gluten free
-Do you think he's gonna pay for what he did?###Do you think he's gonna pay for what he did?
+Can we do a role play?###Can we do a role play?
+I am ready###I am ready
 I understand. Would it be possible for me to take them, even if I'm already taking pills for a thyroid problem?###I understand. Would it be possible for me to take them, even if I'm already taking pills for a thyroid problem?
-I'm a university student in search of a house here in Forlì, you are the one that is going to help me###I'm a university student in search of a house here in Forlì, you are the one that is going to help me
-Obviously I'm talking about the drivers of 2025###Obviously I'm talking about the drivers of 2025
-Hi, i wanted to talk with you about the risks that come with technology nowadays. For example, i think that we are being a little bit controlled by website trackers and by social media algorithms. What do you think?###Hi, <DMCC corr="I">i</DMCC> wanted to talk with you about the risks that come with technology nowadays. For example, <DMCC corr="I">i</DMCC> think that we are being a little bit controlled by website trackers and <WR corr="\0">by</WR> social media algorithms. What do you think?
-arabic architecture, for example i stayed in Sevilla 2 year ago for a erasmus, i love the city and the particular###<DMCC corr="Arabic">arabic</DMCC> architecture, for example <DMCC corr="I">i</DMCC> stayed in Sevilla 2 year ago for <GA corr="an">a</GA> <DMCC corr="Erasmus">erasmus</DMCC>, <DMCC corr="I">i</DMCC> love the city and <GA corr="its">the</GA> <LSN corr="uniqueness">None</LSN> <GNN corr="particulars">particular</GNN>
+Well, my university course keeps me busy and also I have volleyball practice every evening###Well, my university course keeps me busy and also I have volleyball practice every evening
 I always do them, but it still does nothing. I used to play volleyball until a year ago, do you think this might be what caused it?###I always do them, but <GPP corr="they">it</GPP> still does nothing. I used to play volleyball until a year ago, do you think this might be what caused it?
 and the fact that it was so delicate is not a coincidence, this year's theme was costume preservation###<DMCC corr="And">and</DMCC> the fact that it was so delicate is not a coincidence, this year's theme was costume preservation
-i'm good, you?###<DMCC corr="I">i</DMCC>'m <LSADJ corr="fine">good</LSADJ> <QL corr="and">,</QL> you?
-i really like worked there###<DMCC corr="I">i</DMCC> really <XVCO corr="liked working">None</XVCO> there <GVT corr="liked">like</GVT> worked
-Lunch###Lunch
-Yes, tell me a funny joke but you must make me laugh###Yes, tell me a funny joke but you must make me laugh
-how are you?###<DMCC corr="How">how</DMCC> are you?
-would you please act as if you were a job counselor?###<DMCC corr="Would">would</DMCC> you please act as if you were a job counselor?
-I was just overthinking about different things and feelings.. you know, i've been with my biyfriend for a while now, and i'm sure to be completely in lovbe with him, but some time i feel like it's not the same anymore, I don't know if you can understand me, but it's a rough feeling.. what do you think###I was just overthinking about different things and feelings.. <DMCC corr="You">you</DMCC> know, <DMCC corr="I">i</DMCC>'ve been with my <FS corr="boyfriend">biyfriend</FS> for a while now, and <DMCC corr="I">i</DMCC>'m sure to be completely in <FS corr="love">lovbe</FS> with him, but <LSADV corr="sometimes">some time</LSADV> <DMCC corr="I">i</DMCC> feel like it's not the same anymore, I don't know if you can understand me, but it's a rough feeling.. <DMCC corr="What">what</DMCC> do you think <QM corr="?">\0</QM>
+The food is not very good in spain and but the atmophere Is fantastic###The food is not very good in <DMCC corr="Spain">spain</DMCC> <LCC corr="\0">and</LCC> but the <FS corr="athmophere">atmophere</FS> <DMCC corr="is">Is</DMCC> fantastic
 
 Annotate the following target sentence, without providing any explanation:
 

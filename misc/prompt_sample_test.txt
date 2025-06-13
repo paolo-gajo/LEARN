@@ -1,109 +1,17 @@
 Annotate the target sentence below with the following tags, in XML style. Reproduce the full sentence and annotate each error.
 
-The following are the tags you should use for annotation:
-
-<DMCC>: Capitalization issues.
-<DMCA>: Use of abbreviations in digitally-mediated communication (e.g., OK, lol, etc.).
-<FS>: Spelling errors.
-<FM>: Morphological errors involving derivational affixes.
-<QC>: Confusion of punctuation marks.
-<QL>: Punctuation mark instead of lexical item (or vice versa).
-<QM>: Missing punctuation.
-<QR>: Redundant punctuation.
-<GDD>: Errors with demonstrative determiners (e.g., this, that, etc.).
-<GDO>: Errors with possessive determiners (e.g., my, your, etc.).
-<GDI>: Errors with indefinite determiners (e.g., any, some, etc.).
-<GDT>: Errors with other types of determiners (e.g., relative, interrogative, etc.).
-<GA>: Errors with definite, indefinite, or zero articles.
-<GADJCS>: Errors with comparative or superlative adjectives.
-<GADJN>: Errors with adjective number.
-<GADJO>: Errors with adjective order.
-<GADVO>: Misplaced adverbs.
-<GNC>: Errors with noun case (e.g., Saxon genitive misuse).
-<GNN>: Errors with noun number.
-<GPD>: Errors with demonstrative pronouns (e.g., this, that, etc.).
-<GPP>: Errors with personal pronouns (e.g., you, we, etc.).
-<GPO>: Errors with possessive pronouns (e.g., mine, yours, etc.).
-<GPI>: Errors with indefinite pronouns. (e.g. anyone, nothing, etc.).
-<GPF>: Errors with reflexive or reciprocal pronouns (e.g., myself, each other, etc.).
-<GPR>: Errors with relative or interrogative pronouns (e.g., what, which, etc.).
-<GPU>: Unclear pronominal reference.
-<GVAUX>: Misuse of primary, modal, or semi-auxiliaries (e.g., do, have, etc.).
-<GVM>: Errors with verb morphology.
-<GVN>: Errors with subject-verb agreement.
-<GVNF>: Errors in use of -ing, infinitives, or relative clauses.
-<GVT>: Misuse of tense or aspect.
-<GVV>: Errors with active/passive voice.
-<GWC>: Errors due to confusion between word classes.
-<XADJCO>: Errors with adjective complementation.
-<XNCO>: Errors with noun complementation.
-<XPRCO>: Errors with preposition complementation.
-<XVCO>: Errors with verb complementation.
-<XADJPR>: Errors with adjective dependent prepositions.
-<XADVPR>: Errors with adverb dependent prepositions.
-<XNPR>: Errors involving dependent prepositions for nouns.
-<XVPR>: Errors involving dependent prepositions for verbs.
-<XNUC>: Errors in the use of uncountable/countable nouns.
-<LCC>: Errors in the use of coordinating conjunctions (e.g., and, or, etc.).
-<LCS>: Errors in the use of subordinating conjunctions (e.g., although, because, etc.).
-<LCLS>: Errors in the use of single logical connectors (e.g., nevertheless, etc.).
-<LCLC>: Errors in the use of complex logical connectors (e.g., on the other hand, etc.).
-<LSADJ>: Conceptual or collocational errors involving adjectives.
-<LSADV>: Conceptual or collocational errors involving adverbs.
-<LSN>: Conceptual or collocational errors involving nouns.
-<LSPR>: Conceptual or collocational errors involving prepositions.
-<LSV>: Conceptual or collocational errors involving verbs.
-<LP>: Errors in fixed word combinations, including idioms, compounds, and phrasal verbs.
-<LWCO>: Instances of coined words, calques, or invented proper nouns.
-<WM>: Missing words.
-<WR>: Redundant words.
-<WO>: Errors in word order.
-<Z>: Stylistic problems or unclear sequences requiring reformulation.
-<CSINTRA>: Code-switching within a sentence.
-<CSINTER>: Code-switching between sentences or conversational turns.
-
 Below are reference examples:
 
-but please change the game###<DMCC corr="But">but</DMCC> please change the game
-You sure got that right, a man's make his own luck. Are you the fellow they call Wild Bill?###You sure got that right, a <GNC corr="man">man's</GNC> <GVN corr="makes">make</GVN> his own luck. Are you the fellow they call Wild Bill?
-Ok that was a bit funny###Ok that was a bit funny
- exam   linguistica dei media###<GA corr="The">\0</GA> exam <WM corr="is">\0</WM> <WM corr="in">\0</WM> <CSINTRA corr="media linguistics">linguistica dei media</CSINTRA>
-we like dance###<DMCC corr="We">we</DMCC> <XVCO corr="like dancing">like dance </XVCO>
-Hi chatgpt, I would like to improve my english skills, especially the small talk.###Hi chatgpt, I would like to improve my <DMCC corr="English">english</DMCC> skills, especially <GA corr="\0">the</GA> small talk.
-Great, she will love her, one of our cooks is Greek and loves his traditional cuisine###Great, she will love <GPP corr="it">her</GPP>, one of our cooks is Greek and loves his traditional cuisine
-Now I'd like to talk with you about holidays###Now I'd like to talk with you about holidays
-Perfect, thank you###Perfect, thank you
-I like the job interview one###I like the job interview one
-it's fine, and u?###<DMCC corr="It">it</DMCC>'s fine, and <DMCA corr="you">u</DMCA>?
-Do you think he's gonna pay for what he did?###Do you think he's gonna pay for what he did?
-I think we get along pretty well. I'm the youngest, but it's not a problem most of the time. We have dinner together, we sit in the kitchen and talk, it's great to have someone to rely on.###I think we get along pretty well. I'm the youngest, but it's not a problem most of the time. We have dinner together, we sit in the kitchen and talk, it's great to have someone to rely on.
-His foor was a light brown , I loved it with her color skin###<GDO corr="Her">His</GDO> <FS corr="fur">foor</FS> was <GA corr="\0">a</GA> light brown , I loved it with her <WO corr="skin color">color skin</WO>
-I actually have, and I even did x-rays to determine whether I might have scoliosis or any other issues, but it turned out that my spine is as straight as a pole.###I actually have, and I even did x-rays to determine whether I might have scoliosis or any other issues, but it turned out that my spine is as straight as a pole.
-Thanks so much###Thanks so much
-I'm okay now but it started off on a bad foot. I think my hormonal balance is a bit off these days ad it's affecting my daily routine in the most basic things.###I'm okay now but it started off <LP corr="on the wrong foot">on a bad foot</LP>. I think my hormonal balance is a bit off these days <FS corr="and">ad</FS> it's affecting my daily routine in the most basic things.
-Hi Pi at the start of this year I started listening to a new band called Bnkr44. Do you know who they are? And if you know them do you think they make great music?###Hi Pi at the start of this year I started listening to a new band called Bnkr44. Do you know who they are? And if you know them do you think they make great music?
-I would like to rent the apartment in a place with fun activities to do for young people in the city centre, also I would love a pool in my apartment building###I would like to rent the apartment in a place with fun activities to do for young people in the city centre, also I would love a pool in my apartment building
-Yes! It's a surprise for him!###Yes! It's a surprise for him!
-i don't have anything specific in mind, i'm looking for a fantasy novel or something like that###<DMCC corr="I">i</DMCC> don't have anything specific in mind, <DMCC corr="I">i</DMCC>'m looking for a fantasy novel or something like that
-i would have loved to see some pieces that have never been worn before, like somnething that was only shown during a show###<DMCC corr="I">i</DMCC> would have loved to see some pieces that have never been worn before, like <FS corr="something">somnething</FS> that was only shown during a show
-Gosh! You had me worried!which topics are you programmed to avoid discussing as Pi.AI?###Gosh! You had me worried! <DMCC corr="Which">which</DMCC> topics are you programmed to avoid discussing as Pi.AI?
-Everything is going fine. How are you?###Everything is going fine. How are you?
-I'm go to Sardinia tomorrow###I <GVM corr="'m going">'m go</GVM> to Sardinia tomorrow
-hi, sorry if i'm pressing you but can we talk about the payment, I wanted to know if  wanted to pay soon after my work is done or maybe even later, what do you think? Thanks, user###<DMCC corr="Hi">hi</DMCC>, sorry if <DMCC corr="I">i</DMCC>'m pressing you but can we talk about the payment <QC corr="?">,</QC> I wanted to know if <GPP corr="you">\0</GPP> wanted to pay soon after my work is done or maybe <WR corr="\0">even</WR> later <QC corr=".">,</QC> what do you think? Thanks, user
-Yes###Yes
-I was thinking that I should try and get a job. Because almost all of my friends finish their exams at the end of July, while I finish at the end of June, so I would have nobody to hang out with.###I was thinking that I should try and get a job. Because almost all of my friends finish their exams at the end of July, while I finish at the end of June, so I would have nobody to hang out with.
 I like volleyball and formula one###I like volleyball and <DMCC corr="Formula One">formula one</DMCC>
-No , I understood everything###No , I understood everything
-Sense8 was pretty good.###Sense8 was pretty good.
-Of course, sir, but are you sure you want to eat your fruit with vinegar and olive oil?###Of course, sir, but are you sure you want to eat your fruit with vinegar and olive oil?
-(less narration please) I am! Looking forward to put these two beauties to good use! Aren't these some fine pistols? I just bought them at the emporium.###(less narration please) I am! <XVCO corr="Looking forward to putting">Looking forward to put</XVCO> these two beauties to good use! Aren't these some fine pistols? I just bought them at the emporium.
-Yes my name is User and my telephone number 6182910162###Yes my name is User and my telephone number 6182910162
-I'm a customer and you are a waiter. You are supposed to bring the hamburger as you have to serve my table as we agreed at the start###I'm a customer and you are a waiter. You are supposed to bring the hamburger as you have to serve my table as we agreed at the start
-you are my passionate lover who I found out is cheating on me with a member of my family###<DMCC corr="You">you</DMCC> are my passionate lover who I found out is cheating on me with a member of my family
-For the university because I love traveling and the idea of working with people from other countries is beautiful.   For the course, because I just want to help other people when they can’t do  for themselves.    How about you, I don’t know nothing about my new friend!###<LSPR corr="Regarding">For</LSPR> the university because I love traveling and the idea of working with people from other countries is beautiful. <LSPR corr="Regarding">For</LSPR> the course, because I just want to help other people when they can’t do <WM corr="things">\0</WM> for themselves.    How about you, I don’t know <GPI corr="anything">nothing</GPI> about my new friend!
-Hi I’m ready to order###Hi <QM corr=",">\0</QM> I’m ready to order
+His foor was a light brown , I loved it with her color skin###<GDO corr="Her">His</GDO> <FS corr="fur">foor</FS> was <GA corr="\0">a</GA> light brown , I loved it with her <WO corr="skin color">color skin</WO>
+i don't have anything specific in mind, i'm looking for a fantasy novel or something like that###<DMCC corr="I">i</DMCC> don't have anything specific in mind, <DMCC corr="I">i</DMCC>'m looking for a fantasy novel or something like that
+You sure got that right, a man's make his own luck. Are you the fellow they call Wild Bill?###You sure got that right, a <GNC corr="man">man's</GNC> <GVN corr="makes">make</GVN> his own luck. Are you the fellow they call Wild Bill?
+but please change the game###<DMCC corr="But">but</DMCC> please change the game
+Now I'd like to talk with you about holidays###Now I'd like to talk with you about holidays
 Probably chatting with my friends, especially since I moved away for university. Still, I believe technology is kinda ruining it for us.###Probably chatting with my friends, especially since I moved away for university. Still, I believe technology is kinda ruining it for us.
-the only think I want to do is explore the world with the people the I love without any worries about the money. I just want to feel free to do whatever I want and not feeling like   in jail and living I life built by someone else just because you have to be what  the society what you to be###<DMCC corr="The">the</DMCC> only <FS corr="thing">think</FS> I want to do is explore the world with the people <FS corr="that">the</FS> I love without any worries about <GA corr="\0">the</GA> money. I just want to feel free to do whatever I want and not <GVM corr="feel">feeling</GVM> like <GPP corr="I">\0</GPP> <GVAUX corr="am">\0</GVAUX> in jail and living <FS corr="a">I</FS> life built by someone else just because you have to be what <GA corr="\0">the</GA> society <FS corr="wants">what</FS> you to be
+Ok that was a bit funny###Ok that was a bit funny
+I'm a customer and you are a waiter. You are supposed to bring the hamburger as you have to serve my table as we agreed at the start###I'm a customer and you are a waiter. You are supposed to bring the hamburger as you have to serve my table as we agreed at the start
+Do you think he's gonna pay for what he did?###Do you think he's gonna pay for what he did?
 
 Annotate the following target sentence, without providing any explanation:
 

@@ -1,7 +1,7 @@
 .env*
 __pycache__
 unsloth_compiled_cache
-eval_outputs
+pred_outputs
 outputs
 trainer_output
 models
