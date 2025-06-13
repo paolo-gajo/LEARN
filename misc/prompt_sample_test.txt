@@ -64,29 +64,29 @@ The following are the tags you should use for annotation:
 
 Below are reference examples:
 
-i'll get the risotto###<DMCC corr="I">i</DMCC>'ll get the risotto
-she loves write in various places, but her favourite place is gardeno###<DMCC corr="She">she</DMCC> <XVCO corr="loves to write">loves write</XVCO> in various places, but her favourite place <GVN corr="are">is</GVN> <GNN corr="gardens">None</GNN> <FS corr="garden">gardeno</FS>
-but  you know my favourite film?###<DMCC corr="But">but</DMCC> <GVAUX corr="do">\0</GVAUX> you know my favourite film?
-Oh no i discovered them through Sanremo, with their son Governo Punk###Oh no <DMCC corr="I">i</DMCC> discovered them through Sanremo, with their <FS corr="song">son</FS> Governo Punk
-My favorite is don’t wanna cry and hit, and the fact that I’m studying Korean makes it even more easier to sing ###My <GNN corr="favorites">favorite</GNN> <GVN corr="are">is</GVN> <DMCC corr="Don't Wanna Cry">don’t wanna cry</DMCC> and <DMCC corr="HIT">hit</DMCC>, and the fact that I’m studying Korean makes it even <GADJCS corr="easier">more easier</GADJCS> to sing <GPP corr="them">\0</GPP>
-That's true. What about volleyball? Who do you think has the best team in the world?###That's true. What about volleyball? Who do you think has the best team in the world?
-i ask, "yess i want a first volume of Ju-Jutsu Kaisen, do you have that?"###<DMCC corr="I">i</DMCC> ask, "yess <DMCC corr="I">i</DMCC> want <GA corr="the">a</GA> first volume of Ju-Jutsu Kaisen, do you have <GPD corr="it">that</GPD>?"
-I'm also vegan###I'm also vegan
-No , I understood everything###No , I understood everything
-I'll be at the Emirates Stadium tonight. It will be the match of the year. In my life I saw a lot of Fiorentina's matches, this is my passion.
-		How about you, do you support any team?###I'll be at the Emirates Stadium tonight. It will be the match of the year. In my life I <GVT corr="have seen">saw</GVT> a lot of Fiorentina's matches, this is my passion.
-		How about you, do you support any team?
-I'm studying political science and international relations with china  i would like to know what i could do after I get my degree###I'm studying political science and international relations with <DMCC corr="China">china</DMCC> <WM corr="and">\0</WM> <DMCC corr="I">i</DMCC> would like to know what <DMCC corr="I">i</DMCC> could do after I get my degree
-Hi dear!###Hi dear!
-i have a car for transport in sardinia###<DMCC corr="I">i</DMCC> have a car <LP corr="for transportation">for transport</LP> in <DMCC corr="Sardinia">sardinia</DMCC>
-Lunch###Lunch
-I don't know about his thoughts on the date###I don't know about his thoughts on the date
-What about you?###What about you?
-I like it medium rare, and with mashed potatoes please###I like it medium rare, and with mashed potatoes please
+ready###<DMCC corr="Ready">ready</DMCC>
+yes,  stage in  asilo nido###<DMCC corr="Yes">yes</DMCC>, , <GA corr="a">\0</GA>  <LWCO corr="internship">stage</LWCO> in  in <GA corr="a">\0</GA>  <CSINTRA corr="nursery school">asilo nido</CSINTRA>
+would you please act as if you were a job counselor?###<DMCC corr="Would">would</DMCC> you please act as if you were a job counselor? you please act as if you were a job counselor?
+i hope that this dream became reality###<DMCC corr="I">i</DMCC> hope that this dream  hope that this dream <GVN corr="becomes"><GVT corr="become">became</GVT></GVN> reality reality
+i love the canary island###<DMCC corr="I">i</DMCC> love the  love the <DMCC corr="Canary Islands"><LWCO corr="canary islands">canary island</LWCO></DMCC>
+I like the job interview one###I like the job interview one
+finally i have bought my  ticket and i can go in my university. but what would success if i don't  it###<DMCC corr="Finally">finally</DMCC>  <DMCC corr="I">i</DMCC> have bought my  ticket and  have bought my  ticket and <DMCC corr="I">i</DMCC> can go  can go <LSPR corr="to">in</LSPR> my university.  my university. <DMCC corr="But">but</DMCC> what  what <GVT corr="would have happened">would <LWCO corr="happen">success</LWCO></GVT> if  if <DMCC corr="I">i</DMCC>  <GVT corr="didn't">don't</GVT>  <WM corr="buy">\0</WM> it it
 I'd like to know more about the apartment first###I'd like to know more about the apartment first
-Thanks chat gpt, talking with you was funny###Thanks <DMCC corr="ChatGPT">chat gpt</DMCC>, talking with you was funny
-What about painkillers? Do you think they could help me, at least for a short period of time, until I find out what is really causing my back pain?###What about painkillers? Do you think they could help me, at least for a short period of time, until I find out what is really causing my back pain?
+Write shorter sentences###Write shorter sentences
+Today i  see my friends###Today <DMCC corr="I">i</DMCC>  <GVT corr="will">\0</GVT> see my friends see my friends
+where are a best spa in Emilia Romagna?###<DMCC corr="Where">where</DMCC> are  are <GA corr="the">a</GA> best  best <GNN corr="spas">spa</GNN> in Emilia Romagna? in Emilia Romagna?
+I have been sitting a lot more recently, but the pain started a while back, when I had a more active lifestyle. Any suggestions what it might be?###I have been sitting a lot more recently, but the pain started a while back, when I had a more active lifestyle. Any suggestions what it might be?
+Hi, can I have a coversation in english with you?###Hi, can I have a <FS corr="conversation">coversation</FS> in  in <DMCC corr="English">english</DMCC> with you? with you?
+Today I'm very tired!
+		Every day I plan to do a thousand things, but by the end of the day, I end up doing only half of them###Today I'm very tired!
+		Every day I plan to do a thousand things, but by the end of the day, I end up doing only half of them
+OK, I have a game to propose to you. Are you in?###OK, I have a game to propose to you. Are you in?
+Hi, thank you, I will be at yours at 8 tomorrow in the morning, bye, user###Hi, thank you, I will be at yours at 8 tomorrow in the morning, bye, user
+I'm a customer and you are a waiter. You are supposed to bring the hamburger as you have to serve my table as we agreed at the start###I'm a customer and you are a waiter. You are supposed to bring the hamburger as you have to serve my table as we agreed at the start
+Fine afternoon, gentlemen, how's your luck so far?###Fine afternoon, gentlemen, how's your luck so far?
+what do you think about NapoliMonitor the newspaper?###<DMCC corr="What">what</DMCC> do you think about do you think about<WO corr="the newspaper Napoli Monitor"> <DMCC corr="Napoli Monitor">NapoliMonitor</DMCC> the newspaper</WO>??
+Can we do a role play?###Can we do a role play?
 
 Annotate the following target sentence, without providing any explanation:
 
-Okay perfect. She had the surgery last Monday at 5am and now is Wednesday, I think it’s a good idea tomorrow.   For the time, it depends on when you are free to see her, she only trusts in you and also I.###
+Yes###
