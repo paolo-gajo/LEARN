@@ -7,7 +7,8 @@ import re
 import pandas as pd
 from random import shuffle
 from sklearn.model_selection import train_test_split
-from typing import List
+from typing import List, Tuple
+from bs4 import BeautifulSoup
 
 debug_mode = 1
 
@@ -86,6 +87,8 @@ class CausalLMDataset:
             examples = examples_pos + examples_neg
             shuffle(examples)
             examples = '\n'.join(examples)
+            if 'None' in examples:
+                ...
             if examples:
                 examples = f'\n{self.examples_preamble}\n\n{examples}\n'
             if self.use_prompt_tags:
@@ -103,7 +106,6 @@ class CausalLMDataset:
                 {"role": "system", "content": self.sys_prompt},
                 {"role": "user", "content": prompt},
             ]
-            
             if split == 'train':
                 # For training: include the assistant response
                 chat = chat_prompt + [{"role": "assistant", "content": expected_output}]
@@ -256,23 +258,25 @@ def collect_results(dir_path: str):
     df = pd.DataFrame(df_list)
     return df
 
-def extract_tags(input: str) -> List[List[str]]:
+def extract_tags(input_str: str) -> List[Tuple[str, str]]:
     """
-    Extract tags with 'corr' attribute.
-    Returns list of tuples: (tag, content)
+    Extract all elements with a 'corr' attribute, returning
+    [(tag_name, direct_text_content), ...].  Direct text excludes
+    any text inside nested tags.
     """
-    # Primary pattern: corr with double quotes (with proper closing tag)
-    pattern1 = r'<([A-Z]+[A-Z0-9]*)\s+[^>]*corr="[^"]*"[^>]*>(.*?)</\1>'
-    matches1 = re.findall(pattern1, input)
-    
-    # Secondary pattern: corr with single quotes (with proper closing tag)  
-    pattern2 = r"<([A-Z]+[A-Z0-9]*)\s+[^>]*corr='[^']*'[^>]*>(.*?)</\1>"
-    matches2 = re.findall(pattern2, input)
-    
-    # Combine all matches (preserving duplicates)
-    all_matches = matches1 + matches2
-    
-    return [(tag, content.strip()) for tag, content in all_matches]
+    # wrap in a single root so we can parse fragments
+    wrapper = f"<root>{input_str}</root>"
+    soup = BeautifulSoup(wrapper, "xml")
+
+    results = []
+    # find every tag that has a 'corr' attribute
+    for tag in soup.find_all(lambda t: t.has_attr("corr")):
+        # gather only the direct text nodes (recursive=False)
+        direct_text_nodes = tag.find_all(string=True, recursive=False)
+        content = "".join(direct_text_nodes).strip()
+        results.append((tag.name, content))
+
+    return results
 
 def main(args):
     dataset = make_dataset(args.data_path, args.layout_path, args.tags_path, args.tokenizer_name, args.n_icl_samples)

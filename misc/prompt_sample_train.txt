@@ -1,18 +1,90 @@
 Annotate the target sentence below with the following tags, in XML style. Reproduce the full sentence and annotate each error.
 
+The following are the tags you should use for annotation:
+
+<DMCC>: Capitalization issues.
+<DMCA>: Use of abbreviations in digitally-mediated communication (e.g., OK, lol, etc.).
+<FS>: Spelling errors.
+<FM>: Morphological errors involving derivational affixes.
+<QC>: Confusion of punctuation marks.
+<QL>: Punctuation mark instead of lexical item (or vice versa).
+<QM>: Missing punctuation.
+<QR>: Redundant punctuation.
+<GDD>: Errors with demonstrative determiners (e.g., this, that, etc.).
+<GDO>: Errors with possessive determiners (e.g., my, your, etc.).
+<GDI>: Errors with indefinite determiners (e.g., any, some, etc.).
+<GDT>: Errors with other types of determiners (e.g., relative, interrogative, etc.).
+<GA>: Errors with definite, indefinite, or zero articles.
+<GADJCS>: Errors with comparative or superlative adjectives.
+<GADJN>: Errors with adjective number.
+<GADJO>: Errors with adjective order.
+<GADVO>: Misplaced adverbs.
+<GNC>: Errors with noun case (e.g., Saxon genitive misuse).
+<GNN>: Errors with noun number.
+<GPD>: Errors with demonstrative pronouns (e.g., this, that, etc.).
+<GPP>: Errors with personal pronouns (e.g., you, we, etc.).
+<GPO>: Errors with possessive pronouns (e.g., mine, yours, etc.).
+<GPI>: Errors with indefinite pronouns. (e.g. anyone, nothing, etc.).
+<GPF>: Errors with reflexive or reciprocal pronouns (e.g., myself, each other, etc.).
+<GPR>: Errors with relative or interrogative pronouns (e.g., what, which, etc.).
+<GPU>: Unclear pronominal reference.
+<GVAUX>: Misuse of primary, modal, or semi-auxiliaries (e.g., do, have, etc.).
+<GVM>: Errors with verb morphology.
+<GVN>: Errors with subject-verb agreement.
+<GVNF>: Errors in use of -ing, infinitives, or relative clauses.
+<GVT>: Misuse of tense or aspect.
+<GVV>: Errors with active/passive voice.
+<GWC>: Errors due to confusion between word classes.
+<XADJCO>: Errors with adjective complementation.
+<XNCO>: Errors with noun complementation.
+<XPRCO>: Errors with preposition complementation.
+<XVCO>: Errors with verb complementation.
+<XADJPR>: Errors with adjective dependent prepositions.
+<XADVPR>: Errors with adverb dependent prepositions.
+<XNPR>: Errors involving dependent prepositions for nouns.
+<XVPR>: Errors involving dependent prepositions for verbs.
+<XNUC>: Errors in the use of uncountable/countable nouns.
+<LCC>: Errors in the use of coordinating conjunctions (e.g., and, or, etc.).
+<LCS>: Errors in the use of subordinating conjunctions (e.g., although, because, etc.).
+<LCLS>: Errors in the use of single logical connectors (e.g., nevertheless, etc.).
+<LCLC>: Errors in the use of complex logical connectors (e.g., on the other hand, etc.).
+<LSADJ>: Conceptual or collocational errors involving adjectives.
+<LSADV>: Conceptual or collocational errors involving adverbs.
+<LSN>: Conceptual or collocational errors involving nouns.
+<LSPR>: Conceptual or collocational errors involving prepositions.
+<LSV>: Conceptual or collocational errors involving verbs.
+<LP>: Errors in fixed word combinations, including idioms, compounds, and phrasal verbs.
+<LWCO>: Instances of coined words, calques, or invented proper nouns.
+<WM>: Missing words.
+<WR>: Redundant words.
+<WO>: Errors in word order.
+<Z>: Stylistic problems or unclear sequences requiring reformulation.
+<CSINTRA>: Code-switching within a sentence.
+<CSINTER>: Code-switching between sentences or conversational turns.
+
 Below are reference examples:
 
-Yes , I do . I love music,  and I play many instruments . I think music , especially creating music , not listening to it , really gives musicians a new "key" to open the doors of  knowledge , because music composition has strict rules that can be altered , resulting (depending on the musician's creativity) , in a new form of art , but also in a new form of ear torture . However , it's easy to say that every music genius uses "errors" to create beauty###Yes , I do . I love music,  and I play many instruments . I think music , especially creating music , not listening to it , really gives musicians a new "key" to open the doors of  knowledge , because music composition has strict rules that can be altered , resulting (depending on the musician's creativity) , in a new form of art , but also in a new form of ear torture . However , it's easy to say that every music genius uses "errors" to create beauty
-We'd like to have an intimate table, possibly near the window###We'd like to have an intimate table, possibly near the window
- like  see the Walking Dead, it is my favourite serie tv. Do you like kind###<GPP corr="I">\0</GPP> <XVCO corr="like to">like </XVCO> <LSV corr="watch">see</LSV> the Walking Dead, it is my favourite <LWCO corr="TV series">serie tv</LWCO>. Do you like <Z corr="this kind of TV series?">kind</Z>
-Come si dice raccolta indiferenziata###<CSINTRA corr="How do you say general waste?">Come si dice raccolta indiferenziata</CSINTRA>
-I used to apply heated pads where the pain was worse, and it did feel better for as long as I kept the pad on. If I took it off, it was a matter of hours before I was back to where I started.###I used to apply heated pads where the pain was worse, and it did feel better for as long as I kept the pad on. If I took it off, it was a matter of hours before I was back to where I started.
-No I haven't tried that yet i'm gonna try and let you if It did work or not, can you wait a few minutes?###No I haven't tried that yet i'm gonna try and let you if It did work or not, can you wait a few minutes?
-Well I was thinking of rewatching for the 100th time fast & furious###Well <QM corr=",">\0</QM> I was thinking of rewatching <WO corr="Fast & Furious for the 100th time">for the 100th time </WO> <DMCC corr="Fast & Furious">fast & furious</DMCC>
-I'm a customer and you are a waiter. You are supposed to bring the hamburger as you have to serve my table as we agreed at the start###I'm a customer and you are a waiter. You are supposed to bring the hamburger as you have to serve my table as we agreed at the start
-do you feel like role play?###<DMCC corr="Do">do</DMCC> you <XVCO corr="feel like role playing">feel like role play</XVCO>?
-We'd like visit National parks, because we like the nature. However we'd like visit the big city too.   I don't know how many days  needed for this. We have a 2500€ for the budget###We'd like <GVNF corr="to visit">visit</GVNF> National parks, because we like <GA corr="\0">the</GA> nature. However we'd <XVCO corr="like to visit">like visit</XVCO> <GNN corr="big cities">the big city</GNN> too.   I don't know how many days <GVAUX corr="are">\0</GVAUX> needed for this. We have <Z corr="a budget of 2500€">a 2500€ for the budget</Z>
+I hope so. Do you think there is some fashion critic whose review of the event I should read?###I hope so. Do you think there is some fashion critic whose review of the event I should read?
+LEVI ACKERMANN!!!! i love that mann....  is very skilled and beautiful OMG!!!###LEVI ACKERMANN!!!! <DMCC corr="I">i</DMCC> love that mann.... <GPP corr="He">\0</GPP> is very skilled and beautiful <DMCA corr="">OMG</DMCA>!!!
+Write shorter sentences###Write shorter sentences
+Thank you so much. But I also have to say that I received a lot of mocking because of this passion of mine###Thank you so much. But I also have to say that I <LP corr="have been mocked a lot">None</LP> because of this passion of mine <GVT corr="have received">received</GVT> a lot of mocking
+well i really enjoyed dune recently, it really was a great experience at the theater###<DMCC corr="Well">well</DMCC> <DMCC corr="I">i</DMCC> <GVT corr="have really enjoyed">really enjoyed</GVT> <DMCC corr="Dune">dune</DMCC> recently, it really was a great experience at the theater
+Write an email to request a quote from local plumbers for backflow testing. I need it done in the next 2 weeks. Keep it short and casual.###Write an email to request a quote from local plumbers for backflow testing. I need it done in the next 2 weeks. Keep it short and casual.
+It's mostly sharp, as if something was constantly poking me whenever I'm sitting. Sometimes, it even goes up to my neck.###It's mostly sharp, as if something was constantly poking me whenever I'm sitting. Sometimes, it even goes up to my neck.
+I love it. I have my freedom and my independence, which is great, but I'm also never completely alone, as I live with four flatmates in a rather big house.###I love it. I have my freedom and my independence, which is great, but I'm also never completely alone, as I live with four flatmates in a rather big house.
+perfect,and what do you suggest me?###<DMCC corr="Perfect">perfect</DMCC>,and what do you <XNCO corr="suggest to me">suggest me</XNCO>?
+Do you think Barcelona is safe for women? I am gonna travel with my best friend and she's worried about pickpockets.###Do you think Barcelona is safe for women? I am gonna travel with my best friend and she's worried about pickpockets.
+Everything is going fine. How are you?###Everything is going fine. How are you?
+Do you have sweet potatoes? They're my favourite side. Also what's the best salsa for them?###Do you have sweet potatoes? They're my favourite side. Also what's the best salsa for them?
+I want to stay in Seoul for a week and my departure city is Naples because it's more easy for me###I want to stay in Seoul for a week and my departure city is Naples because it's <GADJCS corr="easier">more easy</GADJCS> for me
+Fantastic, what about the perfect period of the year to go there?###Fantastic, what about the perfect period of the year to go there?
+educator###<DMCC corr="Educator">educator</DMCC>
+Paella is very good###Paella is very good
+Thanks. is it possible  go with bus from  centre of Florence?###Thanks. <DMCC corr="Is">is</DMCC> it possible <WM corr="to">\0</WM> go <LSPR corr="by">with</LSPR> bus from <GA corr="the">\0</GA> centre of Florence?
+i didn’t know! So, can you recommend me a more suitable place for families?###<DMCC corr="I">i</DMCC> didn’t know! So, can you <XVCO corr="recommend">recommend me</XVCO> a more suitable place for families?
+i woud speak with you about my university's life.###<DMCC corr="I">i</DMCC> <XVCO corr="would like to speak">None</XVCO> with you about my <DMCC corr="would">woud</DMCC> speak <GNC corr="university life">university's life</GNC>.
+i’m looking for something near the city centre, with a lot of comforts###<DMCC corr="I">i</DMCC>’m looking for something near the city centre, with a lot of comforts
 
 Annotate the following target sentence, without providing any explanation:
 
-i'm study criminology,  is most difficult###
+HI###

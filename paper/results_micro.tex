@@ -1,13 +1,21 @@
 \begin{table}
-\caption{Micro-averaged results for Llama-3.3-70B-Instruct.}
+\caption{Micro-averaged results for Llama-3.1-8B-Instruct.}
 \label{results_micro}
-\begin{tabular}{lrrrrrrrrrrr}
+\begin{tabular}{lrrrrrrrrrrrrr}
 \toprule
-tags & n\_icl & ft & \multicolumn{2}{r}{epoch} & \multicolumn{2}{r}{micro\_f1\_dev} & \multicolumn{2}{r}{micro\_f1} & \multicolumn{2}{r}{micro\_p} & micro\_r \\
- &  &  & mean & std & mean & std & mean & std & mean & std & mean \\
+tags & n\_icl & \multicolumn{2}{r}{seed} & \multicolumn{2}{r}{epoch} & \multicolumn{2}{r}{ft} & \multicolumn{2}{r}{micro\_f1\_dev} & \multicolumn{2}{r}{micro\_f1} & \multicolumn{2}{r}{micro\_p} \\
+ &  & mean & std & mean & std & mean & std & mean & std & mean & std & mean & std \\
 \midrule
-n & 5 & 0 & 1.000 & 0.000 & 0.000 & 0.000 & 0.206 & 0.036 & 0.202 & 0.035 & 0.210 \\
-n & 5 & 1 & 1.600 & 0.894 & 0.230 & 0.016 & 0.209 & 0.034 & 0.206 & 0.035 & 0.212 \\
+n & 0 & 2.000 & 1.581 & 3.000 & 0.000 & 1.000 & 0.000 & 0.366 & 0.027 & 0.377 & 0.043 & 0.423 & 0.052 \\
+n & 5 & 2.000 & 1.581 & 2.000 & 0.707 & 1.000 & 0.000 & 0.389 & 0.027 & 0.392 & 0.041 & 0.412 & 0.038 \\
+n & 10 & 2.000 & 1.581 & 1.800 & 0.447 & 1.000 & 0.000 & 0.406 & 0.027 & 0.389 & 0.068 & 0.413 & 0.094 \\
+n & 15 & 2.000 & 1.581 & 1.000 & 0.000 & 1.000 & 0.000 & 0.277 & 0.022 & 0.279 & 0.034 & 0.283 & 0.027 \\
+n & 20 & 2.000 & 1.581 & 1.000 & 0.000 & 1.000 & 0.000 & 0.279 & 0.077 & 0.269 & 0.042 & 0.265 & 0.034 \\
+y & 0 & 2.000 & 1.581 & 3.000 & 0.000 & 1.000 & 0.000 & 0.338 & 0.023 & 0.336 & 0.053 & 0.385 & 0.061 \\
+y & 5 & 2.000 & 1.581 & 2.200 & 0.837 & 1.000 & 0.000 & 0.218 & 0.014 & 0.204 & 0.039 & 0.163 & 0.031 \\
+y & 10 & 2.000 & 1.581 & 2.600 & 0.894 & 1.000 & 0.000 & 0.213 & 0.023 & 0.209 & 0.040 & 0.170 & 0.036 \\
+y & 15 & 2.000 & 1.581 & 2.400 & 0.894 & 1.000 & 0.000 & 0.217 & 0.022 & 0.217 & 0.046 & 0.172 & 0.046 \\
+y & 20 & 2.000 & 1.581 & 2.600 & 0.894 & 1.000 & 0.000 & 0.210 & 0.029 & 0.203 & 0.040 & 0.163 & 0.031 \\
 \bottomrule
 \end{tabular}
 \end{table}
