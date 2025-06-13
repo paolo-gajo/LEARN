@@ -2,7 +2,7 @@
 #SBATCH -J clic-it
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
-#SBATCH --gres=gpu:h100:1
+#SBATCH --gres=gpu:1
 #SBATCH --time=12:00:00
 #SBATCH --output=./.slurm/%A/%a_output.log
 #SBATCH --error=./.slurm/%A/%a_error.log
@@ -47,18 +47,18 @@ declare -a do_train=(
 )
 declare -a use_prompt_tags=(
     0
-    # 1
+    1
 )
 declare -a n_icl_samples=(
-    # 0
+    0
     5
-    # 10
-    # 15
-    # 20
+    10
+    15
+    20
 )
 declare -a model_name=(
-    # meta-llama/Llama-3.1-8B-Instruct
-    meta-llama/Llama-3.3-70B-Instruct
+    meta-llama/Llama-3.1-8B-Instruct
+    # meta-llama/Llama-3.3-70B-Instruct
     # mistralai/Ministral-8B-Instruct-2410
 )
 declare -a coarse=(
@@ -80,6 +80,7 @@ load_in_4bit=0
 batch_size_train=4
 batch_size_eval=4
 epochs=3
+verbose_eval=1
 # Convert combinations to commands
 declare -a commands=()
 while IFS= read -r combo; do
@@ -101,13 +102,10 @@ while IFS= read -r combo; do
                 --batch_size_train $batch_size_train
                 --batch_size_eval $batch_size_eval
                 --epochs $epochs
+                --verbose_eval $verbose_eval
                 "
     commands+=("$cmd")
 done <<< "$combinations"
-
-for comb in ${combinations[@]}; do
- echo $comb
-done
 
 total_combinations=${#commands[@]}
 

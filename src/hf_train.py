@@ -27,7 +27,6 @@ def main(args):
     tokenizer = AutoTokenizer.from_pretrained(config['model_name'],
                                               padding_side='left')
     tokenizer.pad_token = tokenizer.eos_token
-    
 
     dataset = CausalLMDataset(df,
                             tokenizer,
