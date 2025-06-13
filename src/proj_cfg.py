@@ -4,4 +4,5 @@ default_cfg = {
     'prompt_tags_path': './misc/prompt_tags.txt',
     'verbose_output_path': './eval_outputs',
     'suffix': '',
+    'seed': 0,
 }
