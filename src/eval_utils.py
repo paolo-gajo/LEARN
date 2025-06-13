@@ -39,7 +39,7 @@ class Evaluator:
         comp_list = df['completion'].to_list()
 
         # Progress bar over sub-batches, rather than item by item
-        pbar = tqdm(range(0, len(df), batch_size), desc=f"Model: {self.config['model_name']}")
+        pbar = tqdm(range(0, len(df), batch_size), desc=f"Evaluating: {self.config['model_name']}")
         self.t_counter = 0  # initialize model timeout counter
 
         verbose_output = ''

@@ -258,20 +258,15 @@ def collect_results(dir_path: str):
 
 def extract_tags(input_str: str) -> List[Tuple[str, str]]:
     """
-    Extract all elements with a 'corr' attribute, returning
-    [(tag_name, direct_text_content), ...].  Direct text excludes
-    any text inside nested tags.
+    Extract all tags with a 'corr' attribute in document order.
+    Returns list of tuples: (tag_name, full_text_content)
     """
-    # wrap in a single root so we can parse fragments
     wrapper = f"<root>{input_str}</root>"
     soup = BeautifulSoup(wrapper, "lxml-xml")
 
     results = []
-    # find every tag that has a 'corr' attribute
     for tag in soup.find_all(lambda t: t.has_attr("corr")):
-        # gather only the direct text nodes (recursive=False)
-        direct_text_nodes = tag.find_all(string=True, recursive=False)
-        content = "".join(direct_text_nodes).strip()
+        content = tag.get_text(strip=True)
         results.append((tag.name, content))
 
     return results
