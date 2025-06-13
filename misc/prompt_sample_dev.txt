@@ -64,27 +64,27 @@ The following are the tags you should use for annotation:
 
 Below are reference examples:
 
-OK, I have a game to propose to you. Are you in?###OK, I have a game to propose to you. Are you in?
-I hope so. Do you think there is some fashion critic whose review of the event I should read?###I hope so. Do you think there is some fashion critic whose review of the event I should read?
-i have recently watched past lives###<DMCC corr="I">i</DMCC> have recently watched <DMCC corr="Past">past</DMCC> lives
-That's exactly what I was looking for, thanks!###That's exactly what I was looking for, thanks!
-Hi, can I have an English conversation whit you?###Hi, can I have <Z corr="a conversation in English">an English conversation</Z> <FS corr="with">whit</FS> you?
-I heard a weird sound, like a laser sword, from the lowe floors and then the building collapsed. The purple substance was under the rubbles, there was a lot of it. I imagine it was all over the floor. About the person running away, I don't know, they were carring a black backpack, like a school backpack.###I heard a weird sound, like a laser sword, from the <FS corr="lower">lowe</FS> floors and then the building collapsed. The purple substance was under the <XNUC corr="rubble">rubbles</XNUC>, there was a lot of it. I imagine it was all over the floor. About the person running away, I don't know, they were <FS corr="carrying">carring</FS> a black backpack, like a school backpack.
-i like  go to the gym, what do you think about that?###<DMCC corr="I">i</DMCC> like <WM corr="to">\0</WM> go to the gym, what do you think about that?
-i'm going to take the firt one###<DMCC corr="I">i</DMCC>'m going to take the <FS corr="first">firt</FS> one
-I'm almost done, but I still have the last exams to take###I'm almost done, but I still have the last exams to take
-300-400€###300-400€
-i go  the cinema, read books, i do all sorts of activities that require my complete attention###<DMCC corr="I">i</DMCC> go <LSPR corr="to">\0</LSPR> the cinema, read books, <DMCC corr="I">i</DMCC> do all sorts of activities that require my complete attention
-i only watched the first season, i didn't like it that much###<DMCC corr="I">i</DMCC> <GVT corr="have only watched">only watched</GVT> the first season, <DMCC corr="I">i</DMCC> didn't like it that much
-Write shorter sentences###Write shorter sentences
-Hi, oh no, there wont be any extra for controlling the water, it's just a pleasure i want to do for you, because, eather way, we're friends, right?###Hi, oh no, there <FS corr="won't">wont</FS> be any <GNN corr="extras">extra</GNN> for controlling the water <QC corr=".">,</QC> it's just a pleasure <DMCC corr="I">i</DMCC> want to do for you, because, <FS corr="either">eather</FS> way, we're friends, right?
-Last summer with my friends###Last summer with my friends
-I love animals and I have a pet, its name is Milo###I love animals and I have a pet, its name is Milo
-Yeah I will try to do that. Last thing what do you think about k dramas###Yeah <QM corr=",">\0</QM> I will try to do that. Last thing <QM corr=":">\0</QM> what do you think about <DMCC corr="K-dramas">None</DMCC> <FS corr="k-dramas">k dramas</FS>
-Do you have some exemple of  menu?###Do you have some <GNN corr="examples">None</GNN> <FS corr="example">exemple</FS> <LSPR corr="from">of</LSPR> <GA corr="the">\0</GA> menu?
-How was my English?###How was my English?
-Number 2 sounds fun, let's play###Number 2 sounds fun, let's play
+I don't know about his thoughts on the date###I don't know about his thoughts on the date
+Hi, what's your favorite pet?###Hi, what's your favorite pet?
+Thank you! I'm kind of practicing my English right now with you, so  you have any comments on how I could improve? Or some correction about what I0m writing to you?###Thank you! I'm kind of practicing my English right now with you, so <GVAUX corr="do">\0</GVAUX> you have any comments on how I could improve? Or some  you have any comments on how I could improve? Or some <GNN corr="corrections">correction</GNN> about what  about what <FS corr="I'm">I0m</FS> writing to you? writing to you?
+I don't really know, I think I'm kind of a picky eater when it comes to what I like. Still, if I find myself in a foreign country, I'm open to possibilities.###I don't really know, I think I'm kind of a picky eater when it comes to what I like. Still, if I find myself in a foreign country, I'm open to possibilities.
+Hey sorry, I know i told you that tomorrow i had to start working for you, but i completely forgot that i can't be there until friday, is that a big problem for you? User###Hey sorry, I know <DMCC corr="I">i</DMCC> told you that tomorrow  told you that tomorrow <DMCC corr="I">i</DMCC>  <GVAUX corr="would">had to</GVAUX> start working for you, but  start working for you, but <DMCC corr="I">i</DMCC> completely forgot that  completely forgot that <DMCC corr="I">i</DMCC> can't be there until  can't be there until <DMCC corr="Friday">friday</DMCC>, is that a big problem for you? User , is that a big problem for you? User
+i like to practice###<DMCC corr="I">i</DMCC> like to practice  like to practice
+i have a car for transport in sardinia###<DMCC corr="I">i</DMCC> have a car  have a car <LP corr="for transportation">for transport</LP> in  in <DMCC corr="Sardinia">sardinia</DMCC>
+also, the atelier must have worked so many hours to finish the dress###<DMCC corr="Also">also</DMCC>, the atelier must have worked so many hours to finish the dress, the atelier must have worked so many hours to finish the dress
+Do you think Barcelona is safe for women? I am gonna travel with my best friend and she's worried about pickpockets.###Do you think Barcelona is safe for women? I am gonna travel with my best friend and she's worried about pickpockets.
+Write an email to request a quote from local plumbers for backflow testing. I need it done in the next 2 weeks. Keep it short and casual.###Write an email to request a quote from local plumbers for backflow testing. I need it done in the next 2 weeks. Keep it short and casual.
+what do you think about China? It is a place that offers great job opportunities but how would you rate it socially and politically?###<DMCC corr="What">what</DMCC> do you think about China? It is a place that offers great job opportunities but how would you rate it socially and politically? do you think about China? It is a place that offers great job opportunities but how would you rate it socially and politically?
+i'm going to take the firt one###<DMCC corr="I">i</DMCC>'m going to take the 'm going to take the <FS corr="first">firt</FS> one  one
+Absolutely, we have a delicious dish of lamb. What vegetables would you like with that?###Absolutely, we have a delicious dish of lamb. What vegetables would you like with that?
+You're so great! Thank you for everything!ù###You're so great! Thank you for everything!<FS corr="\0">ù</FS>
+20 minutes ago more or less###20 minutes ago more or less
+Returning to Seoul, which is the cheapest period to go there?###Returning to Seoul, which is the cheapest period to go there?
+Sometimes I use the pomodoro technique and if I can I try to have fun to learn things###Sometimes I use the pomodoro technique and if I can I try to <LP corr="have fun while learning">have fun to learn</LP> things  things
+And what do you think about the line up of Ferrari of the next year?###And what do you think about <GA corr="\0">the</GA><WO corr="next year's Ferrari line-up"> <FS corr="line-up">line up</FS> of <GNC corr="next year's Ferrari">Ferrari of the next year</GNC></WO>? ?
+That's helpful, thanks###That's helpful, thanks
+White thank you###White thank you
 
 Annotate the following target sentence, without providing any explanation:
 
-Hello! I'm going do to an excercice. You are an encouraging tutor who helps students improve their English by engaging in role play activities. Let's engage in a roleplay activity where I, the student play the role of a client that would reserve a table and you will be  restaurant staff. Ask me question about reservation time, the number of people, the preferred menu###
+I'm studing in Macerata University, the name of  course is "scienze della formazione primaria".   What do you do in life?###

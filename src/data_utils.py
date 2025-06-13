@@ -38,9 +38,9 @@ class CausalLMDataset:
         self.dev = df_dev.reset_index(drop=True)
         self.test = df_test.reset_index(drop=True)
         if self.coarse:
-            self.train['text_an'] = self.train['text_an'].apply(lambda x: self.coarsen_tags(x))
-            self.dev['text_an'] = self.dev['text_an'].apply(lambda x: self.coarsen_tags(x))
-            self.test['text_an'] = self.test['text_an'].apply(lambda x: self.coarsen_tags(x))
+            self.train['text_annotated'] = self.train['text_annotated'].apply(lambda x: self.coarsen_tags(x))
+            self.dev['text_annotated'] = self.dev['text_annotated'].apply(lambda x: self.coarsen_tags(x))
+            self.test['text_annotated'] = self.test['text_annotated'].apply(lambda x: self.coarsen_tags(x))
         self.train_samples = self.make_samples('train')
         self.dev_samples = self.make_samples('dev')
         self.test_samples = self.make_samples('test')
@@ -53,7 +53,7 @@ class CausalLMDataset:
             self.test_samples = self.test_samples[:eval_steps]
 
     def clean(self):
-        self.data['text_og'] = self.data['text_og'].apply(lambda x: x.replace(r'\0', ''))
+        self.data['text_user'] = self.data['text_user'].apply(lambda x: x.replace(r'\0', ''))
 
     def coarsen_tags(self, input: str):
         tags = set([el[0] for el in extract_tags(input)])
@@ -63,10 +63,11 @@ class CausalLMDataset:
 
     def make_samples(self, split):
         split_data = getattr(self, split)
-        text_og_list = split_data['text_og']
-        text_an_list = split_data['text_an']
-        text_og_list_examples = self.train['text_og']
-        text_an_list_examples = self.train['text_an']
+        text_og_list = split_data['text_user']
+        text_an_list = split_data['text_annotated']
+        text_og_list_examples = self.train['text_user']
+        text_an_list_examples = self.train['text_annotated']
+        text_an_list_examples_flag = any(text_an_list_examples.apply(lambda x: 'None' in x))
         chat_list = []
         for i in range(len(text_og_list)):
             sentence = text_og_list.iloc[i]
@@ -87,6 +88,8 @@ class CausalLMDataset:
             examples = examples_pos + examples_neg
             shuffle(examples)
             examples = '\n'.join(examples)
+            assert not 'None' in examples
+            assert not 'None' in expected_output
             if examples:
                 examples = f'\n{self.examples_preamble}\n\n{examples}\n'
             if self.use_prompt_tags:
@@ -132,44 +135,64 @@ def make_tags_prompt(tags_csv_path: str):
         out_prompt += f'{t}: {d}\n'
     return out_prompt
 
-def get_original_text(element):
+def get_user_input(element):
     """Extract the raw text of a turn exactly as it appears in the XML file, including all tags"""
     # Get the element's inner text content including children tags
     content = ''.join([el for el in element.itertext()]).strip()
     return content
 
-def subel_to_string(subel, just_value = False):
+def subel_to_string(subel, just_value=False) -> str:
+    # 1) For <turn> elements, just return their .text
     if subel.tag == 'turn':
-        content = subel.text
-        return content if content is not None else ''
-    k, v = list(subel.attrib.items())[0]
-    if not just_value:
-        content = f'<{subel.tag} {k}=\"{v}\">{subel.text}</{subel.tag}>'
-        return content
-    else:
-        return v
+        return subel.text or ''
+    
+    # 2) Fetch the one-and-only corr attribute
+    attrib_items = list(subel.attrib.items())
+    if not attrib_items:
+        return ''   # no corr, nothing to do
+    key, corr_val = attrib_items[0]
+    if just_value:
+        return corr_val
+    
+    # 3) Serialize this element to XML and re‑run through extract_tags
+    #    to get precisely the same tag/content logic you already tested.
+    fragment = ET.tostring(subel, encoding='unicode')
+    #    extract_tags returns [(TAG_NAME, content_str)]
+    tag_name, content = extract_tags(fragment)[0]
+    
+    # 4) Re‑substitute any real null bytes
+    if '\x00' in content:
+        content = re.sub('\x00', r'\\0', content)
+    
+    # 5) Re‑build the snippet exactly as you'd like
+    return f'<{subel.tag} {key}="{corr_val}">{content}</{subel.tag}>'
 
-def get_text(element, just_value = False):
+def get_text(element, just_value=False):
     content_list = []
     for subel in element.iter():
         subel_string = subel_to_string(subel, just_value=just_value)
         if subel.tail:
-            tail = subel.tail
-            subel_string += f'{tail}'
-            subel_string = subel_string.strip()
-        if subel_string:
-            content_list.append(subel_string)
-    content = ' '.join(content_list)
-    return content
+            subel_string += subel.tail
+        if subel_string.strip():
+            content_list.append(subel_string.strip())
+    out = " ".join(content_list)
+    return out
 
-def get_inner_xml(element):
-    """Preserve tags and their attributes inside an element."""
-    print(element.attrib)
-    out = []
-    for e in element:
-        out.append(ET.tostring(e, encoding="unicode"))
-    out_string = ''.join(out)
-    return out_string
+def get_inner_xml(element: ET.Element) -> str:
+    """
+    Return the exact XML inside `element` (everything between
+    <element …> and </element>), preserving all tags and text.
+    """
+    parts = []
+    # 1) the text node before the first child
+    if element.text:
+        parts.append(element.text)
+    # 2) each child as XML, plus its .tail
+    for child in element:
+        parts.append(ET.tostring(child, encoding='unicode'))
+        if child.tail:
+            parts.append(child.tail)
+    return ''.join(parts)
 
 def convert_files(walk_path = './data'):
     df = pd.DataFrame()
@@ -188,21 +211,25 @@ def convert_files(walk_path = './data'):
                 for turn in elem.findall(".//turn"):
                     speaker = turn.attrib.get("who", "student")
                     turn_type = turn.attrib.get("type", "")
-                    
-                    text_og = get_original_text(turn)
-                    text_an = get_text(turn, just_value = False)
-                    text_ok = get_text(turn, just_value = True)
-                    
+                    text_user = get_user_input(turn)
+                    # turn looks like this in the dataset:
+                    # <turn type="student">Thank you so much. But I also have to say that I <LP corr="have been mocked a lot"><GVT corr="have received">received</GVT> a lot of mocking</LP> because of this passion of mine</turn>
+                    # here it goes as an Element
+                    # `text_annotated` simply needs to be what is shown inside the turn, e.g.
+                    # Thank you so much. But I also have to say that I <LP corr="have been mocked a lot"><GVT corr="have received">received</GVT> a lot of mocking</LP> because of this passion of mine
+                    text_annotated = get_inner_xml(turn).strip()
+                    text_correct = get_text(turn, just_value = True)
+                    assert 'None' not in text_annotated
                     turns.append({
                         "speaker": speaker,
                         "turn_type": turn_type,
-                        "text_an": text_an,
-                        "text_og": text_og,
-                        "text_ok": text_ok,
+                        "text_annotated": text_annotated,
+                        "text_user": text_user,
+                        "text_correct": text_correct,
                     })
 
                 turns_df = pd.DataFrame(turns)
-                turns_df['text_an'] = turns_df['text_an'].apply(lambda x: x if x else np.nan)
+                turns_df['text_annotated'] = turns_df['text_annotated'].apply(lambda x: x if x else np.nan)
                 turns_df = turns_df[turns_df['speaker'] == 'student']
                 df = pd.concat([df, turns_df])
     return df.reset_index()
@@ -262,13 +289,31 @@ def extract_tags(input_str: str) -> List[Tuple[str, str]]:
     Returns list of tuples: (tag_name, full_text_content)
     """
     wrapper = f"<root>{input_str}</root>"
-    soup = BeautifulSoup(wrapper, "lxml-xml")
-
+    soup = BeautifulSoup(wrapper, "html.parser")
     results = []
+    
     for tag in soup.find_all(lambda t: t.has_attr("corr")):
-        content = tag.get_text(strip=True)
-        results.append((tag.name, content))
-
+        # 1) get only direct text parts
+        direct_parts = [c for c in tag.contents if isinstance(c, str)]
+        direct_text = "".join(direct_parts).strip()
+        
+        # 2) decide which text to use
+        if tag.name.upper() == "GNC":
+            # for GNC, always take the full_text (nested + direct)
+            content = tag.get_text().strip()
+        elif direct_text:
+            # for everything else, if there's any direct text, use *only* that
+            content = direct_text
+        else:
+            # otherwise fall back to the full text
+            content = tag.get_text().strip()
+        
+        # 3) replace **any** actual null bytes with the two-character string "\0"
+        if "\x00" in content:
+            content = re.sub("\x00", r"\\0", content)
+        
+        results.append((tag.name.upper(), content))
+    
     return results
 
 def main(args):
