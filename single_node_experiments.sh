@@ -89,7 +89,7 @@ while IFS= read -r combo; do
         load_in_4bit=1
     fi
     
-    cmd="python ./src/hf_train.py --seed ${params[0]} --use_prompt_tags ${params[1]} --n_icl_samples ${params[2]} --model_name ${params[3]} --do_train ${params[4]} --coarse ${params[5]} --suffix ${SLURM_ARRAY_JOB_ID}/${SLURM_ARRAY_TASK_ID} --load_in_4bit $load_in_4bit --batch_size_train $batch_size_train --batch_size_eval $batch_size_eval --epochs $epochs --verbose_eval $verbose_eval"
+    cmd="python ./src/train.py --seed ${params[0]} --use_prompt_tags ${params[1]} --n_icl_samples ${params[2]} --model_name ${params[3]} --do_train ${params[4]} --coarse ${params[5]} --suffix ${SLURM_ARRAY_JOB_ID}/${SLURM_ARRAY_TASK_ID} --load_in_4bit $load_in_4bit --batch_size_train $batch_size_train --batch_size_eval $batch_size_eval --epochs $epochs --verbose_eval $verbose_eval"
     commands+=("$cmd")
 done <<< "$combinations"
 

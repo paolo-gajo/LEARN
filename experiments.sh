@@ -3,11 +3,12 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --gres=gpu:1
-#SBATCH --time=12:00:00
+#SBATCH --time=6:00:00
 #SBATCH --output=./.slurm/%A/%a_output.log
 #SBATCH --error=./.slurm/%A/%a_error.log
 #SBATCH --mem=64g
 #SBATCH --array=0-N
+
 slurm_dir="./.slurm/$SLURM_ARRAY_JOB_ID"
 mkdir -p $slurm_dir
 echo "Creating directory: $slurm_dir"
@@ -46,15 +47,16 @@ declare -a do_train=(
     1
 )
 declare -a use_prompt_tags=(
-    0
+    # 0
     1
 )
 declare -a n_icl_samples=(
     0
-    5
+    2
+    4
+    6
+    8
     10
-    15
-    20
 )
 declare -a model_name=(
     meta-llama/Llama-3.1-8B-Instruct
@@ -81,6 +83,8 @@ batch_size_train=4
 batch_size_eval=4
 epochs=3
 verbose_eval=1
+max_length=4096
+
 # Convert combinations to commands
 declare -a commands=()
 while IFS= read -r combo; do
@@ -90,7 +94,7 @@ while IFS= read -r combo; do
         load_in_4bit=1
     fi
     
-    cmd="python ./src/hf_train.py
+    cmd="python ./src/train.py
                 --seed ${params[0]}
                 --use_prompt_tags ${params[1]}
                 --n_icl_samples ${params[2]}
@@ -103,6 +107,7 @@ while IFS= read -r combo; do
                 --batch_size_eval $batch_size_eval
                 --epochs $epochs
                 --verbose_eval $verbose_eval
+                --max_length $max_length
                 "
     commands+=("$cmd")
 done <<< "$combinations"

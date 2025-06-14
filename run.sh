@@ -12,6 +12,6 @@ nvidia-smi
 module load rust gcc arrow
 . .env/bin/activate
 
-# python ./src/hf_train.py
-# python ./src/hf_train.py --model_name meta-llama/Llama-3.3-70B-Instruct --load_in_4bit 1
-python ./src/hf_train.py --train_steps 5 --eval_steps 5 --epochs 1
+# python ./src/train.py
+# python ./src/train.py --model_name meta-llama/Llama-3.3-70B-Instruct --load_in_4bit 1
+python ./src/train.py --train_steps 5 --eval_steps 5 --epochs 1

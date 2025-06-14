@@ -1,5 +1,0 @@
-python ./src/hf_train.py --seed 0 --use_prompt_tags 0 --n_icl_samples 5 --model_name meta-llama/Llama-3.3-70B-Instruct --load_in_4bit 1 --batch_size_train 4 --batch_size_eval 4 --train_steps 5 --eval_steps 5 --epochs 1 --do_train 1
-python ./src/hf_train.py --seed 1 --use_prompt_tags 0 --n_icl_samples 5 --model_name meta-llama/Llama-3.3-70B-Instruct --load_in_4bit 1 --batch_size_train 4 --batch_size_eval 4 --train_steps 5 --eval_steps 5 --epochs 1 --do_train 1
-python ./src/hf_train.py --seed 2 --use_prompt_tags 0 --n_icl_samples 5 --model_name meta-llama/Llama-3.3-70B-Instruct --load_in_4bit 1 --batch_size_train 4 --batch_size_eval 4 --train_steps 5 --eval_steps 5 --epochs 1 --do_train 1
-python ./src/hf_train.py --seed 3 --use_prompt_tags 0 --n_icl_samples 5 --model_name meta-llama/Llama-3.3-70B-Instruct --load_in_4bit 1 --batch_size_train 4 --batch_size_eval 4 --train_steps 5 --eval_steps 5 --epochs 1 --do_train 1
-python ./src/hf_train.py --seed 4 --use_prompt_tags 0 --n_icl_samples 5 --model_name meta-llama/Llama-3.3-70B-Instruct --load_in_4bit 1 --batch_size_train 4 --batch_size_eval 4 --train_steps 5 --eval_steps 5 --epochs 1 --do_train 1
