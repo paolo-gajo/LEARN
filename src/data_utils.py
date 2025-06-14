@@ -21,6 +21,7 @@ class CausalLMDataset:
                 ):
         self.data = data
         self.tokenizer = tokenizer
+        self.config = config
         self.prompt_layout = config['prompt_layout']
         self.prompt_tags = config['prompt_tags']
         self.use_prompt_tags = config['use_prompt_tags']
@@ -30,6 +31,7 @@ class CausalLMDataset:
         self.sys_prompt = 'You are an AI specialized in the task of annotating grammatical errors.'
         self.prompt_tags_preamble = 'The following are the tags you should use for annotation:'
         self.examples_preamble = 'Below are reference examples:'
+        self.max_len = 0
         if clean:
             self.clean()
         df_train, df_dev = train_test_split(self.data, test_size=0.2, random_state=config['seed'])
@@ -68,6 +70,7 @@ class CausalLMDataset:
         text_og_list_examples = self.train['text_user']
         text_an_list_examples = self.train['text_annotated']
         chat_list = []
+        len_list = []
         for i in range(len(text_og_list)):
             sentence = text_og_list.iloc[i]
             expected_output = text_an_list.iloc[i]
@@ -87,8 +90,6 @@ class CausalLMDataset:
             examples = examples_pos + examples_neg
             shuffle(examples)
             examples = '\n'.join(examples)
-            assert not 'None' in examples
-            assert not 'None' in expected_output
             if examples:
                 examples = f'\n{self.examples_preamble}\n\n{examples}\n'
             if self.use_prompt_tags:
@@ -106,6 +107,9 @@ class CausalLMDataset:
                 {"role": "system", "content": self.sys_prompt},
                 {"role": "user", "content": prompt},
             ]
+            prompt_length_tok = self.get_prompt_len(chat_prompt)
+            len_list.append(prompt_length_tok)
+            assert prompt_length_tok < self.config['max_length'], f"prompt_length_tok {prompt_length_tok} >= {self.config['max_length']}"
             if split == 'train':
                 # For training: include the assistant response
                 chat = chat_prompt + [{"role": "assistant", "content": expected_output}]
@@ -123,8 +127,16 @@ class CausalLMDataset:
                     'completion': expected_output,
                     'prompt_length': len(self.tokenizer.encode(chat_prompt_formatted))
                 })
+        max_len_list = max(len_list)
+        if max_len_list > self.max_len:
+            self.max_len = max_len_list
         return pd.DataFrame(chat_list)  
     
+    def get_prompt_len(self, input):
+        return self.tokenizer(self.tokenizer.apply_chat_template(input,
+                            tokenize=False,
+                            add_generation_prompt=False),
+                            return_tensors = 'pt')['input_ids'].shape[-1]
 def make_tags_prompt(tags_csv_path: str):
     df = pd.read_csv(tags_csv_path, sep='\t')
     tags = df['Tag'].tolist()

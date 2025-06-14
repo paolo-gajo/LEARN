@@ -3,5 +3,6 @@
     "prompt_layout_path": "./misc/prompt_layout.txt",
     "prompt_tags_path": "./misc/prompt_tags.txt",
     "verbose_output_path": "./pred_outputs",
-    "suffix": ""
+    "suffix": "",
+    "max_length": 4096
 }

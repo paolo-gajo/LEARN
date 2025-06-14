@@ -6,5 +6,6 @@
     "suffix": "",
     "train_steps": 5,
     "eval_steps": 5,
-    "epochs": 1
+    "epochs": 1,
+    "max_length": 4096
 }

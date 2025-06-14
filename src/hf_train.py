@@ -30,8 +30,8 @@ def main(args):
                             tokenizer,
                             config,
                             )
+    print(f'Prompt max length: {dataset.max_len}')
     dataset_train = Dataset.from_pandas(dataset.train_samples)
-
     if config['load_in_4bit']:
         quantization_config = BitsAndBytesConfig(
             load_in_4bit=True,
@@ -80,6 +80,7 @@ def main(args):
             # compute_metrics=evaluator.compute_metrics,
             peft_config=lora_config,
             args=SFTConfig(
+                max_length=config['max_length'],
                 dataset_num_proc=1,
                 packing=False,
                 per_device_train_batch_size=config['batch_size_train'],
@@ -111,7 +112,6 @@ def main(args):
     # Create custom evaluator that has access to the expected outputs
     evaluator_dev = Evaluator(tokenizer, model, config)
 
-    
     max_val = -np.inf
     best_epoch = 0
     results_dev_list = []
@@ -186,7 +186,7 @@ if __name__ == "__main__":
     parser.add_argument("--batch_size_train", type=int, help="Batch size for training", default=4)
     parser.add_argument("--batch_size_eval", type=int, help="Batch size for evaluation", default=4)
     parser.add_argument("--grad_acc_steps", type=int, help="Gradient accumulation steps", default=1)
-    parser.add_argument("--max_seq_length", type=int, default=2048, help="Maximum sequence length")
+    parser.add_argument("--max_length", type=int, help="Maximum sequence length", default=4096)
     parser.add_argument("--target_modules", type=str, help="List of LoRA modules to use (as dash-separated string).", default='q-k-v')
     parser.add_argument("--load_in_4bit", type=int, help="Use 4-bit quantization", default=0)
     parser.add_argument("--load_in_8bit", type=int, help="Use 8-bit quantization", default=0)
