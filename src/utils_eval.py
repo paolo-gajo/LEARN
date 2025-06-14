@@ -18,7 +18,7 @@ class Evaluator:
         if self.model is not None:
             self.verbose_output_path = os.path.join(config['verbose_output_path'],
                                                     config['model_name'].replace('/', '-'),
-                                                    get_time(),)
+                                                    config['suffix'],)
 
     def evaluate(self,
                  df,

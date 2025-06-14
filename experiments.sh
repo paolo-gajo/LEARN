@@ -3,7 +3,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --gres=gpu:1
-#SBATCH --time=6:00:00
+#SBATCH --time=3:00:00
 #SBATCH --output=./.slurm/%A/%a_output.log
 #SBATCH --error=./.slurm/%A/%a_error.log
 #SBATCH --mem=64g
@@ -47,7 +47,7 @@ declare -a do_train=(
     1
 )
 declare -a use_prompt_tags=(
-    # 0
+    0
     1
 )
 declare -a n_icl_samples=(
@@ -64,8 +64,8 @@ declare -a model_name=(
     # mistralai/Ministral-8B-Instruct-2410
 )
 declare -a coarse=(
-    0   
-    # 1
+    # 0   
+    1
 )
 # Generate all combinations
 array_names=(
