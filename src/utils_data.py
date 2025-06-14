@@ -90,17 +90,20 @@ class CausalLMDataset:
         for i in range(len(text_list_raw)):
             sentence = text_list_raw.iloc[i]
             expected_output = text_list_ann.iloc[i]
-            examples = self.rng_icl_examples(split, i)
-            if examples:
-                examples = f'\n{self.examples_preamble}\n\n{examples}\n'
+            if self.config['n_icl_samples']:
+                examples = self.rng_icl_examples(split, i)
+                examples = f'\n\n{self.examples_preamble}\n\n{examples}\n\n'
+            else:
+                examples = ''
             if self.use_prompt_tags:
-                tags_prompt = f'\n{self.prompt_tags_preamble}\n\n{self.prompt_tags}'
+                tags_prompt = f'\n\n{self.prompt_tags_preamble}\n\n{self.prompt_tags}\n\n'
             else:
                 tags_prompt = ''
             prompt = self.prompt_layout.format(tags_prompt=tags_prompt,
                                                examples_prompt=examples,
                                                sentence=sentence,
                                                eos_token=self.tokenizer.eos_token)
+            prompt = re.sub(r'\n{3,}', '\n\n', prompt)
             if i==0:
                 with open(f'./scratch/prompt_sample_{split}.txt', 'w') as f: f.write(prompt)
             # Create the prompt part (same for train and eval)

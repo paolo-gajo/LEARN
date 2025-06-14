@@ -17,7 +17,6 @@ def main(args):
     print(config)
     results_dir = os.path.join("./results", f"{config['model_name'].split('/')[-1]}", config['suffix'])
     print(f'Will save results to: {results_dir}')
-    os.makedirs(results_dir, exist_ok=True)
 
     set_seeds(config['seed'])
     df = convert_files(config['data_path'],
@@ -117,6 +116,7 @@ def main(args):
     best_epoch = 0
     results_dev_list = []
     
+    os.makedirs(results_dir, exist_ok=True)
     if args.do_train:
         model_dir = os.path.join("./models/", config['model_name'].split('/')[-1], config['suffix'])
         print(f'Training, will save models to: {model_dir}')
