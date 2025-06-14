@@ -69,7 +69,8 @@ class Evaluator:
                     print('output', output, '-->', pred_list)
                     metrics_sample = self.calculate_metrics([true_list], [pred_list])
                     metrics_current = self.calculate_metrics(trues, preds)
-                    pbar.set_description(f"Overall/Last F1: ({round(metrics_current['macro_f1'], 2)}, {round(metrics_sample['macro_f1'], 2)})")
+                    verbose_metric = 'micro_f1'
+                    pbar.set_description(f"overall/last {verbose_metric}: ({round(metrics_current[verbose_metric], 2)}, {round(metrics_sample[verbose_metric], 2)})")
 
                     output_texts = (
                         '\n' + f'text: {text}' +
@@ -113,7 +114,7 @@ class Evaluator:
                 num_return_sequences=1,
                 eos_token_id=self.tokenizer.eos_token_id,
                 pad_token_id=self.tokenizer.eos_token_id,
-                max_new_tokens=100
+                max_new_tokens=1000
             )
 
         # Decode each output
