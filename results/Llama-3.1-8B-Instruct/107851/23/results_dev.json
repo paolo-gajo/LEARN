@@ -1,129 +1,54 @@
 [
     {
-        "micro_precision": 0.4050632911392405,
-        "micro_recall": 0.3622641509433962,
-        "micro_f1": 0.3824701195219123,
-        "macro_precision": 0.07132704018985345,
-        "macro_recall": 0.09043969589635224,
-        "macro_f1": 0.0731175655440165,
+        "micro_precision": 0.3446601941747573,
+        "micro_recall": 0.3256880733944954,
+        "micro_f1": 0.3349056603773585,
+        "macro_precision": 0.0704045683313976,
+        "macro_recall": 0.06988101966581163,
+        "macro_f1": 0.05893247570657234,
         "per_tag_metrics": {
             "DMCC": {
-                "precision": 0.6981132075471698,
-                "recall": 0.8131868131868132,
-                "f1": 0.751269035532995
-            },
-            "GPR": {
-                "precision": 0.25,
-                "recall": 1.0,
-                "f1": 0.4
+                "precision": 0.5952380952380952,
+                "recall": 0.7142857142857143,
+                "f1": 0.6493506493506493
             },
             "FS": {
-                "precision": 0.4166666666666667,
-                "recall": 0.37037037037037035,
-                "f1": 0.39215686274509803
-            },
-            "QM": {
-                "precision": 0.3333333333333333,
-                "recall": 0.2222222222222222,
-                "f1": 0.26666666666666666
-            },
-            "GA": {
-                "precision": 0.23529411764705882,
-                "recall": 0.23529411764705882,
-                "f1": 0.23529411764705882
-            },
-            "WM": {
-                "precision": 0.25,
-                "recall": 0.14285714285714285,
-                "f1": 0.18181818181818182
-            },
-            "GVAUX": {
-                "precision": 0.2,
-                "recall": 0.16666666666666666,
-                "f1": 0.1818181818181818
+                "precision": 0.56,
+                "recall": 0.6363636363636364,
+                "f1": 0.5957446808510639
             },
             "XVCO": {
-                "precision": 0.09090909090909091,
-                "recall": 0.25,
-                "f1": 0.13333333333333333
+                "precision": 0.4,
+                "recall": 1.0,
+                "f1": 0.5714285714285715
             },
-            "GPP": {
-                "precision": 0.125,
-                "recall": 0.125,
-                "f1": 0.125
+            "QM": {
+                "precision": 1.0,
+                "recall": 0.14285714285714285,
+                "f1": 0.25
             },
             "LSPR": {
+                "precision": 0.125,
+                "recall": 0.14285714285714285,
+                "f1": 0.13333333333333333
+            },
+            "GNN": {
                 "precision": 0.1111111111111111,
                 "recall": 0.1111111111111111,
                 "f1": 0.1111111111111111
             },
-            "GWC": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "GVN": {
-                "precision": 0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "GDI": {
-                "precision": 0.0,
-                "recall": 0,
-                "f1": 0
-            },
-            "FM": {
-                "precision": 0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "GVM": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "CSINTRA": {
-                "precision": 0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "LSADV": {
-                "precision": 0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "GADJCS": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "LSV": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "GVT": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "WO": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "LP": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
+            "GA": {
+                "precision": 0.09523809523809523,
+                "recall": 0.11764705882352941,
+                "f1": 0.10526315789473684
             },
             "GPI": {
-                "precision": 0.0,
-                "recall": 0,
+                "precision": 0,
+                "recall": 0.0,
                 "f1": 0
             },
-            "WR": {
-                "precision": 0.0,
+            "GDT": {
+                "precision": 0,
                 "recall": 0.0,
                 "f1": 0
             },
@@ -137,9 +62,69 @@
                 "recall": 0.0,
                 "f1": 0
             },
+            "QR": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "CSINTRA": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "WR": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GNC": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "Z": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GPR": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
             "GDD": {
                 "precision": 0,
                 "recall": 0.0,
+                "f1": 0
+            },
+            "GDI": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GWC": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "WO": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GADVO": {
+                "precision": 0.0,
+                "recall": 0,
+                "f1": 0
+            },
+            "LSADV": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "XPRCO": {
+                "precision": 0.0,
+                "recall": 0,
                 "f1": 0
             },
             "GVNF": {
@@ -147,23 +132,33 @@
                 "recall": 0.0,
                 "f1": 0
             },
-            "GADVO": {
-                "precision": 0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "GDO": {
-                "precision": 0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "XNUC": {
-                "precision": 0.0,
-                "recall": 0,
-                "f1": 0
-            },
             "DMCA": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "WM": {
                 "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GADJCS": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LSADJ": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LP": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GVT": {
+                "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0
             },
@@ -177,23 +172,43 @@
                 "recall": 0.0,
                 "f1": 0
             },
-            "GNC": {
+            "GVN": {
                 "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "XVPR": {
+                "precision": 0,
                 "recall": 0.0,
                 "f1": 0
             },
             "XNCO": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "GNN": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "Z": {
                 "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GPU": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GVAUX": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GPP": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GDO": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LSV": {
+                "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0
             }
@@ -201,106 +216,136 @@
         "epoch": 0
     },
     {
-        "micro_precision": 0.4015151515151515,
-        "micro_recall": 0.4,
-        "micro_f1": 0.4007561436672968,
-        "macro_precision": 0.13430781784514956,
-        "macro_recall": 0.10801071553465535,
-        "macro_f1": 0.10877543947390358,
+        "micro_precision": 0.3333333333333333,
+        "micro_recall": 0.3669724770642202,
+        "micro_f1": 0.3493449781659389,
+        "macro_precision": 0.0739459484177794,
+        "macro_recall": 0.10225903033389666,
+        "macro_f1": 0.08277921170812853,
         "per_tag_metrics": {
             "DMCC": {
-                "precision": 0.7684210526315789,
-                "recall": 0.8021978021978022,
-                "f1": 0.7849462365591398
+                "precision": 0.7464788732394366,
+                "recall": 0.7571428571428571,
+                "f1": 0.75177304964539
             },
-            "DMCA": {
+            "XVCO": {
                 "precision": 0.5,
-                "recall": 0.5,
-                "f1": 0.5
-            },
-            "GVAUX": {
-                "precision": 0.3076923076923077,
-                "recall": 0.6666666666666666,
-                "f1": 0.42105263157894735
-            },
-            "FS": {
-                "precision": 0.5,
-                "recall": 0.3333333333333333,
-                "f1": 0.4
+                "recall": 1.0,
+                "f1": 0.6666666666666666
             },
             "GA": {
-                "precision": 0.3157894736842105,
-                "recall": 0.35294117647058826,
-                "f1": 0.33333333333333337
-            },
-            "QM": {
-                "precision": 0.6666666666666666,
-                "recall": 0.2222222222222222,
-                "f1": 0.3333333333333333
-            },
-            "LSPR": {
-                "precision": 0.3,
-                "recall": 0.3333333333333333,
-                "f1": 0.3157894736842105
-            },
-            "CSINTRA": {
                 "precision": 0.3333333333333333,
-                "recall": 0.25,
-                "f1": 0.28571428571428575
+                "recall": 0.5294117647058824,
+                "f1": 0.409090909090909
             },
-            "LSV": {
-                "precision": 0.3333333333333333,
-                "recall": 0.25,
-                "f1": 0.28571428571428575
+            "FS": {
+                "precision": 0.4,
+                "recall": 0.36363636363636365,
+                "f1": 0.380952380952381
             },
             "GPP": {
                 "precision": 0.25,
-                "recall": 0.25,
-                "f1": 0.25
+                "recall": 0.5,
+                "f1": 0.3333333333333333
             },
-            "WM": {
-                "precision": 1.0,
-                "recall": 0.14285714285714285,
-                "f1": 0.25
+            "CSINTRA": {
+                "precision": 0.25,
+                "recall": 0.3333333333333333,
+                "f1": 0.28571428571428575
             },
-            "XVCO": {
-                "precision": 0.2,
-                "recall": 0.25,
-                "f1": 0.22222222222222224
+            "LSPR": {
+                "precision": 0.21428571428571427,
+                "recall": 0.42857142857142855,
+                "f1": 0.2857142857142857
             },
             "LWCO": {
-                "precision": 0.2,
-                "recall": 0.2,
-                "f1": 0.20000000000000004
+                "precision": 0.16666666666666666,
+                "recall": 0.3333333333333333,
+                "f1": 0.2222222222222222
             },
-            "GVT": {
-                "precision": 0.1,
-                "recall": 0.09090909090909091,
-                "f1": 0.09523809523809525
+            "QM": {
+                "precision": 0.25,
+                "recall": 0.14285714285714285,
+                "f1": 0.18181818181818182
             },
-            "GWC": {
+            "GNN": {
+                "precision": 0.14285714285714285,
+                "recall": 0.1111111111111111,
+                "f1": 0.125
+            },
+            "GDT": {
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0
             },
-            "XVPR": {
-                "precision": 0.0,
-                "recall": 0,
-                "f1": 0
-            },
-            "GVN": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "FM": {
+            "GPI": {
                 "precision": 0,
                 "recall": 0.0,
                 "f1": 0
             },
-            "GVM": {
+            "LSN": {
                 "precision": 0.0,
                 "recall": 0.0,
+                "f1": 0
+            },
+            "CSINTER": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "QR": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "WR": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GNC": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "Z": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GPR": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GDD": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "XNUC": {
+                "precision": 0.0,
+                "recall": 0,
+                "f1": 0
+            },
+            "GDI": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GWC": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "WO": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GADVO": {
+                "precision": 0.0,
+                "recall": 0,
                 "f1": 0
             },
             "LSADV": {
@@ -308,7 +353,72 @@
                 "recall": 0.0,
                 "f1": 0
             },
+            "XPRCO": {
+                "precision": 0.0,
+                "recall": 0,
+                "f1": 0
+            },
+            "GVNF": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GVM": {
+                "precision": 0.0,
+                "recall": 0,
+                "f1": 0
+            },
+            "DMCA": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "WM": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
             "GADJCS": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LSADJ": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LP": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GVT": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "QC": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GVN": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "XVPR": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "XNCO": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GPU": {
                 "precision": 0,
                 "recall": 0.0,
                 "f1": 0
@@ -318,22 +428,103 @@
                 "recall": 0,
                 "f1": 0
             },
-            "QR": {
-                "precision": 0.0,
-                "recall": 0,
-                "f1": 0
-            },
-            "WO": {
+            "GVAUX": {
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0
             },
-            "LP": {
+            "GDO": {
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0
+            },
+            "LSV": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            }
+        },
+        "epoch": 1
+    },
+    {
+        "micro_precision": 0.345679012345679,
+        "micro_recall": 0.3853211009174312,
+        "micro_f1": 0.3644251626898048,
+        "macro_precision": 0.083713268804593,
+        "macro_recall": 0.1278559639343953,
+        "macro_f1": 0.08959184415324767,
+        "per_tag_metrics": {
+            "DMCC": {
+                "precision": 0.7534246575342466,
+                "recall": 0.7857142857142857,
+                "f1": 0.7692307692307693
+            },
+            "FS": {
+                "precision": 0.45454545454545453,
+                "recall": 0.45454545454545453,
+                "f1": 0.45454545454545453
+            },
+            "XVCO": {
+                "precision": 0.2857142857142857,
+                "recall": 1.0,
+                "f1": 0.4444444444444445
+            },
+            "LSPR": {
+                "precision": 0.375,
+                "recall": 0.42857142857142855,
+                "f1": 0.39999999999999997
+            },
+            "DMCA": {
+                "precision": 0.3333333333333333,
+                "recall": 0.3333333333333333,
+                "f1": 0.3333333333333333
+            },
+            "WM": {
+                "precision": 0.16666666666666666,
+                "recall": 1.0,
+                "f1": 0.2857142857142857
+            },
+            "GA": {
+                "precision": 0.2222222222222222,
+                "recall": 0.35294117647058826,
+                "f1": 0.27272727272727276
+            },
+            "GPP": {
+                "precision": 0.16666666666666666,
+                "recall": 0.5,
+                "f1": 0.25
+            },
+            "QM": {
+                "precision": 0.5,
+                "recall": 0.14285714285714285,
+                "f1": 0.22222222222222224
+            },
+            "LWCO": {
+                "precision": 0.16666666666666666,
+                "recall": 0.3333333333333333,
+                "f1": 0.2222222222222222
+            },
+            "GNN": {
+                "precision": 0.2,
+                "recall": 0.2222222222222222,
+                "f1": 0.2105263157894737
+            },
+            "WR": {
+                "precision": 0.14285714285714285,
+                "recall": 0.2,
+                "f1": 0.16666666666666666
             },
             "GPI": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GDT": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GPD": {
                 "precision": 0.0,
                 "recall": 0,
                 "f1": 0
@@ -343,47 +534,32 @@
                 "recall": 0,
                 "f1": 0
             },
-            "WR": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            },
             "LSN": {
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0
             },
             "CSINTER": {
-                "precision": 0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "GDD": {
-                "precision": 0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "GDT": {
-                "precision": 0.0,
-                "recall": 0,
-                "f1": 0
-            },
-            "GVNF": {
-                "precision": 0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "GADVO": {
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0
             },
-            "XNUC": {
-                "precision": 0.0,
-                "recall": 0,
+            "QR": {
+                "precision": 0,
+                "recall": 0.0,
                 "f1": 0
             },
-            "GDO": {
+            "CSINTRA": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GNC": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "Z": {
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0
@@ -393,155 +569,34 @@
                 "recall": 0.0,
                 "f1": 0
             },
-            "QC": {
+            "GDD": {
                 "precision": 0,
                 "recall": 0.0,
                 "f1": 0
             },
-            "LSADJ": {
+            "GDI": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LCS": {
                 "precision": 0.0,
                 "recall": 0,
                 "f1": 0
-            },
-            "GNC": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "XNCO": {
-                "precision": 0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "GNN": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "Z": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            }
-        },
-        "epoch": 1
-    },
-    {
-        "micro_precision": 0.4583333333333333,
-        "micro_recall": 0.41509433962264153,
-        "micro_f1": 0.43564356435643564,
-        "macro_precision": 0.15282226638100369,
-        "macro_recall": 0.1383319703172644,
-        "macro_f1": 0.135423771441558,
-        "per_tag_metrics": {
-            "GADJCS": {
-                "precision": 1.0,
-                "recall": 1.0,
-                "f1": 1.0
-            },
-            "DMCC": {
-                "precision": 0.8279569892473119,
-                "recall": 0.8461538461538461,
-                "f1": 0.8369565217391305
-            },
-            "DMCA": {
-                "precision": 0.5,
-                "recall": 1.0,
-                "f1": 0.6666666666666666
-            },
-            "WM": {
-                "precision": 1.0,
-                "recall": 0.2857142857142857,
-                "f1": 0.4444444444444445
-            },
-            "FS": {
-                "precision": 0.5294117647058824,
-                "recall": 0.3333333333333333,
-                "f1": 0.409090909090909
-            },
-            "GVAUX": {
-                "precision": 0.3333333333333333,
-                "recall": 0.5,
-                "f1": 0.4
-            },
-            "GPP": {
-                "precision": 0.42857142857142855,
-                "recall": 0.375,
-                "f1": 0.39999999999999997
-            },
-            "XVCO": {
-                "precision": 0.2857142857142857,
-                "recall": 0.5,
-                "f1": 0.36363636363636365
-            },
-            "QM": {
-                "precision": 0.5,
-                "recall": 0.2222222222222222,
-                "f1": 0.30769230769230765
-            },
-            "GA": {
-                "precision": 0.36363636363636365,
-                "recall": 0.23529411764705882,
-                "f1": 0.2857142857142857
-            },
-            "LSPR": {
-                "precision": 0.2222222222222222,
-                "recall": 0.2222222222222222,
-                "f1": 0.2222222222222222
-            },
-            "LSN": {
-                "precision": 0.3333333333333333,
-                "recall": 0.16666666666666666,
-                "f1": 0.2222222222222222
-            },
-            "LWCO": {
-                "precision": 0.2,
-                "recall": 0.2,
-                "f1": 0.20000000000000004
-            },
-            "GNN": {
-                "precision": 0.2,
-                "recall": 0.2,
-                "f1": 0.20000000000000004
             },
             "GWC": {
                 "precision": 0,
                 "recall": 0.0,
                 "f1": 0
             },
-            "XVPR": {
+            "WO": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GADVO": {
                 "precision": 0.0,
                 "recall": 0,
-                "f1": 0
-            },
-            "GVN": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "GDI": {
-                "precision": 0.0,
-                "recall": 0,
-                "f1": 0
-            },
-            "FM": {
-                "precision": 0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "GVM": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "TMI": {
-                "precision": 0.0,
-                "recall": 0,
-                "f1": 0
-            },
-            "CSINTRA": {
-                "precision": 0.0,
-                "recall": 0.0,
                 "f1": 0
             },
             "LSADV": {
@@ -549,12 +604,32 @@
                 "recall": 0.0,
                 "f1": 0
             },
-            "QR": {
+            "XPRCO": {
                 "precision": 0.0,
                 "recall": 0,
                 "f1": 0
             },
-            "LSV": {
+            "GVNF": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GVM": {
+                "precision": 0.0,
+                "recall": 0,
+                "f1": 0
+            },
+            "GADJCS": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LSADJ": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LP": {
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0
@@ -564,92 +639,42 @@
                 "recall": 0.0,
                 "f1": 0
             },
-            "WO": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "LP": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "XADJCO": {
-                "precision": 0.0,
-                "recall": 0,
-                "f1": 0
-            },
-            "WR": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "CSINTER": {
-                "precision": 0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "GDD": {
-                "precision": 0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "GVNF": {
-                "precision": 0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "LCC": {
-                "precision": 0.0,
-                "recall": 0,
-                "f1": 0
-            },
-            "GDT": {
-                "precision": 0.0,
-                "recall": 0,
-                "f1": 0
-            },
-            "GADVO": {
-                "precision": 0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "XNUC": {
-                "precision": 0.0,
-                "recall": 0,
-                "f1": 0
-            },
-            "GDO": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            },
-            "GPR": {
-                "precision": 0.0,
-                "recall": 0.0,
-                "f1": 0
-            },
             "QC": {
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0
             },
-            "LCLS": {
+            "GVN": {
                 "precision": 0.0,
-                "recall": 0,
+                "recall": 0.0,
                 "f1": 0
             },
-            "GNC": {
+            "XVPR": {
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0
             },
             "XNCO": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GPU": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GVAUX": {
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0
             },
-            "Z": {
+            "GDO": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LSV": {
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0
