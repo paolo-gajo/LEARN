@@ -4,10 +4,10 @@ import numpy as np
 import os
 import json
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
-from data_utils import convert_files, CausalLMDataset
-from eval_utils import Evaluator
-from os_utils import setup_config
-from train_utils import set_seeds
+from utils_data import convert_files, CausalLMDataset
+from utils_eval import Evaluator
+from utils_os import setup_config
+from utils_train import set_seeds
 from datasets import Dataset
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 from trl import SFTConfig, SFTTrainer
@@ -186,7 +186,7 @@ if __name__ == "__main__":
     parser.add_argument("--batch_size_train", type=int, help="Batch size for training", default=4)
     parser.add_argument("--batch_size_eval", type=int, help="Batch size for evaluation", default=4)
     parser.add_argument("--grad_acc_steps", type=int, help="Gradient accumulation steps", default=1)
-    parser.add_argument("--max_length", type=int, help="Maximum sequence length", default=4096)
+    parser.add_argument("--max_length", type=int, help="Maximum sequence length", default=2048)
     parser.add_argument("--target_modules", type=str, help="List of LoRA modules to use (as dash-separated string).", default='q-k-v')
     parser.add_argument("--load_in_4bit", type=int, help="Use 4-bit quantization", default=0)
     parser.add_argument("--load_in_8bit", type=int, help="Use 8-bit quantization", default=0)
@@ -195,7 +195,7 @@ if __name__ == "__main__":
     parser.add_argument("--config_path", type=str, help="Path of the config file", default='./misc/default_cfg.json')
     parser.add_argument("--tag_dict_path", type=str, help="Path of the coarse tag dictionary", default='./misc/coarse_tags.json')
     parser.add_argument("--coarse", type=int, help="Whether to use coarse tags", default=0)
-    parser.add_argument("--seed", type=int, help="Seed used for the experiments", default=42)
+    parser.add_argument("--seed", type=int, help="Seed used for the experiments", default=0)
     parser.add_argument("--suffix", type=str, help="Path of the tags text file", default='')
     
     args = parser.parse_args()
