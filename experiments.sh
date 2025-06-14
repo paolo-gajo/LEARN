@@ -84,7 +84,8 @@ batch_size_eval=4
 epochs=3
 verbose_eval=1
 max_length=4096
-
+# speakers="student"
+speakers="student,chatbot"
 # Convert combinations to commands
 declare -a commands=()
 while IFS= read -r combo; do
@@ -108,6 +109,7 @@ while IFS= read -r combo; do
                 --epochs $epochs
                 --verbose_eval $verbose_eval
                 --max_length $max_length
+                --speakers $speakers
                 "
     commands+=("$cmd")
 done <<< "$combinations"

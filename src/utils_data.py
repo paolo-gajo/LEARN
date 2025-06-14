@@ -10,8 +10,6 @@ from sklearn.model_selection import train_test_split
 from typing import List, Tuple
 from bs4 import BeautifulSoup
 
-debug_mode = 1
-
 class CausalLMDataset:
     def __init__(self,
                 data: pd.DataFrame,
@@ -55,7 +53,7 @@ class CausalLMDataset:
             self.test_samples = self.test_samples[:eval_steps]
 
     def clean(self):
-        self.data['text_user'] = self.data['text_user'].apply(lambda x: x.replace(r'\0', ''))
+        self.data['text_raw'] = self.data['text_raw'].apply(lambda x: x.replace(r'\0', ''))
 
     def coarsen_tags(self, input: str):
         tags = set([el[0] for el in extract_tags(input)])
@@ -63,33 +61,36 @@ class CausalLMDataset:
             input = input.replace(tag, self.tag_dict[tag])
         return input
 
+    def rng_icl_examples(self, split, idx):
+        text_og_list_examples = self.train['text_raw']
+        text_an_list_examples = self.train['text_annotated']
+        if split == 'train':
+            examples_an = text_an_list_examples.drop(labels=getattr(self, split).index[idx])
+        else:
+            examples_an = text_an_list_examples
+        mask_pos = examples_an.apply(lambda x: '</' in x)
+        mask_neg = examples_an.apply(lambda x: '</' not in x)
+        examples_an_pos = examples_an[mask_pos].sample(n=self.n_icl_samples)
+        examples_an_neg = examples_an[mask_neg].sample(n=self.n_icl_samples)
+        examples_og_pos = text_og_list_examples[examples_an_pos.index]
+        examples_og_neg = text_og_list_examples[examples_an_neg.index]
+        examples_pos = [f'{og}###{an}' for og, an in zip(examples_og_pos, examples_an_pos)]
+        examples_neg = [f'{og}###{an}' for og, an in zip(examples_og_neg, examples_an_neg)]
+        examples = examples_pos + examples_neg
+        shuffle(examples)
+        examples = '\n'.join(examples)
+        return examples
+    
     def make_samples(self, split):
         split_data = getattr(self, split)
-        text_og_list = split_data['text_user']
-        text_an_list = split_data['text_annotated']
-        text_og_list_examples = self.train['text_user']
-        text_an_list_examples = self.train['text_annotated']
+        text_list_raw = split_data['text_raw']
+        text_list_ann = split_data['text_annotated']
         chat_list = []
         len_list = []
-        for i in range(len(text_og_list)):
-            sentence = text_og_list.iloc[i]
-            expected_output = text_an_list.iloc[i]
-            
-            if split == 'train':
-                examples_an = text_an_list_examples.drop(labels=split_data.index[i])
-            else:
-                examples_an = text_an_list_examples
-            mask_pos = examples_an.apply(lambda x: '</' in x)
-            mask_neg = examples_an.apply(lambda x: '</' not in x)
-            examples_an_pos = examples_an[mask_pos].sample(n=self.n_icl_samples)
-            examples_an_neg = examples_an[mask_neg].sample(n=self.n_icl_samples)
-            examples_og_pos = text_og_list_examples[examples_an_pos.index]
-            examples_og_neg = text_og_list_examples[examples_an_neg.index]
-            examples_pos = [f'{og}###{an}' for og, an in zip(examples_og_pos, examples_an_pos)]
-            examples_neg = [f'{og}###{an}' for og, an in zip(examples_og_neg, examples_an_neg)]
-            examples = examples_pos + examples_neg
-            shuffle(examples)
-            examples = '\n'.join(examples)
+        for i in range(len(text_list_raw)):
+            sentence = text_list_raw.iloc[i]
+            expected_output = text_list_ann.iloc[i]
+            examples = self.rng_icl_examples(split, i)
             if examples:
                 examples = f'\n{self.examples_preamble}\n\n{examples}\n'
             if self.use_prompt_tags:
@@ -137,6 +138,15 @@ class CausalLMDataset:
                             tokenize=False,
                             add_generation_prompt=False),
                             return_tensors = 'pt')['input_ids'].shape[-1]
+
+class SampleMaker:
+    def __init__(self, split, ):
+        self.split = split
+    
+
+
+        
+
 def make_tags_prompt(tags_csv_path: str):
     df = pd.read_csv(tags_csv_path, sep='\t')
     tags = df['Tag'].tolist()
@@ -146,7 +156,7 @@ def make_tags_prompt(tags_csv_path: str):
         out_prompt += f'{t}: {d}\n'
     return out_prompt
 
-def get_user_input(element):
+def get_raw_input(element):
     """Extract the raw text of a turn exactly as it appears in the XML file, including all tags"""
     # Get the element's inner text content including children tags
     content = ''.join([el for el in element.itertext()]).strip()
@@ -209,8 +219,9 @@ def get_inner_xml(element):
         inner_content += child_xml
     return inner_content
 
-def convert_files(walk_path = './data'):
+def convert_files(walk_path = './data', speakers = ['student', 'chatbot']):
     df = pd.DataFrame()
+    i = 0
     for root, dirs, files in os.walk(walk_path):
         for F in files:
             if F.endswith('.era'):
@@ -226,7 +237,7 @@ def convert_files(walk_path = './data'):
                 for turn in elem.findall(".//turn"):
                     speaker = turn.attrib.get("who", "student")
                     turn_type = turn.attrib.get("type", "")
-                    text_user = get_user_input(turn)
+                    text_raw = get_raw_input(turn)
                     # turn looks like this in the dataset:
                     # <turn type="student">Thank you so much. But I also have to say that I <LP corr="have been mocked a lot"><GVT corr="have received">received</GVT> a lot of mocking</LP> because of this passion of mine</turn>
                     # here it goes as an Element
@@ -238,14 +249,17 @@ def convert_files(walk_path = './data'):
                         "speaker": speaker,
                         "turn_type": turn_type,
                         "text_annotated": text_annotated,
-                        "text_user": text_user,
+                        "text_raw": text_raw,
                         "text_correct": text_correct,
                     })
 
                 turns_df = pd.DataFrame(turns)
                 turns_df['text_annotated'] = turns_df['text_annotated'].apply(lambda x: x if x else np.nan)
-                turns_df = turns_df[turns_df['speaker'] == 'student']
+                turns_df['conv_id'] = i
+                speaker_mask = turns_df['speaker'].apply(lambda x: x in speakers)
+                turns_df = turns_df[speaker_mask]
                 df = pd.concat([df, turns_df])
+                i += 1
     return df.reset_index()
 
 def make_dataset(data_path: str, layout_path: str, tags_path: str, tokenizer_name: str, n_icl_samples: int):

@@ -20,7 +20,8 @@ def main(args):
     os.makedirs(results_dir, exist_ok=True)
 
     set_seeds(config['seed'])
-    df = convert_files(config['data_path'])
+    df = convert_files(config['data_path'],
+                       speakers = config['speakers'].split(','))
 
     tokenizer = AutoTokenizer.from_pretrained(config['model_name'],
                                               padding_side='left')
@@ -197,6 +198,7 @@ if __name__ == "__main__":
     parser.add_argument("--coarse", type=int, help="Whether to use coarse tags", default=0)
     parser.add_argument("--seed", type=int, help="Seed used for the experiments", default=0)
     parser.add_argument("--suffix", type=str, help="Path of the tags text file", default='')
+    parser.add_argument("--speakers", type=str, help="Comma-separated list of roles to extract from the XML files", default='student')
     
     args = parser.parse_args()
     main(args)
