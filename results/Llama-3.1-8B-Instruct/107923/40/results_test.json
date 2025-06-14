@@ -1,0 +1,66 @@
+{
+    "micro_precision": 0.41935483870967744,
+    "micro_recall": 0.43333333333333335,
+    "micro_f1": 0.4262295081967213,
+    "macro_precision": 0.17198577761482348,
+    "macro_recall": 0.16998195117317375,
+    "macro_f1": 0.16997476358984417,
+    "per_tag_metrics": {
+        "DIGITALLY-MEDIATED": {
+            "precision": 0.8235294117647058,
+            "recall": 0.8333333333333334,
+            "f1": 0.8284023668639053
+        },
+        "FORM": {
+            "precision": 0.4,
+            "recall": 0.4,
+            "f1": 0.4000000000000001
+        },
+        "GRAMMAR": {
+            "precision": 0.2807017543859649,
+            "recall": 0.27586206896551724,
+            "f1": 0.2782608695652174
+        },
+        "WORD": {
+            "precision": 0.15384615384615385,
+            "recall": 0.13333333333333333,
+            "f1": 0.14285714285714288
+        },
+        "PUNCTUATION": {
+            "precision": 0.14285714285714285,
+            "recall": 0.09090909090909091,
+            "f1": 0.1111111111111111
+        },
+        "LEXIS": {
+            "precision": 0.09090909090909091,
+            "recall": 0.13636363636363635,
+            "f1": 0.10909090909090909
+        },
+        "INFELICITIES": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0
+        },
+        "LEXICO-GRAMMAR": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0
+        },
+        "RIO": {
+            "precision": 0.0,
+            "recall": 0,
+            "f1": 0
+        },
+        "CODE-SWITCHING": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0
+        },
+        "SPEAKING": {
+            "precision": 0.0,
+            "recall": 0,
+            "f1": 0
+        }
+    },
+    "epoch": 1
+}

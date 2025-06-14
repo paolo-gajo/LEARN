@@ -1,0 +1,56 @@
+{
+    "micro_precision": 0.4069400630914827,
+    "micro_recall": 0.4358108108108108,
+    "micro_f1": 0.42088091353996737,
+    "macro_precision": 0.18252364919031583,
+    "macro_recall": 0.1971499640718013,
+    "macro_f1": 0.1851376647625582,
+    "per_tag_metrics": {
+        "DIGITALLY-MEDIATED": {
+            "precision": 0.7063492063492064,
+            "recall": 0.8557692307692307,
+            "f1": 0.7739130434782608
+        },
+        "FORM": {
+            "precision": 0.3,
+            "recall": 0.35294117647058826,
+            "f1": 0.3243243243243243
+        },
+        "GRAMMAR": {
+            "precision": 0.25,
+            "recall": 0.273972602739726,
+            "f1": 0.26143790849673204
+        },
+        "WORD": {
+            "precision": 0.2727272727272727,
+            "recall": 0.125,
+            "f1": 0.17142857142857143
+        },
+        "LEXIS": {
+            "precision": 0.11363636363636363,
+            "recall": 0.16666666666666666,
+            "f1": 0.13513513513513511
+        },
+        "PUNCTUATION": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0
+        },
+        "CODE-SWITCHING": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0
+        },
+        "LEXICO-GRAMMAR": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0
+        },
+        "INFELICITIES": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0
+        }
+    },
+    "epoch": 2
+}
