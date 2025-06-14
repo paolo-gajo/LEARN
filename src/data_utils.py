@@ -67,7 +67,6 @@ class CausalLMDataset:
         text_an_list = split_data['text_annotated']
         text_og_list_examples = self.train['text_user']
         text_an_list_examples = self.train['text_annotated']
-        text_an_list_examples_flag = any(text_an_list_examples.apply(lambda x: 'None' in x))
         chat_list = []
         for i in range(len(text_og_list)):
             sentence = text_og_list.iloc[i]
@@ -101,7 +100,7 @@ class CausalLMDataset:
                                                sentence=sentence,
                                                eos_token=self.tokenizer.eos_token)
             if i==0:
-                with open(f'./misc/prompt_sample_{split}.txt', 'w') as f: f.write(prompt)
+                with open(f'./scratch/prompt_sample_{split}.txt', 'w') as f: f.write(prompt)
             # Create the prompt part (same for train and eval)
             chat_prompt = [
                 {"role": "system", "content": self.sys_prompt},
@@ -178,21 +177,25 @@ def get_text(element, just_value=False):
     out = " ".join(content_list)
     return out
 
-def get_inner_xml(element: ET.Element) -> str:
+def get_inner_xml(element):
     """
-    Return the exact XML inside `element` (everything between
-    <element …> and </element>), preserving all tags and text.
+    Extract the inner XML content from an XML element.
+    
+    Args:
+        element: An xml.etree.ElementTree.Element object
+        
+    Returns:
+        str: The inner XML content as a string
     """
-    parts = []
-    # 1) the text node before the first child
-    if element.text:
-        parts.append(element.text)
-    # 2) each child as XML, plus its .tail
+    # Get the text content directly after the opening tag
+    inner_content = element.text or ""
+    
+    # Add all child elements and their tail text
     for child in element:
-        parts.append(ET.tostring(child, encoding='unicode'))
-        if child.tail:
-            parts.append(child.tail)
-    return ''.join(parts)
+        # Convert child element back to XML string
+        child_xml = ET.tostring(child, encoding='unicode')
+        inner_content += child_xml
+    return inner_content
 
 def convert_files(walk_path = './data'):
     df = pd.DataFrame()
@@ -219,7 +222,6 @@ def convert_files(walk_path = './data'):
                     # Thank you so much. But I also have to say that I <LP corr="have been mocked a lot"><GVT corr="have received">received</GVT> a lot of mocking</LP> because of this passion of mine
                     text_annotated = get_inner_xml(turn).strip()
                     text_correct = get_text(turn, just_value = True)
-                    assert 'None' not in text_annotated
                     turns.append({
                         "speaker": speaker,
                         "turn_type": turn_type,

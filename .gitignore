@@ -7,3 +7,4 @@ trainer_output
 models
 .slurm
 notebooks
+scratch

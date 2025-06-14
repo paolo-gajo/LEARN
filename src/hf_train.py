@@ -21,8 +21,6 @@ def main(args):
 
     set_seeds(config['seed'])
     df = convert_files(config['data_path'])
-    df.to_csv('./misc/convert_files.csv')
-    print(df)
 
     tokenizer = AutoTokenizer.from_pretrained(config['model_name'],
                                               padding_side='left')
@@ -33,7 +31,6 @@ def main(args):
                             config,
                             )
     dataset_train = Dataset.from_pandas(dataset.train_samples)
-    dataset.train_samples.to_csv('./misc/train_samples.csv')
 
     if config['load_in_4bit']:
         quantization_config = BitsAndBytesConfig(
