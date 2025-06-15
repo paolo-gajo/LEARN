@@ -16,28 +16,31 @@ class CausalLMDataset:
                 tokenizer,
                 config: dict,
                 clean: bool=True,
+                debug: bool=False,
                 ):
         self.data = data
         self.tokenizer = tokenizer
         self.config = config
-        self.prompt_layout = config['prompt_layout']
-        self.prompt_tags = config['prompt_tags']
-        self.use_prompt_tags = config['use_prompt_tags']
-        self.n_icl_samples = config['n_icl_samples']
-        self.tag_dict = config['tag_dict']
-        self.coarse = config['coarse']
-        self.sys_prompt = 'You are an AI specialized in the task of annotating grammatical errors.'
-        self.prompt_tags_preamble = 'The following are the tags you should use for annotation:'
-        self.examples_preamble = 'Below are reference examples:'
         self.max_len = 0
+        self.debug = debug
         if clean:
             self.clean()
-        df_train, df_dev = train_test_split(self.data, test_size=0.2, random_state=config['seed'])
-        self.train = df_train.reset_index(drop=True)
-        df_dev, df_test = train_test_split(df_dev, test_size=0.5, random_state=config['seed'])
-        self.dev = df_dev.reset_index(drop=True)
-        self.test = df_test.reset_index(drop=True)
-        if self.coarse:
+        if self.config['samples_type'] == 'random':
+            df_train, df_dev = train_test_split(self.data, test_size=0.2, random_state=config['seed'])
+            self.train = df_train.reset_index(drop=True)
+            df_dev, df_test = train_test_split(df_dev, test_size=0.5, random_state=config['seed'])
+            self.dev = df_dev.reset_index(drop=True)
+            self.test = df_test.reset_index(drop=True)
+        elif self.config['samples_type'] in ['context_raw', 'context_ann']:
+            grouped_data = self.group_conv_id(self.data)
+            df_train, df_dev = train_test_split(grouped_data, test_size=0.2, random_state=config['seed'])
+            self.train = pd.concat(df_train).reset_index(drop=True)
+            df_dev, df_test = train_test_split(df_dev, test_size=0.5, random_state=config['seed'])
+            self.dev = pd.concat(df_dev).reset_index(drop=True)
+            self.test = pd.concat(df_test).reset_index(drop=True)
+            ...
+
+        if self.config['coarse']:
             self.train['text_annotated'] = self.train['text_annotated'].apply(lambda x: self.coarsen_tags(x))
             self.dev['text_annotated'] = self.dev['text_annotated'].apply(lambda x: self.coarsen_tags(x))
             self.test['text_annotated'] = self.test['text_annotated'].apply(lambda x: self.coarsen_tags(x))
@@ -52,16 +55,21 @@ class CausalLMDataset:
             self.dev_samples = self.dev_samples[:eval_steps]
             self.test_samples = self.test_samples[:eval_steps]
 
+    def group_conv_id(self, df):
+        return [df[df['conv_id'] == id] for id in df['conv_id'].unique()]
+
     def clean(self):
         self.data['text_raw'] = self.data['text_raw'].apply(lambda x: x.replace(r'\0', ''))
 
     def coarsen_tags(self, input: str):
         tags = set([el[0] for el in extract_tags(input)])
         for tag in tags:
-            input = input.replace(tag, self.tag_dict[tag])
+            input = input.replace(tag, self.config['tag_dict'][tag])
         return input
 
     def rng_icl_examples(self, split, idx):
+        if not self.config['n_icl_samples']:
+            return ''
         text_og_list_examples = self.train['text_raw']
         text_an_list_examples = self.train['text_annotated']
         if split == 'train':
@@ -70,8 +78,8 @@ class CausalLMDataset:
             examples_an = text_an_list_examples
         mask_pos = examples_an.apply(lambda x: '</' in x)
         mask_neg = examples_an.apply(lambda x: '</' not in x)
-        examples_an_pos = examples_an[mask_pos].sample(n=self.n_icl_samples)
-        examples_an_neg = examples_an[mask_neg].sample(n=self.n_icl_samples)
+        examples_an_pos = examples_an[mask_pos].sample(n=self.config['n_icl_samples'])
+        examples_an_neg = examples_an[mask_neg].sample(n=self.config['n_icl_samples'])
         examples_og_pos = text_og_list_examples[examples_an_pos.index]
         examples_og_neg = text_og_list_examples[examples_an_neg.index]
         examples_pos = [f'{og}###{an}' for og, an in zip(examples_og_pos, examples_an_pos)]
@@ -79,8 +87,27 @@ class CausalLMDataset:
         examples = examples_pos + examples_neg
         shuffle(examples)
         examples = '\n'.join(examples)
+        examples = f"\n\n{self.config['examples_preamble']}\n\n{examples}\n\n"
         return examples
     
+    def context_examples(self, split, idx):
+        split_data = getattr(self, split)
+        sentence_row = split_data.iloc[idx]
+        if sentence_row['turn_type'] != 'student':
+            return None
+        conv_id = sentence_row['conv_id']
+        sentence_row_id = sentence_row['local_id']
+        df = split_data[split_data['conv_id'] == conv_id]
+        df = df.iloc[max(0, sentence_row_id - self.config['k_window']):sentence_row_id]
+        if self.config['samples_type'] == 'context_raw':
+            field = 'text_raw'
+        elif self.config['samples_type'] == 'context_ann':
+            field = 'text_annotated'
+        convo = df.apply(lambda x: f"{x['speaker']}: {x[field]}", axis = 1).tolist()
+        out = '\n'.join(convo)
+        out = f"\n\n{self.config['convo_preamble']}\n\n{out}\n\n"
+        return out
+
     def make_samples(self, split):
         split_data = getattr(self, split)
         text_list_raw = split_data['text_raw']
@@ -90,25 +117,30 @@ class CausalLMDataset:
         for i in range(len(text_list_raw)):
             sentence = text_list_raw.iloc[i]
             expected_output = text_list_ann.iloc[i]
-            if self.config['n_icl_samples']:
+            if self.config['samples_type'] == 'random':
+                if len(self.config['speakers']) > 1:
+                    print(f'`samples_type` is `random`, but `speakers`>1, make sure this is correct!!!')
                 examples = self.rng_icl_examples(split, i)
-                examples = f'\n\n{self.examples_preamble}\n\n{examples}\n\n'
-            else:
-                examples = ''
-            if self.use_prompt_tags:
-                tags_prompt = f'\n\n{self.prompt_tags_preamble}\n\n{self.prompt_tags}\n\n'
+            elif self.config['samples_type'] in ['context_raw', 'context_ann']:
+                assert len(self.config['speakers']) > 1, f"Speakers need to be > 1 with `samples_type` == {self.config['samples_type']}"
+                examples = self.context_examples(split, i)
+                if examples is None:
+                    continue
+                sentence = f'student: {sentence}'
+                expected_output = f'student: {expected_output}'
+                
+            if self.config['use_prompt_tags']:
+                tags_prompt = f"\n\n{self.config['prompt_tags_preamble']}\n\n{self.config['prompt_tags']}\n\n"
             else:
                 tags_prompt = ''
-            prompt = self.prompt_layout.format(tags_prompt=tags_prompt,
+            prompt = self.config['prompt_layout'].format(tags_prompt=tags_prompt,
                                                examples_prompt=examples,
                                                sentence=sentence,
                                                eos_token=self.tokenizer.eos_token)
             prompt = re.sub(r'\n{3,}', '\n\n', prompt)
-            if i==0:
-                with open(f'./scratch/prompt_sample_{split}.txt', 'w') as f: f.write(prompt)
             # Create the prompt part (same for train and eval)
             chat_prompt = [
-                {"role": "system", "content": self.sys_prompt},
+                {"role": "system", "content": self.config['sys_prompt']},
                 {"role": "user", "content": prompt},
             ]
             prompt_length_tok = self.get_prompt_len(chat_prompt)
@@ -117,20 +149,24 @@ class CausalLMDataset:
             if split == 'train':
                 # For training: include the assistant response
                 chat = chat_prompt + [{"role": "assistant", "content": expected_output}]
-                chat_formatted = self.tokenizer.apply_chat_template(chat,
+                chat_prompt_formatted = self.tokenizer.apply_chat_template(chat,
                                                         tokenize=False,
                                                         add_generation_prompt=False)
-                chat_list.append({'text': chat_formatted})
+                last_sample = {'text': chat_prompt_formatted}
+                chat_list.append(last_sample)
             else:
                 # For evaluation: separate prompt and expected output
                 chat_prompt_formatted = self.tokenizer.apply_chat_template(chat_prompt,
                                                             tokenize=False,
                                                             add_generation_prompt=True)
-                chat_list.append({
+                last_sample = {
                     'prompt': chat_prompt_formatted,
                     'completion': expected_output,
                     'prompt_length': len(self.tokenizer.encode(chat_prompt_formatted))
-                })
+                }
+                chat_list.append(last_sample)
+            if self.debug:
+                with open(f'./scratch/prompt_sample_{split}.txt', 'w') as f: f.write(chat_prompt_formatted)
         max_len_list = max(len_list)
         if max_len_list > self.max_len:
             self.max_len = max_len_list
@@ -232,38 +268,42 @@ def convert_files(walk_path = './data', speakers = ['student', 'chatbot']):
                 tree = ET.parse(filename)
                 xml_root = tree.getroot()
 
-                elem = xml_root.find(".//text")
-                meta = elem.attrib
-                meta_df = pd.DataFrame([meta])
+                task_list = xml_root.findall(".//task")
+                for task in task_list:
+                    task_type = task.attrib.get("type", "")
+                    meta = task.attrib
+                    meta_df = pd.DataFrame([meta])
+                    turns = []
+                    for turn in task.findall(".//turn"):
+                        speaker = turn.attrib.get("who", "student")
+                        turn_type = turn.attrib.get("type", "")
+                        text_raw = get_raw_input(turn)
+                        # turn looks like this in the dataset:
+                        # <turn type="student">Thank you so much. But I also have to say that I <LP corr="have been mocked a lot"><GVT corr="have received">received</GVT> a lot of mocking</LP> because of this passion of mine</turn>
+                        # here it goes as an Element
+                        # `text_annotated` simply needs to be what is shown inside the turn, e.g.
+                        # Thank you so much. But I also have to say that I <LP corr="have been mocked a lot"><GVT corr="have received">received</GVT> a lot of mocking</LP> because of this passion of mine
+                        text_annotated = get_inner_xml(turn).strip()
+                        text_correct = get_text(turn, just_value = True)
+                        turns.append({
+                            "speaker": speaker,
+                            "turn_type": turn_type,
+                            "text_annotated": text_annotated,
+                            "text_raw": text_raw,
+                            "text_correct": text_correct,
+                        })
 
-                turns = []
-                for turn in elem.findall(".//turn"):
-                    speaker = turn.attrib.get("who", "student")
-                    turn_type = turn.attrib.get("type", "")
-                    text_raw = get_raw_input(turn)
-                    # turn looks like this in the dataset:
-                    # <turn type="student">Thank you so much. But I also have to say that I <LP corr="have been mocked a lot"><GVT corr="have received">received</GVT> a lot of mocking</LP> because of this passion of mine</turn>
-                    # here it goes as an Element
-                    # `text_annotated` simply needs to be what is shown inside the turn, e.g.
-                    # Thank you so much. But I also have to say that I <LP corr="have been mocked a lot"><GVT corr="have received">received</GVT> a lot of mocking</LP> because of this passion of mine
-                    text_annotated = get_inner_xml(turn).strip()
-                    text_correct = get_text(turn, just_value = True)
-                    turns.append({
-                        "speaker": speaker,
-                        "turn_type": turn_type,
-                        "text_annotated": text_annotated,
-                        "text_raw": text_raw,
-                        "text_correct": text_correct,
-                    })
-
-                turns_df = pd.DataFrame(turns)
-                turns_df['text_annotated'] = turns_df['text_annotated'].apply(lambda x: x if x else np.nan)
-                turns_df['conv_id'] = i
-                speaker_mask = turns_df['speaker'].apply(lambda x: x in speakers)
-                turns_df = turns_df[speaker_mask]
-                df = pd.concat([df, turns_df])
+                    turns_df = pd.DataFrame(turns)
+                    turns_df['text_annotated'] = turns_df['text_annotated'].apply(lambda x: x if x else np.nan)
+                    turns_df['conv_id'] = i
+                    turns_df['task_type'] = task_type
+                    speaker_mask = turns_df['turn_type'].apply(lambda x: x in speakers)
+                    turns_df = turns_df[speaker_mask]
+                    turns_df['local_id'] = range(len(turns_df))
+                    df = pd.concat([df, turns_df])
                 i += 1
-    return df.reset_index()
+    df = df.reset_index()
+    return df
 
 def make_dataset(data_path: str, layout_path: str, tags_path: str, tokenizer_name: str, n_icl_samples: int):
     df = convert_files(data_path)
@@ -282,7 +322,6 @@ def collect_results(dir_path: str):
     df_list = []
     for root, dirs, files in os.walk(dir_path):
         if 'config.json' in files:
-            # print(files)
             config = json.load(open(os.path.join(root, 'config.json')))
             try:
                 results_dev = json.load(open(os.path.join(root, 'results_dev.json')))
@@ -309,7 +348,6 @@ def collect_results(dir_path: str):
             }
             metric_dict = {k: v['f1'] for k, v in results_test['per_tag_metrics'].items()}
             entry.update(metric_dict)
-            # print(entry)
             df_list.append(entry)
     df = pd.DataFrame(df_list)
     return df

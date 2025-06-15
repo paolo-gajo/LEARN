@@ -14,13 +14,13 @@ from trl import SFTConfig, SFTTrainer
 
 def main(args):
     config = setup_config(args, json.load(open(args.config_path, 'r')))
+
     print(config)
     results_dir = os.path.join("./results", f"{config['model_name'].split('/')[-1]}", config['suffix'])
     print(f'Will save results to: {results_dir}')
-
     set_seeds(config['seed'])
     df = convert_files(config['data_path'],
-                       speakers = config['speakers'].split(','))
+                       speakers = config['speakers'])
 
     tokenizer = AutoTokenizer.from_pretrained(config['model_name'],
                                               padding_side='left')
@@ -29,6 +29,7 @@ def main(args):
     dataset = CausalLMDataset(df,
                             tokenizer,
                             config,
+                            debug=True,
                             )
     print(f'Prompt max length: {dataset.max_len}')
     dataset_train = Dataset.from_pandas(dataset.train_samples)
@@ -187,7 +188,7 @@ if __name__ == "__main__":
     parser.add_argument("--batch_size_train", type=int, help="Batch size for training", default=4)
     parser.add_argument("--batch_size_eval", type=int, help="Batch size for evaluation", default=4)
     parser.add_argument("--grad_acc_steps", type=int, help="Gradient accumulation steps", default=1)
-    parser.add_argument("--max_length", type=int, help="Maximum sequence length", default=2048)
+    parser.add_argument("--max_length", type=int, help="Maximum sequence length", default=4096)
     parser.add_argument("--target_modules", type=str, help="List of LoRA modules to use (as dash-separated string).", default='q-k-v')
     parser.add_argument("--load_in_4bit", type=int, help="Use 4-bit quantization", default=0)
     parser.add_argument("--load_in_8bit", type=int, help="Use 8-bit quantization", default=0)
@@ -199,6 +200,7 @@ if __name__ == "__main__":
     parser.add_argument("--seed", type=int, help="Seed used for the experiments", default=0)
     parser.add_argument("--suffix", type=str, help="Path of the tags text file", default='')
     parser.add_argument("--speakers", type=str, help="Comma-separated list of roles to extract from the XML files", default='student')
+    parser.add_argument("--samples_type", type=str, help="Comma-separated list of roles to extract from the XML files", default='random')
     
     args = parser.parse_args()
     main(args)

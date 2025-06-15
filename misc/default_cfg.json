@@ -4,5 +4,10 @@
     "prompt_tags_path": "./misc/prompt_tags.txt",
     "verbose_output_path": "./pred_outputs",
     "suffix": "",
-    "max_length": 4096
+    "max_length": 4096,
+    "sys_prompt": "You are an AI specialized in the task of annotating grammatical errors.",
+    "prompt_tags_preamble": "The following are the tags you should use for annotation:",
+    "examples_preamble": "Below are reference examples:",
+    "convo_preamble": "Below are the chat messages preceding the target sentence:",
+    "k_window": 10
 }

@@ -64,8 +64,8 @@ declare -a model_name=(
     # mistralai/Ministral-8B-Instruct-2410
 )
 declare -a coarse=(
-    # 0   
-    1
+    0   
+    # 1
 )
 # Generate all combinations
 array_names=(
@@ -84,8 +84,13 @@ batch_size_eval=4
 epochs=3
 verbose_eval=1
 max_length=4096
-# speakers="student"
-speakers="student,chatbot"
+
+speakers="student"
+samples_type="random"
+
+# speakers="student,chatbot"
+# samples_type="context_raw"
+
 # Convert combinations to commands
 declare -a commands=()
 while IFS= read -r combo; do
