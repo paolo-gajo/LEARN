@@ -67,8 +67,8 @@ declare -a model_name=(
     # mistralai/Ministral-8B-Instruct-2410
 )
 declare -a coarse=(
-    0   
-    # 1
+    # 0   
+    1
 )
 # Generate all combinations
 array_names=(
@@ -95,7 +95,7 @@ max_length=4096
 turn_types="student,chatbot"
 samples_type="context_raw"
 
-suffix="context_"
+suffix="context_coarse_"
 
 # Convert combinations to commands
 declare -a commands=()
