@@ -1,0 +1,100 @@
+\begin{table}
+\caption{Micro-averaged per-tag results for Llama-3.1-8B-Instruct.}
+\label{results_micro}
+\begin{tabular}{llllllllll}
+\toprule
+ & n_icl & tag & 0 & 2 & 4 & 6 & 8 & 10 & tags \\
+tag &  &  &  &  &  &  &  &  &  \\
+\midrule
+\multirow[t]{2}{*}{CSINTER} & 27 & CSINTER & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.067 tiny $ pm 0.149$ & 0.333 tiny $ pm 0.471$ & 0.200 tiny $ pm 0.447$ & n \\
+ & 0 & CSINTER & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.100 tiny $ pm 0.224$ & 0.000 tiny $ pm 0.000$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{CSINTRA} & 28 & CSINTRA & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.067 tiny $ pm 0.149$ & 0.164 tiny $ pm 0.157$ & 0.044 tiny $ pm 0.099$ & 0.050 tiny $ pm 0.112$ & n \\
+ & 1 & CSINTRA & 0.000 tiny $ pm 0.000$ & 0.067 tiny $ pm 0.149$ & 0.000 tiny $ pm 0.000$ & 0.057 tiny $ pm 0.128$ & 0.000 tiny $ pm 0.000$ & 0.089 tiny $ pm 0.199$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{DMCA} & 29 & DMCA & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.080 tiny $ pm 0.179$ & 0.133 tiny $ pm 0.298$ & 0.067 tiny $ pm 0.149$ & 0.280 tiny $ pm 0.259$ & n \\
+ & 2 & DMCA & 0.000 tiny $ pm 0.000$ & 0.160 tiny $ pm 0.358$ & 0.180 tiny $ pm 0.249$ & 0.000 tiny $ pm 0.000$ & 0.333 tiny $ pm 0.333$ & 0.067 tiny $ pm 0.149$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{DMCC} & 30 & DMCC & 0.809 tiny $ pm 0.033$ & 0.800 tiny $ pm 0.047$ & 0.812 tiny $ pm 0.077$ & 0.811 tiny $ pm 0.024$ & 0.817 tiny $ pm 0.027$ & 0.795 tiny $ pm 0.076$ & n \\
+ & 3 & DMCC & 0.788 tiny $ pm 0.059$ & 0.827 tiny $ pm 0.056$ & 0.815 tiny $ pm 0.039$ & 0.811 tiny $ pm 0.055$ & 0.812 tiny $ pm 0.062$ & 0.803 tiny $ pm 0.047$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{FS} & 31 & FS & 0.412 tiny $ pm 0.145$ & 0.511 tiny $ pm 0.083$ & 0.482 tiny $ pm 0.083$ & 0.511 tiny $ pm 0.118$ & 0.500 tiny $ pm 0.082$ & 0.455 tiny $ pm 0.123$ & n \\
+ & 4 & FS & 0.396 tiny $ pm 0.065$ & 0.453 tiny $ pm 0.120$ & 0.438 tiny $ pm 0.077$ & 0.442 tiny $ pm 0.089$ & 0.503 tiny $ pm 0.045$ & 0.477 tiny $ pm 0.093$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{GA} & 32 & GA & 0.068 tiny $ pm 0.097$ & 0.269 tiny $ pm 0.053$ & 0.252 tiny $ pm 0.123$ & 0.281 tiny $ pm 0.098$ & 0.223 tiny $ pm 0.135$ & 0.306 tiny $ pm 0.124$ & n \\
+ & 5 & GA & 0.104 tiny $ pm 0.076$ & 0.225 tiny $ pm 0.191$ & 0.196 tiny $ pm 0.145$ & 0.189 tiny $ pm 0.136$ & 0.315 tiny $ pm 0.218$ & 0.224 tiny $ pm 0.088$ & y \\
+\cline{1-10}
+GNC & 6 & GNC & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.080 tiny $ pm 0.179$ & 0.050 tiny $ pm 0.112$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{GNN} & 33 & GNN & 0.101 tiny $ pm 0.096$ & 0.101 tiny $ pm 0.095$ & 0.156 tiny $ pm 0.104$ & 0.191 tiny $ pm 0.093$ & 0.187 tiny $ pm 0.171$ & 0.176 tiny $ pm 0.050$ & n \\
+ & 7 & GNN & 0.117 tiny $ pm 0.078$ & 0.088 tiny $ pm 0.050$ & 0.092 tiny $ pm 0.095$ & 0.102 tiny $ pm 0.060$ & 0.144 tiny $ pm 0.047$ & 0.124 tiny $ pm 0.130$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{GPI} & 34 & GPI & 0.000 tiny $ pm 0.000$ & 0.080 tiny $ pm 0.179$ & 0.100 tiny $ pm 0.224$ & 0.000 tiny $ pm 0.000$ & 0.100 tiny $ pm 0.224$ & 0.133 tiny $ pm 0.298$ & n \\
+ & 8 & GPI & 0.080 tiny $ pm 0.179$ & 0.133 tiny $ pm 0.298$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.100 tiny $ pm 0.224$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{GPP} & 35 & GPP & 0.059 tiny $ pm 0.054$ & 0.230 tiny $ pm 0.119$ & 0.102 tiny $ pm 0.144$ & 0.264 tiny $ pm 0.190$ & 0.165 tiny $ pm 0.027$ & 0.199 tiny $ pm 0.072$ & n \\
+ & 9 & GPP & 0.138 tiny $ pm 0.149$ & 0.240 tiny $ pm 0.084$ & 0.104 tiny $ pm 0.091$ & 0.147 tiny $ pm 0.109$ & 0.187 tiny $ pm 0.060$ & 0.159 tiny $ pm 0.101$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{GPR} & 36 & GPR & 0.000 tiny $ pm 0.000$ & 0.147 tiny $ pm 0.202$ & 0.130 tiny $ pm 0.186$ & 0.213 tiny $ pm 0.307$ & 0.124 tiny $ pm 0.170$ & 0.117 tiny $ pm 0.162$ & n \\
+ & 10 & GPR & 0.000 tiny $ pm 0.000$ & 0.180 tiny $ pm 0.249$ & 0.050 tiny $ pm 0.112$ & 0.124 tiny $ pm 0.170$ & 0.137 tiny $ pm 0.192$ & 0.089 tiny $ pm 0.122$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{GVAUX} & 37 & GVAUX & 0.115 tiny $ pm 0.115$ & 0.151 tiny $ pm 0.099$ & 0.219 tiny $ pm 0.133$ & 0.240 tiny $ pm 0.121$ & 0.306 tiny $ pm 0.121$ & 0.379 tiny $ pm 0.123$ & n \\
+ & 11 & GVAUX & 0.000 tiny $ pm 0.000$ & 0.153 tiny $ pm 0.143$ & 0.226 tiny $ pm 0.222$ & 0.109 tiny $ pm 0.114$ & 0.225 tiny $ pm 0.165$ & 0.245 tiny $ pm 0.080$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{GVM} & 38 & GVM & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.080 tiny $ pm 0.179$ & 0.067 tiny $ pm 0.149$ & 0.000 tiny $ pm 0.000$ & n \\
+ & 12 & GVM & 0.100 tiny $ pm 0.224$ & 0.000 tiny $ pm 0.000$ & 0.100 tiny $ pm 0.224$ & 0.100 tiny $ pm 0.224$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{GVN} & 39 & GVN & 0.033 tiny $ pm 0.075$ & 0.219 tiny $ pm 0.312$ & 0.167 tiny $ pm 0.236$ & 0.228 tiny $ pm 0.221$ & 0.212 tiny $ pm 0.329$ & 0.083 tiny $ pm 0.118$ & n \\
+ & 13 & GVN & 0.031 tiny $ pm 0.069$ & 0.000 tiny $ pm 0.000$ & 0.176 tiny $ pm 0.258$ & 0.200 tiny $ pm 0.278$ & 0.142 tiny $ pm 0.195$ & 0.036 tiny $ pm 0.081$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{GVNF} & 40 & GVNF & 0.000 tiny $ pm 0.000$ & 0.080 tiny $ pm 0.179$ & 0.180 tiny $ pm 0.249$ & 0.227 tiny $ pm 0.352$ & 0.260 tiny $ pm 0.241$ & 0.260 tiny $ pm 0.241$ & n \\
+ & 14 & GVNF & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.147 tiny $ pm 0.202$ & 0.000 tiny $ pm 0.000$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{GVT} & 41 & GVT & 0.062 tiny $ pm 0.061$ & 0.142 tiny $ pm 0.156$ & 0.120 tiny $ pm 0.113$ & 0.155 tiny $ pm 0.046$ & 0.174 tiny $ pm 0.096$ & 0.117 tiny $ pm 0.083$ & n \\
+ & 15 & GVT & 0.081 tiny $ pm 0.102$ & 0.131 tiny $ pm 0.143$ & 0.050 tiny $ pm 0.112$ & 0.056 tiny $ pm 0.082$ & 0.108 tiny $ pm 0.066$ & 0.150 tiny $ pm 0.112$ & y \\
+\cline{1-10}
+GWC & 42 & GWC & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.067 tiny $ pm 0.149$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & n \\
+\cline{1-10}
+LP & 16 & LP & 0.000 tiny $ pm 0.000$ & 0.050 tiny $ pm 0.112$ & 0.000 tiny $ pm 0.000$ & 0.044 tiny $ pm 0.099$ & 0.040 tiny $ pm 0.089$ & 0.000 tiny $ pm 0.000$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{LSADJ} & 43 & LSADJ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.200 tiny $ pm 0.447$ & 0.000 tiny $ pm 0.000$ & n \\
+ & 17 & LSADJ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.050 tiny $ pm 0.112$ & 0.000 tiny $ pm 0.000$ & y \\
+\cline{1-10}
+LSADV & 44 & LSADV & 0.000 tiny $ pm 0.000$ & 0.080 tiny $ pm 0.179$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & n \\
+\cline{1-10}
+\multirow[t]{2}{*}{LSN} & 45 & LSN & 0.000 tiny $ pm 0.000$ & 0.067 tiny $ pm 0.149$ & 0.044 tiny $ pm 0.099$ & 0.137 tiny $ pm 0.192$ & 0.000 tiny $ pm 0.000$ & 0.050 tiny $ pm 0.112$ & n \\
+ & 18 & LSN & 0.000 tiny $ pm 0.000$ & 0.100 tiny $ pm 0.224$ & 0.000 tiny $ pm 0.000$ & 0.040 tiny $ pm 0.089$ & 0.044 tiny $ pm 0.099$ & 0.134 tiny $ pm 0.128$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{LSPR} & 46 & LSPR & 0.193 tiny $ pm 0.124$ & 0.186 tiny $ pm 0.077$ & 0.274 tiny $ pm 0.118$ & 0.286 tiny $ pm 0.036$ & 0.214 tiny $ pm 0.067$ & 0.268 tiny $ pm 0.155$ & n \\
+ & 19 & LSPR & 0.000 tiny $ pm 0.000$ & 0.323 tiny $ pm 0.111$ & 0.216 tiny $ pm 0.094$ & 0.197 tiny $ pm 0.129$ & 0.165 tiny $ pm 0.105$ & 0.201 tiny $ pm 0.084$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{LSV} & 47 & LSV & 0.000 tiny $ pm 0.000$ & 0.106 tiny $ pm 0.148$ & 0.180 tiny $ pm 0.249$ & 0.146 tiny $ pm 0.182$ & 0.170 tiny $ pm 0.122$ & 0.153 tiny $ pm 0.166$ & n \\
+ & 20 & LSV & 0.000 tiny $ pm 0.000$ & 0.050 tiny $ pm 0.112$ & 0.000 tiny $ pm 0.000$ & 0.062 tiny $ pm 0.138$ & 0.145 tiny $ pm 0.149$ & 0.088 tiny $ pm 0.136$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{LWCO} & 48 & LWCO & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.036 tiny $ pm 0.081$ & 0.024 tiny $ pm 0.053$ & 0.031 tiny $ pm 0.069$ & 0.082 tiny $ pm 0.126$ & n \\
+ & 21 & LWCO & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.123 tiny $ pm 0.116$ & 0.000 tiny $ pm 0.000$ & 0.036 tiny $ pm 0.081$ & 0.000 tiny $ pm 0.000$ & y \\
+\cline{1-10}
+QC & 49 & QC & 0.000 tiny $ pm 0.000$ & 0.200 tiny $ pm 0.447$ & 0.200 tiny $ pm 0.447$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & n \\
+\cline{1-10}
+\multirow[t]{2}{*}{QM} & 50 & QM & 0.277 tiny $ pm 0.171$ & 0.196 tiny $ pm 0.162$ & 0.235 tiny $ pm 0.156$ & 0.288 tiny $ pm 0.091$ & 0.232 tiny $ pm 0.097$ & 0.163 tiny $ pm 0.107$ & n \\
+ & 22 & QM & 0.067 tiny $ pm 0.092$ & 0.224 tiny $ pm 0.062$ & 0.216 tiny $ pm 0.152$ & 0.364 tiny $ pm 0.190$ & 0.373 tiny $ pm 0.107$ & 0.224 tiny $ pm 0.152$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{WM} & 51 & WM & 0.067 tiny $ pm 0.149$ & 0.183 tiny $ pm 0.171$ & 0.374 tiny $ pm 0.172$ & 0.133 tiny $ pm 0.183$ & 0.359 tiny $ pm 0.330$ & 0.564 tiny $ pm 0.178$ & n \\
+ & 23 & WM & 0.100 tiny $ pm 0.224$ & 0.141 tiny $ pm 0.199$ & 0.337 tiny $ pm 0.208$ & 0.258 tiny $ pm 0.280$ & 0.436 tiny $ pm 0.185$ & 0.200 tiny $ pm 0.189$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{WO} & 52 & WO & 0.000 tiny $ pm 0.000$ & 0.036 tiny $ pm 0.081$ & 0.000 tiny $ pm 0.000$ & 0.086 tiny $ pm 0.081$ & 0.031 tiny $ pm 0.069$ & 0.000 tiny $ pm 0.000$ & n \\
+ & 24 & WO & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.057 tiny $ pm 0.128$ & 0.031 tiny $ pm 0.069$ & 0.000 tiny $ pm 0.000$ & y \\
+\cline{1-10}
+\multirow[t]{2}{*}{WR} & 53 & WR & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.040 tiny $ pm 0.089$ & 0.044 tiny $ pm 0.099$ & n \\
+ & 25 & WR & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.057 tiny $ pm 0.078$ & 0.000 tiny $ pm 0.000$ & y \\
+\cline{1-10}
+XADJPR & 54 & XADJPR & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.200 tiny $ pm 0.447$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & n \\
+\cline{1-10}
+XNUC & 55 & XNUC & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.100 tiny $ pm 0.224$ & n \\
+\cline{1-10}
+\multirow[t]{2}{*}{XVCO} & 56 & XVCO & 0.000 tiny $ pm 0.000$ & 0.067 tiny $ pm 0.149$ & 0.050 tiny $ pm 0.112$ & 0.073 tiny $ pm 0.104$ & 0.036 tiny $ pm 0.081$ & 0.057 tiny $ pm 0.128$ & n \\
+ & 26 & XVCO & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.000 tiny $ pm 0.000$ & 0.031 tiny $ pm 0.069$ & 0.040 tiny $ pm 0.089$ & 0.040 tiny $ pm 0.089$ & y \\
+\cline{1-10}
+\bottomrule
+\end{tabular}
+\end{table}

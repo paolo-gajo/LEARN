@@ -1,5 +1,23 @@
 [
     {
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+        "micro_precision": 0.33783783783783783,
+        "micro_recall": 0.18867924528301888,
+        "micro_f1": 0.24213075060532685,
+        "macro_precision": 0.016531018267317777,
+        "macro_recall": 0.01583017372491057,
+        "macro_f1": 0.01594411560816936,
+        "per_tag_metrics": {
+            "DMCC": {
+                "precision": 0.4948453608247423,
+                "recall": 0.5274725274725275,
+                "f1": 0.5106382978723405
+            },
+            "FS": {
+                "precision": 0.13333333333333333,
+                "recall": 0.07407407407407407,
+                "f1": 0.09523809523809523
+========
         "micro_precision": 0.13636363636363635,
         "micro_recall": 0.1780821917808219,
         "micro_f1": 0.15445544554455445,
@@ -41,17 +59,24 @@
                 "precision": 0,
                 "recall": 0.0,
                 "f1": 0
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
             },
             "WO": {
                 "precision": 0,
                 "recall": 0.0,
                 "f1": 0
             },
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+            "LSADJ": {
+========
             "X": {
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
                 "precision": 0.0,
                 "recall": 0,
                 "f1": 0
             },
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+========
             "GVM": {
                 "precision": 0,
                 "recall": 0.0,
@@ -102,11 +127,14 @@
                 "recall": 0.0,
                 "f1": 0
             },
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
             "WR": {
                 "precision": 0,
                 "recall": 0.0,
                 "f1": 0
             },
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+========
             "CSINTRA": {
                 "precision": 0,
                 "recall": 0.0,
@@ -147,17 +175,27 @@
                 "recall": 0.0,
                 "f1": 0
             },
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
             "LSADV": {
                 "precision": 0,
                 "recall": 0.0,
                 "f1": 0
             },
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+            "GADJCS": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GDO": {
+========
             "LSADJ": {
                 "precision": 0.0,
                 "recall": 0,
                 "f1": 0
             },
             "XVCO": {
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0
@@ -167,16 +205,72 @@
                 "recall": 0.0,
                 "f1": 0
             },
-            "LSV": {
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+            "LWCO": {
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0
             },
-            "QR": {
+            "GNC": {
                 "precision": 0,
                 "recall": 0.0,
                 "f1": 0
             },
+            "Z": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "QM": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "XVCO": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "WM": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GVNF": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GPP": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GNN": {
+========
+            "LSV": {
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+            "GVT": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "DMCA": {
+========
+            "QR": {
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+            "GVN": {
+========
             "GPI": {
                 "precision": 0,
                 "recall": 0.0,
@@ -254,6 +348,7 @@
                 "f1": 0
             },
             "WO": {
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
                 "precision": 0,
                 "recall": 0.0,
                 "f1": 0
@@ -263,12 +358,281 @@
                 "recall": 0.0,
                 "f1": 0
             },
-            "GVT": {
-                "precision": 0.0,
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+            "GVM": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "XNCO": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "FM": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "QC": {
+                "precision": 0,
                 "recall": 0.0,
                 "f1": 0
             },
             "GPR": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LSV": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LP": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GA": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "CSINTRA": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GDD": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LSPR": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GWC": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "XNUC": {
+                "precision": 0.0,
+                "recall": 0,
+                "f1": 0
+            },
+            "GDT": {
+                "precision": 0.0,
+                "recall": 0,
+                "f1": 0
+            },
+            "CSINTER": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LSN": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            }
+        },
+        "epoch": 0
+    },
+    {
+        "micro_precision": 0.4262295081967213,
+        "micro_recall": 0.2943396226415094,
+        "micro_f1": 0.3482142857142857,
+        "macro_precision": 0.029010047467799723,
+        "macro_recall": 0.028702541523054348,
+        "macro_f1": 0.02841812711027402,
+        "per_tag_metrics": {
+            "DMCC": {
+                "precision": 0.660377358490566,
+                "recall": 0.7692307692307693,
+                "f1": 0.7106598984771574
+            },
+            "FS": {
+                "precision": 0.30434782608695654,
+                "recall": 0.25925925925925924,
+                "f1": 0.27999999999999997
+            },
+            "GVT": {
+                "precision": 0.16666666666666666,
+                "recall": 0.09090909090909091,
+                "f1": 0.11764705882352942
+            },
+            "WO": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LSADJ": {
+                "precision": 0.0,
+                "recall": 0,
+                "f1": 0
+            },
+            "WR": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LSADV": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GADJCS": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GDO": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GVAUX": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LWCO": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GNC": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "Z": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "QM": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "XVCO": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "WM": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GVNF": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GPP": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GNN": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "DMCA": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GVN": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GADVO": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GVM": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "XNCO": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "FM": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "QC": {
+                "precision": 0,
+========
+            "GVT": {
+                "precision": 0.0,
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GPR": {
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LSV": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LP": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GA": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "CSINTRA": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GDD": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LSPR": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "XNPR": {
+                "precision": 0.0,
+                "recall": 0,
+                "f1": 0
+            },
+            "GWC": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "XNUC": {
+========
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
                 "precision": 0.0,
                 "recall": 0,
                 "f1": 0
@@ -278,6 +642,55 @@
                 "recall": 0.0,
                 "f1": 0
             },
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+            "LSN": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            }
+        },
+        "epoch": 1
+    },
+    {
+        "micro_precision": 0.4574468085106383,
+        "micro_recall": 0.32452830188679244,
+        "micro_f1": 0.37969094922737306,
+        "macro_precision": 0.08785983650715573,
+        "macro_recall": 0.04590268406057879,
+        "macro_f1": 0.05306069269483903,
+        "per_tag_metrics": {
+            "DMCC": {
+                "precision": 0.719626168224299,
+                "recall": 0.8461538461538461,
+                "f1": 0.7777777777777778
+            },
+            "LSPR": {
+                "precision": 0.5,
+                "recall": 0.2222222222222222,
+                "f1": 0.30769230769230765
+            },
+            "LSV": {
+                "precision": 0.3333333333333333,
+                "recall": 0.25,
+                "f1": 0.28571428571428575
+            },
+            "LSN": {
+                "precision": 0.5,
+                "recall": 0.16666666666666666,
+                "f1": 0.25
+            },
+            "QM": {
+                "precision": 1.0,
+                "recall": 0.1111111111111111,
+                "f1": 0.19999999999999998
+            },
+            "FS": {
+                "precision": 0.2857142857142857,
+                "recall": 0.14814814814814814,
+                "f1": 0.1951219512195122
+            },
+            "WO": {
+========
             "LP": {
                 "precision": 0,
                 "recall": 0.0,
@@ -309,20 +722,64 @@
                 "f1": 0
             },
             "GADVO": {
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
                 "precision": 0,
                 "recall": 0.0,
                 "f1": 0
             },
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+            "LSADJ": {
+                "precision": 0.0,
+                "recall": 0,
+                "f1": 0
+            },
+            "WR": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LSADV": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GADJCS": {
+========
             "WR": {
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0
             },
             "GNC": {
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
                 "precision": 0.0,
                 "recall": 0,
                 "f1": 0
             },
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+            "GDO": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GVAUX": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "LWCO": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GNC": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "Z": {
+                "precision": 0.0,
+========
             "CSINTRA": {
                 "precision": 0,
                 "recall": 0.0,
@@ -330,6 +787,7 @@
             },
             "Z": {
                 "precision": 0,
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
                 "recall": 0.0,
                 "f1": 0
             },
@@ -338,27 +796,76 @@
                 "recall": 0.0,
                 "f1": 0
             },
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+            "WM": {
+========
             "GDI": {
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
                 "precision": 0,
                 "recall": 0.0,
                 "f1": 0
             },
             "GVNF": {
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GPP": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GNN": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GVT": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "DMCA": {
+========
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
                 "precision": 0,
                 "recall": 0.0,
                 "f1": 0
             },
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+            "GVN": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GADVO": {
+========
             "GWC": {
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
                 "precision": 0.0,
                 "recall": 0.0,
                 "f1": 0
             },
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+            "QR": {
+========
             "LSADJ": {
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
                 "precision": 0.0,
                 "recall": 0,
                 "f1": 0
             },
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+            "GVM": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "XNCO": {
+========
             "LSADV": {
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
                 "precision": 0,
                 "recall": 0.0,
                 "f1": 0
@@ -378,16 +885,47 @@
                 "recall": 0.0,
                 "f1": 0
             },
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+            "QC": {
+                "precision": 0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GPR": {
+========
             "GPI": {
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
                 "precision": 0,
                 "recall": 0.0,
                 "f1": 0
             },
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+            "LP": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GA": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "CSINTRA": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0
+            },
+            "GDD": {
+========
             "GVN": {
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
                 "precision": 0,
                 "recall": 0.0,
                 "f1": 0
             },
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+            "GWC": {
+========
             "GDO": {
                 "precision": 0,
                 "recall": 0.0,
@@ -420,10 +958,14 @@
                 "f1": 0.09523809523809522
             },
             "GADJCS": {
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
                 "precision": 0,
                 "recall": 0.0,
                 "f1": 0
             },
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+            "XVPR": {
+========
             "XNPR": {
                 "precision": 0,
                 "recall": 0.0,
@@ -550,10 +1092,14 @@
                 "f1": 0
             },
             "XVCO": {
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
                 "precision": 0.0,
-                "recall": 0.0,
+                "recall": 0,
                 "f1": 0
             },
+<<<<<<<< HEAD:results/Llama-3.1-8B-Instruct/with_tags_fine/12/results_dev.json
+            "CSINTER": {
+========
             "GVAUX": {
                 "precision": 0.0,
                 "recall": 0.0,
@@ -565,6 +1111,7 @@
                 "f1": 0
             },
             "QR": {
+>>>>>>>> refs/remotes/origin/master:results/Llama-3.1-8B-Instruct/context_108095/6/results_dev.json
                 "precision": 0,
                 "recall": 0.0,
                 "f1": 0
