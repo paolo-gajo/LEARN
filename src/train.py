@@ -20,7 +20,7 @@ def main(args):
     print(f'Will save results to: {results_dir}')
     set_seeds(config['seed'])
     df = convert_files(config['data_path'],
-                       speakers = config['speakers'])
+                       turn_types = config['turn_types'])
 
     tokenizer = AutoTokenizer.from_pretrained(config['model_name'],
                                               padding_side='left')
@@ -29,7 +29,7 @@ def main(args):
     dataset = CausalLMDataset(df,
                             tokenizer,
                             config,
-                            debug=True,
+                            debug=config['debug'],
                             )
     print(f'Prompt max length: {dataset.max_len}')
     dataset_train = Dataset.from_pandas(dataset.train_samples)
@@ -199,8 +199,10 @@ if __name__ == "__main__":
     parser.add_argument("--coarse", type=int, help="Whether to use coarse tags", default=0)
     parser.add_argument("--seed", type=int, help="Seed used for the experiments", default=0)
     parser.add_argument("--suffix", type=str, help="Path of the tags text file", default='')
-    parser.add_argument("--speakers", type=str, help="Comma-separated list of roles to extract from the XML files", default='student')
+    parser.add_argument("--turn_types", type=str, help="Comma-separated list of roles to extract from the XML files", default='student')
     parser.add_argument("--samples_type", type=str, help="Comma-separated list of roles to extract from the XML files", default='random')
+    parser.add_argument("--k_window", type=int, help="How many messages to use for `samples_type` == `context_raw` or `context_ann`", default=10)
+    parser.add_argument("--debug", type=int, help="Whether to use debug mode", default=0)
     
     args = parser.parse_args()
     main(args)

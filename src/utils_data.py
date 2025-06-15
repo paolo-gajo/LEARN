@@ -118,11 +118,11 @@ class CausalLMDataset:
             sentence = text_list_raw.iloc[i]
             expected_output = text_list_ann.iloc[i]
             if self.config['samples_type'] == 'random':
-                if len(self.config['speakers']) > 1:
-                    print(f'`samples_type` is `random`, but `speakers`>1, make sure this is correct!!!')
+                if len(self.config['turn_types']) > 1:
+                    print(f'`samples_type` is `random`, but `turn_types`>1, make sure this is correct!!!')
                 examples = self.rng_icl_examples(split, i)
             elif self.config['samples_type'] in ['context_raw', 'context_ann']:
-                assert len(self.config['speakers']) > 1, f"Speakers need to be > 1 with `samples_type` == {self.config['samples_type']}"
+                assert len(self.config['turn_types']) > 1, f"len(turn_types) need to be > 1 with `samples_type` == {self.config['samples_type']}"
                 examples = self.context_examples(split, i)
                 if examples is None:
                     continue
@@ -167,6 +167,8 @@ class CausalLMDataset:
                 chat_list.append(last_sample)
             if self.debug:
                 with open(f'./scratch/prompt_sample_{split}.txt', 'w') as f: f.write(chat_prompt_formatted)
+                print(chat_prompt_formatted)
+                breakpoint()
         max_len_list = max(len_list)
         if max_len_list > self.max_len:
             self.max_len = max_len_list
@@ -258,7 +260,7 @@ def get_inner_xml(element):
         inner_content += child_xml
     return inner_content
 
-def convert_files(walk_path = './data', speakers = ['student', 'chatbot']):
+def convert_files(walk_path = './data', turn_types = ['student', 'chatbot']):
     df = pd.DataFrame()
     i = 0
     for root, dirs, files in os.walk(walk_path):
@@ -297,7 +299,7 @@ def convert_files(walk_path = './data', speakers = ['student', 'chatbot']):
                     turns_df['text_annotated'] = turns_df['text_annotated'].apply(lambda x: x if x else np.nan)
                     turns_df['conv_id'] = i
                     turns_df['task_type'] = task_type
-                    speaker_mask = turns_df['turn_type'].apply(lambda x: x in speakers)
+                    speaker_mask = turns_df['turn_type'].apply(lambda x: x in turn_types)
                     turns_df = turns_df[speaker_mask]
                     turns_df['local_id'] = range(len(turns_df))
                     df = pd.concat([df, turns_df])

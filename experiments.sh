@@ -58,6 +58,9 @@ declare -a n_icl_samples=(
     8
     10
 )
+declare -a k_window=(
+    10
+)
 declare -a model_name=(
     meta-llama/Llama-3.1-8B-Instruct
     # meta-llama/Llama-3.3-70B-Instruct
@@ -75,6 +78,7 @@ array_names=(
             model_name
             do_train
             coarse
+            k_window
             )
 combinations=$(cartesian_product array_names)
 
@@ -85,11 +89,13 @@ epochs=3
 verbose_eval=1
 max_length=4096
 
-speakers="student"
-samples_type="random"
+# turn_types="student"
+# samples_type="random"
 
-# speakers="student,chatbot"
-# samples_type="context_raw"
+turn_types="student,chatbot"
+samples_type="context_raw"
+
+suffix="context_"
 
 # Convert combinations to commands
 declare -a commands=()
@@ -99,6 +105,10 @@ while IFS= read -r combo; do
     if [[ ${params[3]} == *"70B"* ]]; then
         load_in_4bit=1
     fi
+
+    if [[ ${samples_type} != "student" && ${params[2]} -gt 0 ]]; then
+        continue
+    fi
     
     cmd="python ./src/train.py
                 --seed ${params[0]}
@@ -107,17 +117,23 @@ while IFS= read -r combo; do
                 --model_name ${params[3]}
                 --do_train ${params[4]}
                 --coarse ${params[5]}
-                --suffix ${SLURM_ARRAY_JOB_ID}/${SLURM_ARRAY_TASK_ID}
+                --k_window ${params[6]}
+                --suffix ${suffix}${SLURM_ARRAY_JOB_ID}/${SLURM_ARRAY_TASK_ID}
                 --load_in_4bit $load_in_4bit
                 --batch_size_train $batch_size_train
                 --batch_size_eval $batch_size_eval
                 --epochs $epochs
                 --verbose_eval $verbose_eval
                 --max_length $max_length
-                --speakers $speakers
+                --turn_types $turn_types
+                --samples_type $samples_type
                 "
     commands+=("$cmd")
 done <<< "$combinations"
+
+# for command in ${commands[@]}; do
+#     echo $command
+# done
 
 total_combinations=${#commands[@]}
 
